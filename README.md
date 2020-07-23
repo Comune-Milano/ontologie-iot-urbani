@@ -1,2 +1,2 @@
-# ontologie-mobilita-sostenibile
-Ontologie per la Mobilità Sostenibile
+# ontologie-iot-urbani
+Ontologie per gli Apparati IoT Urbani
