@@ -1,0 +1,200 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix : <http://w3id.org/urban-iot/kos/sharing/vehicle-event#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event>
+    a skos:ConceptScheme ;
+    dct:title "Sharing Mobility Vehicle Event"@en ;
+    dct:title "Evento Veicolo Sharing Mobility"@it ;
+    dct:created "2020-07-31"^^xsd:date ;
+    dct:creator "Ilaria Baroni (Cefriel)", "Irene Celino (Cefriel)", "Mario Scrocca (Cefriel)" ;
+    rdfs:isDefinedBy <https://github.com/openmobilityfoundation/mobility-data-specification/blob/main/agency/README.md#vehicle-events> ;
+    skos:hasTopConcept :CancelReservation, :CityPickUp, :Deregister, :ProviderDropOff, :ProviderPickUp, :Register, :Reserve, :ServiceEnd, :ServiceStart, :TripEnd, :TripEnter, :TripLeave, :TripStart .
+
+:CancelReservation
+    a skos:Concept ;
+    skos:definition "Evento di cancellazione della prenotazione del veicolo per un noleggio."@it ;
+    skos:definition "Cancellation event for a vehicle trip reservation."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/sharing/vehicle-event> ;
+    skos:prefLabel "Cancel Reservation"@en, "Cancellazione Prenotazione"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+
+:CityPickUp
+    a skos:Concept ;
+    skos:definition "Evento di prelievo del veicolo in strada da parte dell'autorità cittadina."@it ;
+    skos:definition "Pick up event for a vehicle by the city authority."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/sharing/vehicle-event> ;
+    skos:prefLabel "City Pick Up"@en, "Prelievo Autorità Cittadina"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+
+:Deregister
+    a skos:Concept ;
+    skos:definition "Evento di dismissione del veicolo dalla flotta del servizio di sharing."@it ;
+    skos:definition "Deregistration event for a vehicle from the sharing service fleet."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/sharing/vehicle-event> ;
+    skos:narrower :DeregisterDecommissioned, :DeregisterMissing ;
+    skos:prefLabel "Deregister"@en, "Dismissione dalla flotta"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+
+:DeregisterDecommissioned
+    a skos:Concept ;
+    skos:broader :Deregister ;
+    skos:definition "Evento di dismissione del veicolo dalla flotta del servizio di sharing per ritiro del veicolo."@it ;
+    skos:definition "Deregistration event of a vehicle from the sharing service fleet, to dismantle the vehicle."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/sharing/vehicle-event> ;
+    skos:prefLabel "Deregister decommissioned"@en, "Dismissione dalla flotta per ritiro del veicolo"@it .
+
+:DeregisterMissing
+    a skos:Concept ;
+    skos:broader :Deregister ;
+    skos:definition "Evento di dismissione del veicolo dalla flotta del servizio di sharing per smarrimento."@it ;
+    skos:definition "Deregistration event of the vehicle from the sharing service fleet for loss."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/sharing/vehicle-event> ;
+    skos:prefLabel "Deregister missing"@en, "Dismissione dalla flotta per smarrimento"@it .
+
+:ProviderDropOff
+    a skos:Concept ;
+    skos:definition "Evento di rilascio del veicolo in strada da parte dell'operatore del servizio di sharing."@it ;
+    skos:definition "Vehicle release event by the sharing service operator."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/sharing/vehicle-event> ;
+    skos:prefLabel "Provider Drop Off"@en, "Rilascio Operatore"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+
+:ProviderPickUp
+    a skos:Concept ;
+    skos:definition "Evento di prelievo del veicolo in strada da parte dell'operatore del servizio di sharing."@it ;
+    skos:definition "Vehicle pick up event by the sharing service operator."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/sharing/vehicle-event> ;
+    skos:narrower :ProviderPickUpCharge, :ProviderPickUpCompliance, :ProviderPickUpMaintenance, :ProviderPickUpRebalance ;
+    skos:prefLabel "Provider Pick Up"@en, "Prelievo Operatore"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+
+:ProviderPickUpCharge
+    a skos:Concept ;
+    skos:broader :ProviderPickUp ;
+    skos:definition "Evento di prelievo del veicolo in strada da parte dell'operatore del servizio di sharing per ricarica."@it ;
+    skos:definition "Vehicle pick up event by the sharing service operator for charge reasons."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/sharing/vehicle-event> ;
+    skos:prefLabel "Provider Pick Up Charge"@en, "Prelievo Operatore Ricarica"@it .
+
+:ProviderPickUpCompliance
+    a skos:Concept ;
+    skos:broader :ProviderPickUp ;
+    skos:definition "Evento di prelievo del veicolo in strada da parte dell'operatore del servizio di sharing per rispetto policy imposte dall'autorità competente (es. limite numero veicoli)."@it ;
+    skos:definition "Vehicle pick up event by the sharing service operator, to be compliant with local authority policies on vehicles number limitations (e.g., max number of vehicles reached) ."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/sharing/vehicle-event> ;
+    skos:prefLabel "Provider Pick Up Compliance"@en, "Prelievo Operatore Compliance"@it .
+
+:ProviderPickUpMaintenance
+    a skos:Concept ;
+    skos:broader :ProviderPickUp ;
+    skos:definition "Evento di prelievo del veicolo in strada da parte dell'operatore del servizio di sharing per manutenzione."@it ;
+    skos:definition "Vehicle pick up event by the sharing service operator for maintenance issues."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/sharing/vehicle-event> ;
+    skos:prefLabel "Provider Pick Up Maintenance"@en, "Prelievo Operatore Manutenzione"@it .
+
+:ProviderPickUpRebalance
+    a skos:Concept ;
+    skos:broader :ProviderPickUp ;
+    skos:definition "Evento di prelievo del veicolo in strada da parte dell'operatore del servizio di sharing per ribilanciamento."@it ;
+    skos:definition "Vehicle pick up event by the sharing service operator for rebalancing reasons."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/sharing/vehicle-event> ;
+    skos:prefLabel "Provider Pick Up Rebalance"@en, "Prelievo Operatore Ribilanciamento"@it .
+
+:Register
+    a skos:Concept ;
+    skos:definition "Evento di immissione del veicolo nella flotta del servizio di sharing."@it ;
+    skos:definition "Vehicle entry event in the sharing service fleet."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/sharing/vehicle-event> ;
+    skos:prefLabel "Register"@en, "Immissione in flotta"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+
+:Reserve
+    a skos:Concept ;
+    skos:definition "Evento di prenotazione del veicolo per un noleggio."@it ;
+    skos:definition "Reserve event of the vehicle for a trip."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/sharing/vehicle-event> ;
+    skos:prefLabel "Reserve"@en, "Prenotazione"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+
+:ServiceEnd
+    a skos:Concept ;
+    skos:definition "Evento di rimozione del veicolo dal servizio."@it ;
+    skos:definition "Removal event of the vehicle from the service."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/sharing/vehicle-event> ;
+    skos:narrower :ServiceEndCompliance, :ServiceEndLowBattery, :ServiceEndMaintenance, :ServiceEndOffHours ;
+    skos:prefLabel "Service End"@en, "Fine Servizio"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+
+:ServiceEndCompliance
+    a skos:Concept ;
+    skos:broader :ServiceEnd ;
+    skos:definition "Evento di rimozione del veicolo dal servizio per rispetto policy imposte dall'autorità competente (es. limite numero veicoli)."@it ;
+    skos:definition "Removal event of the vehicle from the service, for compliance reasons imposed by the local authority (e.g., max number of vehicle reached)."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/sharing/vehicle-event> ;
+    skos:prefLabel "Service End Compliance"@en, "Fine Servizio Compliance"@it .
+
+:ServiceEndLowBattery
+    a skos:Concept ;
+    skos:broader :ServiceEnd ;
+    skos:definition "Evento di rimozione del veicolo dal servizio per batteria scarica."@it ;
+    skos:definition "Removal event of the vehicle from the sharing service for low battery."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/sharing/vehicle-event> ;
+    skos:prefLabel "Service End Low Battery"@en, "Fine Servizio Batteria Scarica"@it .
+
+:ServiceEndMaintenance
+    a skos:Concept ;
+    skos:broader :ServiceEnd ;
+    skos:definition "Evento di rimozione del veicolo dal servizio per necessità di manutenzione."@it ;
+    skos:definition "Removal event of the vehicle from the sharing service for maintenance."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/sharing/vehicle-event> ;
+    skos:prefLabel "Service End Maintenance"@en, "Fine Servizio Manutenzione"@it .
+
+:ServiceEndOffHours
+    a skos:Concept ;
+    skos:broader :ServiceEnd ;
+    skos:definition "Evento di rimozione del veicolo dal servizio a fine giornata (se servizio non opera 24/7)."@it ;
+    skos:definition "Removal event of the vehicle from the sharing service for ending of the service hours (if the service is not 24/7)"@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/sharing/vehicle-event> ;
+    skos:prefLabel "Service End Off Hours"@en, "Fine Servizio Orario"@it .
+
+:ServiceStart
+    a skos:Concept ;
+    skos:definition "Evento di introduzione veicolo in servizio a inizio giornata (se servizio non opera 24/7)."@it ;
+    skos:definition "Placing event of the vehicle from the sharing service for starting of the service hours (if the service is not 24/7)"@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/sharing/vehicle-event> ;
+    skos:prefLabel "Service Start"@en, "Inizio Servizio"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+
+:TripEnd
+    a skos:Concept ;
+    skos:definition "Evento di fine noleggio del veicolo."@it ;
+    skos:definition "Trip end event of the vehicle."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/sharing/vehicle-event> ;
+    skos:prefLabel "Trip End"@en, "Fine Noleggio"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+
+:TripEnter
+    a skos:Concept ;
+    skos:definition "Evento di ingresso nell'area operativa del servizio di sharing durante il noleggio del veicolo."@it ;
+    skos:definition "Entering event of the vehicle in the operation area of the sharing service during the trip."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/sharing/vehicle-event> ;
+    skos:prefLabel "Trip Enter"@en, "Ingresso Durante Noleggio"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+
+:TripLeave
+    a skos:Concept ;
+    skos:definition "Evento di uscita dall'area operativa del servizio di sharing durante il noleggio del veicolo."@it ;
+    skos:definition "Leaving event of the vehicle from the operation area of the sharing service during the trip."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/sharing/vehicle-event> ;
+    skos:prefLabel "Trip Leave"@en, "Uscita Durante Noleggio"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+
+:TripStart
+    a skos:Concept ;
+    skos:definition "Evento di inizio noleggio del veicolo."@it ;
+    skos:definition "Trip start event of the vehicle."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/sharing/vehicle-event> ;
+    skos:prefLabel "Trip Start"@en, "Inizio Noleggio"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .

@@ -1,0 +1,69 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix : <http://w3id.org/urban-iot/kos/sharing/vehicle-state#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state>
+    a skos:ConceptScheme ;
+    dct:title "Sharing Mobility Vehicle State"@en ;
+    dct:title "Stato Veicolo Sharing Mobility"@it ;
+    dct:created "2020-07-31"^^xsd:date ;
+    dct:creator "Ilaria Baroni (Cefriel)", "Irene Celino (Cefriel)", "Mario Scrocca (Cefriel)" ;
+    rdfs:isDefinedBy <https://github.com/openmobilityfoundation/mobility-data-specification/blob/main/agency/README.md#vehicle-events> ;
+    skos:hasTopConcept :Available, :Elsewhere, :Inactive, :Removed, :Reserved, :Trip, :Unavailable .
+
+:Available
+    a skos:Concept ;
+    skos:definition "Il veicolo è disponibile in strada per prenotazione e noleggio."@it ;
+    skos:definition "The vehicle is available on the street for reservation and trip."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/sharing/vehicle-state> ;
+    skos:prefLabel "Available"@en, "Disponibile"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/sharing/vehicle-state> .
+
+:Elsewhere
+    a skos:Concept ;
+    skos:definition "Il veicolo è al momento utilizzato per un noleggio e si trova all'esterno dell'area operativa del servizio di sharing."@it ;
+    skos:definition "The vehicle is in use for a trip and it is outside the operation area of the sharing service."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/sharing/vehicle-state> ;
+    skos:prefLabel "Elsewhere"@en, "Altrove"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/sharing/vehicle-state> .
+
+:Inactive
+    a skos:Concept ;
+    skos:definition "Il veicolo non è ancora stato registrato nella flotta di un operatore."@it ;
+    skos:definition "The vehicle is still not registered in the operator fleet."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/sharing/vehicle-state> ;
+    skos:prefLabel "Inactive"@en, "Inattivo"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/sharing/vehicle-state> .
+
+:Removed
+    a skos:Concept ;
+    skos:definition "Il veicolo non è presente in strada ma si trova nella flotta attiva."@it ;
+    skos:definition "The vehicle is formally in the street but is in the active fleet."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/sharing/vehicle-state> ;
+    skos:prefLabel "Removed"@en, "Rimosso"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/sharing/vehicle-state> .
+
+:Reserved
+    a skos:Concept ;
+    skos:definition "Il veicolo è stato prenotato per un noleggio."@it ;
+    skos:definition "The vehicle is reserved for a trip."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/sharing/vehicle-state> ;
+    skos:prefLabel "Reserved"@en, "Prenotato"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/sharing/vehicle-state> .
+
+:Trip
+    a skos:Concept ;
+    skos:definition "Il veicolo è al momento utilizzato per un noleggio."@it ;
+    skos:definition "The vehicle is currently used for a trip."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/sharing/vehicle-state> ;
+    skos:prefLabel "Trip"@en, "Noleggio"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/sharing/vehicle-state> .
+
+:Unavailable
+    a skos:Concept ;
+    skos:definition "Il veicolo si trova in strada ma non è al momento disponibile per prenotazione e noleggio."@it ;
+    skos:definition "The vehicle is in the street but is not available at the moment for reservation and trip."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/sharing/vehicle-state> ;
+    skos:prefLabel "Unavailable"@en, "Non Disponibile"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/sharing/vehicle-state> .

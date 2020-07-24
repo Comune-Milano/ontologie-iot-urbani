@@ -1,0 +1,68 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix : <http://w3id.org/urban-iot/kos/electric/parking-restriction#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://w3id.org/urban-iot/kos/electric/parking-restriction>
+    a skos:ConceptScheme ;
+    dct:title "Electric Mobility Parking Restriction"@en ;
+    dct:title "Restrizione per le aree di parcheggio nella mobilità elettrica"@it ;
+    dct:created "2020-07-31"^^xsd:date ;
+    dct:creator "Ilaria Baroni (Cefriel)", "Irene Celino (Cefriel)", "Mario Scrocca (Cefriel)" ;
+    skos:hasTopConcept :ElectricVehiclesOnly, :ForDisabledOnly, :InChargeOnly, :MotorcyclesOnly, :ParkingAccessWithPayment, :RestrictedAccessOnly, :TimeLimited .
+
+:ElectricVehiclesOnly
+    a skos:Concept ;
+    skos:definition "Area di sosta riservata solo a veicoli elettrici."@it ;
+    skos:definition "Parking area for electric vehicles only."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/electric/parking-restriction> ;
+    skos:prefLabel "Electric Vehicles Only"@en, "Solo Veicoli Elettrici"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/electric/parking-restriction> .
+
+:ForDisabledOnly
+    a skos:Concept ;
+    skos:definition "Area di sosta dedicata solo ad utenti disabili."@it ;
+    skos:definition "Parking area for disabled only."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/electric/parking-restriction> ;
+    skos:prefLabel "For Disabled Only"@en, "Solo per Disabili"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/electric/parking-restriction> .
+
+:InChargeOnly
+    a skos:Concept ;
+    skos:definition "Area di sosta dedicata solo a veicoli in carica."@it ;
+    skos:definition "Parking area for in charge vehicles only."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/electric/parking-restriction> ;
+    skos:prefLabel "In Charge Only"@en, "Solo Veicoli in Carica"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/electric/parking-restriction> .
+
+:MotorcyclesOnly
+    a skos:Concept ;
+    skos:definition "Area di sosta dedicata solo a ciclomotori."@it ;
+    skos:definition "Parking area for motorcycles only."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/electric/parking-restriction> ;
+    skos:prefLabel "Motorcycles Only"@en, "Solo per Ciclomotori"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/electric/parking-restriction> .
+
+:ParkingAccessWithPayment
+    a skos:Concept ;
+    skos:definition "Area di sosta con parcheggio a pagamento."@it ;
+    skos:definition "Payment parking area."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/electric/parking-restriction> ;
+    skos:prefLabel "Parking Access With Payment"@en, "Parcheggio a Pagamento"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/electric/parking-restriction> .
+
+:RestrictedAccessOnly
+    a skos:Concept ;
+    skos:definition "Area di sosta ad accesso limitato."@it ;
+    skos:definition "Parking area with restricted access only."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/electric/parking-restriction> ;
+    skos:prefLabel "Restricted Access Only"@en, "Accesso Limitato"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/electric/parking-restriction> .
+
+:TimeLimited
+    a skos:Concept ;
+    skos:definition "Area di sosta con parcheggio vincolato a un tempo massimo."@it ;
+    skos:definition "Parking area time limited."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/electric/parking-restriction> ;
+    skos:prefLabel "Time Limited"@en, "Tempo Limitato"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/electric/parking-restriction> .

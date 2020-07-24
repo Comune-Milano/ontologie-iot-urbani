@@ -1,0 +1,118 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix : <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard>
+    a skos:ConceptScheme ;
+    dct:title "European Emission Standard"@en ;
+    dct:title "Standard Europeo Emissioni"@it ;
+    dct:created "2020-07-31"^^xsd:date ;
+    dct:creator "Ilaria Baroni (Cefriel)", "Irene Celino (Cefriel)", "Mario Scrocca (Cefriel)" ;
+    skos:hasTopConcept :Euro0, :Euro1, :Euro2, :Euro3, :Euro4, :Euro5, :Euro6 .
+
+:Euro0
+    a skos:Concept ;
+    skos:definition "Standard attribuito a veicoli che non rientrano nei vincoli di Euro 1."@it ;
+    skos:definition "Standard attributed to vehicles that are not subject to the Euro 1 restrictions."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> ;
+    skos:prefLabel "Euro 0"@en, "Euro 0"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> .
+
+:Euro1
+    a skos:Concept ;
+    skos:definition "Standard europeo Euro 1 sulle emissioni inquinanti dei veicoli."@it ;
+    skos:definition "European standard Euro 1 on pollution emissions from vehicles."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> ;
+    skos:prefLabel "Euro 1"@en, "Euro 1"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> .
+
+:Euro2
+    a skos:Concept ;
+    skos:definition "Standard europeo Euro 2 sulle emissioni inquinanti dei veicoli."@it ;
+    skos:definition "European standard Euro 2 on pollution emissions from vehicles."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> ;
+    skos:prefLabel "Euro 2"@en, "Euro 2"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> .
+
+:Euro3
+    a skos:Concept ;
+    skos:definition "Standard europeo Euro 3 sulle emissioni inquinanti dei veicoli."@it ;
+    skos:definition "European standard Euro 3 on pollution emissions from vehicles."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> ;
+    skos:prefLabel "Euro 3"@en, "Euro 3"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> .
+
+:Euro4
+    a skos:Concept ;
+    skos:definition "Standard europeo Euro 4 sulle emissioni inquinanti dei veicoli."@it ;
+    skos:definition "European standard Euro 4 on pollution emissions from vehicles."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> ;
+    skos:prefLabel "Euro 4"@en, "Euro 4"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> .
+
+:Euro5
+    a skos:Concept ;
+    skos:definition "Standard europeo Euro 5 sulle emissioni inquinanti dei veicoli."@it ;
+    skos:definition "European standard Euro 5 on pollution emissions from vehicles."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> ;
+    skos:narrower :Euro5a, :Euro5b ;
+    skos:prefLabel "Euro 5"@en, "Euro 5"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> .
+
+:Euro5a
+    a skos:Concept ;
+    skos:broader :Euro5 ;
+    skos:definition "Standard europeo Euro 5a sulle emissioni inquinanti dei veicoli."@it ;
+    skos:definition "European standard Euro 5a on pollution emissions from vehicles."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> ;
+    skos:prefLabel "Euro 5a"@en, "Euro 5a"@it .
+
+:Euro5b
+    a skos:Concept ;
+    skos:broader :Euro5 ;
+    skos:definition "Standard europeo Euro 5b sulle emissioni inquinanti dei veicoli."@it ;
+    skos:definition "European standard Euro 5b on pollution emissions from vehicles."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> ;
+    skos:prefLabel "Euro 5b"@en, "Euro 5b"@it .
+
+:Euro6
+    a skos:Concept ;
+    skos:definition "Standard europeo Euro 6 sulle emissioni inquinanti dei veicoli."@it ;
+    skos:definition "European standard Euro 6 on pollution emissions from vehicles."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> ;
+    skos:narrower :Euro6b, :Euro6c, :Euro6d, :Euro6dTEMP ;
+    skos:prefLabel "Euro 6"@en, "Euro 6"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> .
+
+:Euro6b
+    a skos:Concept ;
+    skos:broader :Euro6 ;
+    skos:definition "Standard europeo Euro 6b sulle emissioni inquinanti dei veicoli."@it ;
+    skos:definition "European standard Euro 6b on pollution emissions from vehicles."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> ;
+    skos:prefLabel "Euro 6b"@en, "Euro 6b"@it .
+
+:Euro6c
+    a skos:Concept ;
+    skos:broader :Euro6 ;
+    skos:definition "Standard europeo Euro 6c sulle emissioni inquinanti dei veicoli."@it ;
+    skos:definition "European standard Euro 6c on pollution emissions from vehicles."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> ;
+    skos:prefLabel "Euro 6c"@en, "Euro 6c"@it .
+
+:Euro6d
+    a skos:Concept ;
+    skos:broader :Euro6 ;
+    skos:definition "Standard europeo Euro 6d sulle emissioni inquinanti dei veicoli."@it ;
+    skos:definition "European standard Euro 6d on pollution emissions from vehicles."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> ;
+    skos:prefLabel "Euro 6d"@en, "Euro 6d"@it .
+
+:Euro6dTEMP
+    a skos:Concept ;
+    skos:broader :Euro6 ;
+    skos:definition "Standard europeo Euro 6d-TEMP sulle emissioni inquinanti dei veicoli."@it ;
+    skos:definition "European standard Euro 6d_TEMP on pollution emissions from vehicles."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> ;
+    skos:prefLabel "Euro 6d-TEMP"@en, "Euro 6d-TEMP"@it .

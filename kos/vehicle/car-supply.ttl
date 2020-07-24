@@ -1,0 +1,86 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix : <http://w3id.org/urban-iot/kos/vehicle/car-supply#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://w3id.org/urban-iot/kos/vehicle/car-supply>
+    a skos:ConceptScheme ;
+    dct:title "Car Supply"@en ;
+    dct:title "Alimentazione Autovettura"@it ;
+    dct:created "2020-07-31"^^xsd:date ;
+    dct:creator "Ilaria Baroni (Cefriel)", "Irene Celino (Cefriel)", "Mario Scrocca (Cefriel)" ;
+    skos:hasTopConcept :Diesel, :DualFuel, :Electric, :Gasoline, :Hybrid .
+
+:Diesel
+    a skos:Concept ;
+    skos:definition "Alimentazione a Diesel."@it ;
+    skos:definition "Diesel supply."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/vehicle/car-supply> ;
+    skos:prefLabel "Diesel"@en, "Diesel"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/vehicle/car-supply> .
+
+:DualFuel
+    a skos:Concept ;
+    skos:definition "Alimentazione Bimodale."@it ;
+    skos:definition "Dual Fuel supply."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/vehicle/car-supply> ;
+    skos:narrower :DualFuelLPG, :DualFuelMethane ;
+    skos:prefLabel "Dual-fuel"@en, "Bimodale"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/vehicle/car-supply> .
+
+:DualFuelLPG
+    a skos:Concept ;
+    skos:broader :DualFuel ;
+    skos:definition "Alimentazione Bimodale GPL."@it ;
+    skos:definition "Dual Fuel LPG supply."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/vehicle/car-supply> ;
+    skos:prefLabel "Dual-fuel LPG"@en, "Bimodale GPL"@it .
+
+:DualFuelMethane
+    a skos:Concept ;
+    skos:broader :DualFuel ;
+    skos:definition "Alimentazione Bimodale Metano."@it ;
+    skos:definition "Dual Fuela Methane supply."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/vehicle/car-supply> ;
+    skos:prefLabel "Dual-fuel Methane"@en, "Bimodale Metano"@it .
+
+:Electric
+    a skos:Concept ;
+    skos:definition "Alimentazione Elettrica."@it ;
+    skos:definition "Electric supply."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/vehicle/car-supply> ;
+    skos:narrower :PlugInElectric, :RangeExtendedElectric ;
+    skos:prefLabel "Electric"@en, "Elettrica"@it ;
+    skos:topConceptOf : .
+
+:Gasoline
+    a skos:Concept ;
+    skos:definition "Alimentazione a Benzina."@it ;
+    skos:definition "Gasoline supply."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/vehicle/car-supply> ;
+    skos:prefLabel "Gasoline"@en, "Benzina"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/vehicle/car-supply> .
+
+:Hybrid
+    a skos:Concept ;
+    skos:definition "Alimentazione Ibrida."@it ;
+    skos:definition "Hybrid supply."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/vehicle/car-supply> ;
+    skos:prefLabel "Hybrid"@en, "Ibrida"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/vehicle/car-supply> .
+
+:PlugInElectric
+    a skos:Concept ;
+    skos:broader :Electric ;
+    skos:definition "Alimentazione Elettrica Plug-in."@it ;
+    skos:definition "Plug In Electric supply."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/vehicle/car-supply> ;
+    skos:prefLabel "Plug-in Electric"@en, "Elettrica Plug-in"@it .
+
+:RangeExtendedElectric
+    a skos:Concept ;
+    skos:broader :Electric ;
+    skos:definition "Alimentazione Elettrica Range Extended."@it ;
+    skos:definition "Range Extended Electric supply."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/vehicle/car-supply> ;
+    skos:prefLabel "Range Extended Electric"@en, "Elettrica Range Extended"@it .

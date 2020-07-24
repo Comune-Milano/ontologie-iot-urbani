@@ -1,0 +1,72 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix : <http://w3id.org/urban-iot/kos/vehicle/vehicle-category#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category>
+    a skos:ConceptScheme ;
+    dct:title "Vehicle Category"@en ;
+    dct:title "Categoria di Veicolo"@it ;
+    dct:created "2020-07-31"^^xsd:date ;
+    dct:creator "Ilaria Baroni (Cefriel)", "Irene Celino (Cefriel)", "Mario Scrocca (Cefriel)" ;
+    rdfs:isDefinedBy <https://www.unece.org/trans/main/wp29/wp29wgs/wp29gen/wp29resolutions.html> ;
+    skos:hasTopConcept :CategoryL, :CategoryM, :CategoryN .
+
+:CategoryL
+    a skos:Concept ;
+    skos:definition "Categoria di veicoli ciclomotori e motoveicoli con meno di quattro ruote e quadricicli leggeri."@it ;
+    skos:definition "Category of vehicles mopeds and motorcycles with less than four wheels and light quadricycles." @en" ; 
+    skos:inScheme <http://w3id.org/urban-iot/kos/vehicle/vehicle-category> ;
+    skos:narrower :CategoryL6, :CategoryL7 ;
+    skos:prefLabel "Category L"@en, "Categoria L"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/vehicle/vehicle-category> .
+
+:CategoryL6
+    a skos:Concept ;
+    skos:broader :CategoryL ;
+    skos:definition "Quadricicli leggeri con massa a vuoto inferiore o pari a 350 kg, velocità massima inferiore o pari a 45 km/h, cilindrata inferiore o pari a 50cm3, potenza netta/nominale continua massima inferiore o uguale a 4kW."@it ;
+    skos:definition "Four wheels light vehicles whose unladen mass is not more than 350 kg, whose maximum design speed is not more than 45 km/h, and whose engine cylinder capacity does not exceed 50 cm3, or whose maximum net power output does not exceed 4 kW."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/vehicle/vehicle-category> ;
+    skos:prefLabel "Category L6"@en, "Categoria L6"@it .
+
+:CategoryL7
+    a skos:Concept ;
+    skos:broader :CategoryL ;
+    skos:definition "Quadricicli leggeri che non appartengono a L6 con massa a vuoto inferiore o pari a 400 kg (550 kg se per trasporto merci) e con potenza massima inferiore o uguale a 15 kW."@it ;
+    skos:definition "Four wheels light vehicles, other than that classified for the category L6, whose unladen mass is not more than 400 kg (550 kg for vehicles intended for carrying goods), and whose maximum continuous rated power does not exceed 15 kW."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/vehicle/vehicle-category> ;
+    skos:prefLabel "Category L7"@en, "Categoria L7"@it .
+
+:CategoryM
+    a skos:Concept ;
+    skos:definition "Categoria di veicoli con almeno quattro ruote per il trasporto di persone."@it ;
+    skos:definition "Vehicles having at least four wheels and used for the carriage of passengers."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/vehicle/vehicle-category> ;
+    skos:narrower :CategoryM1 ;
+    skos:prefLabel "Category M"@en, "Categoria M"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/vehicle/vehicle-category> .
+
+:CategoryM1
+    a skos:Concept ;
+    skos:broader :CategoryM ;
+    skos:definition "Categoria di veicoli per il trasporto di persone, con almeno quattro ruote e aventi al massimo otto posti a sedere oltre al sedile del conducente."@it ;
+    skos:definition "Vehicles used for carriage of passengers, comprising not more than eight seats in addition to the driver's."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/vehicle/vehicle-category> ;
+    skos:prefLabel "Category M1"@en, "Categoria M1"@it .
+
+:CategoryN
+    a skos:Concept ;
+    skos:definition "Categoria di veicoli con almeno quattro ruote per il trasporto di merci."@it ;
+    skos:definition "Power-driven vehicles having at least four wheels and used for the carriage of goods."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/vehicle/vehicle-category> ;
+    skos:narrower :CategoryN1 ;
+    skos:prefLabel "Category N"@en, "Categoria N"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/vehicle/vehicle-category> .
+
+:CategoryN1
+    a skos:Concept ;
+    skos:broader :CategoryN ;
+    skos:definition "Categoria di veicoli con almeno quattro ruote per il trasporto di merci e con massa massima non superiore a 3,5t."@it ;
+    skos:definition "Vehicles used for the carriage of goods and having a maximum mass not exceeding 3.5t."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/vehicle/vehicle-category> ;
+    skos:prefLabel "Category N1"@en, "Categoria N1"@it .

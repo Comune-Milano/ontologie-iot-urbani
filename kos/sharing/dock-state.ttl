@@ -1,0 +1,52 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix : <http://w3id.org/urban-iot/kos/sharing/dock-state#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://w3id.org/urban-iot/kos/sharing/dock-state>
+    a skos:ConceptScheme ;
+    dct:title "Sharing Station Dock State"@en ;
+    dct:title "Stato Stallo in Stazione di Sharing"@it ;
+    dct:created "2020-07-31"^^xsd:date ;
+    dct:creator "Ilaria Baroni (Cefriel)", "Irene Celino (Cefriel)", "Mario Scrocca (Cefriel)" ;
+    skos:hasTopConcept :Available, :Damaged, :Inattivo, :Occupied, :Reserved .
+
+:Available
+    a skos:Concept ;
+    skos:definition "Stallo disponibile."@it ;
+    skos:definition "Dock available."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/sharing/dock-state> ;
+    skos:prefLabel "Available"@en, "Disponibile"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/sharing/dock-state> .
+
+:Damaged
+    a skos:Concept ;
+    skos:definition "Stallo danneggiato e fuori uso."@it ;
+    skos:definition "Dock damaged."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/sharing/dock-state> ;
+    skos:prefLabel "Damaged"@en, "Danneggiato"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/sharing/dock-state> .
+
+:Inactive
+    a skos:Concept ;
+    skos:definition "Stallo non attivo."@it ;
+    skos:definition "Dock inactive."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/sharing/dock-state> ;
+    skos:prefLabel "Inactive"@en, "Inattivo"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/sharing/dock-state> .
+
+:Occupied
+    a skos:Concept ;
+    skos:definition "Stallo occupato da un veicolo."@it ;
+    skos:definition "Dock occupied by a vehicle."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/sharing/dock-state> ;
+    skos:prefLabel "Occupied"@en, "Occupato"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/sharing/dock-state> .
+
+:Reserved
+    a skos:Concept ;
+    skos:definition "Stallo prenotato."@it ;
+    skos:definition "Dock reserved."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/sharing/dock-state> ;
+    skos:prefLabel "Reserved"@en, "Prenotato"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/sharing/dock-state> .

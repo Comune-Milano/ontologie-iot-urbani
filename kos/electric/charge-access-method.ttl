@@ -1,0 +1,44 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix : <http://w3id.org/urban-iot/kos/electric/charge-access-method#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://w3id.org/urban-iot/kos/electric/charge-access-method>
+    a skos:ConceptScheme ;
+    dct:title "Electric Mobility Charge Vehicles Access Method"@en ;
+    dct:title "Metodo di accesso per ricarica di veicoli nella mobilità elettrica"@it ;
+    dct:created "2020-07-31"^^xsd:date ;
+    dct:creator "Ilaria Baroni (Cefriel)", "Irene Celino (Cefriel)", "Mario Scrocca (Cefriel)" ;
+    skos:hasTopConcept :AccessByRFID, :DirectPaymentTerminal, :OtherPaymentMethod, :RemotePayment .
+
+:AccessByRFID
+    a skos:Concept ;
+    skos:definition "Accesso al servizio di ricarica tramite RFID."@it ;
+    skos:definition "Access to the charging service by RFID."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/electric/charge-access-method> ;
+    skos:prefLabel "Access By RFID"@en, "Accesso con RFID"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/electric/charge-access-method> .
+
+:DirectPaymentTerminal
+    a skos:Concept ;
+    skos:definition "Accesso al servizio di ricarica tramite pagamento diretto."@it ;
+    skos:definition "Access to the charging service by direct payment."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/electric/charge-access-method> ;
+    skos:prefLabel "Direct Payment Terminal"@en, "Pagamento Diretto"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/electric/charge-access-method> .
+
+:OtherPaymentMethod
+    a skos:Concept ;
+    skos:definition "Accesso al servizio di ricarica tramite altri tipologie di pagamento."@it ;
+    skos:definition "Access to the charging service by other payment methods."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/electric/charge-access-method> ;
+    skos:prefLabel "Other Payment Method"@en, "Altri Tipologie di Pagamento"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/electric/charge-access-method> .
+
+:RemotePayment
+    a skos:Concept ;
+    skos:definition "Accesso al servizio di ricarica tramite pagamento remoto."@it ;
+    skos:definition "Access to the charging service by remote payment."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/electric/charge-access-method> ;
+    skos:prefLabel "Remote Payment"@en, "Pagamento Remoto"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/electric/charge-access-method> .

@@ -1,0 +1,68 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix : <http://w3id.org/urban-iot/kos/electric/EVSE-state#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://w3id.org/urban-iot/kos/electric/EVSE-state>
+    a skos:ConceptScheme ;
+    dct:title "Electric Mobility EVSE State"@en ;
+    dct:title "Stato della colonnina di ricarica per veicoli elettrici"@it ;
+    dct:created "2020-07-31"^^xsd:date ;
+    dct:creator "Ilaria Baroni (Cefriel)", "Irene Celino (Cefriel)", "Mario Scrocca (Cefriel)" ;
+    skos:hasTopConcept :Available, :Booked, :Clogged, :Decommissioned, :Defective, :InCharge, :UnderActivation .
+
+:Available
+    a skos:Concept ;
+    skos:definition "Stato in cui la colonnina di ricarica è disponibile."@it ;
+    skos:definition "State where the Electric Vehicle Supply Equimpment is available."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/electric/EVSE-state> ;
+    skos:prefLabel "Available"@en, "Disponibile"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/electric/EVSE-state> .
+
+:Booked
+    a skos:Concept ;
+    skos:definition "Stato in cui la colonnina di ricarica è prenotata."@it ;
+    skos:definition "State where the Electric Vehicle Supply Equimpment is booked."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/electric/EVSE-state> ;
+    skos:prefLabel "Booked"@en, "Prenotata"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/electric/EVSE-state> .
+
+:Clogged
+    a skos:Concept ;
+    skos:definition "Stato in cui la colonnina di ricarica è ostruita."@it ;
+    skos:definition "State where the Electric Vehicle Supply Equimpment is clogged."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/electric/EVSE-state> ;
+    skos:prefLabel "Clogged"@en, "Ostruita"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/electric/EVSE-state> .
+
+:Decommissioned
+    a skos:Concept ;
+    skos:definition "Stato in cui la colonnina di ricarica è dismessa."@it ;
+    skos:definition "State where the Electric Vehicle Supply Equimpment is decommissioned."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/electric/EVSE-state> ;
+    skos:prefLabel "Decommissioned"@en, "Dismessa"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/electric/EVSE-state> .
+
+:Defective
+    a skos:Concept ;
+    skos:definition "Stato in cui la colonnina di ricarica è difettosa."@it ;
+    skos:definition "State where the Electric Vehicle Supply Equimpment is defective."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/electric/EVSE-state> ;
+    skos:prefLabel "Defective"@en, "Difettosa"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/electric/EVSE-state> .
+
+:InCharge
+    a skos:Concept ;
+    skos:definition "Stato in cui la colonnina di ricarica sta effettuando una ricarica."@it ;
+    skos:definition "State where the Electric Vehicle Supply Equimpment is in charge."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/electric/EVSE-state> ;
+    skos:prefLabel "In Charge"@en, "In Carica"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/electric/EVSE-state> .
+
+:UnderActivation
+    a skos:Concept ;
+    skos:definition "Stato in cui la colonnina di ricarica è in attesa di attivazione."@it ;
+    skos:definition "State where the Electric Vehicle Supply Equimpment is under activation."@en ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/electric/EVSE-state> ;
+    skos:prefLabel "Under Activation"@en, "In Attivazione"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/electric/EVSE-state> .

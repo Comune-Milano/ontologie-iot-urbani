@@ -1,0 +1,41 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix : <http://w3id.org/urban-iot/kos/vehicle/propulsion-kind#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://w3id.org/urban-iot/kos/vehicle/propulsion-kind>
+    a skos:ConceptScheme ;
+    dct:title "Propulsion Kind"@en ;
+    dct:title "Tipologia di Alimentazione"@it ;
+    dct:created "2020-07-31"^^xsd:date ;
+    dct:creator "Ilaria Baroni (Cefriel)", "Irene Celino (Cefriel)", "Mario Scrocca (Cefriel)" ;
+    rdfs:isDefinedBy <https://github.com/openmobilityfoundation/mobility-data-specification/blob/main/agency/README.md#propulsion-type> ;
+    skos:hasTopConcept :Combustion, :Electric, :ElectricAssist, :Human .
+
+:Combustion
+    a skos:Concept ;
+    skos:definition "Propulsion based on a gas engine-powered motor."@en, "Propulsione basata su un motore a combustione."@it ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/vehicle/propulsion-kind> ;
+    skos:prefLabel "Combustion"@en, "Combustione"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/vehicle/propulsion-kind> .
+
+:Electric
+    a skos:Concept ;
+    skos:definition "Propulsion based on a battery-powered motor."@en, "Propulsione basata su un motore a batteria."@it ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/vehicle/propulsion-kind> ;
+    skos:prefLabel "Electric"@en, "Elettrica"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/vehicle/propulsion-kind> .
+
+:ElectricAssist
+    a skos:Concept ;
+    skos:definition "Electric propulsion alongside human propulsion."@en, "Propulsione elettrica complementata da propulsione umana."@it ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/vehicle/propulsion-kind> ;
+    skos:prefLabel "ElectricAssist"@en, "Assistita Elettrica"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/vehicle/propulsion-kind> .
+
+:Human
+    a skos:Concept ;
+    skos:definition "Pedal or foot propulsion."@en, "Propulsione a piedi o a pedale."@it ;
+    skos:inScheme <http://w3id.org/urban-iot/kos/vehicle/propulsion-kind> ;
+    skos:prefLabel "Human"@en, "Umana"@it ;
+    skos:topConceptOf <http://w3id.org/urban-iot/kos/vehicle/propulsion-kind> .
