@@ -12,14 +12,14 @@ L’attività di Ontology Engineering ha seguito la metodologia [Linked Open Ter
 Le ontologie contenute in questa repository sono associate al namespace https://w3id.org/urban-iot
 
 La prima versione dei vocabolari si compone di tre moduli principali:
-	- Modulo *Core*: https://w3id.org/urban-iot/core (preferred prefix _uiot:_)
-	- Modulo *Sharing Mobility*: https://w3id.org/urban-iot/sharing (preferred prefix _uiots:_)
-	- Modulo *Electric Mobility*: https://w3id.org/urban-iot/electric (preferred prefix _uiote:_)
+- Modulo *Core*: https://w3id.org/urban-iot/core (preferred prefix _uiot:_)
+- Modulo *Sharing Mobility*: https://w3id.org/urban-iot/sharing (preferred prefix _uiots:_)
+- Modulo *Electric Mobility*: https://w3id.org/urban-iot/electric (preferred prefix _uiote:_)
 
 Le ontologie sono complementate da una serie di thesauri SKOS referenziati dai diversi moduli.
 
 ## Manutenzione
-Per gestire segnalazioni o proposte di miglioramento relative al vocabolario, consigliamo di seguire le guide fornite in [Gestione Issues](https://github.com/user_name/repo_name/wiki/Gestione-Issues).
+Per gestire segnalazioni o proposte di miglioramento relative al vocabolario, consigliamo di seguire le guide fornite in [Gestione Issues](https://github.com/Comune-Milano/ontologie-iot-urbani/wiki/Gestione-Issue).
 
 ## Esempi
 Alcune [queries](https://github.com/Comune-Milano/ontologie-iot-urbani/blob/master/examples/queries.md) sono dettagliate nella repository per esemplificare l'utilizzo del vocabolario.
