@@ -1,5 +1,6 @@
-# nome_vocabolario
-Questo vocabolario è stato sviluppato nel contesto dell'azione sui dati aperti del progetto X.
+# ontologie-iot-urbani
+
+Ontologie per gli Apparati IoT Urbani. Questo vocabolario è stato sviluppato nel contesto dell'azione sui dati aperti del progetto X.
 
 ## Scopo e campo di applicazione del vocabolario
 Lo scopo di questo vocabolario è motivato da ​​....
