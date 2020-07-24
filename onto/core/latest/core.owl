@@ -1,0 +1,711 @@
+@prefix : <http://www.w3id.org/urban-iot/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix legal: <http://www.w3.org/ns/legal#> .
+@prefix schema: <http://schema.org/> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+
+<http://www.w3id.org/urban-iot/core> a owl:Ontology ;
+	owl:versionIRI <http://www.w3id.org/urban-iot/core/1.0.0> ;
+	<http://purl.org/dc/elements/1.1/contributor> "Contributor"@en ;
+	<http://purl.org/dc/elements/1.1/creator> "Ilaria Baroni (Cefriel)"@en , "Irene Celino (Cefriel)"@en , "Mario Scrocca (Cefriel)"@en ;
+	<http://purl.org/dc/elements/1.1/rights> "Copyright Comune di Milano, 2020"@en ;
+	<http://purl.org/dc/elements/1.1/title> "Urban IoT Ontologies - Core Module"@en ;
+	dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+	vann:preferredNamespacePrefix "uiot" ;
+	vann:preferredNamespaceUri "http://www.w3id.org/urban-iot/core#" ;
+	rdfs:comment "Core module of the suite of ontologies for urban IoT devices."@en ;
+	rdfs:label "Urban IoT Ontologies - Core Module"@en ;
+	owl:versionInfo "v1.0.0"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/contributor
+
+<http://purl.org/dc/elements/1.1/contributor> a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/elements/1.1/creator
+
+<http://purl.org/dc/elements/1.1/creator> a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/elements/1.1/rights
+
+<http://purl.org/dc/elements/1.1/rights> a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/elements/1.1/title
+
+<http://purl.org/dc/elements/1.1/title> a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/license
+
+dct:license a owl:AnnotationProperty .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+
+vann:preferredNamespacePrefix a owl:AnnotationProperty .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+
+vann:preferredNamespaceUri a owl:AnnotationProperty .
+# 
+# http://purl.org/vocab/vann/usageNote
+
+vann:usageNote a owl:AnnotationProperty .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://schema.org/areaServed
+
+schema:areaServed a owl:ObjectProperty ;
+	vann:usageNote "Usata per associare uno schema:Service (Servizio) allo schema:Place (Luogo) che è servito dal servizio e in cui il servizio è accessibile."@it ;
+	rdfs:label "area served"@en , "area servita"@it .
+# 
+# http://schema.org/availableChannel
+
+schema:availableChannel a owl:ObjectProperty ;
+	vann:usageNote "Usata per associare uno schema:Service (Servizio) ad uno schema:ServiceChannel (Canale del Servizio)."@it ;
+	rdfs:label "available channel"@en , "canale disponibile"@it .
+# 
+# http://schema.org/contactPoint
+
+schema:contactPoint a owl:ObjectProperty ;
+	vann:usageNote "Usata per associare una schema:Organization (Organizzazione) ad un suo schema:ContactPoint (Punto di Contatto) disponibile."@it ;
+	rdfs:label "contact point"@en , "punto di contatto"@it .
+# 
+# http://schema.org/dayOfWeek
+
+schema:dayOfWeek a owl:ObjectProperty ;
+	rdfs:label "day of week"@en , "giorno della settimana"@it .
+# 
+# http://schema.org/hoursAvailable
+
+schema:hoursAvailable a owl:ObjectProperty ;
+	vann:usageNote "Associa un Servizio alla Specifica Orari Apertura che descrive gli orari in cui è reso disponibile."@it ;
+	rdfs:label "hours available"@en , "orari disponibili"@it .
+# 
+# http://schema.org/itemOffered
+
+schema:itemOffered a owl:ObjectProperty ;
+	vann:usageNote "Usata per associare una schema:Offer (Offerta) al schema:Service (Servizio) a cui è riferita."@it ;
+	rdfs:label "item offered"@en , "oggetto offerto"@it .
+# 
+# http://schema.org/offers
+
+schema:offers a owl:ObjectProperty ;
+	vann:usageNote "Usata per associare uno schema:Service (Servizio) alle schema:Offer (Offerta) disponibili."@it ;
+	rdfs:label "offers"@en , "offre"@it .
+# 
+# http://schema.org/openingHoursSpecification
+
+schema:openingHoursSpecification a owl:ObjectProperty ;
+	vann:usageNote "Usata per associare uno schema:Place (Luogo) alla sua schema:OpeningHoursSpecification (Specifica Orari di Apertura)."@it ;
+	rdfs:label "opening hours specification"@en , "specifica orari di apertura"@it .
+# 
+# http://schema.org/provider
+
+schema:provider a owl:ObjectProperty ;
+	vann:usageNote "Usata per associare uno schema:Service (Servizio) alla schema:Organization (Organizzazione) che lo eroga."@it ;
+	rdfs:label "erogatore"@it , "provider"@en .
+# 
+# http://schema.org/servicePhone
+
+schema:servicePhone a owl:ObjectProperty ;
+	vann:usageNote "Usata per associare uno schema:ServiceChannel (Canale del Servizio) ad uno schema:ContactPoint (Punto di Contatto)."@it ;
+	rdfs:label "contatto del servizio"@it , "service phone"@en .
+# 
+# http://www.w3.org/2006/time#timeZone
+
+time:timeZone a owl:ObjectProperty ;
+	rdfs:label "fuso orario"@it , "time zone"@en .
+# 
+# http://www.w3.org/ns/locn#address
+
+locn:address a owl:ObjectProperty ;
+	vann:usageNote "Usata per associare una locn:Location (Localizzazione) o una schema:Persona (Person) al suo indirizzo (locn:Address)."@it ;
+	rdfs:label "address"@en , "indirizzo"@it .
+# 
+# http://www.w3.org/ns/locn#geometry
+
+locn:geometry a owl:ObjectProperty ;
+	vann:usageNote "Associa una dcterms:Location (Localizzazione) alla locn:Geometry (Geometria) che la descrive."@it ;
+	rdfs:label "geometria"@it , "geometry"@en .
+# 
+# http://www.w3.org/ns/locn#location
+
+locn:location a owl:ObjectProperty ;
+	vann:usageNote "Usata per associare uno schema:Place (Luogo) alla locn:Location che descrive la sua localizzazione."@it ;
+	rdfs:label "localizzazione"@it , "location"@en .
+# 
+# http://www.w3.org/ns/locn#registeredAddress
+
+locn:registeredAddress a owl:ObjectProperty ;
+	vann:usageNote "Usata per associare una legal:LegalEntity (Entità Legale) al locn:Address (Indirizzo) della sua sede legale."@it ;
+	rdfs:label "registered address"@en , "sede legale"@it .
+# 
+# http://www.w3.org/ns/sosa/hasResult
+
+sosa:hasResult a owl:ObjectProperty ;
+	rdfs:label "ha risultato"@it , "has result"@en .
+# 
+# http://www.w3.org/ns/sosa/madeBySensor
+
+sosa:madeBySensor a owl:ObjectProperty ;
+	rdfs:label "eseguita dal sensore"@it , "made by sensor"@en .
+# 
+# http://www.w3.org/ns/sosa/madeObservation
+
+sosa:madeObservation a owl:ObjectProperty ;
+	rdfs:label "ha eseguito campionamento"@it , "made observation"@en .
+# 
+# http://www.w3.org/ns/sosa/observedProperty
+
+sosa:observedProperty a owl:ObjectProperty ;
+	rdfs:label "observed property"@en , "proprietà campionata"@it .
+# 
+# http://www.w3.org/ns/sosa/observes
+
+sosa:observes a owl:ObjectProperty ;
+	rdfs:label "observes"@en , "osserva"@it .
+# 
+# http://www.w3id.org/urban-iot/core#associatedBusiness
+
+:associatedBusiness a owl:ObjectProperty ;
+	rdfs:domain :UsageSession ;
+	rdfs:range :ServiceBusinessUser ;
+	rdfs:comment "Associa una Sessione di Utilizzo all'Utente Business del Servizio che la abilita."@it , "Associates a Usage Session with the Service Business User enabling it."@en ;
+	rdfs:label "associated business"@en , "business associato"@it .
+# 
+# http://www.w3id.org/urban-iot/core#containsObservation
+
+:containsObservation a owl:ObjectProperty ;
+	owl:inverseOf :observationIn ;
+	rdfs:domain :SensorRecord ;
+	rdfs:range sosa:Observation ;
+	rdfs:comment "Associa un Record del Sensore ad un Campionamento contenuto nel record."@it , "Associates a Sensor Record with a Observation contained in it."@en ;
+	rdfs:label "contains observation"@en , "contiene campionamento"@it .
+# 
+# http://www.w3id.org/urban-iot/core#enablesSession
+
+:enablesSession a owl:ObjectProperty ;
+	owl:inverseOf :sessionEnabledBy ;
+	rdfs:domain schema:Service ;
+	rdfs:range :UsageSession ;
+	rdfs:comment "Associa un Servizio ad una Sessione di Utilizzo abilitata dal Servizio."@it , "Associates a Service with a Usage Session enabled by the service."@en ;
+	rdfs:label "abilita sessione"@it , "enables session"@en .
+# 
+# http://www.w3id.org/urban-iot/core#hasEnabledUser
+
+:hasEnabledUser a owl:ObjectProperty ;
+	owl:inverseOf :userEnabledBy ;
+	rdfs:domain :ServiceBusinessUser ;
+	rdfs:range :ServicePrivateUser ;
+	rdfs:comment "Associa un Utente Business del Servizio ad un Utente Privato abilitato dall'utenza business."@it , "Associates a Service Business User with the Service Private User enabled by that business user."@en ;
+	rdfs:label "ha utente abilitato"@it , "has enabled user"@en .
+# 
+# http://www.w3id.org/urban-iot/core#hasUser
+
+:hasUser a owl:ObjectProperty ;
+	owl:inverseOf :userOfService ;
+	rdfs:domain schema:Service ;
+	rdfs:range :ServiceUser ;
+	rdfs:comment "Associa un Servizio ad un Utente del Servizio."@it , "Associates a Service to a Service User."@en ;
+	rdfs:label "ha utente"@it , "has user"@en .
+# 
+# http://www.w3id.org/urban-iot/core#includedInMobilityStation
+
+:includedInMobilityStation a owl:ObjectProperty ;
+	rdfs:domain :MobilityStation ;
+	rdfs:range :MobilityStation ;
+	rdfs:comment "Associa una Stazione di Mobilità ad una Stazione di Mobilità che la include."@it , "Associates a Mobility Station with another Mobility Station including it."@en ;
+	rdfs:label "included in mobility station"@en , "inclusa nella stazione di mobilità"@it .
+# 
+# http://www.w3id.org/urban-iot/core#latestRecord
+
+:latestRecord a owl:ObjectProperty ;
+	rdfs:subPropertyOf :registersRecord ;
+	rdfs:domain sosa:Sensor ;
+	rdfs:range :SensorRecord ;
+	rdfs:comment "Associa un Sensore all'ultimo Record del Sensore registrato."@it , "Associates a Sensor with the latest registered Sensor Record."@en ;
+	rdfs:label "latest record"@en , "ultimo record"@it .
+# 
+# http://www.w3id.org/urban-iot/core#madeAvailableBy
+
+:madeAvailableBy a owl:ObjectProperty ;
+	owl:inverseOf :makesAvailable ;
+	rdfs:domain :ServiceResource ;
+	rdfs:range schema:Service ;
+	rdfs:comment "Associa una Risorsa del Servizio al Servizio che la rende disponibile."@it , "Associates a Service Resource with the Service making it available."@en ;
+	rdfs:label "made available by"@en , "resa disponibile da"@it .
+# 
+# http://www.w3id.org/urban-iot/core#makesAvailable
+
+:makesAvailable a owl:ObjectProperty ;
+	rdfs:domain schema:Service ;
+	rdfs:range :ServiceResource ;
+	rdfs:comment "Associa un Servizio ad una risorsa che rende disponibile."@it , "Associates a Service with the Service Resource that makes available."@en ;
+	rdfs:label "makes available"@en , "rende disponibile"@it .
+# 
+# http://www.w3id.org/urban-iot/core#observationIn
+
+:observationIn a owl:ObjectProperty ;
+	rdfs:domain sosa:Observation ;
+	rdfs:range :SensorRecord ;
+	rdfs:comment "Associa un Campionamento al Record del Sensore di cui fa parte."@it , "Associates an Observation with the Sensor Record containing it."@en ;
+	rdfs:label "campionamento in"@it , "observation in"@en .
+# 
+# http://www.w3id.org/urban-iot/core#offerAssociated
+
+:offerAssociated a owl:ObjectProperty ;
+	rdfs:domain :UsageSession ;
+	rdfs:range schema:Offer ;
+	rdfs:comment "Associa una Sessione di Utilizzo alla tariffa (Offerta) applicata alla specifica sessione."@it , "Associates a Usage Session with the tariff (Offer) applied to the specific session."@en ;
+	rdfs:label "offer associated"@en , "offerta associata"@it .
+# 
+# http://www.w3id.org/urban-iot/core#performsSession
+
+:performsSession a owl:ObjectProperty ;
+	owl:inverseOf :sessionPerformedBy ;
+	rdfs:domain :ServicePrivateUser ;
+	rdfs:range :UsageSession ;
+	rdfs:comment "Associa un Utente Privato del Servizio ad una Sessione di Utilizzo effettuata."@it , "Associates a Service Private User with a Usage Session performed."@en ;
+	rdfs:label "effettua sessione"@it , "performs session"@en .
+# 
+# http://www.w3id.org/urban-iot/core#recordRegisteredBy
+
+:recordRegisteredBy a owl:ObjectProperty ;
+	owl:inverseOf :registersRecord ;
+	rdfs:domain :SensorRecord ;
+	rdfs:range sosa:Sensor ;
+	rdfs:comment "Associa un Record del Sensore al Sensore che lo ha registrato."@it , "Associates a Sensor Record with the Sensor registering it."@en ;
+	rdfs:label "record registered by"@en , "record registrato da"@it .
+# 
+# http://www.w3id.org/urban-iot/core#registeredTo
+
+:registeredTo a owl:ObjectProperty ;
+	rdfs:domain :ServiceUser ;
+	rdfs:range schema:Service ;
+	rdfs:comment "Associa un Utente al Servizio a cui è registrato."@it , "Associates a Service User to the Service to which the user is registered to."@en ;
+	rdfs:label "registered to"@en , "registrato a"@it .
+# 
+# http://www.w3id.org/urban-iot/core#registersRecord
+
+:registersRecord a owl:ObjectProperty ;
+	rdfs:domain sosa:Sensor ;
+	rdfs:range :SensorRecord ;
+	rdfs:comment "Associa un Sensore ad un Record del Sensore."@it , "Associates a Sensor with a registered Sensor Record."@en ;
+	rdfs:label "registers record"@en , "registra record"@it .
+# 
+# http://www.w3id.org/urban-iot/core#resourceUsedIn
+
+:resourceUsedIn a owl:ObjectProperty ;
+	owl:inverseOf :usesResource ;
+	rdfs:domain :ServiceResource ;
+	rdfs:range :UsageSession ;
+	rdfs:comment "Associa una Risorsa del Servizio ad una Sessione di Utilizzo in cui è stata utilizzata."@it , "Associates a Service Resource with a Usage Session using it."@en ;
+	rdfs:label "resource used in"@en , "risorsa usata in"@it .
+# 
+# http://www.w3id.org/urban-iot/core#sessionEnabledBy
+
+:sessionEnabledBy a owl:ObjectProperty ;
+	rdfs:domain :UsageSession ;
+	rdfs:range schema:Service ;
+	rdfs:comment "Associa una Sessione di Utilizzo al Servizio che la abilita."@it , "Associates a Usage Session with the Service enabling it."@en ;
+	rdfs:label "session enabled by"@en , "sessione abilitata da"@it .
+# 
+# http://www.w3id.org/urban-iot/core#sessionPerformedBy
+
+:sessionPerformedBy a owl:ObjectProperty ;
+	rdfs:domain :UsageSession ;
+	rdfs:range :ServicePrivateUser ;
+	rdfs:comment "Associa una Sessione di Utilizzo all'Utente Privato del Servizio che la effettua."@it , "Associates a Usage Session with the Service Private User performing it."@en ;
+	rdfs:label "session performed by"@en , "sessione effettuata da"@it .
+# 
+# http://www.w3id.org/urban-iot/core#userEnabledBy
+
+:userEnabledBy a owl:ObjectProperty ;
+	rdfs:domain :ServicePrivateUser ;
+	rdfs:range :ServiceBusinessUser ;
+	rdfs:comment "Associa un Utente Privato del Servizio all'Utente Business che lo abilita."@it , "Associates a Service Private User to the Service Business User enabling it."@en ;
+	rdfs:label "user enabled by"@en , "utente abilitato da"@it .
+# 
+# http://www.w3id.org/urban-iot/core#userOfService
+
+:userOfService a owl:ObjectProperty ;
+	rdfs:domain :ServiceUser ;
+	rdfs:range schema:Service ;
+	rdfs:comment "Associa un Utente del Servizio al Servizio che utilizza."@it , "Associates a Service User to the Service used."@en ;
+	rdfs:label "user of service"@en , "utente del servizio"@it .
+# 
+# http://www.w3id.org/urban-iot/core#usesResource
+
+:usesResource a owl:ObjectProperty ;
+	rdfs:domain :UsageSession ;
+	rdfs:range :ServiceResource ;
+	rdfs:comment "Associa una Sessione di Utilizzo alla Risorsa del Servizio utilizzata."@it , "Associates a Usage Session with the Service Resource used in the session."@en ;
+	rdfs:label "uses resource"@en , "utilizza risorsa"@it .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/identifier
+
+dct:identifier a owl:DatatypeProperty ;
+	vann:usageNote "Usata per associare un identificativo univoco ad una instanza."@it ;
+	rdfs:label "identificativo"@it , "identifier"@en .
+# 
+# http://schema.org/alternateName
+
+schema:alternateName a owl:DatatypeProperty ;
+	rdfs:label "alternate name"@en , "nome alternativo"@it .
+# 
+# http://schema.org/availableLanguage
+
+schema:availableLanguage a owl:DatatypeProperty ;
+	rdfs:label "available language"@en , "lingua disponibile"@it .
+# 
+# http://schema.org/birthDate
+
+schema:birthDate a owl:DatatypeProperty ;
+	rdfs:label "birth date"@en , "data di nascita"@it .
+# 
+# http://schema.org/closes
+
+schema:closes a owl:DatatypeProperty ;
+	rdfs:label "chiude"@it , "closes"@en .
+# 
+# http://schema.org/description
+
+schema:description a owl:DatatypeProperty ;
+	rdfs:label "description"@en , "descrizione"@it .
+# 
+# http://schema.org/duration
+
+schema:duration a owl:DatatypeProperty ;
+	vann:usageNote "Literal consigliato xsd:duration."@it ;
+	rdfs:label "durata"@it , "duration"@en .
+# 
+# http://schema.org/email
+
+schema:email a owl:DatatypeProperty ;
+	rdfs:label "email"@en , "email"@it .
+# 
+# http://schema.org/endDate
+
+schema:endDate a owl:DatatypeProperty ;
+	rdfs:label "data di fine"@it , "end date"@en .
+# 
+# http://schema.org/gender
+
+schema:gender a owl:DatatypeProperty ;
+	vann:usageNote "Literal datatype xsd:string."@it ;
+	rdfs:label "gender"@en , "genere"@it .
+# 
+# http://schema.org/itemCondition
+
+schema:itemCondition a owl:DatatypeProperty ;
+	vann:usageNote "Usata per associare una schema:Offer (Offerta) ad una descrizione testuale (xsd:string) dei criteri di applicazione, calcolo del costo, periodo di validità e informazioni addizionali."@it ;
+	rdfs:label "condizioni dell'oggetto"@it , "item condition"@en .
+# 
+# http://schema.org/legalName
+
+schema:legalName a owl:DatatypeProperty ;
+	rdfs:label "legal name"@en , "nome legale"@it .
+# 
+# http://schema.org/name
+
+schema:name a owl:DatatypeProperty ;
+	rdfs:label "name"@en , "nome"@it .
+# 
+# http://schema.org/opens
+
+schema:opens a owl:DatatypeProperty ;
+	rdfs:label "apre"@it , "opens"@en .
+# 
+# http://schema.org/price
+
+schema:price a owl:DatatypeProperty ;
+	rdfs:label "prezzo"@it , "price"@en .
+# 
+# http://schema.org/priceCurrency
+
+schema:priceCurrency a owl:DatatypeProperty ;
+	vann:usageNote "Valori secondo lo standard ISO 4217 (es. \"EUR\" per l'Euro)."@it ;
+	rdfs:label "price currency"@en , "valuta del prezzo"@it .
+# 
+# http://schema.org/serviceUrl
+
+schema:serviceUrl a owl:DatatypeProperty ;
+	vann:usageNote "Usato per associare uno schema:ServiceChannel (Canale del Servizio) ad un url (xsd:anyURI)."@it ;
+	rdfs:label "service url"@en , "url del servizio"@it .
+# 
+# http://schema.org/startDate
+
+schema:startDate a owl:DatatypeProperty ;
+	vann:usageNote "Literal datatype xsd:dateTime."@it ;
+	rdfs:label "data di inizio"@it , "start date"@en .
+# 
+# http://schema.org/telephone
+
+schema:telephone a owl:DatatypeProperty ;
+	rdfs:comment "Literal datatype xsd:string."@en ;
+	rdfs:label "telefono"@it , "telephone"@en .
+# 
+# http://schema.org/url
+
+schema:url a owl:DatatypeProperty ;
+	rdfs:comment "Literal datatype xsd:anyURI."@en ;
+	rdfs:label "url"@en , "url"@it .
+# 
+# http://www.w3.org/ns/locn#fullAddress
+
+locn:fullAddress a owl:DatatypeProperty ;
+	rdfs:label "full address"@en , "indirizzo completo"@it .
+# 
+# http://www.w3.org/ns/locn#postCode
+
+locn:postCode a owl:DatatypeProperty ;
+	rdfs:label "codice postale"@it , "post code"@en .
+# 
+# http://www.w3.org/ns/locn#postName
+
+locn:postName a owl:DatatypeProperty ;
+	rdfs:label "divisione postale"@it , "post name"@en .
+# 
+# http://www.w3.org/ns/sosa/hasSimpleResult
+
+sosa:hasSimpleResult a owl:DatatypeProperty ;
+	rdfs:label "ha valore semplice"@it , "has simple result"@en .
+# 
+# http://www.w3id.org/urban-iot/core#birthYear
+
+:birthYear a owl:DatatypeProperty ;
+	rdfs:subPropertyOf schema:birthDate ;
+	rdfs:domain schema:Person ;
+	rdfs:range xsd:int ;
+	rdfs:comment "Associa una persona al suo anno di nascita."@it , "Associates a person with her/his birth year."@it ;
+	rdfs:label "anno di nascita"@it , "birth year"@en .
+# 
+# http://www.w3id.org/urban-iot/core#deregistrationDate
+
+:deregistrationDate a owl:DatatypeProperty ;
+	rdfs:domain :ServiceUser ;
+	rdfs:range xsd:dateTime ;
+	rdfs:comment "Data in cui l'Utente del Servizio ha chiesto la cancellazione della registrazione dal Servizio."@it , "Date in which a Service User deregistered from a Service."@en ;
+	rdfs:label "data di disdetta"@it , "deregistration date"@en .
+# 
+# http://www.w3id.org/urban-iot/core#fixedAmount
+
+:fixedAmount a owl:DatatypeProperty ;
+	rdfs:subPropertyOf schema:price ;
+	rdfs:range xsd:double ;
+	rdfs:comment "Associates an Offer with a fixed amount required from it."@en , "Indica un costo fisso dell'Offerta."@it ;
+	rdfs:label "costo fisso"@it , "fixed amount"@en .
+# 
+# http://www.w3id.org/urban-iot/core#recordTimestamp
+
+:recordTimestamp a owl:DatatypeProperty ;
+	rdfs:domain :SensorRecord ;
+	rdfs:range xsd:dateTime ;
+	rdfs:comment "Timestamp associated with a Sensor Record."@en , "Timestamp associato ad un Record del Sensore."@it ;
+	rdfs:label "record timestamp"@en , "timestamp del record"@it .
+# 
+# http://www.w3id.org/urban-iot/core#registrationDate
+
+:registrationDate a owl:DatatypeProperty ;
+	rdfs:domain :ServiceUser ;
+	rdfs:range xsd:dateTime ;
+	rdfs:comment "Data di registrazione dell'Utente del Servizio al Servizio."@it , "Date in which a Service User registered to the Service."@en ;
+	rdfs:label "data di registrazione"@it , "registration date"@en .
+# 
+# http://www.w3id.org/urban-iot/core#reservationUsed
+
+:reservationUsed a owl:DatatypeProperty ;
+	rdfs:domain :UsageSession ;
+	rdfs:range xsd:boolean ;
+	rdfs:comment "Indica se un meccanismo di prenotazione è stato utilizzato per una Sessione di Utilizzo."@it , "Indicates whether a reservation mechanism has been used for a Usage Session."@en ;
+	rdfs:label "prenotazione utilizzata"@it , "reservation used"@en .
+# 
+# http://www.w3id.org/urban-iot/core#serialNumber
+
+:serialNumber a owl:DatatypeProperty ;
+	rdfs:domain <http://www.w3id.org/urban-iot/core#ServiceResource> .
+
+<http://www.w3id.org/urban-iot/core#ServiceResource> a owl:Class .
+
+:serialNumber rdfs:range xsd:string ;
+	rdfs:comment "Indication of the serial number."@en , "Indicazione del numero seriale."@it ;
+	rdfs:label "numero seriale"@it , "serial number"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/Location
+
+dct:Location a owl:Class ;
+	vann:usageNote "Usata per descrivere la localizzazione di uno schema:Place (Luogo)."@it ;
+	rdfs:label "Localizzazione"@it , "Location"@en .
+# 
+# http://schema.org/ContactPoint
+
+schema:ContactPoint a owl:Class ;
+	rdfs:label "Contact Point"@en , "Punto di Contatto"@it .
+# 
+# http://schema.org/DayOfWeek
+
+schema:DayOfWeek a owl:Class ;
+	vann:usageNote "Istanze della classe usate per definire una schema:OpeningHoursSpecification (Specifica Orari di Apertura)."@it ;
+	rdfs:label "Day of Week"@en , "Giorno della Settimana"@it .
+# 
+# http://schema.org/Event
+
+schema:Event a owl:Class ;
+	rdfs:label "Event"@en , "Evento"@it .
+# 
+# http://schema.org/Offer
+
+schema:Offer a owl:Class ;
+	rdfs:label "Offer"@en , "Offerta"@it .
+# 
+# http://schema.org/OpeningHoursSpecification
+
+schema:OpeningHoursSpecification a owl:Class ;
+	rdfs:label "Opening Hours Specification"@en , "Specifica Orari di Apertura"@it .
+# 
+# http://schema.org/Organization
+
+schema:Organization a owl:Class ;
+	rdfs:label "Organization"@en , "Organizzazione"@it .
+# 
+# http://schema.org/Person
+
+schema:Person a owl:Class ;
+	rdfs:label "Person"@en , "Persona"@it .
+# 
+# http://schema.org/Place
+
+schema:Place a owl:Class ;
+	rdfs:label "Luogo"@it , "Place"@en .
+# 
+# http://schema.org/Service
+
+schema:Service a owl:Class ;
+	rdfs:label "Service"@en , "Servizio"@it .
+# 
+# http://schema.org/ServiceChannel
+
+schema:ServiceChannel a owl:Class ;
+	rdfs:label "Canale del Servizio"@it , "Service Channel"@en .
+# 
+# http://www.w3.org/ns/legal#LegalEntity
+
+legal:LegalEntity a owl:Class ;
+	rdfs:label "Entità Legale"@it , "Legal Entity"@en .
+# 
+# http://www.w3.org/ns/locn#Address
+
+locn:Address a owl:Class ;
+	vann:usageNote "Usato per definire l'indirizzo associato ad una dcterms:Location, ad una schema:Person (Persona) o la sede legale di una legal:LegalEntity (Entità Legale). Nel caso di luoghi in Italia può essere utilizzato il profilo italiano (https://w3id.org/italia/onto/CLV/) allineato con locn:Address."@it ;
+	rdfs:label "Address"@en , "Indirizzo"@it .
+# 
+# http://www.w3.org/ns/locn#Geometry
+
+locn:Geometry a owl:Class ;
+	vann:usageNote "E' consigliato di utilizzare la GeoSPARQL specification (http://www.w3.org/2011/02/GeoSPARQL.pdf) per l'encoding."@it ;
+	rdfs:label "Geometria"@it , "Geometry"@en .
+# 
+# http://www.w3.org/ns/sosa/ObservableProperty
+
+sosa:ObservableProperty a owl:Class ;
+	rdfs:label "Observable Property"@en , "Proprietà Campionabile"@it .
+# 
+# http://www.w3.org/ns/sosa/Observation
+
+sosa:Observation a owl:Class ;
+	rdfs:label "Campionamento"@it , "Observation"@en .
+# 
+# http://www.w3.org/ns/sosa/Sensor
+
+sosa:Sensor a owl:Class ;
+	rdfs:label "Sensor"@en , "Sensore"@it .
+# 
+# http://www.w3id.org/urban-iot/core#MobilityStation
+
+:MobilityStation a owl:Class ;
+	rdfs:subClassOf schema:Place ;
+	rdfs:comment "A Place characterized by mobility services. A Mobility Station can include more specific Mobility Station (Sharing Station, Charging Station, ecc.)."@en , "Un Luogo caratterizzato dalla presenza di servizi di mobilità. Può includere altre Stazioni di Mobilità dedicate a specifici servizi per la mobilità (Stazioni di Sharing, Stazioni di Ricarica, etc.)."@it ;
+	rdfs:label "Mobility Station"@en , "Stazione di Mobilità"@it .
+# 
+# http://www.w3id.org/urban-iot/core#SensorRecord
+
+:SensorRecord a owl:Class ;
+	rdfs:comment "A Sensor Record aggregates a set of observations associated to the same timestamp and the same sensor."@en , "Un Record del Sensore aggrega un insieme di campionamenti associati allo stesso timestamp e allo stesso sensore."@it ;
+	rdfs:label "Record del Sensore"@it , "Sensor Record"@en .
+# 
+# http://www.w3id.org/urban-iot/core#ServiceBusinessUser
+
+:ServiceBusinessUser a owl:Class ;
+	rdfs:subClassOf legal:LegalEntity , :ServiceUser ;
+	rdfs:comment "Entità Legale con contratto business per accedere al servizio. Un Utente Business non può utilizzare direttamente il servizio ma può abilitare un Utente Privato del Servizio a farlo."@it , "Legal Entity with a business contract for the service. A Service Business User can not directly use the service but can enable a Service Private User to do so."@en ;
+	rdfs:label "Service Business User"@en , "Utente Business del Servizio"@it .
+# 
+# http://www.w3id.org/urban-iot/core#ServicePrivateUser
+
+:ServicePrivateUser a owl:Class ;
+	rdfs:subClassOf schema:Person , :ServiceUser ;
+	rdfs:comment "A natural person using a service."@en , "Una persona fisica utilizzatore di un servizio."@it ;
+	rdfs:label "Service Private User"@en , "Utente Privato del Servizio"@it .
+# 
+# http://www.w3id.org/urban-iot/core#ServiceResource
+
+:ServiceResource a owl:Class ;
+	rdfs:comment "A Resource made available by a Service to be used in a Usage Session."@en , "Risorsa messa a disposizione da un Servizio che può essere utilizzata in una Sessione di Utilizzo."@it ;
+	rdfs:label "Risorsa del Servizio"@it , "Service Resource"@en .
+# 
+# http://www.w3id.org/urban-iot/core#ServiceUser
+
+:ServiceUser a owl:Class ;
+	rdfs:comment "A User using a Service."@en , "Utente utilizzatore di un Servizio."@it ;
+	rdfs:label "Service User"@en , "Utente del Servizio"@it .
+# 
+# http://www.w3id.org/urban-iot/core#UsageSession
+
+:UsageSession a owl:Class ;
+	rdfs:subClassOf schema:Event ;
+	rdfs:comment "A Usage Session is an Event associated to a Service and a Service Resource representing a usage of the resource made available by the Service."@en , "Una Sessione di Utilizzo è un Evento associato ad un Servizio e ad una Risorsa del Servizio che rappresenta un utilizzo della risorsa resa disponibile dal Servizio."@it ;
+	rdfs:label "Sessione di Utilizzo"@it , "Usage Session"@en .
+# 
+# Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

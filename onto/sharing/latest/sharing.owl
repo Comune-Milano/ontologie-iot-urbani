@@ -1,0 +1,1135 @@
+@prefix : <http://www.w3id.org/urban-iot/sharing#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix uiot: <http://www.w3id.org/urban-iot/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix legal: <http://www.w3.org/ns/legal#> .
+@prefix uiots: <http://www.w3id.org/urban-iot/sharing#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh-kos: <http://w3id.org/urban-iot/kos/sharing/> .
+@prefix vh-kos: <http://w3id.org/urban-iot/kos/vehicle/> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+@base <http://www.w3id.org/urban-iot/sharing> .
+
+<http://www.w3id.org/urban-iot/sharing> rdf:type owl:Ontology ;
+                                         owl:versionIRI <http://www.w3id.org/urban-iot/sharing/1.0.0> ;
+                                         owl:imports <http://www.w3id.org/urban-iot/core/1.0.0> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3id.org/urban-iot/sharing#currentSharingStation
+uiots:currentSharingStation rdf:type owl:ObjectProperty ;
+                            rdfs:domain uiots:SharingMobilityVehicleRecord ;
+                            rdfs:range uiots:SharingStation ;
+                            rdfs:comment "Proprietà che indica la Sharing Station in cui si trova attualmente il veicolo."@it ;
+                            rdfs:label "current sharing station"@en ,
+                                       "stazione di sharing attuale"@it .
+
+
+###  http://www.w3id.org/urban-iot/sharing#dockState
+uiots:dockState rdf:type owl:ObjectProperty ;
+                rdfs:domain uiots:DockRecord ;
+                rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                    owl:hasValue sh-kos:dock-state
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
+                rdfs:comment "Proprietà che indica lo stato in cui si trova attualmente lo stallo."@it ;
+                rdfs:label "dock state"@en ,
+                           "stato dello stallo"@it .
+
+
+###  http://www.w3id.org/urban-iot/sharing#enablesTrip
+uiots:enablesTrip rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf uiot:enablesSession ;
+                  owl:inverseOf uiots:tripEnabledBy ;
+                  rdfs:domain uiots:SharingMobilityService ;
+                  rdfs:range uiots:SharingMobilityTrip ;
+                  rdfs:comment "Associa un Servizio di Sharing Mobility ad un Noleggio abilitato dal servizio."@it ;
+                  rdfs:label "abilita noleggio"@it ,
+                             "enables trip"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#hasCarSupply
+uiots:hasCarSupply rdf:type owl:ObjectProperty ;
+                   rdfs:domain uiots:Car ;
+                   rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                       owl:hasValue vh-kos:car-supply
+                                                     ]
+                                                   ) ;
+                                rdf:type owl:Class
+                              ] ;
+                   rdfs:comment "Associa una Autovettura alla sua tipologia di alimentazione."@it ;
+                   rdfs:label "ha alimentazione autovettura"@it ,
+                              "has car supply"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#hasContractualOperationArea
+uiots:hasContractualOperationArea rdf:type owl:ObjectProperty ;
+                                  rdfs:domain schema:Service ;
+                                  rdfs:range uiots:ContractualOperationArea ;
+                                  rdfs:comment "Proprietà che identifica l'area operativa di un Servizio."@it ;
+                                  rdfs:label "ha confini di esercizio minima"@it ,
+                                             "has contractual operation area"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#hasDock
+uiots:hasDock rdf:type owl:ObjectProperty ;
+              owl:inverseOf uiots:isDockOf ;
+              rdfs:domain uiots:PhysicalSharingStation ;
+              rdfs:range uiots:Dock ;
+              rdfs:comment "Associa una Stazione di Sharing ad uno Stallo contenuto nella stazione."@it ;
+              rdfs:label "ha stallo"@it ,
+                         "has dock"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#hasDockAbilitated
+uiots:hasDockAbilitated rdf:type owl:ObjectProperty ;
+                        rdfs:domain uiots:SharingMobilityVehicle ;
+                        rdfs:range uiots:DockKind ;
+                        rdfs:comment "Associa un Veicolo di Sharing Mobility alle tipologie di stallo supportate dal veicolo."@it ;
+                        rdfs:label "ha tipologia di stallo abilitato"@it ,
+                                   "has dock kind abilitated"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#hasDockKind
+uiots:hasDockKind rdf:type owl:ObjectProperty ;
+                  rdfs:domain uiots:Dock ;
+                  rdfs:range uiots:DockKind ;
+                  rdfs:comment "Associa uno Stallo alla sua tipologia."@it ;
+                  rdfs:label "ha tipologia di stallo"@it ,
+                             "has dock kind"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#hasEmissionStandard
+uiots:hasEmissionStandard rdf:type owl:ObjectProperty ;
+                          rdfs:domain schema:Vehicle ;
+                          rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                              owl:hasValue vh-kos:european-emission-standard
+                                                            ]
+                                                          ) ;
+                                       rdf:type owl:Class
+                                     ] ;
+                          rdfs:comment "Associa un Veicolo al suo livello di emissioni inquinanti secondo gli standard definiti,"@it ;
+                          rdfs:label "ha standard emissioni"@it ,
+                                     "has emission standard"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#hasEndingStation
+uiots:hasEndingStation rdf:type owl:ObjectProperty ;
+                       rdfs:domain uiots:SharingMobilityTrip ;
+                       rdfs:range uiots:SharingStation ;
+                       rdfs:comment "Associa un Noleggio alla Stazione di Sharing in cui viene terminato."@it ;
+                       rdfs:label "ha stazione di fine"@it ,
+                                  "has ending station"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#hasForbiddenDropOffArea
+uiots:hasForbiddenDropOffArea rdf:type owl:ObjectProperty ;
+                              rdfs:domain uiots:SharingMobilityService ;
+                              rdfs:range uiots:ForbiddenDropOffArea ;
+                              rdfs:comment "Proprietà che identifica l'area di rilascio vietato di un Servizio di Sharing Mobility."@it ;
+                              rdfs:label "ha area rilascio vietato"@it ,
+                                         "has forbidden drop-off area"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#hasOperationArea
+uiots:hasOperationArea rdf:type owl:ObjectProperty ;
+                       rdfs:domain schema:Service ;
+                       rdfs:range uiots:OperationArea ;
+                       rdfs:comment "Proprietà che identifica l'area operativa di un Servizio."@it ;
+                       rdfs:label "ha area operativa"@it ,
+                                  "has operation area"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#hasPickUpDropOffArea
+uiots:hasPickUpDropOffArea rdf:type owl:ObjectProperty ;
+                           rdfs:domain uiots:SharingMobilityService ;
+                           rdfs:range uiots:PickUpDropOffArea ;
+                           rdfs:comment "Proprietà che identifica l'area di prelievo/rilascio di un Servizio di Sharing Mobility."@it ;
+                           rdfs:label "ha area di prelievo rilascio"@it ,
+                                      "has pick-up drop-off area"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#hasPreferredDropOffArea
+uiots:hasPreferredDropOffArea rdf:type owl:ObjectProperty ;
+                              rdfs:domain uiots:SharingMobilityService ;
+                              rdfs:range uiots:PreferredDropOffArea ;
+                              rdfs:comment "Proprietà che identifica l'area preferenziale di rilascio di un Servizio di Sharing Mobility."@it ;
+                              rdfs:label "ha area preferenziale rilascio"@it ,
+                                         "has preferred drop-off area"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#hasPreferredPickUpArea
+uiots:hasPreferredPickUpArea rdf:type owl:ObjectProperty ;
+                             rdfs:domain uiots:SharingMobilityService ;
+                             rdfs:range uiots:PreferredPickUpArea ;
+                             rdfs:comment "Proprietà che identifica l'area preferenziale di prelievo di un Servizio di Sharing Mobility."@it ;
+                             rdfs:label "ha area preferenziale prelievo"@it ,
+                                        "has preferred pick-up area"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#hasPropulsionKind
+uiots:hasPropulsionKind rdf:type owl:ObjectProperty ;
+                        rdfs:domain schema:Vehicle ;
+                        rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                            owl:hasValue vh-kos:propulsion-kind
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+                        rdfs:comment "Associa un Veicolo alla tipologia di propulsione che utilizza."@it ;
+                        rdfs:label "ha tipologia di propulsione"@it ,
+                                   "has propulsion kind"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#hasSharingMobilityCategory
+uiots:hasSharingMobilityCategory rdf:type owl:ObjectProperty ;
+                                 rdfs:range uiots:SharingMobilityCategory ;
+                                 vann:usageNote "Usato per specificare la categoria di un Servizio di Sharing  Mobility o di una Stazione di Sharing."@it ;
+                                 rdfs:comment "Associa una specifica categoria di Sharing Mobility."@it ;
+                                 rdfs:label "ha categoria sharing mobility"@it ,
+                                            "has sharing mobility category"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#hasStartingStation
+uiots:hasStartingStation rdf:type owl:ObjectProperty ;
+                         rdfs:domain uiots:SharingMobilityTrip ;
+                         rdfs:range uiots:SharingStation ;
+                         rdfs:comment "Associa un Noleggio alla Stazione di Sharing in cui viene iniziato."@it ;
+                         rdfs:label "ha stazione di inizio"@it ,
+                                    "has starting station"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#hasTripEndingPoint
+uiots:hasTripEndingPoint rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf uiots:hasTripPoint ;
+                         rdfs:domain uiots:SharingMobilityTrip ;
+                         rdfs:range uiots:TripPoint ;
+                         rdfs:comment "Associa un Noleggio al suo punto di partenza."@it ;
+                         rdfs:label "ha punto di inizio noleggio"@it ,
+                                    "has trip ending point"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#hasTripPoint
+uiots:hasTripPoint rdf:type owl:ObjectProperty ;
+                   rdfs:domain uiots:SharingMobilityTrip ;
+                   rdfs:range uiots:TripPoint ;
+                   rdfs:comment "Associa un Noleggio ad un punto registrato durante il percorso."@it ;
+                   rdfs:label "ha punto del noleggio"@it ,
+                              "has trip point"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#hasTripRoute
+uiots:hasTripRoute rdf:type owl:ObjectProperty ;
+                   rdfs:domain uiots:SharingMobilityTrip ;
+                   rdfs:range uiots:TripRoute ;
+                   rdfs:comment "Associa un Noleggio ad una descrizione spaziale del tragitto percorso."@it ;
+                   rdfs:label "ha tragitto noleggio"@it ,
+                              "has trip route"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#hasTripStartingPoint
+uiots:hasTripStartingPoint rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf uiots:hasTripPoint ;
+                           rdfs:domain uiots:SharingMobilityTrip ;
+                           rdfs:range uiots:TripPoint ;
+                           rdfs:comment "Associa un Noleggio al suo punto di arrivo."@it ;
+                           rdfs:label "ha punto di fine noleggio"@it ,
+                                      "has trip starting point"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#hasVehicleCategory
+uiots:hasVehicleCategory rdf:type owl:ObjectProperty ;
+                         rdfs:domain schema:Vehicle ;
+                         rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                             owl:hasValue vh-kos:vehicle-category
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                         rdfs:comment "Associa un Veicolo alla sua categoria di veicolo secondo la classificazione internazionale."@it ;
+                         rdfs:label "ha categoria veicolo"@it ,
+                                    "has vehicle category"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#isDockOf
+uiots:isDockOf rdf:type owl:ObjectProperty ;
+               rdfs:domain uiots:Dock ;
+               rdfs:range uiots:PhysicalSharingStation ;
+               rdfs:comment "Associa uno Stallo alla Stazione di Sharing in cui si trova."@it ;
+               rdfs:label "is dock of"@en ,
+                          "è stallo in"@it .
+
+
+###  http://www.w3id.org/urban-iot/sharing#latestSharingVehicleEvent
+uiots:latestSharingVehicleEvent rdf:type owl:ObjectProperty ;
+                                rdfs:domain uiots:SharingMobilityVehicleRecord ;
+                                rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                                    owl:hasValue sh-kos:vehicle-event
+                                                                  ]
+                                                                ) ;
+                                             rdf:type owl:Class
+                                           ] ;
+                                rdfs:comment "identifica l'ultimo evento registrato per un Veicolo di Sharing Mobility."@it ;
+                                rdfs:label "latest sharing vehicle event"@en ,
+                                           "ultimo evento veicolo in sharing"@it .
+
+
+###  http://www.w3id.org/urban-iot/sharing#makesVehicleAvailable
+uiots:makesVehicleAvailable rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf uiot:makesAvailable ;
+                            owl:inverseOf uiots:vehicleMadeAvailableBy ;
+                            rdfs:domain uiots:SharingMobilityService ;
+                            rdfs:range uiots:SharingMobilityVehicle ;
+                            rdfs:comment "Associa un Servizio di Sharing Mobility al Veicolo di Sharing Mobility che rende disponibile."@it ;
+                            rdfs:label "makes vehicle available"@en ,
+                                       "rende disponibile veicolo"@it .
+
+
+###  http://www.w3id.org/urban-iot/sharing#occupiedByVehicle
+uiots:occupiedByVehicle rdf:type owl:ObjectProperty ;
+                        rdfs:domain uiots:DockRecord ;
+                        rdfs:range uiots:SharingMobilityVehicle ;
+                        rdfs:comment "Identifica il Veicolo di Sharing Mobility che occupa lo Stallo."@it ;
+                        rdfs:label "occupato dal veicolo"@it ,
+                                   "occupied by vehicle"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#performsTrip
+uiots:performsTrip rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf uiot:performsSession ;
+                   owl:inverseOf uiots:tripPerformedBy ;
+                   rdfs:domain <http://www.w3id.org/urban-iot/core#ServicePrivateUser> ;
+                   rdfs:range uiots:SharingMobilityTrip ;
+                   rdfs:comment "Associa un Utente del Servizio ad un Noleggio effettuato."@it ;
+                   rdfs:label "effettua noleggio"@it ,
+                              "performs trip"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#providesSharingMobilityService
+uiots:providesSharingMobilityService rdf:type owl:ObjectProperty ;
+                                     rdfs:domain uiots:SharingMobilityProvider ;
+                                     rdfs:range uiots:SharingMobilityService ;
+                                     rdfs:comment "Associa un fornitore di servizi di Sharing Mobility ad un servizio."@it ;
+                                     rdfs:label "eroga servizio sharing mobility"@it ,
+                                                "provides sharing mobility service"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#relatedDockRecord
+uiots:relatedDockRecord rdf:type owl:ObjectProperty ;
+                        rdfs:domain uiots:SharingStationRecord ;
+                        rdfs:range uiots:DockRecord ;
+                        rdfs:comment "Associa un Record Stazione di Sharing al record di uno degli stalli contenuti al suo interno."@it ;
+                        rdfs:label "record stallo collegato"@it ,
+                                   "related dock record"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#sharingStationUsedBy
+uiots:sharingStationUsedBy rdf:type owl:ObjectProperty ;
+                           owl:inverseOf uiots:usesSharingStation ;
+                           rdfs:domain uiots:SharingStation ;
+                           rdfs:range uiots:SharingMobilityService ;
+                           rdfs:comment "Associa una Stazione di Sharing al Servizio di Sharing Mobility che la utilizza."@it ;
+                           rdfs:label "sharing station used by"@en ,
+                                      "stazione di sharing utilizzata da"@it .
+
+
+###  http://www.w3id.org/urban-iot/sharing#sharingVehicleState
+uiots:sharingVehicleState rdf:type owl:ObjectProperty ;
+                          rdfs:domain uiots:SharingMobilityVehicleRecord ;
+                          rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                              owl:hasValue sh-kos:vehicle-state
+                                                            ]
+                                                          ) ;
+                                       rdf:type owl:Class
+                                     ] ;
+                          rdfs:comment "Proprietà che indica lo stato in cui si trova attualmente il Veicolo di Sharing Mobility."@it ;
+                          rdfs:label "sharing vehicle state"@en ,
+                                     "stato del veicolo in sharing"@it .
+
+
+###  http://www.w3id.org/urban-iot/sharing#tripEnabledBy
+uiots:tripEnabledBy rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf uiot:sessionEnabledBy ;
+                    rdfs:domain uiots:SharingMobilityTrip ;
+                    rdfs:range uiots:SharingMobilityService ;
+                    rdfs:comment "Associa un Noleggio al Servizio di Sharing Mobility che lo abilita."@it ;
+                    rdfs:label "noleggio abilitato da"@it ,
+                               "trip enabled by"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#tripPerformedBy
+uiots:tripPerformedBy rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf uiot:sessionPerformedBy ;
+                      rdfs:domain uiots:SharingMobilityTrip ;
+                      rdfs:range <http://www.w3id.org/urban-iot/core#ServicePrivateUser> ;
+                      rdfs:comment "Associa un Noleggio all'Utente del Servizio che lo effettua."@it ;
+                      rdfs:label "noleggio effettuato da"@it ,
+                                 "trip performed by"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#usesSharingStation
+uiots:usesSharingStation rdf:type owl:ObjectProperty ;
+                         rdfs:domain uiots:SharingMobilityService ;
+                         rdfs:range uiots:SharingStation ;
+                         rdfs:comment "Associa un Servizio di Sharing Mobility ad una Stazione di Sharing che utilizza."@it ;
+                         rdfs:label "uses sharing station"@en ,
+                                    "utilizza stazione di sharing"@it .
+
+
+###  http://www.w3id.org/urban-iot/sharing#usesVehicle
+uiots:usesVehicle rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf uiot:usesResource ;
+                  owl:inverseOf uiots:vehicleUsedIn ;
+                  rdfs:domain uiots:SharingMobilityTrip ;
+                  rdfs:range uiots:SharingMobilityVehicle ;
+                  rdfs:comment "Associa un Noleggio al Veicolo di Sharing Mobility utilizzato per effettuarlo."@it ;
+                  rdfs:label "uses vehicle"@en ,
+                             "utilizza veicolo"@it .
+
+
+###  http://www.w3id.org/urban-iot/sharing#vehicleMadeAvailableBy
+uiots:vehicleMadeAvailableBy rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf uiot:madeAvailableBy ;
+                             rdfs:domain uiots:SharingMobilityVehicle ;
+                             rdfs:range uiots:SharingMobilityService ;
+                             rdfs:comment "Associa un Veicolo di Sharing Mobility al Servizio di Sharing Mobility che lo rende disponibile."@it ;
+                             rdfs:label "vehicle made available by"@en ,
+                                        "veicolo reso disponibile da"@it .
+
+
+###  http://www.w3id.org/urban-iot/sharing#vehicleUsedIn
+uiots:vehicleUsedIn rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf uiot:resourceUsedIn ;
+                    rdfs:domain uiots:SharingMobilityVehicle ;
+                    rdfs:range uiots:SharingMobilityTrip ;
+                    rdfs:comment "Associa un Veicolo di Sharing Mobility ad un Noleggio in cui è stato utilizzato."@it ;
+                    rdfs:label "vehicle used in"@en ,
+                               "veicolo utilizzato in"@it .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://schema.org/brand
+schema:brand rdf:type owl:DatatypeProperty ;
+             rdfs:label "brand"@en ,
+                        "marca"@it .
+
+
+###  http://schema.org/dateVehicleFirstRegistered
+schema:dateVehicleFirstRegistered rdf:type owl:DatatypeProperty ;
+                                  rdfs:label "data immatricolazione"@it ,
+                                             "date vehicle first registered"@en .
+
+
+###  http://schema.org/model
+schema:model rdf:type owl:DatatypeProperty ;
+             rdfs:label "model"@en ,
+                        "modello"@it .
+
+
+###  http://schema.org/productionDate
+schema:productionDate rdf:type owl:DatatypeProperty ;
+                      rdfs:label "data di produzione"@it ,
+                                 "production date"@en .
+
+
+###  http://schema.org/seatingCapacity
+schema:seatingCapacity rdf:type owl:DatatypeProperty ;
+                       rdfs:label "numero posti"@it ,
+                                  "seating capacity"@en .
+
+
+###  http://schema.org/vehicleIdentificationNumber
+schema:vehicleIdentificationNumber rdf:type owl:DatatypeProperty ;
+                                   rdfs:label "numero di telaio"@it ,
+                                              "vehicle identification number"@en .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#lat
+geo:lat rdf:type owl:DatatypeProperty ;
+        rdfs:label "latitude"@en ,
+                   "latitudine"@it .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#long
+geo:long rdf:type owl:DatatypeProperty ;
+         rdfs:label "longitude"@en ,
+                    "longitudine"@it .
+
+
+###  http://www.w3id.org/urban-iot/sharing#allowsFreeFloating
+uiots:allowsFreeFloating rdf:type owl:DatatypeProperty ;
+                         rdfs:domain uiots:SharingMobilityService ;
+                         rdfs:range xsd:boolean ;
+                         rdfs:label "allows free floating"@en ,
+                                    "permette free floating"@it .
+
+
+###  http://www.w3id.org/urban-iot/sharing#chargeEndingPercentage
+uiots:chargeEndingPercentage rdf:type owl:DatatypeProperty ;
+                             rdfs:subPropertyOf owl:topDataProperty ;
+                             rdfs:domain uiots:SharingMobilityTrip ;
+                             rdfs:range xsd:int ;
+                             rdfs:label "charge ending percentage"@en ,
+                                        "percentuale carica al termine"@it .
+
+
+###  http://www.w3id.org/urban-iot/sharing#chargeStartingPercentage
+uiots:chargeStartingPercentage rdf:type owl:DatatypeProperty ;
+                               rdfs:domain uiots:SharingMobilityTrip ;
+                               rdfs:range xsd:int ;
+                               rdfs:label "charge starting percentage"@en ,
+                                          "percentuale carica alla partenza"@it .
+
+
+###  http://www.w3id.org/urban-iot/sharing#coveredDistanceKm
+uiots:coveredDistanceKm rdf:type owl:DatatypeProperty ;
+                        rdfs:domain uiots:SharingMobilityTrip ;
+                        rdfs:range xsd:double ;
+                        rdfs:label "covered distance km"@en ,
+                                   "distanza coperta in km"@it .
+
+
+###  http://www.w3id.org/urban-iot/sharing#fuelEndingPercentage
+uiots:fuelEndingPercentage rdf:type owl:DatatypeProperty ;
+                           rdfs:domain uiots:SharingMobilityTrip ;
+                           rdfs:range xsd:int ;
+                           rdfs:label "fuel ending percentage"@en ,
+                                      "percentuale carburante al termine"@it .
+
+
+###  http://www.w3id.org/urban-iot/sharing#fuelStartingPercentage
+uiots:fuelStartingPercentage rdf:type owl:DatatypeProperty ;
+                             rdfs:domain uiots:SharingMobilityTrip ;
+                             rdfs:range xsd:int ;
+                             rdfs:label "fuel starting percentage"@en ,
+                                        "percentuale carburante alla partenza"@it .
+
+
+###  http://www.w3id.org/urban-iot/sharing#isStationActive
+uiots:isStationActive rdf:type owl:DatatypeProperty ;
+                      rdfs:domain uiots:SharingStationRecord ;
+                      rdfs:label "is station active"@en ,
+                                 "è stazione attiva"@it .
+
+
+###  http://www.w3id.org/urban-iot/sharing#longestRangeInKm
+uiots:longestRangeInKm rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf owl:topDataProperty ;
+                       rdfs:range xsd:int ;
+                       rdfs:label "longest range in km"@en ,
+                                  "range massimo in km"@it .
+
+
+###  http://www.w3id.org/urban-iot/sharing#movingTimeMinutes
+uiots:movingTimeMinutes rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf owl:topDataProperty ;
+                        rdfs:domain uiots:SharingMobilityTrip ;
+                        rdfs:range xsd:int ;
+                        rdfs:label "minuti in movimento"@it ,
+                                   "moving time minutes"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#numberOfDocks
+uiots:numberOfDocks rdf:type owl:DatatypeProperty ;
+                    rdfs:domain uiots:PhysicalSharingStation ;
+                    rdfs:range xsd:int ;
+                    rdfs:label "number of docks"@en ,
+                               "numero di stalli"@it .
+
+
+###  http://www.w3id.org/urban-iot/sharing#numberPlate
+uiots:numberPlate rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:domain schema:Vehicle ;
+                  rdfs:range xsd:string ;
+                  rdfs:label "number plate"@en ,
+                             "numero di targa"@it .
+
+
+###  http://www.w3id.org/urban-iot/sharing#parkingTimeMinutes
+uiots:parkingTimeMinutes rdf:type owl:DatatypeProperty ;
+                         rdfs:domain uiots:SharingMobilityTrip ;
+                         rdfs:range xsd:int ;
+                         rdfs:label "minuti in sosta"@it ,
+                                    "parking time minutes"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#passageOrder
+uiots:passageOrder rdf:type owl:DatatypeProperty ;
+                   rdfs:domain uiots:TripPoint ;
+                   rdfs:range xsd:int ;
+                   rdfs:label "ordine passaggio"@it ,
+                              "passage order"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#passageTime
+uiots:passageTime rdf:type owl:DatatypeProperty ;
+                  rdfs:domain uiots:TripPoint ;
+                  rdfs:range xsd:dateTime ;
+                  rdfs:label "passage time"@en ,
+                             "tempo di passaggio"@it .
+
+
+###  http://www.w3id.org/urban-iot/sharing#pricePerTripKm
+uiots:pricePerTripKm rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf schema:price ;
+                     rdfs:domain uiots:SharingMobilityOffer ;
+                     rdfs:range xsd:double ;
+                     rdfs:label "prezzo per km di noleggio"@it ,
+                                "price per trip km"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#pricePerTripMinute
+uiots:pricePerTripMinute rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf schema:price ;
+                         rdfs:domain uiots:SharingMobilityOffer ;
+                         rdfs:range xsd:double ;
+                         rdfs:label "prezzo per minuto di noleggio"@it ,
+                                    "price per trip minute"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#tripDuration
+uiots:tripDuration rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf schema:duration ;
+                   rdfs:label "durata noleggio"@it ,
+                              "trip duration"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#userFeedbackVehicleExterior
+uiots:userFeedbackVehicleExterior rdf:type owl:DatatypeProperty ;
+                                  rdfs:domain uiots:SharingMobilityTrip ;
+                                  rdfs:range xsd:int ;
+                                  rdfs:label "feedback utente condizione esterno veicolo"@it ,
+                                             "user feedback vehicle exterior"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#userFeedbackVehicleInterior
+uiots:userFeedbackVehicleInterior rdf:type owl:DatatypeProperty ;
+                                  rdfs:domain uiots:SharingMobilityTrip ;
+                                  rdfs:range xsd:int ;
+                                  rdfs:label "feedback utente condizione interno veicolo"@it ,
+                                             "user feedback vehicle interior"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#vehicleDeregistration
+uiots:vehicleDeregistration rdf:type owl:DatatypeProperty ;
+                            rdfs:domain uiots:SharingMobilityVehicle ;
+                            rdfs:range xsd:dateTime ;
+                            rdfs:label "dismissione veicolo"@it ,
+                                       "vehicle deregistration"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#vehicleRegistration
+uiots:vehicleRegistration rdf:type owl:DatatypeProperty ;
+                          rdfs:domain uiots:SharingMobilityVehicle ;
+                          rdfs:range xsd:dateTime ;
+                          rdfs:label "immissione veicolo"@it ,
+                                     "vehicle registration"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://schema.org/Organization
+schema:Organization rdf:type owl:Class .
+
+
+###  http://schema.org/Vehicle
+schema:Vehicle rdf:type owl:Class ;
+               rdfs:label "Vehicle"@en ,
+                          "Veicolo"@it .
+
+
+###  http://www.opengis.net/ont/geosparql#Feature
+geosparql:Feature rdf:type owl:Class .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#Point
+geo:Point rdf:type owl:Class ;
+          rdfs:label "Point"@en ,
+                     "Punto"@it .
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> rdf:type owl:Class .
+
+
+###  http://www.w3id.org/urban-iot/sharing#Bicycle
+uiots:Bicycle rdf:type owl:Class ;
+              rdfs:subClassOf schema:Vehicle ;
+              rdfs:label "Bicicletta"@it ,
+                         "Bicycle"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#Car
+uiots:Car rdf:type owl:Class ;
+          rdfs:subClassOf schema:Vehicle ;
+          rdfs:label "Autovettura"@it ,
+                     "Car"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#ContractualOperationArea
+uiots:ContractualOperationArea rdf:type owl:Class ;
+                               rdfs:subClassOf geosparql:Feature ;
+                               rdfs:comment "Confini di esercizio minimi per un Servizio stabiliti dall'autorità competente che abilita l'esercizio del servizio."@it ,
+                                            "Contractual operation area for a Service defined by the authority abilitating the service."@en ;
+                               rdfs:label "Confini di Esercizio Minimi"@it ,
+                                          "Contractual Operation Area"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#Dock
+uiots:Dock rdf:type owl:Class ;
+           rdfs:subClassOf sosa:Sensor ;
+           rdfs:comment "A physical infrastructure (bar, parking, etc.)  to pick up/drop off a vehicle."@en ,
+                        "Un'infrastruttura fisica (sbarra, parcheggio, ecc.) per il rilascio/prelievo di un veicolo."@it ;
+           rdfs:label "Dock"@en ,
+                      "Stallo"@it .
+
+
+###  http://www.w3id.org/urban-iot/sharing#DockKind
+uiots:DockKind rdf:type owl:Class ;
+               rdfs:comment "A specific kind of dock (e.g. dedicated to a specific vehicle type)."@en ,
+                            "Una specifica tipologia di stallo (es. dedicata ad un particolare veicolo)."@it ;
+               rdfs:label "Dock Kind"@en ,
+                          "Tipologia di Dock"@it .
+
+
+###  http://www.w3id.org/urban-iot/sharing#DockRecord
+uiots:DockRecord rdf:type owl:Class ;
+                 rdfs:subClassOf uiot:SensorRecord ;
+                 rdfs:comment "A record collecting data produced by or associated to a Dock."@en ,
+                              "Un record che colleziona dati prodotti da o associati a uno Stallo."@it ;
+                 rdfs:label "Dock Record"@en ,
+                            "Record Stallo"@it .
+
+
+###  http://www.w3id.org/urban-iot/sharing#ElectricBicycle
+uiots:ElectricBicycle rdf:type owl:Class ;
+                      rdfs:subClassOf uiots:Bicycle ;
+                      rdfs:label "Bicicletta Elettrica"@it ,
+                                 "Electric Bicycle"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#ForbiddenDropOffArea
+uiots:ForbiddenDropOffArea rdf:type owl:Class ;
+                           rdfs:subClassOf geosparql:Feature ;
+                           rdfs:comment "Area in cui è vietato il rilascio dei veicoli associati ad un Servizio di Sharing Mobility."@it ,
+                                        "Area in which it is forbidden to drop off a vehicle of a Sharing Mobility Service."@en ;
+                           rdfs:label "Area Rilascio Vietato"@it ,
+                                      "Forbidden Drop Off Area"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#Hoverboard
+uiots:Hoverboard rdf:type owl:Class ;
+                 rdfs:subClassOf uiots:MicroMobilityVehicle ;
+                 rdfs:label "Hoverboard"@en ,
+                            "Hoverboard"@it .
+
+
+###  http://www.w3id.org/urban-iot/sharing#MicroMobilityVehicle
+uiots:MicroMobilityVehicle rdf:type owl:Class ;
+                           rdfs:subClassOf schema:Vehicle ;
+                           rdfs:label "Micro Mobility Vehicle"@en ,
+                                      "Veicolo di Micro-Mobilità"@it .
+
+
+###  http://www.w3id.org/urban-iot/sharing#Monowheel
+uiots:Monowheel rdf:type owl:Class ;
+                rdfs:subClassOf uiots:MicroMobilityVehicle ;
+                rdfs:label "Monowheel"@en ,
+                           "Monowheel"@it .
+
+
+###  http://www.w3id.org/urban-iot/sharing#Motorcycle
+uiots:Motorcycle rdf:type owl:Class ;
+                 rdfs:subClassOf schema:Vehicle ;
+                 rdfs:label "Ciclomotore"@it ,
+                            "Motorcycle"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#OperationArea
+uiots:OperationArea rdf:type owl:Class ;
+                    rdfs:subClassOf geosparql:Feature ;
+                    rdfs:comment "Area operativa di un Servizio in cui è possibile usufruire del servizio. L'Area operativa deve comprendere i Confini Minimi di Esercizio associati al Servizio."@it ,
+                                 "The Operation Area in which it is possible to make use of a Service. The Operation Area should include the Contractual Operation Area associated to the Service."@en ;
+                    rdfs:label "Area Operativa"@it ,
+                               "Operation Area"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#PhysicalSharingStation
+uiots:PhysicalSharingStation rdf:type owl:Class ;
+                             rdfs:subClassOf uiots:SharingStation ;
+                             owl:disjointWith uiots:VirtualSharingStation ;
+                             rdfs:comment "Sharing Station with a physical infrastructure to pick up/drop off vehicles."@en ,
+                                          "Stazione di Sharing dotata di un'infrastruttura fisica (i.e. stalli) per il prelievo rilascio dei veicoli."@it ;
+                             rdfs:label "Physical Sharing Station"@en ,
+                                        "Stazione Fisica di Sharing"@it .
+
+
+###  http://www.w3id.org/urban-iot/sharing#PickUpDropOffArea
+uiots:PickUpDropOffArea rdf:type owl:Class ;
+                        rdfs:subClassOf geosparql:Feature ;
+                        rdfs:comment "Area in cui è permesso il prelievo/rilascio dei veicoli associati ad un Servizio di Sharing Mobility. Questa area può essere differente dall'area operativa del servizio."@it ,
+                                     "Area in which it is possible to pick up/drop off a vehicle of a Sharing Mobility Service. This area can be different from the Operation Area of the service."@en ;
+                        rdfs:label "Area Prelievo Rilascio"@it ,
+                                   "Pick Up Drop Off Area"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#PreferredDropOffArea
+uiots:PreferredDropOffArea rdf:type owl:Class ;
+                           rdfs:subClassOf geosparql:Feature ;
+                           rdfs:comment "Area preferenziale in cui è incentivato il rilascio dei veicoli associati ad un Servizio di Sharing Mobility."@it ,
+                                        "Preferred Area in which the drop off of vehicles associated to a Sharing Mobility Service is encouraged."@en ;
+                           rdfs:label "Area Preferenziale di Rilascio"@it ,
+                                      "Preferred Drop Off Area"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#PreferredPickUpArea
+uiots:PreferredPickUpArea rdf:type owl:Class ;
+                          rdfs:subClassOf geosparql:Feature ;
+                          rdfs:comment "Area preferenziale in cui è incentivato il prelievo dei veicoli associati ad un Servizio di Sharing Mobility."@it ,
+                                       "Preferred Area in which the pick up of vehicles associated to a Sharing Mobility Service is encouraged."@en ;
+                          rdfs:label "Area Preferenziale di Prelievo"@it ,
+                                     "Preferred Pick Up Area"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#Scooter
+uiots:Scooter rdf:type owl:Class ;
+              rdfs:subClassOf uiots:MicroMobilityVehicle ;
+              rdfs:label "Monopattino"@it ,
+                         "Scooter"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#Segway
+uiots:Segway rdf:type owl:Class ;
+             rdfs:subClassOf uiots:MicroMobilityVehicle ;
+             rdfs:label "Segway"@en ,
+                        "Segway"@it .
+
+
+###  http://www.w3id.org/urban-iot/sharing#SharingMicroMobilityVehicle
+uiots:SharingMicroMobilityVehicle rdf:type owl:Class ;
+                                  rdfs:subClassOf uiots:MicroMobilityVehicle ,
+                                                  uiots:SharingMobilityVehicle ;
+                                  rdfs:comment "A micro-mobility vehicle enabled to be used in a Sharing Mobility Service."@en ,
+                                               "Un veicolo di micro-mobilità abilitato per l'utilizzo in un Servizio di Sharing Mobility."@it ;
+                                  rdfs:label "Sharing Micro Mobility Vehicle"@en ,
+                                             "Veicolo di Micro-Mobilità in Sharing"@it .
+
+
+###  http://www.w3id.org/urban-iot/sharing#SharingMobilityBicycle
+uiots:SharingMobilityBicycle rdf:type owl:Class ;
+                             rdfs:subClassOf uiots:Bicycle ,
+                                             uiots:SharingMobilityVehicle ;
+                             rdfs:comment "A bicycle enabled to be used in a Sharing Mobility Service."@en ,
+                                          "Una bicicletta abilitata per l'utilizzo in un Servizio di Sharing Mobility."@it ;
+                             rdfs:label "Bicicletta in Sharing"@it ,
+                                        "Sharing Mobility Bicycle"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#SharingMobilityCar
+uiots:SharingMobilityCar rdf:type owl:Class ;
+                         rdfs:subClassOf uiots:Car ,
+                                         uiots:SharingMobilityVehicle ;
+                         rdfs:comment "A car enabled to be used in a Sharing Mobility Service."@en ,
+                                      "Una autovettura abilitata per l'utilizzo in un Servizio di Sharing Mobility."@it ;
+                         rdfs:label "Autovettura in Sharing"@it ,
+                                    "Sharing Mobility Car"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#SharingMobilityCategory
+uiots:SharingMobilityCategory rdf:type owl:Class ;
+                              rdfs:comment "A category for a Sharing Mobility Service."@en ,
+                                           "Una categoria di Servizio di Sharing Mobility."@it ;
+                              rdfs:label "Categoria Sharing Mobility"@it ,
+                                         "Sharing Mobility Category"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#SharingMobilityMotorcycle
+uiots:SharingMobilityMotorcycle rdf:type owl:Class ;
+                                rdfs:subClassOf uiots:Motorcycle ,
+                                                uiots:SharingMobilityVehicle ;
+                                rdfs:comment "A motorcycle enabled to be used in a Sharing Mobility Service."@en ,
+                                             "Un ciclomotore abilitato per l'utilizzo in un Servizio di Sharing Mobility."@it ;
+                                rdfs:label "Ciclomotore in Sharing"@it ,
+                                           "Sharing Mobility Motorcycle"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#SharingMobilityOffer
+uiots:SharingMobilityOffer rdf:type owl:Class ;
+                           rdfs:subClassOf schema:Offer ;
+                           rdfs:comment "Offer (tariff) associated to a Sharing Mobility Service."@en ,
+                                        "Offerta (tariffa) associata ad un Servizio di Sharing Mobility."@it ;
+                           rdfs:label "Offerta di Sharing Mobility"@it ,
+                                      "Sharing Mobility Offer"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#SharingMobilityProvider
+uiots:SharingMobilityProvider rdf:type owl:Class ;
+                              rdfs:subClassOf schema:Organization ;
+                              rdfs:comment "Organization providing a Sharing Mobility Service."@en ,
+                                           "Organizzazione che eroga un Servizio di Sharing Mobility."@it ;
+                              rdfs:label "Fornitore Sharing Mobility"@it ,
+                                         "Sharing Mobility Provider"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#SharingMobilityService
+uiots:SharingMobilityService rdf:type owl:Class ;
+                             rdfs:subClassOf schema:Service ;
+                             rdfs:comment "A Service that allows users to perform a trip using a fleet a vehicles made available on street from the service provider."@en ,
+                                          "Un Servizio che permette ai suoi utenti l'utilizzo tramite noleggio di una flotta di veicoli che sono messi a disposizione in strada dal fornitore del servizio."@it ;
+                             rdfs:label "Servizio di Sharing Mobility"@it ,
+                                        "Sharing Mobility Service"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#SharingMobilityTrip
+uiots:SharingMobilityTrip rdf:type owl:Class ;
+                          rdfs:subClassOf <http://www.w3id.org/urban-iot/core#UsageSession> ;
+                          rdfs:comment "A trip enabled by a Sharing Mobility Service."@en ,
+                                       "Un noleggio effettuato utilizzando un Servizio di Sharing Mobility."@it ;
+                          rdfs:label "Noleggio Sharing Mobility"@it ,
+                                     "Sharing Mobility Trip"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#SharingMobilityVehicle
+uiots:SharingMobilityVehicle rdf:type owl:Class ;
+                             rdfs:subClassOf schema:Vehicle ,
+                                             sosa:Sensor ,
+                                             <http://www.w3id.org/urban-iot/core#ServiceResource> ;
+                             rdfs:comment "A vehicle enabled to be used in a Sharing Mobility Service."@en ,
+                                          "Un veicolo abilitato per l'utilizzo in un Servizio di Sharing Mobility."@it ;
+                             rdfs:label "Sharing Mobility Vehicle"@en ,
+                                        "Veicolo Sharing Mobility"@it .
+
+
+###  http://www.w3id.org/urban-iot/sharing#SharingMobilityVehicleRecord
+uiots:SharingMobilityVehicleRecord rdf:type owl:Class ;
+                                   rdfs:subClassOf uiot:SensorRecord ;
+                                   rdfs:comment "A record collecting data produced by or associated to a Sharing Mobility Vehicle."@en ,
+                                                "Un record che colleziona dati prodotti da o associati a un Veicolo in Sharing Mobility."@it ;
+                                   rdfs:label "Record Veicolo in Sharing"@it ,
+                                              "Sharing Mobility Vehicle Record"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#SharingStation
+uiots:SharingStation rdf:type owl:Class ;
+                     rdfs:subClassOf sosa:Sensor ,
+                                     <http://www.w3id.org/urban-iot/core#MobilityStation> ;
+                     rdfs:comment "Station to pick up/drop off vehicles associated to a Sharing Mobility Service."@en ,
+                                  "Stazione per il rilascio/prelievo di veicoli associati ad un Servizio di Sharing Mobility."@it ;
+                     rdfs:label "Sharing Station"@en ,
+                                "Stazione di Sharing"@it .
+
+
+###  http://www.w3id.org/urban-iot/sharing#SharingStationRecord
+uiots:SharingStationRecord rdf:type owl:Class ;
+                           rdfs:subClassOf uiot:SensorRecord ;
+                           rdfs:comment "A record collecting data produced by or associated to a Sharing Station."@en ,
+                                        "Un record che colleziona dati prodotti da o associati a una Stazione di Sharing."@it ;
+                           rdfs:label "Record Stazione di Sharing"@it ,
+                                      "Sharing Station Record"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#SmartwheelBicycle
+uiots:SmartwheelBicycle rdf:type owl:Class ;
+                        rdfs:subClassOf uiots:Bicycle ;
+                        rdfs:label "Bicicletta Smartwheel"@it ,
+                                   "Smartwheel Bicycle"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#TraditionalBicycle
+uiots:TraditionalBicycle rdf:type owl:Class ;
+                         rdfs:subClassOf uiots:Bicycle ;
+                         rdfs:label "Bicicletta Tradizionale"@it ,
+                                    "Traditional Bicycle"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#TripPoint
+uiots:TripPoint rdf:type owl:Class ;
+                rdfs:subClassOf geo:Point ;
+                rdfs:comment "A point collected during a Trip."@en ,
+                             "Un punto registrato durante un Noleggio."@it ;
+                rdfs:label "Punto del Noleggio"@it ,
+                           "Trip Point"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#TripRoute
+uiots:TripRoute rdf:type owl:Class ;
+                rdfs:subClassOf geosparql:Feature ;
+                rdfs:comment "Rappresentazione spaziale del tragitto percorso da un Veicolo durante un Noleggio."@it ,
+                             "Spatial representation of the route covered by a Vehicle during a Trip."@en ;
+                rdfs:label "Tragitto del Noleggio"@it ,
+                           "Trip Route"@en .
+
+
+###  http://www.w3id.org/urban-iot/sharing#VirtualSharingStation
+uiots:VirtualSharingStation rdf:type owl:Class ;
+                            rdfs:subClassOf uiots:SharingStation ;
+                            rdfs:comment "Sharing Station without a physical infrastructure to pick up/drop off vehicles."@en ,
+                                         "Stazione di Sharing non dotata di un'infrastruttura fisica (i.e. stalli) per il prelievo rilascio dei veicoli."@it ;
+                            rdfs:label "Stazione Virtuale di Sharing"@it ,
+                                       "Virtual Sharing Station"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://w3id.org/urban-iot/kos/sharing/dock-state
+sh-kos:dock-state rdf:type owl:NamedIndividual ,
+                           <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+
+
+###  http://w3id.org/urban-iot/kos/sharing/vehicle-event
+sh-kos:vehicle-event rdf:type owl:NamedIndividual ,
+                              <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+
+
+###  http://w3id.org/urban-iot/kos/sharing/vehicle-state
+sh-kos:vehicle-state rdf:type owl:NamedIndividual ,
+                              <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+
+
+###  http://w3id.org/urban-iot/kos/vehicle/car-supply
+vh-kos:car-supply rdf:type owl:NamedIndividual ,
+                           <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+
+
+###  http://w3id.org/urban-iot/kos/vehicle/european-emission-standard
+vh-kos:european-emission-standard rdf:type owl:NamedIndividual ,
+                                           <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+
+
+###  http://w3id.org/urban-iot/kos/vehicle/propulsion-kind
+vh-kos:propulsion-kind rdf:type owl:NamedIndividual ,
+                                <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+
+
+###  http://w3id.org/urban-iot/kos/vehicle/vehicle-category
+vh-kos:vehicle-category rdf:type owl:NamedIndividual ,
+                                 <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+
+
+###  http://www.w3id.org/urban-iot/sharing#AvailableDocks
+uiots:AvailableDocks rdf:type owl:NamedIndividual ,
+                              sosa:ObservableProperty ;
+                     vann:usageNote "Le istanze di una Stazione di Sharing possono osservare questa proprietà."@it .
+
+
+###  http://www.w3id.org/urban-iot/sharing#AvailableVehicles
+uiots:AvailableVehicles rdf:type owl:NamedIndividual ,
+                                 sosa:ObservableProperty ;
+                        vann:usageNote "Le istanze di una Stazione di Sharing possono osservare questa proprietà."@it .
+
+
+###  http://www.w3id.org/urban-iot/sharing#BicycleSharing
+uiots:BicycleSharing rdf:type owl:NamedIndividual ,
+                              uiots:SharingMobilityCategory ;
+                     rdfs:label "Bicycle Sharing"@en ,
+                                "Sharing Biciclette"@it .
+
+
+###  http://www.w3id.org/urban-iot/sharing#CarSharing
+uiots:CarSharing rdf:type owl:NamedIndividual ,
+                          uiots:SharingMobilityCategory ;
+                 rdfs:label "Car Sharing"@en ,
+                            "Sharing Autovetture"@it .
+
+
+###  http://www.w3id.org/urban-iot/sharing#ChargePercentage
+uiots:ChargePercentage rdf:type owl:NamedIndividual ,
+                                sosa:ObservableProperty ;
+                       vann:usageNote "Le istanze di un Veicolo in Sharing possono osservare questa proprietà."@it .
+
+
+###  http://www.w3id.org/urban-iot/sharing#DamagedDocks
+uiots:DamagedDocks rdf:type owl:NamedIndividual ,
+                            sosa:ObservableProperty ;
+                   vann:usageNote "Le istanze di una Stazione di Sharing possono osservare questa proprietà."@it .
+
+
+###  http://www.w3id.org/urban-iot/sharing#DamagedVehicles
+uiots:DamagedVehicles rdf:type owl:NamedIndividual ,
+                               sosa:ObservableProperty ;
+                      vann:usageNote "Le istanze di una Stazione di Sharing possono osservare questa proprietà."@it .
+
+
+###  http://www.w3id.org/urban-iot/sharing#FuelPercentage
+uiots:FuelPercentage rdf:type owl:NamedIndividual ,
+                              sosa:ObservableProperty ;
+                     vann:usageNote "Le istanze di un Veicolo in Sharing possono osservare questa proprietà."@it .
+
+
+###  http://www.w3id.org/urban-iot/sharing#MicroMobilitySharing
+uiots:MicroMobilitySharing rdf:type owl:NamedIndividual ,
+                                    uiots:SharingMobilityCategory ;
+                           rdfs:label "Micro Mobility Sharing"@en ,
+                                      "Sharing Micro-Mobilità"@it .
+
+
+###  http://www.w3id.org/urban-iot/sharing#MotorcycleSharing
+uiots:MotorcycleSharing rdf:type owl:NamedIndividual ,
+                                 uiots:SharingMobilityCategory ;
+                        rdfs:label "Motorcycle Sharing"@en ,
+                                   "Sharing Ciclomotori"@it .
+
+
+###  http://www.w3id.org/urban-iot/sharing#VehicleLocation
+uiots:VehicleLocation rdf:type owl:NamedIndividual ,
+                               sosa:ObservableProperty ;
+                      vann:usageNote "Le istanze di un Veicolo in Sharing possono osservare questa proprietà."@it .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( uiots:Hoverboard
+                uiots:Monowheel
+                uiots:Scooter
+                uiots:Segway
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
