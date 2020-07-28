@@ -1,2 +1,3 @@
 **/catalog-*.xml
-docs/*.jar
+kos/*.jar
+kos/*.sh
