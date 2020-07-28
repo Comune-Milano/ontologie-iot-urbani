@@ -1,0 +1,2127 @@
+<html><h2 id="crossreference" class="list">Cross reference for Ontologie per gli Apparati IoT Urbani - Modulo Electric Mobility classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Ontologie per gli Apparati IoT Urbani - Modulo Electric Mobility.
+<div id="classes">
+   <h2>Classi</h2>
+   <ul class="hlist">
+      <li>
+         <a href="#EVSE" title="http://www.w3id.org/urban-iot/electric#EVSE">Colonnina di Ricarica per Veicoli Elettrici (EVSE)</a>
+      </li>
+      <li>
+         <a href="#Connector"
+            title="http://www.w3id.org/urban-iot/electric#Connector">Connettore</a>
+      </li>
+      <li>
+         <a href="#eMobilityServiceProvider"
+            title="http://www.w3id.org/urban-iot/electric#eMobilityServiceProvider">Gestore di Servizi per la Ricarica Elettica</a>
+      </li>
+      <li>
+         <a href="#ChargePointOperator"
+            title="http://www.w3id.org/urban-iot/electric#ChargePointOperator">Operatore del Punto di Ricarica</a>
+      </li>
+      <li>
+         <a href="#ChargingService"
+            title="http://www.w3id.org/urban-iot/electric#ChargingService">Servizio di Ricarica</a>
+      </li>
+      <li>
+         <a href="#ChargingSession"
+            title="http://www.w3id.org/urban-iot/electric#ChargingSession">Sessione di Ricarica</a>
+      </li>
+      <li>
+         <a href="#EVSERecord"
+            title="http://www.w3id.org/urban-iot/electric#EVSERecord">Stato della Colonnina di Ricarica</a>
+      </li>
+      <li>
+         <a href="#ChargingStation"
+            title="http://www.w3id.org/urban-iot/electric#ChargingStation">Stazione di Ricarica</a>
+      </li>
+      <li>
+         <a href="#ChargingServiceOffer"
+            title="http://www.w3id.org/urban-iot/electric#ChargingServiceOffer">Tariffa per Servizi di Ricarica</a>
+      </li>
+      <li>
+         <a href="#http://schema.mobivoc.org/#PlugType" title="http://schema.mobivoc.org/#PlugType">Tipo di Presa</a>
+      </li>
+   </ul>
+   <div class="entity" id="EVSE">
+      <h3>Colonnina di Ricarica per Veicoli Elettrici (EVSE)<sup class="type-c" title="classe">c</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#classes">indice delle Classi</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#EVSE</p>
+      <div class="comment">
+         <span class="markdown">Colonnina di Ricarica (EVSE) messa a disposizione per la ricarica di veicoli elettrici.</span>
+      </div>
+      <dl class="description">
+         <dt>ha come super-classi</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/ns/sosa/Sensor">sensor</span>
+            <sup class="type-c" title="classe">c</sup>
+         </dd>
+         <dt>è nel dominio di</dt>
+         <dd>
+            <a href="#hasParkingRestriction"
+               title="http://www.w3id.org/urban-iot/electric#hasParkingRestriction">ha restrizioni di parcheggio</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasConnector"
+               title="http://www.w3id.org/urban-iot/electric#hasConnector">ha un connettore</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasChargeAccessMethod"
+               title="http://www.w3id.org/urban-iot/electric#hasChargeAccessMethod">ha un metodo di accesso alla ricarica</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasEVSEChargeCategory"
+               title="http://www.w3id.org/urban-iot/electric#hasEVSEChargeCategory">ha una categoria di ricarica per EVSE</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#floorLevel"
+               title="http://www.w3id.org/urban-iot/electric#floorLevel">numero di piano</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#isEVSEOf" title="http://www.w3id.org/urban-iot/electric#isEVSEOf">è EVSE di</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>è nel codominio di</dt>
+         <dd>
+            <a href="#usedEVSE" title="http://www.w3id.org/urban-iot/electric#usedEVSE">EVSE utilizzato</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasEVSE" title="http://www.w3id.org/urban-iot/electric#hasEVSE">ha un EVSE</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isConnectorOf"
+               title="http://www.w3id.org/urban-iot/electric#isConnectorOf">è connettore di</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Connector">
+      <h3>Connettore<sup class="type-c" title="classe">c</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#classes">indice delle Classi</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#Connector</p>
+      <div class="comment">
+         <span class="markdown">Connettore collegato a una Colonnina di Ricarica per Veicoli Elettrici (EVSE).</span>
+      </div>
+      <dl class="description">
+         <dt>è nel dominio di</dt>
+         <dd>
+            <a href="#providesCable"
+               title="http://www.w3id.org/urban-iot/electric#providesCable">fornisce cavo</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasStandard"
+               title="http://www.w3id.org/urban-iot/electric#hasStandard">ha standard</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasPowerSupply"
+               title="http://www.w3id.org/urban-iot/electric#hasPowerSupply">ha tipi di alimentazione</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#maxPowerInKW"
+               title="http://www.w3id.org/urban-iot/electric#maxPowerInKW">massima potenza in kW</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#maxAmperageInA"
+               title="http://www.w3id.org/urban-iot/electric#maxAmperageInA">massimo amperaggio in A</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#maxVoltageInV"
+               title="http://www.w3id.org/urban-iot/electric#maxVoltageInV">massimo voltaggio in V</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#minPowerInKW"
+               title="http://www.w3id.org/urban-iot/electric#minPowerInKW">minima potenza in kW</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#minAmperageInA"
+               title="http://www.w3id.org/urban-iot/electric#minAmperageInA">minimo amperaggio in A</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#minVoltageInV"
+               title="http://www.w3id.org/urban-iot/electric#minVoltageInV">minimo voltaggio in V</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#isConnectorOf"
+               title="http://www.w3id.org/urban-iot/electric#isConnectorOf">è connettore di</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>è nel codominio di</dt>
+         <dd>
+            <a href="#usedConnector"
+               title="http://www.w3id.org/urban-iot/electric#usedConnector">connettore utilizzato</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasConnector"
+               title="http://www.w3id.org/urban-iot/electric#hasConnector">ha un connettore</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="eMobilityServiceProvider">
+      <h3>Gestore di Servizi per la Ricarica Elettica<sup class="type-c" title="classe">c</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#classes">indice delle Classi</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#eMobilityServiceProvider</p>
+      <div class="comment">
+         <span class="markdown">Organizzazione che fornisce il Servizio di Ricarica.</span>
+      </div>
+      <dl class="description">
+         <dt>ha come super-classi</dt>
+         <dd>
+            <span class="dotted" title="http://schema.org/Organization">organization</span>
+            <sup class="type-c" title="classe">c</sup>
+         </dd>
+         <dt>è nel dominio di</dt>
+         <dd>
+            <a href="#providesChargingService"
+               title="http://www.w3id.org/urban-iot/electric#providesChargingService">offre servizio di ricarica</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ChargePointOperator">
+      <h3>Operatore del Punto di Ricarica<sup class="type-c" title="classe">c</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#classes">indice delle Classi</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#ChargePointOperator</p>
+      <div class="comment">
+         <span class="markdown">Organizzazione che gestisce l'erogazione di corrente presso le Stazioni di Ricarica.</span>
+      </div>
+      <dl class="description">
+         <dt>ha come super-classi</dt>
+         <dd>
+            <span class="dotted" title="http://schema.org/Organization">organization</span>
+            <sup class="type-c" title="classe">c</sup>
+         </dd>
+         <dt>è nel dominio di</dt>
+         <dd>
+            <a href="#operates" title="http://www.w3id.org/urban-iot/electric#operates">opera</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#operatesSession"
+               title="http://www.w3id.org/urban-iot/electric#operatesSession">opera sessione</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>è nel codominio di</dt>
+         <dd>
+            <a href="#operatedBy"
+               title="http://www.w3id.org/urban-iot/electric#operatedBy">operato da</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#sessionOperatedBy"
+               title="http://www.w3id.org/urban-iot/electric#sessionOperatedBy">sessione operata da</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ChargingService">
+      <h3>Servizio di Ricarica<sup class="type-c" title="classe">c</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#classes">indice delle Classi</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#ChargingService</p>
+      <div class="comment">
+         <span class="markdown">Servizio operato da un Gestore di Servizi per la ricarica elettrica, con il fine di gestire l'utilizzo di Colonnine di Ricarica (EVSE).</span>
+      </div>
+      <dl class="description">
+         <dt>ha come super-classi</dt>
+         <dd>
+            <span class="dotted" title="http://schema.org/Service">service</span>
+            <sup class="type-c" title="classe">c</sup>
+         </dd>
+         <dt>è nel dominio di</dt>
+         <dd>
+            <a href="#enablesCharging"
+               title="http://www.w3id.org/urban-iot/electric#enablesCharging">abilita la ricarica</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#makesStationAvailable"
+               title="http://www.w3id.org/urban-iot/electric#makesStationAvailable">rende la stazione disponibile</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>è nel codominio di</dt>
+         <dd>
+            <a href="#providesChargingService"
+               title="http://www.w3id.org/urban-iot/electric#providesChargingService">offre servizio di ricarica</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#chargingEnabledBy"
+               title="http://www.w3id.org/urban-iot/electric#chargingEnabledBy">ricarica abilitata da</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#stationMadeAvailableBy"
+               title="http://www.w3id.org/urban-iot/electric#stationMadeAvailableBy">stazione resa disponibile da</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ChargingSession">
+      <h3>Sessione di Ricarica<sup class="type-c" title="classe">c</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#classes">indice delle Classi</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#ChargingSession</p>
+      <div class="comment">
+         <span class="markdown">Sessione dove un utente richiede la carica del proprio veicolo, con tutte le informazioni collegate a questa attività.</span>
+      </div>
+      <dl class="description">
+         <dt>ha come super-classi</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3id.org/urban-iot/core#UsageSession">usage session</span>
+            <sup class="type-c" title="classe">c</sup>
+         </dd>
+         <dt>è nel dominio di</dt>
+         <dd>
+            <a href="#usedEVSE" title="http://www.w3id.org/urban-iot/electric#usedEVSE">EVSE utilizzato</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#usedConnector"
+               title="http://www.w3id.org/urban-iot/electric#usedConnector">connettore utilizzato</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#chargingSessionDuration"
+               title="http://www.w3id.org/urban-iot/electric#chargingSessionDuration">durata sessione di ricarica</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#totalEnergy"
+               title="http://www.w3id.org/urban-iot/electric#totalEnergy">energia totale</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#chargingEnabledBy"
+               title="http://www.w3id.org/urban-iot/electric#chargingEnabledBy">ricarica abilitata da</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#chargingPerformedBy"
+               title="http://www.w3id.org/urban-iot/electric#chargingPerformedBy">ricarica effettuata da</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#sessionOperatedBy"
+               title="http://www.w3id.org/urban-iot/electric#sessionOperatedBy">sessione operata da</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#usesChargingStation"
+               title="http://www.w3id.org/urban-iot/electric#usesChargingStation">stazione di ricarica utilizzata</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#rechargeTimeInMin"
+               title="http://www.w3id.org/urban-iot/electric#rechargeTimeInMin">tempo di ricarica in minuti</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#registeredUser"
+               title="http://www.w3id.org/urban-iot/electric#registeredUser">utente registrato</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>è nel codominio di</dt>
+         <dd>
+            <a href="#enablesCharging"
+               title="http://www.w3id.org/urban-iot/electric#enablesCharging">abilita la ricarica</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#performsCharging"
+               title="http://www.w3id.org/urban-iot/electric#performsCharging">opera ricarica</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#operatesSession"
+               title="http://www.w3id.org/urban-iot/electric#operatesSession">opera sessione</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#chargingStationUsedIn"
+               title="http://www.w3id.org/urban-iot/electric#chargingStationUsedIn">stazione di ricarica usata in</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="EVSERecord">
+      <h3>Stato della Colonnina di Ricarica<sup class="type-c" title="classe">c</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#classes">indice delle Classi</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#EVSERecord</p>
+      <div class="comment">
+         <span class="markdown">Registrazione dello stato in cui si trova nei vari momenti la Colonnina di Ricarica (EVSE): in carica, disponibile, inattiva, etc.</span>
+      </div>
+      <dl class="description">
+         <dt>ha come super-classi</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3id.org/urban-iot/core#SensorRecord">sensor record</span>
+            <sup class="type-c" title="classe">c</sup>
+         </dd>
+         <dt>è nel dominio di</dt>
+         <dd>
+            <a href="#EVSEState" title="http://www.w3id.org/urban-iot/electric#EVSEState">stato dell'EVSE</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ChargingStation">
+      <h3>Stazione di Ricarica<sup class="type-c" title="classe">c</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#classes">indice delle Classi</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#ChargingStation</p>
+      <div class="comment">
+         <span class="markdown">Luogo dove si possono ricaricare veicoli elettrici, comprensivo sia di Colonnine di Ricarica per Veicoli Elettrici (EVSE) che delle aree di sosta per lasciare il veicolo durante la ricarica.</span>
+      </div>
+      <dl class="description">
+         <dt>ha come super-classi</dt>
+         <dd>
+            <span class="dotted"
+                  title="http://www.w3id.org/urban-iot/core#MobilityStation">mobility station</span>
+            <sup class="type-c" title="classe">c</sup>, <span class="dotted"
+                  title="http://www.w3id.org/urban-iot/core#ServiceResource">service resource</span>
+            <sup class="type-c" title="classe">c</sup>
+         </dd>
+         <dt>è nel dominio di</dt>
+         <dd>
+            <a href="#hasFacilityNearBy"
+               title="http://www.w3id.org/urban-iot/electric#hasFacilityNearBy">ha punti di interesse vicini</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasEVSE" title="http://www.w3id.org/urban-iot/electric#hasEVSE">ha un EVSE</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasSubChargePointOperator"
+               title="http://www.w3id.org/urban-iot/electric#hasSubChargePointOperator">ha un sub operatore di ricarica</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasChargingServiceOffer"
+               title="http://www.w3id.org/urban-iot/electric#hasChargingServiceOffer">ha un'offerta di ricarica</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#operatedBy"
+               title="http://www.w3id.org/urban-iot/electric#operatedBy">operato da</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasChargingStationOwner"
+               title="http://www.w3id.org/urban-iot/electric#hasChargingStationOwner">possiede una stazione di ricarica</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#chargingDuringClosure"
+               title="http://www.w3id.org/urban-iot/electric#chargingDuringClosure">ricarica durante la chiusura</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#renewableSources"
+               title="http://www.w3id.org/urban-iot/electric#renewableSources">sorgenti rinnovabili</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#chargingStationUsedIn"
+               title="http://www.w3id.org/urban-iot/electric#chargingStationUsedIn">stazione di ricarica usata in</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#stationMadeAvailableBy"
+               title="http://www.w3id.org/urban-iot/electric#stationMadeAvailableBy">stazione resa disponibile da</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isPrivate"
+               title="http://www.w3id.org/urban-iot/electric#isPrivate">è privata</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>è nel codominio di</dt>
+         <dd>
+            <a href="#operates" title="http://www.w3id.org/urban-iot/electric#operates">opera</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#makesStationAvailable"
+               title="http://www.w3id.org/urban-iot/electric#makesStationAvailable">rende la stazione disponibile</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#usesChargingStation"
+               title="http://www.w3id.org/urban-iot/electric#usesChargingStation">stazione di ricarica utilizzata</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isEVSEOf" title="http://www.w3id.org/urban-iot/electric#isEVSEOf">è EVSE di</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ChargingServiceOffer">
+      <h3>Tariffa per Servizi di Ricarica<sup class="type-c" title="classe">c</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#classes">indice delle Classi</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#ChargingServiceOffer</p>
+      <div class="comment">
+         <span class="markdown">Tariffa offerta agli Utenti dei Servizi di Ricarica.</span>
+      </div>
+      <dl class="description">
+         <dt>ha come super-classi</dt>
+         <dd>
+            <span class="dotted" title="http://schema.org/Offer">offer</span>
+            <sup class="type-c" title="classe">c</sup>
+         </dd>
+         <dt>è nel dominio di</dt>
+         <dd>
+            <a href="#pricePerKWhCharge"
+               title="http://www.w3id.org/urban-iot/electric#pricePerKWhCharge">prezzo al kWh di ricarica</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#pricePerMinuteParking"
+               title="http://www.w3id.org/urban-iot/electric#pricePerMinuteParking">prezzo al minuto di parcheggio</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#pricePerMinuteCharge"
+               title="http://www.w3id.org/urban-iot/electric#pricePerMinuteCharge">prezzo al minuto di ricarica</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#pricePerMonthCharge"
+               title="http://www.w3id.org/urban-iot/electric#pricePerMonthCharge">prezzo per mese di ricarica</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>è nel codominio di</dt>
+         <dd>
+            <a href="#hasChargingServiceOffer"
+               title="http://www.w3id.org/urban-iot/electric#hasChargingServiceOffer">ha un'offerta di ricarica</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://schema.mobivoc.org/#PlugType">
+      <h3>Tipo di Presa<sup class="type-c" title="classe">c</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#classes">indice delle Classi</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.mobivoc.org/#PlugType</p>
+      <dl class="description">
+         <dt>è nel codominio di</dt>
+         <dd>
+            <a href="#hasStandard"
+               title="http://www.w3id.org/urban-iot/electric#hasStandard">ha standard</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h2>Object Property</h2>
+   <ul class="hlist">
+      <li>
+         <a href="#enablesCharging"
+            title="http://www.w3id.org/urban-iot/electric#enablesCharging">abilita la ricarica</a>
+      </li>
+      <li>
+         <a href="#usedConnector"
+            title="http://www.w3id.org/urban-iot/electric#usedConnector">connettore utilizzato</a>
+      </li>
+      <li>
+         <a href="#usedEVSE" title="http://www.w3id.org/urban-iot/electric#usedEVSE">EVSE utilizzato</a>
+      </li>
+      <li>
+         <a href="#hasFacilityNearBy"
+            title="http://www.w3id.org/urban-iot/electric#hasFacilityNearBy">ha punti di interesse vicini</a>
+      </li>
+      <li>
+         <a href="#hasParkingRestriction"
+            title="http://www.w3id.org/urban-iot/electric#hasParkingRestriction">ha restrizioni di parcheggio</a>
+      </li>
+      <li>
+         <a href="#hasStandard"
+            title="http://www.w3id.org/urban-iot/electric#hasStandard">ha standard</a>
+      </li>
+      <li>
+         <a href="#hasPowerSupply"
+            title="http://www.w3id.org/urban-iot/electric#hasPowerSupply">ha tipi di alimentazione</a>
+      </li>
+      <li>
+         <a href="#hasConnector"
+            title="http://www.w3id.org/urban-iot/electric#hasConnector">ha un connettore</a>
+      </li>
+      <li>
+         <a href="#hasEVSE" title="http://www.w3id.org/urban-iot/electric#hasEVSE">ha un EVSE</a>
+      </li>
+      <li>
+         <a href="#hasChargeAccessMethod"
+            title="http://www.w3id.org/urban-iot/electric#hasChargeAccessMethod">ha un metodo di accesso alla ricarica</a>
+      </li>
+      <li>
+         <a href="#hasSubChargePointOperator"
+            title="http://www.w3id.org/urban-iot/electric#hasSubChargePointOperator">ha un sub operatore di ricarica</a>
+      </li>
+      <li>
+         <a href="#hasChargingServiceOffer"
+            title="http://www.w3id.org/urban-iot/electric#hasChargingServiceOffer">ha un'offerta di ricarica</a>
+      </li>
+      <li>
+         <a href="#hasEVSEChargeCategory"
+            title="http://www.w3id.org/urban-iot/electric#hasEVSEChargeCategory">ha una categoria di ricarica per EVSE</a>
+      </li>
+      <li>
+         <a href="#providesChargingService"
+            title="http://www.w3id.org/urban-iot/electric#providesChargingService">offre servizio di ricarica</a>
+      </li>
+      <li>
+         <a href="#operates" title="http://www.w3id.org/urban-iot/electric#operates">opera</a>
+      </li>
+      <li>
+         <a href="#performsCharging"
+            title="http://www.w3id.org/urban-iot/electric#performsCharging">opera ricarica</a>
+      </li>
+      <li>
+         <a href="#operatesSession"
+            title="http://www.w3id.org/urban-iot/electric#operatesSession">opera sessione</a>
+      </li>
+      <li>
+         <a href="#operatedBy"
+            title="http://www.w3id.org/urban-iot/electric#operatedBy">operato da</a>
+      </li>
+      <li>
+         <a href="#hasChargingStationOwner"
+            title="http://www.w3id.org/urban-iot/electric#hasChargingStationOwner">possiede una stazione di ricarica</a>
+      </li>
+      <li>
+         <a href="#makesStationAvailable"
+            title="http://www.w3id.org/urban-iot/electric#makesStationAvailable">rende la stazione disponibile</a>
+      </li>
+      <li>
+         <a href="#chargingEnabledBy"
+            title="http://www.w3id.org/urban-iot/electric#chargingEnabledBy">ricarica abilitata da</a>
+      </li>
+      <li>
+         <a href="#chargingPerformedBy"
+            title="http://www.w3id.org/urban-iot/electric#chargingPerformedBy">ricarica effettuata da</a>
+      </li>
+      <li>
+         <a href="#sessionOperatedBy"
+            title="http://www.w3id.org/urban-iot/electric#sessionOperatedBy">sessione operata da</a>
+      </li>
+      <li>
+         <a href="#EVSEState" title="http://www.w3id.org/urban-iot/electric#EVSEState">stato dell'EVSE</a>
+      </li>
+      <li>
+         <a href="#chargingStationUsedIn"
+            title="http://www.w3id.org/urban-iot/electric#chargingStationUsedIn">stazione di ricarica usata in</a>
+      </li>
+      <li>
+         <a href="#usesChargingStation"
+            title="http://www.w3id.org/urban-iot/electric#usesChargingStation">stazione di ricarica utilizzata</a>
+      </li>
+      <li>
+         <a href="#stationMadeAvailableBy"
+            title="http://www.w3id.org/urban-iot/electric#stationMadeAvailableBy">stazione resa disponibile da</a>
+      </li>
+      <li>
+         <a href="#isConnectorOf"
+            title="http://www.w3id.org/urban-iot/electric#isConnectorOf">è connettore di</a>
+      </li>
+      <li>
+         <a href="#isEVSEOf" title="http://www.w3id.org/urban-iot/electric#isEVSEOf">è EVSE di</a>
+      </li>
+   </ul>
+   <div class="entity" id="enablesCharging">
+      <h3>abilita la ricarica<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#enablesCharging</p>
+      <div class="comment">
+         <span class="markdown">Un Servizio di Ricarica abilita Sessioni di Ricarica.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come super-propietà</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.w3id.org/urban-iot/core#enablesSession">enables session</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#ChargingService"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingService">Servizio di Ricarica</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#ChargingSession"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingSession">Sessione di Ricarica</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>è l'inversa di</dt>
+            <dd>
+               <a href="#chargingEnabledBy"
+                  title="http://www.w3id.org/urban-iot/electric#chargingEnabledBy">ricarica abilitata da</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="usedConnector">
+      <h3>connettore utilizzato<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#usedConnector</p>
+      <div class="comment">
+         <span class="markdown">Associa una Sessione di Ricarica ad un Connettore che viene utilizzato durante la Sessione.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#ChargingSession"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingSession">Sessione di Ricarica</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#Connector"
+                  title="http://www.w3id.org/urban-iot/electric#Connector">Connettore</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="usedEVSE">
+      <h3>EVSE utilizzato<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#usedEVSE</p>
+      <div class="comment">
+         <span class="markdown">Associa una Sessione di Ricarica ad una Colonnina di Ricarica per Veicoli Elettrici (EVSE), che viene utilizzata durante la Sessione.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#ChargingSession"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingSession">Sessione di Ricarica</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#EVSE" title="http://www.w3id.org/urban-iot/electric#EVSE">Colonnina di Ricarica per Veicoli Elettrici (EVSE)</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasFacilityNearBy">
+      <h3>ha punti di interesse vicini<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#hasFacilityNearBy</p>
+      <div class="comment">
+         <span class="markdown">Associa una Stazione di Ricarica ai possibili punti di interesse in zona, rappresentati come Luogo.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#ChargingStation"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingStation">Stazione di Ricarica</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://schema.org/Place">place</span>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasParkingRestriction">
+      <h3>ha restrizioni di parcheggio<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#hasParkingRestriction</p>
+      <div class="comment">
+         <span class="markdown">Associa una Colonnina di Ricarica per Veicoli Elettrici (EVSE) a possibili restrizioni di sosta per poter sfruttare il servizio.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#EVSE" title="http://www.w3id.org/urban-iot/electric#EVSE">Colonnina di Ricarica per Veicoli Elettrici (EVSE)</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+               <sup class="type-c" title="classe">c</sup> 
+               <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</span>
+               <sup class="type-op" title="object property">op</sup> 
+               <span class="logic">value</span> 
+               <a href="#http://w3id.org/urban-iot/kos/electric/parking-restriction"
+                  title="http://w3id.org/urban-iot/kos/electric/parking-restriction">Restrizione Parcheggio</a>)</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasStandard">
+      <h3>ha standard<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#hasStandard</p>
+      <div class="comment">
+         <span class="markdown">Associa un Connettore ai possibili standard di prese.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#Connector"
+                  title="http://www.w3id.org/urban-iot/electric#Connector">Connettore</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#http://schema.mobivoc.org/#PlugType" title="http://schema.mobivoc.org/#PlugType">Tipo di Presa</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasPowerSupply">
+      <h3>ha tipi di alimentazione<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#hasPowerSupply</p>
+      <div class="comment">
+         <span class="markdown">Associa un Connettore ai possibili tipi di alimentazione.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#Connector"
+                  title="http://www.w3id.org/urban-iot/electric#Connector">Connettore</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+               <sup class="type-c" title="classe">c</sup> 
+               <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</span>
+               <sup class="type-op" title="object property">op</sup> 
+               <span class="logic">value</span> 
+               <a href="#http://w3id.org/urban-iot/kos/electric/power-supply"
+                  title="http://w3id.org/urban-iot/kos/electric/power-supply">Tipo di Alimentazione</a>)</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasConnector">
+      <h3>ha un connettore<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#hasConnector</p>
+      <div class="comment">
+         <span class="markdown">Associa un Connettore ad una Colonnina di Ricarica per Veicoli Elettrici (EVSE).</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#EVSE" title="http://www.w3id.org/urban-iot/electric#EVSE">Colonnina di Ricarica per Veicoli Elettrici (EVSE)</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#Connector"
+                  title="http://www.w3id.org/urban-iot/electric#Connector">Connettore</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>è l'inversa di</dt>
+            <dd>
+               <a href="#isConnectorOf"
+                  title="http://www.w3id.org/urban-iot/electric#isConnectorOf">è connettore di</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasEVSE">
+      <h3>ha un EVSE<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#hasEVSE</p>
+      <div class="comment">
+         <span class="markdown">Associa una Stazione di Ricarica a una Colonnina per la Ricarica di Veicoli Elettrici (EVSE).</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#ChargingStation"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingStation">Stazione di Ricarica</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#EVSE" title="http://www.w3id.org/urban-iot/electric#EVSE">Colonnina di Ricarica per Veicoli Elettrici (EVSE)</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>è l'inversa di</dt>
+            <dd>
+               <a href="#isEVSEOf" title="http://www.w3id.org/urban-iot/electric#isEVSEOf">è EVSE di</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasChargeAccessMethod">
+      <h3>ha un metodo di accesso alla ricarica<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#hasChargeAccessMethod</p>
+      <div class="comment">
+         <span class="markdown">Associazione di una Colonnina di Ricarica per Veicoli Elettrici (EVSE) a possibili metodi per attivare la ricarica.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#EVSE" title="http://www.w3id.org/urban-iot/electric#EVSE">Colonnina di Ricarica per Veicoli Elettrici (EVSE)</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+               <sup class="type-c" title="classe">c</sup> 
+               <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</span>
+               <sup class="type-op" title="object property">op</sup> 
+               <span class="logic">value</span> 
+               <a href="#http://w3id.org/urban-iot/kos/electric/charge-access-method"
+                  title="http://w3id.org/urban-iot/kos/electric/charge-access-method">Metodo di Accesso alla Ricarica</a>)</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasSubChargePointOperator">
+      <h3>ha un sub operatore di ricarica<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#hasSubChargePointOperator</p>
+      <div class="comment">
+         <span class="markdown">Associa una Stazione di Ricarica a un possibile sub operatore, identificato come Organizzazione.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#ChargingStation"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingStation">Stazione di Ricarica</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://schema.org/Organization">organization</span>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasChargingServiceOffer">
+      <h3>ha un'offerta di ricarica<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#hasChargingServiceOffer</p>
+      <div class="comment">
+         <span class="markdown">Associazine tra una Stazione di Ricarica e un'Offerta di Ricarica.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#ChargingStation"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingStation">Stazione di Ricarica</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#ChargingServiceOffer"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingServiceOffer">Tariffa per Servizi di Ricarica</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasEVSEChargeCategory">
+      <h3>ha una categoria di ricarica per EVSE<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#hasEVSEChargeCategory</p>
+      <div class="comment">
+         <span class="markdown">Associa una Colonnina di Ricarica per Veicoli Elettirci (EVSE) alle possibili categorie di ricarica.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#EVSE" title="http://www.w3id.org/urban-iot/electric#EVSE">Colonnina di Ricarica per Veicoli Elettrici (EVSE)</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+               <sup class="type-c" title="classe">c</sup> 
+               <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</span>
+               <sup class="type-op" title="object property">op</sup> 
+               <span class="logic">value</span> 
+               <a href="#http://w3id.org/urban-iot/kos/electric/EVSE-charge-category"
+                  title="http://w3id.org/urban-iot/kos/electric/EVSE-charge-category">Categoria di ricarica EVSE</a>)</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="providesChargingService">
+      <h3>offre servizio di ricarica<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#providesChargingService</p>
+      <div class="comment">
+         <span class="markdown">Associa un Gestore di Servizi per la Mobilità Elettrica ad un Servizio di Ricarica che fornisce.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#eMobilityServiceProvider"
+                  title="http://www.w3id.org/urban-iot/electric#eMobilityServiceProvider">Gestore di Servizi per la Ricarica Elettica</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#ChargingService"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingService">Servizio di Ricarica</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="operates">
+      <h3>opera<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#operates</p>
+      <div class="comment">
+         <span class="markdown">Associa un Operatore del Punto di Ricarica ad una Stazione di Ricarica, che viene azionata dall'Operatore.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#ChargePointOperator"
+                  title="http://www.w3id.org/urban-iot/electric#ChargePointOperator">Operatore del Punto di Ricarica</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#ChargingStation"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingStation">Stazione di Ricarica</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>è l'inversa di</dt>
+            <dd>
+               <a href="#operatedBy"
+                  title="http://www.w3id.org/urban-iot/electric#operatedBy">operato da</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="performsCharging">
+      <h3>opera ricarica<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#performsCharging</p>
+      <div class="comment">
+         <span class="markdown">Associa un Utente Privato del Servizio ad una Sessione di Ricarica, eseguita dall'Utente stesso.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come super-propietà</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.w3id.org/urban-iot/core#performsSession">performs session</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>ha come dominio</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.w3id.org/urban-iot/core#ServicePrivateUser">service private user</span>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#ChargingSession"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingSession">Sessione di Ricarica</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>è l'inversa di</dt>
+            <dd>
+               <a href="#chargingPerformedBy"
+                  title="http://www.w3id.org/urban-iot/electric#chargingPerformedBy">ricarica effettuata da</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="operatesSession">
+      <h3>opera sessione<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#operatesSession</p>
+      <div class="comment">
+         <span class="markdown">Associa un Operatore Punto del Ricarica ad una Sessione di Ricarica che lo coinvolge.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#ChargePointOperator"
+                  title="http://www.w3id.org/urban-iot/electric#ChargePointOperator">Operatore del Punto di Ricarica</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#ChargingSession"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingSession">Sessione di Ricarica</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>è l'inversa di</dt>
+            <dd>
+               <a href="#sessionOperatedBy"
+                  title="http://www.w3id.org/urban-iot/electric#sessionOperatedBy">sessione operata da</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="operatedBy">
+      <h3>operato da<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#operatedBy</p>
+      <div class="comment">
+         <span class="markdown">Associa una Stazione di Ricarica all'Operatore del Punto di Ricarica che l'aziona dal punto di vista dell'erogazione di elettricità.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#ChargingStation"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingStation">Stazione di Ricarica</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#ChargePointOperator"
+                  title="http://www.w3id.org/urban-iot/electric#ChargePointOperator">Operatore del Punto di Ricarica</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>è l'inversa di</dt>
+            <dd>
+               <a href="#operates" title="http://www.w3id.org/urban-iot/electric#operates">opera</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasChargingStationOwner">
+      <h3>possiede una stazione di ricarica<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#hasChargingStationOwner</p>
+      <div class="comment">
+         <span class="markdown">Associa una Organizzazione a una Stazione di Ricarica, dove l'Organizzazione possiede la Stazione.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#ChargingStation"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingStation">Stazione di Ricarica</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://schema.org/Organization">organization</span>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="makesStationAvailable">
+      <h3>rende la stazione disponibile<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#makesStationAvailable</p>
+      <div class="comment">
+         <span class="markdown">Associa un Servizio di Ricarica ad una Stazione di Ricarica, resa disponibile dal servizio.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come super-propietà</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.w3id.org/urban-iot/core#makesAvailable">makes available</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#ChargingService"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingService">Servizio di Ricarica</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#ChargingStation"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingStation">Stazione di Ricarica</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>è l'inversa di</dt>
+            <dd>
+               <a href="#stationMadeAvailableBy"
+                  title="http://www.w3id.org/urban-iot/electric#stationMadeAvailableBy">stazione resa disponibile da</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="chargingEnabledBy">
+      <h3>ricarica abilitata da<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#chargingEnabledBy</p>
+      <div class="comment">
+         <span class="markdown">Associa una Stazione di Ricarica ad un Servizio di Ricarica che l'abilita.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come super-propietà</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.w3id.org/urban-iot/core#sessionEnabledBy">session enabled by</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#ChargingSession"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingSession">Sessione di Ricarica</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#ChargingService"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingService">Servizio di Ricarica</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>è l'inversa di</dt>
+            <dd>
+               <a href="#enablesCharging"
+                  title="http://www.w3id.org/urban-iot/electric#enablesCharging">abilita la ricarica</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="chargingPerformedBy">
+      <h3>ricarica effettuata da<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#chargingPerformedBy</p>
+      <div class="comment">
+         <span class="markdown">Associa una Sessione di Ricarica all'Utente Privato del Servizio che la esegue.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come super-propietà</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.w3id.org/urban-iot/core#sessionPerformedBy">session performed by</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#ChargingSession"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingSession">Sessione di Ricarica</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.w3id.org/urban-iot/core#ServicePrivateUser">service private user</span>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>è l'inversa di</dt>
+            <dd>
+               <a href="#performsCharging"
+                  title="http://www.w3id.org/urban-iot/electric#performsCharging">opera ricarica</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="sessionOperatedBy">
+      <h3>sessione operata da<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#sessionOperatedBy</p>
+      <div class="comment">
+         <span class="markdown">Associa una Sessione di Ricarica all'Operatore del Punto di Ricarica che aziona l'erogazione di corrente.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#ChargingSession"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingSession">Sessione di Ricarica</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#ChargePointOperator"
+                  title="http://www.w3id.org/urban-iot/electric#ChargePointOperator">Operatore del Punto di Ricarica</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>è l'inversa di</dt>
+            <dd>
+               <a href="#operatesSession"
+                  title="http://www.w3id.org/urban-iot/electric#operatesSession">opera sessione</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="EVSEState">
+      <h3>stato dell'EVSE<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#EVSEState</p>
+      <div class="comment">
+         <span class="markdown">Associazioni a possibili stati  in cui una Colonnina per la Ricarica Veicoli Elettrici (EVSE) può trovarsi.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#EVSERecord"
+                  title="http://www.w3id.org/urban-iot/electric#EVSERecord">Stato della Colonnina di Ricarica</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+               <sup class="type-c" title="classe">c</sup> 
+               <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</span>
+               <sup class="type-op" title="object property">op</sup> 
+               <span class="logic">value</span> 
+               <a href="#EVSE-state"
+                  title="http://www.w3id.org/urban-iot/electric#EVSE-state">Stato Colonnina di Ricarica</a>)</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="chargingStationUsedIn">
+      <h3>stazione di ricarica usata in<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#chargingStationUsedIn</p>
+      <div class="comment">
+         <span class="markdown">Associa una Stazione di Ricarica ad una Sessione di Ricarica che la utilizza.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come super-propietà</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.w3id.org/urban-iot/core#resourceUsedIn">resource used in</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#ChargingStation"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingStation">Stazione di Ricarica</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#ChargingSession"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingSession">Sessione di Ricarica</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>è l'inversa di</dt>
+            <dd>
+               <a href="#usesChargingStation"
+                  title="http://www.w3id.org/urban-iot/electric#usesChargingStation">stazione di ricarica utilizzata</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="usesChargingStation">
+      <h3>stazione di ricarica utilizzata<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#usesChargingStation</p>
+      <div class="comment">
+         <span class="markdown">Associa una Sessione di Ricarica ad una Stazione di Ricarica, utilizzata durante la Sessione.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come super-propietà</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3id.org/urban-iot/core#usesResource">uses resource</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#ChargingSession"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingSession">Sessione di Ricarica</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#ChargingStation"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingStation">Stazione di Ricarica</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>è l'inversa di</dt>
+            <dd>
+               <a href="#chargingStationUsedIn"
+                  title="http://www.w3id.org/urban-iot/electric#chargingStationUsedIn">stazione di ricarica usata in</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="stationMadeAvailableBy">
+      <h3>stazione resa disponibile da<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#stationMadeAvailableBy</p>
+      <div class="comment">
+         <span class="markdown">Associa una determinata Stazione di Ricarica che è stata resa disponibile da un determinato Servizio di Ricarica.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come super-propietà</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.w3id.org/urban-iot/core#madeAvailableBy">made available by</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#ChargingStation"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingStation">Stazione di Ricarica</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#ChargingService"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingService">Servizio di Ricarica</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>è l'inversa di</dt>
+            <dd>
+               <a href="#makesStationAvailable"
+                  title="http://www.w3id.org/urban-iot/electric#makesStationAvailable">rende la stazione disponibile</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isConnectorOf">
+      <h3>è connettore di<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#isConnectorOf</p>
+      <div class="comment">
+         <span class="markdown">Associa un Connettore ad una Colonnina di Ricarica per Veicoli Elettrici (EVSE).</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#Connector"
+                  title="http://www.w3id.org/urban-iot/electric#Connector">Connettore</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#EVSE" title="http://www.w3id.org/urban-iot/electric#EVSE">Colonnina di Ricarica per Veicoli Elettrici (EVSE)</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>è l'inversa di</dt>
+            <dd>
+               <a href="#hasConnector"
+                  title="http://www.w3id.org/urban-iot/electric#hasConnector">ha un connettore</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isEVSEOf">
+      <h3>è EVSE di<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#isEVSEOf</p>
+      <div class="comment">
+         <span class="markdown">Associa una Colonnina di Ricarica per Veicoli Elettrici (EVSE) ad una Stazione di Ricarica.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#EVSE" title="http://www.w3id.org/urban-iot/electric#EVSE">Colonnina di Ricarica per Veicoli Elettrici (EVSE)</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#ChargingStation"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingStation">Stazione di Ricarica</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>è l'inversa di</dt>
+            <dd>
+               <a href="#hasEVSE" title="http://www.w3id.org/urban-iot/electric#hasEVSE">ha un EVSE</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="dataproperties">
+   <h2>Data Property</h2>
+   <ul class="hlist">
+      <li>
+         <a href="#chargingSessionDuration"
+            title="http://www.w3id.org/urban-iot/electric#chargingSessionDuration">durata sessione di ricarica</a>
+      </li>
+      <li>
+         <a href="#totalEnergy"
+            title="http://www.w3id.org/urban-iot/electric#totalEnergy">energia totale</a>
+      </li>
+      <li>
+         <a href="#providesCable"
+            title="http://www.w3id.org/urban-iot/electric#providesCable">fornisce cavo</a>
+      </li>
+      <li>
+         <a href="#http://schema.org/image" title="http://schema.org/image">immagine</a>
+      </li>
+      <li>
+         <a href="#maxPowerInKW"
+            title="http://www.w3id.org/urban-iot/electric#maxPowerInKW">massima potenza in kW</a>
+      </li>
+      <li>
+         <a href="#maxAmperageInA"
+            title="http://www.w3id.org/urban-iot/electric#maxAmperageInA">massimo amperaggio in A</a>
+      </li>
+      <li>
+         <a href="#maxVoltageInV"
+            title="http://www.w3id.org/urban-iot/electric#maxVoltageInV">massimo voltaggio in V</a>
+      </li>
+      <li>
+         <a href="#minPowerInKW"
+            title="http://www.w3id.org/urban-iot/electric#minPowerInKW">minima potenza in kW</a>
+      </li>
+      <li>
+         <a href="#minAmperageInA"
+            title="http://www.w3id.org/urban-iot/electric#minAmperageInA">minimo amperaggio in A</a>
+      </li>
+      <li>
+         <a href="#minVoltageInV"
+            title="http://www.w3id.org/urban-iot/electric#minVoltageInV">minimo voltaggio in V</a>
+      </li>
+      <li>
+         <a href="#floorLevel"
+            title="http://www.w3id.org/urban-iot/electric#floorLevel">numero di piano</a>
+      </li>
+      <li>
+         <a href="#pricePerKWhCharge"
+            title="http://www.w3id.org/urban-iot/electric#pricePerKWhCharge">prezzo al kWh di ricarica</a>
+      </li>
+      <li>
+         <a href="#pricePerMinuteParking"
+            title="http://www.w3id.org/urban-iot/electric#pricePerMinuteParking">prezzo al minuto di parcheggio</a>
+      </li>
+      <li>
+         <a href="#pricePerMinuteCharge"
+            title="http://www.w3id.org/urban-iot/electric#pricePerMinuteCharge">prezzo al minuto di ricarica</a>
+      </li>
+      <li>
+         <a href="#pricePerMonthCharge"
+            title="http://www.w3id.org/urban-iot/electric#pricePerMonthCharge">prezzo per mese di ricarica</a>
+      </li>
+      <li>
+         <a href="#chargingDuringClosure"
+            title="http://www.w3id.org/urban-iot/electric#chargingDuringClosure">ricarica durante la chiusura</a>
+      </li>
+      <li>
+         <a href="#renewableSources"
+            title="http://www.w3id.org/urban-iot/electric#renewableSources">sorgenti rinnovabili</a>
+      </li>
+      <li>
+         <a href="#rechargeTimeInMin"
+            title="http://www.w3id.org/urban-iot/electric#rechargeTimeInMin">tempo di ricarica in minuti</a>
+      </li>
+      <li>
+         <a href="#registeredUser"
+            title="http://www.w3id.org/urban-iot/electric#registeredUser">utente registrato</a>
+      </li>
+      <li>
+         <a href="#isPrivate"
+            title="http://www.w3id.org/urban-iot/electric#isPrivate">è privata</a>
+      </li>
+   </ul>
+   <div class="entity" id="chargingSessionDuration">
+      <h3>durata sessione di ricarica<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#dataproperties">indice delle Data PropertyC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#chargingSessionDuration</p>
+      <div class="comment">
+         <span class="markdown">Indica la durata di una determinata Sessione di Ricarica.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come super-propietà</dt>
+            <dd>
+               <span class="dotted" title="http://schema.org/duration">duration</span>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#ChargingSession"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingSession">Sessione di Ricarica</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#int">int</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="totalEnergy">
+      <h3>energia totale<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#dataproperties">indice delle Data PropertyC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#totalEnergy</p>
+      <div class="comment">
+         <span class="markdown">Energia totale erogata durante una Sessione di Ricarica.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#ChargingSession"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingSession">Sessione di Ricarica</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="providesCable">
+      <h3>fornisce cavo<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#dataproperties">indice delle Data PropertyC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#providesCable</p>
+      <div class="comment">
+         <span class="markdown">Indica la presenza di cavo o meno, per un Connettore.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#Connector"
+                  title="http://www.w3id.org/urban-iot/electric#Connector">Connettore</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://schema.org/image">
+      <h3>immagine<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#dataproperties">indice delle Data PropertyC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/image</p>
+   </div>
+   <div class="entity" id="maxPowerInKW">
+      <h3>massima potenza in kW<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#dataproperties">indice delle Data PropertyC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#maxPowerInKW</p>
+      <div class="comment">
+         <span class="markdown">Indica la massima potenza in kWatt per un Connettore.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#Connector"
+                  title="http://www.w3id.org/urban-iot/electric#Connector">Connettore</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="maxAmperageInA">
+      <h3>massimo amperaggio in A<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#dataproperties">indice delle Data PropertyC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#maxAmperageInA</p>
+      <div class="comment">
+         <span class="markdown">Indica il massimo amperaggio in Ampere per un Connettore.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#Connector"
+                  title="http://www.w3id.org/urban-iot/electric#Connector">Connettore</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="maxVoltageInV">
+      <h3>massimo voltaggio in V<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#dataproperties">indice delle Data PropertyC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#maxVoltageInV</p>
+      <div class="comment">
+         <span class="markdown">Indica il massimo voltaggio in Volt per un Connettore.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#Connector"
+                  title="http://www.w3id.org/urban-iot/electric#Connector">Connettore</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="minPowerInKW">
+      <h3>minima potenza in kW<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#dataproperties">indice delle Data PropertyC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#minPowerInKW</p>
+      <div class="comment">
+         <span class="markdown">Indica la minima potenza in kWatt per un Connettore.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#Connector"
+                  title="http://www.w3id.org/urban-iot/electric#Connector">Connettore</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="minAmperageInA">
+      <h3>minimo amperaggio in A<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#dataproperties">indice delle Data PropertyC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#minAmperageInA</p>
+      <div class="comment">
+         <span class="markdown">Indica il minimo amperaggio in Ampere per un Connettore.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#Connector"
+                  title="http://www.w3id.org/urban-iot/electric#Connector">Connettore</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="minVoltageInV">
+      <h3>minimo voltaggio in V<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#dataproperties">indice delle Data PropertyC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#minVoltageInV</p>
+      <div class="comment">
+         <span class="markdown">Indica il minimo voltaggio in Volt per un Connettore.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#Connector"
+                  title="http://www.w3id.org/urban-iot/electric#Connector">Connettore</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="floorLevel">
+      <h3>numero di piano<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#dataproperties">indice delle Data PropertyC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#floorLevel</p>
+      <div class="comment">
+         <span class="markdown">Piano al quale è installata la colonnina di ricarica per veicoli elettrici (EVSE).</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#EVSE" title="http://www.w3id.org/urban-iot/electric#EVSE">Colonnina di Ricarica per Veicoli Elettrici (EVSE)</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#int">int</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="pricePerKWhCharge">
+      <h3>prezzo al kWh di ricarica<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#dataproperties">indice delle Data PropertyC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#pricePerKWhCharge</p>
+      <div class="comment">
+         <span class="markdown">Prezzo espresso in base ai kWh di ricarica.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come super-propietà</dt>
+            <dd>
+               <span class="dotted" title="http://schema.org/price">price</span>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#ChargingServiceOffer"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingServiceOffer">Tariffa per Servizi di Ricarica</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="pricePerMinuteParking">
+      <h3>prezzo al minuto di parcheggio<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#dataproperties">indice delle Data PropertyC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#pricePerMinuteParking</p>
+      <div class="comment">
+         <span class="markdown">Prezzo espresso in base ai minuti di parcheggio.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come super-propietà</dt>
+            <dd>
+               <span class="dotted" title="http://schema.org/price">price</span>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#ChargingServiceOffer"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingServiceOffer">Tariffa per Servizi di Ricarica</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="pricePerMinuteCharge">
+      <h3>prezzo al minuto di ricarica<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#dataproperties">indice delle Data PropertyC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#pricePerMinuteCharge</p>
+      <div class="comment">
+         <span class="markdown">Prezzo espresso in base ai minuti di ricarica.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come super-propietà</dt>
+            <dd>
+               <span class="dotted" title="http://schema.org/price">price</span>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#ChargingServiceOffer"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingServiceOffer">Tariffa per Servizi di Ricarica</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="pricePerMonthCharge">
+      <h3>prezzo per mese di ricarica<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#dataproperties">indice delle Data PropertyC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#pricePerMonthCharge</p>
+      <div class="comment">
+         <span class="markdown">Prezzo espresso in base al mese per ricarica.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come super-propietà</dt>
+            <dd>
+               <span class="dotted" title="http://schema.org/price">price</span>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#ChargingServiceOffer"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingServiceOffer">Tariffa per Servizi di Ricarica</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="chargingDuringClosure">
+      <h3>ricarica durante la chiusura<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#dataproperties">indice delle Data PropertyC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#chargingDuringClosure</p>
+      <div class="comment">
+         <span class="markdown">Tempo di ricarica trascorso durante la chiusura del servizio.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#ChargingStation"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingStation">Stazione di Ricarica</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="renewableSources">
+      <h3>sorgenti rinnovabili<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#dataproperties">indice delle Data PropertyC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#renewableSources</p>
+      <div class="comment">
+         <span class="markdown">Informa rispetto all'uitilizzo di sorgenti di elettricità rinnovabili per una data Sessione di Ricarica.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#ChargingStation"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingStation">Stazione di Ricarica</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="rechargeTimeInMin">
+      <h3>tempo di ricarica in minuti<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#dataproperties">indice delle Data PropertyC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#rechargeTimeInMin</p>
+      <div class="comment">
+         <span class="markdown">Indica il tempo di ricarica in minuti per una Sessione di Ricarica.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#ChargingSession"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingSession">Sessione di Ricarica</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#int">int</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="registeredUser">
+      <h3>utente registrato<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#dataproperties">indice delle Data PropertyC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#registeredUser</p>
+      <div class="comment">
+         <span class="markdown">Indica se la Sessione di Ricarica è stata eseguita da un utente registrato o meno.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#ChargingSession"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingSession">Sessione di Ricarica</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isPrivate">
+      <h3>è privata<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#dataproperties">indice delle Data PropertyC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#isPrivate</p>
+      <div class="comment">
+         <span class="markdown">Indica se una Stazione di Ricarica sia privata o pubblica.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#ChargingStation"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingStation">Stazione di Ricarica</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="namedindividuals">
+   <h2>Individui</h2>
+   <ul class="hlist">
+      <li>
+         <a href="#http://w3id.org/urban-iot/kos/electric/EVSE-charge-category"
+            title="http://w3id.org/urban-iot/kos/electric/EVSE-charge-category">Categoria di ricarica EVSE</a>
+      </li>
+      <li>
+         <a href="#http://w3id.org/urban-iot/kos/electric/charge-access-method"
+            title="http://w3id.org/urban-iot/kos/electric/charge-access-method">Metodo di Accesso alla Ricarica</a>
+      </li>
+      <li>
+         <a href="#http://w3id.org/urban-iot/kos/electric/parking-restriction"
+            title="http://w3id.org/urban-iot/kos/electric/parking-restriction">Restrizione Parcheggio</a>
+      </li>
+      <li>
+         <a href="#EVSE-state"
+            title="http://www.w3id.org/urban-iot/electric#EVSE-state">Stato Colonnina di Ricarica</a>
+      </li>
+      <li>
+         <a href="#http://w3id.org/urban-iot/kos/electric/power-supply"
+            title="http://w3id.org/urban-iot/kos/electric/power-supply">Tipo di Alimentazione</a>
+      </li>
+   </ul>
+   <div class="entity" id="http://w3id.org/urban-iot/kos/electric/EVSE-charge-category">
+      <h3>Categoria di ricarica EVSE<sup class="type-ni" title="individuo">ni</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#namedindividuals">indice degli Individui</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/urban-iot/kos/electric/EVSE-charge-category</p>
+      <div class="comment">
+         <span class="markdown">Categoria di ricarica per colonnine di ricarica.</span>
+      </div>
+   </div>
+   <div class="entity" id="http://w3id.org/urban-iot/kos/electric/charge-access-method">
+      <h3>Metodo di Accesso alla Ricarica<sup class="type-ni" title="individuo">ni</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#namedindividuals">indice degli Individui</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/urban-iot/kos/electric/charge-access-method</p>
+      <div class="comment">
+         <span class="markdown">Metodo di accesso per ricarica di veicoli nella mobilità elettrica.</span>
+      </div>
+   </div>
+   <div class="entity" id="http://w3id.org/urban-iot/kos/electric/parking-restriction">
+      <h3>Restrizione Parcheggio<sup class="type-ni" title="individuo">ni</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#namedindividuals">indice degli Individui</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/urban-iot/kos/electric/parking-restriction</p>
+      <div class="comment">
+         <span class="markdown">Restrizione per le aree di parcheggio nella mobilità elettrica.</span>
+      </div>
+   </div>
+   <div class="entity" id="EVSE-state">
+      <h3>Stato Colonnina di Ricarica<sup class="type-ni" title="individuo">ni</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#namedindividuals">indice degli Individui</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#EVSE-state</p>
+      <div class="comment">
+         <span class="markdown">Stato della Colonnina di Ricarica per Veicoli Elettrici.</span>
+      </div>
+   </div>
+   <div class="entity" id="http://w3id.org/urban-iot/kos/electric/power-supply">
+      <h3>Tipo di Alimentazione<sup class="type-ni" title="individuo">ni</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#namedindividuals">indice degli Individui</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/urban-iot/kos/electric/power-supply</p>
+      <div class="comment">
+         <span class="markdown">Tipo di alimentazione per la mobilità elettrica.</span>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>
+</html>

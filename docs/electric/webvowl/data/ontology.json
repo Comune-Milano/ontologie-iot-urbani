@@ -1,0 +1,1883 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "it", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3id.org/urban-iot/core", "http://www.w3id.org/urban-iot/electric", "http://schema.org", "http://schema.mobivoc.org/", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://www.w3.org/ns/sosa", "http://www.w3.org/2004/02/skos/core" ],
+    "title" : {
+      "en" : "Urban IoT Ontologies - Electric Mobility Module",
+      "it" : "Ontologie per gli Apparati IoT Urbani - Modulo Electric Mobility"
+    },
+    "iri" : "http://www.w3id.org/urban-iot/electric",
+    "version" : "v1.0.0",
+    "author" : [ "Irene Celino (Cefriel)", "Ilaria Baroni (Cefriel)", "Mario Scrocca (Cefriel)" ],
+    "labels" : {
+      "en" : "Urban IoT Ontologies - Electric Mobility Module",
+      "it" : "Ontologie per gli Apparati IoT Urbani - Modulo Electric Mobility"
+    },
+    "comments" : {
+      "en" : "Electric Mobility module of the suite of ontologies for urban IoT devices.",
+      "it" : "Modulo Electric Mobility delle ontologie per gli apparati IoT urbani."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Mario Scrocca (Cefriel)",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Irene Celino (Cefriel)",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Ilaria Baroni (Cefriel)",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Area Pianificazione e Monitoraggio (AMAT Milano)",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Direzione Sistemi Informativi ed Agenda Digitale - Area Gestione ed Integrazione Dati (Comune di Milano)",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Direzione Mobilità e Trasporti - Area Pianificazione e Programmazione Mobilità (Comune di Milano)",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "uiote",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "undefined",
+        "value" : "Copyright Comune di Milano, 2020",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "undefined",
+        "value" : "Comune di Milano",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "undefined",
+        "value" : "Comune di Milano. Urban IoT Ontologies - Electric Mobility Module (v1.0.0). http://www.w3id.org/urban-iot/electric",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "v1.0.0",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://www.w3id.org/urban-iot/electric#",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "it",
+        "value" : "Ontologie per gli Apparati IoT Urbani - Modulo Electric Mobility",
+        "type" : "label"
+      }, {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Urban IoT Ontologies - Electric Mobility Module",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "24",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "23",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "11",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "99",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "106",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "84",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "96",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "78",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2004/02/skos/core#Concept",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Concept"
+    },
+    "attributes" : [ "external" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "20",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "24",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "31",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "23",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "35",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "36",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#Connector",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Connector",
+      "en" : "Connector",
+      "it" : "Connettore"
+    },
+    "comment" : {
+      "en" : "Connector related to an Electric Vehicle Supply Equipment (EVSE).",
+      "it" : "Connettore collegato a una Colonnina di Ricarica per Veicoli Elettrici (EVSE)."
+    },
+    "id" : "22"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "39",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "10",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "11",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "42",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "43",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://schema.org/Offer",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Offer"
+    },
+    "subClasses" : [ "29" ],
+    "attributes" : [ "external" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "47",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "38",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "52",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "53",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "55",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#eMobilityServiceProvider",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "eMobilityServiceProvider",
+      "en" : "eMobility Service Provider",
+      "it" : "Gestore di Servizi per la Ricarica Elettica"
+    },
+    "comment" : {
+      "en" : "Organization which offers the Charging Service",
+      "it" : "Organizzazione che fornisce il Servizio di Ricarica."
+    },
+    "id" : "13",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#ChargingSession",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ChargingSession",
+      "en" : "Charging Session",
+      "it" : "Sessione di Ricarica"
+    },
+    "comment" : {
+      "en" : "Session where a\\n user asks to a charge for his vehicle, with all the information related to this activity.",
+      "it" : "Sessione dove un utente richiede la carica del proprio veicolo, con tutte le informazioni collegate a questa attività."
+    },
+    "id" : "5",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#ChargingStation",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ChargingStation",
+      "en" : "Charging Station",
+      "it" : "Stazione di Ricarica"
+    },
+    "comment" : {
+      "en" : "Place where it is possible to recharge vehicles, that includes both Electric Vehicle Supply Equipments (EVSE) and the parking areas to allow the vehicle stop during the charging activity.",
+      "it" : "Luogo dove si possono ricaricare veicoli elettrici, comprensivo sia di Colonnine di Ricarica per Veicoli Elettrici (EVSE) che delle aree di sosta per lasciare il veicolo durante la ricarica."
+    },
+    "id" : "9",
+    "superClasses" : [ "59", "60" ]
+  }, {
+    "iri" : "http://schema.org/Place",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Place"
+    },
+    "attributes" : [ "external" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#SensorRecord",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SensorRecord"
+    },
+    "subClasses" : [ "26" ],
+    "attributes" : [ "external" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#ChargingService",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ChargingService",
+      "en" : "Charging Service",
+      "it" : "Servizio di Ricarica"
+    },
+    "comment" : {
+      "en" : "Service operated by an eMobility Service Provider, with the purpose to manage the use of Electric Vehicle Supply Equipments (EVSE).",
+      "it" : "Servizio operato da un Gestore di Servizi per la ricarica elettrica, con il fine di gestire l'utilizzo di Colonnine di Ricarica (EVSE)."
+    },
+    "id" : "33",
+    "superClasses" : [ "78" ]
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#ChargePointOperator",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ChargePointOperator",
+      "en" : "Charge Point Operator",
+      "it" : "Operatore del Punto di Ricarica"
+    },
+    "comment" : {
+      "en" : "Organization that manages the supply of electricity in the Charging Stations.",
+      "it" : "Organizzazione che gestisce l'erogazione di corrente presso le Stazioni di Ricarica."
+    },
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#EVSE",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EVSE",
+      "en" : "Electric Vehicle Supply Equipment (EVSE)",
+      "it" : "Colonnina di Ricarica per Veicoli Elettrici (EVSE)"
+    },
+    "comment" : {
+      "en" : "Electric Vehicle Supply Equipment (EVSE) available for charging vehicles.",
+      "it" : "Colonnina di Ricarica (EVSE) messa a disposizione per la ricarica di veicoli elettrici."
+    },
+    "id" : "45",
+    "superClasses" : [ "84" ]
+  }, {
+    "iri" : "http://schema.mobivoc.org/#PlugType",
+    "baseIri" : "http://schema.mobivoc.org/",
+    "instances" : 0,
+    "annotations" : {
+      "usageNote" : [ {
+        "identifier" : "usageNote",
+        "language" : "it",
+        "value" : "Tipi di prese standard che può avere un connettore.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PlugType",
+      "en" : "Plug Type",
+      "it" : "Tipo di Presa"
+    },
+    "attributes" : [ "external" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#EVSERecord",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EVSERecord",
+      "en" : "Electric Vehicle Supply Equipment Record",
+      "it" : "Stato della Colonnina di Ricarica"
+    },
+    "comment" : {
+      "en" : "Registration status for the Electric Vehicle Supply Equipment (EVSE): in charge, available, inoperative, ecc.",
+      "it" : "Registrazione dello stato in cui si trova nei vari momenti la Colonnina di Ricarica (EVSE): in carica, disponibile, inattiva, etc."
+    },
+    "id" : "26",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#UsageSession",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UsageSession"
+    },
+    "subClasses" : [ "5" ],
+    "attributes" : [ "external" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConceptScheme"
+    },
+    "attributes" : [ "external" ],
+    "id" : "99"
+  }, {
+    "iri" : "http://schema.org/Organization",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Organization"
+    },
+    "subClasses" : [ "13", "1" ],
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#ServiceResource",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ServiceResource"
+    },
+    "subClasses" : [ "9" ],
+    "attributes" : [ "external" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#ChargingServiceOffer",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ChargingServiceOffer",
+      "en" : "Charging Service Offer",
+      "it" : "Tariffa per Servizi di Ricarica"
+    },
+    "comment" : {
+      "en" : "Tariff offered to charge services Users.",
+      "it" : "Tariffa offerta agli Utenti dei Servizi di Ricarica."
+    },
+    "id" : "29",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "106",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "69",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "90",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "98",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "108",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "74",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "49",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "88",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#MobilityStation",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MobilityStation"
+    },
+    "subClasses" : [ "9" ],
+    "attributes" : [ "external" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://www.w3.org/ns/sosa/Sensor",
+    "baseIri" : "http://www.w3.org/ns/sosa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sensor"
+    },
+    "subClasses" : [ "45" ],
+    "attributes" : [ "external" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "63",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "96",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://schema.org/Service",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Service"
+    },
+    "subClasses" : [ "33" ],
+    "attributes" : [ "external" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#ServicePrivateUser",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ServicePrivateUser"
+    },
+    "attributes" : [ "external" ],
+    "id" : "4"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "37",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "68",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "75",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "85",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "87",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "89",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "91",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "92",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "97",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "100",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "101",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "102",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "103",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "104",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "107",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "109",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "86",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "110",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "111",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "112",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "105",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "113",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "114",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "115",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "116",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "94",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#performsCharging",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "performsCharging",
+      "en" : "performs charging",
+      "it" : "opera ricarica"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "4",
+    "comment" : {
+      "en" : "Associates a Service Private User to a Charging Session, perfrmed by the User.",
+      "it" : "Associa un Utente Privato del Servizio ad una Sessione di Ricarica, eseguita dall'Utente stesso."
+    },
+    "attributes" : [ "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#renewableSources",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "renewableSources",
+      "en" : "renewable sources",
+      "it" : "sorgenti rinnovabili"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Provides information on the usage of renewable sources for a Charging Session.",
+      "it" : "Informa rispetto all'uitilizzo di sorgenti di elettricità rinnovabili per una data Sessione di Ricarica."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#performsSession",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "performsSession"
+    },
+    "domain" : "11",
+    "subproperty" : [ "3" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "6"
+  }, {
+    "range" : "2",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#enablesSession",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "enablesSession"
+    },
+    "domain" : "11",
+    "subproperty" : [ "15" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "14"
+  }, {
+    "range" : "17",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#makesAvailable",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "makesAvailable"
+    },
+    "domain" : "11",
+    "subproperty" : [ "19" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#hasPowerSupply",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "hasPowerSupply",
+      "en" : "has power supply",
+      "it" : "ha tipi di alimentazione"
+    },
+    "domain" : "22",
+    "comment" : {
+      "en" : "Associates a Connector to possible power supplies.",
+      "it" : "Associa un Connettore ai possibili tipi di alimentazione."
+    },
+    "attributes" : [ "object" ],
+    "id" : "21"
+  }, {
+    "range" : "27",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "25"
+  }, {
+    "range" : "30",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#stationMadeAvailableBy",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "stationMadeAvailableBy",
+      "en" : "station made available by",
+      "it" : "stazione resa disponibile da"
+    },
+    "superproperty" : [ "34" ],
+    "domain" : "9",
+    "comment" : {
+      "en" : "Connect a specific Charging Station which is made available by a charging service.",
+      "it" : "Associa una determinata Stazione di Ricarica che è stata resa disponibile da un determinato Servizio di Ricarica."
+    },
+    "attributes" : [ "object" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#rechargeTimeInMin",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "rechargeTimeInMin",
+      "en" : "recharge time in min",
+      "it" : "tempo di ricarica in minuti"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Indicates the charging time expressed in minutes for a Charging Session.",
+      "it" : "Indica il tempo di ricarica in minuti per una Sessione di Ricarica."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#chargingEnabledBy",
+    "inverse" : "15",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "chargingEnabledBy",
+      "en" : "charging enabled by",
+      "it" : "ricarica abilitata da"
+    },
+    "superproperty" : [ "41" ],
+    "domain" : "5",
+    "comment" : {
+      "en" : "Associates a Charging Station to a Charging Service which enabled it.",
+      "it" : "Associa una Stazione di Ricarica ad un Servizio di Ricarica che l'abilita."
+    },
+    "attributes" : [ "object" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#hasConnector",
+    "inverse" : "46",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "hasConnector",
+      "en" : "has connector",
+      "it" : "ha un connettore"
+    },
+    "domain" : "45",
+    "comment" : {
+      "en" : "Associates a Connector to an Electric Vehicle Supply Equipment (EVSE).",
+      "it" : "Associa un Connettore ad una Colonnina di Ricarica per Veicoli Elettrici (EVSE)."
+    },
+    "attributes" : [ "object" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#minPowerInKW",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "minPowerInKW",
+      "en" : "min power in kW",
+      "it" : "minima potenza in kW"
+    },
+    "domain" : "22",
+    "comment" : {
+      "en" : "It is the minimum power expressed in kWatt for a Connector.",
+      "it" : "Indica la minima potenza in kWatt per un Connettore."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#hasStandard",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "hasStandard",
+      "en" : "has standard",
+      "it" : "ha standard"
+    },
+    "domain" : "22",
+    "comment" : {
+      "en" : "Associates a Connector to possible standard.",
+      "it" : "Associa un Connettore ai possibili standard di prese."
+    },
+    "attributes" : [ "object" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#isEVSEOf",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "isEVSEOf",
+      "en" : "is EVSE of",
+      "it" : "è EVSE di"
+    },
+    "domain" : "45",
+    "comment" : {
+      "en" : "Associates an Electric Vehicle Supply Equipment (EVSE) to a Charging Station.",
+      "it" : "Associa una Colonnina di Ricarica per Veicoli Elettrici (EVSE) ad una Stazione di Ricarica."
+    },
+    "attributes" : [ "object" ],
+    "id" : "54"
+  }, {
+    "iri" : "http://schema.org/price",
+    "baseIri" : "http://schema.org",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "price"
+    },
+    "domain" : "11",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#inScheme",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "inScheme"
+    },
+    "domain" : "11",
+    "attributes" : [ "external", "object" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#hasSubChargePointOperator",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasSubChargePointOperator",
+      "en" : "has sub charge point operator",
+      "it" : "ha un sub operatore di ricarica"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Associates a Charging Station to a possible sub operator, identified as an Organization.",
+      "it" : "Associa una Stazione di Ricarica a un possibile sub operatore, identificato come Organizzazione."
+    },
+    "attributes" : [ "object" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#madeAvailableBy",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "madeAvailableBy"
+    },
+    "domain" : "11",
+    "subproperty" : [ "32" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://schema.org/image",
+    "baseIri" : "http://schema.org",
+    "range" : "35",
+    "annotations" : {
+      "usageNote" : [ {
+        "identifier" : "usageNote",
+        "language" : "en",
+        "value" : "Literal datatype xsd:anyURI.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "image",
+      "en" : "image",
+      "it" : "immagine"
+    },
+    "domain" : "11",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#chargingDuringClosure",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "63",
+    "label" : {
+      "IRI-based" : "chargingDuringClosure",
+      "en" : "charging during closure",
+      "it" : "ricarica durante la chiusura"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Charging time during the closure of the service.",
+      "it" : "Tempo di ricarica trascorso durante la chiusura del servizio."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "62"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#hasEVSE",
+    "inverse" : "54",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "hasEVSE",
+      "en" : "has EVSE",
+      "it" : "ha un EVSE"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Associates a Charging Station to an Electric Vehicle Supply Equipment (EVSE).",
+      "it" : "Associa una Stazione di Ricarica a una Colonnina per la Ricarica di Veicoli Elettrici (EVSE)."
+    },
+    "attributes" : [ "object" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#operates",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "operates",
+      "en" : "operates",
+      "it" : "opera"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Associates a Chage Point Operator to a Charging Station, which is operated by the Operator.",
+      "it" : "Associa un Operatore del Punto di Ricarica ad una Stazione di Ricarica, che viene azionata dall'Operatore."
+    },
+    "attributes" : [ "object" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#sessionEnabledBy",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "sessionEnabledBy"
+    },
+    "domain" : "11",
+    "subproperty" : [ "40" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#chargingPerformedBy",
+    "inverse" : "3",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "chargingPerformedBy",
+      "en" : "charging performed by",
+      "it" : "ricarica effettuata da"
+    },
+    "superproperty" : [ "67" ],
+    "domain" : "5",
+    "comment" : {
+      "en" : "Associates a Charging Session with a Service Private User who performs the Session.",
+      "it" : "Associa una Sessione di Ricarica all'Utente Privato del Servizio che la esegue."
+    },
+    "attributes" : [ "object" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#isPrivate",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "69",
+    "label" : {
+      "IRI-based" : "isPrivate",
+      "en" : "is private",
+      "it" : "è privata"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Indicates if a Charging Station is private or public.",
+      "it" : "Indica se una Stazione di Ricarica sia privata o pubblica."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#hasChargingStationOwner",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasChargingStationOwner",
+      "en" : "has charging station owner",
+      "it" : "possiede una stazione di ricarica"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Associates an Organization with a Charging Station, where the Organization owns the Station.",
+      "it" : "Associa una Organizzazione a una Stazione di Ricarica, dove l'Organizzazione possiede la Stazione."
+    },
+    "attributes" : [ "object" ],
+    "id" : "70"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#hasParkingRestriction",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "hasParkingRestriction",
+      "en" : "has parking restriction",
+      "it" : "ha restrizioni di parcheggio"
+    },
+    "domain" : "45",
+    "comment" : {
+      "en" : "Associates an Electric Vehicle Supply Equipment (EVSE) to possible parking restrictions to use the charging service.",
+      "it" : "Associa una Colonnina di Ricarica per Veicoli Elettrici (EVSE) a possibili restrizioni di sosta per poter sfruttare il servizio."
+    },
+    "attributes" : [ "object" ],
+    "id" : "71"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#minAmperageInA",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "74",
+    "label" : {
+      "IRI-based" : "minAmperageInA",
+      "en" : "min amperage in A",
+      "it" : "minimo amperaggio in A"
+    },
+    "domain" : "22",
+    "comment" : {
+      "en" : "It is the minimum amperage expressed in Ampere for a Connector.",
+      "it" : "Indica il minimo amperaggio in Ampere per un Connettore."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#sessionPerformedBy",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "sessionPerformedBy"
+    },
+    "domain" : "11",
+    "subproperty" : [ "66" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#hasFacilityNearBy",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "72",
+    "label" : {
+      "IRI-based" : "hasFacilityNearBy",
+      "en" : "has facility near by",
+      "it" : "ha punti di interesse vicini"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Associates a Charging station with the possible point of interest near by, represented as Place.",
+      "it" : "Associa una Stazione di Ricarica ai possibili punti di interesse in zona, rappresentati come Luogo."
+    },
+    "attributes" : [ "object" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#totalEnergy",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "totalEnergy",
+      "en" : "total energy",
+      "it" : "energia totale"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Total energy supplied during a Charging Session.",
+      "it" : "Energia totale erogata durante una Sessione di Ricarica."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "76"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#providesCable",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "providesCable",
+      "en" : "provides cable",
+      "it" : "fornisce cavo"
+    },
+    "domain" : "22",
+    "comment" : {
+      "en" : "Indicates the presence of a cable for the Connector.",
+      "it" : "Indica la presenza di cavo o meno, per un Connettore."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "77"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#EVSEState",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "EVSEState",
+      "en" : "EVSE state",
+      "it" : "stato dell'EVSE"
+    },
+    "domain" : "26",
+    "comment" : {
+      "en" : "Connection to possible states for an EVSE (Electric Vehicle Supply Equipment).",
+      "it" : "Associazioni a possibili stati  in cui una Colonnina per la Ricarica Veicoli Elettrici (EVSE) può trovarsi."
+    },
+    "attributes" : [ "object" ],
+    "id" : "79"
+  }, {
+    "range" : "59",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "80"
+  }, {
+    "range" : "60",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "81"
+  }, {
+    "range" : "78",
+    "domain" : "33",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "82"
+  }, {
+    "range" : "84",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "83"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#operatesSession",
+    "inverse" : "86",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "operatesSession",
+      "en" : "operates session",
+      "it" : "opera sessione"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Associates a Charge Point Operator to a Charging Session which involves him.",
+      "it" : "Associa un Operatore Punto del Ricarica ad una Sessione di Ricarica che lo coinvolge."
+    },
+    "attributes" : [ "object" ],
+    "id" : "85"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#minVoltageInV",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "88",
+    "label" : {
+      "IRI-based" : "minVoltageInV",
+      "en" : "min voltage in V",
+      "it" : "minimo voltaggio in V"
+    },
+    "domain" : "22",
+    "comment" : {
+      "en" : "It is the minimum voltage expressed in Volt for a Connector.",
+      "it" : "Indica il minimo voltaggio in Volt per un Connettore."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "87"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#maxAmperageInA",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "90",
+    "label" : {
+      "IRI-based" : "maxAmperageInA",
+      "en" : "max amperage in A",
+      "it" : "massimo amperaggio in A"
+    },
+    "domain" : "22",
+    "comment" : {
+      "en" : "It is the maximum amperage expressed in Ampere for a Connector.",
+      "it" : "Indica il massimo amperaggio in Ampere per un Connettore."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "89"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#usedConnector",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "usedConnector",
+      "en" : "used connector",
+      "it" : "connettore utilizzato"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Associates a Charging Session to a Connector which is used during the Session.",
+      "it" : "Associa una Sessione di Ricarica ad un Connettore che viene utilizzato durante la Sessione."
+    },
+    "attributes" : [ "object" ],
+    "id" : "91"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#pricePerMonthCharge",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "pricePerMonthCharge",
+      "en" : "price per month charge",
+      "it" : "prezzo per mese di ricarica"
+    },
+    "domain" : "29",
+    "comment" : {
+      "en" : "Price expressed per month of charge.",
+      "it" : "Prezzo espresso in base al mese per ricarica."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "92"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#usesChargingStation",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "usesChargingStation",
+      "en" : "uses charging station",
+      "it" : "stazione di ricarica utilizzata"
+    },
+    "superproperty" : [ "94" ],
+    "domain" : "5",
+    "comment" : {
+      "en" : "Associates a Charging Session to a Charging Station, which is used during the Session.",
+      "it" : "Associa una Sessione di Ricarica ad una Stazione di Ricarica, utilizzata durante la Sessione."
+    },
+    "attributes" : [ "object" ],
+    "id" : "93"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#chargingSessionDuration",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "96",
+    "label" : {
+      "IRI-based" : "chargingSessionDuration",
+      "en" : "charging session duration",
+      "it" : "durata sessione di ricarica"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Indicates the duration of a Charging Session.",
+      "it" : "Indica la durata di una determinata Sessione di Ricarica."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#maxPowerInKW",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "98",
+    "label" : {
+      "IRI-based" : "maxPowerInKW",
+      "en" : "max power in kW",
+      "it" : "massima potenza in kW"
+    },
+    "domain" : "22",
+    "comment" : {
+      "en" : "It is the maximum power expressed in kWatt for a Connector.",
+      "it" : "Indica la massima potenza in kWatt per un Connettore."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "97"
+  }, {
+    "iri" : "http://schema.org/duration",
+    "baseIri" : "http://schema.org",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "duration"
+    },
+    "domain" : "11",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "100"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#operatedBy",
+    "inverse" : "65",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "operatedBy",
+      "en" : "operated by",
+      "it" : "operato da"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Associates a Charging Station to a Charge Point Operator who operates it allowing the electricity supply.",
+      "it" : "Associa una Stazione di Ricarica all'Operatore del Punto di Ricarica che l'aziona dal punto di vista dell'erogazione di elettricità."
+    },
+    "attributes" : [ "object" ],
+    "id" : "101"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#hasChargingServiceOffer",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "hasChargingServiceOffer",
+      "en" : "has charging service offer",
+      "it" : "ha un'offerta di ricarica"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Associates a Charging Station to a Charging Offer.",
+      "it" : "Associazine tra una Stazione di Ricarica e un'Offerta di Ricarica."
+    },
+    "attributes" : [ "object" ],
+    "id" : "102"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#enablesCharging",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "enablesCharging",
+      "en" : "enables charging",
+      "it" : "abilita la ricarica"
+    },
+    "superproperty" : [ "14" ],
+    "domain" : "33",
+    "comment" : {
+      "en" : "A Charging Service can enable Charging Sessions",
+      "it" : "Un Servizio di Ricarica abilita Sessioni di Ricarica."
+    },
+    "attributes" : [ "object" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#registeredUser",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "registeredUser",
+      "en" : "registered user",
+      "it" : "utente registrato"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Indicates if a Charging Session is performed by a registered user or not.",
+      "it" : "Indica se la Sessione di Ricarica è stata eseguita da un utente registrato o meno."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "103"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#resourceUsedIn",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "resourceUsedIn"
+    },
+    "domain" : "11",
+    "subproperty" : [ "105" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "104"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#floorLevel",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "106",
+    "label" : {
+      "IRI-based" : "floorLevel",
+      "en" : "floor level",
+      "it" : "numero di piano"
+    },
+    "domain" : "45",
+    "comment" : {
+      "en" : "Floore level where the Electric Vehicle Supply Equimpment (EVSE) is installed.",
+      "it" : "Piano al quale è installata la colonnina di ricarica per veicoli elettrici (EVSE)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "107"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#maxVoltageInV",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "108",
+    "label" : {
+      "IRI-based" : "maxVoltageInV",
+      "en" : "max voltage in V",
+      "it" : "massimo voltaggio in V"
+    },
+    "domain" : "22",
+    "comment" : {
+      "en" : "It is the maximum voltage expressed in Volt for a Connector.",
+      "it" : "Indica il massimo voltaggio in Volt per un Connettore."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "109"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#sessionOperatedBy",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "sessionOperatedBy",
+      "en" : "session operated by",
+      "it" : "sessione operata da"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Associates a Charging Session to the Charge Point Operator who operates the electricity supply.",
+      "it" : "Associa una Sessione di Ricarica all'Operatore del Punto di Ricarica che aziona l'erogazione di corrente."
+    },
+    "attributes" : [ "object" ],
+    "id" : "86"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#pricePerMinuteCharge",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "55",
+    "label" : {
+      "IRI-based" : "pricePerMinuteCharge",
+      "en" : "price per minute charge",
+      "it" : "prezzo al minuto di ricarica"
+    },
+    "domain" : "29",
+    "comment" : {
+      "en" : "Price expressed per minutes of charge.",
+      "it" : "Prezzo espresso in base ai minuti di ricarica."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "110"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#providesChargingService",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "providesChargingService",
+      "en" : "provides charging service",
+      "it" : "offre servizio di ricarica"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "Associates an eMobility Service Provider to a Charging Service provided by him.",
+      "it" : "Associa un Gestore di Servizi per la Mobilità Elettrica ad un Servizio di Ricarica che fornisce."
+    },
+    "attributes" : [ "object" ],
+    "id" : "111"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#pricePerMinuteParking",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "pricePerMinuteParking",
+      "en" : "price per minute parking",
+      "it" : "prezzo al minuto di parcheggio"
+    },
+    "domain" : "29",
+    "comment" : {
+      "en" : "Price expressed per minute of parking.",
+      "it" : "Prezzo espresso in base ai minuti di parcheggio."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "112"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#chargingStationUsedIn",
+    "inverse" : "93",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "chargingStationUsedIn",
+      "en" : "charging station used in",
+      "it" : "stazione di ricarica usata in"
+    },
+    "superproperty" : [ "104" ],
+    "domain" : "9",
+    "comment" : {
+      "en" : "Associates a Charging Station to a Charging Session where the Station is used.",
+      "it" : "Associa una Stazione di Ricarica ad una Sessione di Ricarica che la utilizza."
+    },
+    "attributes" : [ "object" ],
+    "id" : "105"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#usedEVSE",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "usedEVSE",
+      "en" : "used EVSE",
+      "it" : "EVSE utilizzato"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Associates a Charging Session to an Electric Vehicle Supply Equipment (EVSE) which is used during the Session.",
+      "it" : "Associa una Sessione di Ricarica ad una Colonnina di Ricarica per Veicoli Elettrici (EVSE), che viene utilizzata durante la Sessione."
+    },
+    "attributes" : [ "object" ],
+    "id" : "113"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#makesStationAvailable",
+    "inverse" : "32",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "makesStationAvailable",
+      "en" : "makes station available",
+      "it" : "rende la stazione disponibile"
+    },
+    "superproperty" : [ "18" ],
+    "domain" : "33",
+    "comment" : {
+      "en" : "Associates a Charging Service to a Charging Station, made available by the Service.",
+      "it" : "Associa un Servizio di Ricarica ad una Stazione di Ricarica, resa disponibile dal servizio."
+    },
+    "attributes" : [ "object" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#pricePerKWhCharge",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "pricePerKWhCharge",
+      "en" : "price per kWh charge",
+      "it" : "prezzo al kWh di ricarica"
+    },
+    "domain" : "29",
+    "comment" : {
+      "en" : "Price expressed per kWh of charge.",
+      "it" : "Prezzo espresso in base ai kWh di ricarica."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "114"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#hasEVSEChargeCategory",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "hasEVSEChargeCategory",
+      "en" : "has EVSE Charge Category",
+      "it" : "ha una categoria di ricarica per EVSE"
+    },
+    "domain" : "45",
+    "comment" : {
+      "en" : "Associates a Electric Vehicle Supply Equipment (EVSE) to the possible charge categories.",
+      "it" : "Associa una Colonnina di Ricarica per Veicoli Elettirci (EVSE) alle possibili categorie di ricarica."
+    },
+    "attributes" : [ "object" ],
+    "id" : "115"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#hasChargeAccessMethod",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "hasChargeAccessMethod",
+      "en" : "has charge access method",
+      "it" : "ha un metodo di accesso alla ricarica"
+    },
+    "domain" : "45",
+    "comment" : {
+      "en" : "Association for an Electric Vehicle Supply Equipment (EVSE) to possible methods to activate the charge.",
+      "it" : "Associazione di una Colonnina di Ricarica per Veicoli Elettrici (EVSE) a possibili metodi per attivare la ricarica."
+    },
+    "attributes" : [ "object" ],
+    "id" : "116"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/electric#isConnectorOf",
+    "baseIri" : "http://www.w3id.org/urban-iot/electric",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "isConnectorOf",
+      "en" : "is connector of",
+      "it" : "è connettore di"
+    },
+    "domain" : "22",
+    "comment" : {
+      "en" : "Associates a Connector to an Electric Vehicle Supply Equipment (EVSE).",
+      "it" : "Associa un Connettore ad una Colonnina di Ricarica per Veicoli Elettrici (EVSE)."
+    },
+    "attributes" : [ "object" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#usesResource",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "usesResource"
+    },
+    "domain" : "11",
+    "subproperty" : [ "93" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "94"
+  } ]
+}

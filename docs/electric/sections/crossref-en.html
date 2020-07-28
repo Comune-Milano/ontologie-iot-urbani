@@ -1,0 +1,2127 @@
+<html><h2 id="crossreference" class="list">Cross reference for Urban IoT Ontologies - Electric Mobility Module classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Urban IoT Ontologies - Electric Mobility Module.
+<div id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#ChargePointOperator"
+            title="http://www.w3id.org/urban-iot/electric#ChargePointOperator">Charge Point Operator</a>
+      </li>
+      <li>
+         <a href="#ChargingService"
+            title="http://www.w3id.org/urban-iot/electric#ChargingService">Charging Service</a>
+      </li>
+      <li>
+         <a href="#ChargingServiceOffer"
+            title="http://www.w3id.org/urban-iot/electric#ChargingServiceOffer">Charging Service Offer</a>
+      </li>
+      <li>
+         <a href="#ChargingSession"
+            title="http://www.w3id.org/urban-iot/electric#ChargingSession">Charging Session</a>
+      </li>
+      <li>
+         <a href="#ChargingStation"
+            title="http://www.w3id.org/urban-iot/electric#ChargingStation">Charging Station</a>
+      </li>
+      <li>
+         <a href="#Connector"
+            title="http://www.w3id.org/urban-iot/electric#Connector">Connector</a>
+      </li>
+      <li>
+         <a href="#EVSE" title="http://www.w3id.org/urban-iot/electric#EVSE">Electric Vehicle Supply Equipment (EVSE)</a>
+      </li>
+      <li>
+         <a href="#EVSERecord"
+            title="http://www.w3id.org/urban-iot/electric#EVSERecord">Electric Vehicle Supply Equipment Record</a>
+      </li>
+      <li>
+         <a href="#eMobilityServiceProvider"
+            title="http://www.w3id.org/urban-iot/electric#eMobilityServiceProvider">eMobility Service Provider</a>
+      </li>
+      <li>
+         <a href="#http://schema.mobivoc.org/#PlugType" title="http://schema.mobivoc.org/#PlugType">Plug Type</a>
+      </li>
+   </ul>
+   <div class="entity" id="ChargePointOperator">
+      <h3>Charge Point Operator<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#ChargePointOperator</p>
+      <div class="comment">
+         <span class="markdown">Organization that manages the supply of electricity in the Charging Stations.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://schema.org/Organization">organization</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#operates" title="http://www.w3id.org/urban-iot/electric#operates">operates</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#operatesSession"
+               title="http://www.w3id.org/urban-iot/electric#operatesSession">operates session</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#operatedBy"
+               title="http://www.w3id.org/urban-iot/electric#operatedBy">operated by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#sessionOperatedBy"
+               title="http://www.w3id.org/urban-iot/electric#sessionOperatedBy">session operated by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ChargingService">
+      <h3>Charging Service<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#ChargingService</p>
+      <div class="comment">
+         <span class="markdown">Service operated by an eMobility Service Provider, with the purpose to manage the use of Electric Vehicle Supply Equipments (EVSE).</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://schema.org/Service">service</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#enablesCharging"
+               title="http://www.w3id.org/urban-iot/electric#enablesCharging">enables charging</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#makesStationAvailable"
+               title="http://www.w3id.org/urban-iot/electric#makesStationAvailable">makes station available</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#chargingEnabledBy"
+               title="http://www.w3id.org/urban-iot/electric#chargingEnabledBy">charging enabled by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#providesChargingService"
+               title="http://www.w3id.org/urban-iot/electric#providesChargingService">provides charging service</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#stationMadeAvailableBy"
+               title="http://www.w3id.org/urban-iot/electric#stationMadeAvailableBy">station made available by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ChargingServiceOffer">
+      <h3>Charging Service Offer<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#ChargingServiceOffer</p>
+      <div class="comment">
+         <span class="markdown">Tariff offered to charge services Users.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://schema.org/Offer">offer</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#pricePerKWhCharge"
+               title="http://www.w3id.org/urban-iot/electric#pricePerKWhCharge">price per kWh charge</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#pricePerMinuteCharge"
+               title="http://www.w3id.org/urban-iot/electric#pricePerMinuteCharge">price per minute charge</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#pricePerMinuteParking"
+               title="http://www.w3id.org/urban-iot/electric#pricePerMinuteParking">price per minute parking</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#pricePerMonthCharge"
+               title="http://www.w3id.org/urban-iot/electric#pricePerMonthCharge">price per month charge</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasChargingServiceOffer"
+               title="http://www.w3id.org/urban-iot/electric#hasChargingServiceOffer">has charging service offer</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ChargingSession">
+      <h3>Charging Session<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#ChargingSession</p>
+      <div class="comment">
+         <span class="markdown">Session where a\n user asks to a charge for his vehicle, with all the information related to this activity.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3id.org/urban-iot/core#UsageSession">usage session</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#chargingEnabledBy"
+               title="http://www.w3id.org/urban-iot/electric#chargingEnabledBy">charging enabled by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#chargingPerformedBy"
+               title="http://www.w3id.org/urban-iot/electric#chargingPerformedBy">charging performed by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#chargingSessionDuration"
+               title="http://www.w3id.org/urban-iot/electric#chargingSessionDuration">charging session duration</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#rechargeTimeInMin"
+               title="http://www.w3id.org/urban-iot/electric#rechargeTimeInMin">recharge time in min</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#registeredUser"
+               title="http://www.w3id.org/urban-iot/electric#registeredUser">registered user</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#sessionOperatedBy"
+               title="http://www.w3id.org/urban-iot/electric#sessionOperatedBy">session operated by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#totalEnergy"
+               title="http://www.w3id.org/urban-iot/electric#totalEnergy">total energy</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#usedEVSE" title="http://www.w3id.org/urban-iot/electric#usedEVSE">used EVSE</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#usedConnector"
+               title="http://www.w3id.org/urban-iot/electric#usedConnector">used connector</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#usesChargingStation"
+               title="http://www.w3id.org/urban-iot/electric#usesChargingStation">uses charging station</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#chargingStationUsedIn"
+               title="http://www.w3id.org/urban-iot/electric#chargingStationUsedIn">charging station used in</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#enablesCharging"
+               title="http://www.w3id.org/urban-iot/electric#enablesCharging">enables charging</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#operatesSession"
+               title="http://www.w3id.org/urban-iot/electric#operatesSession">operates session</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#performsCharging"
+               title="http://www.w3id.org/urban-iot/electric#performsCharging">performs charging</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ChargingStation">
+      <h3>Charging Station<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#ChargingStation</p>
+      <div class="comment">
+         <span class="markdown">Place where it is possible to recharge vehicles, that includes both Electric Vehicle Supply Equipments (EVSE) and the parking areas to allow the vehicle stop during the charging activity.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted"
+                  title="http://www.w3id.org/urban-iot/core#MobilityStation">mobility station</span>
+            <sup class="type-c" title="class">c</sup>, <span class="dotted"
+                  title="http://www.w3id.org/urban-iot/core#ServiceResource">service resource</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#chargingDuringClosure"
+               title="http://www.w3id.org/urban-iot/electric#chargingDuringClosure">charging during closure</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#chargingStationUsedIn"
+               title="http://www.w3id.org/urban-iot/electric#chargingStationUsedIn">charging station used in</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasEVSE" title="http://www.w3id.org/urban-iot/electric#hasEVSE">has EVSE</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasChargingServiceOffer"
+               title="http://www.w3id.org/urban-iot/electric#hasChargingServiceOffer">has charging service offer</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasChargingStationOwner"
+               title="http://www.w3id.org/urban-iot/electric#hasChargingStationOwner">has charging station owner</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasFacilityNearBy"
+               title="http://www.w3id.org/urban-iot/electric#hasFacilityNearBy">has facility near by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasSubChargePointOperator"
+               title="http://www.w3id.org/urban-iot/electric#hasSubChargePointOperator">has sub charge point operator</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isPrivate"
+               title="http://www.w3id.org/urban-iot/electric#isPrivate">is private</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#operatedBy"
+               title="http://www.w3id.org/urban-iot/electric#operatedBy">operated by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#renewableSources"
+               title="http://www.w3id.org/urban-iot/electric#renewableSources">renewable sources</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#stationMadeAvailableBy"
+               title="http://www.w3id.org/urban-iot/electric#stationMadeAvailableBy">station made available by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#isEVSEOf" title="http://www.w3id.org/urban-iot/electric#isEVSEOf">is EVSE of</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#makesStationAvailable"
+               title="http://www.w3id.org/urban-iot/electric#makesStationAvailable">makes station available</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#operates" title="http://www.w3id.org/urban-iot/electric#operates">operates</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#usesChargingStation"
+               title="http://www.w3id.org/urban-iot/electric#usesChargingStation">uses charging station</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Connector">
+      <h3>Connector<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#Connector</p>
+      <div class="comment">
+         <span class="markdown">Connector related to an Electric Vehicle Supply Equipment (EVSE).</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasPowerSupply"
+               title="http://www.w3id.org/urban-iot/electric#hasPowerSupply">has power supply</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasStandard"
+               title="http://www.w3id.org/urban-iot/electric#hasStandard">has standard</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isConnectorOf"
+               title="http://www.w3id.org/urban-iot/electric#isConnectorOf">is connector of</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#maxAmperageInA"
+               title="http://www.w3id.org/urban-iot/electric#maxAmperageInA">max amperage in A</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#maxPowerInKW"
+               title="http://www.w3id.org/urban-iot/electric#maxPowerInKW">max power in kW</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#maxVoltageInV"
+               title="http://www.w3id.org/urban-iot/electric#maxVoltageInV">max voltage in V</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#minAmperageInA"
+               title="http://www.w3id.org/urban-iot/electric#minAmperageInA">min amperage in A</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#minPowerInKW"
+               title="http://www.w3id.org/urban-iot/electric#minPowerInKW">min power in kW</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#minVoltageInV"
+               title="http://www.w3id.org/urban-iot/electric#minVoltageInV">min voltage in V</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#providesCable"
+               title="http://www.w3id.org/urban-iot/electric#providesCable">provides cable</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasConnector"
+               title="http://www.w3id.org/urban-iot/electric#hasConnector">has connector</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#usedConnector"
+               title="http://www.w3id.org/urban-iot/electric#usedConnector">used connector</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="EVSE">
+      <h3>Electric Vehicle Supply Equipment (EVSE)<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#EVSE</p>
+      <div class="comment">
+         <span class="markdown">Electric Vehicle Supply Equipment (EVSE) available for charging vehicles.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/ns/sosa/Sensor">sensor</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#floorLevel"
+               title="http://www.w3id.org/urban-iot/electric#floorLevel">floor level</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasEVSEChargeCategory"
+               title="http://www.w3id.org/urban-iot/electric#hasEVSEChargeCategory">has EVSE Charge Category</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasChargeAccessMethod"
+               title="http://www.w3id.org/urban-iot/electric#hasChargeAccessMethod">has charge access method</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasConnector"
+               title="http://www.w3id.org/urban-iot/electric#hasConnector">has connector</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasParkingRestriction"
+               title="http://www.w3id.org/urban-iot/electric#hasParkingRestriction">has parking restriction</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isEVSEOf" title="http://www.w3id.org/urban-iot/electric#isEVSEOf">is EVSE of</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasEVSE" title="http://www.w3id.org/urban-iot/electric#hasEVSE">has EVSE</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isConnectorOf"
+               title="http://www.w3id.org/urban-iot/electric#isConnectorOf">is connector of</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#usedEVSE" title="http://www.w3id.org/urban-iot/electric#usedEVSE">used EVSE</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="EVSERecord">
+      <h3>Electric Vehicle Supply Equipment Record<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#EVSERecord</p>
+      <div class="comment">
+         <span class="markdown">Registration status for the Electric Vehicle Supply Equipment (EVSE): in charge, available, inoperative, ecc.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3id.org/urban-iot/core#SensorRecord">sensor record</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#EVSEState" title="http://www.w3id.org/urban-iot/electric#EVSEState">EVSE state</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="eMobilityServiceProvider">
+      <h3>eMobility Service Provider<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#eMobilityServiceProvider</p>
+      <div class="comment">
+         <span class="markdown">Organization which offers the Charging Service</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://schema.org/Organization">organization</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#providesChargingService"
+               title="http://www.w3id.org/urban-iot/electric#providesChargingService">provides charging service</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://schema.mobivoc.org/#PlugType">
+      <h3>Plug Type<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.mobivoc.org/#PlugType</p>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasStandard"
+               title="http://www.w3id.org/urban-iot/electric#hasStandard">has standard</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#chargingEnabledBy"
+            title="http://www.w3id.org/urban-iot/electric#chargingEnabledBy">charging enabled by</a>
+      </li>
+      <li>
+         <a href="#chargingPerformedBy"
+            title="http://www.w3id.org/urban-iot/electric#chargingPerformedBy">charging performed by</a>
+      </li>
+      <li>
+         <a href="#chargingStationUsedIn"
+            title="http://www.w3id.org/urban-iot/electric#chargingStationUsedIn">charging station used in</a>
+      </li>
+      <li>
+         <a href="#enablesCharging"
+            title="http://www.w3id.org/urban-iot/electric#enablesCharging">enables charging</a>
+      </li>
+      <li>
+         <a href="#EVSEState" title="http://www.w3id.org/urban-iot/electric#EVSEState">EVSE state</a>
+      </li>
+      <li>
+         <a href="#hasChargeAccessMethod"
+            title="http://www.w3id.org/urban-iot/electric#hasChargeAccessMethod">has charge access method</a>
+      </li>
+      <li>
+         <a href="#hasChargingServiceOffer"
+            title="http://www.w3id.org/urban-iot/electric#hasChargingServiceOffer">has charging service offer</a>
+      </li>
+      <li>
+         <a href="#hasChargingStationOwner"
+            title="http://www.w3id.org/urban-iot/electric#hasChargingStationOwner">has charging station owner</a>
+      </li>
+      <li>
+         <a href="#hasConnector"
+            title="http://www.w3id.org/urban-iot/electric#hasConnector">has connector</a>
+      </li>
+      <li>
+         <a href="#hasEVSE" title="http://www.w3id.org/urban-iot/electric#hasEVSE">has EVSE</a>
+      </li>
+      <li>
+         <a href="#hasEVSEChargeCategory"
+            title="http://www.w3id.org/urban-iot/electric#hasEVSEChargeCategory">has EVSE Charge Category</a>
+      </li>
+      <li>
+         <a href="#hasFacilityNearBy"
+            title="http://www.w3id.org/urban-iot/electric#hasFacilityNearBy">has facility near by</a>
+      </li>
+      <li>
+         <a href="#hasParkingRestriction"
+            title="http://www.w3id.org/urban-iot/electric#hasParkingRestriction">has parking restriction</a>
+      </li>
+      <li>
+         <a href="#hasPowerSupply"
+            title="http://www.w3id.org/urban-iot/electric#hasPowerSupply">has power supply</a>
+      </li>
+      <li>
+         <a href="#hasStandard"
+            title="http://www.w3id.org/urban-iot/electric#hasStandard">has standard</a>
+      </li>
+      <li>
+         <a href="#hasSubChargePointOperator"
+            title="http://www.w3id.org/urban-iot/electric#hasSubChargePointOperator">has sub charge point operator</a>
+      </li>
+      <li>
+         <a href="#isConnectorOf"
+            title="http://www.w3id.org/urban-iot/electric#isConnectorOf">is connector of</a>
+      </li>
+      <li>
+         <a href="#isEVSEOf" title="http://www.w3id.org/urban-iot/electric#isEVSEOf">is EVSE of</a>
+      </li>
+      <li>
+         <a href="#makesStationAvailable"
+            title="http://www.w3id.org/urban-iot/electric#makesStationAvailable">makes station available</a>
+      </li>
+      <li>
+         <a href="#operatedBy"
+            title="http://www.w3id.org/urban-iot/electric#operatedBy">operated by</a>
+      </li>
+      <li>
+         <a href="#operates" title="http://www.w3id.org/urban-iot/electric#operates">operates</a>
+      </li>
+      <li>
+         <a href="#operatesSession"
+            title="http://www.w3id.org/urban-iot/electric#operatesSession">operates session</a>
+      </li>
+      <li>
+         <a href="#performsCharging"
+            title="http://www.w3id.org/urban-iot/electric#performsCharging">performs charging</a>
+      </li>
+      <li>
+         <a href="#providesChargingService"
+            title="http://www.w3id.org/urban-iot/electric#providesChargingService">provides charging service</a>
+      </li>
+      <li>
+         <a href="#sessionOperatedBy"
+            title="http://www.w3id.org/urban-iot/electric#sessionOperatedBy">session operated by</a>
+      </li>
+      <li>
+         <a href="#stationMadeAvailableBy"
+            title="http://www.w3id.org/urban-iot/electric#stationMadeAvailableBy">station made available by</a>
+      </li>
+      <li>
+         <a href="#usedConnector"
+            title="http://www.w3id.org/urban-iot/electric#usedConnector">used connector</a>
+      </li>
+      <li>
+         <a href="#usedEVSE" title="http://www.w3id.org/urban-iot/electric#usedEVSE">used EVSE</a>
+      </li>
+      <li>
+         <a href="#usesChargingStation"
+            title="http://www.w3id.org/urban-iot/electric#usesChargingStation">uses charging station</a>
+      </li>
+   </ul>
+   <div class="entity" id="chargingEnabledBy">
+      <h3>charging enabled by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#chargingEnabledBy</p>
+      <div class="comment">
+         <span class="markdown">Associates a Charging Station to a Charging Service which enabled it.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.w3id.org/urban-iot/core#sessionEnabledBy">session enabled by</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ChargingSession"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingSession">Charging Session</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ChargingService"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingService">Charging Service</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#enablesCharging"
+                  title="http://www.w3id.org/urban-iot/electric#enablesCharging">enables charging</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="chargingPerformedBy">
+      <h3>charging performed by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#chargingPerformedBy</p>
+      <div class="comment">
+         <span class="markdown">Associates a Charging Session with a Service Private User who performs the Session.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.w3id.org/urban-iot/core#sessionPerformedBy">session performed by</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ChargingSession"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingSession">Charging Session</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.w3id.org/urban-iot/core#ServicePrivateUser">service private user</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#performsCharging"
+                  title="http://www.w3id.org/urban-iot/electric#performsCharging">performs charging</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="chargingStationUsedIn">
+      <h3>charging station used in<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#chargingStationUsedIn</p>
+      <div class="comment">
+         <span class="markdown">Associates a Charging Station to a Charging Session where the Station is used.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.w3id.org/urban-iot/core#resourceUsedIn">resource used in</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ChargingStation"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingStation">Charging Station</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ChargingSession"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingSession">Charging Session</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#usesChargingStation"
+                  title="http://www.w3id.org/urban-iot/electric#usesChargingStation">uses charging station</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="enablesCharging">
+      <h3>enables charging<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#enablesCharging</p>
+      <div class="comment">
+         <span class="markdown">A Charging Service can enable Charging Sessions</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.w3id.org/urban-iot/core#enablesSession">enables session</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ChargingService"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingService">Charging Service</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ChargingSession"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingSession">Charging Session</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#chargingEnabledBy"
+                  title="http://www.w3id.org/urban-iot/electric#chargingEnabledBy">charging enabled by</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="EVSEState">
+      <h3>EVSE state<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#EVSEState</p>
+      <div class="comment">
+         <span class="markdown">Connection to possible states for an EVSE (Electric Vehicle Supply Equipment).</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#EVSERecord"
+                  title="http://www.w3id.org/urban-iot/electric#EVSERecord">Electric Vehicle Supply Equipment Record</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</span>
+               <sup class="type-op" title="object property">op</sup> 
+               <span class="logic">value</span> 
+               <a href="#EVSE-state"
+                  title="http://www.w3id.org/urban-iot/electric#EVSE-state">EVSE state</a>)</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasChargeAccessMethod">
+      <h3>has charge access method<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#hasChargeAccessMethod</p>
+      <div class="comment">
+         <span class="markdown">Association for an Electric Vehicle Supply Equipment (EVSE) to possible methods to activate the charge.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#EVSE" title="http://www.w3id.org/urban-iot/electric#EVSE">Electric Vehicle Supply Equipment (EVSE)</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</span>
+               <sup class="type-op" title="object property">op</sup> 
+               <span class="logic">value</span> 
+               <a href="#http://w3id.org/urban-iot/kos/electric/charge-access-method"
+                  title="http://w3id.org/urban-iot/kos/electric/charge-access-method">Charge Vehicles Access Method</a>)</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasChargingServiceOffer">
+      <h3>has charging service offer<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#hasChargingServiceOffer</p>
+      <div class="comment">
+         <span class="markdown">Associates a Charging Station to a Charging Offer.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ChargingStation"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingStation">Charging Station</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ChargingServiceOffer"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingServiceOffer">Charging Service Offer</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasChargingStationOwner">
+      <h3>has charging station owner<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#hasChargingStationOwner</p>
+      <div class="comment">
+         <span class="markdown">Associates an Organization with a Charging Station, where the Organization owns the Station.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ChargingStation"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingStation">Charging Station</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://schema.org/Organization">organization</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasConnector">
+      <h3>has connector<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#hasConnector</p>
+      <div class="comment">
+         <span class="markdown">Associates a Connector to an Electric Vehicle Supply Equipment (EVSE).</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#EVSE" title="http://www.w3id.org/urban-iot/electric#EVSE">Electric Vehicle Supply Equipment (EVSE)</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Connector"
+                  title="http://www.w3id.org/urban-iot/electric#Connector">Connector</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isConnectorOf"
+                  title="http://www.w3id.org/urban-iot/electric#isConnectorOf">is connector of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasEVSE">
+      <h3>has EVSE<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#hasEVSE</p>
+      <div class="comment">
+         <span class="markdown">Associates a Charging Station to an Electric Vehicle Supply Equipment (EVSE).</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ChargingStation"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingStation">Charging Station</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#EVSE" title="http://www.w3id.org/urban-iot/electric#EVSE">Electric Vehicle Supply Equipment (EVSE)</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isEVSEOf" title="http://www.w3id.org/urban-iot/electric#isEVSEOf">is EVSE of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasEVSEChargeCategory">
+      <h3>has EVSE Charge Category<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#hasEVSEChargeCategory</p>
+      <div class="comment">
+         <span class="markdown">Associates a Electric Vehicle Supply Equipment (EVSE) to the possible charge categories.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#EVSE" title="http://www.w3id.org/urban-iot/electric#EVSE">Electric Vehicle Supply Equipment (EVSE)</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</span>
+               <sup class="type-op" title="object property">op</sup> 
+               <span class="logic">value</span> 
+               <a href="#http://w3id.org/urban-iot/kos/electric/EVSE-charge-category"
+                  title="http://w3id.org/urban-iot/kos/electric/EVSE-charge-category">EVSE Charge Category</a>)</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasFacilityNearBy">
+      <h3>has facility near by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#hasFacilityNearBy</p>
+      <div class="comment">
+         <span class="markdown">Associates a Charging station with the possible point of interest near by, represented as Place.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ChargingStation"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingStation">Charging Station</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://schema.org/Place">place</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasParkingRestriction">
+      <h3>has parking restriction<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#hasParkingRestriction</p>
+      <div class="comment">
+         <span class="markdown">Associates an Electric Vehicle Supply Equipment (EVSE) to possible parking restrictions to use the charging service.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#EVSE" title="http://www.w3id.org/urban-iot/electric#EVSE">Electric Vehicle Supply Equipment (EVSE)</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</span>
+               <sup class="type-op" title="object property">op</sup> 
+               <span class="logic">value</span> 
+               <a href="#http://w3id.org/urban-iot/kos/electric/parking-restriction"
+                  title="http://w3id.org/urban-iot/kos/electric/parking-restriction">Parking Restriction</a>)</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasPowerSupply">
+      <h3>has power supply<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#hasPowerSupply</p>
+      <div class="comment">
+         <span class="markdown">Associates a Connector to possible power supplies.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Connector"
+                  title="http://www.w3id.org/urban-iot/electric#Connector">Connector</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">and</span> (<span class="dotted" title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</span>
+               <sup class="type-op" title="object property">op</sup> 
+               <span class="logic">value</span> 
+               <a href="#http://w3id.org/urban-iot/kos/electric/power-supply"
+                  title="http://w3id.org/urban-iot/kos/electric/power-supply">Power Supply</a>)</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasStandard">
+      <h3>has standard<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#hasStandard</p>
+      <div class="comment">
+         <span class="markdown">Associates a Connector to possible standard.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Connector"
+                  title="http://www.w3id.org/urban-iot/electric#Connector">Connector</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://schema.mobivoc.org/#PlugType" title="http://schema.mobivoc.org/#PlugType">Plug Type</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasSubChargePointOperator">
+      <h3>has sub charge point operator<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#hasSubChargePointOperator</p>
+      <div class="comment">
+         <span class="markdown">Associates a Charging Station to a possible sub operator, identified as an Organization.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ChargingStation"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingStation">Charging Station</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://schema.org/Organization">organization</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isConnectorOf">
+      <h3>is connector of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#isConnectorOf</p>
+      <div class="comment">
+         <span class="markdown">Associates a Connector to an Electric Vehicle Supply Equipment (EVSE).</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Connector"
+                  title="http://www.w3id.org/urban-iot/electric#Connector">Connector</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#EVSE" title="http://www.w3id.org/urban-iot/electric#EVSE">Electric Vehicle Supply Equipment (EVSE)</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasConnector"
+                  title="http://www.w3id.org/urban-iot/electric#hasConnector">has connector</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isEVSEOf">
+      <h3>is EVSE of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#isEVSEOf</p>
+      <div class="comment">
+         <span class="markdown">Associates an Electric Vehicle Supply Equipment (EVSE) to a Charging Station.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#EVSE" title="http://www.w3id.org/urban-iot/electric#EVSE">Electric Vehicle Supply Equipment (EVSE)</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ChargingStation"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingStation">Charging Station</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasEVSE" title="http://www.w3id.org/urban-iot/electric#hasEVSE">has EVSE</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="makesStationAvailable">
+      <h3>makes station available<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#makesStationAvailable</p>
+      <div class="comment">
+         <span class="markdown">Associates a Charging Service to a Charging Station, made available by the Service.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.w3id.org/urban-iot/core#makesAvailable">makes available</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ChargingService"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingService">Charging Service</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ChargingStation"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingStation">Charging Station</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#stationMadeAvailableBy"
+                  title="http://www.w3id.org/urban-iot/electric#stationMadeAvailableBy">station made available by</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="operatedBy">
+      <h3>operated by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#operatedBy</p>
+      <div class="comment">
+         <span class="markdown">Associates a Charging Station to a Charge Point Operator who operates it allowing the electricity supply.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ChargingStation"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingStation">Charging Station</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ChargePointOperator"
+                  title="http://www.w3id.org/urban-iot/electric#ChargePointOperator">Charge Point Operator</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#operates" title="http://www.w3id.org/urban-iot/electric#operates">operates</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="operates">
+      <h3>operates<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#operates</p>
+      <div class="comment">
+         <span class="markdown">Associates a Chage Point Operator to a Charging Station, which is operated by the Operator.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ChargePointOperator"
+                  title="http://www.w3id.org/urban-iot/electric#ChargePointOperator">Charge Point Operator</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ChargingStation"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingStation">Charging Station</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#operatedBy"
+                  title="http://www.w3id.org/urban-iot/electric#operatedBy">operated by</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="operatesSession">
+      <h3>operates session<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#operatesSession</p>
+      <div class="comment">
+         <span class="markdown">Associates a Charge Point Operator to a Charging Session which involves him.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ChargePointOperator"
+                  title="http://www.w3id.org/urban-iot/electric#ChargePointOperator">Charge Point Operator</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ChargingSession"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingSession">Charging Session</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#sessionOperatedBy"
+                  title="http://www.w3id.org/urban-iot/electric#sessionOperatedBy">session operated by</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="performsCharging">
+      <h3>performs charging<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#performsCharging</p>
+      <div class="comment">
+         <span class="markdown">Associates a Service Private User to a Charging Session, perfrmed by the User.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.w3id.org/urban-iot/core#performsSession">performs session</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.w3id.org/urban-iot/core#ServicePrivateUser">service private user</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ChargingSession"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingSession">Charging Session</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#chargingPerformedBy"
+                  title="http://www.w3id.org/urban-iot/electric#chargingPerformedBy">charging performed by</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="providesChargingService">
+      <h3>provides charging service<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#providesChargingService</p>
+      <div class="comment">
+         <span class="markdown">Associates an eMobility Service Provider to a Charging Service provided by him.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#eMobilityServiceProvider"
+                  title="http://www.w3id.org/urban-iot/electric#eMobilityServiceProvider">eMobility Service Provider</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ChargingService"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingService">Charging Service</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="sessionOperatedBy">
+      <h3>session operated by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#sessionOperatedBy</p>
+      <div class="comment">
+         <span class="markdown">Associates a Charging Session to the Charge Point Operator who operates the electricity supply.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ChargingSession"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingSession">Charging Session</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ChargePointOperator"
+                  title="http://www.w3id.org/urban-iot/electric#ChargePointOperator">Charge Point Operator</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#operatesSession"
+                  title="http://www.w3id.org/urban-iot/electric#operatesSession">operates session</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="stationMadeAvailableBy">
+      <h3>station made available by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#stationMadeAvailableBy</p>
+      <div class="comment">
+         <span class="markdown">Connect a specific Charging Station which is made available by a charging service.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.w3id.org/urban-iot/core#madeAvailableBy">made available by</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ChargingStation"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingStation">Charging Station</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ChargingService"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingService">Charging Service</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#makesStationAvailable"
+                  title="http://www.w3id.org/urban-iot/electric#makesStationAvailable">makes station available</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="usedConnector">
+      <h3>used connector<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#usedConnector</p>
+      <div class="comment">
+         <span class="markdown">Associates a Charging Session to a Connector which is used during the Session.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ChargingSession"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingSession">Charging Session</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Connector"
+                  title="http://www.w3id.org/urban-iot/electric#Connector">Connector</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="usedEVSE">
+      <h3>used EVSE<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#usedEVSE</p>
+      <div class="comment">
+         <span class="markdown">Associates a Charging Session to an Electric Vehicle Supply Equipment (EVSE) which is used during the Session.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ChargingSession"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingSession">Charging Session</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#EVSE" title="http://www.w3id.org/urban-iot/electric#EVSE">Electric Vehicle Supply Equipment (EVSE)</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="usesChargingStation">
+      <h3>uses charging station<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#usesChargingStation</p>
+      <div class="comment">
+         <span class="markdown">Associates a Charging Session to a Charging Station, which is used during the Session.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3id.org/urban-iot/core#usesResource">uses resource</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ChargingSession"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingSession">Charging Session</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ChargingStation"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingStation">Charging Station</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#chargingStationUsedIn"
+                  title="http://www.w3id.org/urban-iot/electric#chargingStationUsedIn">charging station used in</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#chargingDuringClosure"
+            title="http://www.w3id.org/urban-iot/electric#chargingDuringClosure">charging during closure</a>
+      </li>
+      <li>
+         <a href="#chargingSessionDuration"
+            title="http://www.w3id.org/urban-iot/electric#chargingSessionDuration">charging session duration</a>
+      </li>
+      <li>
+         <a href="#floorLevel"
+            title="http://www.w3id.org/urban-iot/electric#floorLevel">floor level</a>
+      </li>
+      <li>
+         <a href="#http://schema.org/image" title="http://schema.org/image">image</a>
+      </li>
+      <li>
+         <a href="#isPrivate"
+            title="http://www.w3id.org/urban-iot/electric#isPrivate">is private</a>
+      </li>
+      <li>
+         <a href="#maxAmperageInA"
+            title="http://www.w3id.org/urban-iot/electric#maxAmperageInA">max amperage in A</a>
+      </li>
+      <li>
+         <a href="#maxPowerInKW"
+            title="http://www.w3id.org/urban-iot/electric#maxPowerInKW">max power in kW</a>
+      </li>
+      <li>
+         <a href="#maxVoltageInV"
+            title="http://www.w3id.org/urban-iot/electric#maxVoltageInV">max voltage in V</a>
+      </li>
+      <li>
+         <a href="#minAmperageInA"
+            title="http://www.w3id.org/urban-iot/electric#minAmperageInA">min amperage in A</a>
+      </li>
+      <li>
+         <a href="#minPowerInKW"
+            title="http://www.w3id.org/urban-iot/electric#minPowerInKW">min power in kW</a>
+      </li>
+      <li>
+         <a href="#minVoltageInV"
+            title="http://www.w3id.org/urban-iot/electric#minVoltageInV">min voltage in V</a>
+      </li>
+      <li>
+         <a href="#pricePerKWhCharge"
+            title="http://www.w3id.org/urban-iot/electric#pricePerKWhCharge">price per kWh charge</a>
+      </li>
+      <li>
+         <a href="#pricePerMinuteCharge"
+            title="http://www.w3id.org/urban-iot/electric#pricePerMinuteCharge">price per minute charge</a>
+      </li>
+      <li>
+         <a href="#pricePerMinuteParking"
+            title="http://www.w3id.org/urban-iot/electric#pricePerMinuteParking">price per minute parking</a>
+      </li>
+      <li>
+         <a href="#pricePerMonthCharge"
+            title="http://www.w3id.org/urban-iot/electric#pricePerMonthCharge">price per month charge</a>
+      </li>
+      <li>
+         <a href="#providesCable"
+            title="http://www.w3id.org/urban-iot/electric#providesCable">provides cable</a>
+      </li>
+      <li>
+         <a href="#rechargeTimeInMin"
+            title="http://www.w3id.org/urban-iot/electric#rechargeTimeInMin">recharge time in min</a>
+      </li>
+      <li>
+         <a href="#registeredUser"
+            title="http://www.w3id.org/urban-iot/electric#registeredUser">registered user</a>
+      </li>
+      <li>
+         <a href="#renewableSources"
+            title="http://www.w3id.org/urban-iot/electric#renewableSources">renewable sources</a>
+      </li>
+      <li>
+         <a href="#totalEnergy"
+            title="http://www.w3id.org/urban-iot/electric#totalEnergy">total energy</a>
+      </li>
+   </ul>
+   <div class="entity" id="chargingDuringClosure">
+      <h3>charging during closure<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#chargingDuringClosure</p>
+      <div class="comment">
+         <span class="markdown">Charging time during the closure of the service.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ChargingStation"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingStation">Charging Station</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="chargingSessionDuration">
+      <h3>charging session duration<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#chargingSessionDuration</p>
+      <div class="comment">
+         <span class="markdown">Indicates the duration of a Charging Session.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://schema.org/duration">duration</span>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ChargingSession"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingSession">Charging Session</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#int">int</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="floorLevel">
+      <h3>floor level<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#floorLevel</p>
+      <div class="comment">
+         <span class="markdown">Floore level where the Electric Vehicle Supply Equimpment (EVSE) is installed.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#EVSE" title="http://www.w3id.org/urban-iot/electric#EVSE">Electric Vehicle Supply Equipment (EVSE)</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#int">int</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://schema.org/image">
+      <h3>image<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/image</p>
+   </div>
+   <div class="entity" id="isPrivate">
+      <h3>is private<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#isPrivate</p>
+      <div class="comment">
+         <span class="markdown">Indicates if a Charging Station is private or public.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ChargingStation"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingStation">Charging Station</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="maxAmperageInA">
+      <h3>max amperage in A<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#maxAmperageInA</p>
+      <div class="comment">
+         <span class="markdown">It is the maximum amperage expressed in Ampere for a Connector.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Connector"
+                  title="http://www.w3id.org/urban-iot/electric#Connector">Connector</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="maxPowerInKW">
+      <h3>max power in kW<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#maxPowerInKW</p>
+      <div class="comment">
+         <span class="markdown">It is the maximum power expressed in kWatt for a Connector.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Connector"
+                  title="http://www.w3id.org/urban-iot/electric#Connector">Connector</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="maxVoltageInV">
+      <h3>max voltage in V<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#maxVoltageInV</p>
+      <div class="comment">
+         <span class="markdown">It is the maximum voltage expressed in Volt for a Connector.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Connector"
+                  title="http://www.w3id.org/urban-iot/electric#Connector">Connector</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="minAmperageInA">
+      <h3>min amperage in A<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#minAmperageInA</p>
+      <div class="comment">
+         <span class="markdown">It is the minimum amperage expressed in Ampere for a Connector.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Connector"
+                  title="http://www.w3id.org/urban-iot/electric#Connector">Connector</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="minPowerInKW">
+      <h3>min power in kW<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#minPowerInKW</p>
+      <div class="comment">
+         <span class="markdown">It is the minimum power expressed in kWatt for a Connector.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Connector"
+                  title="http://www.w3id.org/urban-iot/electric#Connector">Connector</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="minVoltageInV">
+      <h3>min voltage in V<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#minVoltageInV</p>
+      <div class="comment">
+         <span class="markdown">It is the minimum voltage expressed in Volt for a Connector.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Connector"
+                  title="http://www.w3id.org/urban-iot/electric#Connector">Connector</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="pricePerKWhCharge">
+      <h3>price per kWh charge<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#pricePerKWhCharge</p>
+      <div class="comment">
+         <span class="markdown">Price expressed per kWh of charge.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://schema.org/price">price</span>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ChargingServiceOffer"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingServiceOffer">Charging Service Offer</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="pricePerMinuteCharge">
+      <h3>price per minute charge<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#pricePerMinuteCharge</p>
+      <div class="comment">
+         <span class="markdown">Price expressed per minutes of charge.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://schema.org/price">price</span>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ChargingServiceOffer"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingServiceOffer">Charging Service Offer</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="pricePerMinuteParking">
+      <h3>price per minute parking<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#pricePerMinuteParking</p>
+      <div class="comment">
+         <span class="markdown">Price expressed per minute of parking.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://schema.org/price">price</span>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ChargingServiceOffer"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingServiceOffer">Charging Service Offer</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="pricePerMonthCharge">
+      <h3>price per month charge<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#pricePerMonthCharge</p>
+      <div class="comment">
+         <span class="markdown">Price expressed per month of charge.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://schema.org/price">price</span>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ChargingServiceOffer"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingServiceOffer">Charging Service Offer</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="providesCable">
+      <h3>provides cable<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#providesCable</p>
+      <div class="comment">
+         <span class="markdown">Indicates the presence of a cable for the Connector.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Connector"
+                  title="http://www.w3id.org/urban-iot/electric#Connector">Connector</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="rechargeTimeInMin">
+      <h3>recharge time in min<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#rechargeTimeInMin</p>
+      <div class="comment">
+         <span class="markdown">Indicates the charging time expressed in minutes for a Charging Session.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ChargingSession"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingSession">Charging Session</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#int">int</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="registeredUser">
+      <h3>registered user<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#registeredUser</p>
+      <div class="comment">
+         <span class="markdown">Indicates if a Charging Session is performed by a registered user or not.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ChargingSession"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingSession">Charging Session</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="renewableSources">
+      <h3>renewable sources<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#renewableSources</p>
+      <div class="comment">
+         <span class="markdown">Provides information on the usage of renewable sources for a Charging Session.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ChargingStation"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingStation">Charging Station</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="totalEnergy">
+      <h3>total energy<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#totalEnergy</p>
+      <div class="comment">
+         <span class="markdown">Total energy supplied during a Charging Session.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ChargingSession"
+                  title="http://www.w3id.org/urban-iot/electric#ChargingSession">Charging Session</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="namedindividuals">
+   <h3 id="namedindividuals" class="list">Named Individuals</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://w3id.org/urban-iot/kos/electric/charge-access-method"
+            title="http://w3id.org/urban-iot/kos/electric/charge-access-method">Charge Vehicles Access Method</a>
+      </li>
+      <li>
+         <a href="#http://w3id.org/urban-iot/kos/electric/EVSE-charge-category"
+            title="http://w3id.org/urban-iot/kos/electric/EVSE-charge-category">EVSE Charge Category</a>
+      </li>
+      <li>
+         <a href="#EVSE-state"
+            title="http://www.w3id.org/urban-iot/electric#EVSE-state">EVSE state</a>
+      </li>
+      <li>
+         <a href="#http://w3id.org/urban-iot/kos/electric/parking-restriction"
+            title="http://w3id.org/urban-iot/kos/electric/parking-restriction">Parking Restriction</a>
+      </li>
+      <li>
+         <a href="#http://w3id.org/urban-iot/kos/electric/power-supply"
+            title="http://w3id.org/urban-iot/kos/electric/power-supply">Power Supply</a>
+      </li>
+   </ul>
+   <div class="entity" id="http://w3id.org/urban-iot/kos/electric/charge-access-method">
+      <h3>Charge Vehicles Access Method<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/urban-iot/kos/electric/charge-access-method</p>
+      <div class="comment">
+         <span class="markdown">Electric Mobility Charge Vehicles Access Method.</span>
+      </div>
+   </div>
+   <div class="entity" id="http://w3id.org/urban-iot/kos/electric/EVSE-charge-category">
+      <h3>EVSE Charge Category<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/urban-iot/kos/electric/EVSE-charge-category</p>
+      <div class="comment">
+         <span class="markdown">Electric Mobility EVSE Charge Category.</span>
+      </div>
+   </div>
+   <div class="entity" id="EVSE-state">
+      <h3>EVSE state<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3id.org/urban-iot/electric#EVSE-state</p>
+      <div class="comment">
+         <span class="markdown">State for Electric Vehicle Supply Equipment.</span>
+      </div>
+   </div>
+   <div class="entity" id="http://w3id.org/urban-iot/kos/electric/parking-restriction">
+      <h3>Parking Restriction<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/urban-iot/kos/electric/parking-restriction</p>
+      <div class="comment">
+         <span class="markdown">Electric Mobility Parking Restriction.</span>
+      </div>
+   </div>
+   <div class="entity" id="http://w3id.org/urban-iot/kos/electric/power-supply">
+      <h3>Power Supply<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/urban-iot/kos/electric/power-supply</p>
+      <div class="comment">
+         <span class="markdown">Electric Mobility Power Supply.</span>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>
+</html>

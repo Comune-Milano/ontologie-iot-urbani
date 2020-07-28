@@ -1,0 +1,3332 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "it", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3id.org/urban-iot/core", "http://schema.org", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2003/01/geo/wgs84_pos", "http://www.w3.org/2001/XMLSchema", "http://www.w3.org/ns/sosa", "http://www.w3id.org/urban-iot/sharing", "http://www.opengis.net/ont/geosparql", "http://www.w3.org/2004/02/skos/core" ],
+    "title" : {
+      "en" : "Urban IoT Ontologies - Sharing Mobility Module",
+      "it" : "Ontologie per gli Apparati IoT Urbani - Modulo Sharing Mobility"
+    },
+    "iri" : "http://www.w3id.org/urban-iot/sharing",
+    "version" : "v1.0.0",
+    "author" : [ "Irene Celino (Cefriel)", "Ilaria Baroni (Cefriel)", "Mario Scrocca (Cefriel)" ],
+    "labels" : {
+      "en" : "Urban IoT Ontologies - Sharing Mobility Module",
+      "it" : "Ontologie per gli Apparati IoT Urbani - Modulo Sharing Mobility"
+    },
+    "comments" : {
+      "en" : "Sharing Mobility module of the suite of ontologies for urban IoT devices.",
+      "it" : "Modulo Sharing Mobility delle ontologie per gli apparati IoT urbani."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Mario Scrocca (Cefriel)",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Irene Celino (Cefriel)",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Ilaria Baroni (Cefriel)",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Direzione Mobilità e Trasporti - Area Pianificazione e Programmazione Mobilità (Comune di Milano)",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Area Pianificazione e Monitoraggio (AMAT Milano)",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Direzione Sistemi Informativi ed Agenda Digitale - Area Gestione ed Integrazione Dati (Comune di Milano)",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "uiots",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "undefined",
+        "value" : "Copyright Comune di Milano, 2020",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "undefined",
+        "value" : "Comune di Milano",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "undefined",
+        "value" : "Comune di Milano. Urban IoT Ontologies - Sharing Mobility Module (v1.0.0). http://www.w3id.org/urban-iot/sharing",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://www.w3id.org/urban-iot/sharing#",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "v1.0.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Urban IoT Ontologies - Sharing Mobility Module",
+        "type" : "label"
+      }, {
+        "identifier" : "title",
+        "language" : "it",
+        "value" : "Ontologie per gli Apparati IoT Urbani - Modulo Sharing Mobility",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "90",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "93",
+    "type" : "owl:Class"
+  }, {
+    "id" : "96",
+    "type" : "owl:Class"
+  }, {
+    "id" : "107",
+    "type" : "owl:Class"
+  }, {
+    "id" : "108",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "110",
+    "type" : "owl:Class"
+  }, {
+    "id" : "78",
+    "type" : "owl:Class"
+  }, {
+    "id" : "114",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "121",
+    "type" : "owl:Class"
+  }, {
+    "id" : "122",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "123",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "127",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "130",
+    "type" : "owl:Class"
+  }, {
+    "id" : "131",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "126",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "95",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "1",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "84",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "135",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "137",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "129",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "111",
+    "type" : "owl:Class"
+  }, {
+    "id" : "138",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "139",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "118",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "109",
+    "type" : "owl:Class"
+  }, {
+    "id" : "152",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "120",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "73",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "165",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "146",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "161",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "150",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "136",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "124",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "195",
+    "type" : "owl:Class"
+  }, {
+    "id" : "196",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "175",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "141",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "101",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "99",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#Bicycle",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Bicycle",
+      "en" : "Bicycle",
+      "it" : "Bicicletta"
+    },
+    "subClasses" : [ "8", "9", "10", "11" ],
+    "comment" : {
+      "en" : "A vehicle of type bicycle.",
+      "it" : "Un veicolo categorizzato come bicicletta."
+    },
+    "id" : "6",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#PhysicalSharingStation",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PhysicalSharingStation",
+      "en" : "Physical Sharing Station",
+      "it" : "Stazione Fisica di Sharing"
+    },
+    "comment" : {
+      "en" : "Sharing Station with a physical infrastructure to pick up/drop off vehicles.",
+      "it" : "Stazione di Sharing dotata di un'infrastruttura fisica (i.e. stalli) per il prelievo rilascio dei veicoli."
+    },
+    "id" : "18",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#SharingMobilityBicycle",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SharingMobilityBicycle",
+      "en" : "Sharing Mobility Bicycle",
+      "it" : "Bicicletta in Sharing"
+    },
+    "comment" : {
+      "en" : "A bicycle enabled to be used in a Sharing Mobility Service.",
+      "it" : "Una bicicletta abilitata per l'utilizzo in un Servizio di Sharing Mobility."
+    },
+    "id" : "8",
+    "superClasses" : [ "31", "6" ]
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#SharingMicroMobilityVehicle",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SharingMicroMobilityVehicle",
+      "en" : "Sharing Micro Mobility Vehicle",
+      "it" : "Veicolo di Micro-Mobilità in Sharing"
+    },
+    "comment" : {
+      "en" : "A micro-mobility vehicle enabled to be used in a Sharing Mobility Service.",
+      "it" : "Un veicolo di micro-mobilità abilitato per l'utilizzo in un Servizio di Sharing Mobility."
+    },
+    "id" : "39",
+    "superClasses" : [ "31", "40" ]
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#Feature",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Feature"
+    },
+    "subClasses" : [ "42", "43", "44", "35", "45", "25", "46" ],
+    "attributes" : [ "external" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#SensorRecord",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SensorRecord"
+    },
+    "subClasses" : [ "52", "68", "69" ],
+    "attributes" : [ "external" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#Hoverboard",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Hoverboard",
+      "en" : "Hoverboard",
+      "it" : "Hoverboard"
+    },
+    "id" : "82",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#PickUpDropOffArea",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PickUpDropOffArea",
+      "en" : "Pick Up Drop Off Area",
+      "it" : "Area Prelievo Rilascio"
+    },
+    "comment" : {
+      "en" : "Area in which it is possible to pick up/drop off a vehicle of a Sharing Mobility Service. This area can be different from the Operation Area of the service.",
+      "it" : "Area in cui è permesso il prelievo/rilascio dei veicoli associati ad un Servizio di Sharing Mobility. Questa area può essere differente dall'area operativa del servizio."
+    },
+    "id" : "44",
+    "superClasses" : [ "41" ]
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#SmartwheelBicycle",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SmartwheelBicycle",
+      "en" : "Smartwheel Bicycle",
+      "it" : "Bicicletta Smartwheel"
+    },
+    "comment" : {
+      "en" : "A bicycle with a smart wheel device for pedal assistance .",
+      "it" : "Una bicicletta con pedalata assistita tramite smartwheel."
+    },
+    "id" : "11",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#Segway",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Segway",
+      "en" : "Segway",
+      "it" : "Segway"
+    },
+    "id" : "90",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#TripRoute",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TripRoute",
+      "en" : "Trip Route",
+      "it" : "Tragitto del Noleggio"
+    },
+    "comment" : {
+      "en" : "Spatial representation of the route covered by a Vehicle during a Trip.",
+      "it" : "Rappresentazione spaziale del tragitto percorso da un Veicolo durante un Noleggio."
+    },
+    "id" : "43",
+    "superClasses" : [ "41" ]
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConceptScheme"
+    },
+    "individuals" : [ {
+      "iri" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard",
+      "baseIri" : "http://w3id.org/urban-iot/kos/vehicle",
+      "labels" : {
+        "IRI-based" : "european-emission-standard",
+        "en" : "European Emission Standard",
+        "it" : "Standard Europeo Emissione"
+      }
+    }, {
+      "iri" : "http://w3id.org/urban-iot/kos/sharing/dock-state",
+      "baseIri" : "http://w3id.org/urban-iot/kos/sharing",
+      "labels" : {
+        "IRI-based" : "dock-state",
+        "en" : "Dock State",
+        "it" : "Stato dello Stallo"
+      }
+    }, {
+      "iri" : "http://w3id.org/urban-iot/kos/vehicle/vehicle-category",
+      "baseIri" : "http://w3id.org/urban-iot/kos/vehicle",
+      "labels" : {
+        "IRI-based" : "vehicle-category",
+        "en" : "Vehicle Category",
+        "it" : "Categoria di Veicolo"
+      }
+    }, {
+      "iri" : "http://w3id.org/urban-iot/kos/sharing/vehicle-state",
+      "baseIri" : "http://w3id.org/urban-iot/kos/sharing",
+      "labels" : {
+        "IRI-based" : "vehicle-state",
+        "en" : "Vehicle State",
+        "it" : "Stato del Veicolo"
+      }
+    }, {
+      "iri" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event",
+      "baseIri" : "http://w3id.org/urban-iot/kos/sharing",
+      "labels" : {
+        "IRI-based" : "vehicle-event",
+        "en" : "Vehicle Event",
+        "it" : "Evento del Veicolo"
+      }
+    }, {
+      "iri" : "http://w3id.org/urban-iot/kos/vehicle/car-supply",
+      "baseIri" : "http://w3id.org/urban-iot/kos/vehicle",
+      "labels" : {
+        "IRI-based" : "car-supply",
+        "en" : "Car Supply",
+        "it" : "Alimentazione Autovettura"
+      }
+    }, {
+      "iri" : "http://w3id.org/urban-iot/kos/vehicle/propulsion-kind",
+      "baseIri" : "http://w3id.org/urban-iot/kos/vehicle",
+      "labels" : {
+        "IRI-based" : "propulsion-kind",
+        "en" : "Propulsion Kind",
+        "it" : "Tipologia di Propulsione"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "93"
+  }, {
+    "iri" : "http://schema.org/Organization",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Organization"
+    },
+    "subClasses" : [ "13" ],
+    "attributes" : [ "external" ],
+    "id" : "96"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#Scooter",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Scooter",
+      "en" : "Scooter",
+      "it" : "Monopattino"
+    },
+    "id" : "107",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#SharingMobilityMotorcycle",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SharingMobilityMotorcycle",
+      "en" : "Sharing Mobility Motorcycle",
+      "it" : "Ciclomotore in Sharing"
+    },
+    "comment" : {
+      "en" : "A motorcycle enabled to be used in a Sharing Mobility Service.",
+      "it" : "Un ciclomotore abilitato per l'utilizzo in un Servizio di Sharing Mobility."
+    },
+    "id" : "108",
+    "superClasses" : [ "109", "31" ]
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#DockRecord",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DockRecord",
+      "en" : "Dock Record",
+      "it" : "Record Stallo"
+    },
+    "comment" : {
+      "en" : "A record collecting data produced by or associated to a Dock.",
+      "it" : "Un record che colleziona dati prodotti da o associati a uno Stallo."
+    },
+    "id" : "69",
+    "superClasses" : [ "67" ]
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#MobilityStation",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MobilityStation"
+    },
+    "subClasses" : [ "19" ],
+    "attributes" : [ "external" ],
+    "id" : "110"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#SharingMobilityOffer",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SharingMobilityOffer",
+      "en" : "Sharing Mobility Offer",
+      "it" : "Offerta di Sharing Mobility"
+    },
+    "comment" : {
+      "en" : "Offer (tariff) associated to a Sharing Mobility Service.",
+      "it" : "Offerta (tariffa) associata ad un Servizio di Sharing Mobility."
+    },
+    "id" : "78",
+    "superClasses" : [ "111" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/sosa/Sensor",
+    "baseIri" : "http://www.w3.org/ns/sosa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sensor"
+    },
+    "subClasses" : [ "19", "58", "31" ],
+    "attributes" : [ "external" ],
+    "id" : "114"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#TraditionalBicycle",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TraditionalBicycle",
+      "en" : "Traditional Bicycle",
+      "it" : "Bicicletta Tradizionale"
+    },
+    "comment" : {
+      "en" : "A traditional human-powered bycicle.",
+      "it" : "Una bicicletta tradizionale azionata da forza muscolare umana."
+    },
+    "id" : "10",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#PreferredDropOffArea",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PreferredDropOffArea",
+      "en" : "Preferred Drop Off Area",
+      "it" : "Area Preferenziale di Rilascio"
+    },
+    "comment" : {
+      "en" : "Preferred Area in which the drop off of vehicles associated to a Sharing Mobility Service is encouraged.",
+      "it" : "Area preferenziale in cui è incentivato il rilascio dei veicoli associati ad un Servizio di Sharing Mobility."
+    },
+    "id" : "42",
+    "superClasses" : [ "41" ]
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#SharingMobilityCategory",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SharingMobilityCategory",
+      "en" : "Sharing Mobility Category",
+      "it" : "Categoria Sharing Mobility"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.w3id.org/urban-iot/sharing#BicycleSharing",
+      "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+      "labels" : {
+        "IRI-based" : "BicycleSharing",
+        "en" : "Bicycle Sharing",
+        "it" : "Sharing Biciclette"
+      }
+    }, {
+      "iri" : "http://www.w3id.org/urban-iot/sharing#MotorcycleSharing",
+      "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+      "labels" : {
+        "IRI-based" : "MotorcycleSharing",
+        "en" : "Motorcycle Sharing",
+        "it" : "Sharing Ciclomotori"
+      }
+    }, {
+      "iri" : "http://www.w3id.org/urban-iot/sharing#MicroMobilitySharing",
+      "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+      "labels" : {
+        "IRI-based" : "MicroMobilitySharing",
+        "en" : "Micro Mobility Sharing",
+        "it" : "Sharing Micro-Mobilità"
+      }
+    }, {
+      "iri" : "http://www.w3id.org/urban-iot/sharing#CarSharing",
+      "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+      "labels" : {
+        "IRI-based" : "CarSharing",
+        "en" : "Car Sharing",
+        "it" : "Sharing Autovetture"
+      }
+    } ],
+    "comment" : {
+      "en" : "A category for a Sharing Mobility Service.",
+      "it" : "Una categoria di Servizio di Sharing Mobility."
+    },
+    "id" : "74"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#ForbiddenDropOffArea",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ForbiddenDropOffArea",
+      "en" : "Forbidden Drop Off Area",
+      "it" : "Area Rilascio Vietato"
+    },
+    "comment" : {
+      "en" : "Area in which it is forbidden to drop off a vehicle of a Sharing Mobility Service.",
+      "it" : "Area in cui è vietato il rilascio dei veicoli associati ad un Servizio di Sharing Mobility."
+    },
+    "id" : "46",
+    "superClasses" : [ "41" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "104",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#Concept",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Concept"
+    },
+    "attributes" : [ "external" ],
+    "id" : "121"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#SharingMobilityCar",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SharingMobilityCar",
+      "en" : "Sharing Mobility Car",
+      "it" : "Autovettura in Sharing"
+    },
+    "comment" : {
+      "en" : "A car enabled to be used in a Sharing Mobility Service.",
+      "it" : "Una autovettura abilitata per l'utilizzo in un Servizio di Sharing Mobility."
+    },
+    "id" : "122",
+    "superClasses" : [ "123", "31" ]
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#SharingMobilityVehicle",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SharingMobilityVehicle",
+      "en" : "Sharing Mobility Vehicle",
+      "it" : "Veicolo Sharing Mobility"
+    },
+    "subClasses" : [ "8", "39", "108", "122" ],
+    "comment" : {
+      "en" : "A vehicle enabled to be used in a Sharing Mobility Service.",
+      "it" : "Un veicolo abilitato per l'utilizzo in un Servizio di Sharing Mobility."
+    },
+    "id" : "31",
+    "superClasses" : [ "124", "114", "7" ]
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#Car",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Car",
+      "en" : "Car",
+      "it" : "Autovettura"
+    },
+    "subClasses" : [ "122" ],
+    "comment" : {
+      "en" : "A vehicle of type car.",
+      "it" : "Un veicolo categorizzato come autovettura."
+    },
+    "id" : "123",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "48",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "127",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#VirtualSharingStation",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VirtualSharingStation",
+      "en" : "Virtual Sharing Station",
+      "it" : "Stazione Virtuale di Sharing"
+    },
+    "comment" : {
+      "en" : "Sharing Station without a physical infrastructure to pick up/drop off vehicles.",
+      "it" : "Stazione di Sharing non dotata di un'infrastruttura fisica (i.e. stalli) per il prelievo rilascio dei veicoli."
+    },
+    "id" : "130",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "131",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "126",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "98",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "95",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "1",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "84",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "89",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "76",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "64",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "135",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#SharingMobilityTrip",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SharingMobilityTrip",
+      "en" : "Sharing Mobility Trip",
+      "it" : "Noleggio Sharing Mobility"
+    },
+    "comment" : {
+      "en" : "A trip enabled by a Sharing Mobility Service.",
+      "it" : "Un noleggio effettuato utilizzando un Servizio di Sharing Mobility."
+    },
+    "id" : "16",
+    "superClasses" : [ "136" ]
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#PreferredPickUpArea",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PreferredPickUpArea",
+      "en" : "Preferred Pick Up Area",
+      "it" : "Area Preferenziale di Prelievo"
+    },
+    "comment" : {
+      "en" : "Preferred Area in which the pick up of vehicles associated to a Sharing Mobility Service is encouraged.",
+      "it" : "Area preferenziale in cui è incentivato il prelievo dei veicoli associati ad un Servizio di Sharing Mobility."
+    },
+    "id" : "25",
+    "superClasses" : [ "41" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "137",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "129",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://schema.org/Offer",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Offer"
+    },
+    "subClasses" : [ "78" ],
+    "attributes" : [ "external" ],
+    "id" : "111"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "138",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "79",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "139",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "5",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "118",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#TripPoint",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TripPoint",
+      "en" : "Trip Point",
+      "it" : "Punto del Noleggio"
+    },
+    "comment" : {
+      "en" : "Represents information on a vehicle position detection perfromed during a Trip.",
+      "it" : "Rappresenta informazioni associate ad un rilevamento della posizione del veicolo registrato durante un Noleggio."
+    },
+    "id" : "4",
+    "superClasses" : [ "141" ]
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#OperationArea",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OperationArea",
+      "en" : "Operation Area",
+      "it" : "Area Operativa"
+    },
+    "comment" : {
+      "en" : "The Operation Area in which it is possible to make use of a Service. The Operation Area should include the Contractual Operation Area associated to the Service.",
+      "it" : "Area operativa di un Servizio in cui è possibile usufruire del servizio. L'Area operativa deve comprendere i Confini Minimi di Esercizio associati al Servizio."
+    },
+    "id" : "45",
+    "superClasses" : [ "41" ]
+  }, {
+    "iri" : "http://schema.org/Vehicle",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Vehicle",
+      "en" : "Vehicle",
+      "it" : "Veicolo"
+    },
+    "subClasses" : [ "123", "109", "31", "6", "40" ],
+    "attributes" : [ "external" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#Motorcycle",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Motorcycle",
+      "en" : "Motorcycle",
+      "it" : "Ciclomotore"
+    },
+    "subClasses" : [ "108" ],
+    "comment" : {
+      "en" : "A vehicle of type motorcycle.",
+      "it" : "Un veicolo categorizzato come ciclomotore."
+    },
+    "id" : "109",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#Monowheel",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Monowheel",
+      "en" : "Monowheel",
+      "it" : "Monowheel"
+    },
+    "id" : "152",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#SharingStation",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SharingStation",
+      "en" : "Sharing Station",
+      "it" : "Stazione di Sharing"
+    },
+    "subClasses" : [ "130", "18" ],
+    "comment" : {
+      "en" : "Station to pick up/drop off vehicles associated to a Sharing Mobility Service.",
+      "it" : "Stazione per il rilascio/prelievo di veicoli associati ad un Servizio di Sharing Mobility."
+    },
+    "id" : "19",
+    "superClasses" : [ "110", "114" ]
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#MicroMobilityVehicle",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MicroMobilityVehicle",
+      "en" : "Micro Mobility Vehicle",
+      "it" : "Veicolo di Micro-Mobilità"
+    },
+    "subClasses" : [ "90", "39", "107", "152", "82" ],
+    "comment" : {
+      "en" : "A small and lightweight vehicle, usually electric, operating at low speeds.",
+      "it" : "Un veicolo piccolo e leggero, solitamente elettrico, che viaggia a velocità ridotte."
+    },
+    "id" : "40",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "120",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "73",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "165",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "56",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "146",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "161",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "150",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#ContractualOperationArea",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ContractualOperationArea",
+      "en" : "Contractual Operation Area",
+      "it" : "Confini di Esercizio Minimi"
+    },
+    "comment" : {
+      "en" : "Contractual operation area for a Service defined by the authority abilitating the service.",
+      "it" : "Confini di esercizio minimi per un Servizio stabiliti dall'autorità competente che abilita l'esercizio del servizio."
+    },
+    "id" : "35",
+    "superClasses" : [ "41" ]
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#SharingStationRecord",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SharingStationRecord",
+      "en" : "Sharing Station Record",
+      "it" : "Record Stazione di Sharing"
+    },
+    "comment" : {
+      "en" : "A record collecting data produced by or associated to a Sharing Station.",
+      "it" : "Un record che colleziona dati prodotti da o associati a una Stazione di Sharing."
+    },
+    "id" : "68",
+    "superClasses" : [ "67" ]
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#Dock",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Dock",
+      "en" : "Dock",
+      "it" : "Stallo"
+    },
+    "comment" : {
+      "en" : "A physical infrastructure (bar, parking, etc.)  to pick up/drop off a vehicle.",
+      "it" : "Un'infrastruttura fisica (sbarra, parcheggio, ecc.) per il rilascio/prelievo di un veicolo."
+    },
+    "id" : "58",
+    "superClasses" : [ "114" ]
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#SharingMobilityProvider",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SharingMobilityProvider",
+      "en" : "Sharing Mobility Provider",
+      "it" : "Fornitore Sharing Mobility"
+    },
+    "comment" : {
+      "en" : "Organization providing a Sharing Mobility Service.",
+      "it" : "Organizzazione che eroga un Servizio di Sharing Mobility."
+    },
+    "id" : "13",
+    "superClasses" : [ "96" ]
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#ElectricBicycle",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ElectricBicycle",
+      "en" : "Electric Bicycle",
+      "it" : "Bicicletta Elettrica"
+    },
+    "comment" : {
+      "en" : "A bicycle with electric pedal assistance.",
+      "it" : "Una bicicletta con pedalata assistita elettricamente."
+    },
+    "id" : "9",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#UsageSession",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UsageSession"
+    },
+    "subClasses" : [ "16" ],
+    "attributes" : [ "external" ],
+    "id" : "136"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#SharingMobilityService",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SharingMobilityService",
+      "en" : "Sharing Mobility Service",
+      "it" : "Servizio di Sharing Mobility"
+    },
+    "comment" : {
+      "en" : "A Service that allows users to perform a trip using a fleet a vehicles made available on street from the service provider.",
+      "it" : "Un Servizio che permette ai suoi utenti l'utilizzo tramite noleggio di una flotta di veicoli che sono messi a disposizione in strada dal fornitore del servizio."
+    },
+    "id" : "14",
+    "superClasses" : [ "34" ]
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#ServiceResource",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ServiceResource"
+    },
+    "subClasses" : [ "31" ],
+    "attributes" : [ "external" ],
+    "id" : "124"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#DockKind",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DockKind",
+      "en" : "Dock Kind",
+      "it" : "Tipologia di Dock"
+    },
+    "comment" : {
+      "en" : "A specific kind of dock (e.g. dedicated to a specific vehicle type).",
+      "it" : "Una specifica tipologia di stallo (es. dedicata ad un particolare veicolo)."
+    },
+    "id" : "32"
+  }, {
+    "iri" : "http://www.w3.org/ns/sosa/ObservableProperty",
+    "baseIri" : "http://www.w3.org/ns/sosa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ObservableProperty"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.w3id.org/urban-iot/sharing#ChargePercentage",
+      "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+      "annotations" : {
+        "usageNote" : [ {
+          "identifier" : "usageNote",
+          "language" : "it",
+          "value" : "Le istanze di un Veicolo in Sharing possono osservare questa proprietà. Un Campionamento su questa proprietà ha come range di sosa:hasSimpleResult un xsd:int.",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Observable Property representing the charge percentage of a Sharing Mobility Vehicle.",
+        "it" : "Proprietà Campionabile che rappresenta la percentuale di carica di un Veicolo di Sharing Mobility."
+      },
+      "labels" : {
+        "IRI-based" : "ChargePercentage",
+        "en" : "Charge Percentage",
+        "it" : "Percentuale di Carica"
+      }
+    }, {
+      "iri" : "http://www.w3id.org/urban-iot/sharing#DamagedDocks",
+      "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+      "annotations" : {
+        "usageNote" : [ {
+          "identifier" : "usageNote",
+          "language" : "it",
+          "value" : "Le istanze di una Stazione di Sharing possono osservare questa proprietà. Un Campionamento su questa proprietà ha come range di sosa:hasSimpleResult un xsd:int.",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Observable Property representing the number of damaged docks in a Sharing Station.",
+        "it" : "Proprietà Campionabile che rappresenta il numero di stalli danneggiati in una Stazione di Sharing."
+      },
+      "labels" : {
+        "IRI-based" : "DamagedDocks",
+        "en" : "Damaged Docks",
+        "it" : "Stalli Danneggiati"
+      }
+    }, {
+      "iri" : "http://www.w3id.org/urban-iot/sharing#FuelPercentage",
+      "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+      "annotations" : {
+        "usageNote" : [ {
+          "identifier" : "usageNote",
+          "language" : "it",
+          "value" : "Le istanze di un Veicolo in Sharing possono osservare questa proprietà. Un Campionamento su questa proprietà ha come range di sosa:hasSimpleResult un xsd:int.",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Observable Property representing the fuel percentage of a Sharing Mobility Vehicle.",
+        "it" : "Proprietà Campionabile che rappresenta la percentuale di carburante di un Veicolo di Sharing Mobility."
+      },
+      "labels" : {
+        "IRI-based" : "FuelPercentage",
+        "en" : "Fuel Percentage",
+        "it" : "Percentuale di Carburante"
+      }
+    }, {
+      "iri" : "http://www.w3id.org/urban-iot/sharing#DamagedVehicles",
+      "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+      "annotations" : {
+        "usageNote" : [ {
+          "identifier" : "usageNote",
+          "language" : "it",
+          "value" : "Le istanze di una Stazione di Sharing possono osservare questa proprietà. Un Campionamento su questa proprietà ha come range di sosa:hasSimpleResult un xsd:int.",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Observable Property representing the number of damaged Sharing Mobility Vehicles in a Sharing Station.",
+        "it" : "Proprietà Campionabile che rappresenta il numero di Veicoli di Sharing Mobility danneggiati in una Stazione di Sharing."
+      },
+      "labels" : {
+        "IRI-based" : "DamagedVehicles",
+        "en" : "Damaged Vehicles",
+        "it" : "Veicoli Danneggiati"
+      }
+    }, {
+      "iri" : "http://www.w3id.org/urban-iot/sharing#VehicleLocation",
+      "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+      "annotations" : {
+        "usageNote" : [ {
+          "identifier" : "usageNote",
+          "language" : "it",
+          "value" : "Le istanze di un Veicolo in Sharing possono osservare questa proprietà. Un Campionamento su questa proprietà ha come range di sosa:hasResult un geo:Point.",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Observable Property representing the position of a Sharing Mobility Vehicle.",
+        "it" : "Proprietà Campionabile che rappresenta la localizzazione di un Veicolo di Sharing Mobility."
+      },
+      "labels" : {
+        "IRI-based" : "VehicleLocation",
+        "en" : "Vehicle Location",
+        "it" : "Posizione Veicolo"
+      }
+    }, {
+      "iri" : "http://www.w3id.org/urban-iot/sharing#AvailableDocks",
+      "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+      "annotations" : {
+        "usageNote" : [ {
+          "identifier" : "usageNote",
+          "language" : "it",
+          "value" : "Le istanze di una Stazione di Sharing possono osservare questa proprietà. Un Campionamento su questa proprietà ha come range di sosa:hasSimpleResult un xsd:int.",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Observable Property representing the number of available docks in a Sharing Station.",
+        "it" : "Proprietà Campionabile che rappresenta il numero di stalli disponibili in una Stazione di Sharing."
+      },
+      "labels" : {
+        "IRI-based" : "AvailableDocks",
+        "en" : "Available Docks",
+        "it" : "Stalli Disponibili"
+      }
+    }, {
+      "iri" : "http://www.w3id.org/urban-iot/sharing#AvailableVehicles",
+      "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+      "annotations" : {
+        "usageNote" : [ {
+          "identifier" : "usageNote",
+          "language" : "it",
+          "value" : "Le istanze di una Stazione di Sharing possono osservare questa proprietà. Un Campionamento su questa proprietà ha come range di sosa:hasSimpleResult un xsd:int.",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Observable Property representing the number of available Sharing Mobility Vehicles in a Sharing Station.",
+        "it" : "Proprietà Campionabile che rappresenta il numero di Veicoli di Sharing Mobility disponibili in una Stazione di Sharing."
+      },
+      "labels" : {
+        "IRI-based" : "AvailableVehicles",
+        "en" : "Available Vehicles",
+        "it" : "Veicoli Disponibili"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "195"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "196",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "81",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "92",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "175",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "17",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "62",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "54",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "87",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#Point",
+    "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Point",
+      "en" : "Point",
+      "it" : "Punto"
+    },
+    "subClasses" : [ "4" ],
+    "attributes" : [ "external" ],
+    "id" : "141"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#SharingMobilityVehicleRecord",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SharingMobilityVehicleRecord",
+      "en" : "Sharing Mobility Vehicle Record",
+      "it" : "Record Veicolo in Sharing"
+    },
+    "comment" : {
+      "en" : "A record collecting data produced by or associated to a Sharing Mobility Vehicle.",
+      "it" : "Un record che colleziona dati prodotti da o associati a un Veicolo in Sharing Mobility."
+    },
+    "id" : "52",
+    "superClasses" : [ "67" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "101",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://schema.org/Service",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Service"
+    },
+    "subClasses" : [ "14" ],
+    "attributes" : [ "external" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#ServicePrivateUser",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ServicePrivateUser"
+    },
+    "attributes" : [ "external" ],
+    "id" : "99"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "60",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "75",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "80",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "85",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "86",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "88",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "91",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "94",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "97",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "100",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "103",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "105",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "112",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "115",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "116",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "117",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "119",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "113",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "106",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "125",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "128",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "132",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "133",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "134",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "140",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "142",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "143",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "144",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "145",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "147",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "148",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "149",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "151",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "153",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "154",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "155",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "156",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "157",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "158",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "159",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "160",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "162",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "163",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "164",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "166",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "167",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "168",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "169",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "170",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "171",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "172",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "173",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "174",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "176",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "177",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "178",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "179",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "180",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "181",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "182",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "183",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "184",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "185",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "186",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "187",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "188",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "189",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "190",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "191",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "192",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "193",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "102",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "194",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "197",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "198",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "199",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "200",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "201",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "202",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "203",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "204",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "205",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "206",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "207",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "208",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "209",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://schema.org/seatingCapacity",
+    "baseIri" : "http://schema.org",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "seatingCapacity",
+      "en" : "seating capacity",
+      "it" : "numero posti"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#passageOrder",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "passageOrder",
+      "en" : "passage order",
+      "it" : "ordine passaggio"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Associates a position detection collected during the Sharing Mobility Trip with an incremental number identifying its relative order with respect to others position detections for the same Sharing Mobility Trip.",
+      "it" : "Associa un rilevamento di posizione effettuato durante un Noleggio ad un numero incrementale che identifica l'ordine relativo rispetto agli altri rilevamenti per lo stesso Noleggio."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#providesSharingMobilityService",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "providesSharingMobilityService",
+      "en" : "provides sharing mobility service",
+      "it" : "eroga servizio sharing mobility"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "Associates a Sharing Mobility Provider with a Sharing Mobility Service operated.",
+      "it" : "Associa un fornitore di servizi di Sharing Mobility ad un servizio."
+    },
+    "attributes" : [ "object" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#fuelStartingPercentage",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "17",
+    "annotations" : {
+      "usageNote" : [ {
+        "identifier" : "usageNote",
+        "language" : "it",
+        "value" : "Associa un Noleggio alla percentuale di carburante del veicolo registrata al termine.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "fuelStartingPercentage",
+      "en" : "fuel starting percentage",
+      "it" : "percentuale carburante alla partenza"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "Associates a Sharing Mobility Trip with the fuel percentage observed at the start."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#performsSession",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "performsSession"
+    },
+    "domain" : "1",
+    "subproperty" : [ "21" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#enablesSession",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "enablesSession"
+    },
+    "domain" : "1",
+    "subproperty" : [ "23" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#hasPreferredPickUpArea",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "hasPreferredPickUpArea",
+      "en" : "has preferred pick-up area",
+      "it" : "ha area preferenziale prelievo"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "Property referring to the preferred pick-up area of the Sharing Mobility Service.",
+      "it" : "Proprietà che identifica l'area preferenziale di prelievo di un Servizio di Sharing Mobility."
+    },
+    "attributes" : [ "object" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#tripEnabledBy",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "tripEnabledBy",
+      "en" : "trip enabled by",
+      "it" : "noleggio abilitato da"
+    },
+    "superproperty" : [ "27" ],
+    "domain" : "16",
+    "comment" : {
+      "en" : "Associates a Sharing Mobility Trip with the Sharing Mobility Service enabling it.",
+      "it" : "Associa un Noleggio al Servizio di Sharing Mobility che lo abilita."
+    },
+    "attributes" : [ "object" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#makesAvailable",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "makesAvailable"
+    },
+    "domain" : "1",
+    "subproperty" : [ "29" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#hasDockAbilitated",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "hasDockAbilitated",
+      "en" : "has dock kind abilitated",
+      "it" : "ha tipologia di stallo abilitato"
+    },
+    "domain" : "31",
+    "comment" : {
+      "en" : "Associates a Sharing Mobility Vehicle with a Dock Kind supported by the vehicle.",
+      "it" : "Associa un Veicolo di Sharing Mobility alle tipologie di stallo supportate dal veicolo."
+    },
+    "attributes" : [ "object" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#hasContractualOperationArea",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "hasContractualOperationArea",
+      "en" : "has contractual operation area",
+      "it" : "ha confini di esercizio minima"
+    },
+    "domain" : "34",
+    "comment" : {
+      "en" : "Property referring to the contractual operation area of the Service.",
+      "it" : "Proprietà che identifica i confini minimi di esercizio di un Servizio."
+    },
+    "attributes" : [ "object" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#sharingStationUsedBy",
+    "inverse" : "37",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "sharingStationUsedBy",
+      "en" : "sharing station used by",
+      "it" : "stazione di sharing utilizzata da"
+    },
+    "domain" : "19",
+    "comment" : {
+      "en" : "Associates a Sharing Station with a Sharing Mobility Service using it.",
+      "it" : "Associa una Stazione di Sharing al Servizio di Sharing Mobility che la utilizza."
+    },
+    "attributes" : [ "object" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#makesVehicleAvailable",
+    "inverse" : "38",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "makesVehicleAvailable",
+      "en" : "makes vehicle available",
+      "it" : "rende disponibile veicolo"
+    },
+    "superproperty" : [ "28" ],
+    "domain" : "14",
+    "comment" : {
+      "en" : "Associates a Sharing Mobility Service with a Sharing Mobility Vehicle made available.",
+      "it" : "Associa un Servizio di Sharing Mobility al Veicolo di Sharing Mobility che rende disponibile."
+    },
+    "attributes" : [ "object" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://schema.org/price",
+    "baseIri" : "http://schema.org",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "price"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "47"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#hasStartingStation",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "hasStartingStation",
+      "en" : "has starting station",
+      "it" : "ha stazione di inizio"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "Associates a Sharing Mobility Trip with the Sharing Station in which it starts.",
+      "it" : "Associa un Noleggio alla Stazione di Sharing in cui viene iniziato."
+    },
+    "attributes" : [ "object" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#inScheme",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "inScheme"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#currentSharingStation",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "currentSharingStation",
+      "en" : "current sharing station",
+      "it" : "stazione di sharing attuale"
+    },
+    "domain" : "52",
+    "comment" : {
+      "en" : "Property referring to the Sharing Station in which the vehicle is currently located.",
+      "it" : "Proprietà che indica la Sharing Station in cui si trova attualmente il veicolo."
+    },
+    "attributes" : [ "object" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#movingTimeMinutes",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "movingTimeMinutes",
+      "en" : "moving time minutes",
+      "it" : "minuti in movimento"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "Associates a Sharing Mobility Trip with the number of minutes spent moving.",
+      "it" : "Associa un Noleggio al numero di minuti in movimento effettuati."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://schema.org/model",
+    "baseIri" : "http://schema.org",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "model",
+      "en" : "model",
+      "it" : "modello"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#hasDock",
+    "inverse" : "59",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "hasDock",
+      "en" : "has dock",
+      "it" : "ha stallo"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "Associates a Sharing Station with a Dock in the station.",
+      "it" : "Associa una Stazione di Sharing ad uno Stallo contenuto nella stazione."
+    },
+    "attributes" : [ "object" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#hasTripRoute",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "hasTripRoute",
+      "en" : "has trip route",
+      "it" : "ha tragitto noleggio"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "Associates a Sharing Mobility Trip with a spatial representation of the route taken.",
+      "it" : "Associa un Noleggio ad una descrizione spaziale del tragitto percorso."
+    },
+    "attributes" : [ "object" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#longestRangeInKm",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "longestRangeInKm",
+      "en" : "longest range in km",
+      "it" : "range massimo in km"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Associates a vehicle with the maximum theoretical distance that can be covered with a full tank/charge.",
+      "it" : "Associa ad un veicola la massima distanza teorica percorribile con un pieno di carburante/carica."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#userFeedbackVehicleInterior",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "userFeedbackVehicleInterior",
+      "en" : "user feedback vehicle interior",
+      "it" : "feedback utente condizione interno veicolo"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "Associates a Sharing Mobility Trip with a numeric feedback of the user on the vehicle interior conditions.",
+      "it" : "Associa un Noleggio ad una valutazione dell'utente sulle condizioni interne del veicolo."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#hasTripEndingPoint",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasTripEndingPoint",
+      "en" : "has trip ending point",
+      "it" : "ha punto di inizio noleggio"
+    },
+    "superproperty" : [ "66" ],
+    "domain" : "16",
+    "comment" : {
+      "en" : "Associates a Sharing Mobility Trip with its ending point.",
+      "it" : "Associa un Noleggio al suo punto di partenza."
+    },
+    "attributes" : [ "object" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#usesSharingStation",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "usesSharingStation",
+      "en" : "uses sharing station",
+      "it" : "utilizza stazione di sharing"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "Associates a Sharing Mobility Service with a Sharing Station used by the service.",
+      "it" : "Associa un Servizio di Sharing Mobility ad una Stazione di Sharing che utilizza."
+    },
+    "attributes" : [ "object" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#sessionPerformedBy",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "sessionPerformedBy"
+    },
+    "domain" : "1",
+    "subproperty" : [ "71" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "70"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#hasSharingMobilityCategory",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "74",
+    "annotations" : {
+      "usageNote" : [ {
+        "identifier" : "usageNote",
+        "language" : "it",
+        "value" : "Usato per specificare la categoria di un Servizio di Sharing  Mobility o di una Stazione di Sharing.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSharingMobilityCategory",
+      "en" : "has sharing mobility category",
+      "it" : "ha categoria sharing mobility"
+    },
+    "domain" : "73",
+    "comment" : {
+      "en" : "Associates a specific Sharing Mobility category.",
+      "it" : "Associa una specifica categoria di Sharing Mobility."
+    },
+    "attributes" : [ "object" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#vehicleDeregistration",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "76",
+    "label" : {
+      "IRI-based" : "vehicleDeregistration",
+      "en" : "vehicle deregistration",
+      "it" : "dismissione veicolo"
+    },
+    "domain" : "31",
+    "comment" : {
+      "en" : "Associates a Sharing Mobility Vehicle with the date in which it was deregistered from the fleet.",
+      "it" : "Associa un Veicolo di Sharing Mobility alla data in cui è stato dismesso dalla flotta."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#pricePerTripMinute",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "79",
+    "label" : {
+      "IRI-based" : "pricePerTripMinute",
+      "en" : "price per trip minute",
+      "it" : "prezzo per minuto di noleggio"
+    },
+    "domain" : "78",
+    "comment" : {
+      "en" : "Associates a Sharing Mobility Offer with a price per minute of a Trip.",
+      "it" : "Associa un'Offerta di Sharing Mobility ad un costo per minuto di Noleggio."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "77"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#chargeStartingPercentage",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "81",
+    "label" : {
+      "IRI-based" : "chargeStartingPercentage",
+      "en" : "charge starting percentage",
+      "it" : "percentuale carica alla partenza"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "Associates a Sharing Mobility Trip with the charge percentage observed at the start.",
+      "it" : "Associa un Noleggio alla percentuale di carica del veicolo elettrico registrata all'inizio."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "80"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#hasPropulsionKind",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "84",
+    "label" : {
+      "IRI-based" : "hasPropulsionKind",
+      "en" : "has propulsion kind",
+      "it" : "ha tipologia di propulsione"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Associates a Vehicle with its propulsion kind.",
+      "it" : "Associa un Veicolo alla tipologia di propulsione che utilizza."
+    },
+    "attributes" : [ "object" ],
+    "id" : "83"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#relatedDockRecord",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "69",
+    "label" : {
+      "IRI-based" : "relatedDockRecord",
+      "en" : "related dock record",
+      "it" : "record stallo collegato"
+    },
+    "domain" : "68",
+    "comment" : {
+      "en" : "Associates a Sharing Station Record to a record of one the docks contained in the station.",
+      "it" : "Associa un Record Stazione di Sharing al record di uno degli stalli contenuti nella stazione."
+    },
+    "attributes" : [ "object" ],
+    "id" : "85"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#numberOfDocks",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "87",
+    "label" : {
+      "IRI-based" : "numberOfDocks",
+      "en" : "number of docks",
+      "it" : "numero di stalli"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "Associates a Sharing Station with a physical infrastructure with the total number of Docks available.",
+      "it" : "Associa una Stazione di Sharing con infrastruttura fisica al numero totale di stalli disponibili."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "86"
+  }, {
+    "iri" : "http://schema.org/productionDate",
+    "baseIri" : "http://schema.org",
+    "range" : "89",
+    "label" : {
+      "IRI-based" : "productionDate",
+      "en" : "production date",
+      "it" : "data di produzione"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "88"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#isDockOf",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "isDockOf",
+      "en" : "is dock of",
+      "it" : "è stallo in"
+    },
+    "domain" : "58",
+    "comment" : {
+      "en" : "Associates a Dock to the Sharing Station it belongs to.",
+      "it" : "Associa uno Stallo alla Stazione di Sharing in cui si trova."
+    },
+    "attributes" : [ "object" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#coveredDistanceKm",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "coveredDistanceKm",
+      "en" : "covered distance km",
+      "it" : "distanza coperta in km"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "Associates a Sharing Mobility Trip with the distance covered during the trip.",
+      "it" : "Associa un Noleggio alla distanza in km percorsa durante il viaggio."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "91"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#latestSharingVehicleEvent",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "95",
+    "label" : {
+      "IRI-based" : "latestSharingVehicleEvent",
+      "en" : "latest sharing vehicle event",
+      "it" : "ultimo evento veicolo in sharing"
+    },
+    "domain" : "52",
+    "comment" : {
+      "en" : "Property referring to the latest event registered for the Sharing Mobility Vehicle.",
+      "it" : "Proprietà che identifica l'ultimo evento registrato per il Veicolo di Sharing Mobility."
+    },
+    "attributes" : [ "object" ],
+    "id" : "94"
+  }, {
+    "iri" : "http://schema.org/duration",
+    "baseIri" : "http://schema.org",
+    "range" : "98",
+    "label" : {
+      "IRI-based" : "duration"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "97"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#tripPerformedBy",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "99",
+    "label" : {
+      "IRI-based" : "tripPerformedBy",
+      "en" : "trip performed by",
+      "it" : "noleggio effettuato da"
+    },
+    "superproperty" : [ "70" ],
+    "domain" : "16",
+    "comment" : {
+      "en" : "Associates a Sharing Mobility Trip with the Service Private User performing it.",
+      "it" : "Associa un Noleggio all'Utente del Servizio che lo effettua."
+    },
+    "attributes" : [ "object" ],
+    "id" : "71"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#allowsFreeFloating",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "101",
+    "label" : {
+      "IRI-based" : "allowsFreeFloating",
+      "en" : "allows free floating",
+      "it" : "permette free floating"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "Associates a boolean value with a Sharing Mobility Service, if True it indicates that vehicles can be dropped-off freely in the drop-off area defined by the service, if False it indicates that vehicles can be dropped-off only within a Sharing Station.",
+      "it" : "Associa un valore booleano ad un Servizio di Sharing Mobility, se Vero indica la possibilità di rilasciare i veicoli liberamente nell'area di rilascio definita dal servizio, se Falso indica che i veicoli possono essere rilasciti solo all'interno di una Sharing Station."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "100"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#hasTripPoint",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasTripPoint",
+      "en" : "has trip point",
+      "it" : "ha punto del noleggio"
+    },
+    "domain" : "16",
+    "subproperty" : [ "65", "102" ],
+    "comment" : {
+      "en" : "Associates a Sharing Mobility Trip with a point registered during the ride.",
+      "it" : "Associa un Noleggio ad un punto registrato durante il percorso."
+    },
+    "attributes" : [ "object" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://schema.org/brand",
+    "baseIri" : "http://schema.org",
+    "range" : "104",
+    "label" : {
+      "IRI-based" : "brand",
+      "en" : "brand",
+      "it" : "marca"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "103"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#resourceUsedIn",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "resourceUsedIn"
+    },
+    "domain" : "1",
+    "subproperty" : [ "106" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "105"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#performsTrip",
+    "inverse" : "71",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "performsTrip",
+      "en" : "performs trip",
+      "it" : "effettua noleggio"
+    },
+    "superproperty" : [ "20" ],
+    "domain" : "99",
+    "comment" : {
+      "en" : "Associates a Service Private User with a Sharing Mobility Trip performed.",
+      "it" : "Associa un Utente Privato del Servizio ad un Noleggio effettuato."
+    },
+    "attributes" : [ "object" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#usesVehicle",
+    "inverse" : "106",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "usesVehicle",
+      "en" : "uses vehicle",
+      "it" : "utilizza veicolo"
+    },
+    "superproperty" : [ "113" ],
+    "domain" : "16",
+    "comment" : {
+      "en" : "Associates a Sharing Mobility Trip with the Sharing Mobility Vehicle used for the trip.",
+      "it" : "Associa un Noleggio al Veicolo di Sharing Mobility utilizzato per effettuarlo."
+    },
+    "attributes" : [ "object" ],
+    "id" : "112"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#occupiedByVehicle",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "occupiedByVehicle",
+      "en" : "occupied by vehicle",
+      "it" : "occupato dal veicolo"
+    },
+    "domain" : "69",
+    "comment" : {
+      "en" : "Property referring to the Sharing Mobility Vehicle currently parked in the Dock.",
+      "it" : "Identifica il Veicolo di Sharing Mobility che occupa lo Stallo."
+    },
+    "attributes" : [ "object" ],
+    "id" : "115"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#hasEndingStation",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "hasEndingStation",
+      "en" : "has ending station",
+      "it" : "ha stazione di fine"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "Associates a Sharing Mobility Trip with the Sharing Station in which it ends.",
+      "it" : "Associa un Noleggio alla Stazione di Sharing in cui viene terminato."
+    },
+    "attributes" : [ "object" ],
+    "id" : "116"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#parkingTimeMinutes",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "118",
+    "label" : {
+      "IRI-based" : "parkingTimeMinutes",
+      "en" : "parking time minutes",
+      "it" : "minuti in sosta"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "Associates a Sharing Mobility Trip with the number of minutes spent parked.",
+      "it" : "Associa un Noleggio al numero di minuti in sosta effettuati."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "117"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#dockState",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "120",
+    "label" : {
+      "IRI-based" : "dockState",
+      "en" : "dock state",
+      "it" : "stato dello stallo"
+    },
+    "domain" : "69",
+    "comment" : {
+      "en" : "Property referring to the current state of a Dock.",
+      "it" : "Proprietà che indica lo stato in cui si trova attualmente uno stallo."
+    },
+    "attributes" : [ "object" ],
+    "id" : "119"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#usesResource",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "usesResource"
+    },
+    "domain" : "1",
+    "subproperty" : [ "112" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "113"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#vehicleUsedIn",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "vehicleUsedIn",
+      "en" : "vehicle used in",
+      "it" : "veicolo utilizzato in"
+    },
+    "superproperty" : [ "105" ],
+    "domain" : "31",
+    "comment" : {
+      "en" : "Associates a Sharing Mobility Vehicle to a Sharing Mobility Trip in which it was used.",
+      "it" : "Associa un Veicolo di Sharing Mobility ad un Noleggio in cui è stato utilizzato."
+    },
+    "attributes" : [ "object" ],
+    "id" : "106"
+  }, {
+    "iri" : "http://schema.org/dateVehicleFirstRegistered",
+    "baseIri" : "http://schema.org",
+    "range" : "126",
+    "label" : {
+      "IRI-based" : "dateVehicleFirstRegistered",
+      "en" : "date vehicle first registered",
+      "it" : "data immatricolazione"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "125"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#enablesTrip",
+    "inverse" : "26",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "enablesTrip",
+      "en" : "enables trip",
+      "it" : "abilita noleggio"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "14",
+    "comment" : {
+      "en" : "Associates a Sharing Service with a Sharing Mobility Trip enabled by the service.",
+      "it" : "Associa un Servizio di Sharing Mobility ad un Noleggio abilitato dal servizio."
+    },
+    "attributes" : [ "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#passageTime",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "129",
+    "label" : {
+      "IRI-based" : "passageTime",
+      "en" : "passage time",
+      "it" : "tempo di passaggio"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Associates a position detection collected during the Sharing Mobility Trip with its timestamp.",
+      "it" : "Associa un rilevamento di posizione effettuato durante un Noleggio al timestamp in cui è stato effetuato."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "128"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#hasCarSupply",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "131",
+    "label" : {
+      "IRI-based" : "hasCarSupply",
+      "en" : "has car supply",
+      "it" : "ha alimentazione autovettura"
+    },
+    "domain" : "123",
+    "comment" : {
+      "en" : "Associates a Car with its supply typology.",
+      "it" : "Associa una Autovettura alla sua tipologia di alimentazione."
+    },
+    "attributes" : [ "object" ],
+    "id" : "132"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#isStationActive",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "127",
+    "label" : {
+      "IRI-based" : "isStationActive",
+      "en" : "is station active",
+      "it" : "è stazione attiva"
+    },
+    "domain" : "68",
+    "comment" : {
+      "en" : "Associates a boolean value with a Sharing Station, if True indicates the possibility of using the Station, if False indicates that the Station is not active (closing hours, maintenance, ecc.)",
+      "it" : "Associa un valore booleano ad una Stazione di Sharing, se Vero indica la possibilità di utilizzare la stazione, se Falso indica che la stazione non è attiva (orari chiusura, manutenzione, ecc.)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "133"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#hasVehicleCategory",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "84",
+    "label" : {
+      "IRI-based" : "hasVehicleCategory",
+      "en" : "has vehicle category",
+      "it" : "ha categoria veicolo"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Associates a Vehicle to its vehicle category according to the international classification.",
+      "it" : "Associa un Veicolo alla sua categoria di veicolo secondo la classificazione internazionale."
+    },
+    "attributes" : [ "object" ],
+    "id" : "134"
+  }, {
+    "range" : "41",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "140"
+  }, {
+    "range" : "41",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "142"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#madeAvailableBy",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "madeAvailableBy"
+    },
+    "domain" : "1",
+    "subproperty" : [ "38" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "143"
+  }, {
+    "range" : "41",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "144"
+  }, {
+    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+    "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
+    "range" : "146",
+    "label" : {
+      "IRI-based" : "long",
+      "en" : "longitude",
+      "it" : "longitudine"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "145"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#sessionEnabledBy",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "sessionEnabledBy"
+    },
+    "domain" : "1",
+    "subproperty" : [ "26" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "27"
+  }, {
+    "range" : "111",
+    "domain" : "78",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "147"
+  }, {
+    "range" : "123",
+    "domain" : "122",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "148"
+  }, {
+    "iri" : "http://schema.org/vehicleIdentificationNumber",
+    "baseIri" : "http://schema.org",
+    "range" : "150",
+    "label" : {
+      "IRI-based" : "vehicleIdentificationNumber",
+      "en" : "vehicle identification number",
+      "it" : "numero di telaio"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "149"
+  }, {
+    "range" : "41",
+    "domain" : "43",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "151"
+  }, {
+    "range" : "41",
+    "domain" : "42",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "153"
+  }, {
+    "range" : "6",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "154"
+  }, {
+    "range" : "6",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "155"
+  }, {
+    "range" : "6",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "156"
+  }, {
+    "range" : "6",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "157"
+  }, {
+    "range" : "31",
+    "domain" : "122",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "158"
+  }, {
+    "range" : "31",
+    "domain" : "108",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "159"
+  }, {
+    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+    "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
+    "range" : "161",
+    "label" : {
+      "IRI-based" : "lat",
+      "en" : "latitude",
+      "it" : "latitudine"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "160"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#hasEmissionStandard",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "84",
+    "label" : {
+      "IRI-based" : "hasEmissionStandard",
+      "en" : "has emission standard",
+      "it" : "ha standard emissioni"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Associates a Vehicle with the emission standard that complies with.",
+      "it" : "Associa un Veicolo al suo livello di emissioni inquinanti secondo gli standard definiti,"
+    },
+    "attributes" : [ "object" ],
+    "id" : "162"
+  }, {
+    "range" : "31",
+    "domain" : "39",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "163"
+  }, {
+    "range" : "31",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "164"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#vehicleRegistration",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "135",
+    "label" : {
+      "IRI-based" : "vehicleRegistration",
+      "en" : "vehicle registration",
+      "it" : "immissione veicolo"
+    },
+    "domain" : "31",
+    "comment" : {
+      "en" : "Associates a Sharing Mobility Vehicle with the date in which it was registered in the fleet.",
+      "it" : "Associa un Veicolo di Sharing Mobility alla data in cui è stato immesso nella flotta."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "166"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#tripDuration",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "165",
+    "label" : {
+      "IRI-based" : "tripDuration",
+      "en" : "trip duration",
+      "it" : "durata noleggio"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Associates a Sharing Mobility Trip with its total duration.",
+      "it" : "Associa un Noleggio alla sua durata totale."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "167"
+  }, {
+    "range" : "96",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "168"
+  }, {
+    "range" : "136",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "169"
+  }, {
+    "range" : "141",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "170"
+  }, {
+    "range" : "124",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "171"
+  }, {
+    "range" : "40",
+    "domain" : "82",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "172"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#numberPlate",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "139",
+    "label" : {
+      "IRI-based" : "numberPlate",
+      "en" : "number plate",
+      "it" : "numero di targa"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Associates a Vehicle with its number plate.",
+      "it" : "Associa un Veicolo al numero di targa."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "173"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#fuelEndingPercentage",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "175",
+    "label" : {
+      "IRI-based" : "fuelEndingPercentage",
+      "en" : "fuel ending percentage",
+      "it" : "percentuale carburante al termine"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "Associates a Sharing Mobility Trip with the fuel percentage observed at the end.",
+      "it" : "Associa un Noleggio alla percentuale di carburante del veicolo registrata all'inizio."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "174"
+  }, {
+    "range" : "40",
+    "domain" : "152",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "176"
+  }, {
+    "range" : "40",
+    "domain" : "107",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "177"
+  }, {
+    "range" : "19",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "178"
+  }, {
+    "range" : "19",
+    "domain" : "130",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "179"
+  }, {
+    "range" : "40",
+    "domain" : "39",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "180"
+  }, {
+    "range" : "40",
+    "domain" : "90",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "181"
+  }, {
+    "range" : "67",
+    "domain" : "52",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "182"
+  }, {
+    "range" : "109",
+    "domain" : "108",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "183"
+  }, {
+    "range" : "67",
+    "domain" : "69",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "184"
+  }, {
+    "range" : "67",
+    "domain" : "68",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "185"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#hasDockKind",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "hasDockKind",
+      "en" : "has dock kind",
+      "it" : "ha tipologia di stallo"
+    },
+    "domain" : "58",
+    "comment" : {
+      "en" : "Associates a Dock with its typology.",
+      "it" : "Associa uno Stallo alla sua tipologia."
+    },
+    "attributes" : [ "object" ],
+    "id" : "186"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#hasOperationArea",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "hasOperationArea",
+      "en" : "has operation area",
+      "it" : "ha area operativa"
+    },
+    "domain" : "34",
+    "comment" : {
+      "en" : "Property referring to the operation area of the Service.",
+      "it" : "Proprietà che identifica l'area operativa di un Servizio."
+    },
+    "attributes" : [ "object" ],
+    "id" : "187"
+  }, {
+    "range" : "7",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "188"
+  }, {
+    "range" : "7",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "189"
+  }, {
+    "range" : "7",
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "190"
+  }, {
+    "range" : "41",
+    "domain" : "46",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "191"
+  }, {
+    "range" : "41",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "192"
+  }, {
+    "range" : "7",
+    "domain" : "109",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "193"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#hasTripStartingPoint",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasTripStartingPoint",
+      "en" : "has trip starting point",
+      "it" : "ha punto di fine noleggio"
+    },
+    "superproperty" : [ "66" ],
+    "domain" : "16",
+    "comment" : {
+      "en" : "Associates a Sharing Mobility Trip with its starting point.",
+      "it" : "Associa un Noleggio al suo punto di arrivo."
+    },
+    "attributes" : [ "object" ],
+    "id" : "102"
+  }, {
+    "range" : "7",
+    "domain" : "123",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "194"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#pricePerTripKm",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "137",
+    "label" : {
+      "IRI-based" : "pricePerTripKm",
+      "en" : "price per trip km",
+      "it" : "prezzo per km di noleggio"
+    },
+    "domain" : "78",
+    "comment" : {
+      "en" : "Associates a Sharing Mobility Offer with a price per kilometer covered during the Trip.",
+      "it" : "Associa un'Offerta di Sharing Mobility ad un costo per km di Noleggio."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "197"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#hasPreferredDropOffArea",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "hasPreferredDropOffArea",
+      "en" : "has preferred drop-off area",
+      "it" : "ha area preferenziale rilascio"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "Property referring to the preferred drop-off area of the Sharing Mobility Service.",
+      "it" : "Proprietà che identifica l'area preferenziale di rilascio di un Servizio di Sharing Mobility."
+    },
+    "attributes" : [ "object" ],
+    "id" : "198"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#sharingVehicleState",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "95",
+    "label" : {
+      "IRI-based" : "sharingVehicleState",
+      "en" : "sharing vehicle state",
+      "it" : "stato del veicolo in sharing"
+    },
+    "domain" : "52",
+    "comment" : {
+      "en" : "Property referring to the current state of a Sharing Mobility Vehicle.",
+      "it" : "Proprietà che indica lo stato in cui si trova attualmente il Veicolo di Sharing Mobility."
+    },
+    "attributes" : [ "object" ],
+    "id" : "199"
+  }, {
+    "range" : "130",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "200"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#hasPickUpDropOffArea",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "hasPickUpDropOffArea",
+      "en" : "has pick-up drop-off area",
+      "it" : "ha area di prelievo rilascio"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "Property referring to the pick-up drop-off area of the Sharing Mobility Service.",
+      "it" : "Proprietà che identifica l'area di prelievo/rilascio di un Servizio di Sharing Mobility."
+    },
+    "attributes" : [ "object" ],
+    "id" : "201"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#hasForbiddenDropOffArea",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "hasForbiddenDropOffArea",
+      "en" : "has forbidden drop-off area",
+      "it" : "ha area rilascio vietato"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "Property referring to the forbidden drop-off area of the Sharing Mobility Service.",
+      "it" : "Proprietà che identifica l'area di rilascio vietato di un Servizio di Sharing Mobility."
+    },
+    "attributes" : [ "object" ],
+    "id" : "202"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#userFeedbackVehicleExterior",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "138",
+    "label" : {
+      "IRI-based" : "userFeedbackVehicleExterior",
+      "en" : "user feedback vehicle exterior",
+      "it" : "feedback utente condizione esterno veicolo"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "Associates a Sharing Mobility Trip with a numeric feedback of the user on the vehicle exterior conditions.",
+      "it" : "Associa un Noleggio ad una valutazione dell'utente sulle condizioni esterne del veicolo."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "203"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#chargeEndingPercentage",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "196",
+    "label" : {
+      "IRI-based" : "chargeEndingPercentage",
+      "en" : "charge ending percentage",
+      "it" : "percentuale carica al termine"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "Associates a Sharing Mobility Trip with the charge percentage observed at the end.",
+      "it" : "Associa un Noleggio alla percentuale di carica del veicolo elettrico registrata al termine."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "204"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/sharing#vehicleMadeAvailableBy",
+    "baseIri" : "http://www.w3id.org/urban-iot/sharing",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "vehicleMadeAvailableBy",
+      "en" : "vehicle made available by",
+      "it" : "veicolo reso disponibile da"
+    },
+    "superproperty" : [ "143" ],
+    "domain" : "31",
+    "comment" : {
+      "en" : "Associates a Sharing Mobility Vehicle with the Sharing Mobility Service making it available.",
+      "it" : "Associa un Veicolo di Sharing Mobility al Servizio di Sharing Mobility che lo rende disponibile."
+    },
+    "attributes" : [ "object" ],
+    "id" : "38"
+  }, {
+    "range" : "34",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "205"
+  }, {
+    "range" : "114",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "206"
+  }, {
+    "range" : "110",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "207"
+  }, {
+    "range" : "114",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "208"
+  }, {
+    "range" : "114",
+    "domain" : "58",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "209"
+  } ]
+}

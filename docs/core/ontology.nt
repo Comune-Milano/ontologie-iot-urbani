@@ -1,0 +1,736 @@
+<http://www.w3id.org/urban-iot/core> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.w3id.org/urban-iot/core> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.w3id.org/urban-iot/core/1.0.0> .
+<http://www.w3id.org/urban-iot/core> <http://purl.org/dc/elements/1.1/contributor> "Area Pianificazione e Monitoraggio (AMAT Milano)" .
+<http://www.w3id.org/urban-iot/core> <http://purl.org/dc/elements/1.1/contributor> "Direzione Mobilità e Trasporti - Area Pianificazione e Programmazione Mobilità (Comune di Milano)" .
+<http://www.w3id.org/urban-iot/core> <http://purl.org/dc/elements/1.1/contributor> "Direzione Sistemi Informativi ed Agenda Digitale - Area Gestione ed Integrazione Dati (Comune di Milano)" .
+<http://www.w3id.org/urban-iot/core> <http://purl.org/dc/elements/1.1/creator> "Ilaria Baroni (Cefriel)" .
+<http://www.w3id.org/urban-iot/core> <http://purl.org/dc/elements/1.1/creator> "Irene Celino (Cefriel)" .
+<http://www.w3id.org/urban-iot/core> <http://purl.org/dc/elements/1.1/creator> "Mario Scrocca (Cefriel)" .
+<http://www.w3id.org/urban-iot/core> <http://purl.org/dc/elements/1.1/publisher> "Comune di Milano" .
+<http://www.w3id.org/urban-iot/core> <http://purl.org/dc/elements/1.1/rights> "Copyright Comune di Milano, 2020" .
+<http://www.w3id.org/urban-iot/core> <http://purl.org/dc/elements/1.1/title> "Ontologie per gli Apparati IoT Urbani - Modulo Core"@it .
+<http://www.w3id.org/urban-iot/core> <http://purl.org/dc/elements/1.1/title> "Urban IoT Ontologies - Core Module"@en .
+<http://www.w3id.org/urban-iot/core> <http://purl.org/dc/terms/bibliographicCitation> "Comune di Milano. Urban IoT Ontologies - Core Module (v1.0.0). http://www.w3id.org/urban-iot/core" .
+<http://www.w3id.org/urban-iot/core> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://www.w3id.org/urban-iot/core> <http://purl.org/vocab/vann/preferredNamespacePrefix> "uiot" .
+<http://www.w3id.org/urban-iot/core> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.w3id.org/urban-iot/core#" .
+<http://www.w3id.org/urban-iot/core> <http://www.w3.org/2000/01/rdf-schema#comment> "Core module of the suite of ontologies for urban IoT devices."@en .
+<http://www.w3id.org/urban-iot/core> <http://www.w3.org/2000/01/rdf-schema#comment> "Modulo core delle ontologie per gli apparati IoT urbani."@it .
+<http://www.w3id.org/urban-iot/core> <http://www.w3.org/2000/01/rdf-schema#label> "Ontologie per gli Apparati IoT Urbani - Modulo Core"@it .
+<http://www.w3id.org/urban-iot/core> <http://www.w3.org/2000/01/rdf-schema#label> "Urban IoT Ontologies - Core Module"@en .
+<http://www.w3id.org/urban-iot/core> <http://www.w3.org/2002/07/owl#versionInfo> "v1.0.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/publisher
+<http://purl.org/dc/elements/1.1/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/usageNote
+<http://purl.org/vocab/vann/usageNote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://schema.org/areaServed
+<http://schema.org/areaServed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.org/areaServed> <http://purl.org/vocab/vann/usageNote> "Usata per associare uno schema:Service (Servizio) allo schema:Place (Luogo) che è servito dal servizio e in cui il servizio è accessibile."@it .
+<http://schema.org/areaServed> <http://www.w3.org/2000/01/rdf-schema#label> "area served"@en .
+<http://schema.org/areaServed> <http://www.w3.org/2000/01/rdf-schema#label> "area servita"@it .
+# 
+# http://schema.org/availableChannel
+<http://schema.org/availableChannel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.org/availableChannel> <http://purl.org/vocab/vann/usageNote> "Usata per associare uno schema:Service (Servizio) ad uno schema:ServiceChannel (Canale del Servizio)."@it .
+<http://schema.org/availableChannel> <http://www.w3.org/2000/01/rdf-schema#label> "available channel"@en .
+<http://schema.org/availableChannel> <http://www.w3.org/2000/01/rdf-schema#label> "canale disponibile"@it .
+# 
+# http://schema.org/contactPoint
+<http://schema.org/contactPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.org/contactPoint> <http://purl.org/vocab/vann/usageNote> "Usata per associare una schema:Organization (Organizzazione) ad un suo schema:ContactPoint (Punto di Contatto) disponibile."@it .
+<http://schema.org/contactPoint> <http://www.w3.org/2000/01/rdf-schema#label> "contact point"@en .
+<http://schema.org/contactPoint> <http://www.w3.org/2000/01/rdf-schema#label> "punto di contatto"@it .
+# 
+# http://schema.org/dayOfWeek
+<http://schema.org/dayOfWeek> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.org/dayOfWeek> <http://www.w3.org/2000/01/rdf-schema#label> "day of week"@en .
+<http://schema.org/dayOfWeek> <http://www.w3.org/2000/01/rdf-schema#label> "giorno della settimana"@it .
+# 
+# http://schema.org/hoursAvailable
+<http://schema.org/hoursAvailable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.org/hoursAvailable> <http://purl.org/vocab/vann/usageNote> "Associa un Servizio alla Specifica Orari Apertura che descrive gli orari in cui è reso disponibile."@it .
+<http://schema.org/hoursAvailable> <http://www.w3.org/2000/01/rdf-schema#label> "hours available"@en .
+<http://schema.org/hoursAvailable> <http://www.w3.org/2000/01/rdf-schema#label> "orari disponibili"@it .
+# 
+# http://schema.org/itemOffered
+<http://schema.org/itemOffered> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.org/itemOffered> <http://purl.org/vocab/vann/usageNote> "Usata per associare una schema:Offer (Offerta) al schema:Service (Servizio) a cui è riferita."@it .
+<http://schema.org/itemOffered> <http://www.w3.org/2000/01/rdf-schema#label> "item offered"@en .
+<http://schema.org/itemOffered> <http://www.w3.org/2000/01/rdf-schema#label> "oggetto offerto"@it .
+# 
+# http://schema.org/offers
+<http://schema.org/offers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.org/offers> <http://purl.org/vocab/vann/usageNote> "Usata per associare uno schema:Service (Servizio) alle schema:Offer (Offerta) disponibili."@it .
+<http://schema.org/offers> <http://www.w3.org/2000/01/rdf-schema#label> "offers"@en .
+<http://schema.org/offers> <http://www.w3.org/2000/01/rdf-schema#label> "offre"@it .
+# 
+# http://schema.org/openingHoursSpecification
+<http://schema.org/openingHoursSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.org/openingHoursSpecification> <http://purl.org/vocab/vann/usageNote> "Usata per associare uno schema:Place (Luogo) alla sua schema:OpeningHoursSpecification (Specifica Orari di Apertura)."@it .
+<http://schema.org/openingHoursSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "opening hours specification"@en .
+<http://schema.org/openingHoursSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "specifica orari di apertura"@it .
+# 
+# http://schema.org/provider
+<http://schema.org/provider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.org/provider> <http://purl.org/vocab/vann/usageNote> "Usata per associare uno schema:Service (Servizio) alla schema:Organization (Organizzazione) che lo eroga."@it .
+<http://schema.org/provider> <http://www.w3.org/2000/01/rdf-schema#label> "erogatore"@it .
+<http://schema.org/provider> <http://www.w3.org/2000/01/rdf-schema#label> "provider"@en .
+# 
+# http://schema.org/servicePhone
+<http://schema.org/servicePhone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.org/servicePhone> <http://purl.org/vocab/vann/usageNote> "Usata per associare uno schema:ServiceChannel (Canale del Servizio) ad uno schema:ContactPoint (Punto di Contatto)."@it .
+<http://schema.org/servicePhone> <http://www.w3.org/2000/01/rdf-schema#label> "contatto del servizio"@it .
+<http://schema.org/servicePhone> <http://www.w3.org/2000/01/rdf-schema#label> "service phone"@en .
+# 
+# http://www.w3.org/2006/time#timeZone
+<http://www.w3.org/2006/time#timeZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2006/time#timeZone> <http://www.w3.org/2000/01/rdf-schema#label> "fuso orario"@it .
+<http://www.w3.org/2006/time#timeZone> <http://www.w3.org/2000/01/rdf-schema#label> "time zone"@en .
+# 
+# http://www.w3.org/ns/locn#address
+<http://www.w3.org/ns/locn#address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/locn#address> <http://purl.org/vocab/vann/usageNote> "Usata per associare una locn:Location (Localizzazione) o una schema:Persona (Person) al suo indirizzo (locn:Address)."@it .
+<http://www.w3.org/ns/locn#address> <http://www.w3.org/2000/01/rdf-schema#label> "address"@en .
+<http://www.w3.org/ns/locn#address> <http://www.w3.org/2000/01/rdf-schema#label> "indirizzo"@it .
+# 
+# http://www.w3.org/ns/locn#geometry
+<http://www.w3.org/ns/locn#geometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/locn#geometry> <http://purl.org/vocab/vann/usageNote> "Associa una dcterms:Location (Localizzazione) alla locn:Geometry (Geometria) che la descrive."@it .
+<http://www.w3.org/ns/locn#geometry> <http://www.w3.org/2000/01/rdf-schema#label> "geometria"@it .
+<http://www.w3.org/ns/locn#geometry> <http://www.w3.org/2000/01/rdf-schema#label> "geometry"@en .
+# 
+# http://www.w3.org/ns/locn#location
+<http://www.w3.org/ns/locn#location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/locn#location> <http://purl.org/vocab/vann/usageNote> "Usata per associare uno schema:Place (Luogo) alla locn:Location che descrive la sua localizzazione."@it .
+<http://www.w3.org/ns/locn#location> <http://www.w3.org/2000/01/rdf-schema#label> "localizzazione"@it .
+<http://www.w3.org/ns/locn#location> <http://www.w3.org/2000/01/rdf-schema#label> "location"@en .
+# 
+# http://www.w3.org/ns/locn#registeredAddress
+<http://www.w3.org/ns/locn#registeredAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/locn#registeredAddress> <http://purl.org/vocab/vann/usageNote> "Usata per associare una legal:LegalEntity (Entità Legale) al locn:Address (Indirizzo) della sua sede legale."@it .
+<http://www.w3.org/ns/locn#registeredAddress> <http://www.w3.org/2000/01/rdf-schema#label> "registered address"@en .
+<http://www.w3.org/ns/locn#registeredAddress> <http://www.w3.org/2000/01/rdf-schema#label> "sede legale"@it .
+# 
+# http://www.w3.org/ns/sosa/hasResult
+<http://www.w3.org/ns/sosa/hasResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/sosa/hasResult> <http://www.w3.org/2000/01/rdf-schema#label> "ha risultato"@it .
+<http://www.w3.org/ns/sosa/hasResult> <http://www.w3.org/2000/01/rdf-schema#label> "has result"@en .
+# 
+# http://www.w3.org/ns/sosa/madeBySensor
+<http://www.w3.org/ns/sosa/madeBySensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/sosa/madeBySensor> <http://www.w3.org/2000/01/rdf-schema#label> "eseguita dal sensore"@it .
+<http://www.w3.org/ns/sosa/madeBySensor> <http://www.w3.org/2000/01/rdf-schema#label> "made by sensor"@en .
+# 
+# http://www.w3.org/ns/sosa/madeObservation
+<http://www.w3.org/ns/sosa/madeObservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/sosa/madeObservation> <http://www.w3.org/2000/01/rdf-schema#label> "ha eseguito campionamento"@it .
+<http://www.w3.org/ns/sosa/madeObservation> <http://www.w3.org/2000/01/rdf-schema#label> "made observation"@en .
+# 
+# http://www.w3.org/ns/sosa/observedProperty
+<http://www.w3.org/ns/sosa/observedProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/sosa/observedProperty> <http://www.w3.org/2000/01/rdf-schema#label> "observed property"@en .
+<http://www.w3.org/ns/sosa/observedProperty> <http://www.w3.org/2000/01/rdf-schema#label> "proprietà campionata"@it .
+# 
+# http://www.w3.org/ns/sosa/observes
+<http://www.w3.org/ns/sosa/observes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/sosa/observes> <http://www.w3.org/2000/01/rdf-schema#label> "observes"@en .
+<http://www.w3.org/ns/sosa/observes> <http://www.w3.org/2000/01/rdf-schema#label> "osserva"@it .
+# 
+# http://www.w3id.org/urban-iot/core#associatedBusiness
+<http://www.w3id.org/urban-iot/core#associatedBusiness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/urban-iot/core#associatedBusiness> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/urban-iot/core#UsageSession> .
+<http://www.w3id.org/urban-iot/core#associatedBusiness> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/urban-iot/core#ServiceBusinessUser> .
+<http://www.w3id.org/urban-iot/core#associatedBusiness> <http://www.w3.org/2000/01/rdf-schema#comment> "Associa una Sessione di Utilizzo all'Utente Business del Servizio che la abilita."@it .
+<http://www.w3id.org/urban-iot/core#associatedBusiness> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates a Usage Session with the Service Business User enabling it."@en .
+<http://www.w3id.org/urban-iot/core#associatedBusiness> <http://www.w3.org/2000/01/rdf-schema#label> "associated business"@en .
+<http://www.w3id.org/urban-iot/core#associatedBusiness> <http://www.w3.org/2000/01/rdf-schema#label> "business associato"@it .
+# 
+# http://www.w3id.org/urban-iot/core#containsObservation
+<http://www.w3id.org/urban-iot/core#containsObservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/urban-iot/core#containsObservation> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3id.org/urban-iot/core#observationIn> .
+<http://www.w3id.org/urban-iot/core#containsObservation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/urban-iot/core#SensorRecord> .
+<http://www.w3id.org/urban-iot/core#containsObservation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/sosa/Observation> .
+<http://www.w3id.org/urban-iot/core#containsObservation> <http://www.w3.org/2000/01/rdf-schema#comment> "Associa un Record del Sensore ad un Campionamento contenuto nel record."@it .
+<http://www.w3id.org/urban-iot/core#containsObservation> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates a Sensor Record with a Observation contained in it."@en .
+<http://www.w3id.org/urban-iot/core#containsObservation> <http://www.w3.org/2000/01/rdf-schema#label> "contains observation"@en .
+<http://www.w3id.org/urban-iot/core#containsObservation> <http://www.w3.org/2000/01/rdf-schema#label> "contiene campionamento"@it .
+# 
+# http://www.w3id.org/urban-iot/core#enablesSession
+<http://www.w3id.org/urban-iot/core#enablesSession> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/urban-iot/core#enablesSession> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3id.org/urban-iot/core#sessionEnabledBy> .
+<http://www.w3id.org/urban-iot/core#enablesSession> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Service> .
+<http://www.w3id.org/urban-iot/core#enablesSession> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/urban-iot/core#UsageSession> .
+<http://www.w3id.org/urban-iot/core#enablesSession> <http://www.w3.org/2000/01/rdf-schema#comment> "Associa un Servizio ad una Sessione di Utilizzo abilitata dal Servizio."@it .
+<http://www.w3id.org/urban-iot/core#enablesSession> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates a Service with a Usage Session enabled by the service."@en .
+<http://www.w3id.org/urban-iot/core#enablesSession> <http://www.w3.org/2000/01/rdf-schema#label> "abilita sessione"@it .
+<http://www.w3id.org/urban-iot/core#enablesSession> <http://www.w3.org/2000/01/rdf-schema#label> "enables session"@en .
+# 
+# http://www.w3id.org/urban-iot/core#hasEnabledUser
+<http://www.w3id.org/urban-iot/core#hasEnabledUser> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/urban-iot/core#hasEnabledUser> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3id.org/urban-iot/core#userEnabledBy> .
+<http://www.w3id.org/urban-iot/core#hasEnabledUser> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/urban-iot/core#ServiceBusinessUser> .
+<http://www.w3id.org/urban-iot/core#hasEnabledUser> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/urban-iot/core#ServicePrivateUser> .
+<http://www.w3id.org/urban-iot/core#hasEnabledUser> <http://www.w3.org/2000/01/rdf-schema#comment> "Associa un Utente Business del Servizio ad un Utente Privato abilitato dall'utenza business."@it .
+<http://www.w3id.org/urban-iot/core#hasEnabledUser> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates a Service Business User with the Service Private User enabled by that business user."@en .
+<http://www.w3id.org/urban-iot/core#hasEnabledUser> <http://www.w3.org/2000/01/rdf-schema#label> "ha utente abilitato"@it .
+<http://www.w3id.org/urban-iot/core#hasEnabledUser> <http://www.w3.org/2000/01/rdf-schema#label> "has enabled user"@en .
+# 
+# http://www.w3id.org/urban-iot/core#hasUser
+<http://www.w3id.org/urban-iot/core#hasUser> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/urban-iot/core#hasUser> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3id.org/urban-iot/core#userOfService> .
+<http://www.w3id.org/urban-iot/core#hasUser> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Service> .
+<http://www.w3id.org/urban-iot/core#hasUser> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/urban-iot/core#ServiceUser> .
+<http://www.w3id.org/urban-iot/core#hasUser> <http://www.w3.org/2000/01/rdf-schema#comment> "Associa un Servizio ad un Utente del Servizio."@it .
+<http://www.w3id.org/urban-iot/core#hasUser> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates a Service to a Service User."@en .
+<http://www.w3id.org/urban-iot/core#hasUser> <http://www.w3.org/2000/01/rdf-schema#label> "ha utente"@it .
+<http://www.w3id.org/urban-iot/core#hasUser> <http://www.w3.org/2000/01/rdf-schema#label> "has user"@en .
+# 
+# http://www.w3id.org/urban-iot/core#includedInMobilityStation
+<http://www.w3id.org/urban-iot/core#includedInMobilityStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/urban-iot/core#includedInMobilityStation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/urban-iot/core#MobilityStation> .
+<http://www.w3id.org/urban-iot/core#includedInMobilityStation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/urban-iot/core#MobilityStation> .
+<http://www.w3id.org/urban-iot/core#includedInMobilityStation> <http://www.w3.org/2000/01/rdf-schema#comment> "Associa una Stazione di Mobilità ad una Stazione di Mobilità che la include."@it .
+<http://www.w3id.org/urban-iot/core#includedInMobilityStation> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates a Mobility Station with another Mobility Station including it."@en .
+<http://www.w3id.org/urban-iot/core#includedInMobilityStation> <http://www.w3.org/2000/01/rdf-schema#label> "included in mobility station"@en .
+<http://www.w3id.org/urban-iot/core#includedInMobilityStation> <http://www.w3.org/2000/01/rdf-schema#label> "inclusa nella stazione di mobilità"@it .
+# 
+# http://www.w3id.org/urban-iot/core#latestRecord
+<http://www.w3id.org/urban-iot/core#latestRecord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/urban-iot/core#latestRecord> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3id.org/urban-iot/core#registersRecord> .
+<http://www.w3id.org/urban-iot/core#latestRecord> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/sosa/Sensor> .
+<http://www.w3id.org/urban-iot/core#latestRecord> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/urban-iot/core#SensorRecord> .
+<http://www.w3id.org/urban-iot/core#latestRecord> <http://www.w3.org/2000/01/rdf-schema#comment> "Associa un Sensore all'ultimo Record del Sensore registrato."@it .
+<http://www.w3id.org/urban-iot/core#latestRecord> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates a Sensor with the latest registered Sensor Record."@en .
+<http://www.w3id.org/urban-iot/core#latestRecord> <http://www.w3.org/2000/01/rdf-schema#label> "latest record"@en .
+<http://www.w3id.org/urban-iot/core#latestRecord> <http://www.w3.org/2000/01/rdf-schema#label> "ultimo record"@it .
+# 
+# http://www.w3id.org/urban-iot/core#madeAvailableBy
+<http://www.w3id.org/urban-iot/core#madeAvailableBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/urban-iot/core#madeAvailableBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3id.org/urban-iot/core#makesAvailable> .
+<http://www.w3id.org/urban-iot/core#madeAvailableBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/urban-iot/core#ServiceResource> .
+<http://www.w3id.org/urban-iot/core#madeAvailableBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/Service> .
+<http://www.w3id.org/urban-iot/core#madeAvailableBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Associa una Risorsa del Servizio al Servizio che la rende disponibile."@it .
+<http://www.w3id.org/urban-iot/core#madeAvailableBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates a Service Resource with the Service making it available."@en .
+<http://www.w3id.org/urban-iot/core#madeAvailableBy> <http://www.w3.org/2000/01/rdf-schema#label> "made available by"@en .
+<http://www.w3id.org/urban-iot/core#madeAvailableBy> <http://www.w3.org/2000/01/rdf-schema#label> "resa disponibile da"@it .
+# 
+# http://www.w3id.org/urban-iot/core#makesAvailable
+<http://www.w3id.org/urban-iot/core#makesAvailable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/urban-iot/core#makesAvailable> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Service> .
+<http://www.w3id.org/urban-iot/core#makesAvailable> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/urban-iot/core#ServiceResource> .
+<http://www.w3id.org/urban-iot/core#makesAvailable> <http://www.w3.org/2000/01/rdf-schema#comment> "Associa un Servizio ad una risorsa che rende disponibile."@it .
+<http://www.w3id.org/urban-iot/core#makesAvailable> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates a Service with the Service Resource that makes available."@en .
+<http://www.w3id.org/urban-iot/core#makesAvailable> <http://www.w3.org/2000/01/rdf-schema#label> "makes available"@en .
+<http://www.w3id.org/urban-iot/core#makesAvailable> <http://www.w3.org/2000/01/rdf-schema#label> "rende disponibile"@it .
+# 
+# http://www.w3id.org/urban-iot/core#observationIn
+<http://www.w3id.org/urban-iot/core#observationIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/urban-iot/core#observationIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/sosa/Observation> .
+<http://www.w3id.org/urban-iot/core#observationIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/urban-iot/core#SensorRecord> .
+<http://www.w3id.org/urban-iot/core#observationIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Associa un Campionamento al Record del Sensore di cui fa parte."@it .
+<http://www.w3id.org/urban-iot/core#observationIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates an Observation with the Sensor Record containing it."@en .
+<http://www.w3id.org/urban-iot/core#observationIn> <http://www.w3.org/2000/01/rdf-schema#label> "campionamento in"@it .
+<http://www.w3id.org/urban-iot/core#observationIn> <http://www.w3.org/2000/01/rdf-schema#label> "observation in"@en .
+# 
+# http://www.w3id.org/urban-iot/core#offerAssociated
+<http://www.w3id.org/urban-iot/core#offerAssociated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/urban-iot/core#offerAssociated> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/urban-iot/core#UsageSession> .
+<http://www.w3id.org/urban-iot/core#offerAssociated> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/Offer> .
+<http://www.w3id.org/urban-iot/core#offerAssociated> <http://www.w3.org/2000/01/rdf-schema#comment> "Associa una Sessione di Utilizzo alla tariffa (Offerta) applicata alla specifica sessione."@it .
+<http://www.w3id.org/urban-iot/core#offerAssociated> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates a Usage Session with the tariff (Offer) applied to the specific session."@en .
+<http://www.w3id.org/urban-iot/core#offerAssociated> <http://www.w3.org/2000/01/rdf-schema#label> "offer associated"@en .
+<http://www.w3id.org/urban-iot/core#offerAssociated> <http://www.w3.org/2000/01/rdf-schema#label> "offerta associata"@it .
+# 
+# http://www.w3id.org/urban-iot/core#performsSession
+<http://www.w3id.org/urban-iot/core#performsSession> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/urban-iot/core#performsSession> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3id.org/urban-iot/core#sessionPerformedBy> .
+<http://www.w3id.org/urban-iot/core#performsSession> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/urban-iot/core#ServicePrivateUser> .
+<http://www.w3id.org/urban-iot/core#performsSession> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/urban-iot/core#UsageSession> .
+<http://www.w3id.org/urban-iot/core#performsSession> <http://www.w3.org/2000/01/rdf-schema#comment> "Associa un Utente Privato del Servizio ad una Sessione di Utilizzo effettuata."@it .
+<http://www.w3id.org/urban-iot/core#performsSession> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates a Service Private User with a Usage Session performed."@en .
+<http://www.w3id.org/urban-iot/core#performsSession> <http://www.w3.org/2000/01/rdf-schema#label> "effettua sessione"@it .
+<http://www.w3id.org/urban-iot/core#performsSession> <http://www.w3.org/2000/01/rdf-schema#label> "performs session"@en .
+# 
+# http://www.w3id.org/urban-iot/core#recordRegisteredBy
+<http://www.w3id.org/urban-iot/core#recordRegisteredBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/urban-iot/core#recordRegisteredBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3id.org/urban-iot/core#registersRecord> .
+<http://www.w3id.org/urban-iot/core#recordRegisteredBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/urban-iot/core#SensorRecord> .
+<http://www.w3id.org/urban-iot/core#recordRegisteredBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/sosa/Sensor> .
+<http://www.w3id.org/urban-iot/core#recordRegisteredBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Associa un Record del Sensore al Sensore che lo ha registrato."@it .
+<http://www.w3id.org/urban-iot/core#recordRegisteredBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates a Sensor Record with the Sensor registering it."@en .
+<http://www.w3id.org/urban-iot/core#recordRegisteredBy> <http://www.w3.org/2000/01/rdf-schema#label> "record registered by"@en .
+<http://www.w3id.org/urban-iot/core#recordRegisteredBy> <http://www.w3.org/2000/01/rdf-schema#label> "record registrato da"@it .
+# 
+# http://www.w3id.org/urban-iot/core#registeredTo
+<http://www.w3id.org/urban-iot/core#registeredTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/urban-iot/core#registeredTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/urban-iot/core#ServiceUser> .
+<http://www.w3id.org/urban-iot/core#registeredTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/Service> .
+<http://www.w3id.org/urban-iot/core#registeredTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Associa un Utente al Servizio a cui è registrato."@it .
+<http://www.w3id.org/urban-iot/core#registeredTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates a Service User to the Service to which the user is registered to."@en .
+<http://www.w3id.org/urban-iot/core#registeredTo> <http://www.w3.org/2000/01/rdf-schema#label> "registered to"@en .
+<http://www.w3id.org/urban-iot/core#registeredTo> <http://www.w3.org/2000/01/rdf-schema#label> "registrato a"@it .
+# 
+# http://www.w3id.org/urban-iot/core#registersRecord
+<http://www.w3id.org/urban-iot/core#registersRecord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/urban-iot/core#registersRecord> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/sosa/Sensor> .
+<http://www.w3id.org/urban-iot/core#registersRecord> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/urban-iot/core#SensorRecord> .
+<http://www.w3id.org/urban-iot/core#registersRecord> <http://www.w3.org/2000/01/rdf-schema#comment> "Associa un Sensore ad un Record del Sensore."@it .
+<http://www.w3id.org/urban-iot/core#registersRecord> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates a Sensor with a registered Sensor Record."@en .
+<http://www.w3id.org/urban-iot/core#registersRecord> <http://www.w3.org/2000/01/rdf-schema#label> "registers record"@en .
+<http://www.w3id.org/urban-iot/core#registersRecord> <http://www.w3.org/2000/01/rdf-schema#label> "registra record"@it .
+# 
+# http://www.w3id.org/urban-iot/core#resourceUsedIn
+<http://www.w3id.org/urban-iot/core#resourceUsedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/urban-iot/core#resourceUsedIn> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3id.org/urban-iot/core#usesResource> .
+<http://www.w3id.org/urban-iot/core#resourceUsedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/urban-iot/core#ServiceResource> .
+<http://www.w3id.org/urban-iot/core#resourceUsedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/urban-iot/core#UsageSession> .
+<http://www.w3id.org/urban-iot/core#resourceUsedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Associa una Risorsa del Servizio ad una Sessione di Utilizzo in cui è stata utilizzata."@it .
+<http://www.w3id.org/urban-iot/core#resourceUsedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates a Service Resource with a Usage Session using it."@en .
+<http://www.w3id.org/urban-iot/core#resourceUsedIn> <http://www.w3.org/2000/01/rdf-schema#label> "resource used in"@en .
+<http://www.w3id.org/urban-iot/core#resourceUsedIn> <http://www.w3.org/2000/01/rdf-schema#label> "risorsa usata in"@it .
+# 
+# http://www.w3id.org/urban-iot/core#sessionEnabledBy
+<http://www.w3id.org/urban-iot/core#sessionEnabledBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/urban-iot/core#sessionEnabledBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/urban-iot/core#UsageSession> .
+<http://www.w3id.org/urban-iot/core#sessionEnabledBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/Service> .
+<http://www.w3id.org/urban-iot/core#sessionEnabledBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Associa una Sessione di Utilizzo al Servizio che la abilita."@it .
+<http://www.w3id.org/urban-iot/core#sessionEnabledBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates a Usage Session with the Service enabling it."@en .
+<http://www.w3id.org/urban-iot/core#sessionEnabledBy> <http://www.w3.org/2000/01/rdf-schema#label> "session enabled by"@en .
+<http://www.w3id.org/urban-iot/core#sessionEnabledBy> <http://www.w3.org/2000/01/rdf-schema#label> "sessione abilitata da"@it .
+# 
+# http://www.w3id.org/urban-iot/core#sessionPerformedBy
+<http://www.w3id.org/urban-iot/core#sessionPerformedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/urban-iot/core#sessionPerformedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/urban-iot/core#UsageSession> .
+<http://www.w3id.org/urban-iot/core#sessionPerformedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/urban-iot/core#ServicePrivateUser> .
+<http://www.w3id.org/urban-iot/core#sessionPerformedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Associa una Sessione di Utilizzo all'Utente Privato del Servizio che la effettua."@it .
+<http://www.w3id.org/urban-iot/core#sessionPerformedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates a Usage Session with the Service Private User performing it."@en .
+<http://www.w3id.org/urban-iot/core#sessionPerformedBy> <http://www.w3.org/2000/01/rdf-schema#label> "session performed by"@en .
+<http://www.w3id.org/urban-iot/core#sessionPerformedBy> <http://www.w3.org/2000/01/rdf-schema#label> "sessione effettuata da"@it .
+# 
+# http://www.w3id.org/urban-iot/core#userEnabledBy
+<http://www.w3id.org/urban-iot/core#userEnabledBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/urban-iot/core#userEnabledBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/urban-iot/core#ServicePrivateUser> .
+<http://www.w3id.org/urban-iot/core#userEnabledBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/urban-iot/core#ServiceBusinessUser> .
+<http://www.w3id.org/urban-iot/core#userEnabledBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Associa un Utente Privato del Servizio all'Utente Business che lo abilita."@it .
+<http://www.w3id.org/urban-iot/core#userEnabledBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates a Service Private User to the Service Business User enabling it."@en .
+<http://www.w3id.org/urban-iot/core#userEnabledBy> <http://www.w3.org/2000/01/rdf-schema#label> "user enabled by"@en .
+<http://www.w3id.org/urban-iot/core#userEnabledBy> <http://www.w3.org/2000/01/rdf-schema#label> "utente abilitato da"@it .
+# 
+# http://www.w3id.org/urban-iot/core#userOfService
+<http://www.w3id.org/urban-iot/core#userOfService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/urban-iot/core#userOfService> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/urban-iot/core#ServiceUser> .
+<http://www.w3id.org/urban-iot/core#userOfService> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/Service> .
+<http://www.w3id.org/urban-iot/core#userOfService> <http://www.w3.org/2000/01/rdf-schema#comment> "Associa un Utente del Servizio al Servizio che utilizza."@it .
+<http://www.w3id.org/urban-iot/core#userOfService> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates a Service User to the Service used."@en .
+<http://www.w3id.org/urban-iot/core#userOfService> <http://www.w3.org/2000/01/rdf-schema#label> "user of service"@en .
+<http://www.w3id.org/urban-iot/core#userOfService> <http://www.w3.org/2000/01/rdf-schema#label> "utente del servizio"@it .
+# 
+# http://www.w3id.org/urban-iot/core#usesResource
+<http://www.w3id.org/urban-iot/core#usesResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/urban-iot/core#usesResource> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/urban-iot/core#UsageSession> .
+<http://www.w3id.org/urban-iot/core#usesResource> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/urban-iot/core#ServiceResource> .
+<http://www.w3id.org/urban-iot/core#usesResource> <http://www.w3.org/2000/01/rdf-schema#comment> "Associa una Sessione di Utilizzo alla Risorsa del Servizio utilizzata."@it .
+<http://www.w3id.org/urban-iot/core#usesResource> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates a Usage Session with the Service Resource used in the session."@en .
+<http://www.w3id.org/urban-iot/core#usesResource> <http://www.w3.org/2000/01/rdf-schema#label> "uses resource"@en .
+<http://www.w3id.org/urban-iot/core#usesResource> <http://www.w3.org/2000/01/rdf-schema#label> "utilizza risorsa"@it .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/identifier> <http://purl.org/vocab/vann/usageNote> "Usata per associare un identificativo univoco ad una instanza."@it .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#label> "identificativo"@it .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#label> "identifier"@en .
+# 
+# http://schema.org/alternateName
+<http://schema.org/alternateName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/alternateName> <http://www.w3.org/2000/01/rdf-schema#label> "alternate name"@en .
+<http://schema.org/alternateName> <http://www.w3.org/2000/01/rdf-schema#label> "nome alternativo"@it .
+# 
+# http://schema.org/availableLanguage
+<http://schema.org/availableLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/availableLanguage> <http://www.w3.org/2000/01/rdf-schema#label> "available language"@en .
+<http://schema.org/availableLanguage> <http://www.w3.org/2000/01/rdf-schema#label> "lingua disponibile"@it .
+# 
+# http://schema.org/birthDate
+<http://schema.org/birthDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/birthDate> <http://www.w3.org/2000/01/rdf-schema#label> "birth date"@en .
+<http://schema.org/birthDate> <http://www.w3.org/2000/01/rdf-schema#label> "data di nascita"@it .
+# 
+# http://schema.org/closes
+<http://schema.org/closes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/closes> <http://www.w3.org/2000/01/rdf-schema#label> "chiude"@it .
+<http://schema.org/closes> <http://www.w3.org/2000/01/rdf-schema#label> "closes"@en .
+# 
+# http://schema.org/description
+<http://schema.org/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/description> <http://www.w3.org/2000/01/rdf-schema#label> "description"@en .
+<http://schema.org/description> <http://www.w3.org/2000/01/rdf-schema#label> "descrizione"@it .
+# 
+# http://schema.org/duration
+<http://schema.org/duration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/duration> <http://purl.org/vocab/vann/usageNote> "Literal consigliato xsd:duration."@it .
+<http://schema.org/duration> <http://www.w3.org/2000/01/rdf-schema#label> "durata"@it .
+<http://schema.org/duration> <http://www.w3.org/2000/01/rdf-schema#label> "duration"@en .
+# 
+# http://schema.org/email
+<http://schema.org/email> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/email> <http://www.w3.org/2000/01/rdf-schema#label> "email"@en .
+<http://schema.org/email> <http://www.w3.org/2000/01/rdf-schema#label> "email"@it .
+# 
+# http://schema.org/endDate
+<http://schema.org/endDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/endDate> <http://www.w3.org/2000/01/rdf-schema#label> "data di fine"@it .
+<http://schema.org/endDate> <http://www.w3.org/2000/01/rdf-schema#label> "end date"@en .
+# 
+# http://schema.org/gender
+<http://schema.org/gender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/gender> <http://purl.org/vocab/vann/usageNote> "Literal datatype xsd:string."@it .
+<http://schema.org/gender> <http://www.w3.org/2000/01/rdf-schema#label> "gender"@en .
+<http://schema.org/gender> <http://www.w3.org/2000/01/rdf-schema#label> "genere"@it .
+# 
+# http://schema.org/itemCondition
+<http://schema.org/itemCondition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/itemCondition> <http://purl.org/vocab/vann/usageNote> "Usata per associare una schema:Offer (Offerta) ad una descrizione testuale (xsd:string) dei criteri di applicazione, calcolo del costo, periodo di validità e informazioni addizionali."@it .
+<http://schema.org/itemCondition> <http://www.w3.org/2000/01/rdf-schema#label> "condizioni dell'oggetto"@it .
+<http://schema.org/itemCondition> <http://www.w3.org/2000/01/rdf-schema#label> "item condition"@en .
+# 
+# http://schema.org/legalName
+<http://schema.org/legalName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/legalName> <http://www.w3.org/2000/01/rdf-schema#label> "legal name"@en .
+<http://schema.org/legalName> <http://www.w3.org/2000/01/rdf-schema#label> "nome legale"@it .
+# 
+# http://schema.org/name
+<http://schema.org/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#label> "name"@en .
+<http://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#label> "nome"@it .
+# 
+# http://schema.org/opens
+<http://schema.org/opens> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/opens> <http://www.w3.org/2000/01/rdf-schema#label> "apre"@it .
+<http://schema.org/opens> <http://www.w3.org/2000/01/rdf-schema#label> "opens"@en .
+# 
+# http://schema.org/price
+<http://schema.org/price> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/price> <http://www.w3.org/2000/01/rdf-schema#label> "prezzo"@it .
+<http://schema.org/price> <http://www.w3.org/2000/01/rdf-schema#label> "price"@en .
+# 
+# http://schema.org/priceCurrency
+<http://schema.org/priceCurrency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/priceCurrency> <http://purl.org/vocab/vann/usageNote> "Valori secondo lo standard ISO 4217 (es. \"EUR\" per l'Euro)."@it .
+<http://schema.org/priceCurrency> <http://www.w3.org/2000/01/rdf-schema#label> "price currency"@en .
+<http://schema.org/priceCurrency> <http://www.w3.org/2000/01/rdf-schema#label> "valuta del prezzo"@it .
+# 
+# http://schema.org/serviceUrl
+<http://schema.org/serviceUrl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/serviceUrl> <http://purl.org/vocab/vann/usageNote> "Usato per associare uno schema:ServiceChannel (Canale del Servizio) ad un url (xsd:anyURI)."@it .
+<http://schema.org/serviceUrl> <http://www.w3.org/2000/01/rdf-schema#label> "service url"@en .
+<http://schema.org/serviceUrl> <http://www.w3.org/2000/01/rdf-schema#label> "url del servizio"@it .
+# 
+# http://schema.org/startDate
+<http://schema.org/startDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/startDate> <http://purl.org/vocab/vann/usageNote> "Literal datatype xsd:dateTime."@it .
+<http://schema.org/startDate> <http://www.w3.org/2000/01/rdf-schema#label> "data di inizio"@it .
+<http://schema.org/startDate> <http://www.w3.org/2000/01/rdf-schema#label> "start date"@en .
+# 
+# http://schema.org/telephone
+<http://schema.org/telephone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/telephone> <http://www.w3.org/2000/01/rdf-schema#comment> "Literal datatype xsd:string."@en .
+<http://schema.org/telephone> <http://www.w3.org/2000/01/rdf-schema#label> "telefono"@it .
+<http://schema.org/telephone> <http://www.w3.org/2000/01/rdf-schema#label> "telephone"@en .
+# 
+# http://schema.org/url
+<http://schema.org/url> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/url> <http://www.w3.org/2000/01/rdf-schema#comment> "Literal datatype xsd:anyURI."@en .
+<http://schema.org/url> <http://www.w3.org/2000/01/rdf-schema#label> "url"@en .
+<http://schema.org/url> <http://www.w3.org/2000/01/rdf-schema#label> "url"@it .
+# 
+# http://www.w3.org/ns/locn#fullAddress
+<http://www.w3.org/ns/locn#fullAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/ns/locn#fullAddress> <http://www.w3.org/2000/01/rdf-schema#label> "full address"@en .
+<http://www.w3.org/ns/locn#fullAddress> <http://www.w3.org/2000/01/rdf-schema#label> "indirizzo completo"@it .
+# 
+# http://www.w3.org/ns/locn#postCode
+<http://www.w3.org/ns/locn#postCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/ns/locn#postCode> <http://www.w3.org/2000/01/rdf-schema#label> "codice postale"@it .
+<http://www.w3.org/ns/locn#postCode> <http://www.w3.org/2000/01/rdf-schema#label> "post code"@en .
+# 
+# http://www.w3.org/ns/locn#postName
+<http://www.w3.org/ns/locn#postName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/ns/locn#postName> <http://www.w3.org/2000/01/rdf-schema#label> "divisione postale"@it .
+<http://www.w3.org/ns/locn#postName> <http://www.w3.org/2000/01/rdf-schema#label> "post name"@en .
+# 
+# http://www.w3.org/ns/sosa/hasSimpleResult
+<http://www.w3.org/ns/sosa/hasSimpleResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/ns/sosa/hasSimpleResult> <http://www.w3.org/2000/01/rdf-schema#label> "ha valore semplice"@it .
+<http://www.w3.org/ns/sosa/hasSimpleResult> <http://www.w3.org/2000/01/rdf-schema#label> "has simple result"@en .
+# 
+# http://www.w3id.org/urban-iot/core#birthYear
+<http://www.w3id.org/urban-iot/core#birthYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/urban-iot/core#birthYear> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/birthDate> .
+<http://www.w3id.org/urban-iot/core#birthYear> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Person> .
+<http://www.w3id.org/urban-iot/core#birthYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://www.w3id.org/urban-iot/core#birthYear> <http://www.w3.org/2000/01/rdf-schema#comment> "Associa una persona al suo anno di nascita."@it .
+<http://www.w3id.org/urban-iot/core#birthYear> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates a person with her/his birth year."@it .
+<http://www.w3id.org/urban-iot/core#birthYear> <http://www.w3.org/2000/01/rdf-schema#label> "anno di nascita"@it .
+<http://www.w3id.org/urban-iot/core#birthYear> <http://www.w3.org/2000/01/rdf-schema#label> "birth year"@en .
+# 
+# http://www.w3id.org/urban-iot/core#deregistrationDate
+<http://www.w3id.org/urban-iot/core#deregistrationDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/urban-iot/core#deregistrationDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/urban-iot/core#ServiceUser> .
+<http://www.w3id.org/urban-iot/core#deregistrationDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.w3id.org/urban-iot/core#deregistrationDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Data in cui l'Utente del Servizio ha chiesto la cancellazione della registrazione dal Servizio."@it .
+<http://www.w3id.org/urban-iot/core#deregistrationDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Date in which a Service User deregistered from a Service."@en .
+<http://www.w3id.org/urban-iot/core#deregistrationDate> <http://www.w3.org/2000/01/rdf-schema#label> "data di disdetta"@it .
+<http://www.w3id.org/urban-iot/core#deregistrationDate> <http://www.w3.org/2000/01/rdf-schema#label> "deregistration date"@en .
+# 
+# http://www.w3id.org/urban-iot/core#fixedAmount
+<http://www.w3id.org/urban-iot/core#fixedAmount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/urban-iot/core#fixedAmount> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/price> .
+<http://www.w3id.org/urban-iot/core#fixedAmount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://www.w3id.org/urban-iot/core#fixedAmount> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates an Offer with a fixed amount required from it."@en .
+<http://www.w3id.org/urban-iot/core#fixedAmount> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica un costo fisso dell'Offerta."@it .
+<http://www.w3id.org/urban-iot/core#fixedAmount> <http://www.w3.org/2000/01/rdf-schema#label> "costo fisso"@it .
+<http://www.w3id.org/urban-iot/core#fixedAmount> <http://www.w3.org/2000/01/rdf-schema#label> "fixed amount"@en .
+# 
+# http://www.w3id.org/urban-iot/core#recordTimestamp
+<http://www.w3id.org/urban-iot/core#recordTimestamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/urban-iot/core#recordTimestamp> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/urban-iot/core#SensorRecord> .
+<http://www.w3id.org/urban-iot/core#recordTimestamp> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.w3id.org/urban-iot/core#recordTimestamp> <http://www.w3.org/2000/01/rdf-schema#comment> "Timestamp associated with a Sensor Record."@en .
+<http://www.w3id.org/urban-iot/core#recordTimestamp> <http://www.w3.org/2000/01/rdf-schema#comment> "Timestamp associato ad un Record del Sensore."@it .
+<http://www.w3id.org/urban-iot/core#recordTimestamp> <http://www.w3.org/2000/01/rdf-schema#label> "record timestamp"@en .
+<http://www.w3id.org/urban-iot/core#recordTimestamp> <http://www.w3.org/2000/01/rdf-schema#label> "timestamp del record"@it .
+# 
+# http://www.w3id.org/urban-iot/core#registrationDate
+<http://www.w3id.org/urban-iot/core#registrationDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/urban-iot/core#registrationDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/urban-iot/core#ServiceUser> .
+<http://www.w3id.org/urban-iot/core#registrationDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.w3id.org/urban-iot/core#registrationDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Data di registrazione dell'Utente del Servizio al Servizio."@it .
+<http://www.w3id.org/urban-iot/core#registrationDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Date in which a Service User registered to the Service."@en .
+<http://www.w3id.org/urban-iot/core#registrationDate> <http://www.w3.org/2000/01/rdf-schema#label> "data di registrazione"@it .
+<http://www.w3id.org/urban-iot/core#registrationDate> <http://www.w3.org/2000/01/rdf-schema#label> "registration date"@en .
+# 
+# http://www.w3id.org/urban-iot/core#reservationUsed
+<http://www.w3id.org/urban-iot/core#reservationUsed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/urban-iot/core#reservationUsed> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/urban-iot/core#UsageSession> .
+<http://www.w3id.org/urban-iot/core#reservationUsed> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.w3id.org/urban-iot/core#reservationUsed> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica se un meccanismo di prenotazione è stato utilizzato per una Sessione di Utilizzo."@it .
+<http://www.w3id.org/urban-iot/core#reservationUsed> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates whether a reservation mechanism has been used for a Usage Session."@en .
+<http://www.w3id.org/urban-iot/core#reservationUsed> <http://www.w3.org/2000/01/rdf-schema#label> "prenotazione utilizzata"@it .
+<http://www.w3id.org/urban-iot/core#reservationUsed> <http://www.w3.org/2000/01/rdf-schema#label> "reservation used"@en .
+# 
+# http://www.w3id.org/urban-iot/core#serialNumber
+<http://www.w3id.org/urban-iot/core#serialNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/urban-iot/core#serialNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/urban-iot/core#ServiceResource> .
+<http://www.w3id.org/urban-iot/core#serialNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3id.org/urban-iot/core#serialNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of the serial number."@en .
+<http://www.w3id.org/urban-iot/core#serialNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicazione del numero seriale."@it .
+<http://www.w3id.org/urban-iot/core#serialNumber> <http://www.w3.org/2000/01/rdf-schema#label> "numero seriale"@it .
+<http://www.w3id.org/urban-iot/core#serialNumber> <http://www.w3.org/2000/01/rdf-schema#label> "serial number"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/Location
+<http://purl.org/dc/terms/Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/terms/Location> <http://purl.org/vocab/vann/usageNote> "Usata per descrivere la localizzazione di uno schema:Place (Luogo)."@it .
+<http://purl.org/dc/terms/Location> <http://www.w3.org/2000/01/rdf-schema#label> "Localizzazione"@it .
+<http://purl.org/dc/terms/Location> <http://www.w3.org/2000/01/rdf-schema#label> "Location"@en .
+# 
+# http://schema.org/ContactPoint
+<http://schema.org/ContactPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/ContactPoint> <http://www.w3.org/2000/01/rdf-schema#label> "Contact Point"@en .
+<http://schema.org/ContactPoint> <http://www.w3.org/2000/01/rdf-schema#label> "Punto di Contatto"@it .
+# 
+# http://schema.org/DayOfWeek
+<http://schema.org/DayOfWeek> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/DayOfWeek> <http://purl.org/vocab/vann/usageNote> "Istanze della classe usate per definire una schema:OpeningHoursSpecification (Specifica Orari di Apertura)."@it .
+<http://schema.org/DayOfWeek> <http://www.w3.org/2000/01/rdf-schema#label> "Day of Week"@en .
+<http://schema.org/DayOfWeek> <http://www.w3.org/2000/01/rdf-schema#label> "Giorno della Settimana"@it .
+# 
+# http://schema.org/Event
+<http://schema.org/Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event"@en .
+<http://schema.org/Event> <http://www.w3.org/2000/01/rdf-schema#label> "Evento"@it .
+# 
+# http://schema.org/Offer
+<http://schema.org/Offer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/Offer> <http://www.w3.org/2000/01/rdf-schema#label> "Offer"@en .
+<http://schema.org/Offer> <http://www.w3.org/2000/01/rdf-schema#label> "Offerta"@it .
+# 
+# http://schema.org/OpeningHoursSpecification
+<http://schema.org/OpeningHoursSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/OpeningHoursSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "Opening Hours Specification"@en .
+<http://schema.org/OpeningHoursSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "Specifica Orari di Apertura"@it .
+# 
+# http://schema.org/Organization
+<http://schema.org/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organization"@en .
+<http://schema.org/Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organizzazione"@it .
+# 
+# http://schema.org/Person
+<http://schema.org/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
+<http://schema.org/Person> <http://www.w3.org/2000/01/rdf-schema#label> "Persona"@it .
+# 
+# http://schema.org/Place
+<http://schema.org/Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/Place> <http://www.w3.org/2000/01/rdf-schema#label> "Luogo"@it .
+<http://schema.org/Place> <http://www.w3.org/2000/01/rdf-schema#label> "Place"@en .
+# 
+# http://schema.org/Service
+<http://schema.org/Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/Service> <http://www.w3.org/2000/01/rdf-schema#label> "Service"@en .
+<http://schema.org/Service> <http://www.w3.org/2000/01/rdf-schema#label> "Servizio"@it .
+# 
+# http://schema.org/ServiceChannel
+<http://schema.org/ServiceChannel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/ServiceChannel> <http://www.w3.org/2000/01/rdf-schema#label> "Canale del Servizio"@it .
+<http://schema.org/ServiceChannel> <http://www.w3.org/2000/01/rdf-schema#label> "Service Channel"@en .
+# 
+# http://www.w3.org/ns/legal#LegalEntity
+<http://www.w3.org/ns/legal#LegalEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/legal#LegalEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Entità Legale"@it .
+<http://www.w3.org/ns/legal#LegalEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Legal Entity"@en .
+# 
+# http://www.w3.org/ns/locn#Address
+<http://www.w3.org/ns/locn#Address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/locn#Address> <http://purl.org/vocab/vann/usageNote> "Usato per definire l'indirizzo associato ad una dcterms:Location, ad una schema:Person (Persona) o la sede legale di una legal:LegalEntity (Entità Legale). Nel caso di luoghi in Italia può essere utilizzato il profilo italiano (https://w3id.org/italia/onto/CLV/) allineato con locn:Address."@it .
+<http://www.w3.org/ns/locn#Address> <http://www.w3.org/2000/01/rdf-schema#label> "Address"@en .
+<http://www.w3.org/ns/locn#Address> <http://www.w3.org/2000/01/rdf-schema#label> "Indirizzo"@it .
+# 
+# http://www.w3.org/ns/locn#Geometry
+<http://www.w3.org/ns/locn#Geometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/locn#Geometry> <http://purl.org/vocab/vann/usageNote> "E' consigliato di utilizzare la GeoSPARQL specification (http://www.w3.org/2011/02/GeoSPARQL.pdf) per l'encoding."@it .
+<http://www.w3.org/ns/locn#Geometry> <http://www.w3.org/2000/01/rdf-schema#label> "Geometria"@it .
+<http://www.w3.org/ns/locn#Geometry> <http://www.w3.org/2000/01/rdf-schema#label> "Geometry"@en .
+# 
+# http://www.w3.org/ns/sosa/ObservableProperty
+<http://www.w3.org/ns/sosa/ObservableProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/sosa/ObservableProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Observable Property"@en .
+<http://www.w3.org/ns/sosa/ObservableProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Proprietà Campionabile"@it .
+# 
+# http://www.w3.org/ns/sosa/Observation
+<http://www.w3.org/ns/sosa/Observation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/sosa/Observation> <http://www.w3.org/2000/01/rdf-schema#label> "Campionamento"@it .
+<http://www.w3.org/ns/sosa/Observation> <http://www.w3.org/2000/01/rdf-schema#label> "Observation"@en .
+# 
+# http://www.w3.org/ns/sosa/Sensor
+<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/2000/01/rdf-schema#label> "Sensor"@en .
+<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/2000/01/rdf-schema#label> "Sensore"@it .
+# 
+# http://www.w3id.org/urban-iot/core#MobilityStation
+<http://www.w3id.org/urban-iot/core#MobilityStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/urban-iot/core#MobilityStation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Place> .
+<http://www.w3id.org/urban-iot/core#MobilityStation> <http://www.w3.org/2000/01/rdf-schema#comment> "A Place characterized by mobility services. A Mobility Station can include more specific Mobility Station (Sharing Station, Charging Station, ecc.)."@en .
+<http://www.w3id.org/urban-iot/core#MobilityStation> <http://www.w3.org/2000/01/rdf-schema#comment> "Un Luogo caratterizzato dalla presenza di servizi di mobilità. Può includere altre Stazioni di Mobilità dedicate a specifici servizi per la mobilità (Stazioni di Sharing, Stazioni di Ricarica, etc.)."@it .
+<http://www.w3id.org/urban-iot/core#MobilityStation> <http://www.w3.org/2000/01/rdf-schema#label> "Mobility Station"@en .
+<http://www.w3id.org/urban-iot/core#MobilityStation> <http://www.w3.org/2000/01/rdf-schema#label> "Stazione di Mobilità"@it .
+# 
+# http://www.w3id.org/urban-iot/core#SensorRecord
+<http://www.w3id.org/urban-iot/core#SensorRecord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/urban-iot/core#SensorRecord> <http://www.w3.org/2000/01/rdf-schema#comment> "A Sensor Record aggregates a set of observations associated to the same timestamp and the same sensor."@en .
+<http://www.w3id.org/urban-iot/core#SensorRecord> <http://www.w3.org/2000/01/rdf-schema#comment> "Un Record del Sensore aggrega un insieme di campionamenti associati allo stesso timestamp e allo stesso sensore."@it .
+<http://www.w3id.org/urban-iot/core#SensorRecord> <http://www.w3.org/2000/01/rdf-schema#label> "Record del Sensore"@it .
+<http://www.w3id.org/urban-iot/core#SensorRecord> <http://www.w3.org/2000/01/rdf-schema#label> "Sensor Record"@en .
+# 
+# http://www.w3id.org/urban-iot/core#ServiceBusinessUser
+<http://www.w3id.org/urban-iot/core#ServiceBusinessUser> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/urban-iot/core#ServiceBusinessUser> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/legal#LegalEntity> .
+<http://www.w3id.org/urban-iot/core#ServiceBusinessUser> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/urban-iot/core#ServiceUser> .
+<http://www.w3id.org/urban-iot/core#ServiceBusinessUser> <http://www.w3.org/2000/01/rdf-schema#comment> "Entità Legale con contratto business per accedere al servizio. Un Utente Business non può utilizzare direttamente il servizio ma può abilitare un Utente Privato del Servizio a farlo."@it .
+<http://www.w3id.org/urban-iot/core#ServiceBusinessUser> <http://www.w3.org/2000/01/rdf-schema#comment> "Legal Entity with a business contract for the service. A Service Business User can not directly use the service but can enable a Service Private User to do so."@en .
+<http://www.w3id.org/urban-iot/core#ServiceBusinessUser> <http://www.w3.org/2000/01/rdf-schema#label> "Service Business User"@en .
+<http://www.w3id.org/urban-iot/core#ServiceBusinessUser> <http://www.w3.org/2000/01/rdf-schema#label> "Utente Business del Servizio"@it .
+# 
+# http://www.w3id.org/urban-iot/core#ServicePrivateUser
+<http://www.w3id.org/urban-iot/core#ServicePrivateUser> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/urban-iot/core#ServicePrivateUser> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Person> .
+<http://www.w3id.org/urban-iot/core#ServicePrivateUser> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/urban-iot/core#ServiceUser> .
+<http://www.w3id.org/urban-iot/core#ServicePrivateUser> <http://www.w3.org/2000/01/rdf-schema#comment> "A natural person using a service."@en .
+<http://www.w3id.org/urban-iot/core#ServicePrivateUser> <http://www.w3.org/2000/01/rdf-schema#comment> "Una persona fisica utilizzatore di un servizio."@it .
+<http://www.w3id.org/urban-iot/core#ServicePrivateUser> <http://www.w3.org/2000/01/rdf-schema#label> "Service Private User"@en .
+<http://www.w3id.org/urban-iot/core#ServicePrivateUser> <http://www.w3.org/2000/01/rdf-schema#label> "Utente Privato del Servizio"@it .
+# 
+# http://www.w3id.org/urban-iot/core#ServiceResource
+<http://www.w3id.org/urban-iot/core#ServiceResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/urban-iot/core#ServiceResource> <http://www.w3.org/2000/01/rdf-schema#comment> "A Resource made available by a Service to be used in a Usage Session."@en .
+<http://www.w3id.org/urban-iot/core#ServiceResource> <http://www.w3.org/2000/01/rdf-schema#comment> "Risorsa messa a disposizione da un Servizio che può essere utilizzata in una Sessione di Utilizzo."@it .
+<http://www.w3id.org/urban-iot/core#ServiceResource> <http://www.w3.org/2000/01/rdf-schema#label> "Risorsa del Servizio"@it .
+<http://www.w3id.org/urban-iot/core#ServiceResource> <http://www.w3.org/2000/01/rdf-schema#label> "Service Resource"@en .
+# 
+# http://www.w3id.org/urban-iot/core#ServiceUser
+<http://www.w3id.org/urban-iot/core#ServiceUser> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/urban-iot/core#ServiceUser> <http://www.w3.org/2000/01/rdf-schema#comment> "A User using a Service."@en .
+<http://www.w3id.org/urban-iot/core#ServiceUser> <http://www.w3.org/2000/01/rdf-schema#comment> "Utente utilizzatore di un Servizio."@it .
+<http://www.w3id.org/urban-iot/core#ServiceUser> <http://www.w3.org/2000/01/rdf-schema#label> "Service User"@en .
+<http://www.w3id.org/urban-iot/core#ServiceUser> <http://www.w3.org/2000/01/rdf-schema#label> "Utente del Servizio"@it .
+# 
+# http://www.w3id.org/urban-iot/core#UsageSession
+<http://www.w3id.org/urban-iot/core#UsageSession> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/urban-iot/core#UsageSession> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Event> .
+<http://www.w3id.org/urban-iot/core#UsageSession> <http://www.w3.org/2000/01/rdf-schema#comment> "A Usage Session is an Event associated to a Service and a Service Resource representing a usage of the resource made available by the Service."@en .
+<http://www.w3id.org/urban-iot/core#UsageSession> <http://www.w3.org/2000/01/rdf-schema#comment> "Una Sessione di Utilizzo è un Evento associato ad un Servizio e ad una Risorsa del Servizio che rappresenta un utilizzo della risorsa resa disponibile dal Servizio."@it .
+<http://www.w3id.org/urban-iot/core#UsageSession> <http://www.w3.org/2000/01/rdf-schema#label> "Sessione di Utilizzo"@it .
+<http://www.w3id.org/urban-iot/core#UsageSession> <http://www.w3.org/2000/01/rdf-schema#label> "Usage Session"@en .
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

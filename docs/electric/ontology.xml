@@ -1,0 +1,1274 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3id.org/urban-iot/electric#"
+     xml:base="http://www.w3id.org/urban-iot/electric"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://www.w3id.org/urban-iot/electric">
+        <owl:versionIRI rdf:resource="http://www.w3id.org/urban-iot/electric/1.0.0"/>
+        <owl:imports rdf:resource="http://www.w3id.org/urban-iot/core/1.0.0"/>
+        <dc:contributor>Area Pianificazione e Monitoraggio (AMAT Milano)</dc:contributor>
+        <dc:contributor>Direzione Mobilità e Trasporti - Area Pianificazione e Programmazione Mobilità (Comune di Milano)</dc:contributor>
+        <dc:contributor>Direzione Sistemi Informativi ed Agenda Digitale - Area Gestione ed Integrazione Dati (Comune di Milano)</dc:contributor>
+        <dc:creator>Ilaria Baroni (Cefriel)</dc:creator>
+        <dc:creator>Irene Celino (Cefriel)</dc:creator>
+        <dc:creator>Mario Scrocca (Cefriel)</dc:creator>
+        <dc:publisher>Comune di Milano</dc:publisher>
+        <dc:rights>Copyright Comune di Milano, 2020</dc:rights>
+        <dc:title xml:lang="it">Ontologie per gli Apparati IoT Urbani - Modulo Electric Mobility</dc:title>
+        <dc:title xml:lang="en">Urban IoT Ontologies - Electric Mobility Module</dc:title>
+        <terms:bibliographicCitation>Comune di Milano. Urban IoT Ontologies - Electric Mobility Module (v1.0.0). http://www.w3id.org/urban-iot/electric</terms:bibliographicCitation>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <vann:preferredNamespacePrefix>uiote</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>http://www.w3id.org/urban-iot/electric#</vann:preferredNamespaceUri>
+        <rdfs:comment xml:lang="en">Electric Mobility module of the suite of ontologies for urban IoT devices.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Modulo Electric Mobility delle ontologie per gli apparati IoT urbani.</rdfs:comment>
+        <rdfs:label xml:lang="it">Ontologie per gli Apparati IoT Urbani - Modulo Electric Mobility</rdfs:label>
+        <rdfs:label xml:lang="en">Urban IoT Ontologies - Electric Mobility Module</rdfs:label>
+        <owl:versionInfo>v1.0.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/usageNote -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/usageNote"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/core#enablesSession -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/core#enablesSession"/>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/core#madeAvailableBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/core#madeAvailableBy"/>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/core#makesAvailable -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/core#makesAvailable"/>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/core#performsSession -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/core#performsSession"/>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/core#resourceUsedIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/core#resourceUsedIn"/>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/core#sessionEnabledBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/core#sessionEnabledBy"/>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/core#sessionPerformedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/core#sessionPerformedBy"/>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/core#usesResource -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/core#usesResource"/>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#EVSEState -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/electric#EVSEState">
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#EVSERecord"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="http://www.w3id.org/urban-iot/electric#EVSE-state"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="it">Associazioni a possibili stati  in cui una Colonnina per la Ricarica Veicoli Elettrici (EVSE) può trovarsi.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Connection to possible states for an EVSE (Electric Vehicle Supply Equipment).</rdfs:comment>
+        <rdfs:label xml:lang="en">EVSE state</rdfs:label>
+        <rdfs:label xml:lang="it">stato dell&apos;EVSE</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#chargingEnabledBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/electric#chargingEnabledBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3id.org/urban-iot/core#sessionEnabledBy"/>
+        <owl:inverseOf rdf:resource="http://www.w3id.org/urban-iot/electric#enablesCharging"/>
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#ChargingSession"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/urban-iot/electric#ChargingService"/>
+        <rdfs:comment xml:lang="it">Associa una Stazione di Ricarica ad un Servizio di Ricarica che l&apos;abilita.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Associates a Charging Station to a Charging Service which enabled it.</rdfs:comment>
+        <rdfs:label xml:lang="en">charging enabled by</rdfs:label>
+        <rdfs:label xml:lang="it">ricarica abilitata da</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#chargingPerformedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/electric#chargingPerformedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3id.org/urban-iot/core#sessionPerformedBy"/>
+        <owl:inverseOf rdf:resource="http://www.w3id.org/urban-iot/electric#performsCharging"/>
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#ChargingSession"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/urban-iot/core#ServicePrivateUser"/>
+        <rdfs:comment xml:lang="it">Associa una Sessione di Ricarica all&apos;Utente Privato del Servizio che la esegue.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Associates a Charging Session with a Service Private User who performs the Session.</rdfs:comment>
+        <rdfs:label xml:lang="en">charging performed by</rdfs:label>
+        <rdfs:label xml:lang="it">ricarica effettuata da</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#chargingStationUsedIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/electric#chargingStationUsedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3id.org/urban-iot/core#resourceUsedIn"/>
+        <owl:inverseOf rdf:resource="http://www.w3id.org/urban-iot/electric#usesChargingStation"/>
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#ChargingStation"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/urban-iot/electric#ChargingSession"/>
+        <rdfs:comment xml:lang="it">Associa una Stazione di Ricarica ad una Sessione di Ricarica che la utilizza.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Associates a Charging Station to a Charging Session where the Station is used.</rdfs:comment>
+        <rdfs:label xml:lang="en">charging station used in</rdfs:label>
+        <rdfs:label xml:lang="it">stazione di ricarica usata in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#enablesCharging -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/electric#enablesCharging">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3id.org/urban-iot/core#enablesSession"/>
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#ChargingService"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/urban-iot/electric#ChargingSession"/>
+        <rdfs:comment xml:lang="en">A Charging Service can enable Charging Sessions</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un Servizio di Ricarica abilita Sessioni di Ricarica.</rdfs:comment>
+        <rdfs:label xml:lang="it">abilita la ricarica</rdfs:label>
+        <rdfs:label xml:lang="en">enables charging</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#hasChargeAccessMethod -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/electric#hasChargeAccessMethod">
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#EVSE"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="http://w3id.org/urban-iot/kos/electric/charge-access-method"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Association for an Electric Vehicle Supply Equipment (EVSE) to possible methods to activate the charge.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Associazione di una Colonnina di Ricarica per Veicoli Elettrici (EVSE) a possibili metodi per attivare la ricarica.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha un metodo di accesso alla ricarica</rdfs:label>
+        <rdfs:label xml:lang="en">has charge access method</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#hasChargingServiceOffer -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/electric#hasChargingServiceOffer">
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#ChargingStation"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/urban-iot/electric#ChargingServiceOffer"/>
+        <rdfs:comment xml:lang="en">Associates a Charging Station to a Charging Offer.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Associazine tra una Stazione di Ricarica e un&apos;Offerta di Ricarica.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha un&apos;offerta di ricarica</rdfs:label>
+        <rdfs:label xml:lang="en">has charging service offer</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#hasChargingStationOwner -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/electric#hasChargingStationOwner">
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#ChargingStation"/>
+        <rdfs:range rdf:resource="http://schema.org/Organization"/>
+        <rdfs:comment xml:lang="it">Associa una Organizzazione a una Stazione di Ricarica, dove l&apos;Organizzazione possiede la Stazione.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Associates an Organization with a Charging Station, where the Organization owns the Station.</rdfs:comment>
+        <rdfs:label xml:lang="en">has charging station owner</rdfs:label>
+        <rdfs:label xml:lang="it">possiede una stazione di ricarica</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#hasConnector -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/electric#hasConnector">
+        <owl:inverseOf rdf:resource="http://www.w3id.org/urban-iot/electric#isConnectorOf"/>
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#EVSE"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/urban-iot/electric#Connector"/>
+        <rdfs:comment xml:lang="it">Associa un Connettore ad una Colonnina di Ricarica per Veicoli Elettrici (EVSE).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Associates a Connector to an Electric Vehicle Supply Equipment (EVSE).</rdfs:comment>
+        <rdfs:label xml:lang="it">ha un connettore</rdfs:label>
+        <rdfs:label xml:lang="en">has connector</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#hasEVSE -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/electric#hasEVSE">
+        <owl:inverseOf rdf:resource="http://www.w3id.org/urban-iot/electric#isEVSEOf"/>
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#ChargingStation"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/urban-iot/electric#EVSE"/>
+        <rdfs:comment xml:lang="it">Associa una Stazione di Ricarica a una Colonnina per la Ricarica di Veicoli Elettrici (EVSE).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Associates a Charging Station to an Electric Vehicle Supply Equipment (EVSE).</rdfs:comment>
+        <rdfs:label xml:lang="it">ha un EVSE</rdfs:label>
+        <rdfs:label xml:lang="en">has EVSE</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#hasEVSEChargeCategory -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/electric#hasEVSEChargeCategory">
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#EVSE"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="http://w3id.org/urban-iot/kos/electric/EVSE-charge-category"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="it">Associa una Colonnina di Ricarica per Veicoli Elettirci (EVSE) alle possibili categorie di ricarica.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Associates a Electric Vehicle Supply Equipment (EVSE) to the possible charge categories.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha una categoria di ricarica per EVSE</rdfs:label>
+        <rdfs:label xml:lang="en">has EVSE Charge Category</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#hasFacilityNearBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/electric#hasFacilityNearBy">
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#ChargingStation"/>
+        <rdfs:range rdf:resource="http://schema.org/Place"/>
+        <rdfs:comment xml:lang="it">Associa una Stazione di Ricarica ai possibili punti di interesse in zona, rappresentati come Luogo.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Associates a Charging station with the possible point of interest near by, represented as Place.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha punti di interesse vicini</rdfs:label>
+        <rdfs:label xml:lang="en">has facility near by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#hasParkingRestriction -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/electric#hasParkingRestriction">
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#EVSE"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="http://w3id.org/urban-iot/kos/electric/parking-restriction"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="it">Associa una Colonnina di Ricarica per Veicoli Elettrici (EVSE) a possibili restrizioni di sosta per poter sfruttare il servizio.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Associates an Electric Vehicle Supply Equipment (EVSE) to possible parking restrictions to use the charging service.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha restrizioni di parcheggio</rdfs:label>
+        <rdfs:label xml:lang="en">has parking restriction</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#hasPowerSupply -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/electric#hasPowerSupply">
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#Connector"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="http://w3id.org/urban-iot/kos/electric/power-supply"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="it">Associa un Connettore ai possibili tipi di alimentazione.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Associates a Connector to possible power supplies.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha tipi di alimentazione</rdfs:label>
+        <rdfs:label xml:lang="en">has power supply</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#hasStandard -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/electric#hasStandard">
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#Connector"/>
+        <rdfs:range rdf:resource="http://schema.mobivoc.org/#PlugType"/>
+        <rdfs:comment xml:lang="it">Associa un Connettore ai possibili standard di prese.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Associates a Connector to possible standard.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha standard</rdfs:label>
+        <rdfs:label xml:lang="en">has standard</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#hasSubChargePointOperator -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/electric#hasSubChargePointOperator">
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#ChargingStation"/>
+        <rdfs:range rdf:resource="http://schema.org/Organization"/>
+        <rdfs:comment xml:lang="it">Associa una Stazione di Ricarica a un possibile sub operatore, identificato come Organizzazione.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Associates a Charging Station to a possible sub operator, identified as an Organization.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha un sub operatore di ricarica</rdfs:label>
+        <rdfs:label xml:lang="en">has sub charge point operator</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#isConnectorOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/electric#isConnectorOf">
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#Connector"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/urban-iot/electric#EVSE"/>
+        <rdfs:comment xml:lang="it">Associa un Connettore ad una Colonnina di Ricarica per Veicoli Elettrici (EVSE).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Associates a Connector to an Electric Vehicle Supply Equipment (EVSE).</rdfs:comment>
+        <rdfs:label xml:lang="en">is connector of</rdfs:label>
+        <rdfs:label xml:lang="it">è connettore di</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#isEVSEOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/electric#isEVSEOf">
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#EVSE"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/urban-iot/electric#ChargingStation"/>
+        <rdfs:comment xml:lang="it">Associa una Colonnina di Ricarica per Veicoli Elettrici (EVSE) ad una Stazione di Ricarica.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Associates an Electric Vehicle Supply Equipment (EVSE) to a Charging Station.</rdfs:comment>
+        <rdfs:label xml:lang="en">is EVSE of</rdfs:label>
+        <rdfs:label xml:lang="it">è EVSE di</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#makesStationAvailable -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/electric#makesStationAvailable">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3id.org/urban-iot/core#makesAvailable"/>
+        <owl:inverseOf rdf:resource="http://www.w3id.org/urban-iot/electric#stationMadeAvailableBy"/>
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#ChargingService"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/urban-iot/electric#ChargingStation"/>
+        <rdfs:comment xml:lang="it">Associa un Servizio di Ricarica ad una Stazione di Ricarica, resa disponibile dal servizio.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Associates a Charging Service to a Charging Station, made available by the Service.</rdfs:comment>
+        <rdfs:label xml:lang="en">makes station available</rdfs:label>
+        <rdfs:label xml:lang="it">rende la stazione disponibile</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#operatedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/electric#operatedBy">
+        <owl:inverseOf rdf:resource="http://www.w3id.org/urban-iot/electric#operates"/>
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#ChargingStation"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/urban-iot/electric#ChargePointOperator"/>
+        <rdfs:comment xml:lang="it">Associa una Stazione di Ricarica all&apos;Operatore del Punto di Ricarica che l&apos;aziona dal punto di vista dell&apos;erogazione di elettricità.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Associates a Charging Station to a Charge Point Operator who operates it allowing the electricity supply.</rdfs:comment>
+        <rdfs:label xml:lang="en">operated by</rdfs:label>
+        <rdfs:label xml:lang="it">operato da</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#operates -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/electric#operates">
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#ChargePointOperator"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/urban-iot/electric#ChargingStation"/>
+        <rdfs:comment xml:lang="it">Associa un Operatore del Punto di Ricarica ad una Stazione di Ricarica, che viene azionata dall&apos;Operatore.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Associates a Chage Point Operator to a Charging Station, which is operated by the Operator.</rdfs:comment>
+        <rdfs:label xml:lang="it">opera</rdfs:label>
+        <rdfs:label xml:lang="en">operates</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#operatesSession -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/electric#operatesSession">
+        <owl:inverseOf rdf:resource="http://www.w3id.org/urban-iot/electric#sessionOperatedBy"/>
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#ChargePointOperator"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/urban-iot/electric#ChargingSession"/>
+        <rdfs:comment xml:lang="it">Associa un Operatore Punto del Ricarica ad una Sessione di Ricarica che lo coinvolge.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Associates a Charge Point Operator to a Charging Session which involves him.</rdfs:comment>
+        <rdfs:label xml:lang="it">opera sessione</rdfs:label>
+        <rdfs:label xml:lang="en">operates session</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#performsCharging -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/electric#performsCharging">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3id.org/urban-iot/core#performsSession"/>
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/core#ServicePrivateUser"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/urban-iot/electric#ChargingSession"/>
+        <rdfs:comment xml:lang="it">Associa un Utente Privato del Servizio ad una Sessione di Ricarica, eseguita dall&apos;Utente stesso.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Associates a Service Private User to a Charging Session, perfrmed by the User.</rdfs:comment>
+        <rdfs:label xml:lang="it">opera ricarica</rdfs:label>
+        <rdfs:label xml:lang="en">performs charging</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#providesChargingService -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/electric#providesChargingService">
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#eMobilityServiceProvider"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/urban-iot/electric#ChargingService"/>
+        <rdfs:comment xml:lang="it">Associa un Gestore di Servizi per la Mobilità Elettrica ad un Servizio di Ricarica che fornisce.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Associates an eMobility Service Provider to a Charging Service provided by him.</rdfs:comment>
+        <rdfs:label xml:lang="it">offre servizio di ricarica</rdfs:label>
+        <rdfs:label xml:lang="en">provides charging service</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#sessionOperatedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/electric#sessionOperatedBy">
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#ChargingSession"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/urban-iot/electric#ChargePointOperator"/>
+        <rdfs:comment xml:lang="it">Associa una Sessione di Ricarica all&apos;Operatore del Punto di Ricarica che aziona l&apos;erogazione di corrente.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Associates a Charging Session to the Charge Point Operator who operates the electricity supply.</rdfs:comment>
+        <rdfs:label xml:lang="en">session operated by</rdfs:label>
+        <rdfs:label xml:lang="it">sessione operata da</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#stationMadeAvailableBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/electric#stationMadeAvailableBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3id.org/urban-iot/core#madeAvailableBy"/>
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#ChargingStation"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/urban-iot/electric#ChargingService"/>
+        <rdfs:comment xml:lang="it">Associa una determinata Stazione di Ricarica che è stata resa disponibile da un determinato Servizio di Ricarica.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Connect a specific Charging Station which is made available by a charging service.</rdfs:comment>
+        <rdfs:label xml:lang="en">station made available by</rdfs:label>
+        <rdfs:label xml:lang="it">stazione resa disponibile da</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#usedConnector -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/electric#usedConnector">
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#ChargingSession"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/urban-iot/electric#Connector"/>
+        <rdfs:comment xml:lang="it">Associa una Sessione di Ricarica ad un Connettore che viene utilizzato durante la Sessione.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Associates a Charging Session to a Connector which is used during the Session.</rdfs:comment>
+        <rdfs:label xml:lang="it">connettore utilizzato</rdfs:label>
+        <rdfs:label xml:lang="en">used connector</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#usedEVSE -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/electric#usedEVSE">
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#ChargingSession"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/urban-iot/electric#EVSE"/>
+        <rdfs:comment xml:lang="it">Associa una Sessione di Ricarica ad una Colonnina di Ricarica per Veicoli Elettrici (EVSE), che viene utilizzata durante la Sessione.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Associates a Charging Session to an Electric Vehicle Supply Equipment (EVSE) which is used during the Session.</rdfs:comment>
+        <rdfs:label xml:lang="it">EVSE utilizzato</rdfs:label>
+        <rdfs:label xml:lang="en">used EVSE</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#usesChargingStation -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/electric#usesChargingStation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3id.org/urban-iot/core#usesResource"/>
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#ChargingSession"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/urban-iot/electric#ChargingStation"/>
+        <rdfs:comment xml:lang="it">Associa una Sessione di Ricarica ad una Stazione di Ricarica, utilizzata durante la Sessione.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Associates a Charging Session to a Charging Station, which is used during the Session.</rdfs:comment>
+        <rdfs:label xml:lang="it">stazione di ricarica utilizzata</rdfs:label>
+        <rdfs:label xml:lang="en">uses charging station</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://schema.org/duration -->
+
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/duration"/>
+    
+
+
+    <!-- http://schema.org/image -->
+
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/image">
+        <vann:usageNote xml:lang="en">Literal datatype xsd:anyURI.</vann:usageNote>
+        <rdfs:label xml:lang="en">image</rdfs:label>
+        <rdfs:label xml:lang="it">immagine</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/price -->
+
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/price"/>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#chargingDuringClosure -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/urban-iot/electric#chargingDuringClosure">
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#ChargingStation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">Charging time during the closure of the service.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Tempo di ricarica trascorso durante la chiusura del servizio.</rdfs:comment>
+        <rdfs:label xml:lang="en">charging during closure</rdfs:label>
+        <rdfs:label xml:lang="it">ricarica durante la chiusura</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#chargingSessionDuration -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/urban-iot/electric#chargingSessionDuration">
+        <rdfs:subPropertyOf rdf:resource="http://schema.org/duration"/>
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#ChargingSession"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="it">Indica la durata di una determinata Sessione di Ricarica.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the duration of a Charging Session.</rdfs:comment>
+        <rdfs:label xml:lang="en">charging session duration</rdfs:label>
+        <rdfs:label xml:lang="it">durata sessione di ricarica</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#floorLevel -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/urban-iot/electric#floorLevel">
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#EVSE"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="en">Floore level where the Electric Vehicle Supply Equimpment (EVSE) is installed.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Piano al quale è installata la colonnina di ricarica per veicoli elettrici (EVSE).</rdfs:comment>
+        <rdfs:label xml:lang="en">floor level</rdfs:label>
+        <rdfs:label xml:lang="it">numero di piano</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#isPrivate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/urban-iot/electric#isPrivate">
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#ChargingStation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="it">Indica se una Stazione di Ricarica sia privata o pubblica.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates if a Charging Station is private or public.</rdfs:comment>
+        <rdfs:label xml:lang="en">is private</rdfs:label>
+        <rdfs:label xml:lang="it">è privata</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#maxAmperageInA -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/urban-iot/electric#maxAmperageInA">
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#Connector"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment xml:lang="it">Indica il massimo amperaggio in Ampere per un Connettore.</rdfs:comment>
+        <rdfs:comment xml:lang="en">It is the maximum amperage expressed in Ampere for a Connector.</rdfs:comment>
+        <rdfs:label xml:lang="it">massimo amperaggio in A</rdfs:label>
+        <rdfs:label xml:lang="en">max amperage in A</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#maxPowerInKW -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/urban-iot/electric#maxPowerInKW">
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#Connector"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment xml:lang="it">Indica la massima potenza in kWatt per un Connettore.</rdfs:comment>
+        <rdfs:comment xml:lang="en">It is the maximum power expressed in kWatt for a Connector.</rdfs:comment>
+        <rdfs:label xml:lang="it">massima potenza in kW</rdfs:label>
+        <rdfs:label xml:lang="en">max power in kW</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#maxVoltageInV -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/urban-iot/electric#maxVoltageInV">
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#Connector"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment xml:lang="it">Indica il massimo voltaggio in Volt per un Connettore.</rdfs:comment>
+        <rdfs:comment xml:lang="en">It is the maximum voltage expressed in Volt for a Connector.</rdfs:comment>
+        <rdfs:label xml:lang="it">massimo voltaggio in V</rdfs:label>
+        <rdfs:label xml:lang="en">max voltage in V</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#minAmperageInA -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/urban-iot/electric#minAmperageInA">
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#Connector"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment xml:lang="it">Indica il minimo amperaggio in Ampere per un Connettore.</rdfs:comment>
+        <rdfs:comment xml:lang="en">It is the minimum amperage expressed in Ampere for a Connector.</rdfs:comment>
+        <rdfs:label xml:lang="en">min amperage in A</rdfs:label>
+        <rdfs:label xml:lang="it">minimo amperaggio in A</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#minPowerInKW -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/urban-iot/electric#minPowerInKW">
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#Connector"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment xml:lang="it">Indica la minima potenza in kWatt per un Connettore.</rdfs:comment>
+        <rdfs:comment xml:lang="en">It is the minimum power expressed in kWatt for a Connector.</rdfs:comment>
+        <rdfs:label xml:lang="en">min power in kW</rdfs:label>
+        <rdfs:label xml:lang="it">minima potenza in kW</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#minVoltageInV -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/urban-iot/electric#minVoltageInV">
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#Connector"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment xml:lang="it">Indica il minimo voltaggio in Volt per un Connettore.</rdfs:comment>
+        <rdfs:comment xml:lang="en">It is the minimum voltage expressed in Volt for a Connector.</rdfs:comment>
+        <rdfs:label xml:lang="en">min voltage in V</rdfs:label>
+        <rdfs:label xml:lang="it">minimo voltaggio in V</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#pricePerKWhCharge -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/urban-iot/electric#pricePerKWhCharge">
+        <rdfs:subPropertyOf rdf:resource="http://schema.org/price"/>
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#ChargingServiceOffer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment xml:lang="it">Prezzo espresso in base ai kWh di ricarica.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Price expressed per kWh of charge.</rdfs:comment>
+        <rdfs:label xml:lang="it">prezzo al kWh di ricarica</rdfs:label>
+        <rdfs:label xml:lang="en">price per kWh charge</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#pricePerMinuteCharge -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/urban-iot/electric#pricePerMinuteCharge">
+        <rdfs:subPropertyOf rdf:resource="http://schema.org/price"/>
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#ChargingServiceOffer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment xml:lang="it">Prezzo espresso in base ai minuti di ricarica.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Price expressed per minutes of charge.</rdfs:comment>
+        <rdfs:label xml:lang="it">prezzo al minuto di ricarica</rdfs:label>
+        <rdfs:label xml:lang="en">price per minute charge</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#pricePerMinuteParking -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/urban-iot/electric#pricePerMinuteParking">
+        <rdfs:subPropertyOf rdf:resource="http://schema.org/price"/>
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#ChargingServiceOffer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment xml:lang="it">Prezzo espresso in base ai minuti di parcheggio.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Price expressed per minute of parking.</rdfs:comment>
+        <rdfs:label xml:lang="it">prezzo al minuto di parcheggio</rdfs:label>
+        <rdfs:label xml:lang="en">price per minute parking</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#pricePerMonthCharge -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/urban-iot/electric#pricePerMonthCharge">
+        <rdfs:subPropertyOf rdf:resource="http://schema.org/price"/>
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#ChargingServiceOffer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment xml:lang="it">Prezzo espresso in base al mese per ricarica.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Price expressed per month of charge.</rdfs:comment>
+        <rdfs:label xml:lang="it">prezzo per mese di ricarica</rdfs:label>
+        <rdfs:label xml:lang="en">price per month charge</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#providesCable -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/urban-iot/electric#providesCable">
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#Connector"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="it">Indica la presenza di cavo o meno, per un Connettore.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the presence of a cable for the Connector.</rdfs:comment>
+        <rdfs:label xml:lang="it">fornisce cavo</rdfs:label>
+        <rdfs:label xml:lang="en">provides cable</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#rechargeTimeInMin -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/urban-iot/electric#rechargeTimeInMin">
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#ChargingSession"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="it">Indica il tempo di ricarica in minuti per una Sessione di Ricarica.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the charging time expressed in minutes for a Charging Session.</rdfs:comment>
+        <rdfs:label xml:lang="en">recharge time in min</rdfs:label>
+        <rdfs:label xml:lang="it">tempo di ricarica in minuti</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#registeredUser -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/urban-iot/electric#registeredUser">
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#ChargingSession"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="it">Indica se la Sessione di Ricarica è stata eseguita da un utente registrato o meno.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates if a Charging Session is performed by a registered user or not.</rdfs:comment>
+        <rdfs:label xml:lang="en">registered user</rdfs:label>
+        <rdfs:label xml:lang="it">utente registrato</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#renewableSources -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/urban-iot/electric#renewableSources">
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#ChargingStation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="it">Informa rispetto all&apos;uitilizzo di sorgenti di elettricità rinnovabili per una data Sessione di Ricarica.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Provides information on the usage of renewable sources for a Charging Session.</rdfs:comment>
+        <rdfs:label xml:lang="en">renewable sources</rdfs:label>
+        <rdfs:label xml:lang="it">sorgenti rinnovabili</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#totalEnergy -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/urban-iot/electric#totalEnergy">
+        <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/electric#ChargingSession"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment xml:lang="it">Energia totale erogata durante una Sessione di Ricarica.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Total energy supplied during a Charging Session.</rdfs:comment>
+        <rdfs:label xml:lang="it">energia totale</rdfs:label>
+        <rdfs:label xml:lang="en">total energy</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://schema.mobivoc.org/#PlugType -->
+
+
+    <owl:Class rdf:about="http://schema.mobivoc.org/#PlugType">
+        <vann:usageNote xml:lang="it">Tipi di prese standard che può avere un connettore.</vann:usageNote>
+        <rdfs:label xml:lang="en">Plug Type</rdfs:label>
+        <rdfs:label xml:lang="it">Tipo di Presa</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Offer -->
+
+
+    <owl:Class rdf:about="http://schema.org/Offer"/>
+    
+
+
+    <!-- http://schema.org/Organization -->
+
+
+    <owl:Class rdf:about="http://schema.org/Organization"/>
+    
+
+
+    <!-- http://schema.org/Place -->
+
+
+    <owl:Class rdf:about="http://schema.org/Place"/>
+    
+
+
+    <!-- http://schema.org/Service -->
+
+
+    <owl:Class rdf:about="http://schema.org/Service"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Sensor -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/Sensor"/>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/core#MobilityStation -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/urban-iot/core#MobilityStation"/>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/core#SensorRecord -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/urban-iot/core#SensorRecord"/>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/core#ServicePrivateUser -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/urban-iot/core#ServicePrivateUser"/>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/core#ServiceResource -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/urban-iot/core#ServiceResource"/>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/core#UsageSession -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/urban-iot/core#UsageSession"/>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#ChargePointOperator -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/urban-iot/electric#ChargePointOperator">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Organization"/>
+        <rdfs:comment xml:lang="en">Organization that manages the supply of electricity in the Charging Stations.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Organizzazione che gestisce l&apos;erogazione di corrente presso le Stazioni di Ricarica.</rdfs:comment>
+        <rdfs:label xml:lang="en">Charge Point Operator</rdfs:label>
+        <rdfs:label xml:lang="it">Operatore del Punto di Ricarica</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#ChargingService -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/urban-iot/electric#ChargingService">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Service"/>
+        <rdfs:comment xml:lang="en">Service operated by an eMobility Service Provider, with the purpose to manage the use of Electric Vehicle Supply Equipments (EVSE).</rdfs:comment>
+        <rdfs:comment xml:lang="it">Servizio operato da un Gestore di Servizi per la ricarica elettrica, con il fine di gestire l&apos;utilizzo di Colonnine di Ricarica (EVSE).</rdfs:comment>
+        <rdfs:label xml:lang="en">Charging Service</rdfs:label>
+        <rdfs:label xml:lang="it">Servizio di Ricarica</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#ChargingServiceOffer -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/urban-iot/electric#ChargingServiceOffer">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Offer"/>
+        <rdfs:comment xml:lang="en">Tariff offered to charge services Users.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Tariffa offerta agli Utenti dei Servizi di Ricarica.</rdfs:comment>
+        <rdfs:label xml:lang="en">Charging Service Offer</rdfs:label>
+        <rdfs:label xml:lang="it">Tariffa per Servizi di Ricarica</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#ChargingSession -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/urban-iot/electric#ChargingSession">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/urban-iot/core#UsageSession"/>
+        <rdfs:comment xml:lang="en">Session where a\n user asks to a charge for his vehicle, with all the information related to this activity.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Sessione dove un utente richiede la carica del proprio veicolo, con tutte le informazioni collegate a questa attività.</rdfs:comment>
+        <rdfs:label xml:lang="en">Charging Session</rdfs:label>
+        <rdfs:label xml:lang="it">Sessione di Ricarica</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#ChargingStation -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/urban-iot/electric#ChargingStation">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/urban-iot/core#MobilityStation"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/urban-iot/core#ServiceResource"/>
+        <rdfs:comment xml:lang="it">Luogo dove si possono ricaricare veicoli elettrici, comprensivo sia di Colonnine di Ricarica per Veicoli Elettrici (EVSE) che delle aree di sosta per lasciare il veicolo durante la ricarica.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Place where it is possible to recharge vehicles, that includes both Electric Vehicle Supply Equipments (EVSE) and the parking areas to allow the vehicle stop during the charging activity.</rdfs:comment>
+        <rdfs:label xml:lang="en">Charging Station</rdfs:label>
+        <rdfs:label xml:lang="it">Stazione di Ricarica</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#Connector -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/urban-iot/electric#Connector">
+        <rdfs:comment xml:lang="en">Connector related to an Electric Vehicle Supply Equipment (EVSE).</rdfs:comment>
+        <rdfs:comment xml:lang="it">Connettore collegato a una Colonnina di Ricarica per Veicoli Elettrici (EVSE).</rdfs:comment>
+        <rdfs:label xml:lang="en">Connector</rdfs:label>
+        <rdfs:label xml:lang="it">Connettore</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#EVSE -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/urban-iot/electric#EVSE">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+        <rdfs:comment xml:lang="it">Colonnina di Ricarica (EVSE) messa a disposizione per la ricarica di veicoli elettrici.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Electric Vehicle Supply Equipment (EVSE) available for charging vehicles.</rdfs:comment>
+        <rdfs:label xml:lang="it">Colonnina di Ricarica per Veicoli Elettrici (EVSE)</rdfs:label>
+        <rdfs:label xml:lang="en">Electric Vehicle Supply Equipment (EVSE)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#EVSERecord -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/urban-iot/electric#EVSERecord">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/urban-iot/core#SensorRecord"/>
+        <rdfs:comment xml:lang="en">Registration status for the Electric Vehicle Supply Equipment (EVSE): in charge, available, inoperative, ecc.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Registrazione dello stato in cui si trova nei vari momenti la Colonnina di Ricarica (EVSE): in carica, disponibile, inattiva, etc.</rdfs:comment>
+        <rdfs:label xml:lang="en">Electric Vehicle Supply Equipment Record</rdfs:label>
+        <rdfs:label xml:lang="it">Stato della Colonnina di Ricarica</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#eMobilityServiceProvider -->
+
+
+    <owl:Class rdf:about="http://www.w3id.org/urban-iot/electric#eMobilityServiceProvider">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Organization"/>
+        <rdfs:comment xml:lang="en">Organization which offers the Charging Service</rdfs:comment>
+        <rdfs:comment xml:lang="it">Organizzazione che fornisce il Servizio di Ricarica.</rdfs:comment>
+        <rdfs:label xml:lang="it">Gestore di Servizi per la Ricarica Elettica</rdfs:label>
+        <rdfs:label xml:lang="en">eMobility Service Provider</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/electric/EVSE-charge-category -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/electric/EVSE-charge-category">
+        <rdfs:comment xml:lang="it">Categoria di ricarica per colonnine di ricarica.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Electric Mobility EVSE Charge Category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Categoria di ricarica EVSE</rdfs:label>
+        <rdfs:label xml:lang="en">EVSE Charge Category</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/electric/charge-access-method -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/electric/charge-access-method">
+        <rdfs:comment xml:lang="en">Electric Mobility Charge Vehicles Access Method.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Metodo di accesso per ricarica di veicoli nella mobilità elettrica.</rdfs:comment>
+        <rdfs:label xml:lang="en">Charge Vehicles Access Method</rdfs:label>
+        <rdfs:label xml:lang="it">Metodo di Accesso alla Ricarica</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/electric/parking-restriction -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/electric/parking-restriction">
+        <rdfs:comment xml:lang="en">Electric Mobility Parking Restriction.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Restrizione per le aree di parcheggio nella mobilità elettrica.</rdfs:comment>
+        <rdfs:label xml:lang="en">Parking Restriction</rdfs:label>
+        <rdfs:label xml:lang="it">Restrizione Parcheggio</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/electric/power-supply -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/electric/power-supply">
+        <rdfs:comment xml:lang="en">Electric Mobility Power Supply.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Tipo di alimentazione per la mobilità elettrica.</rdfs:comment>
+        <rdfs:label xml:lang="en">Power Supply</rdfs:label>
+        <rdfs:label xml:lang="it">Tipo di Alimentazione</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/urban-iot/electric#EVSE-state -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/urban-iot/electric#EVSE-state">
+        <rdfs:comment xml:lang="en">State for Electric Vehicle Supply Equipment.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Stato della Colonnina di Ricarica per Veicoli Elettrici.</rdfs:comment>
+        <rdfs:label xml:lang="en">EVSE state</rdfs:label>
+        <rdfs:label xml:lang="it">Stato Colonnina di Ricarica</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/ -->
+
+

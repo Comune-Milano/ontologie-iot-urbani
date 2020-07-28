@@ -1,0 +1,2247 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "it", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/ns/legal", "http://www.w3.org/ns/locn", "http://www.w3id.org/urban-iot/core", "http://schema.org", "http://www.w3.org/2000/01/rdf-schema", "http://purl.org/dc/terms", "http://www.w3.org/2001/XMLSchema", "http://www.w3.org/ns/sosa", "http://www.w3.org/2006/time" ],
+    "title" : {
+      "en" : "Urban IoT Ontologies - Core Module",
+      "it" : "Ontologie per gli Apparati IoT Urbani - Modulo Core"
+    },
+    "iri" : "http://www.w3id.org/urban-iot/core",
+    "version" : "v1.0.0",
+    "author" : [ "Ilaria Baroni (Cefriel)", "Irene Celino (Cefriel)", "Mario Scrocca (Cefriel)" ],
+    "labels" : {
+      "en" : "Urban IoT Ontologies - Core Module",
+      "it" : "Ontologie per gli Apparati IoT Urbani - Modulo Core"
+    },
+    "comments" : {
+      "en" : "Core module of the suite of ontologies for urban IoT devices.",
+      "it" : "Modulo core delle ontologie per gli apparati IoT urbani."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Mario Scrocca (Cefriel)",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Ilaria Baroni (Cefriel)",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Irene Celino (Cefriel)",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Area Pianificazione e Monitoraggio (AMAT Milano)",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Direzione Sistemi Informativi ed Agenda Digitale - Area Gestione ed Integrazione Dati (Comune di Milano)",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Direzione Mobilità e Trasporti - Area Pianificazione e Programmazione Mobilità (Comune di Milano)",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "undefined",
+        "value" : "Copyright Comune di Milano, 2020",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "uiot",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "undefined",
+        "value" : "Comune di Milano",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "v1.0.0",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://www.w3id.org/urban-iot/core#",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "undefined",
+        "value" : "Comune di Milano. Urban IoT Ontologies - Core Module (v1.0.0). http://www.w3id.org/urban-iot/core",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "it",
+        "value" : "Ontologie per gli Apparati IoT Urbani - Modulo Core",
+        "type" : "label"
+      }, {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Urban IoT Ontologies - Core Module",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "2",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "65",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "81",
+    "type" : "owl:Class"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "97",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "103",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "114",
+    "type" : "owl:Class"
+  }, {
+    "id" : "119",
+    "type" : "owl:Class"
+  }, {
+    "id" : "120",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "1",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "96",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "124",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/ns/locn#Address",
+    "baseIri" : "http://www.w3.org/ns/locn",
+    "instances" : 0,
+    "annotations" : {
+      "usageNote" : [ {
+        "identifier" : "usageNote",
+        "language" : "it",
+        "value" : "Usato per definire l'indirizzo associato ad una dcterms:Location, ad una schema:Person (Persona) o la sede legale di una legal:LegalEntity (Entità Legale). Nel caso di luoghi in Italia può essere utilizzato il profilo italiano (https://w3id.org/italia/onto/CLV/) allineato con locn:Address.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Address",
+      "en" : "Address",
+      "it" : "Indirizzo"
+    },
+    "attributes" : [ "external" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/ns/sosa/Observation",
+    "baseIri" : "http://www.w3.org/ns/sosa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Observation",
+      "en" : "Observation",
+      "it" : "Campionamento"
+    },
+    "attributes" : [ "external" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "19",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "26",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "29",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "30",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "31",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/ns/legal#LegalEntity",
+    "baseIri" : "http://www.w3.org/ns/legal",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LegalEntity",
+      "en" : "Legal Entity",
+      "it" : "Entità Legale"
+    },
+    "subClasses" : [ "9" ],
+    "attributes" : [ "external" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "36",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "37",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "48",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "49",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "51",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "52",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "46",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://schema.org/Offer",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Offer",
+      "en" : "Offer",
+      "it" : "Offerta"
+    },
+    "attributes" : [ "external" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "53",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "54",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "55",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "44",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "57",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/ns/locn#Geometry",
+    "baseIri" : "http://www.w3.org/ns/locn",
+    "instances" : 0,
+    "annotations" : {
+      "usageNote" : [ {
+        "identifier" : "usageNote",
+        "language" : "it",
+        "value" : "E' consigliato di utilizzare la GeoSPARQL specification (http://www.w3.org/2011/02/GeoSPARQL.pdf) per l'encoding.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Geometry",
+      "en" : "Geometry",
+      "it" : "Geometria"
+    },
+    "attributes" : [ "external" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#ServiceUser",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ServiceUser",
+      "en" : "Service User",
+      "it" : "Utente del Servizio"
+    },
+    "subClasses" : [ "5", "9" ],
+    "comment" : {
+      "en" : "A User using a Service.",
+      "it" : "Utente utilizzatore di un Servizio."
+    },
+    "id" : "66"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#ServiceBusinessUser",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ServiceBusinessUser",
+      "en" : "Service Business User",
+      "it" : "Utente Business del Servizio"
+    },
+    "comment" : {
+      "en" : "Legal Entity with a business contract for the service. A Service Business User can not directly use the service but can enable a Service Private User to do so.",
+      "it" : "Entità Legale con contratto business per accedere al servizio. Un Utente Business non può utilizzare direttamente il servizio ma può abilitare un Utente Privato del Servizio a farlo."
+    },
+    "id" : "9",
+    "superClasses" : [ "66", "35" ]
+  }, {
+    "iri" : "http://purl.org/dc/terms/Location",
+    "baseIri" : "http://purl.org/dc/terms",
+    "instances" : 0,
+    "annotations" : {
+      "usageNote" : [ {
+        "identifier" : "usageNote",
+        "language" : "it",
+        "value" : "Usata per descrivere la localizzazione di uno schema:Place (Luogo).",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Location",
+      "en" : "Location",
+      "it" : "Localizzazione"
+    },
+    "attributes" : [ "external" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://schema.org/Place",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Place",
+      "en" : "Place",
+      "it" : "Luogo"
+    },
+    "subClasses" : [ "75" ],
+    "attributes" : [ "external" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#SensorRecord",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SensorRecord",
+      "en" : "Sensor Record",
+      "it" : "Record del Sensore"
+    },
+    "comment" : {
+      "en" : "A Sensor Record aggregates a set of observations associated to the same timestamp and the same sensor.",
+      "it" : "Un Record del Sensore aggrega un insieme di campionamenti associati allo stesso timestamp e allo stesso sensore."
+    },
+    "id" : "22"
+  }, {
+    "iri" : "http://schema.org/ContactPoint",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ContactPoint",
+      "en" : "Contact Point",
+      "it" : "Punto di Contatto"
+    },
+    "attributes" : [ "external" ],
+    "id" : "77"
+  }, {
+    "iri" : "http://schema.org/Event",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event",
+      "en" : "Event",
+      "it" : "Evento"
+    },
+    "subClasses" : [ "6" ],
+    "attributes" : [ "external" ],
+    "id" : "79"
+  }, {
+    "iri" : "http://schema.org/ServiceChannel",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ServiceChannel",
+      "en" : "Service Channel",
+      "it" : "Canale del Servizio"
+    },
+    "attributes" : [ "external" ],
+    "id" : "81"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "88",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://schema.org/Person",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person",
+      "en" : "Person",
+      "it" : "Persona"
+    },
+    "subClasses" : [ "5" ],
+    "attributes" : [ "external" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://schema.org/DayOfWeek",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "annotations" : {
+      "usageNote" : [ {
+        "identifier" : "usageNote",
+        "language" : "it",
+        "value" : "Istanze della classe usate per definire una schema:OpeningHoursSpecification (Specifica Orari di Apertura).",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DayOfWeek",
+      "en" : "Day of Week",
+      "it" : "Giorno della Settimana"
+    },
+    "attributes" : [ "external" ],
+    "id" : "97"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#UsageSession",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UsageSession",
+      "en" : "Usage Session",
+      "it" : "Sessione di Utilizzo"
+    },
+    "comment" : {
+      "en" : "A Usage Session is an Event associated to a Service and a Service Resource representing a usage of the resource made available by the Service.",
+      "it" : "Una Sessione di Utilizzo è un Evento associato ad un Servizio e ad una Risorsa del Servizio che rappresenta un utilizzo della risorsa resa disponibile dal Servizio."
+    },
+    "id" : "6",
+    "superClasses" : [ "79" ]
+  }, {
+    "iri" : "http://schema.org/Organization",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Organization",
+      "en" : "Organization",
+      "it" : "Organizzazione"
+    },
+    "attributes" : [ "external" ],
+    "id" : "103"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#ServiceResource",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ServiceResource",
+      "en" : "Service Resource",
+      "it" : "Risorsa del Servizio"
+    },
+    "comment" : {
+      "en" : "A Resource made available by a Service to be used in a Usage Session.",
+      "it" : "Risorsa messa a disposizione da un Servizio che può essere utilizzata in una Sessione di Utilizzo."
+    },
+    "id" : "25"
+  }, {
+    "iri" : "http://www.w3.org/ns/sosa/ObservableProperty",
+    "baseIri" : "http://www.w3.org/ns/sosa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ObservableProperty",
+      "en" : "Observable Property",
+      "it" : "Proprietà Campionabile"
+    },
+    "attributes" : [ "external" ],
+    "id" : "114"
+  }, {
+    "iri" : "http://schema.org/OpeningHoursSpecification",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OpeningHoursSpecification",
+      "en" : "Opening Hours Specification",
+      "it" : "Specifica Orari di Apertura"
+    },
+    "attributes" : [ "external" ],
+    "id" : "119"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "120",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "41",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "86",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "12",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "102",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "1",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "92",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "96",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#MobilityStation",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MobilityStation",
+      "en" : "Mobility Station",
+      "it" : "Stazione di Mobilità"
+    },
+    "comment" : {
+      "en" : "A Place characterized by mobility services. A Mobility Station can include more specific Mobility Station (Sharing Station, Charging Station, ecc.).",
+      "it" : "Un Luogo caratterizzato dalla presenza di servizi di mobilità. Può includere altre Stazioni di Mobilità dedicate a specifici servizi per la mobilità (Stazioni di Sharing, Stazioni di Ricarica, etc.)."
+    },
+    "id" : "75",
+    "superClasses" : [ "74" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/sosa/Sensor",
+    "baseIri" : "http://www.w3.org/ns/sosa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sensor",
+      "en" : "Sensor",
+      "it" : "Sensore"
+    },
+    "attributes" : [ "external" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "34",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "124",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://schema.org/Service",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Service",
+      "en" : "Service",
+      "it" : "Servizio"
+    },
+    "attributes" : [ "external" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#ServicePrivateUser",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ServicePrivateUser",
+      "en" : "Service Private User",
+      "it" : "Utente Privato del Servizio"
+    },
+    "comment" : {
+      "en" : "A natural person using a service.",
+      "it" : "Una persona fisica utilizzatore di un servizio."
+    },
+    "id" : "5",
+    "superClasses" : [ "66", "33" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "4",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "60",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "68",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "78",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "80",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "85",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "91",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "94",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "98",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "99",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "100",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "101",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "104",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "105",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "106",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "107",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "108",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "109",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "110",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "111",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "112",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "113",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "115",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "117",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "121",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "122",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "123",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "116",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "125",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "126",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "127",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "128",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "129",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "130",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "131",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "132",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "133",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "118",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.w3.org/ns/sosa/observedProperty",
+    "baseIri" : "http://www.w3.org/ns/sosa",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "observedProperty",
+      "en" : "observed property",
+      "it" : "proprietà campionata"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://schema.org/dayOfWeek",
+    "baseIri" : "http://schema.org",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "dayOfWeek",
+      "en" : "day of week",
+      "it" : "giorno della settimana"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#performsSession",
+    "inverse" : "7",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "performsSession",
+      "en" : "performs session",
+      "it" : "effettua sessione"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Associates a Service Private User with a Usage Session performed.",
+      "it" : "Associa un Utente Privato del Servizio ad una Sessione di Utilizzo effettuata."
+    },
+    "attributes" : [ "object" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#hasEnabledUser",
+    "inverse" : "10",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasEnabledUser",
+      "en" : "has enabled user",
+      "it" : "ha utente abilitato"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Associates a Service Business User with the Service Private User enabled by that business user.",
+      "it" : "Associa un Utente Business del Servizio ad un Utente Privato abilitato dall'utenza business."
+    },
+    "attributes" : [ "object" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#reservationUsed",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "reservationUsed",
+      "en" : "reservation used",
+      "it" : "prenotazione utilizzata"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Indicates whether a reservation mechanism has been used for a Usage Session.",
+      "it" : "Indica se un meccanismo di prenotazione è stato utilizzato per una Sessione di Utilizzo."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#enablesSession",
+    "inverse" : "18",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "enablesSession",
+      "en" : "enables session",
+      "it" : "abilita sessione"
+    },
+    "domain" : "17",
+    "comment" : {
+      "en" : "Associates a Service with a Usage Session enabled by the service.",
+      "it" : "Associa un Servizio ad una Sessione di Utilizzo abilitata dal Servizio."
+    },
+    "attributes" : [ "object" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#latestRecord",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "latestRecord",
+      "en" : "latest record",
+      "it" : "ultimo record"
+    },
+    "superproperty" : [ "23" ],
+    "domain" : "21",
+    "comment" : {
+      "en" : "Associates a Sensor with the latest registered Sensor Record.",
+      "it" : "Associa un Sensore all'ultimo Record del Sensore registrato."
+    },
+    "attributes" : [ "object" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#makesAvailable",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "makesAvailable",
+      "en" : "makes available",
+      "it" : "rende disponibile"
+    },
+    "domain" : "17",
+    "comment" : {
+      "en" : "Associates a Service with the Service Resource that makes available.",
+      "it" : "Associa un Servizio ad una risorsa che rende disponibile."
+    },
+    "attributes" : [ "object" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#birthYear",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "birthYear",
+      "en" : "birth year",
+      "it" : "anno di nascita"
+    },
+    "domain" : "33",
+    "comment" : {
+      "it" : "Associates a person with her/his birth year."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#offerAssociated",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "offerAssociated",
+      "en" : "offer associated",
+      "it" : "offerta associata"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Associates a Usage Session with the tariff (Offer) applied to the specific session.",
+      "it" : "Associa una Sessione di Utilizzo alla tariffa (Offerta) applicata alla specifica sessione."
+    },
+    "attributes" : [ "object" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#recordTimestamp",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "recordTimestamp",
+      "en" : "record timestamp",
+      "it" : "timestamp del record"
+    },
+    "domain" : "22",
+    "comment" : {
+      "en" : "Timestamp associated with a Sensor Record.",
+      "it" : "Timestamp associato ad un Record del Sensore."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://schema.org/itemOffered",
+    "baseIri" : "http://schema.org",
+    "range" : "1",
+    "annotations" : {
+      "usageNote" : [ {
+        "identifier" : "usageNote",
+        "language" : "it",
+        "value" : "Usata per associare una schema:Offer (Offerta) al schema:Service (Servizio) a cui è riferita.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "itemOffered",
+      "en" : "item offered",
+      "it" : "oggetto offerto"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://schema.org/description",
+    "baseIri" : "http://schema.org",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "description",
+      "en" : "description",
+      "it" : "descrizione"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://schema.org/availableLanguage",
+    "baseIri" : "http://schema.org",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "availableLanguage",
+      "en" : "available language",
+      "it" : "lingua disponibile"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#recordRegisteredBy",
+    "inverse" : "23",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "recordRegisteredBy",
+      "en" : "record registered by",
+      "it" : "record registrato da"
+    },
+    "domain" : "22",
+    "comment" : {
+      "en" : "Associates a Sensor Record with the Sensor registering it.",
+      "it" : "Associa un Record del Sensore al Sensore che lo ha registrato."
+    },
+    "attributes" : [ "object" ],
+    "id" : "47"
+  }, {
+    "iri" : "http://schema.org/priceCurrency",
+    "baseIri" : "http://schema.org",
+    "range" : "51",
+    "annotations" : {
+      "usageNote" : [ {
+        "identifier" : "usageNote",
+        "language" : "it",
+        "value" : "Valori secondo lo standard ISO 4217 (es. \"EUR\" per l'Euro).",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "priceCurrency",
+      "en" : "price currency",
+      "it" : "valuta del prezzo"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://www.w3.org/ns/sosa/hasResult",
+    "baseIri" : "http://www.w3.org/ns/sosa",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasResult",
+      "en" : "has result",
+      "it" : "ha risultato"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#observationIn",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "observationIn",
+      "en" : "observation in",
+      "it" : "campionamento in"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "Associates an Observation with the Sensor Record containing it.",
+      "it" : "Associa un Campionamento al Record del Sensore di cui fa parte."
+    },
+    "attributes" : [ "object" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://schema.org/price",
+    "baseIri" : "http://schema.org",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "price",
+      "en" : "price",
+      "it" : "prezzo"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#madeAvailableBy",
+    "inverse" : "24",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "madeAvailableBy",
+      "en" : "made available by",
+      "it" : "resa disponibile da"
+    },
+    "domain" : "25",
+    "comment" : {
+      "en" : "Associates a Service Resource with the Service making it available.",
+      "it" : "Associa una Risorsa del Servizio al Servizio che la rende disponibile."
+    },
+    "attributes" : [ "object" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://schema.org/closes",
+    "baseIri" : "http://schema.org",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "closes",
+      "en" : "closes",
+      "it" : "chiude"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://schema.org/url",
+    "baseIri" : "http://schema.org",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "url",
+      "en" : "url",
+      "it" : "url"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Literal datatype xsd:anyURI."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "62"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#registersRecord",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "registersRecord",
+      "en" : "registers record",
+      "it" : "registra record"
+    },
+    "domain" : "21",
+    "subproperty" : [ "20" ],
+    "comment" : {
+      "en" : "Associates a Sensor with a registered Sensor Record.",
+      "it" : "Associa un Sensore ad un Record del Sensore."
+    },
+    "attributes" : [ "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#associatedBusiness",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "associatedBusiness",
+      "en" : "associated business",
+      "it" : "business associato"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Associates a Usage Session with the Service Business User enabling it.",
+      "it" : "Associa una Sessione di Utilizzo all'Utente Business del Servizio che la abilita."
+    },
+    "attributes" : [ "object" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://www.w3.org/ns/sosa/observes",
+    "baseIri" : "http://www.w3.org/ns/sosa",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "observes",
+      "en" : "observes",
+      "it" : "osserva"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#sessionEnabledBy",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "sessionEnabledBy",
+      "en" : "session enabled by",
+      "it" : "sessione abilitata da"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Associates a Usage Session with the Service enabling it.",
+      "it" : "Associa una Sessione di Utilizzo al Servizio che la abilita."
+    },
+    "attributes" : [ "object" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://schema.org/email",
+    "baseIri" : "http://schema.org",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "email",
+      "en" : "email",
+      "it" : "email"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://schema.org/contactPoint",
+    "baseIri" : "http://schema.org",
+    "range" : "1",
+    "annotations" : {
+      "usageNote" : [ {
+        "identifier" : "usageNote",
+        "language" : "it",
+        "value" : "Usata per associare una schema:Organization (Organizzazione) ad un suo schema:ContactPoint (Punto di Contatto) disponibile.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "contactPoint",
+      "en" : "contact point",
+      "it" : "punto di contatto"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://schema.org/alternateName",
+    "baseIri" : "http://schema.org",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "alternateName",
+      "en" : "alternate name",
+      "it" : "nome alternativo"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "70"
+  }, {
+    "iri" : "http://schema.org/openingHoursSpecification",
+    "baseIri" : "http://schema.org",
+    "range" : "1",
+    "annotations" : {
+      "usageNote" : [ {
+        "identifier" : "usageNote",
+        "language" : "it",
+        "value" : "Usata per associare uno schema:Place (Luogo) alla sua schema:OpeningHoursSpecification (Specifica Orari di Apertura).",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "openingHoursSpecification",
+      "en" : "opening hours specification",
+      "it" : "specifica orari di apertura"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "71"
+  }, {
+    "iri" : "http://schema.org/telephone",
+    "baseIri" : "http://schema.org",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "telephone",
+      "en" : "telephone",
+      "it" : "telefono"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Literal datatype xsd:string."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://www.w3.org/ns/locn#postName",
+    "baseIri" : "http://www.w3.org/ns/locn",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "postName",
+      "en" : "post name",
+      "it" : "divisione postale"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://www.w3.org/2006/time#timeZone",
+    "baseIri" : "http://www.w3.org/2006/time",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "timeZone",
+      "en" : "time zone",
+      "it" : "fuso orario"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "76"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#includedInMobilityStation",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "range" : "75",
+    "label" : {
+      "IRI-based" : "includedInMobilityStation",
+      "en" : "included in mobility station",
+      "it" : "inclusa nella stazione di mobilità"
+    },
+    "domain" : "75",
+    "comment" : {
+      "en" : "Associates a Mobility Station with another Mobility Station including it.",
+      "it" : "Associa una Stazione di Mobilità ad una Stazione di Mobilità che la include."
+    },
+    "attributes" : [ "object" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#sessionPerformedBy",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "sessionPerformedBy",
+      "en" : "session performed by",
+      "it" : "sessione effettuata da"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Associates a Usage Session with the Service Private User performing it.",
+      "it" : "Associa una Sessione di Utilizzo all'Utente Privato del Servizio che la effettua."
+    },
+    "attributes" : [ "object" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#containsObservation",
+    "inverse" : "58",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "containsObservation",
+      "en" : "contains observation",
+      "it" : "contiene campionamento"
+    },
+    "domain" : "22",
+    "comment" : {
+      "en" : "Associates a Sensor Record with a Observation contained in it.",
+      "it" : "Associa un Record del Sensore ad un Campionamento contenuto nel record."
+    },
+    "attributes" : [ "object" ],
+    "id" : "80"
+  }, {
+    "range" : "79",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "82"
+  }, {
+    "range" : "74",
+    "domain" : "75",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "83"
+  }, {
+    "range" : "33",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#registrationDate",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "range" : "86",
+    "label" : {
+      "IRI-based" : "registrationDate",
+      "en" : "registration date",
+      "it" : "data di registrazione"
+    },
+    "domain" : "66",
+    "comment" : {
+      "en" : "Date in which a Service User registered to the Service.",
+      "it" : "Data di registrazione dell'Utente del Servizio al Servizio."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "85"
+  }, {
+    "range" : "35",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "87"
+  }, {
+    "range" : "66",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "89"
+  }, {
+    "range" : "66",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "90"
+  }, {
+    "iri" : "http://schema.org/startDate",
+    "baseIri" : "http://schema.org",
+    "range" : "92",
+    "annotations" : {
+      "usageNote" : [ {
+        "identifier" : "usageNote",
+        "language" : "it",
+        "value" : "Literal datatype xsd:dateTime.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "startDate",
+      "en" : "start date",
+      "it" : "data di inizio"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "91"
+  }, {
+    "iri" : "http://www.w3.org/ns/locn#geometry",
+    "baseIri" : "http://www.w3.org/ns/locn",
+    "range" : "1",
+    "annotations" : {
+      "usageNote" : [ {
+        "identifier" : "usageNote",
+        "language" : "it",
+        "value" : "Associa una dcterms:Location (Localizzazione) alla locn:Geometry (Geometria) che la descrive.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "geometry",
+      "en" : "geometry",
+      "it" : "geometria"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "93"
+  }, {
+    "iri" : "http://schema.org/availableChannel",
+    "baseIri" : "http://schema.org",
+    "range" : "1",
+    "annotations" : {
+      "usageNote" : [ {
+        "identifier" : "usageNote",
+        "language" : "it",
+        "value" : "Usata per associare uno schema:Service (Servizio) ad uno schema:ServiceChannel (Canale del Servizio).",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "availableChannel",
+      "en" : "available channel",
+      "it" : "canale disponibile"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "94"
+  }, {
+    "iri" : "http://schema.org/opens",
+    "baseIri" : "http://schema.org",
+    "range" : "96",
+    "label" : {
+      "IRI-based" : "opens",
+      "en" : "opens",
+      "it" : "apre"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://schema.org/birthDate",
+    "baseIri" : "http://schema.org",
+    "range" : "55",
+    "label" : {
+      "IRI-based" : "birthDate",
+      "en" : "birth date",
+      "it" : "data di nascita"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "98"
+  }, {
+    "iri" : "http://schema.org/serviceUrl",
+    "baseIri" : "http://schema.org",
+    "range" : "57",
+    "annotations" : {
+      "usageNote" : [ {
+        "identifier" : "usageNote",
+        "language" : "it",
+        "value" : "Usato per associare uno schema:ServiceChannel (Canale del Servizio) ad un url (xsd:anyURI).",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "serviceUrl",
+      "en" : "service url",
+      "it" : "url del servizio"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "99"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#registeredTo",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "registeredTo",
+      "en" : "registered to",
+      "it" : "registrato a"
+    },
+    "domain" : "66",
+    "comment" : {
+      "en" : "Associates a Service User to the Service to which the user is registered to.",
+      "it" : "Associa un Utente al Servizio a cui è registrato."
+    },
+    "attributes" : [ "object" ],
+    "id" : "100"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#serialNumber",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "range" : "102",
+    "label" : {
+      "IRI-based" : "serialNumber",
+      "en" : "serial number",
+      "it" : "numero seriale"
+    },
+    "domain" : "25",
+    "comment" : {
+      "en" : "Indication of the serial number.",
+      "it" : "Indicazione del numero seriale."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "101"
+  }, {
+    "iri" : "http://www.w3.org/ns/locn#registeredAddress",
+    "baseIri" : "http://www.w3.org/ns/locn",
+    "range" : "1",
+    "annotations" : {
+      "usageNote" : [ {
+        "identifier" : "usageNote",
+        "language" : "it",
+        "value" : "Usata per associare una legal:LegalEntity (Entità Legale) al locn:Address (Indirizzo) della sua sede legale.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "registeredAddress",
+      "en" : "registered address",
+      "it" : "sede legale"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "104"
+  }, {
+    "iri" : "http://schema.org/duration",
+    "baseIri" : "http://schema.org",
+    "range" : "52",
+    "annotations" : {
+      "usageNote" : [ {
+        "identifier" : "usageNote",
+        "language" : "it",
+        "value" : "Literal consigliato xsd:duration.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "duration",
+      "en" : "duration",
+      "it" : "durata"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "105"
+  }, {
+    "iri" : "http://purl.org/dc/terms/identifier",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "54",
+    "annotations" : {
+      "usageNote" : [ {
+        "identifier" : "usageNote",
+        "language" : "it",
+        "value" : "Usata per associare un identificativo univoco ad una instanza.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "identifier",
+      "en" : "identifier",
+      "it" : "identificativo"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "106"
+  }, {
+    "iri" : "http://schema.org/gender",
+    "baseIri" : "http://schema.org",
+    "range" : "53",
+    "annotations" : {
+      "usageNote" : [ {
+        "identifier" : "usageNote",
+        "language" : "it",
+        "value" : "Literal datatype xsd:string.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "gender",
+      "en" : "gender",
+      "it" : "genere"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "107"
+  }, {
+    "iri" : "http://www.w3.org/ns/locn#location",
+    "baseIri" : "http://www.w3.org/ns/locn",
+    "range" : "1",
+    "annotations" : {
+      "usageNote" : [ {
+        "identifier" : "usageNote",
+        "language" : "it",
+        "value" : "Usata per associare uno schema:Place (Luogo) alla locn:Location che descrive la sua localizzazione.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "location",
+      "en" : "location",
+      "it" : "localizzazione"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "108"
+  }, {
+    "iri" : "http://schema.org/servicePhone",
+    "baseIri" : "http://schema.org",
+    "range" : "1",
+    "annotations" : {
+      "usageNote" : [ {
+        "identifier" : "usageNote",
+        "language" : "it",
+        "value" : "Usata per associare uno schema:ServiceChannel (Canale del Servizio) ad uno schema:ContactPoint (Punto di Contatto).",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "servicePhone",
+      "en" : "service phone",
+      "it" : "contatto del servizio"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "109"
+  }, {
+    "iri" : "http://schema.org/name",
+    "baseIri" : "http://schema.org",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "name",
+      "en" : "name",
+      "it" : "nome"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "110"
+  }, {
+    "iri" : "http://schema.org/endDate",
+    "baseIri" : "http://schema.org",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "endDate",
+      "en" : "end date",
+      "it" : "data di fine"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "111"
+  }, {
+    "iri" : "http://schema.org/offers",
+    "baseIri" : "http://schema.org",
+    "range" : "1",
+    "annotations" : {
+      "usageNote" : [ {
+        "identifier" : "usageNote",
+        "language" : "it",
+        "value" : "Usata per associare uno schema:Service (Servizio) alle schema:Offer (Offerta) disponibili.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "offers",
+      "en" : "offers",
+      "it" : "offre"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "112"
+  }, {
+    "iri" : "http://www.w3.org/ns/locn#address",
+    "baseIri" : "http://www.w3.org/ns/locn",
+    "range" : "1",
+    "annotations" : {
+      "usageNote" : [ {
+        "identifier" : "usageNote",
+        "language" : "it",
+        "value" : "Usata per associare una locn:Location (Localizzazione) o una schema:Persona (Person) al suo indirizzo (locn:Address).",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "address",
+      "en" : "address",
+      "it" : "indirizzo"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "113"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#hasUser",
+    "inverse" : "116",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "hasUser",
+      "en" : "has user",
+      "it" : "ha utente"
+    },
+    "domain" : "17",
+    "comment" : {
+      "en" : "Associates a Service to a Service User.",
+      "it" : "Associa un Servizio ad un Utente del Servizio."
+    },
+    "attributes" : [ "object" ],
+    "id" : "115"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#resourceUsedIn",
+    "inverse" : "118",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "resourceUsedIn",
+      "en" : "resource used in",
+      "it" : "risorsa usata in"
+    },
+    "domain" : "25",
+    "comment" : {
+      "en" : "Associates a Service Resource with a Usage Session using it.",
+      "it" : "Associa una Risorsa del Servizio ad una Sessione di Utilizzo in cui è stata utilizzata."
+    },
+    "attributes" : [ "object" ],
+    "id" : "117"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#userEnabledBy",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "userEnabledBy",
+      "en" : "user enabled by",
+      "it" : "utente abilitato da"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Associates a Service Private User to the Service Business User enabling it.",
+      "it" : "Associa un Utente Privato del Servizio all'Utente Business che lo abilita."
+    },
+    "attributes" : [ "object" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://schema.org/legalName",
+    "baseIri" : "http://schema.org",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "legalName",
+      "en" : "legal name",
+      "it" : "nome legale"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "121"
+  }, {
+    "iri" : "http://schema.org/itemCondition",
+    "baseIri" : "http://schema.org",
+    "range" : "27",
+    "annotations" : {
+      "usageNote" : [ {
+        "identifier" : "usageNote",
+        "language" : "it",
+        "value" : "Usata per associare una schema:Offer (Offerta) ad una descrizione testuale (xsd:string) dei criteri di applicazione, calcolo del costo, periodo di validità e informazioni addizionali.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "itemCondition",
+      "en" : "item condition",
+      "it" : "condizioni dell'oggetto"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "122"
+  }, {
+    "iri" : "http://schema.org/hoursAvailable",
+    "baseIri" : "http://schema.org",
+    "range" : "1",
+    "annotations" : {
+      "usageNote" : [ {
+        "identifier" : "usageNote",
+        "language" : "it",
+        "value" : "Associa un Servizio alla Specifica Orari Apertura che descrive gli orari in cui è reso disponibile.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hoursAvailable",
+      "en" : "hours available",
+      "it" : "orari disponibili"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "123"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#userOfService",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "userOfService",
+      "en" : "user of service",
+      "it" : "utente del servizio"
+    },
+    "domain" : "66",
+    "comment" : {
+      "en" : "Associates a Service User to the Service used.",
+      "it" : "Associa un Utente del Servizio al Servizio che utilizza."
+    },
+    "attributes" : [ "object" ],
+    "id" : "116"
+  }, {
+    "iri" : "http://schema.org/areaServed",
+    "baseIri" : "http://schema.org",
+    "range" : "1",
+    "annotations" : {
+      "usageNote" : [ {
+        "identifier" : "usageNote",
+        "language" : "it",
+        "value" : "Usata per associare uno schema:Service (Servizio) allo schema:Place (Luogo) che è servito dal servizio e in cui il servizio è accessibile.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "areaServed",
+      "en" : "area served",
+      "it" : "area servita"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "125"
+  }, {
+    "iri" : "http://www.w3.org/ns/locn#postCode",
+    "baseIri" : "http://www.w3.org/ns/locn",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "postCode",
+      "en" : "post code",
+      "it" : "codice postale"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "126"
+  }, {
+    "iri" : "http://schema.org/provider",
+    "baseIri" : "http://schema.org",
+    "range" : "1",
+    "annotations" : {
+      "usageNote" : [ {
+        "identifier" : "usageNote",
+        "language" : "it",
+        "value" : "Usata per associare uno schema:Service (Servizio) alla schema:Organization (Organizzazione) che lo eroga.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "provider",
+      "en" : "provider",
+      "it" : "erogatore"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "127"
+  }, {
+    "iri" : "http://www.w3.org/ns/sosa/madeBySensor",
+    "baseIri" : "http://www.w3.org/ns/sosa",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "madeBySensor",
+      "en" : "made by sensor",
+      "it" : "eseguita dal sensore"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "128"
+  }, {
+    "iri" : "http://www.w3.org/ns/sosa/madeObservation",
+    "baseIri" : "http://www.w3.org/ns/sosa",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "madeObservation",
+      "en" : "made observation",
+      "it" : "ha eseguito campionamento"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "129"
+  }, {
+    "iri" : "http://www.w3.org/ns/locn#fullAddress",
+    "baseIri" : "http://www.w3.org/ns/locn",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "fullAddress",
+      "en" : "full address",
+      "it" : "indirizzo completo"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "130"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#fixedAmount",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "range" : "120",
+    "label" : {
+      "IRI-based" : "fixedAmount",
+      "en" : "fixed amount",
+      "it" : "costo fisso"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Associates an Offer with a fixed amount required from it.",
+      "it" : "Indica un costo fisso dell'Offerta."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "131"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#deregistrationDate",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "range" : "124",
+    "label" : {
+      "IRI-based" : "deregistrationDate",
+      "en" : "deregistration date",
+      "it" : "data di disdetta"
+    },
+    "domain" : "66",
+    "comment" : {
+      "en" : "Date in which a Service User deregistered from a Service.",
+      "it" : "Data in cui l'Utente del Servizio ha chiesto la cancellazione della registrazione dal Servizio."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "132"
+  }, {
+    "iri" : "http://www.w3.org/ns/sosa/hasSimpleResult",
+    "baseIri" : "http://www.w3.org/ns/sosa",
+    "range" : "88",
+    "label" : {
+      "IRI-based" : "hasSimpleResult",
+      "en" : "has simple result",
+      "it" : "ha valore semplice"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "133"
+  }, {
+    "iri" : "http://www.w3id.org/urban-iot/core#usesResource",
+    "baseIri" : "http://www.w3id.org/urban-iot/core",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "usesResource",
+      "en" : "uses resource",
+      "it" : "utilizza risorsa"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Associates a Usage Session with the Service Resource used in the session.",
+      "it" : "Associa una Sessione di Utilizzo alla Risorsa del Servizio utilizzata."
+    },
+    "attributes" : [ "object" ],
+    "id" : "118"
+  } ]
+}
