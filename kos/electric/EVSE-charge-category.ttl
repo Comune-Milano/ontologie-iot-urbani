@@ -9,7 +9,13 @@
     dct:title "Categoria di ricarica per colonnine di ricarica"@it ;
     dct:created "2020-07-31"^^xsd:date ;
     dct:creator "Ilaria Baroni (Cefriel)", "Irene Celino (Cefriel)", "Mario Scrocca (Cefriel)" ;
-    skos:hasTopConcept :HighPower, :Standard .
+    dct:contributor "Area Pianificazione e Monitoraggio (AMAT Milano)" ,
+                     "Direzione Mobilità e Trasporti - Area Pianificazione e Programmazione Mobilità (Comune di Milano)" ,
+                     "Direzione Sistemi Informativi ed Agenda Digitale - Area Gestione ed Integrazione Dati (Comune di Milano)" ;
+    dct:rights "Copyright Comune di Milano, 2020" ;
+    dct:publisher "Comune di Milano" ;
+    skos:hasTopConcept :HighPower, :Standard ;
+    skos:prefLabel "EVSE Charge Category"@en, "Categoria di Ricarica EVSE"@it .
 
 :Fast
     a skos:Concept ;

@@ -9,6 +9,12 @@
     dct:title "Standard Europeo Emissioni"@it ;
     dct:created "2020-07-31"^^xsd:date ;
     dct:creator "Ilaria Baroni (Cefriel)", "Irene Celino (Cefriel)", "Mario Scrocca (Cefriel)" ;
+    dct:contributor "Area Pianificazione e Monitoraggio (AMAT Milano)" ,
+                     "Direzione Mobilità e Trasporti - Area Pianificazione e Programmazione Mobilità (Comune di Milano)" ,
+                     "Direzione Sistemi Informativi ed Agenda Digitale - Area Gestione ed Integrazione Dati (Comune di Milano)" ;
+    dct:rights "Copyright Comune di Milano, 2020" ;
+    dct:publisher "Comune di Milano" ;
+    skos:prefLabel "European Emission Standard"@en, "Standard Europeo Emissione"@it ;
     skos:hasTopConcept :Euro0, :Euro1, :Euro2, :Euro3, :Euro4, :Euro5, :Euro6 .
 
 :Euro0

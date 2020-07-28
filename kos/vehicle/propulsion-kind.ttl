@@ -6,9 +6,15 @@
 <http://w3id.org/urban-iot/kos/vehicle/propulsion-kind>
     a skos:ConceptScheme ;
     dct:title "Propulsion Kind"@en ;
-    dct:title "Tipologia di Alimentazione"@it ;
+    dct:title "Tipologia di Propulsione"@it ;
     dct:created "2020-07-31"^^xsd:date ;
     dct:creator "Ilaria Baroni (Cefriel)", "Irene Celino (Cefriel)", "Mario Scrocca (Cefriel)" ;
+    dct:contributor "Area Pianificazione e Monitoraggio (AMAT Milano)" ,
+                     "Direzione Mobilità e Trasporti - Area Pianificazione e Programmazione Mobilità (Comune di Milano)" ,
+                     "Direzione Sistemi Informativi ed Agenda Digitale - Area Gestione ed Integrazione Dati (Comune di Milano)" ;
+    dct:rights "Copyright Comune di Milano, 2020" ;
+    dct:publisher "Comune di Milano" ;
+    skos:prefLabel "Propulsion Kind"@en, "Tipologia di Propulsione"@it ;
     rdfs:isDefinedBy <https://github.com/openmobilityfoundation/mobility-data-specification/blob/main/agency/README.md#propulsion-type> ;
     skos:hasTopConcept :Combustion, :Electric, :ElectricAssist, :Human .
 
