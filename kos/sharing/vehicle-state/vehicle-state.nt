@@ -1,0 +1,179 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#hasTopConcept
+<http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#topConceptOf
+<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/urban-iot/kos/sharing/vehicle-state
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state> <http://purl.org/dc/terms/contributor> "Area Pianificazione e Monitoraggio (AMAT Milano)" .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state> <http://purl.org/dc/terms/contributor> "Direzione Mobilità e Trasporti - Area Pianificazione e Programmazione Mobilità (Comune di Milano)" .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state> <http://purl.org/dc/terms/contributor> "Direzione Sistemi Informativi ed Agenda Digitale - Area Gestione ed Integrazione Dati (Comune di Milano)" .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state> <http://purl.org/dc/terms/created> "2020-07-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state> <http://purl.org/dc/terms/creator> "Ilaria Baroni (Cefriel)" .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state> <http://purl.org/dc/terms/creator> "Irene Celino (Cefriel)" .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state> <http://purl.org/dc/terms/creator> "Mario Scrocca (Cefriel)" .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state> <http://purl.org/dc/terms/publisher> "Comune di Milano" .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state> <http://purl.org/dc/terms/rights> "Copyright Comune di Milano, 2020" .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state> <http://purl.org/dc/terms/title> "Sharing Mobility Vehicle State"@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state> <http://purl.org/dc/terms/title> "Stato Veicolo Sharing Mobility"@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://github.com/openmobilityfoundation/mobility-data-specification/blob/main/agency/README.md#vehicle-events> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/sharing/vehicle-state#Available> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/sharing/vehicle-state#Elsewhere> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/sharing/vehicle-state#Inactive> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/sharing/vehicle-state#Removed> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/sharing/vehicle-state#Reserved> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/sharing/vehicle-state#Trip> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/sharing/vehicle-state#Unavailable> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state> <http://www.w3.org/2004/02/skos/core#prefLabel> "Stato del Veicolo"@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vehicle State"@en .
+# 
+# http://w3id.org/urban-iot/kos/sharing/vehicle-state#Available
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Available> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Available> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Available> <http://www.w3.org/2004/02/skos/core#definition> "Il veicolo è disponibile in strada per prenotazione e noleggio."@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Available> <http://www.w3.org/2004/02/skos/core#definition> "The vehicle is available on the street for reservation and trip."@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Available> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/sharing/vehicle-state> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Available> <http://www.w3.org/2004/02/skos/core#prefLabel> "Available"@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Available> <http://www.w3.org/2004/02/skos/core#prefLabel> "Disponibile"@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Available> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/sharing/vehicle-state> .
+# 
+# http://w3id.org/urban-iot/kos/sharing/vehicle-state#Elsewhere
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Elsewhere> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Elsewhere> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Elsewhere> <http://www.w3.org/2004/02/skos/core#definition> "Il veicolo è al momento utilizzato per un noleggio e si trova all'esterno dell'area operativa del servizio di sharing."@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Elsewhere> <http://www.w3.org/2004/02/skos/core#definition> "The vehicle is in use for a trip and it is outside the operation area of the sharing service."@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Elsewhere> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/sharing/vehicle-state> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Elsewhere> <http://www.w3.org/2004/02/skos/core#prefLabel> "Altrove"@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Elsewhere> <http://www.w3.org/2004/02/skos/core#prefLabel> "Elsewhere"@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Elsewhere> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/sharing/vehicle-state> .
+# 
+# http://w3id.org/urban-iot/kos/sharing/vehicle-state#Inactive
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Inactive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Inactive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Inactive> <http://www.w3.org/2004/02/skos/core#definition> "Il veicolo non è ancora stato registrato nella flotta di un operatore."@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Inactive> <http://www.w3.org/2004/02/skos/core#definition> "The vehicle is still not registered in the operator fleet."@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Inactive> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/sharing/vehicle-state> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Inactive> <http://www.w3.org/2004/02/skos/core#prefLabel> "Inactive"@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Inactive> <http://www.w3.org/2004/02/skos/core#prefLabel> "Inattivo"@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Inactive> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/sharing/vehicle-state> .
+# 
+# http://w3id.org/urban-iot/kos/sharing/vehicle-state#Removed
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Removed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Removed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Removed> <http://www.w3.org/2004/02/skos/core#definition> "Il veicolo non è presente in strada ma si trova nella flotta attiva."@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Removed> <http://www.w3.org/2004/02/skos/core#definition> "The vehicle is formally in the street but is in the active fleet."@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Removed> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/sharing/vehicle-state> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Removed> <http://www.w3.org/2004/02/skos/core#prefLabel> "Removed"@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Removed> <http://www.w3.org/2004/02/skos/core#prefLabel> "Rimosso"@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Removed> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/sharing/vehicle-state> .
+# 
+# http://w3id.org/urban-iot/kos/sharing/vehicle-state#Reserved
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Reserved> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Reserved> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Reserved> <http://www.w3.org/2004/02/skos/core#definition> "Il veicolo è stato prenotato per un noleggio."@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Reserved> <http://www.w3.org/2004/02/skos/core#definition> "The vehicle is reserved for a trip."@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Reserved> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/sharing/vehicle-state> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Reserved> <http://www.w3.org/2004/02/skos/core#prefLabel> "Prenotato"@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Reserved> <http://www.w3.org/2004/02/skos/core#prefLabel> "Reserved"@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Reserved> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/sharing/vehicle-state> .
+# 
+# http://w3id.org/urban-iot/kos/sharing/vehicle-state#Trip
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Trip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Trip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Trip> <http://www.w3.org/2004/02/skos/core#definition> "Il veicolo è al momento utilizzato per un noleggio."@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Trip> <http://www.w3.org/2004/02/skos/core#definition> "The vehicle is currently used for a trip."@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Trip> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/sharing/vehicle-state> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Trip> <http://www.w3.org/2004/02/skos/core#prefLabel> "Noleggio"@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Trip> <http://www.w3.org/2004/02/skos/core#prefLabel> "Trip"@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Trip> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/sharing/vehicle-state> .
+# 
+# http://w3id.org/urban-iot/kos/sharing/vehicle-state#Unavailable
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Unavailable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Unavailable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Unavailable> <http://www.w3.org/2004/02/skos/core#definition> "Il veicolo si trova in strada ma non è al momento disponibile per prenotazione e noleggio."@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Unavailable> <http://www.w3.org/2004/02/skos/core#definition> "The vehicle is in the street but is not available at the moment for reservation and trip."@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Unavailable> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/sharing/vehicle-state> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Unavailable> <http://www.w3.org/2004/02/skos/core#prefLabel> "Non Disponibile"@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Unavailable> <http://www.w3.org/2004/02/skos/core#prefLabel> "Unavailable"@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-state#Unavailable> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/sharing/vehicle-state> .
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

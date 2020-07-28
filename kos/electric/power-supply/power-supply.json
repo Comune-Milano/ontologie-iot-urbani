@@ -1,0 +1,200 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/rights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/electric/power-supply",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "Area Pianificazione e Monitoraggio (AMAT Milano)"
+  }, {
+    "@value" : "Direzione Mobilità e Trasporti - Area Pianificazione e Programmazione Mobilità (Comune di Milano)"
+  }, {
+    "@value" : "Direzione Sistemi Informativi ed Agenda Digitale - Area Gestione ed Integrazione Dati (Comune di Milano)"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-07-31"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Ilaria Baroni (Cefriel)"
+  }, {
+    "@value" : "Irene Celino (Cefriel)"
+  }, {
+    "@value" : "Mario Scrocca (Cefriel)"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@value" : "Comune di Milano"
+  } ],
+  "http://purl.org/dc/terms/rights" : [ {
+    "@value" : "Copyright Comune di Milano, 2020"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Electric Mobility Power Supply"
+  }, {
+    "@language" : "it",
+    "@value" : "Tipo di alimentazione per la mobilità elettrica"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hasTopConcept" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/power-supply#AC"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/power-supply#DC"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Power Supply"
+  }, {
+    "@language" : "it",
+    "@value" : "Tipo di Alimentazione"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/electric/power-supply#AC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "AC power supply (alternate current)."
+  }, {
+    "@language" : "it",
+    "@value" : "Alimentazione di tipo AC (corrente alternata)."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/power-supply"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/power-supply#SinglePhase"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/power-supply#ThreePhase"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "AC"
+  }, {
+    "@language" : "it",
+    "@value" : "AC"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/power-supply"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/electric/power-supply#DC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "it",
+    "@value" : "Alimentazione di tipo DC (corrente continua)."
+  }, {
+    "@language" : "en",
+    "@value" : "DC power supply (direct current)."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/power-supply"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "DC"
+  }, {
+    "@language" : "it",
+    "@value" : "DC"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/power-supply"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/electric/power-supply#SinglePhase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/power-supply#AC"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "AC Single Phase power supply."
+  }, {
+    "@language" : "it",
+    "@value" : "Alimentazione di tipo AC monofase."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/power-supply"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "AC monofase"
+  }, {
+    "@language" : "en",
+    "@value" : "Single Phase"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/electric/power-supply#ThreePhase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/power-supply#AC"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "AC Three Phase power supply."
+  }, {
+    "@value" : "Alimentazione di tipo AC trifase."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/power-supply"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "AC trifase"
+  }, {
+    "@language" : "en",
+    "@value" : "Three Phase"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#broader",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#definition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#narrower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#topConceptOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

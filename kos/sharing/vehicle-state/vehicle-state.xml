@@ -1,0 +1,307 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#hasTopConcept -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#topConceptOf -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#topConceptOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+
+    <Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+
+    <Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/sharing/vehicle-state -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/sharing/vehicle-state">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <terms:contributor>Area Pianificazione e Monitoraggio (AMAT Milano)</terms:contributor>
+        <terms:contributor>Direzione Mobilità e Trasporti - Area Pianificazione e Programmazione Mobilità (Comune di Milano)</terms:contributor>
+        <terms:contributor>Direzione Sistemi Informativi ed Agenda Digitale - Area Gestione ed Integrazione Dati (Comune di Milano)</terms:contributor>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-31</terms:created>
+        <terms:creator>Ilaria Baroni (Cefriel)</terms:creator>
+        <terms:creator>Irene Celino (Cefriel)</terms:creator>
+        <terms:creator>Mario Scrocca (Cefriel)</terms:creator>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:publisher>Comune di Milano</terms:publisher>
+        <terms:rights>Copyright Comune di Milano, 2020</terms:rights>
+        <terms:title xml:lang="en">Sharing Mobility Vehicle State</terms:title>
+        <terms:title xml:lang="it">Stato Veicolo Sharing Mobility</terms:title>
+        <rdfs:isDefinedBy rdf:resource="https://github.com/openmobilityfoundation/mobility-data-specification/blob/main/agency/README.md#vehicle-events"/>
+        <skos:hasTopConcept rdf:resource="http://w3id.org/urban-iot/kos/sharing/vehicle-state#Available"/>
+        <skos:hasTopConcept rdf:resource="http://w3id.org/urban-iot/kos/sharing/vehicle-state#Elsewhere"/>
+        <skos:hasTopConcept rdf:resource="http://w3id.org/urban-iot/kos/sharing/vehicle-state#Inactive"/>
+        <skos:hasTopConcept rdf:resource="http://w3id.org/urban-iot/kos/sharing/vehicle-state#Removed"/>
+        <skos:hasTopConcept rdf:resource="http://w3id.org/urban-iot/kos/sharing/vehicle-state#Reserved"/>
+        <skos:hasTopConcept rdf:resource="http://w3id.org/urban-iot/kos/sharing/vehicle-state#Trip"/>
+        <skos:hasTopConcept rdf:resource="http://w3id.org/urban-iot/kos/sharing/vehicle-state#Unavailable"/>
+        <skos:prefLabel xml:lang="it">Stato del Veicolo</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Vehicle State</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/sharing/vehicle-state#Available -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/sharing/vehicle-state#Available">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="it">Il veicolo è disponibile in strada per prenotazione e noleggio.</skos:definition>
+        <skos:definition xml:lang="en">The vehicle is available on the street for reservation and trip.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/sharing/vehicle-state"/>
+        <skos:prefLabel xml:lang="en">Available</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Disponibile</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="http://w3id.org/urban-iot/kos/sharing/vehicle-state"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/sharing/vehicle-state#Elsewhere -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/sharing/vehicle-state#Elsewhere">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="it">Il veicolo è al momento utilizzato per un noleggio e si trova all&apos;esterno dell&apos;area operativa del servizio di sharing.</skos:definition>
+        <skos:definition xml:lang="en">The vehicle is in use for a trip and it is outside the operation area of the sharing service.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/sharing/vehicle-state"/>
+        <skos:prefLabel xml:lang="it">Altrove</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Elsewhere</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="http://w3id.org/urban-iot/kos/sharing/vehicle-state"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/sharing/vehicle-state#Inactive -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/sharing/vehicle-state#Inactive">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="it">Il veicolo non è ancora stato registrato nella flotta di un operatore.</skos:definition>
+        <skos:definition xml:lang="en">The vehicle is still not registered in the operator fleet.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/sharing/vehicle-state"/>
+        <skos:prefLabel xml:lang="en">Inactive</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Inattivo</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="http://w3id.org/urban-iot/kos/sharing/vehicle-state"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/sharing/vehicle-state#Removed -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/sharing/vehicle-state#Removed">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="it">Il veicolo non è presente in strada ma si trova nella flotta attiva.</skos:definition>
+        <skos:definition xml:lang="en">The vehicle is formally in the street but is in the active fleet.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/sharing/vehicle-state"/>
+        <skos:prefLabel xml:lang="en">Removed</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Rimosso</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="http://w3id.org/urban-iot/kos/sharing/vehicle-state"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/sharing/vehicle-state#Reserved -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/sharing/vehicle-state#Reserved">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="it">Il veicolo è stato prenotato per un noleggio.</skos:definition>
+        <skos:definition xml:lang="en">The vehicle is reserved for a trip.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/sharing/vehicle-state"/>
+        <skos:prefLabel xml:lang="it">Prenotato</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Reserved</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="http://w3id.org/urban-iot/kos/sharing/vehicle-state"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/sharing/vehicle-state#Trip -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/sharing/vehicle-state#Trip">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="it">Il veicolo è al momento utilizzato per un noleggio.</skos:definition>
+        <skos:definition xml:lang="en">The vehicle is currently used for a trip.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/sharing/vehicle-state"/>
+        <skos:prefLabel xml:lang="it">Noleggio</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Trip</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="http://w3id.org/urban-iot/kos/sharing/vehicle-state"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/sharing/vehicle-state#Unavailable -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/sharing/vehicle-state#Unavailable">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="it">Il veicolo si trova in strada ma non è al momento disponibile per prenotazione e noleggio.</skos:definition>
+        <skos:definition xml:lang="en">The vehicle is in the street but is not available at the moment for reservation and trip.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/sharing/vehicle-state"/>
+        <skos:prefLabel xml:lang="it">Non Disponibile</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Unavailable</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="http://w3id.org/urban-iot/kos/sharing/vehicle-state"/>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/ -->
+
+

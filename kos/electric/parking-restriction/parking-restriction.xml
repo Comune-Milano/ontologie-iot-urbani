@@ -1,0 +1,306 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#hasTopConcept -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#topConceptOf -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#topConceptOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+
+    <Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+
+    <Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/electric/parking-restriction -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/electric/parking-restriction">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <terms:contributor>Area Pianificazione e Monitoraggio (AMAT Milano)</terms:contributor>
+        <terms:contributor>Direzione Mobilità e Trasporti - Area Pianificazione e Programmazione Mobilità (Comune di Milano)</terms:contributor>
+        <terms:contributor>Direzione Sistemi Informativi ed Agenda Digitale - Area Gestione ed Integrazione Dati (Comune di Milano)</terms:contributor>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-31</terms:created>
+        <terms:creator>Ilaria Baroni (Cefriel)</terms:creator>
+        <terms:creator>Irene Celino (Cefriel)</terms:creator>
+        <terms:creator>Mario Scrocca (Cefriel)</terms:creator>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:publisher>Comune di Milano</terms:publisher>
+        <terms:rights>Copyright Comune di Milano, 2020</terms:rights>
+        <terms:title xml:lang="en">Electric Mobility Parking Restriction</terms:title>
+        <terms:title xml:lang="it">Restrizione per le aree di parcheggio nella mobilità elettrica</terms:title>
+        <skos:hasTopConcept rdf:resource="http://w3id.org/urban-iot/kos/electric/parking-restriction#ElectricVehiclesOnly"/>
+        <skos:hasTopConcept rdf:resource="http://w3id.org/urban-iot/kos/electric/parking-restriction#ForDisabledOnly"/>
+        <skos:hasTopConcept rdf:resource="http://w3id.org/urban-iot/kos/electric/parking-restriction#InChargeOnly"/>
+        <skos:hasTopConcept rdf:resource="http://w3id.org/urban-iot/kos/electric/parking-restriction#MotorcyclesOnly"/>
+        <skos:hasTopConcept rdf:resource="http://w3id.org/urban-iot/kos/electric/parking-restriction#ParkingAccessWithPayment"/>
+        <skos:hasTopConcept rdf:resource="http://w3id.org/urban-iot/kos/electric/parking-restriction#RestrictedAccessOnly"/>
+        <skos:hasTopConcept rdf:resource="http://w3id.org/urban-iot/kos/electric/parking-restriction#TimeLimited"/>
+        <skos:prefLabel xml:lang="en">Parking Restriction</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Restrizione Parcheggio</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/electric/parking-restriction#ElectricVehiclesOnly -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/electric/parking-restriction#ElectricVehiclesOnly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="it">Area di sosta riservata solo a veicoli elettrici.</skos:definition>
+        <skos:definition xml:lang="en">Parking area for electric vehicles only.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/electric/parking-restriction"/>
+        <skos:prefLabel xml:lang="en">Electric Vehicles Only</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Solo Veicoli Elettrici</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="http://w3id.org/urban-iot/kos/electric/parking-restriction"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/electric/parking-restriction#ForDisabledOnly -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/electric/parking-restriction#ForDisabledOnly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="it">Area di sosta dedicata solo ad utenti disabili.</skos:definition>
+        <skos:definition xml:lang="en">Parking area for disabled only.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/electric/parking-restriction"/>
+        <skos:prefLabel xml:lang="en">For Disabled Only</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Solo per Disabili</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="http://w3id.org/urban-iot/kos/electric/parking-restriction"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/electric/parking-restriction#InChargeOnly -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/electric/parking-restriction#InChargeOnly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="it">Area di sosta dedicata solo a veicoli in carica.</skos:definition>
+        <skos:definition xml:lang="en">Parking area for in charge vehicles only.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/electric/parking-restriction"/>
+        <skos:prefLabel xml:lang="en">In Charge Only</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Solo Veicoli in Carica</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="http://w3id.org/urban-iot/kos/electric/parking-restriction"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/electric/parking-restriction#MotorcyclesOnly -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/electric/parking-restriction#MotorcyclesOnly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="it">Area di sosta dedicata solo a ciclomotori.</skos:definition>
+        <skos:definition xml:lang="en">Parking area for motorcycles only.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/electric/parking-restriction"/>
+        <skos:prefLabel xml:lang="en">Motorcycles Only</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Solo per Ciclomotori</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="http://w3id.org/urban-iot/kos/electric/parking-restriction"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/electric/parking-restriction#ParkingAccessWithPayment -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/electric/parking-restriction#ParkingAccessWithPayment">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="it">Area di sosta con parcheggio a pagamento.</skos:definition>
+        <skos:definition xml:lang="en">Payment parking area.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/electric/parking-restriction"/>
+        <skos:prefLabel xml:lang="it">Parcheggio a Pagamento</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Parking Access With Payment</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="http://w3id.org/urban-iot/kos/electric/parking-restriction"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/electric/parking-restriction#RestrictedAccessOnly -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/electric/parking-restriction#RestrictedAccessOnly">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="it">Area di sosta ad accesso limitato.</skos:definition>
+        <skos:definition xml:lang="en">Parking area with restricted access only.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/electric/parking-restriction"/>
+        <skos:prefLabel xml:lang="it">Accesso Limitato</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Restricted Access Only</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="http://w3id.org/urban-iot/kos/electric/parking-restriction"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/electric/parking-restriction#TimeLimited -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/electric/parking-restriction#TimeLimited">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="it">Area di sosta con parcheggio vincolato a un tempo massimo.</skos:definition>
+        <skos:definition xml:lang="en">Parking area time limited.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/electric/parking-restriction"/>
+        <skos:prefLabel xml:lang="it">Tempo Limitato</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Time Limited</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="http://w3id.org/urban-iot/kos/electric/parking-restriction"/>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/ -->
+
+

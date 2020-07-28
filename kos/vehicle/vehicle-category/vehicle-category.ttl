@@ -14,7 +14,7 @@
                      "Direzione Sistemi Informativi ed Agenda Digitale - Area Gestione ed Integrazione Dati (Comune di Milano)" ;
     dct:rights "Copyright Comune di Milano, 2020" ;
     dct:publisher "Comune di Milano" ;
-    skos:prefLabel "Vehicle Category"@en, "Categoria di Veicoli"@it ;
+    skos:prefLabel "Vehicle Category"@en, "Categoria di Veicolo"@it ;
     rdfs:isDefinedBy <https://www.unece.org/trans/main/wp29/wp29wgs/wp29gen/wp29resolutions.html> ;
     dct:license <https://creativecommons.org/licenses/by/4.0/> ;
     skos:hasTopConcept :CategoryL, :CategoryM, :CategoryN .
@@ -22,7 +22,7 @@
 :CategoryL
     a skos:Concept ;
     skos:definition "Categoria di veicoli ciclomotori e motoveicoli con meno di quattro ruote e quadricicli leggeri."@it ;
-    skos:definition "Category of vehicles mopeds and motorcycles with less than four wheels and light quadricycles." @en" ; 
+    skos:definition "Category of vehicles mopeds and motorcycles with less than four wheels and light quadricycles." @en ; 
     skos:inScheme <http://w3id.org/urban-iot/kos/vehicle/vehicle-category> ;
     skos:narrower :CategoryL6, :CategoryL7 ;
     skos:prefLabel "Category L"@en, "Categoria L"@it ;

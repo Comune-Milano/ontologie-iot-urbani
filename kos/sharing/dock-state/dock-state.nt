@@ -1,0 +1,156 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#hasTopConcept
+<http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#topConceptOf
+<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/urban-iot/kos/sharing/dock-state
+<http://w3id.org/urban-iot/kos/sharing/dock-state> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/sharing/dock-state> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://w3id.org/urban-iot/kos/sharing/dock-state> <http://purl.org/dc/terms/contributor> "Area Pianificazione e Monitoraggio (AMAT Milano)" .
+<http://w3id.org/urban-iot/kos/sharing/dock-state> <http://purl.org/dc/terms/contributor> "Direzione Mobilità e Trasporti - Area Pianificazione e Programmazione Mobilità (Comune di Milano)" .
+<http://w3id.org/urban-iot/kos/sharing/dock-state> <http://purl.org/dc/terms/contributor> "Direzione Sistemi Informativi ed Agenda Digitale - Area Gestione ed Integrazione Dati (Comune di Milano)" .
+<http://w3id.org/urban-iot/kos/sharing/dock-state> <http://purl.org/dc/terms/created> "2020-07-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://w3id.org/urban-iot/kos/sharing/dock-state> <http://purl.org/dc/terms/creator> "Ilaria Baroni (Cefriel)" .
+<http://w3id.org/urban-iot/kos/sharing/dock-state> <http://purl.org/dc/terms/creator> "Irene Celino (Cefriel)" .
+<http://w3id.org/urban-iot/kos/sharing/dock-state> <http://purl.org/dc/terms/creator> "Mario Scrocca (Cefriel)" .
+<http://w3id.org/urban-iot/kos/sharing/dock-state> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://w3id.org/urban-iot/kos/sharing/dock-state> <http://purl.org/dc/terms/publisher> "Comune di Milano" .
+<http://w3id.org/urban-iot/kos/sharing/dock-state> <http://purl.org/dc/terms/rights> "Copyright Comune di Milano, 2020" .
+<http://w3id.org/urban-iot/kos/sharing/dock-state> <http://purl.org/dc/terms/title> "Sharing Station Dock State"@en .
+<http://w3id.org/urban-iot/kos/sharing/dock-state> <http://purl.org/dc/terms/title> "Stato Stallo in Stazione di Sharing"@it .
+<http://w3id.org/urban-iot/kos/sharing/dock-state> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/sharing/dock-state#Available> .
+<http://w3id.org/urban-iot/kos/sharing/dock-state> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/sharing/dock-state#Damaged> .
+<http://w3id.org/urban-iot/kos/sharing/dock-state> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/sharing/dock-state#Inattivo> .
+<http://w3id.org/urban-iot/kos/sharing/dock-state> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/sharing/dock-state#Occupied> .
+<http://w3id.org/urban-iot/kos/sharing/dock-state> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/sharing/dock-state#Reserved> .
+<http://w3id.org/urban-iot/kos/sharing/dock-state> <http://www.w3.org/2004/02/skos/core#prefLabel> "Dock State"@en .
+<http://w3id.org/urban-iot/kos/sharing/dock-state> <http://www.w3.org/2004/02/skos/core#prefLabel> "Stato dello Stallo"@it .
+# 
+# http://w3id.org/urban-iot/kos/sharing/dock-state#Available
+<http://w3id.org/urban-iot/kos/sharing/dock-state#Available> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/sharing/dock-state#Available> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/sharing/dock-state#Available> <http://www.w3.org/2004/02/skos/core#definition> "Dock available."@en .
+<http://w3id.org/urban-iot/kos/sharing/dock-state#Available> <http://www.w3.org/2004/02/skos/core#definition> "Stallo disponibile."@it .
+<http://w3id.org/urban-iot/kos/sharing/dock-state#Available> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/sharing/dock-state> .
+<http://w3id.org/urban-iot/kos/sharing/dock-state#Available> <http://www.w3.org/2004/02/skos/core#prefLabel> "Available"@en .
+<http://w3id.org/urban-iot/kos/sharing/dock-state#Available> <http://www.w3.org/2004/02/skos/core#prefLabel> "Disponibile"@it .
+<http://w3id.org/urban-iot/kos/sharing/dock-state#Available> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/sharing/dock-state> .
+# 
+# http://w3id.org/urban-iot/kos/sharing/dock-state#Damaged
+<http://w3id.org/urban-iot/kos/sharing/dock-state#Damaged> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/sharing/dock-state#Damaged> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/sharing/dock-state#Damaged> <http://www.w3.org/2004/02/skos/core#definition> "Dock damaged."@en .
+<http://w3id.org/urban-iot/kos/sharing/dock-state#Damaged> <http://www.w3.org/2004/02/skos/core#definition> "Stallo danneggiato e fuori uso."@it .
+<http://w3id.org/urban-iot/kos/sharing/dock-state#Damaged> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/sharing/dock-state> .
+<http://w3id.org/urban-iot/kos/sharing/dock-state#Damaged> <http://www.w3.org/2004/02/skos/core#prefLabel> "Damaged"@en .
+<http://w3id.org/urban-iot/kos/sharing/dock-state#Damaged> <http://www.w3.org/2004/02/skos/core#prefLabel> "Danneggiato"@it .
+<http://w3id.org/urban-iot/kos/sharing/dock-state#Damaged> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/sharing/dock-state> .
+# 
+# http://w3id.org/urban-iot/kos/sharing/dock-state#Inactive
+<http://w3id.org/urban-iot/kos/sharing/dock-state#Inactive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/sharing/dock-state#Inactive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/sharing/dock-state#Inactive> <http://www.w3.org/2004/02/skos/core#definition> "Dock inactive."@en .
+<http://w3id.org/urban-iot/kos/sharing/dock-state#Inactive> <http://www.w3.org/2004/02/skos/core#definition> "Stallo non attivo."@it .
+<http://w3id.org/urban-iot/kos/sharing/dock-state#Inactive> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/sharing/dock-state> .
+<http://w3id.org/urban-iot/kos/sharing/dock-state#Inactive> <http://www.w3.org/2004/02/skos/core#prefLabel> "Inactive"@en .
+<http://w3id.org/urban-iot/kos/sharing/dock-state#Inactive> <http://www.w3.org/2004/02/skos/core#prefLabel> "Inattivo"@it .
+<http://w3id.org/urban-iot/kos/sharing/dock-state#Inactive> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/sharing/dock-state> .
+# 
+# http://w3id.org/urban-iot/kos/sharing/dock-state#Occupied
+<http://w3id.org/urban-iot/kos/sharing/dock-state#Occupied> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/sharing/dock-state#Occupied> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/sharing/dock-state#Occupied> <http://www.w3.org/2004/02/skos/core#definition> "Dock occupied by a vehicle."@en .
+<http://w3id.org/urban-iot/kos/sharing/dock-state#Occupied> <http://www.w3.org/2004/02/skos/core#definition> "Stallo occupato da un veicolo."@it .
+<http://w3id.org/urban-iot/kos/sharing/dock-state#Occupied> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/sharing/dock-state> .
+<http://w3id.org/urban-iot/kos/sharing/dock-state#Occupied> <http://www.w3.org/2004/02/skos/core#prefLabel> "Occupato"@it .
+<http://w3id.org/urban-iot/kos/sharing/dock-state#Occupied> <http://www.w3.org/2004/02/skos/core#prefLabel> "Occupied"@en .
+<http://w3id.org/urban-iot/kos/sharing/dock-state#Occupied> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/sharing/dock-state> .
+# 
+# http://w3id.org/urban-iot/kos/sharing/dock-state#Reserved
+<http://w3id.org/urban-iot/kos/sharing/dock-state#Reserved> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/sharing/dock-state#Reserved> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/sharing/dock-state#Reserved> <http://www.w3.org/2004/02/skos/core#definition> "Dock reserved."@en .
+<http://w3id.org/urban-iot/kos/sharing/dock-state#Reserved> <http://www.w3.org/2004/02/skos/core#definition> "Stallo prenotato."@it .
+<http://w3id.org/urban-iot/kos/sharing/dock-state#Reserved> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/sharing/dock-state> .
+<http://w3id.org/urban-iot/kos/sharing/dock-state#Reserved> <http://www.w3.org/2004/02/skos/core#prefLabel> "Prenotato"@it .
+<http://w3id.org/urban-iot/kos/sharing/dock-state#Reserved> <http://www.w3.org/2004/02/skos/core#prefLabel> "Reserved"@en .
+<http://w3id.org/urban-iot/kos/sharing/dock-state#Reserved> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/sharing/dock-state> .
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

@@ -1,0 +1,361 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#broader
+<http://www.w3.org/2004/02/skos/core#broader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#hasTopConcept
+<http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#narrower
+<http://www.w3.org/2004/02/skos/core#narrower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#topConceptOf
+<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/urban-iot/kos/sharing/vehicle-event
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event> <http://purl.org/dc/terms/contributor> "Area Pianificazione e Monitoraggio (AMAT Milano)" .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event> <http://purl.org/dc/terms/contributor> "Direzione Mobilità e Trasporti - Area Pianificazione e Programmazione Mobilità (Comune di Milano)" .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event> <http://purl.org/dc/terms/contributor> "Direzione Sistemi Informativi ed Agenda Digitale - Area Gestione ed Integrazione Dati (Comune di Milano)" .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event> <http://purl.org/dc/terms/created> "2020-07-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event> <http://purl.org/dc/terms/creator> "Ilaria Baroni (Cefriel)" .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event> <http://purl.org/dc/terms/creator> "Irene Celino (Cefriel)" .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event> <http://purl.org/dc/terms/creator> "Mario Scrocca (Cefriel)" .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event> <http://purl.org/dc/terms/publisher> "Comune di Milano" .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event> <http://purl.org/dc/terms/rights> "Copyright Comune di Milano, 2020" .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event> <http://purl.org/dc/terms/title> "Evento Veicolo Sharing Mobility"@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event> <http://purl.org/dc/terms/title> "Sharing Mobility Vehicle Event"@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://github.com/openmobilityfoundation/mobility-data-specification/blob/main/agency/README.md#vehicle-events> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/sharing/vehicle-event#CancelReservation> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/sharing/vehicle-event#CityPickUp> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/sharing/vehicle-event#Deregister> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderDropOff> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUp> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/sharing/vehicle-event#Register> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/sharing/vehicle-event#Reserve> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEnd> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceStart> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripEnd> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripEnter> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripLeave> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripStart> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event> <http://www.w3.org/2004/02/skos/core#prefLabel> "Evento del Veicolo"@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vehicle Event"@en .
+# 
+# http://w3id.org/urban-iot/kos/sharing/vehicle-event#CancelReservation
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#CancelReservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#CancelReservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#CancelReservation> <http://www.w3.org/2004/02/skos/core#definition> "Cancellation event for a vehicle trip reservation."@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#CancelReservation> <http://www.w3.org/2004/02/skos/core#definition> "Evento di cancellazione della prenotazione del veicolo per un noleggio."@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#CancelReservation> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#CancelReservation> <http://www.w3.org/2004/02/skos/core#prefLabel> "Cancel Reservation"@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#CancelReservation> <http://www.w3.org/2004/02/skos/core#prefLabel> "Cancellazione Prenotazione"@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#CancelReservation> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+# 
+# http://w3id.org/urban-iot/kos/sharing/vehicle-event#CityPickUp
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#CityPickUp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#CityPickUp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#CityPickUp> <http://www.w3.org/2004/02/skos/core#definition> "Evento di prelievo del veicolo in strada da parte dell'autorità cittadina."@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#CityPickUp> <http://www.w3.org/2004/02/skos/core#definition> "Pick up event for a vehicle by the city authority."@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#CityPickUp> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#CityPickUp> <http://www.w3.org/2004/02/skos/core#prefLabel> "City Pick Up"@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#CityPickUp> <http://www.w3.org/2004/02/skos/core#prefLabel> "Prelievo Autorità Cittadina"@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#CityPickUp> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+# 
+# http://w3id.org/urban-iot/kos/sharing/vehicle-event#Deregister
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#Deregister> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#Deregister> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#Deregister> <http://www.w3.org/2004/02/skos/core#definition> "Deregistration event for a vehicle from the sharing service fleet."@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#Deregister> <http://www.w3.org/2004/02/skos/core#definition> "Evento di dismissione del veicolo dalla flotta del servizio di sharing."@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#Deregister> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#Deregister> <http://www.w3.org/2004/02/skos/core#narrower> <http://w3id.org/urban-iot/kos/sharing/vehicle-event#DeregisterDecommissioned> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#Deregister> <http://www.w3.org/2004/02/skos/core#narrower> <http://w3id.org/urban-iot/kos/sharing/vehicle-event#DeregisterMissing> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#Deregister> <http://www.w3.org/2004/02/skos/core#prefLabel> "Deregister"@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#Deregister> <http://www.w3.org/2004/02/skos/core#prefLabel> "Dismissione dalla flotta"@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#Deregister> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+# 
+# http://w3id.org/urban-iot/kos/sharing/vehicle-event#DeregisterDecommissioned
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#DeregisterDecommissioned> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#DeregisterDecommissioned> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#DeregisterDecommissioned> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/urban-iot/kos/sharing/vehicle-event#Deregister> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#DeregisterDecommissioned> <http://www.w3.org/2004/02/skos/core#definition> "Deregistration event of a vehicle from the sharing service fleet, to dismantle the vehicle."@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#DeregisterDecommissioned> <http://www.w3.org/2004/02/skos/core#definition> "Evento di dismissione del veicolo dalla flotta del servizio di sharing per ritiro del veicolo."@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#DeregisterDecommissioned> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#DeregisterDecommissioned> <http://www.w3.org/2004/02/skos/core#prefLabel> "Deregister decommissioned"@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#DeregisterDecommissioned> <http://www.w3.org/2004/02/skos/core#prefLabel> "Dismissione dalla flotta per ritiro del veicolo"@it .
+# 
+# http://w3id.org/urban-iot/kos/sharing/vehicle-event#DeregisterMissing
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#DeregisterMissing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#DeregisterMissing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#DeregisterMissing> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/urban-iot/kos/sharing/vehicle-event#Deregister> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#DeregisterMissing> <http://www.w3.org/2004/02/skos/core#definition> "Deregistration event of the vehicle from the sharing service fleet for loss."@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#DeregisterMissing> <http://www.w3.org/2004/02/skos/core#definition> "Evento di dismissione del veicolo dalla flotta del servizio di sharing per smarrimento."@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#DeregisterMissing> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#DeregisterMissing> <http://www.w3.org/2004/02/skos/core#prefLabel> "Deregister missing"@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#DeregisterMissing> <http://www.w3.org/2004/02/skos/core#prefLabel> "Dismissione dalla flotta per smarrimento"@it .
+# 
+# http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderDropOff
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderDropOff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderDropOff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderDropOff> <http://www.w3.org/2004/02/skos/core#definition> "Evento di rilascio del veicolo in strada da parte dell'operatore del servizio di sharing."@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderDropOff> <http://www.w3.org/2004/02/skos/core#definition> "Vehicle release event by the sharing service operator."@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderDropOff> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderDropOff> <http://www.w3.org/2004/02/skos/core#prefLabel> "Provider Drop Off"@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderDropOff> <http://www.w3.org/2004/02/skos/core#prefLabel> "Rilascio Operatore"@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderDropOff> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+# 
+# http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUp
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUp> <http://www.w3.org/2004/02/skos/core#definition> "Evento di prelievo del veicolo in strada da parte dell'operatore del servizio di sharing."@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUp> <http://www.w3.org/2004/02/skos/core#definition> "Vehicle pick up event by the sharing service operator."@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUp> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUp> <http://www.w3.org/2004/02/skos/core#narrower> <http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpCharge> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUp> <http://www.w3.org/2004/02/skos/core#narrower> <http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpCompliance> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUp> <http://www.w3.org/2004/02/skos/core#narrower> <http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpMaintenance> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUp> <http://www.w3.org/2004/02/skos/core#narrower> <http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpRebalance> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUp> <http://www.w3.org/2004/02/skos/core#prefLabel> "Prelievo Operatore"@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUp> <http://www.w3.org/2004/02/skos/core#prefLabel> "Provider Pick Up"@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUp> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+# 
+# http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpCharge
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpCharge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpCharge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpCharge> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUp> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpCharge> <http://www.w3.org/2004/02/skos/core#definition> "Evento di prelievo del veicolo in strada da parte dell'operatore del servizio di sharing per ricarica."@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpCharge> <http://www.w3.org/2004/02/skos/core#definition> "Vehicle pick up event by the sharing service operator for charge reasons."@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpCharge> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpCharge> <http://www.w3.org/2004/02/skos/core#prefLabel> "Prelievo Operatore Ricarica"@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpCharge> <http://www.w3.org/2004/02/skos/core#prefLabel> "Provider Pick Up Charge"@en .
+# 
+# http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpCompliance
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpCompliance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpCompliance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpCompliance> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUp> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpCompliance> <http://www.w3.org/2004/02/skos/core#definition> "Evento di prelievo del veicolo in strada da parte dell'operatore del servizio di sharing per rispetto policy imposte dall'autorità competente (es. limite numero veicoli)."@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpCompliance> <http://www.w3.org/2004/02/skos/core#definition> "Vehicle pick up event by the sharing service operator, to be compliant with local authority policies on vehicles number limitations (e.g., max number of vehicles reached) ."@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpCompliance> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpCompliance> <http://www.w3.org/2004/02/skos/core#prefLabel> "Prelievo Operatore Compliance"@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpCompliance> <http://www.w3.org/2004/02/skos/core#prefLabel> "Provider Pick Up Compliance"@en .
+# 
+# http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpMaintenance
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpMaintenance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpMaintenance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpMaintenance> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUp> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpMaintenance> <http://www.w3.org/2004/02/skos/core#definition> "Evento di prelievo del veicolo in strada da parte dell'operatore del servizio di sharing per manutenzione."@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpMaintenance> <http://www.w3.org/2004/02/skos/core#definition> "Vehicle pick up event by the sharing service operator for maintenance issues."@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpMaintenance> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpMaintenance> <http://www.w3.org/2004/02/skos/core#prefLabel> "Prelievo Operatore Manutenzione"@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpMaintenance> <http://www.w3.org/2004/02/skos/core#prefLabel> "Provider Pick Up Maintenance"@en .
+# 
+# http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpRebalance
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpRebalance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpRebalance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpRebalance> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUp> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpRebalance> <http://www.w3.org/2004/02/skos/core#definition> "Evento di prelievo del veicolo in strada da parte dell'operatore del servizio di sharing per ribilanciamento."@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpRebalance> <http://www.w3.org/2004/02/skos/core#definition> "Vehicle pick up event by the sharing service operator for rebalancing reasons."@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpRebalance> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpRebalance> <http://www.w3.org/2004/02/skos/core#prefLabel> "Prelievo Operatore Ribilanciamento"@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpRebalance> <http://www.w3.org/2004/02/skos/core#prefLabel> "Provider Pick Up Rebalance"@en .
+# 
+# http://w3id.org/urban-iot/kos/sharing/vehicle-event#Register
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#Register> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#Register> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#Register> <http://www.w3.org/2004/02/skos/core#definition> "Evento di immissione del veicolo nella flotta del servizio di sharing."@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#Register> <http://www.w3.org/2004/02/skos/core#definition> "Vehicle entry event in the sharing service fleet."@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#Register> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#Register> <http://www.w3.org/2004/02/skos/core#prefLabel> "Immissione in flotta"@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#Register> <http://www.w3.org/2004/02/skos/core#prefLabel> "Register"@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#Register> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+# 
+# http://w3id.org/urban-iot/kos/sharing/vehicle-event#Reserve
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#Reserve> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#Reserve> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#Reserve> <http://www.w3.org/2004/02/skos/core#definition> "Evento di prenotazione del veicolo per un noleggio."@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#Reserve> <http://www.w3.org/2004/02/skos/core#definition> "Reserve event of the vehicle for a trip."@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#Reserve> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#Reserve> <http://www.w3.org/2004/02/skos/core#prefLabel> "Prenotazione"@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#Reserve> <http://www.w3.org/2004/02/skos/core#prefLabel> "Reserve"@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#Reserve> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+# 
+# http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEnd
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEnd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEnd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEnd> <http://www.w3.org/2004/02/skos/core#definition> "Evento di rimozione del veicolo dal servizio."@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEnd> <http://www.w3.org/2004/02/skos/core#definition> "Removal event of the vehicle from the service."@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEnd> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEnd> <http://www.w3.org/2004/02/skos/core#narrower> <http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndCompliance> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEnd> <http://www.w3.org/2004/02/skos/core#narrower> <http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndLowBattery> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEnd> <http://www.w3.org/2004/02/skos/core#narrower> <http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndMaintenance> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEnd> <http://www.w3.org/2004/02/skos/core#narrower> <http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndOffHours> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEnd> <http://www.w3.org/2004/02/skos/core#prefLabel> "Fine Servizio"@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEnd> <http://www.w3.org/2004/02/skos/core#prefLabel> "Service End"@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEnd> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+# 
+# http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndCompliance
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndCompliance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndCompliance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndCompliance> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEnd> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndCompliance> <http://www.w3.org/2004/02/skos/core#definition> "Evento di rimozione del veicolo dal servizio per rispetto policy imposte dall'autorità competente (es. limite numero veicoli)."@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndCompliance> <http://www.w3.org/2004/02/skos/core#definition> "Removal event of the vehicle from the service, for compliance reasons imposed by the local authority (e.g., max number of vehicle reached)."@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndCompliance> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndCompliance> <http://www.w3.org/2004/02/skos/core#prefLabel> "Fine Servizio Compliance"@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndCompliance> <http://www.w3.org/2004/02/skos/core#prefLabel> "Service End Compliance"@en .
+# 
+# http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndLowBattery
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndLowBattery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndLowBattery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndLowBattery> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEnd> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndLowBattery> <http://www.w3.org/2004/02/skos/core#definition> "Evento di rimozione del veicolo dal servizio per batteria scarica."@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndLowBattery> <http://www.w3.org/2004/02/skos/core#definition> "Removal event of the vehicle from the sharing service for low battery."@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndLowBattery> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndLowBattery> <http://www.w3.org/2004/02/skos/core#prefLabel> "Fine Servizio Batteria Scarica"@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndLowBattery> <http://www.w3.org/2004/02/skos/core#prefLabel> "Service End Low Battery"@en .
+# 
+# http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndMaintenance
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndMaintenance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndMaintenance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndMaintenance> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEnd> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndMaintenance> <http://www.w3.org/2004/02/skos/core#definition> "Evento di rimozione del veicolo dal servizio per necessità di manutenzione."@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndMaintenance> <http://www.w3.org/2004/02/skos/core#definition> "Removal event of the vehicle from the sharing service for maintenance."@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndMaintenance> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndMaintenance> <http://www.w3.org/2004/02/skos/core#prefLabel> "Fine Servizio Manutenzione"@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndMaintenance> <http://www.w3.org/2004/02/skos/core#prefLabel> "Service End Maintenance"@en .
+# 
+# http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndOffHours
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndOffHours> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndOffHours> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndOffHours> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEnd> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndOffHours> <http://www.w3.org/2004/02/skos/core#definition> "Evento di rimozione del veicolo dal servizio a fine giornata (se servizio non opera 24/7)."@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndOffHours> <http://www.w3.org/2004/02/skos/core#definition> "Removal event of the vehicle from the sharing service for ending of the service hours (if the service is not 24/7)"@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndOffHours> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndOffHours> <http://www.w3.org/2004/02/skos/core#prefLabel> "Fine Servizio Orario"@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndOffHours> <http://www.w3.org/2004/02/skos/core#prefLabel> "Service End Off Hours"@en .
+# 
+# http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceStart
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceStart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceStart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceStart> <http://www.w3.org/2004/02/skos/core#definition> "Evento di introduzione veicolo in servizio a inizio giornata (se servizio non opera 24/7)."@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceStart> <http://www.w3.org/2004/02/skos/core#definition> "Placing event of the vehicle from the sharing service for starting of the service hours (if the service is not 24/7)"@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceStart> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceStart> <http://www.w3.org/2004/02/skos/core#prefLabel> "Inizio Servizio"@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceStart> <http://www.w3.org/2004/02/skos/core#prefLabel> "Service Start"@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceStart> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+# 
+# http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripEnd
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripEnd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripEnd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripEnd> <http://www.w3.org/2004/02/skos/core#definition> "Evento di fine noleggio del veicolo."@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripEnd> <http://www.w3.org/2004/02/skos/core#definition> "Trip end event of the vehicle."@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripEnd> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripEnd> <http://www.w3.org/2004/02/skos/core#prefLabel> "Fine Noleggio"@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripEnd> <http://www.w3.org/2004/02/skos/core#prefLabel> "Trip End"@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripEnd> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+# 
+# http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripEnter
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripEnter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripEnter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripEnter> <http://www.w3.org/2004/02/skos/core#definition> "Entering event of the vehicle in the operation area of the sharing service during the trip."@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripEnter> <http://www.w3.org/2004/02/skos/core#definition> "Evento di ingresso nell'area operativa del servizio di sharing durante il noleggio del veicolo."@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripEnter> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripEnter> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ingresso Durante Noleggio"@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripEnter> <http://www.w3.org/2004/02/skos/core#prefLabel> "Trip Enter"@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripEnter> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+# 
+# http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripLeave
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripLeave> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripLeave> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripLeave> <http://www.w3.org/2004/02/skos/core#definition> "Evento di uscita dall'area operativa del servizio di sharing durante il noleggio del veicolo."@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripLeave> <http://www.w3.org/2004/02/skos/core#definition> "Leaving event of the vehicle from the operation area of the sharing service during the trip."@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripLeave> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripLeave> <http://www.w3.org/2004/02/skos/core#prefLabel> "Trip Leave"@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripLeave> <http://www.w3.org/2004/02/skos/core#prefLabel> "Uscita Durante Noleggio"@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripLeave> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+# 
+# http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripStart
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripStart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripStart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripStart> <http://www.w3.org/2004/02/skos/core#definition> "Evento di inizio noleggio del veicolo."@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripStart> <http://www.w3.org/2004/02/skos/core#definition> "Trip start event of the vehicle."@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripStart> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripStart> <http://www.w3.org/2004/02/skos/core#prefLabel> "Inizio Noleggio"@it .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripStart> <http://www.w3.org/2004/02/skos/core#prefLabel> "Trip Start"@en .
+<http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripStart> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/sharing/vehicle-event> .
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

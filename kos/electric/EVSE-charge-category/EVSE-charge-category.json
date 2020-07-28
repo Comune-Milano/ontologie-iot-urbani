@@ -1,0 +1,252 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/rights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-charge-category",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "Area Pianificazione e Monitoraggio (AMAT Milano)"
+  }, {
+    "@value" : "Direzione Mobilità e Trasporti - Area Pianificazione e Programmazione Mobilità (Comune di Milano)"
+  }, {
+    "@value" : "Direzione Sistemi Informativi ed Agenda Digitale - Area Gestione ed Integrazione Dati (Comune di Milano)"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-07-31"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Ilaria Baroni (Cefriel)"
+  }, {
+    "@value" : "Irene Celino (Cefriel)"
+  }, {
+    "@value" : "Mario Scrocca (Cefriel)"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@value" : "Comune di Milano"
+  } ],
+  "http://purl.org/dc/terms/rights" : [ {
+    "@value" : "Copyright Comune di Milano, 2020"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "it",
+    "@value" : "Categoria di ricarica per colonnine di ricarica"
+  }, {
+    "@language" : "en",
+    "@value" : "Electric Mobility EVSE Charge Category"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hasTopConcept" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-charge-category#HighPower"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-charge-category#Standard"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Categoria di Ricarica EVSE"
+  }, {
+    "@language" : "en",
+    "@value" : "EVSE Charge Category"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-charge-category#Fast",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-charge-category#HighPower"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "it",
+    "@value" : "Potenza superiore ai 22 kW e pari o inferiore a 50 kW."
+  }, {
+    "@language" : "en",
+    "@value" : "Power greater than 22 kW and equal or less than 50 kW."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-charge-category"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Fast"
+  }, {
+    "@language" : "it",
+    "@value" : "Veloce"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-charge-category#HighPower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Charge points with power equal or greater than 22 kW."
+  }, {
+    "@language" : "it",
+    "@value" : "Punti di ricarica con potenze pari o superiori a 22 kW."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-charge-category"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-charge-category#Fast"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-charge-category#UltraFast"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Elevata"
+  }, {
+    "@language" : "en",
+    "@value" : "High Power"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-charge-category"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-charge-category#Quick",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-charge-category#Standard"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "it",
+    "@value" : "Potenza superiore a 7.4 kW e pari o inferiore a 22 kW."
+  }, {
+    "@language" : "en",
+    "@value" : "Power greater than 7.4 kW and equal or less than 22 kW."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-charge-category"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Accelerata"
+  }, {
+    "@language" : "en",
+    "@value" : "Quick"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-charge-category#Slow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-charge-category#Standard"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "it",
+    "@value" : "Potenza pari o inferiore a 7.4 kW."
+  }, {
+    "@language" : "en",
+    "@value" : "Power equal or less than 7.4 kW."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-charge-category"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Lenta"
+  }, {
+    "@language" : "en",
+    "@value" : "Slow"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-charge-category#Standard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Power equal or less than 22 kW."
+  }, {
+    "@language" : "it",
+    "@value" : "Punti di ricarica con potenze fino ai 22 kW."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-charge-category"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-charge-category#Quick"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-charge-category#Slow"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Standard"
+  }, {
+    "@language" : "it",
+    "@value" : "Standard"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-charge-category"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-charge-category#UltraFast",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-charge-category#HighPower"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "it",
+    "@value" : "Potenza superiore ai 50 kW."
+  }, {
+    "@language" : "en",
+    "@value" : "Power greater than 50 kW."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-charge-category"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Ultra Fast"
+  }, {
+    "@language" : "it",
+    "@value" : "Ultra Veloce"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#broader",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#definition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#narrower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#topConceptOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

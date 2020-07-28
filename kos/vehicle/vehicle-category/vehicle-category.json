@@ -1,0 +1,281 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/rights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/vehicle/vehicle-category",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "Area Pianificazione e Monitoraggio (AMAT Milano)"
+  }, {
+    "@value" : "Direzione Mobilità e Trasporti - Area Pianificazione e Programmazione Mobilità (Comune di Milano)"
+  }, {
+    "@value" : "Direzione Sistemi Informativi ed Agenda Digitale - Area Gestione ed Integrazione Dati (Comune di Milano)"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-07-31"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Ilaria Baroni (Cefriel)"
+  }, {
+    "@value" : "Irene Celino (Cefriel)"
+  }, {
+    "@value" : "Mario Scrocca (Cefriel)"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@value" : "Comune di Milano"
+  } ],
+  "http://purl.org/dc/terms/rights" : [ {
+    "@value" : "Copyright Comune di Milano, 2020"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "it",
+    "@value" : "Categoria di Veicolo"
+  }, {
+    "@language" : "en",
+    "@value" : "Vehicle Category"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://www.unece.org/trans/main/wp29/wp29wgs/wp29gen/wp29resolutions.html"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hasTopConcept" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryM"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryN"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Categoria di Veicolo"
+  }, {
+    "@language" : "en",
+    "@value" : "Vehicle Category"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "it",
+    "@value" : "Categoria di veicoli ciclomotori e motoveicoli con meno di quattro ruote e quadricicli leggeri."
+  }, {
+    "@language" : "en",
+    "@value" : "Category of vehicles mopeds and motorcycles with less than four wheels and light quadricycles."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/vehicle-category"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL6"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL7"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Categoria L"
+  }, {
+    "@language" : "en",
+    "@value" : "Category L"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/vehicle-category"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Four wheels light vehicles whose unladen mass is not more than 350 kg, whose maximum design speed is not more than 45 km/h, and whose engine cylinder capacity does not exceed 50 cm3, or whose maximum net power output does not exceed 4 kW."
+  }, {
+    "@language" : "it",
+    "@value" : "Quadricicli leggeri con massa a vuoto inferiore o pari a 350 kg, velocità massima inferiore o pari a 45 km/h, cilindrata inferiore o pari a 50cm3, potenza netta/nominale continua massima inferiore o uguale a 4kW."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/vehicle-category"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Categoria L6"
+  }, {
+    "@language" : "en",
+    "@value" : "Category L6"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Four wheels light vehicles, other than that classified for the category L6, whose unladen mass is not more than 400 kg (550 kg for vehicles intended for carrying goods), and whose maximum continuous rated power does not exceed 15 kW."
+  }, {
+    "@language" : "it",
+    "@value" : "Quadricicli leggeri che non appartengono a L6 con massa a vuoto inferiore o pari a 400 kg (550 kg se per trasporto merci) e con potenza massima inferiore o uguale a 15 kW."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/vehicle-category"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Categoria L7"
+  }, {
+    "@language" : "en",
+    "@value" : "Category L7"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryM",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "it",
+    "@value" : "Categoria di veicoli con almeno quattro ruote per il trasporto di persone."
+  }, {
+    "@language" : "en",
+    "@value" : "Vehicles having at least four wheels and used for the carriage of passengers."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/vehicle-category"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryM1"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Categoria M"
+  }, {
+    "@language" : "en",
+    "@value" : "Category M"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/vehicle-category"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryM1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryM"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "it",
+    "@value" : "Categoria di veicoli per il trasporto di persone, con almeno quattro ruote e aventi al massimo otto posti a sedere oltre al sedile del conducente."
+  }, {
+    "@language" : "en",
+    "@value" : "Vehicles used for carriage of passengers, comprising not more than eight seats in addition to the driver's."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/vehicle-category"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Categoria M1"
+  }, {
+    "@language" : "en",
+    "@value" : "Category M1"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryN",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "it",
+    "@value" : "Categoria di veicoli con almeno quattro ruote per il trasporto di merci."
+  }, {
+    "@language" : "en",
+    "@value" : "Power-driven vehicles having at least four wheels and used for the carriage of goods."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/vehicle-category"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryN1"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Categoria N"
+  }, {
+    "@language" : "en",
+    "@value" : "Category N"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/vehicle-category"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryN1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryN"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "it",
+    "@value" : "Categoria di veicoli con almeno quattro ruote per il trasporto di merci e con massa massima non superiore a 3,5t."
+  }, {
+    "@language" : "en",
+    "@value" : "Vehicles used for the carriage of goods and having a maximum mass not exceeding 3.5t."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/vehicle-category"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Categoria N1"
+  }, {
+    "@language" : "en",
+    "@value" : "Category N1"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#broader",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#definition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#narrower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#topConceptOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

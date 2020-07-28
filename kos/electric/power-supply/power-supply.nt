@@ -1,0 +1,151 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#broader
+<http://www.w3.org/2004/02/skos/core#broader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#hasTopConcept
+<http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#narrower
+<http://www.w3.org/2004/02/skos/core#narrower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#topConceptOf
+<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/urban-iot/kos/electric/power-supply
+<http://w3id.org/urban-iot/kos/electric/power-supply> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/electric/power-supply> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://w3id.org/urban-iot/kos/electric/power-supply> <http://purl.org/dc/terms/contributor> "Area Pianificazione e Monitoraggio (AMAT Milano)" .
+<http://w3id.org/urban-iot/kos/electric/power-supply> <http://purl.org/dc/terms/contributor> "Direzione Mobilità e Trasporti - Area Pianificazione e Programmazione Mobilità (Comune di Milano)" .
+<http://w3id.org/urban-iot/kos/electric/power-supply> <http://purl.org/dc/terms/contributor> "Direzione Sistemi Informativi ed Agenda Digitale - Area Gestione ed Integrazione Dati (Comune di Milano)" .
+<http://w3id.org/urban-iot/kos/electric/power-supply> <http://purl.org/dc/terms/created> "2020-07-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://w3id.org/urban-iot/kos/electric/power-supply> <http://purl.org/dc/terms/creator> "Ilaria Baroni (Cefriel)" .
+<http://w3id.org/urban-iot/kos/electric/power-supply> <http://purl.org/dc/terms/creator> "Irene Celino (Cefriel)" .
+<http://w3id.org/urban-iot/kos/electric/power-supply> <http://purl.org/dc/terms/creator> "Mario Scrocca (Cefriel)" .
+<http://w3id.org/urban-iot/kos/electric/power-supply> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://w3id.org/urban-iot/kos/electric/power-supply> <http://purl.org/dc/terms/publisher> "Comune di Milano" .
+<http://w3id.org/urban-iot/kos/electric/power-supply> <http://purl.org/dc/terms/rights> "Copyright Comune di Milano, 2020" .
+<http://w3id.org/urban-iot/kos/electric/power-supply> <http://purl.org/dc/terms/title> "Electric Mobility Power Supply"@en .
+<http://w3id.org/urban-iot/kos/electric/power-supply> <http://purl.org/dc/terms/title> "Tipo di alimentazione per la mobilità elettrica"@it .
+<http://w3id.org/urban-iot/kos/electric/power-supply> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/electric/power-supply#AC> .
+<http://w3id.org/urban-iot/kos/electric/power-supply> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/electric/power-supply#DC> .
+<http://w3id.org/urban-iot/kos/electric/power-supply> <http://www.w3.org/2004/02/skos/core#prefLabel> "Power Supply"@en .
+<http://w3id.org/urban-iot/kos/electric/power-supply> <http://www.w3.org/2004/02/skos/core#prefLabel> "Tipo di Alimentazione"@it .
+# 
+# http://w3id.org/urban-iot/kos/electric/power-supply#AC
+<http://w3id.org/urban-iot/kos/electric/power-supply#AC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/electric/power-supply#AC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/electric/power-supply#AC> <http://www.w3.org/2004/02/skos/core#definition> "AC power supply (alternate current)."@en .
+<http://w3id.org/urban-iot/kos/electric/power-supply#AC> <http://www.w3.org/2004/02/skos/core#definition> "Alimentazione di tipo AC (corrente alternata)."@it .
+<http://w3id.org/urban-iot/kos/electric/power-supply#AC> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/electric/power-supply> .
+<http://w3id.org/urban-iot/kos/electric/power-supply#AC> <http://www.w3.org/2004/02/skos/core#narrower> <http://w3id.org/urban-iot/kos/electric/power-supply#SinglePhase> .
+<http://w3id.org/urban-iot/kos/electric/power-supply#AC> <http://www.w3.org/2004/02/skos/core#narrower> <http://w3id.org/urban-iot/kos/electric/power-supply#ThreePhase> .
+<http://w3id.org/urban-iot/kos/electric/power-supply#AC> <http://www.w3.org/2004/02/skos/core#prefLabel> "AC"@en .
+<http://w3id.org/urban-iot/kos/electric/power-supply#AC> <http://www.w3.org/2004/02/skos/core#prefLabel> "AC"@it .
+<http://w3id.org/urban-iot/kos/electric/power-supply#AC> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/electric/power-supply> .
+# 
+# http://w3id.org/urban-iot/kos/electric/power-supply#DC
+<http://w3id.org/urban-iot/kos/electric/power-supply#DC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/electric/power-supply#DC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/electric/power-supply#DC> <http://www.w3.org/2004/02/skos/core#definition> "Alimentazione di tipo DC (corrente continua)."@it .
+<http://w3id.org/urban-iot/kos/electric/power-supply#DC> <http://www.w3.org/2004/02/skos/core#definition> "DC power supply (direct current)."@en .
+<http://w3id.org/urban-iot/kos/electric/power-supply#DC> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/electric/power-supply> .
+<http://w3id.org/urban-iot/kos/electric/power-supply#DC> <http://www.w3.org/2004/02/skos/core#prefLabel> "DC"@en .
+<http://w3id.org/urban-iot/kos/electric/power-supply#DC> <http://www.w3.org/2004/02/skos/core#prefLabel> "DC"@it .
+<http://w3id.org/urban-iot/kos/electric/power-supply#DC> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/electric/power-supply> .
+# 
+# http://w3id.org/urban-iot/kos/electric/power-supply#SinglePhase
+<http://w3id.org/urban-iot/kos/electric/power-supply#SinglePhase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/electric/power-supply#SinglePhase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/electric/power-supply#SinglePhase> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/urban-iot/kos/electric/power-supply#AC> .
+<http://w3id.org/urban-iot/kos/electric/power-supply#SinglePhase> <http://www.w3.org/2004/02/skos/core#definition> "AC Single Phase power supply."@en .
+<http://w3id.org/urban-iot/kos/electric/power-supply#SinglePhase> <http://www.w3.org/2004/02/skos/core#definition> "Alimentazione di tipo AC monofase."@it .
+<http://w3id.org/urban-iot/kos/electric/power-supply#SinglePhase> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/electric/power-supply> .
+<http://w3id.org/urban-iot/kos/electric/power-supply#SinglePhase> <http://www.w3.org/2004/02/skos/core#prefLabel> "AC monofase"@it .
+<http://w3id.org/urban-iot/kos/electric/power-supply#SinglePhase> <http://www.w3.org/2004/02/skos/core#prefLabel> "Single Phase"@en .
+# 
+# http://w3id.org/urban-iot/kos/electric/power-supply#ThreePhase
+<http://w3id.org/urban-iot/kos/electric/power-supply#ThreePhase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/electric/power-supply#ThreePhase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/electric/power-supply#ThreePhase> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/urban-iot/kos/electric/power-supply#AC> .
+<http://w3id.org/urban-iot/kos/electric/power-supply#ThreePhase> <http://www.w3.org/2004/02/skos/core#definition> "AC Three Phase power supply."@en .
+<http://w3id.org/urban-iot/kos/electric/power-supply#ThreePhase> <http://www.w3.org/2004/02/skos/core#definition> "Alimentazione di tipo AC trifase." .
+<http://w3id.org/urban-iot/kos/electric/power-supply#ThreePhase> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/electric/power-supply> .
+<http://w3id.org/urban-iot/kos/electric/power-supply#ThreePhase> <http://www.w3.org/2004/02/skos/core#prefLabel> "AC trifase"@it .
+<http://w3id.org/urban-iot/kos/electric/power-supply#ThreePhase> <http://www.w3.org/2004/02/skos/core#prefLabel> "Three Phase"@en .
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

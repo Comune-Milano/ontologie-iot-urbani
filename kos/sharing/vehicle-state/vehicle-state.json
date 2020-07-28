@@ -1,0 +1,272 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/rights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-state",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "Area Pianificazione e Monitoraggio (AMAT Milano)"
+  }, {
+    "@value" : "Direzione Mobilità e Trasporti - Area Pianificazione e Programmazione Mobilità (Comune di Milano)"
+  }, {
+    "@value" : "Direzione Sistemi Informativi ed Agenda Digitale - Area Gestione ed Integrazione Dati (Comune di Milano)"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-07-31"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Ilaria Baroni (Cefriel)"
+  }, {
+    "@value" : "Irene Celino (Cefriel)"
+  }, {
+    "@value" : "Mario Scrocca (Cefriel)"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@value" : "Comune di Milano"
+  } ],
+  "http://purl.org/dc/terms/rights" : [ {
+    "@value" : "Copyright Comune di Milano, 2020"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Sharing Mobility Vehicle State"
+  }, {
+    "@language" : "it",
+    "@value" : "Stato Veicolo Sharing Mobility"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://github.com/openmobilityfoundation/mobility-data-specification/blob/main/agency/README.md#vehicle-events"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hasTopConcept" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-state#Available"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-state#Elsewhere"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-state#Inactive"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-state#Removed"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-state#Reserved"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-state#Trip"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-state#Unavailable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Stato del Veicolo"
+  }, {
+    "@language" : "en",
+    "@value" : "Vehicle State"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-state#Available",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "it",
+    "@value" : "Il veicolo è disponibile in strada per prenotazione e noleggio."
+  }, {
+    "@language" : "en",
+    "@value" : "The vehicle is available on the street for reservation and trip."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-state"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Available"
+  }, {
+    "@language" : "it",
+    "@value" : "Disponibile"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-state"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-state#Elsewhere",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "it",
+    "@value" : "Il veicolo è al momento utilizzato per un noleggio e si trova all'esterno dell'area operativa del servizio di sharing."
+  }, {
+    "@language" : "en",
+    "@value" : "The vehicle is in use for a trip and it is outside the operation area of the sharing service."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-state"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Altrove"
+  }, {
+    "@language" : "en",
+    "@value" : "Elsewhere"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-state"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-state#Inactive",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "it",
+    "@value" : "Il veicolo non è ancora stato registrato nella flotta di un operatore."
+  }, {
+    "@language" : "en",
+    "@value" : "The vehicle is still not registered in the operator fleet."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-state"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Inactive"
+  }, {
+    "@language" : "it",
+    "@value" : "Inattivo"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-state"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-state#Removed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "it",
+    "@value" : "Il veicolo non è presente in strada ma si trova nella flotta attiva."
+  }, {
+    "@language" : "en",
+    "@value" : "The vehicle is formally in the street but is in the active fleet."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-state"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Removed"
+  }, {
+    "@language" : "it",
+    "@value" : "Rimosso"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-state"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-state#Reserved",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "it",
+    "@value" : "Il veicolo è stato prenotato per un noleggio."
+  }, {
+    "@language" : "en",
+    "@value" : "The vehicle is reserved for a trip."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-state"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Prenotato"
+  }, {
+    "@language" : "en",
+    "@value" : "Reserved"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-state"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-state#Trip",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "it",
+    "@value" : "Il veicolo è al momento utilizzato per un noleggio."
+  }, {
+    "@language" : "en",
+    "@value" : "The vehicle is currently used for a trip."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-state"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Noleggio"
+  }, {
+    "@language" : "en",
+    "@value" : "Trip"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-state"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-state#Unavailable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "it",
+    "@value" : "Il veicolo si trova in strada ma non è al momento disponibile per prenotazione e noleggio."
+  }, {
+    "@language" : "en",
+    "@value" : "The vehicle is in the street but is not available at the moment for reservation and trip."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-state"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Non Disponibile"
+  }, {
+    "@language" : "en",
+    "@value" : "Unavailable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-state"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#definition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#topConceptOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

@@ -1,0 +1,321 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broader -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#hasTopConcept -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrower -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#narrower"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#topConceptOf -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#topConceptOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+
+    <Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+
+    <Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/vehicle/vehicle-category -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/vehicle/vehicle-category">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <terms:contributor>Area Pianificazione e Monitoraggio (AMAT Milano)</terms:contributor>
+        <terms:contributor>Direzione Mobilità e Trasporti - Area Pianificazione e Programmazione Mobilità (Comune di Milano)</terms:contributor>
+        <terms:contributor>Direzione Sistemi Informativi ed Agenda Digitale - Area Gestione ed Integrazione Dati (Comune di Milano)</terms:contributor>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-31</terms:created>
+        <terms:creator>Ilaria Baroni (Cefriel)</terms:creator>
+        <terms:creator>Irene Celino (Cefriel)</terms:creator>
+        <terms:creator>Mario Scrocca (Cefriel)</terms:creator>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:publisher>Comune di Milano</terms:publisher>
+        <terms:rights>Copyright Comune di Milano, 2020</terms:rights>
+        <terms:title xml:lang="it">Categoria di Veicolo</terms:title>
+        <terms:title xml:lang="en">Vehicle Category</terms:title>
+        <rdfs:isDefinedBy rdf:resource="https://www.unece.org/trans/main/wp29/wp29wgs/wp29gen/wp29resolutions.html"/>
+        <skos:hasTopConcept rdf:resource="http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL"/>
+        <skos:hasTopConcept rdf:resource="http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryM"/>
+        <skos:hasTopConcept rdf:resource="http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryN"/>
+        <skos:prefLabel xml:lang="it">Categoria di Veicolo</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Vehicle Category</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="it">Categoria di veicoli ciclomotori e motoveicoli con meno di quattro ruote e quadricicli leggeri.</skos:definition>
+        <skos:definition xml:lang="en">Category of vehicles mopeds and motorcycles with less than four wheels and light quadricycles.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/vehicle/vehicle-category"/>
+        <skos:narrower rdf:resource="http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL6"/>
+        <skos:narrower rdf:resource="http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL7"/>
+        <skos:prefLabel xml:lang="it">Categoria L</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Category L</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="http://w3id.org/urban-iot/kos/vehicle/vehicle-category"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL6 -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL6">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL"/>
+        <skos:definition xml:lang="en">Four wheels light vehicles whose unladen mass is not more than 350 kg, whose maximum design speed is not more than 45 km/h, and whose engine cylinder capacity does not exceed 50 cm3, or whose maximum net power output does not exceed 4 kW.</skos:definition>
+        <skos:definition xml:lang="it">Quadricicli leggeri con massa a vuoto inferiore o pari a 350 kg, velocità massima inferiore o pari a 45 km/h, cilindrata inferiore o pari a 50cm3, potenza netta/nominale continua massima inferiore o uguale a 4kW.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/vehicle/vehicle-category"/>
+        <skos:prefLabel xml:lang="it">Categoria L6</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Category L6</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL7 -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL7">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL"/>
+        <skos:definition xml:lang="en">Four wheels light vehicles, other than that classified for the category L6, whose unladen mass is not more than 400 kg (550 kg for vehicles intended for carrying goods), and whose maximum continuous rated power does not exceed 15 kW.</skos:definition>
+        <skos:definition xml:lang="it">Quadricicli leggeri che non appartengono a L6 con massa a vuoto inferiore o pari a 400 kg (550 kg se per trasporto merci) e con potenza massima inferiore o uguale a 15 kW.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/vehicle/vehicle-category"/>
+        <skos:prefLabel xml:lang="it">Categoria L7</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Category L7</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryM -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryM">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="it">Categoria di veicoli con almeno quattro ruote per il trasporto di persone.</skos:definition>
+        <skos:definition xml:lang="en">Vehicles having at least four wheels and used for the carriage of passengers.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/vehicle/vehicle-category"/>
+        <skos:narrower rdf:resource="http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryM1"/>
+        <skos:prefLabel xml:lang="it">Categoria M</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Category M</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="http://w3id.org/urban-iot/kos/vehicle/vehicle-category"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryM1 -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryM1">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryM"/>
+        <skos:definition xml:lang="it">Categoria di veicoli per il trasporto di persone, con almeno quattro ruote e aventi al massimo otto posti a sedere oltre al sedile del conducente.</skos:definition>
+        <skos:definition xml:lang="en">Vehicles used for carriage of passengers, comprising not more than eight seats in addition to the driver&apos;s.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/vehicle/vehicle-category"/>
+        <skos:prefLabel xml:lang="it">Categoria M1</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Category M1</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryN -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryN">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="it">Categoria di veicoli con almeno quattro ruote per il trasporto di merci.</skos:definition>
+        <skos:definition xml:lang="en">Power-driven vehicles having at least four wheels and used for the carriage of goods.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/vehicle/vehicle-category"/>
+        <skos:narrower rdf:resource="http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryN1"/>
+        <skos:prefLabel xml:lang="it">Categoria N</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Category N</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="http://w3id.org/urban-iot/kos/vehicle/vehicle-category"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryN1 -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryN1">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryN"/>
+        <skos:definition xml:lang="it">Categoria di veicoli con almeno quattro ruote per il trasporto di merci e con massa massima non superiore a 3,5t.</skos:definition>
+        <skos:definition xml:lang="en">Vehicles used for the carriage of goods and having a maximum mass not exceeding 3.5t.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/vehicle/vehicle-category"/>
+        <skos:prefLabel xml:lang="it">Categoria N1</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Category N1</skos:prefLabel>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/ -->
+
+

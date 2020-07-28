@@ -1,0 +1,269 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/rights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-state",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "Area Pianificazione e Monitoraggio (AMAT Milano)"
+  }, {
+    "@value" : "Direzione Mobilità e Trasporti - Area Pianificazione e Programmazione Mobilità (Comune di Milano)"
+  }, {
+    "@value" : "Direzione Sistemi Informativi ed Agenda Digitale - Area Gestione ed Integrazione Dati (Comune di Milano)"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-07-31"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Ilaria Baroni (Cefriel)"
+  }, {
+    "@value" : "Irene Celino (Cefriel)"
+  }, {
+    "@value" : "Mario Scrocca (Cefriel)"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@value" : "Comune di Milano"
+  } ],
+  "http://purl.org/dc/terms/rights" : [ {
+    "@value" : "Copyright Comune di Milano, 2020"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Electric Mobility EVSE State"
+  }, {
+    "@language" : "it",
+    "@value" : "Stato della colonnina di ricarica per veicoli elettrici"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hasTopConcept" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-state#Available"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-state#Booked"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-state#Clogged"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-state#Decommissioned"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-state#Defective"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-state#InCharge"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-state#UnderActivation"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "EVSE State"
+  }, {
+    "@language" : "it",
+    "@value" : "Stato Colonnina di Ricarica"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-state#Available",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "State where the Electric Vehicle Supply Equimpment is available."
+  }, {
+    "@language" : "it",
+    "@value" : "Stato in cui la colonnina di ricarica è disponibile."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-state"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Available"
+  }, {
+    "@language" : "it",
+    "@value" : "Disponibile"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-state"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-state#Booked",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "State where the Electric Vehicle Supply Equimpment is booked."
+  }, {
+    "@language" : "it",
+    "@value" : "Stato in cui la colonnina di ricarica è prenotata."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-state"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Booked"
+  }, {
+    "@language" : "it",
+    "@value" : "Prenotata"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-state"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-state#Clogged",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "State where the Electric Vehicle Supply Equimpment is clogged."
+  }, {
+    "@language" : "it",
+    "@value" : "Stato in cui la colonnina di ricarica è ostruita."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-state"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Clogged"
+  }, {
+    "@language" : "it",
+    "@value" : "Ostruita"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-state"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-state#Decommissioned",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "State where the Electric Vehicle Supply Equimpment is decommissioned."
+  }, {
+    "@language" : "it",
+    "@value" : "Stato in cui la colonnina di ricarica è dismessa."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-state"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Decommissioned"
+  }, {
+    "@language" : "it",
+    "@value" : "Dismessa"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-state"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-state#Defective",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "State where the Electric Vehicle Supply Equimpment is defective."
+  }, {
+    "@language" : "it",
+    "@value" : "Stato in cui la colonnina di ricarica è difettosa."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-state"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Defective"
+  }, {
+    "@language" : "it",
+    "@value" : "Difettosa"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-state"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-state#InCharge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "State where the Electric Vehicle Supply Equimpment is in charge."
+  }, {
+    "@language" : "it",
+    "@value" : "Stato in cui la colonnina di ricarica sta effettuando una ricarica."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-state"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "In Carica"
+  }, {
+    "@language" : "en",
+    "@value" : "In Charge"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-state"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-state#UnderActivation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "State where the Electric Vehicle Supply Equimpment is under activation."
+  }, {
+    "@language" : "it",
+    "@value" : "Stato in cui la colonnina di ricarica è in attesa di attivazione."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-state"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "In Attivazione"
+  }, {
+    "@language" : "en",
+    "@value" : "Under Activation"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-state"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#definition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#topConceptOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

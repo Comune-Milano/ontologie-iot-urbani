@@ -1,0 +1,327 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/rights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/vehicle/car-supply",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "Area Pianificazione e Monitoraggio (AMAT Milano)"
+  }, {
+    "@value" : "Direzione Mobilità e Trasporti - Area Pianificazione e Programmazione Mobilità (Comune di Milano)"
+  }, {
+    "@value" : "Direzione Sistemi Informativi ed Agenda Digitale - Area Gestione ed Integrazione Dati (Comune di Milano)"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-07-31"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Ilaria Baroni (Cefriel)"
+  }, {
+    "@value" : "Irene Celino (Cefriel)"
+  }, {
+    "@value" : "Mario Scrocca (Cefriel)"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@value" : "Comune di Milano"
+  } ],
+  "http://purl.org/dc/terms/rights" : [ {
+    "@value" : "Copyright Comune di Milano, 2020"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "it",
+    "@value" : "Alimentazione Autovettura"
+  }, {
+    "@language" : "en",
+    "@value" : "Car Supply"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hasTopConcept" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/car-supply#Diesel"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/car-supply#DualFuel"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/car-supply#Electric"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/car-supply#Gasoline"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/car-supply#Hybrid"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Alimentazione Autovettura"
+  }, {
+    "@language" : "en",
+    "@value" : "Car Supply"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/vehicle/car-supply#Diesel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "it",
+    "@value" : "Alimentazione a Diesel."
+  }, {
+    "@language" : "en",
+    "@value" : "Diesel supply."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/car-supply"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Diesel"
+  }, {
+    "@language" : "it",
+    "@value" : "Diesel"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/car-supply"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/vehicle/car-supply#DualFuel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "it",
+    "@value" : "Alimentazione Bimodale."
+  }, {
+    "@language" : "en",
+    "@value" : "Dual Fuel supply."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/car-supply"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/car-supply#DualFuelLPG"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/car-supply#DualFuelMethane"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Bimodale"
+  }, {
+    "@language" : "en",
+    "@value" : "Dual-fuel"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/car-supply"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/vehicle/car-supply#DualFuelLPG",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/car-supply#DualFuel"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "it",
+    "@value" : "Alimentazione Bimodale GPL."
+  }, {
+    "@language" : "en",
+    "@value" : "Dual Fuel LPG supply."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/car-supply"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Bimodale GPL"
+  }, {
+    "@language" : "en",
+    "@value" : "Dual-fuel LPG"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/vehicle/car-supply#DualFuelMethane",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/car-supply#DualFuel"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "it",
+    "@value" : "Alimentazione Bimodale Metano."
+  }, {
+    "@language" : "en",
+    "@value" : "Dual Fuela Methane supply."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/car-supply"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Bimodale Metano"
+  }, {
+    "@language" : "en",
+    "@value" : "Dual-fuel Methane"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/vehicle/car-supply#Electric",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "it",
+    "@value" : "Alimentazione Elettrica."
+  }, {
+    "@language" : "en",
+    "@value" : "Electric supply."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/car-supply"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/car-supply#PlugInElectric"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/car-supply#RangeExtendedElectric"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Electric"
+  }, {
+    "@language" : "it",
+    "@value" : "Elettrica"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/car-supply#"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/vehicle/car-supply#Gasoline",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "it",
+    "@value" : "Alimentazione a Benzina."
+  }, {
+    "@language" : "en",
+    "@value" : "Gasoline supply."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/car-supply"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Benzina"
+  }, {
+    "@language" : "en",
+    "@value" : "Gasoline"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/car-supply"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/vehicle/car-supply#Hybrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "it",
+    "@value" : "Alimentazione Ibrida."
+  }, {
+    "@language" : "en",
+    "@value" : "Hybrid supply."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/car-supply"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Hybrid"
+  }, {
+    "@language" : "it",
+    "@value" : "Ibrida"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/car-supply"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/vehicle/car-supply#PlugInElectric",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/car-supply#Electric"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "it",
+    "@value" : "Alimentazione Elettrica Plug-in."
+  }, {
+    "@language" : "en",
+    "@value" : "Plug In Electric supply."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/car-supply"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Elettrica Plug-in"
+  }, {
+    "@language" : "en",
+    "@value" : "Plug-in Electric"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/vehicle/car-supply#RangeExtendedElectric",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/car-supply#Electric"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "it",
+    "@value" : "Alimentazione Elettrica Range Extended."
+  }, {
+    "@language" : "en",
+    "@value" : "Range Extended Electric supply."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/car-supply"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Elettrica Range Extended"
+  }, {
+    "@language" : "en",
+    "@value" : "Range Extended Electric"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#broader",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#definition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#narrower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#topConceptOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

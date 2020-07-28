@@ -1,0 +1,185 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#broader
+<http://www.w3.org/2004/02/skos/core#broader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#hasTopConcept
+<http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#narrower
+<http://www.w3.org/2004/02/skos/core#narrower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#topConceptOf
+<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/urban-iot/kos/vehicle/vehicle-category
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category> <http://purl.org/dc/terms/contributor> "Area Pianificazione e Monitoraggio (AMAT Milano)" .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category> <http://purl.org/dc/terms/contributor> "Direzione Mobilità e Trasporti - Area Pianificazione e Programmazione Mobilità (Comune di Milano)" .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category> <http://purl.org/dc/terms/contributor> "Direzione Sistemi Informativi ed Agenda Digitale - Area Gestione ed Integrazione Dati (Comune di Milano)" .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category> <http://purl.org/dc/terms/created> "2020-07-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category> <http://purl.org/dc/terms/creator> "Ilaria Baroni (Cefriel)" .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category> <http://purl.org/dc/terms/creator> "Irene Celino (Cefriel)" .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category> <http://purl.org/dc/terms/creator> "Mario Scrocca (Cefriel)" .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category> <http://purl.org/dc/terms/publisher> "Comune di Milano" .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category> <http://purl.org/dc/terms/rights> "Copyright Comune di Milano, 2020" .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category> <http://purl.org/dc/terms/title> "Categoria di Veicolo"@it .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category> <http://purl.org/dc/terms/title> "Vehicle Category"@en .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.unece.org/trans/main/wp29/wp29wgs/wp29gen/wp29resolutions.html> .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL> .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryM> .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryN> .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category> <http://www.w3.org/2004/02/skos/core#prefLabel> "Categoria di Veicolo"@it .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vehicle Category"@en .
+# 
+# http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL> <http://www.w3.org/2004/02/skos/core#definition> "Categoria di veicoli ciclomotori e motoveicoli con meno di quattro ruote e quadricicli leggeri."@it .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL> <http://www.w3.org/2004/02/skos/core#definition> "Category of vehicles mopeds and motorcycles with less than four wheels and light quadricycles."@en .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/vehicle/vehicle-category> .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL> <http://www.w3.org/2004/02/skos/core#narrower> <http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL6> .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL> <http://www.w3.org/2004/02/skos/core#narrower> <http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL7> .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL> <http://www.w3.org/2004/02/skos/core#prefLabel> "Categoria L"@it .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL> <http://www.w3.org/2004/02/skos/core#prefLabel> "Category L"@en .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/vehicle/vehicle-category> .
+# 
+# http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL6
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL6> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL> .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL6> <http://www.w3.org/2004/02/skos/core#definition> "Four wheels light vehicles whose unladen mass is not more than 350 kg, whose maximum design speed is not more than 45 km/h, and whose engine cylinder capacity does not exceed 50 cm3, or whose maximum net power output does not exceed 4 kW."@en .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL6> <http://www.w3.org/2004/02/skos/core#definition> "Quadricicli leggeri con massa a vuoto inferiore o pari a 350 kg, velocità massima inferiore o pari a 45 km/h, cilindrata inferiore o pari a 50cm3, potenza netta/nominale continua massima inferiore o uguale a 4kW."@it .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL6> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/vehicle/vehicle-category> .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL6> <http://www.w3.org/2004/02/skos/core#prefLabel> "Categoria L6"@it .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL6> <http://www.w3.org/2004/02/skos/core#prefLabel> "Category L6"@en .
+# 
+# http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL7
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL7> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL> .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL7> <http://www.w3.org/2004/02/skos/core#definition> "Four wheels light vehicles, other than that classified for the category L6, whose unladen mass is not more than 400 kg (550 kg for vehicles intended for carrying goods), and whose maximum continuous rated power does not exceed 15 kW."@en .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL7> <http://www.w3.org/2004/02/skos/core#definition> "Quadricicli leggeri che non appartengono a L6 con massa a vuoto inferiore o pari a 400 kg (550 kg se per trasporto merci) e con potenza massima inferiore o uguale a 15 kW."@it .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL7> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/vehicle/vehicle-category> .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL7> <http://www.w3.org/2004/02/skos/core#prefLabel> "Categoria L7"@it .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryL7> <http://www.w3.org/2004/02/skos/core#prefLabel> "Category L7"@en .
+# 
+# http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryM
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryM> <http://www.w3.org/2004/02/skos/core#definition> "Categoria di veicoli con almeno quattro ruote per il trasporto di persone."@it .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryM> <http://www.w3.org/2004/02/skos/core#definition> "Vehicles having at least four wheels and used for the carriage of passengers."@en .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryM> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/vehicle/vehicle-category> .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryM> <http://www.w3.org/2004/02/skos/core#narrower> <http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryM1> .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryM> <http://www.w3.org/2004/02/skos/core#prefLabel> "Categoria M"@it .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryM> <http://www.w3.org/2004/02/skos/core#prefLabel> "Category M"@en .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryM> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/vehicle/vehicle-category> .
+# 
+# http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryM1
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryM1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryM1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryM1> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryM> .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryM1> <http://www.w3.org/2004/02/skos/core#definition> "Categoria di veicoli per il trasporto di persone, con almeno quattro ruote e aventi al massimo otto posti a sedere oltre al sedile del conducente."@it .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryM1> <http://www.w3.org/2004/02/skos/core#definition> "Vehicles used for carriage of passengers, comprising not more than eight seats in addition to the driver's."@en .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryM1> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/vehicle/vehicle-category> .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryM1> <http://www.w3.org/2004/02/skos/core#prefLabel> "Categoria M1"@it .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryM1> <http://www.w3.org/2004/02/skos/core#prefLabel> "Category M1"@en .
+# 
+# http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryN
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryN> <http://www.w3.org/2004/02/skos/core#definition> "Categoria di veicoli con almeno quattro ruote per il trasporto di merci."@it .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryN> <http://www.w3.org/2004/02/skos/core#definition> "Power-driven vehicles having at least four wheels and used for the carriage of goods."@en .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryN> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/vehicle/vehicle-category> .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryN> <http://www.w3.org/2004/02/skos/core#narrower> <http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryN1> .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryN> <http://www.w3.org/2004/02/skos/core#prefLabel> "Categoria N"@it .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryN> <http://www.w3.org/2004/02/skos/core#prefLabel> "Category N"@en .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryN> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/vehicle/vehicle-category> .
+# 
+# http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryN1
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryN1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryN1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryN1> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryN> .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryN1> <http://www.w3.org/2004/02/skos/core#definition> "Categoria di veicoli con almeno quattro ruote per il trasporto di merci e con massa massima non superiore a 3,5t."@it .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryN1> <http://www.w3.org/2004/02/skos/core#definition> "Vehicles used for the carriage of goods and having a maximum mass not exceeding 3.5t."@en .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryN1> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/vehicle/vehicle-category> .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryN1> <http://www.w3.org/2004/02/skos/core#prefLabel> "Categoria N1"@it .
+<http://w3id.org/urban-iot/kos/vehicle/vehicle-category#CategoryN1> <http://www.w3.org/2004/02/skos/core#prefLabel> "Category N1"@en .
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

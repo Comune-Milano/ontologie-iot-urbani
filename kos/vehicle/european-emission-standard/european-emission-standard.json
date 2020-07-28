@@ -1,0 +1,427 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/rights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "Area Pianificazione e Monitoraggio (AMAT Milano)"
+  }, {
+    "@value" : "Direzione Mobilità e Trasporti - Area Pianificazione e Programmazione Mobilità (Comune di Milano)"
+  }, {
+    "@value" : "Direzione Sistemi Informativi ed Agenda Digitale - Area Gestione ed Integrazione Dati (Comune di Milano)"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-07-31"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Ilaria Baroni (Cefriel)"
+  }, {
+    "@value" : "Irene Celino (Cefriel)"
+  }, {
+    "@value" : "Mario Scrocca (Cefriel)"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@value" : "Comune di Milano"
+  } ],
+  "http://purl.org/dc/terms/rights" : [ {
+    "@value" : "Copyright Comune di Milano, 2020"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "European Emission Standard"
+  }, {
+    "@language" : "it",
+    "@value" : "Standard Europeo Emissioni"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hasTopConcept" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro0"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro1"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro2"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro3"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro4"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "European Emission Standard"
+  }, {
+    "@language" : "it",
+    "@value" : "Standard Europeo Emissione"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro0",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "it",
+    "@value" : "Standard attribuito a veicoli che non rientrano nei vincoli di Euro 1."
+  }, {
+    "@language" : "en",
+    "@value" : "Standard attributed to vehicles that are not subject to the Euro 1 restrictions."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Euro 0"
+  }, {
+    "@language" : "it",
+    "@value" : "Euro 0"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "European standard Euro 1 on pollution emissions from vehicles."
+  }, {
+    "@language" : "it",
+    "@value" : "Standard europeo Euro 1 sulle emissioni inquinanti dei veicoli."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Euro 1"
+  }, {
+    "@language" : "it",
+    "@value" : "Euro 1"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "European standard Euro 2 on pollution emissions from vehicles."
+  }, {
+    "@language" : "it",
+    "@value" : "Standard europeo Euro 2 sulle emissioni inquinanti dei veicoli."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Euro 2"
+  }, {
+    "@language" : "it",
+    "@value" : "Euro 2"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "European standard Euro 3 on pollution emissions from vehicles."
+  }, {
+    "@language" : "it",
+    "@value" : "Standard europeo Euro 3 sulle emissioni inquinanti dei veicoli."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Euro 3"
+  }, {
+    "@language" : "it",
+    "@value" : "Euro 3"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "European standard Euro 4 on pollution emissions from vehicles."
+  }, {
+    "@language" : "it",
+    "@value" : "Standard europeo Euro 4 sulle emissioni inquinanti dei veicoli."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Euro 4"
+  }, {
+    "@language" : "it",
+    "@value" : "Euro 4"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "European standard Euro 5 on pollution emissions from vehicles."
+  }, {
+    "@language" : "it",
+    "@value" : "Standard europeo Euro 5 sulle emissioni inquinanti dei veicoli."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5a"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5b"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Euro 5"
+  }, {
+    "@language" : "it",
+    "@value" : "Euro 5"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5a",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "European standard Euro 5a on pollution emissions from vehicles."
+  }, {
+    "@language" : "it",
+    "@value" : "Standard europeo Euro 5a sulle emissioni inquinanti dei veicoli."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Euro 5a"
+  }, {
+    "@language" : "it",
+    "@value" : "Euro 5a"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5b",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "European standard Euro 5b on pollution emissions from vehicles."
+  }, {
+    "@language" : "it",
+    "@value" : "Standard europeo Euro 5b sulle emissioni inquinanti dei veicoli."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Euro 5b"
+  }, {
+    "@language" : "it",
+    "@value" : "Euro 5b"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "European standard Euro 6 on pollution emissions from vehicles."
+  }, {
+    "@language" : "it",
+    "@value" : "Standard europeo Euro 6 sulle emissioni inquinanti dei veicoli."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6b"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6c"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6d"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6dTEMP"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Euro 6"
+  }, {
+    "@language" : "it",
+    "@value" : "Euro 6"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6b",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "European standard Euro 6b on pollution emissions from vehicles."
+  }, {
+    "@language" : "it",
+    "@value" : "Standard europeo Euro 6b sulle emissioni inquinanti dei veicoli."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Euro 6b"
+  }, {
+    "@language" : "it",
+    "@value" : "Euro 6b"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6c",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "European standard Euro 6c on pollution emissions from vehicles."
+  }, {
+    "@language" : "it",
+    "@value" : "Standard europeo Euro 6c sulle emissioni inquinanti dei veicoli."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Euro 6c"
+  }, {
+    "@language" : "it",
+    "@value" : "Euro 6c"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6d",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "European standard Euro 6d on pollution emissions from vehicles."
+  }, {
+    "@language" : "it",
+    "@value" : "Standard europeo Euro 6d sulle emissioni inquinanti dei veicoli."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Euro 6d"
+  }, {
+    "@language" : "it",
+    "@value" : "Euro 6d"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6dTEMP",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "European standard Euro 6d_TEMP on pollution emissions from vehicles."
+  }, {
+    "@language" : "it",
+    "@value" : "Standard europeo Euro 6d-TEMP sulle emissioni inquinanti dei veicoli."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/vehicle/european-emission-standard"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Euro 6d-TEMP"
+  }, {
+    "@language" : "it",
+    "@value" : "Euro 6d-TEMP"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#broader",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#definition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#narrower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#topConceptOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

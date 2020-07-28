@@ -1,0 +1,681 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/rights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "Area Pianificazione e Monitoraggio (AMAT Milano)"
+  }, {
+    "@value" : "Direzione Mobilità e Trasporti - Area Pianificazione e Programmazione Mobilità (Comune di Milano)"
+  }, {
+    "@value" : "Direzione Sistemi Informativi ed Agenda Digitale - Area Gestione ed Integrazione Dati (Comune di Milano)"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-07-31"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Ilaria Baroni (Cefriel)"
+  }, {
+    "@value" : "Irene Celino (Cefriel)"
+  }, {
+    "@value" : "Mario Scrocca (Cefriel)"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@value" : "Comune di Milano"
+  } ],
+  "http://purl.org/dc/terms/rights" : [ {
+    "@value" : "Copyright Comune di Milano, 2020"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "it",
+    "@value" : "Evento Veicolo Sharing Mobility"
+  }, {
+    "@language" : "en",
+    "@value" : "Sharing Mobility Vehicle Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://github.com/openmobilityfoundation/mobility-data-specification/blob/main/agency/README.md#vehicle-events"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hasTopConcept" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#CancelReservation"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#CityPickUp"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#Deregister"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderDropOff"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUp"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#Register"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#Reserve"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEnd"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceStart"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripEnd"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripEnter"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripLeave"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripStart"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Evento del Veicolo"
+  }, {
+    "@language" : "en",
+    "@value" : "Vehicle Event"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#CancelReservation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Cancellation event for a vehicle trip reservation."
+  }, {
+    "@language" : "it",
+    "@value" : "Evento di cancellazione della prenotazione del veicolo per un noleggio."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Cancel Reservation"
+  }, {
+    "@language" : "it",
+    "@value" : "Cancellazione Prenotazione"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#CityPickUp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "it",
+    "@value" : "Evento di prelievo del veicolo in strada da parte dell'autorità cittadina."
+  }, {
+    "@language" : "en",
+    "@value" : "Pick up event for a vehicle by the city authority."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "City Pick Up"
+  }, {
+    "@language" : "it",
+    "@value" : "Prelievo Autorità Cittadina"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#Deregister",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Deregistration event for a vehicle from the sharing service fleet."
+  }, {
+    "@language" : "it",
+    "@value" : "Evento di dismissione del veicolo dalla flotta del servizio di sharing."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#DeregisterDecommissioned"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#DeregisterMissing"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Deregister"
+  }, {
+    "@language" : "it",
+    "@value" : "Dismissione dalla flotta"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#DeregisterDecommissioned",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#Deregister"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Deregistration event of a vehicle from the sharing service fleet, to dismantle the vehicle."
+  }, {
+    "@language" : "it",
+    "@value" : "Evento di dismissione del veicolo dalla flotta del servizio di sharing per ritiro del veicolo."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Deregister decommissioned"
+  }, {
+    "@language" : "it",
+    "@value" : "Dismissione dalla flotta per ritiro del veicolo"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#DeregisterMissing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#Deregister"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Deregistration event of the vehicle from the sharing service fleet for loss."
+  }, {
+    "@language" : "it",
+    "@value" : "Evento di dismissione del veicolo dalla flotta del servizio di sharing per smarrimento."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Deregister missing"
+  }, {
+    "@language" : "it",
+    "@value" : "Dismissione dalla flotta per smarrimento"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderDropOff",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "it",
+    "@value" : "Evento di rilascio del veicolo in strada da parte dell'operatore del servizio di sharing."
+  }, {
+    "@language" : "en",
+    "@value" : "Vehicle release event by the sharing service operator."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Provider Drop Off"
+  }, {
+    "@language" : "it",
+    "@value" : "Rilascio Operatore"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "it",
+    "@value" : "Evento di prelievo del veicolo in strada da parte dell'operatore del servizio di sharing."
+  }, {
+    "@language" : "en",
+    "@value" : "Vehicle pick up event by the sharing service operator."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpCharge"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpCompliance"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpMaintenance"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpRebalance"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Prelievo Operatore"
+  }, {
+    "@language" : "en",
+    "@value" : "Provider Pick Up"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpCharge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUp"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "it",
+    "@value" : "Evento di prelievo del veicolo in strada da parte dell'operatore del servizio di sharing per ricarica."
+  }, {
+    "@language" : "en",
+    "@value" : "Vehicle pick up event by the sharing service operator for charge reasons."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Prelievo Operatore Ricarica"
+  }, {
+    "@language" : "en",
+    "@value" : "Provider Pick Up Charge"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpCompliance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUp"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "it",
+    "@value" : "Evento di prelievo del veicolo in strada da parte dell'operatore del servizio di sharing per rispetto policy imposte dall'autorità competente (es. limite numero veicoli)."
+  }, {
+    "@language" : "en",
+    "@value" : "Vehicle pick up event by the sharing service operator, to be compliant with local authority policies on vehicles number limitations (e.g., max number of vehicles reached) ."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Prelievo Operatore Compliance"
+  }, {
+    "@language" : "en",
+    "@value" : "Provider Pick Up Compliance"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpMaintenance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUp"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "it",
+    "@value" : "Evento di prelievo del veicolo in strada da parte dell'operatore del servizio di sharing per manutenzione."
+  }, {
+    "@language" : "en",
+    "@value" : "Vehicle pick up event by the sharing service operator for maintenance issues."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Prelievo Operatore Manutenzione"
+  }, {
+    "@language" : "en",
+    "@value" : "Provider Pick Up Maintenance"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUpRebalance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#ProviderPickUp"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "it",
+    "@value" : "Evento di prelievo del veicolo in strada da parte dell'operatore del servizio di sharing per ribilanciamento."
+  }, {
+    "@language" : "en",
+    "@value" : "Vehicle pick up event by the sharing service operator for rebalancing reasons."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Prelievo Operatore Ribilanciamento"
+  }, {
+    "@language" : "en",
+    "@value" : "Provider Pick Up Rebalance"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#Register",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "it",
+    "@value" : "Evento di immissione del veicolo nella flotta del servizio di sharing."
+  }, {
+    "@language" : "en",
+    "@value" : "Vehicle entry event in the sharing service fleet."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Immissione in flotta"
+  }, {
+    "@language" : "en",
+    "@value" : "Register"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#Reserve",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "it",
+    "@value" : "Evento di prenotazione del veicolo per un noleggio."
+  }, {
+    "@language" : "en",
+    "@value" : "Reserve event of the vehicle for a trip."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Prenotazione"
+  }, {
+    "@language" : "en",
+    "@value" : "Reserve"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEnd",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "it",
+    "@value" : "Evento di rimozione del veicolo dal servizio."
+  }, {
+    "@language" : "en",
+    "@value" : "Removal event of the vehicle from the service."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndCompliance"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndLowBattery"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndMaintenance"
+  }, {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndOffHours"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Fine Servizio"
+  }, {
+    "@language" : "en",
+    "@value" : "Service End"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndCompliance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEnd"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "it",
+    "@value" : "Evento di rimozione del veicolo dal servizio per rispetto policy imposte dall'autorità competente (es. limite numero veicoli)."
+  }, {
+    "@language" : "en",
+    "@value" : "Removal event of the vehicle from the service, for compliance reasons imposed by the local authority (e.g., max number of vehicle reached)."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Fine Servizio Compliance"
+  }, {
+    "@language" : "en",
+    "@value" : "Service End Compliance"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndLowBattery",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEnd"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "it",
+    "@value" : "Evento di rimozione del veicolo dal servizio per batteria scarica."
+  }, {
+    "@language" : "en",
+    "@value" : "Removal event of the vehicle from the sharing service for low battery."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Fine Servizio Batteria Scarica"
+  }, {
+    "@language" : "en",
+    "@value" : "Service End Low Battery"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndMaintenance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEnd"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "it",
+    "@value" : "Evento di rimozione del veicolo dal servizio per necessità di manutenzione."
+  }, {
+    "@language" : "en",
+    "@value" : "Removal event of the vehicle from the sharing service for maintenance."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Fine Servizio Manutenzione"
+  }, {
+    "@language" : "en",
+    "@value" : "Service End Maintenance"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEndOffHours",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceEnd"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "it",
+    "@value" : "Evento di rimozione del veicolo dal servizio a fine giornata (se servizio non opera 24/7)."
+  }, {
+    "@language" : "en",
+    "@value" : "Removal event of the vehicle from the sharing service for ending of the service hours (if the service is not 24/7)"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Fine Servizio Orario"
+  }, {
+    "@language" : "en",
+    "@value" : "Service End Off Hours"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#ServiceStart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "it",
+    "@value" : "Evento di introduzione veicolo in servizio a inizio giornata (se servizio non opera 24/7)."
+  }, {
+    "@language" : "en",
+    "@value" : "Placing event of the vehicle from the sharing service for starting of the service hours (if the service is not 24/7)"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Inizio Servizio"
+  }, {
+    "@language" : "en",
+    "@value" : "Service Start"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripEnd",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "it",
+    "@value" : "Evento di fine noleggio del veicolo."
+  }, {
+    "@language" : "en",
+    "@value" : "Trip end event of the vehicle."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Fine Noleggio"
+  }, {
+    "@language" : "en",
+    "@value" : "Trip End"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripEnter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Entering event of the vehicle in the operation area of the sharing service during the trip."
+  }, {
+    "@language" : "it",
+    "@value" : "Evento di ingresso nell'area operativa del servizio di sharing durante il noleggio del veicolo."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Ingresso Durante Noleggio"
+  }, {
+    "@language" : "en",
+    "@value" : "Trip Enter"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripLeave",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "it",
+    "@value" : "Evento di uscita dall'area operativa del servizio di sharing durante il noleggio del veicolo."
+  }, {
+    "@language" : "en",
+    "@value" : "Leaving event of the vehicle from the operation area of the sharing service during the trip."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Trip Leave"
+  }, {
+    "@language" : "it",
+    "@value" : "Uscita Durante Noleggio"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event"
+  } ]
+}, {
+  "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event#TripStart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "it",
+    "@value" : "Evento di inizio noleggio del veicolo."
+  }, {
+    "@language" : "en",
+    "@value" : "Trip start event of the vehicle."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "it",
+    "@value" : "Inizio Noleggio"
+  }, {
+    "@language" : "en",
+    "@value" : "Trip Start"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : [ {
+    "@id" : "http://w3id.org/urban-iot/kos/sharing/vehicle-event"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#broader",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#definition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#narrower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#topConceptOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

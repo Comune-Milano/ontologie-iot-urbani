@@ -1,0 +1,178 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#hasTopConcept
+<http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#topConceptOf
+<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/urban-iot/kos/electric/EVSE-state
+<http://w3id.org/urban-iot/kos/electric/EVSE-state> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state> <http://purl.org/dc/terms/contributor> "Area Pianificazione e Monitoraggio (AMAT Milano)" .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state> <http://purl.org/dc/terms/contributor> "Direzione Mobilità e Trasporti - Area Pianificazione e Programmazione Mobilità (Comune di Milano)" .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state> <http://purl.org/dc/terms/contributor> "Direzione Sistemi Informativi ed Agenda Digitale - Area Gestione ed Integrazione Dati (Comune di Milano)" .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state> <http://purl.org/dc/terms/created> "2020-07-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state> <http://purl.org/dc/terms/creator> "Ilaria Baroni (Cefriel)" .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state> <http://purl.org/dc/terms/creator> "Irene Celino (Cefriel)" .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state> <http://purl.org/dc/terms/creator> "Mario Scrocca (Cefriel)" .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state> <http://purl.org/dc/terms/publisher> "Comune di Milano" .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state> <http://purl.org/dc/terms/rights> "Copyright Comune di Milano, 2020" .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state> <http://purl.org/dc/terms/title> "Electric Mobility EVSE State"@en .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state> <http://purl.org/dc/terms/title> "Stato della colonnina di ricarica per veicoli elettrici"@it .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/electric/EVSE-state#Available> .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/electric/EVSE-state#Booked> .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/electric/EVSE-state#Clogged> .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/electric/EVSE-state#Decommissioned> .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/electric/EVSE-state#Defective> .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/electric/EVSE-state#InCharge> .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/electric/EVSE-state#UnderActivation> .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state> <http://www.w3.org/2004/02/skos/core#prefLabel> "EVSE State"@en .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state> <http://www.w3.org/2004/02/skos/core#prefLabel> "Stato Colonnina di Ricarica"@it .
+# 
+# http://w3id.org/urban-iot/kos/electric/EVSE-state#Available
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#Available> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#Available> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#Available> <http://www.w3.org/2004/02/skos/core#definition> "State where the Electric Vehicle Supply Equimpment is available."@en .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#Available> <http://www.w3.org/2004/02/skos/core#definition> "Stato in cui la colonnina di ricarica è disponibile."@it .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#Available> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/electric/EVSE-state> .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#Available> <http://www.w3.org/2004/02/skos/core#prefLabel> "Available"@en .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#Available> <http://www.w3.org/2004/02/skos/core#prefLabel> "Disponibile"@it .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#Available> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/electric/EVSE-state> .
+# 
+# http://w3id.org/urban-iot/kos/electric/EVSE-state#Booked
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#Booked> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#Booked> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#Booked> <http://www.w3.org/2004/02/skos/core#definition> "State where the Electric Vehicle Supply Equimpment is booked."@en .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#Booked> <http://www.w3.org/2004/02/skos/core#definition> "Stato in cui la colonnina di ricarica è prenotata."@it .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#Booked> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/electric/EVSE-state> .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#Booked> <http://www.w3.org/2004/02/skos/core#prefLabel> "Booked"@en .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#Booked> <http://www.w3.org/2004/02/skos/core#prefLabel> "Prenotata"@it .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#Booked> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/electric/EVSE-state> .
+# 
+# http://w3id.org/urban-iot/kos/electric/EVSE-state#Clogged
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#Clogged> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#Clogged> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#Clogged> <http://www.w3.org/2004/02/skos/core#definition> "State where the Electric Vehicle Supply Equimpment is clogged."@en .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#Clogged> <http://www.w3.org/2004/02/skos/core#definition> "Stato in cui la colonnina di ricarica è ostruita."@it .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#Clogged> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/electric/EVSE-state> .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#Clogged> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clogged"@en .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#Clogged> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ostruita"@it .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#Clogged> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/electric/EVSE-state> .
+# 
+# http://w3id.org/urban-iot/kos/electric/EVSE-state#Decommissioned
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#Decommissioned> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#Decommissioned> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#Decommissioned> <http://www.w3.org/2004/02/skos/core#definition> "State where the Electric Vehicle Supply Equimpment is decommissioned."@en .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#Decommissioned> <http://www.w3.org/2004/02/skos/core#definition> "Stato in cui la colonnina di ricarica è dismessa."@it .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#Decommissioned> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/electric/EVSE-state> .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#Decommissioned> <http://www.w3.org/2004/02/skos/core#prefLabel> "Decommissioned"@en .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#Decommissioned> <http://www.w3.org/2004/02/skos/core#prefLabel> "Dismessa"@it .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#Decommissioned> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/electric/EVSE-state> .
+# 
+# http://w3id.org/urban-iot/kos/electric/EVSE-state#Defective
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#Defective> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#Defective> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#Defective> <http://www.w3.org/2004/02/skos/core#definition> "State where the Electric Vehicle Supply Equimpment is defective."@en .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#Defective> <http://www.w3.org/2004/02/skos/core#definition> "Stato in cui la colonnina di ricarica è difettosa."@it .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#Defective> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/electric/EVSE-state> .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#Defective> <http://www.w3.org/2004/02/skos/core#prefLabel> "Defective"@en .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#Defective> <http://www.w3.org/2004/02/skos/core#prefLabel> "Difettosa"@it .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#Defective> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/electric/EVSE-state> .
+# 
+# http://w3id.org/urban-iot/kos/electric/EVSE-state#InCharge
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#InCharge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#InCharge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#InCharge> <http://www.w3.org/2004/02/skos/core#definition> "State where the Electric Vehicle Supply Equimpment is in charge."@en .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#InCharge> <http://www.w3.org/2004/02/skos/core#definition> "Stato in cui la colonnina di ricarica sta effettuando una ricarica."@it .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#InCharge> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/electric/EVSE-state> .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#InCharge> <http://www.w3.org/2004/02/skos/core#prefLabel> "In Carica"@it .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#InCharge> <http://www.w3.org/2004/02/skos/core#prefLabel> "In Charge"@en .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#InCharge> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/electric/EVSE-state> .
+# 
+# http://w3id.org/urban-iot/kos/electric/EVSE-state#UnderActivation
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#UnderActivation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#UnderActivation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#UnderActivation> <http://www.w3.org/2004/02/skos/core#definition> "State where the Electric Vehicle Supply Equimpment is under activation."@en .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#UnderActivation> <http://www.w3.org/2004/02/skos/core#definition> "Stato in cui la colonnina di ricarica è in attesa di attivazione."@it .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#UnderActivation> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/electric/EVSE-state> .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#UnderActivation> <http://www.w3.org/2004/02/skos/core#prefLabel> "In Attivazione"@it .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#UnderActivation> <http://www.w3.org/2004/02/skos/core#prefLabel> "Under Activation"@en .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state#UnderActivation> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/electric/EVSE-state> .
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

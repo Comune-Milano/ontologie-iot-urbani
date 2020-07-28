@@ -1,0 +1,178 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#hasTopConcept
+<http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#topConceptOf
+<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/urban-iot/kos/electric/parking-restriction
+<http://w3id.org/urban-iot/kos/electric/parking-restriction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction> <http://purl.org/dc/terms/contributor> "Area Pianificazione e Monitoraggio (AMAT Milano)" .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction> <http://purl.org/dc/terms/contributor> "Direzione Mobilità e Trasporti - Area Pianificazione e Programmazione Mobilità (Comune di Milano)" .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction> <http://purl.org/dc/terms/contributor> "Direzione Sistemi Informativi ed Agenda Digitale - Area Gestione ed Integrazione Dati (Comune di Milano)" .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction> <http://purl.org/dc/terms/created> "2020-07-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction> <http://purl.org/dc/terms/creator> "Ilaria Baroni (Cefriel)" .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction> <http://purl.org/dc/terms/creator> "Irene Celino (Cefriel)" .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction> <http://purl.org/dc/terms/creator> "Mario Scrocca (Cefriel)" .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction> <http://purl.org/dc/terms/publisher> "Comune di Milano" .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction> <http://purl.org/dc/terms/rights> "Copyright Comune di Milano, 2020" .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction> <http://purl.org/dc/terms/title> "Electric Mobility Parking Restriction"@en .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction> <http://purl.org/dc/terms/title> "Restrizione per le aree di parcheggio nella mobilità elettrica"@it .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/electric/parking-restriction#ElectricVehiclesOnly> .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/electric/parking-restriction#ForDisabledOnly> .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/electric/parking-restriction#InChargeOnly> .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/electric/parking-restriction#MotorcyclesOnly> .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/electric/parking-restriction#ParkingAccessWithPayment> .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/electric/parking-restriction#RestrictedAccessOnly> .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/electric/parking-restriction#TimeLimited> .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction> <http://www.w3.org/2004/02/skos/core#prefLabel> "Parking Restriction"@en .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction> <http://www.w3.org/2004/02/skos/core#prefLabel> "Restrizione Parcheggio"@it .
+# 
+# http://w3id.org/urban-iot/kos/electric/parking-restriction#ElectricVehiclesOnly
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#ElectricVehiclesOnly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#ElectricVehiclesOnly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#ElectricVehiclesOnly> <http://www.w3.org/2004/02/skos/core#definition> "Area di sosta riservata solo a veicoli elettrici."@it .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#ElectricVehiclesOnly> <http://www.w3.org/2004/02/skos/core#definition> "Parking area for electric vehicles only."@en .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#ElectricVehiclesOnly> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/electric/parking-restriction> .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#ElectricVehiclesOnly> <http://www.w3.org/2004/02/skos/core#prefLabel> "Electric Vehicles Only"@en .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#ElectricVehiclesOnly> <http://www.w3.org/2004/02/skos/core#prefLabel> "Solo Veicoli Elettrici"@it .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#ElectricVehiclesOnly> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/electric/parking-restriction> .
+# 
+# http://w3id.org/urban-iot/kos/electric/parking-restriction#ForDisabledOnly
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#ForDisabledOnly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#ForDisabledOnly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#ForDisabledOnly> <http://www.w3.org/2004/02/skos/core#definition> "Area di sosta dedicata solo ad utenti disabili."@it .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#ForDisabledOnly> <http://www.w3.org/2004/02/skos/core#definition> "Parking area for disabled only."@en .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#ForDisabledOnly> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/electric/parking-restriction> .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#ForDisabledOnly> <http://www.w3.org/2004/02/skos/core#prefLabel> "For Disabled Only"@en .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#ForDisabledOnly> <http://www.w3.org/2004/02/skos/core#prefLabel> "Solo per Disabili"@it .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#ForDisabledOnly> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/electric/parking-restriction> .
+# 
+# http://w3id.org/urban-iot/kos/electric/parking-restriction#InChargeOnly
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#InChargeOnly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#InChargeOnly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#InChargeOnly> <http://www.w3.org/2004/02/skos/core#definition> "Area di sosta dedicata solo a veicoli in carica."@it .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#InChargeOnly> <http://www.w3.org/2004/02/skos/core#definition> "Parking area for in charge vehicles only."@en .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#InChargeOnly> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/electric/parking-restriction> .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#InChargeOnly> <http://www.w3.org/2004/02/skos/core#prefLabel> "In Charge Only"@en .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#InChargeOnly> <http://www.w3.org/2004/02/skos/core#prefLabel> "Solo Veicoli in Carica"@it .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#InChargeOnly> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/electric/parking-restriction> .
+# 
+# http://w3id.org/urban-iot/kos/electric/parking-restriction#MotorcyclesOnly
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#MotorcyclesOnly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#MotorcyclesOnly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#MotorcyclesOnly> <http://www.w3.org/2004/02/skos/core#definition> "Area di sosta dedicata solo a ciclomotori."@it .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#MotorcyclesOnly> <http://www.w3.org/2004/02/skos/core#definition> "Parking area for motorcycles only."@en .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#MotorcyclesOnly> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/electric/parking-restriction> .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#MotorcyclesOnly> <http://www.w3.org/2004/02/skos/core#prefLabel> "Motorcycles Only"@en .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#MotorcyclesOnly> <http://www.w3.org/2004/02/skos/core#prefLabel> "Solo per Ciclomotori"@it .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#MotorcyclesOnly> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/electric/parking-restriction> .
+# 
+# http://w3id.org/urban-iot/kos/electric/parking-restriction#ParkingAccessWithPayment
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#ParkingAccessWithPayment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#ParkingAccessWithPayment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#ParkingAccessWithPayment> <http://www.w3.org/2004/02/skos/core#definition> "Area di sosta con parcheggio a pagamento."@it .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#ParkingAccessWithPayment> <http://www.w3.org/2004/02/skos/core#definition> "Payment parking area."@en .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#ParkingAccessWithPayment> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/electric/parking-restriction> .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#ParkingAccessWithPayment> <http://www.w3.org/2004/02/skos/core#prefLabel> "Parcheggio a Pagamento"@it .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#ParkingAccessWithPayment> <http://www.w3.org/2004/02/skos/core#prefLabel> "Parking Access With Payment"@en .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#ParkingAccessWithPayment> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/electric/parking-restriction> .
+# 
+# http://w3id.org/urban-iot/kos/electric/parking-restriction#RestrictedAccessOnly
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#RestrictedAccessOnly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#RestrictedAccessOnly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#RestrictedAccessOnly> <http://www.w3.org/2004/02/skos/core#definition> "Area di sosta ad accesso limitato."@it .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#RestrictedAccessOnly> <http://www.w3.org/2004/02/skos/core#definition> "Parking area with restricted access only."@en .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#RestrictedAccessOnly> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/electric/parking-restriction> .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#RestrictedAccessOnly> <http://www.w3.org/2004/02/skos/core#prefLabel> "Accesso Limitato"@it .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#RestrictedAccessOnly> <http://www.w3.org/2004/02/skos/core#prefLabel> "Restricted Access Only"@en .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#RestrictedAccessOnly> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/electric/parking-restriction> .
+# 
+# http://w3id.org/urban-iot/kos/electric/parking-restriction#TimeLimited
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#TimeLimited> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#TimeLimited> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#TimeLimited> <http://www.w3.org/2004/02/skos/core#definition> "Area di sosta con parcheggio vincolato a un tempo massimo."@it .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#TimeLimited> <http://www.w3.org/2004/02/skos/core#definition> "Parking area time limited."@en .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#TimeLimited> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/electric/parking-restriction> .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#TimeLimited> <http://www.w3.org/2004/02/skos/core#prefLabel> "Tempo Limitato"@it .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#TimeLimited> <http://www.w3.org/2004/02/skos/core#prefLabel> "Time Limited"@en .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction#TimeLimited> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/electric/parking-restriction> .
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

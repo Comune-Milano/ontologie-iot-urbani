@@ -1,0 +1,250 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#broader
+<http://www.w3.org/2004/02/skos/core#broader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#hasTopConcept
+<http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#narrower
+<http://www.w3.org/2004/02/skos/core#narrower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#topConceptOf
+<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/urban-iot/kos/vehicle/european-emission-standard
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> <http://purl.org/dc/terms/contributor> "Area Pianificazione e Monitoraggio (AMAT Milano)" .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> <http://purl.org/dc/terms/contributor> "Direzione Mobilità e Trasporti - Area Pianificazione e Programmazione Mobilità (Comune di Milano)" .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> <http://purl.org/dc/terms/contributor> "Direzione Sistemi Informativi ed Agenda Digitale - Area Gestione ed Integrazione Dati (Comune di Milano)" .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> <http://purl.org/dc/terms/created> "2020-07-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> <http://purl.org/dc/terms/creator> "Ilaria Baroni (Cefriel)" .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> <http://purl.org/dc/terms/creator> "Irene Celino (Cefriel)" .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> <http://purl.org/dc/terms/creator> "Mario Scrocca (Cefriel)" .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> <http://purl.org/dc/terms/publisher> "Comune di Milano" .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> <http://purl.org/dc/terms/rights> "Copyright Comune di Milano, 2020" .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> <http://purl.org/dc/terms/title> "European Emission Standard"@en .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> <http://purl.org/dc/terms/title> "Standard Europeo Emissioni"@it .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro0> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro1> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro2> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro3> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro4> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> <http://www.w3.org/2004/02/skos/core#prefLabel> "European Emission Standard"@en .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> <http://www.w3.org/2004/02/skos/core#prefLabel> "Standard Europeo Emissione"@it .
+# 
+# http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro0
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro0> <http://www.w3.org/2004/02/skos/core#definition> "Standard attribuito a veicoli che non rientrano nei vincoli di Euro 1."@it .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro0> <http://www.w3.org/2004/02/skos/core#definition> "Standard attributed to vehicles that are not subject to the Euro 1 restrictions."@en .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro0> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Euro 0"@en .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Euro 0"@it .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro0> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> .
+# 
+# http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro1
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro1> <http://www.w3.org/2004/02/skos/core#definition> "European standard Euro 1 on pollution emissions from vehicles."@en .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro1> <http://www.w3.org/2004/02/skos/core#definition> "Standard europeo Euro 1 sulle emissioni inquinanti dei veicoli."@it .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro1> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro1> <http://www.w3.org/2004/02/skos/core#prefLabel> "Euro 1"@en .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro1> <http://www.w3.org/2004/02/skos/core#prefLabel> "Euro 1"@it .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro1> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> .
+# 
+# http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro2
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro2> <http://www.w3.org/2004/02/skos/core#definition> "European standard Euro 2 on pollution emissions from vehicles."@en .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro2> <http://www.w3.org/2004/02/skos/core#definition> "Standard europeo Euro 2 sulle emissioni inquinanti dei veicoli."@it .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro2> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro2> <http://www.w3.org/2004/02/skos/core#prefLabel> "Euro 2"@en .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro2> <http://www.w3.org/2004/02/skos/core#prefLabel> "Euro 2"@it .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro2> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> .
+# 
+# http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro3
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro3> <http://www.w3.org/2004/02/skos/core#definition> "European standard Euro 3 on pollution emissions from vehicles."@en .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro3> <http://www.w3.org/2004/02/skos/core#definition> "Standard europeo Euro 3 sulle emissioni inquinanti dei veicoli."@it .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro3> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro3> <http://www.w3.org/2004/02/skos/core#prefLabel> "Euro 3"@en .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro3> <http://www.w3.org/2004/02/skos/core#prefLabel> "Euro 3"@it .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro3> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> .
+# 
+# http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro4
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro4> <http://www.w3.org/2004/02/skos/core#definition> "European standard Euro 4 on pollution emissions from vehicles."@en .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro4> <http://www.w3.org/2004/02/skos/core#definition> "Standard europeo Euro 4 sulle emissioni inquinanti dei veicoli."@it .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro4> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro4> <http://www.w3.org/2004/02/skos/core#prefLabel> "Euro 4"@en .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro4> <http://www.w3.org/2004/02/skos/core#prefLabel> "Euro 4"@it .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro4> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> .
+# 
+# http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5> <http://www.w3.org/2004/02/skos/core#definition> "European standard Euro 5 on pollution emissions from vehicles."@en .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5> <http://www.w3.org/2004/02/skos/core#definition> "Standard europeo Euro 5 sulle emissioni inquinanti dei veicoli."@it .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5> <http://www.w3.org/2004/02/skos/core#narrower> <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5a> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5> <http://www.w3.org/2004/02/skos/core#narrower> <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5b> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5> <http://www.w3.org/2004/02/skos/core#prefLabel> "Euro 5"@en .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5> <http://www.w3.org/2004/02/skos/core#prefLabel> "Euro 5"@it .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> .
+# 
+# http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5a
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5a> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5a> <http://www.w3.org/2004/02/skos/core#definition> "European standard Euro 5a on pollution emissions from vehicles."@en .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5a> <http://www.w3.org/2004/02/skos/core#definition> "Standard europeo Euro 5a sulle emissioni inquinanti dei veicoli."@it .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5a> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5a> <http://www.w3.org/2004/02/skos/core#prefLabel> "Euro 5a"@en .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5a> <http://www.w3.org/2004/02/skos/core#prefLabel> "Euro 5a"@it .
+# 
+# http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5b
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5b> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5b> <http://www.w3.org/2004/02/skos/core#definition> "European standard Euro 5b on pollution emissions from vehicles."@en .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5b> <http://www.w3.org/2004/02/skos/core#definition> "Standard europeo Euro 5b sulle emissioni inquinanti dei veicoli."@it .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5b> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5b> <http://www.w3.org/2004/02/skos/core#prefLabel> "Euro 5b"@en .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5b> <http://www.w3.org/2004/02/skos/core#prefLabel> "Euro 5b"@it .
+# 
+# http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6> <http://www.w3.org/2004/02/skos/core#definition> "European standard Euro 6 on pollution emissions from vehicles."@en .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6> <http://www.w3.org/2004/02/skos/core#definition> "Standard europeo Euro 6 sulle emissioni inquinanti dei veicoli."@it .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6> <http://www.w3.org/2004/02/skos/core#narrower> <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6b> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6> <http://www.w3.org/2004/02/skos/core#narrower> <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6c> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6> <http://www.w3.org/2004/02/skos/core#narrower> <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6d> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6> <http://www.w3.org/2004/02/skos/core#narrower> <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6dTEMP> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6> <http://www.w3.org/2004/02/skos/core#prefLabel> "Euro 6"@en .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6> <http://www.w3.org/2004/02/skos/core#prefLabel> "Euro 6"@it .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6> <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> .
+# 
+# http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6b
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6b> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6b> <http://www.w3.org/2004/02/skos/core#definition> "European standard Euro 6b on pollution emissions from vehicles."@en .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6b> <http://www.w3.org/2004/02/skos/core#definition> "Standard europeo Euro 6b sulle emissioni inquinanti dei veicoli."@it .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6b> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6b> <http://www.w3.org/2004/02/skos/core#prefLabel> "Euro 6b"@en .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6b> <http://www.w3.org/2004/02/skos/core#prefLabel> "Euro 6b"@it .
+# 
+# http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6c
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6c> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6c> <http://www.w3.org/2004/02/skos/core#definition> "European standard Euro 6c on pollution emissions from vehicles."@en .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6c> <http://www.w3.org/2004/02/skos/core#definition> "Standard europeo Euro 6c sulle emissioni inquinanti dei veicoli."@it .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6c> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6c> <http://www.w3.org/2004/02/skos/core#prefLabel> "Euro 6c"@en .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6c> <http://www.w3.org/2004/02/skos/core#prefLabel> "Euro 6c"@it .
+# 
+# http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6d
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6d> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6d> <http://www.w3.org/2004/02/skos/core#definition> "European standard Euro 6d on pollution emissions from vehicles."@en .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6d> <http://www.w3.org/2004/02/skos/core#definition> "Standard europeo Euro 6d sulle emissioni inquinanti dei veicoli."@it .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6d> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6d> <http://www.w3.org/2004/02/skos/core#prefLabel> "Euro 6d"@en .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6d> <http://www.w3.org/2004/02/skos/core#prefLabel> "Euro 6d"@it .
+# 
+# http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6dTEMP
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6dTEMP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6dTEMP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6dTEMP> <http://www.w3.org/2004/02/skos/core#broader> <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6dTEMP> <http://www.w3.org/2004/02/skos/core#definition> "European standard Euro 6d_TEMP on pollution emissions from vehicles."@en .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6dTEMP> <http://www.w3.org/2004/02/skos/core#definition> "Standard europeo Euro 6d-TEMP sulle emissioni inquinanti dei veicoli."@it .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6dTEMP> <http://www.w3.org/2004/02/skos/core#inScheme> <http://w3id.org/urban-iot/kos/vehicle/european-emission-standard> .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6dTEMP> <http://www.w3.org/2004/02/skos/core#prefLabel> "Euro 6d-TEMP"@en .
+<http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6dTEMP> <http://www.w3.org/2004/02/skos/core#prefLabel> "Euro 6d-TEMP"@it .
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
