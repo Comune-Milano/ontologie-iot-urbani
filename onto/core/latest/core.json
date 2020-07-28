@@ -1,0 +1,1616 @@
+[ {
+  "@id" : "http://purl.org/dc/elements/1.1/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/rights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "it",
+    "@value" : "Usata per descrivere la localizzazione di uno schema:Place (Luogo)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Localizzazione"
+  }, {
+    "@language" : "en",
+    "@value" : "Location"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/bibliographicCitation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "it",
+    "@value" : "Usata per associare un identificativo univoco ad una instanza."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "identificativo"
+  }, {
+    "@language" : "en",
+    "@value" : "identifier"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/usageNote",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/ContactPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Contact Point"
+  }, {
+    "@language" : "it",
+    "@value" : "Punto di Contatto"
+  } ]
+}, {
+  "@id" : "http://schema.org/DayOfWeek",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "it",
+    "@value" : "Istanze della classe usate per definire una schema:OpeningHoursSpecification (Specifica Orari di Apertura)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Day of Week"
+  }, {
+    "@language" : "it",
+    "@value" : "Giorno della Settimana"
+  } ]
+}, {
+  "@id" : "http://schema.org/Event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Event"
+  }, {
+    "@language" : "it",
+    "@value" : "Evento"
+  } ]
+}, {
+  "@id" : "http://schema.org/Offer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Offer"
+  }, {
+    "@language" : "it",
+    "@value" : "Offerta"
+  } ]
+}, {
+  "@id" : "http://schema.org/OpeningHoursSpecification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Opening Hours Specification"
+  }, {
+    "@language" : "it",
+    "@value" : "Specifica Orari di Apertura"
+  } ]
+}, {
+  "@id" : "http://schema.org/Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Organization"
+  }, {
+    "@language" : "it",
+    "@value" : "Organizzazione"
+  } ]
+}, {
+  "@id" : "http://schema.org/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Person"
+  }, {
+    "@language" : "it",
+    "@value" : "Persona"
+  } ]
+}, {
+  "@id" : "http://schema.org/Place",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Luogo"
+  }, {
+    "@language" : "en",
+    "@value" : "Place"
+  } ]
+}, {
+  "@id" : "http://schema.org/Service",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Service"
+  }, {
+    "@language" : "it",
+    "@value" : "Servizio"
+  } ]
+}, {
+  "@id" : "http://schema.org/ServiceChannel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Canale del Servizio"
+  }, {
+    "@language" : "en",
+    "@value" : "Service Channel"
+  } ]
+}, {
+  "@id" : "http://schema.org/alternateName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "alternate name"
+  }, {
+    "@language" : "it",
+    "@value" : "nome alternativo"
+  } ]
+}, {
+  "@id" : "http://schema.org/areaServed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "it",
+    "@value" : "Usata per associare uno schema:Service (Servizio) allo schema:Place (Luogo) che è servito dal servizio e in cui il servizio è accessibile."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "area served"
+  }, {
+    "@language" : "it",
+    "@value" : "area servita"
+  } ]
+}, {
+  "@id" : "http://schema.org/availableChannel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "it",
+    "@value" : "Usata per associare uno schema:Service (Servizio) ad uno schema:ServiceChannel (Canale del Servizio)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "available channel"
+  }, {
+    "@language" : "it",
+    "@value" : "canale disponibile"
+  } ]
+}, {
+  "@id" : "http://schema.org/availableLanguage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "available language"
+  }, {
+    "@language" : "it",
+    "@value" : "lingua disponibile"
+  } ]
+}, {
+  "@id" : "http://schema.org/birthDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "birth date"
+  }, {
+    "@language" : "it",
+    "@value" : "data di nascita"
+  } ]
+}, {
+  "@id" : "http://schema.org/closes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "chiude"
+  }, {
+    "@language" : "en",
+    "@value" : "closes"
+  } ]
+}, {
+  "@id" : "http://schema.org/contactPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "it",
+    "@value" : "Usata per associare una schema:Organization (Organizzazione) ad un suo schema:ContactPoint (Punto di Contatto) disponibile."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "contact point"
+  }, {
+    "@language" : "it",
+    "@value" : "punto di contatto"
+  } ]
+}, {
+  "@id" : "http://schema.org/dayOfWeek",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "day of week"
+  }, {
+    "@language" : "it",
+    "@value" : "giorno della settimana"
+  } ]
+}, {
+  "@id" : "http://schema.org/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "description"
+  }, {
+    "@language" : "it",
+    "@value" : "descrizione"
+  } ]
+}, {
+  "@id" : "http://schema.org/duration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "it",
+    "@value" : "Literal consigliato xsd:duration."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "durata"
+  }, {
+    "@language" : "en",
+    "@value" : "duration"
+  } ]
+}, {
+  "@id" : "http://schema.org/email",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "email"
+  }, {
+    "@language" : "it",
+    "@value" : "email"
+  } ]
+}, {
+  "@id" : "http://schema.org/endDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "data di fine"
+  }, {
+    "@language" : "en",
+    "@value" : "end date"
+  } ]
+}, {
+  "@id" : "http://schema.org/gender",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "it",
+    "@value" : "Literal datatype xsd:string."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "gender"
+  }, {
+    "@language" : "it",
+    "@value" : "genere"
+  } ]
+}, {
+  "@id" : "http://schema.org/hoursAvailable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "it",
+    "@value" : "Associa un Servizio alla Specifica Orari Apertura che descrive gli orari in cui è reso disponibile."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hours available"
+  }, {
+    "@language" : "it",
+    "@value" : "orari disponibili"
+  } ]
+}, {
+  "@id" : "http://schema.org/itemCondition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "it",
+    "@value" : "Usata per associare una schema:Offer (Offerta) ad una descrizione testuale (xsd:string) dei criteri di applicazione, calcolo del costo, periodo di validità e informazioni addizionali."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "condizioni dell'oggetto"
+  }, {
+    "@language" : "en",
+    "@value" : "item condition"
+  } ]
+}, {
+  "@id" : "http://schema.org/itemOffered",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "it",
+    "@value" : "Usata per associare una schema:Offer (Offerta) al schema:Service (Servizio) a cui è riferita."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "item offered"
+  }, {
+    "@language" : "it",
+    "@value" : "oggetto offerto"
+  } ]
+}, {
+  "@id" : "http://schema.org/legalName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "legal name"
+  }, {
+    "@language" : "it",
+    "@value" : "nome legale"
+  } ]
+}, {
+  "@id" : "http://schema.org/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "name"
+  }, {
+    "@language" : "it",
+    "@value" : "nome"
+  } ]
+}, {
+  "@id" : "http://schema.org/offers",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "it",
+    "@value" : "Usata per associare uno schema:Service (Servizio) alle schema:Offer (Offerta) disponibili."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "offers"
+  }, {
+    "@language" : "it",
+    "@value" : "offre"
+  } ]
+}, {
+  "@id" : "http://schema.org/openingHoursSpecification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "it",
+    "@value" : "Usata per associare uno schema:Place (Luogo) alla sua schema:OpeningHoursSpecification (Specifica Orari di Apertura)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "opening hours specification"
+  }, {
+    "@language" : "it",
+    "@value" : "specifica orari di apertura"
+  } ]
+}, {
+  "@id" : "http://schema.org/opens",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "apre"
+  }, {
+    "@language" : "en",
+    "@value" : "opens"
+  } ]
+}, {
+  "@id" : "http://schema.org/price",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "prezzo"
+  }, {
+    "@language" : "en",
+    "@value" : "price"
+  } ]
+}, {
+  "@id" : "http://schema.org/priceCurrency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "it",
+    "@value" : "Valori secondo lo standard ISO 4217 (es. \"EUR\" per l'Euro)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "price currency"
+  }, {
+    "@language" : "it",
+    "@value" : "valuta del prezzo"
+  } ]
+}, {
+  "@id" : "http://schema.org/provider",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "it",
+    "@value" : "Usata per associare uno schema:Service (Servizio) alla schema:Organization (Organizzazione) che lo eroga."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "erogatore"
+  }, {
+    "@language" : "en",
+    "@value" : "provider"
+  } ]
+}, {
+  "@id" : "http://schema.org/servicePhone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "it",
+    "@value" : "Usata per associare uno schema:ServiceChannel (Canale del Servizio) ad uno schema:ContactPoint (Punto di Contatto)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "contatto del servizio"
+  }, {
+    "@language" : "en",
+    "@value" : "service phone"
+  } ]
+}, {
+  "@id" : "http://schema.org/serviceUrl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "it",
+    "@value" : "Usato per associare uno schema:ServiceChannel (Canale del Servizio) ad un url (xsd:anyURI)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "service url"
+  }, {
+    "@language" : "it",
+    "@value" : "url del servizio"
+  } ]
+}, {
+  "@id" : "http://schema.org/startDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "it",
+    "@value" : "Literal datatype xsd:dateTime."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "data di inizio"
+  }, {
+    "@language" : "en",
+    "@value" : "start date"
+  } ]
+}, {
+  "@id" : "http://schema.org/telephone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Literal datatype xsd:string."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "telefono"
+  }, {
+    "@language" : "en",
+    "@value" : "telephone"
+  } ]
+}, {
+  "@id" : "http://schema.org/url",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Literal datatype xsd:anyURI."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "url"
+  }, {
+    "@language" : "it",
+    "@value" : "url"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2006/time#timeZone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "fuso orario"
+  }, {
+    "@language" : "en",
+    "@value" : "time zone"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/legal#LegalEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Entità Legale"
+  }, {
+    "@language" : "en",
+    "@value" : "Legal Entity"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/locn#Address",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "it",
+    "@value" : "Usato per definire l'indirizzo associato ad una dcterms:Location, ad una schema:Person (Persona) o la sede legale di una legal:LegalEntity (Entità Legale). Nel caso di luoghi in Italia può essere utilizzato il profilo italiano (https://w3id.org/italia/onto/CLV/) allineato con locn:Address."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Address"
+  }, {
+    "@language" : "it",
+    "@value" : "Indirizzo"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/locn#Geometry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "it",
+    "@value" : "E' consigliato di utilizzare la GeoSPARQL specification (http://www.w3.org/2011/02/GeoSPARQL.pdf) per l'encoding."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Geometria"
+  }, {
+    "@language" : "en",
+    "@value" : "Geometry"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/locn#address",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "it",
+    "@value" : "Usata per associare una locn:Location (Localizzazione) o una schema:Persona (Person) al suo indirizzo (locn:Address)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "address"
+  }, {
+    "@language" : "it",
+    "@value" : "indirizzo"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/locn#fullAddress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "full address"
+  }, {
+    "@language" : "it",
+    "@value" : "indirizzo completo"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/locn#geometry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "it",
+    "@value" : "Associa una dcterms:Location (Localizzazione) alla locn:Geometry (Geometria) che la descrive."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "geometria"
+  }, {
+    "@language" : "en",
+    "@value" : "geometry"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/locn#location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "it",
+    "@value" : "Usata per associare uno schema:Place (Luogo) alla locn:Location che descrive la sua localizzazione."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "localizzazione"
+  }, {
+    "@language" : "en",
+    "@value" : "location"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/locn#postCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "codice postale"
+  }, {
+    "@language" : "en",
+    "@value" : "post code"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/locn#postName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "divisione postale"
+  }, {
+    "@language" : "en",
+    "@value" : "post name"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/locn#registeredAddress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "it",
+    "@value" : "Usata per associare una legal:LegalEntity (Entità Legale) al locn:Address (Indirizzo) della sua sede legale."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "registered address"
+  }, {
+    "@language" : "it",
+    "@value" : "sede legale"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/sosa/ObservableProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Observable Property"
+  }, {
+    "@language" : "it",
+    "@value" : "Proprietà Campionabile"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/sosa/Observation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Campionamento"
+  }, {
+    "@language" : "en",
+    "@value" : "Observation"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/sosa/Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sensor"
+  }, {
+    "@language" : "it",
+    "@value" : "Sensore"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/sosa/hasResult",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha risultato"
+  }, {
+    "@language" : "en",
+    "@value" : "has result"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/sosa/hasSimpleResult",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha valore semplice"
+  }, {
+    "@language" : "en",
+    "@value" : "has simple result"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/sosa/madeBySensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "eseguita dal sensore"
+  }, {
+    "@language" : "en",
+    "@value" : "made by sensor"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/sosa/madeObservation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha eseguito campionamento"
+  }, {
+    "@language" : "en",
+    "@value" : "made observation"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/sosa/observedProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "observed property"
+  }, {
+    "@language" : "it",
+    "@value" : "proprietà campionata"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/sosa/observes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "observes"
+  }, {
+    "@language" : "it",
+    "@value" : "osserva"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/urban-iot/core",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/contributor" : [ {
+    "@value" : "Area Pianificazione e Monitoraggio (AMAT Milano)"
+  }, {
+    "@value" : "Direzione Mobilità e Trasporti - Area Pianificazione e Programmazione Mobilità (Comune di Milano)"
+  }, {
+    "@value" : "Direzione Sistemi Informativi ed Agenda Digitale - Area Gestione ed Integrazione Dati (Comune di Milano)"
+  } ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Ilaria Baroni (Cefriel)"
+  }, {
+    "@value" : "Irene Celino (Cefriel)"
+  }, {
+    "@value" : "Mario Scrocca (Cefriel)"
+  } ],
+  "http://purl.org/dc/elements/1.1/publisher" : [ {
+    "@value" : "Comune di Milano"
+  } ],
+  "http://purl.org/dc/elements/1.1/rights" : [ {
+    "@value" : "Copyright Comune di Milano, 2020"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@language" : "it",
+    "@value" : "Ontologie per gli Apparati IoT Urbani - Modulo Core"
+  }, {
+    "@language" : "en",
+    "@value" : "Urban IoT Ontologies - Core Module"
+  } ],
+  "http://purl.org/dc/terms/bibliographicCitation" : [ {
+    "@value" : "Comune di Milano. Urban IoT Ontologies - Core Module (v1.0.0). http://www.w3id.org/urban-iot/core"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "uiot"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "http://www.w3id.org/urban-iot/core#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Core module of the suite of ontologies for urban IoT devices."
+  }, {
+    "@language" : "it",
+    "@value" : "Modulo core delle ontologie per gli apparati IoT urbani."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Ontologie per gli Apparati IoT Urbani - Modulo Core"
+  }, {
+    "@language" : "en",
+    "@value" : "Urban IoT Ontologies - Core Module"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://www.w3id.org/urban-iot/core/1.0.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "v1.0.0"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/urban-iot/core#MobilityStation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Place characterized by mobility services. A Mobility Station can include more specific Mobility Station (Sharing Station, Charging Station, ecc.)."
+  }, {
+    "@language" : "it",
+    "@value" : "Un Luogo caratterizzato dalla presenza di servizi di mobilità. Può includere altre Stazioni di Mobilità dedicate a specifici servizi per la mobilità (Stazioni di Sharing, Stazioni di Ricarica, etc.)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Mobility Station"
+  }, {
+    "@language" : "it",
+    "@value" : "Stazione di Mobilità"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://schema.org/Place"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/urban-iot/core#SensorRecord",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Sensor Record aggregates a set of observations associated to the same timestamp and the same sensor."
+  }, {
+    "@language" : "it",
+    "@value" : "Un Record del Sensore aggrega un insieme di campionamenti associati allo stesso timestamp e allo stesso sensore."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Record del Sensore"
+  }, {
+    "@language" : "en",
+    "@value" : "Sensor Record"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/urban-iot/core#ServiceBusinessUser",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Entità Legale con contratto business per accedere al servizio. Un Utente Business non può utilizzare direttamente il servizio ma può abilitare un Utente Privato del Servizio a farlo."
+  }, {
+    "@language" : "en",
+    "@value" : "Legal Entity with a business contract for the service. A Service Business User can not directly use the service but can enable a Service Private User to do so."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Service Business User"
+  }, {
+    "@language" : "it",
+    "@value" : "Utente Business del Servizio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/legal#LegalEntity"
+  }, {
+    "@id" : "http://www.w3id.org/urban-iot/core#ServiceUser"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/urban-iot/core#ServicePrivateUser",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A natural person using a service."
+  }, {
+    "@language" : "it",
+    "@value" : "Una persona fisica utilizzatore di un servizio."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Service Private User"
+  }, {
+    "@language" : "it",
+    "@value" : "Utente Privato del Servizio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://schema.org/Person"
+  }, {
+    "@id" : "http://www.w3id.org/urban-iot/core#ServiceUser"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/urban-iot/core#ServiceResource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Resource made available by a Service to be used in a Usage Session."
+  }, {
+    "@language" : "it",
+    "@value" : "Risorsa messa a disposizione da un Servizio che può essere utilizzata in una Sessione di Utilizzo."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Risorsa del Servizio"
+  }, {
+    "@language" : "en",
+    "@value" : "Service Resource"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/urban-iot/core#ServiceUser",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A User using a Service."
+  }, {
+    "@language" : "it",
+    "@value" : "Utente utilizzatore di un Servizio."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Service User"
+  }, {
+    "@language" : "it",
+    "@value" : "Utente del Servizio"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/urban-iot/core#UsageSession",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Usage Session is an Event associated to a Service and a Service Resource representing a usage of the resource made available by the Service."
+  }, {
+    "@language" : "it",
+    "@value" : "Una Sessione di Utilizzo è un Evento associato ad un Servizio e ad una Risorsa del Servizio che rappresenta un utilizzo della risorsa resa disponibile dal Servizio."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Sessione di Utilizzo"
+  }, {
+    "@language" : "en",
+    "@value" : "Usage Session"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://schema.org/Event"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/urban-iot/core#associatedBusiness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Associa una Sessione di Utilizzo all'Utente Business del Servizio che la abilita."
+  }, {
+    "@language" : "en",
+    "@value" : "Associates a Usage Session with the Service Business User enabling it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3id.org/urban-iot/core#UsageSession"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "associated business"
+  }, {
+    "@language" : "it",
+    "@value" : "business associato"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3id.org/urban-iot/core#ServiceBusinessUser"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/urban-iot/core#birthYear",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Associa una persona al suo anno di nascita."
+  }, {
+    "@language" : "it",
+    "@value" : "Associates a person with her/his birth year."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "anno di nascita"
+  }, {
+    "@language" : "en",
+    "@value" : "birth year"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://schema.org/birthDate"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/urban-iot/core#containsObservation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Associa un Record del Sensore ad un Campionamento contenuto nel record."
+  }, {
+    "@language" : "en",
+    "@value" : "Associates a Sensor Record with a Observation contained in it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3id.org/urban-iot/core#SensorRecord"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "contains observation"
+  }, {
+    "@language" : "it",
+    "@value" : "contiene campionamento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/Observation"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.w3id.org/urban-iot/core#observationIn"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/urban-iot/core#deregistrationDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Data in cui l'Utente del Servizio ha chiesto la cancellazione della registrazione dal Servizio."
+  }, {
+    "@language" : "en",
+    "@value" : "Date in which a Service User deregistered from a Service."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3id.org/urban-iot/core#ServiceUser"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "data di disdetta"
+  }, {
+    "@language" : "en",
+    "@value" : "deregistration date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/urban-iot/core#enablesSession",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Associa un Servizio ad una Sessione di Utilizzo abilitata dal Servizio."
+  }, {
+    "@language" : "en",
+    "@value" : "Associates a Service with a Usage Session enabled by the service."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/Service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "abilita sessione"
+  }, {
+    "@language" : "en",
+    "@value" : "enables session"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3id.org/urban-iot/core#UsageSession"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.w3id.org/urban-iot/core#sessionEnabledBy"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/urban-iot/core#fixedAmount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates an Offer with a fixed amount required from it."
+  }, {
+    "@language" : "it",
+    "@value" : "Indica un costo fisso dell'Offerta."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "costo fisso"
+  }, {
+    "@language" : "en",
+    "@value" : "fixed amount"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://schema.org/price"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/urban-iot/core#hasEnabledUser",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Associa un Utente Business del Servizio ad un Utente Privato abilitato dall'utenza business."
+  }, {
+    "@language" : "en",
+    "@value" : "Associates a Service Business User with the Service Private User enabled by that business user."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3id.org/urban-iot/core#ServiceBusinessUser"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha utente abilitato"
+  }, {
+    "@language" : "en",
+    "@value" : "has enabled user"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3id.org/urban-iot/core#ServicePrivateUser"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.w3id.org/urban-iot/core#userEnabledBy"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/urban-iot/core#hasUser",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Associa un Servizio ad un Utente del Servizio."
+  }, {
+    "@language" : "en",
+    "@value" : "Associates a Service to a Service User."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/Service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha utente"
+  }, {
+    "@language" : "en",
+    "@value" : "has user"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3id.org/urban-iot/core#ServiceUser"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.w3id.org/urban-iot/core#userOfService"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/urban-iot/core#includedInMobilityStation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Associa una Stazione di Mobilità ad una Stazione di Mobilità che la include."
+  }, {
+    "@language" : "en",
+    "@value" : "Associates a Mobility Station with another Mobility Station including it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3id.org/urban-iot/core#MobilityStation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "included in mobility station"
+  }, {
+    "@language" : "it",
+    "@value" : "inclusa nella stazione di mobilità"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3id.org/urban-iot/core#MobilityStation"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/urban-iot/core#latestRecord",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Associa un Sensore all'ultimo Record del Sensore registrato."
+  }, {
+    "@language" : "en",
+    "@value" : "Associates a Sensor with the latest registered Sensor Record."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "latest record"
+  }, {
+    "@language" : "it",
+    "@value" : "ultimo record"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3id.org/urban-iot/core#SensorRecord"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3id.org/urban-iot/core#registersRecord"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/urban-iot/core#madeAvailableBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Associa una Risorsa del Servizio al Servizio che la rende disponibile."
+  }, {
+    "@language" : "en",
+    "@value" : "Associates a Service Resource with the Service making it available."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3id.org/urban-iot/core#ServiceResource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "made available by"
+  }, {
+    "@language" : "it",
+    "@value" : "resa disponibile da"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://schema.org/Service"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.w3id.org/urban-iot/core#makesAvailable"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/urban-iot/core#makesAvailable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Associa un Servizio ad una risorsa che rende disponibile."
+  }, {
+    "@language" : "en",
+    "@value" : "Associates a Service with the Service Resource that makes available."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/Service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "makes available"
+  }, {
+    "@language" : "it",
+    "@value" : "rende disponibile"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3id.org/urban-iot/core#ServiceResource"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/urban-iot/core#observationIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Associa un Campionamento al Record del Sensore di cui fa parte."
+  }, {
+    "@language" : "en",
+    "@value" : "Associates an Observation with the Sensor Record containing it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "campionamento in"
+  }, {
+    "@language" : "en",
+    "@value" : "observation in"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3id.org/urban-iot/core#SensorRecord"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/urban-iot/core#offerAssociated",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Associa una Sessione di Utilizzo alla tariffa (Offerta) applicata alla specifica sessione."
+  }, {
+    "@language" : "en",
+    "@value" : "Associates a Usage Session with the tariff (Offer) applied to the specific session."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3id.org/urban-iot/core#UsageSession"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "offer associated"
+  }, {
+    "@language" : "it",
+    "@value" : "offerta associata"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://schema.org/Offer"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/urban-iot/core#performsSession",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Associa un Utente Privato del Servizio ad una Sessione di Utilizzo effettuata."
+  }, {
+    "@language" : "en",
+    "@value" : "Associates a Service Private User with a Usage Session performed."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3id.org/urban-iot/core#ServicePrivateUser"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "effettua sessione"
+  }, {
+    "@language" : "en",
+    "@value" : "performs session"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3id.org/urban-iot/core#UsageSession"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.w3id.org/urban-iot/core#sessionPerformedBy"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/urban-iot/core#recordRegisteredBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Associa un Record del Sensore al Sensore che lo ha registrato."
+  }, {
+    "@language" : "en",
+    "@value" : "Associates a Sensor Record with the Sensor registering it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3id.org/urban-iot/core#SensorRecord"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "record registered by"
+  }, {
+    "@language" : "it",
+    "@value" : "record registrato da"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/Sensor"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.w3id.org/urban-iot/core#registersRecord"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/urban-iot/core#recordTimestamp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Timestamp associated with a Sensor Record."
+  }, {
+    "@language" : "it",
+    "@value" : "Timestamp associato ad un Record del Sensore."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3id.org/urban-iot/core#SensorRecord"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "record timestamp"
+  }, {
+    "@language" : "it",
+    "@value" : "timestamp del record"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/urban-iot/core#registeredTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Associa un Utente al Servizio a cui è registrato."
+  }, {
+    "@language" : "en",
+    "@value" : "Associates a Service User to the Service to which the user is registered to."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3id.org/urban-iot/core#ServiceUser"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "registered to"
+  }, {
+    "@language" : "it",
+    "@value" : "registrato a"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://schema.org/Service"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/urban-iot/core#registersRecord",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Associa un Sensore ad un Record del Sensore."
+  }, {
+    "@language" : "en",
+    "@value" : "Associates a Sensor with a registered Sensor Record."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "registers record"
+  }, {
+    "@language" : "it",
+    "@value" : "registra record"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3id.org/urban-iot/core#SensorRecord"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/urban-iot/core#registrationDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Data di registrazione dell'Utente del Servizio al Servizio."
+  }, {
+    "@language" : "en",
+    "@value" : "Date in which a Service User registered to the Service."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3id.org/urban-iot/core#ServiceUser"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "data di registrazione"
+  }, {
+    "@language" : "en",
+    "@value" : "registration date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/urban-iot/core#reservationUsed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica se un meccanismo di prenotazione è stato utilizzato per una Sessione di Utilizzo."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates whether a reservation mechanism has been used for a Usage Session."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3id.org/urban-iot/core#UsageSession"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "prenotazione utilizzata"
+  }, {
+    "@language" : "en",
+    "@value" : "reservation used"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/urban-iot/core#resourceUsedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Associa una Risorsa del Servizio ad una Sessione di Utilizzo in cui è stata utilizzata."
+  }, {
+    "@language" : "en",
+    "@value" : "Associates a Service Resource with a Usage Session using it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3id.org/urban-iot/core#ServiceResource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "resource used in"
+  }, {
+    "@language" : "it",
+    "@value" : "risorsa usata in"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3id.org/urban-iot/core#UsageSession"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.w3id.org/urban-iot/core#usesResource"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/urban-iot/core#serialNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indication of the serial number."
+  }, {
+    "@language" : "it",
+    "@value" : "Indicazione del numero seriale."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3id.org/urban-iot/core#ServiceResource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "numero seriale"
+  }, {
+    "@language" : "en",
+    "@value" : "serial number"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/urban-iot/core#sessionEnabledBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Associa una Sessione di Utilizzo al Servizio che la abilita."
+  }, {
+    "@language" : "en",
+    "@value" : "Associates a Usage Session with the Service enabling it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3id.org/urban-iot/core#UsageSession"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "session enabled by"
+  }, {
+    "@language" : "it",
+    "@value" : "sessione abilitata da"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://schema.org/Service"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/urban-iot/core#sessionPerformedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Associa una Sessione di Utilizzo all'Utente Privato del Servizio che la effettua."
+  }, {
+    "@language" : "en",
+    "@value" : "Associates a Usage Session with the Service Private User performing it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3id.org/urban-iot/core#UsageSession"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "session performed by"
+  }, {
+    "@language" : "it",
+    "@value" : "sessione effettuata da"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3id.org/urban-iot/core#ServicePrivateUser"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/urban-iot/core#userEnabledBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Associa un Utente Privato del Servizio all'Utente Business che lo abilita."
+  }, {
+    "@language" : "en",
+    "@value" : "Associates a Service Private User to the Service Business User enabling it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3id.org/urban-iot/core#ServicePrivateUser"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "user enabled by"
+  }, {
+    "@language" : "it",
+    "@value" : "utente abilitato da"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3id.org/urban-iot/core#ServiceBusinessUser"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/urban-iot/core#userOfService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Associa un Utente del Servizio al Servizio che utilizza."
+  }, {
+    "@language" : "en",
+    "@value" : "Associates a Service User to the Service used."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3id.org/urban-iot/core#ServiceUser"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "user of service"
+  }, {
+    "@language" : "it",
+    "@value" : "utente del servizio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://schema.org/Service"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/urban-iot/core#usesResource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Associa una Sessione di Utilizzo alla Risorsa del Servizio utilizzata."
+  }, {
+    "@language" : "en",
+    "@value" : "Associates a Usage Session with the Service Resource used in the session."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3id.org/urban-iot/core#UsageSession"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "uses resource"
+  }, {
+    "@language" : "it",
+    "@value" : "utilizza risorsa"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3id.org/urban-iot/core#ServiceResource"
+  } ]
+} ]
