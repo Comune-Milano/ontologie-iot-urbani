@@ -16,6 +16,7 @@
     dct:publisher "Comune di Milano" ;
     skos:prefLabel "Vehicle Category"@en, "Categoria di Veicoli"@it ;
     rdfs:isDefinedBy <https://www.unece.org/trans/main/wp29/wp29wgs/wp29gen/wp29resolutions.html> ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
     skos:hasTopConcept :CategoryL, :CategoryM, :CategoryN .
 
 :CategoryL

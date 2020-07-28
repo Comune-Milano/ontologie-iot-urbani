@@ -15,6 +15,7 @@
     dct:rights "Copyright Comune di Milano, 2020" ;
     dct:publisher "Comune di Milano" ;
     skos:prefLabel "Car Supply"@en, "Alimentazione Autovettura"@it ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
     skos:hasTopConcept :Diesel, :DualFuel, :Electric, :Gasoline, :Hybrid .
 
 :Diesel

@@ -15,6 +15,7 @@
     dct:rights "Copyright Comune di Milano, 2020" ;
     dct:publisher "Comune di Milano" ;
     skos:prefLabel "Charge Vehicles Access Method"@en, "Metodo di Accesso alla Ricarica"@it ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
     skos:hasTopConcept :AccessByRFID, :DirectPaymentTerminal, :OtherPaymentMethod, :RemotePayment .
 
 :AccessByRFID

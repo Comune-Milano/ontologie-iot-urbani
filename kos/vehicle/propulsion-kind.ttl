@@ -16,6 +16,7 @@
     dct:publisher "Comune di Milano" ;
     skos:prefLabel "Propulsion Kind"@en, "Tipologia di Propulsione"@it ;
     rdfs:isDefinedBy <https://github.com/openmobilityfoundation/mobility-data-specification/blob/main/agency/README.md#propulsion-type> ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
     skos:hasTopConcept :Combustion, :Electric, :ElectricAssist, :Human .
 
 :Combustion

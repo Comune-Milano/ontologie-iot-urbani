@@ -15,6 +15,7 @@
     dct:rights "Copyright Comune di Milano, 2020" ;
     dct:publisher "Comune di Milano" ;
     skos:prefLabel "Power Supply"@en, "Tipo di Alimentazione"@it ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
     skos:hasTopConcept :AC, :DC .
 
 :AC

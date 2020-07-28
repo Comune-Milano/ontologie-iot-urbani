@@ -15,6 +15,7 @@
     dct:rights "Copyright Comune di Milano, 2020" ;
     dct:publisher "Comune di Milano" ;
     skos:hasTopConcept :HighPower, :Standard ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
     skos:prefLabel "EVSE Charge Category"@en, "Categoria di Ricarica EVSE"@it .
 
 :Fast

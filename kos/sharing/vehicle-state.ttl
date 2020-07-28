@@ -16,6 +16,7 @@
     dct:publisher "Comune di Milano" ;
     rdfs:isDefinedBy <https://github.com/openmobilityfoundation/mobility-data-specification/blob/main/agency/README.md#vehicle-events> ;
     skos:prefLabel "Vehicle State"@en, "Stato del Veicolo"@it ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
     skos:hasTopConcept :Available, :Elsewhere, :Inactive, :Removed, :Reserved, :Trip, :Unavailable .
 
 :Available

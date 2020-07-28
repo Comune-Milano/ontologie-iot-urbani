@@ -16,6 +16,7 @@
     dct:publisher "Comune di Milano" ;
     rdfs:isDefinedBy <https://github.com/openmobilityfoundation/mobility-data-specification/blob/main/agency/README.md#vehicle-events> ;
     skos:prefLabel "Vehicle Event"@en, "Evento del Veicolo"@it ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
     skos:hasTopConcept :CancelReservation, :CityPickUp, :Deregister, :ProviderDropOff, :ProviderPickUp, :Register, :Reserve, :ServiceEnd, :ServiceStart, :TripEnd, :TripEnter, :TripLeave, :TripStart .
 
 :CancelReservation
