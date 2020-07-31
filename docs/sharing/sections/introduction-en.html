@@ -1,21 +1,21 @@
 <html><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
-La suite di ontologie per gli Apparati IoT Urbani è stata sviluppata per supportare l'integrazione e la pubblicazione di dati dei diversi fornitore di servizi che gesticono apparati IoT nell'area urbana. Le ontologie sono state sviluppate per il Comune di Milano (Italia), ma sono generiche e possono essere applicate a qualsiasi città.
+The ontology suite for the Urban IoT Devices was developed to support the integration and the publication of different data from different service providers who manage the IoT devices in the urban area. The ontologies were developed for the Comune di Milano (Italy), but they are generic and can be applied to any city.
 
-Il modulo Sharing Mobility ([http://ww.w3id.org/urban-iot/sharing]()) definisce classi e proprietà relative ai fornitori di servizi di Sharing Mobility, ai veicolo in sharing e alle stazione di sharing come apparati IoT urbani, agli utenti che utilizzano il servizio e ai dati collezionati sul loro utilizzo. I concetti definiti all'interno del modulo Sharing Mobility riutilizzano ed estendono il modulo Core ([http://ww.w3id.org/urban-iot/core]()) che è importato dall'ontologia.
+The Sharing Mobility module ([http://ww.w3id.org/urban-iot/sharing]()) defines classes and properties related to the Sharing Mobility service providers, to the vehicles for sharing and to the sharing station as urban IoT devices, to the service users, and to the data collected from the devices on their usage. The concepts defined from the Sharing Mobility module reuse and extend the Core module ([http://ww.w3id.org/urban-iot/core]()) which is imported from the ontology.
 
-La modellazione del modulo di Sharing Mobility è stata portata avanti con l'aiuto degli esperti di dominio del Comune di Milano e tenendo conto degli standard rilevanti nel settore, in particolare la Mobility Data Specification ([MDS](https://github.com/openmobilityfoundation/mobility-data-specification)) e la General Bikeshare Feed Specification ([GBFS](https://github.com/NABSA/gbfs)).
+The modeling of the Sharing Mobility module was implemented with the contributions of domain experts from the Comune di Milano, and with the consultation of relevant standards for the domain, in particular the Mobility Data Specification ([MDS](https://github.com/openmobilityfoundation/mobility-data-specification)) and the General Bikeshare Feed Specification ([GBFS](https://github.com/NABSA/gbfs)).
 
-Il modulo Sharing Mobility è stato modellato riutilizzando in modo estensivo il vocabolario [schema.org](http://schema.org), estendendolo per supportate gli specifici requisiti dell'ambito di interesse. Il modulo riutilizza l'ontologia Sensor, Observation, Sample, and Actuator ([SOSA](https://www.w3.org/TR/vocab-ssn/)) per la modellazione degli apparati IoT e dei dati da loro raccolti. Inoltre, vengono riutilizzati i [Core Vocabularies](https://ec.europa.eu/isa2/solutions/core-vocabularies_en) definiti dal Semantic Interoperability Centre Europe (SEMIC.EU), [Dublin Core](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/), [Basic Geo (WGS84 lat/long)](https://www.w3.org/2003/01/geo/) Vocabulary and [GeoSPARQL](https://www.ogc.org/standards/geosparql).
+The Sharing Mobility module was implemented by reusing extensively the vocabulary [schema.org](http://schema.org), extending it to support specific requirements on the domain of interest. The module reuses the ontology Sensor, Observation, Sample, and Actuator ([SOSA](https://www.w3.org/TR/vocab-ssn/)) for the modeling of the IoT devices and the data collected from them. Furthermore, the [Core Vocabularies](https://ec.europa.eu/isa2/solutions/core-vocabularies_en) defined from Semantic Interoperability Centre Europe (SEMIC.EU), the [Time Ontology](http://www.w3.org/2006/time), the [Dublin Core](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/) and the [GeoSPARQL](https://www.ogc.org/standards/geosparql) are reused.
 
-Il modulo Sharing Mobility è complementato dalla definizione di vocabolari SKOS utilizzati nell'ontologia:
-- Tipologia di Alimentazione Autovettura [vh-kos:car-supply](http://w3id.org/urban-iot/kos/vehicle/car-supply) 
-- Standard Europeo Emissioni [vh-kos:european-emission-standard](http://w3id.org/urban-iot/kos/vehicle/european-emission-standard) 
-- Tipologia di Propulsione [vh-kos:propulsion-kind](http://w3id.org/urban-iot/kos/vehicle/propulsion-kind) 
-- Categoria di Veicolo [vh-kos:vehicle-category](http://w3id.org/urban-iot/kos/vehicle/vehicle-category) 
-- Stato Veicolo di Sharing Mobility [sh-kos:vehicle-state](http://w3id.org/urban-iot/kos/sharing/vehicle-state) 
-- Evento Veicolo di Sharing Mobility [sh-kos:vehicle-event](http://w3id.org/urban-iot/kos/sharing/vehicle-event) 
-- Stato Stallo in Sharing Station [sh-kos:dock-state](http://w3id.org/urban-iot/kos/sharing/dock-state) 
+The Sharing Mobility module is complemented with the definition of SKOS vocabularies used in the ontology:
+- Car Supply [vh-kos:car-supply](http://w3id.org/urban-iot/kos/vehicle/car-supply) 
+- European Emission Standard [vh-kos:european-emission-standard](http://w3id.org/urban-iot/kos/vehicle/european-emission-standard) 
+- Propulsion Kind [vh-kos:propulsion-kind](http://w3id.org/urban-iot/kos/vehicle/propulsion-kind) 
+- Vehicle Category [vh-kos:vehicle-category](http://w3id.org/urban-iot/kos/vehicle/vehicle-category) 
+- Sharing Mobility Vehicle State [sh-kos:vehicle-state](http://w3id.org/urban-iot/kos/sharing/vehicle-state) 
+- Sharing Mobility Vehicle Event [sh-kos:vehicle-event](http://w3id.org/urban-iot/kos/sharing/vehicle-event) 
+- Dock State in Sharing Station [sh-kos:dock-state](http://w3id.org/urban-iot/kos/sharing/dock-state) 
 </span>
 <div id="namespacedeclarations">
 <h3 id="ns" class="list">Namespace declarations</h3>

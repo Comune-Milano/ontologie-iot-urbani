@@ -1,7 +1,7 @@
 <html>
 <h2 id="desc" class="list">Ontologie per gli Apparati IoT Urbani - Modulo Core: Descrizione <span class="backlink"> torna a <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
-Questa sezione descrive le classi e le properietà del modulo Core andando a dettagliare, tramite una serie di diagrammi e di esempi di utilizzo, le scelte compiute in fase di modellazione e le modalità di utilizzo attese.
+Questa sezione descrive le classi e le proprietà del modulo Core andando a dettagliare, tramite una serie di diagrammi e di esempi di utilizzo, le scelte compiute in fase di modellazione e le modalità di utilizzo attese.
 </span>
 
 <h3 id="examples" class="list">Diagrammi</h3>
@@ -42,7 +42,7 @@ Un servizio che opera nell'area urbana è modellato come uno [schema:Service](ht
 - i canali disponibili per accedere al servizio [schema:ServiceChannel](http://schema.org/ServiceChannel) che possono includere applicazioni o siti web,
 - le tariffe ([schema:Offer](http://schema.org/Offer)) con cui è possibile usufruire del servizio.
 
-Un operatore che eroga un servizio è modellato come una [schema:Organization](http://schema.org/Organization) descritta tramite identificativo, nome, nome legale, url, furo orario e punti di contatto ([schema:ContactPoint](http://schema.org/ContactPoint)).
+Un operatore che eroga un servizio è modellato come una [schema:Organization](http://schema.org/Organization) descritta tramite identificativo, nome, nome legale, url, fuso orario e punti di contatto ([schema:ContactPoint](http://schema.org/ContactPoint)).
 
 Una tariffa del servizio è modellata tramite una ([schema:Offer](http://schema.org/Offer)) descritta tramite identificativo, nome, url, prezzo, valuta del prezzo e condizioni di applicazione (tipologia di utenti a cui è rivolta, come viene applicato il prezzo, ecc.). L'ontologia definisce la proprietà ([uiot:fixedAmount](http://www.w3id.org/urban-iot/core#fixedAmount)) per permettere di indicare un costo fisso dell'offerta.
 </span>
@@ -173,11 +173,11 @@ Il seguente esempio descrive un apparato IoT ([sosa:Sensor](http://www.w3.org/ns
       "sosa:hasResult" : {
         "@type" : "geo:Point",
         "geo:lat" : {
-          "@value" : "51.5",
+          "@value" : "45.4854",
           "@type": "xsd:decimal"
         },
         "geo:long" : {
-          "@value" : "-0.12",
+          "@value" : "9.2029",
           "@type": "xsd:decimal"
         }
       }
@@ -207,7 +207,6 @@ Il seguente esempio descrive una [uiot:MobilityStation](http://www.w3id.org/urba
     }
   }
 }
-
 ```
 </span>
 

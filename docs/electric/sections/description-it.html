@@ -1,7 +1,7 @@
 <html>
 <h2 id="desc" class="list">Ontologie per gli Apparati IoT Urbani - Modulo Electric Mobility: Descrizione <span class="backlink"> torna a <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
-Questa sezione descrive le classi e le properietà del modulo Electric Mobility andando a dettagliare, tramite una serie di diagrammi e di esempi di utilizzo, le scelte compiute in fase di modellazione e le modalità di utilizzo attese.
+Questa sezione descrive le classi e le proprietà del modulo Electric Mobility andando a dettagliare, tramite una serie di diagrammi e di esempi di utilizzo, le scelte compiute in fase di modellazione e le modalità di utilizzo attese.
 </span>
 
 <h3 id="examples" class="list">Diagrammi</h3>
@@ -21,9 +21,9 @@ Un [uiote:ChargingService](http://www.w3id.org/urban-iot/electric#ChargingServic
 <p align="center"><img src="img/uiote-operators.png" alt="Operators" height="500"></p>
 
 <span class="markdown">
- L'offerta per il modulo di Electric Mobility è rappresentata da [uiote:ChargeServiceOffer](http://www.w3id.org/urban-iot/electric#ChargeServiceOffer) come sottoclasse di  [schema:Offer](http://schema.org/Offer), dalla quale eredita la descrizione in termini di identificativo, nome, url, prezzo in qualità di fixedAmount descritto in [Core](http://www.w3id.org/urban-iot/core/1.0.0), la valuta, e le condizioni. Un'offerta per la ricarica può inoltre essere avere dei valori più specifici che la determinano, come prezzi al minuto di ricarica, al mese di ricarica, per kWh ricaricato o per minuto di parcheggio (prezzo di parcheggio esclusa la ricarica).
+ L'offerta per il modulo di Electric Mobility è rappresentata da [uiote:ChargingServiceOffer](http://www.w3id.org/urban-iot/electric#ChargingServiceOffer) come sottoclasse di  [schema:Offer](http://schema.org/Offer), dalla quale eredita la descrizione in termini di identificativo, nome, url, prezzo in qualità di fixedAmount descritto in [Core](http://www.w3id.org/urban-iot/core), la valuta, e le condizioni. Un'offerta per la ricarica può inoltre essere avere dei valori più specifici che la determinano, come prezzi al minuto di ricarica, al mese di ricarica, per kWh ricaricato o per minuto di parcheggio (prezzo di parcheggio esclusa la ricarica).
 
- Ad un'offerta ([uiote:ChargeServiceOffer](http://www.w3id.org/urban-iot/electric#ChargeServiceOffer)) viene anche associato un servizio di ricarica ([uiote:ChargingService](http://www.w3id.org/urban-iot/electric#ChargingService)) tramite [schema:itemOffered](http://schema.org/itemOffered).
+ Ad un'offerta ([uiote:ChargingServiceOffer](http://www.w3id.org/urban-iot/electric#ChargingServiceOffer)) viene anche associato un servizio di ricarica ([uiote:ChargingService](http://www.w3id.org/urban-iot/electric#ChargingService)) tramite [schema:itemOffered](http://schema.org/itemOffered). Una ([uiote:ChargingServiceOffer](http://www.w3id.org/urban-iot/electric#ChargingServiceOffer)) può essere associata anche direttamente ad una  ([uiote:ChargingStation](http://www.w3id.org/urban-iot/electric#ChargingStation)) e rappresenta un'offerta di cui è possibile usufruire direttamente alla colonnina per una ricarica come utente occasionale non registrato ad un servizio.
 </span>
 
 <p align="center"><img src="img/uiote-offer.png" alt="Offer" height="350"></p>
@@ -53,7 +53,7 @@ Per ogni colonnina ([uiote:EVSE](http://www.w3id.org/urban-iot/electric#EVSE)) �
 <p align="center"><img src="img/uiote-evse.png" alt="EVSE" height="500"></p>
 
 <span class="markdown">
-Infine si descrive anche la sessione di ricarica [uiote:ChargingSession](http://www.w3id.org/urban-iot/electric#CharginSession), che è una [uiot:UsageSession](http://www.w3id.org/urban-iot/core#UsageSession), dalla quale eredita anche il booleano [uiot:reservationUsed](http://www.w3id.org/urban-iot/core#reservationUsed), che specifica inoltre le seguenti informazioni: un identificativo anonimo ([dct:identifier](http://purl.org/dc/terms/identifier)), il booleano che descrive se l'utente che effettua la sessione sia registrato o meno ([uiote:registeredUser](http://www.w3id.org/urban-iot/electric#registeredUser)), l'energia totale erogata ([uiote:totalEnergy](http://www.w3id.org/urban-iot/electric#totalEnergy)), la durata della sessione di ricarica ([uiote:chargingSessionDuration](http://www.w3id.org/urban-iot/electric#chargingSessionDuration)) e la ricarica espressa in minuti ([uiote:rechargeTimeMin](http://www.w3id.org/urban-iot/electric#rechargeTimeMin)).
+Infine si descrive anche la sessione di ricarica [uiote:ChargingSession](http://www.w3id.org/urban-iot/electric#CharginSession), che è una [uiot:UsageSession](http://www.w3id.org/urban-iot/core#UsageSession), dalla quale eredita anche il booleano [uiot:reservationUsed](http://www.w3id.org/urban-iot/core#reservationUsed), che specifica inoltre le seguenti informazioni: un identificativo anonimo ([dct:identifier](http://purl.org/dc/terms/identifier)), il booleano che descrive se l'utente che effettua la sessione sia registrato o meno ([uiote:registeredUser](http://www.w3id.org/urban-iot/electric#registeredUser)), l'energia totale erogata in kWh ([uiote:totalEnergy](http://www.w3id.org/urban-iot/electric#totalEnergy)), la durata della sessione di ricarica ([uiote:chargingSessionDuration](http://www.w3id.org/urban-iot/electric#chargingSessionDuration)) e il tempo di ricarica effettivo espresso in minuti ([uiote:rechargeTimeMin](http://www.w3id.org/urban-iot/electric#rechargeTimeMin)).
 
 Una sessione di ricarica ([uiote:ChargingSession](http://www.w3id.org/urban-iot/electric#CharginSession)) è inoltre associata al suo operatore del punto di ricaricache effettua l'erogazione ([uiote:ChargePointOperator](http://www.w3id.org/urban-iot/electric#ChargePointOperator)), ad un servizio di ricarica che la abilita ([uiote:ChargingService](http://www.w3id.org/urban-iot/electric#ChargingService)), ad un'offerta dedicata ([uiote:ChargingServiceOffer](http://www.w3id.org/urban-iot/electric#CharginServiceOffer)) tramite la proprietà [uiot:offerAssociated](http://www.w3id.org/urban-iot/core#OfferAssociated), ad un utente che esegue la ricarica ([uiot:ServicePrivateUser](http://www.w3id.org/urban-iot/core#ServicePrivateUser)), ad un [uiote:EVSE](http://www.w3id.org/urban-iot/electric#EVSE), ad un connettore ([uiote:Connector](http://www.w3id.org/urban-iot/electric#Connector)) che viene utilizzato durante la ricarica e ad una stazione di ricarica ([uiote:ChargingStation](http://www.w3id.org/urban-iot/electric#CharginStation)).
 </span>
@@ -84,17 +84,159 @@ Una sessione di ricarica ([uiote:ChargingSession](http://www.w3id.org/urban-iot/
     "dct": "http://purl.org/dc/terms/",
     "sosa": "http://www.w3.org/ns/sosa/",
     "geosparql" : "http://www.opengis.net/ont/geosparql#",
-    "geo" : "http://www.w3.org/2003/01/geo/wgs84_pos#",
-    "mv" : "http://schema.mobivoc.org/#"
+    "geo" : "http://www.w3.org/2003/01/geo/wgs84_pos#"
   }
 }
 ```
-Il seguente esempio descrive una sessione di utilizzo di una risorsa ([uiot:UsageSession](http://www.w3id.org/urban-iot/core#UsageSession)) resa disponibile da un servizio ([schema:Service](http://schema.org/Service)).
+Il seguente esempio descrive un fornitore di servizi di Electric Mobility che svolge sia il ruolo di [uiote:ChargePointOperator](http://www.w3id.org/urban-iot/electric#ChargePointOperator) in quanto opera una rete di [uiote:ChargingStation](http://www.w3id.org/urban-iot/electric#ChargingStation), sia quello di [uiote:eMobilityServiceProvider](http://www.w3id.org/urban-iot/electric#eMobilityServiceProvider) rendendo disponibile agli utenti un servizio di ricarica ([uiote:ChargingService](http://www.w3id.org/urban-iot/electric#ChargingService)) su una rete di colonnine. Nell'esempio viene mostrato il caso in cui le stazioni di ricarica offerte dal servizio siano maggiori di quelle operate direttamente dal fornitore.
 ```
 {
   "@context": "urban-iot-context.jsonld",
-  "@id": "http://www.example.com/sessions/session0034234269",
-  "@type": "uiot:UsageSession",
+  "@id": "http://www.example.com/org/ElectricMilanoProvider",
+  "@type": ["uiote:ChargePointOperator", "uiote:eMobilityServiceProvider"],
+  "schema:name": "Electric Milano",
+  "uiote:providesChargingService": {
+    "@id": "http://www.example.com/service/ElectricMilanoChargingService",
+    "schema:name": "Electric Milano Charging Service",
+    "schema:description": [{
+      "@value":"Servizio Electric Milano di accesso alla ricarica per veicoli elettrici.",
+      "@language": "it"
+    },{
+    "@value":"Electric Milano charging service for electric vehicles.",
+    "@language": "en"
+    }],
+    "schema:areaServed": {
+      "@id": "http://dbpedia.org/page/Milan"
+    },
+    "uiote:makesStationAvailable": [{
+    "@id": "http://www.example.com/charging-station/ChargingStation7"
+    },{
+    "@id": "http://www.example.com/charging-station/ChargingStation8"
+    },{
+    "@id": "http://www.example.com/charging-station/ChargingStation9"
+    }],
+    "schema:offers": {
+      "@id": "http://www.example.com/charging-service-offer/ElectricMilanoBase",
+      "@type": "uiote:ChargingServiceOffer",
+      "schema:name": "Base Electric Milano",
+      "schema:priceCurrency": "EUR",
+      "uiote:pricePerKwhCharge": {
+        "@value" : "0.40",
+        "@type": "xsd:double"
+      },
+      "uiote:pricePerMinuteParking": {
+        "@value" : "0.02",
+        "@type": "xsd:double"
+      }
+    }
+  },
+  "uiote:operates": [{
+    "@id": "http://www.example.com/charging-station/ChargingStation7"
+  },{
+    "@id": "http://www.example.com/charging-station/ChargingStation8"
+  }]
+}
+```
+Il seguente esempio descrive una stazione di ricarica ([uiote:ChargingStation](http://www.w3id.org/urban-iot/electric#ChargingStation)) operata dall'operatore descritto nell'esempio precedente ([http://www.example.com/org/ElectricMilanoProvider](http://www.example.com/org/ElectricMilanoProvider)).
+```
+{
+  "@context": "urban-iot-context.jsonld",
+  "@id": "http://www.example.com/charging-station/ChargingStation7",
+  "@type": ["uiote:ChargingStation"],
+  "dct:identifier": "cs7",
+  "schema:name": "Charging Station Electric Milano Stazione Centrale",
+  "uiot:includedInMobilityStation": {
+      "@id": "http://www.example.com/mobility-station/MobilityStation13"
+  },
+  "uiote:operatedBy": {
+    "@id": "http://www.example.com/org/ElectricMilanoProvider"
+  },
+  "uiote:hasChargingServiceOffer": {
+    "@id": "http://www.example.com/charging-service-offer/ElectricMilanoBase"
+  },
+  "locn:location": {
+    "@type": "dct:Location",
+    "locn:address" : {
+      "@type": "locn:Address",
+      "locn:fullAddress": "Piazza Duca d'Aosta, 1, 20124 Milano MI" 
+    }
+  },
+  "uiote:isPrivate": false,
+  "uiote:chargingDuringClosure": true,
+  "uiote:renewableSources": true,
+  "schema:image": {
+    "@id": "http://www.example.com/charging-station/cs7image.png"
+  },
+  "uiote:hasFacilityNearBy": {
+    "@id": "http://dbpedia.org/page/Stazione_di_Milano_Centrale"
+  },
+  "uiote:hasEVSE": [{
+    "@id": "http://www.example.com/charging-station/EVSE7-1"
+  },{
+    "@id": "http://www.example.com/charging-station/EVSE7-2"
+  }]
+}
+```
+Il seguente esempio descrive una colonnina di ricarica ([uiote:EVSE](http://www.w3id.org/urban-iot/electric#EVSE)) posizionata nella stazione di ricarica descritta nell'esempio precedente ([http://www.example.com/charging-station/ChargingStation7](http://www.example.com/charging-station/ChargingStation7)).
+```
+{
+  "@context": "urban-iot-context.jsonld",
+  "@id": "http://www.example.com/charging-station/EVSE7-1",
+  "@type": "uiote:EVSE",
+  "uiote:isEVSEof": {
+    "@id": "http://www.example.com/charging-station/ChargingStation7"
+  },
+  "dct:identifier": "EVSE7-1",
+  "uiote:serialNumber": "0001-5245-0007",
+  "uiote:floorLevel": 0,
+  "uiote:hasParkingRestriction": {
+    "@id": "el-kos:parking-restriction#TimeLimited"
+  },
+  "uiote:hasChargeAccessMethod": [{
+    "@id": "el-kos:charge-access-method#RemotePayment"
+  },{
+    "@id": "el-kos:charge-access-method#DirectPaymentTerminal"
+  }],
+  "uiote:hasEVSEChargeCategory": {
+    "@id": "el-kos:EVSE-charge-category#Quick"
+  },
+  "uiote:hasConnector": {
+    "@id": "http://www.example.com/charging-station/Connector7-1-1",
+    "@type": "uiote:Connector",
+    "uiote:providesCable": false,
+    "uiote:hasStandard": {
+      "@id": "http://schema.mobivoc.org/#Mennekes_Type_2"
+    },
+    "uiote:maxAmperageInA":64,
+    "uiote:maxPowerInKW":22,
+    "uiote:hasPowerSupply": {
+      "@id": "el-kos:power-supply#AC"
+    }
+  }
+}
+
+```
+Il seguente esempio descrive una sessione di ricarica ([uiote:ChargingSession](http://www.w3id.org/urban-iot/electric#ChargingSession) occasionale, ovvero effettuata da un utente non registrato con pagamento direttamente sulla colonnina. La sessione di ricarica è effettuata utilizzando la colonnina dell'esempio precedente ([http://www.example.com/charging-station/EVSE7-1](http://www.example.com/charging-station/EVSE7-1)) .
+```
+{
+  "@context": "urban-iot-context.jsonld",
+  "@id": "http://www.example.com/charging/session0034234243",
+  "@type": "uiote:ChargingSession",
+  "dct:identifier": "session0034234243",
+  "uiote:sessionOperatedBy": {
+    "@id": "http://www.example.com/org/ElectricMilanoProvider"
+  },
+  "uiote:usesChargingStation": {
+    "@id": "http://www.example.com/charging-station/ChargingStation7"
+  },
+  "uiote:usedEVSE": {
+    "@id": "http://www.example.com/charging-station/EVSE7-1"
+  },
+  "uiote:usedConnector": {
+    "@id": "http://www.example.com/charging-station/Connector7-1-1"
+  },
+  "uiot:reservationUsed": false,
+  "uiot:registeredUser": false,
   "schema:startDate": {
     "@value" : "2020-08-01T10:20:15",
     "@type": "xsd:dateTime"
@@ -103,25 +245,49 @@ Il seguente esempio descrive una sessione di utilizzo di una risorsa ([uiot:Usag
     "@value" : "2020-08-01T11:05:42",
     "@type": "xsd:dateTime"
   },
-  "schema:duration": {
+  "uiote:chargingSessionDuration": {
     "@value" : "PT45M27S",
     "@type": "xsd:duration"
   },
-  "uiot:reservationUsed": true,
-  "uiot:usesResource": {
-    "@id": "http://www.example.com/resources/r118"
-  },
-  "uiot:sessionEnabledBy": {
-    "@id": "http://www.example.com/service/BikeMilano"
-  },
-  "uiot:sessionPerformedBy": {
-    "@id": "http://www.example.com/users/U89343984"
-  },
-  "uiot:associatedBusiness": {
-    "@id": "http://www.example.com/users/B115"
+  "uiote:rechargeTimeMinutes": 34,
+  "uiote:totalEnergy": {
+    "@value" : "11.45",
+    "@type": "xsd:double"
   }
 }
 ```
+Il seguente esempio descrive i record di due colonnine di Ricarica [uiote:EVSERecord](http://www.w3id.org/urban-iot/electric#EVSERecord) relativi alle EVSE nella stazione di ricarica descritta in un esempio precedente ([http://www.example.com/charging-station/ChargingStation7](http://www.example.com/charging-station/ChargingStation7)).
+```
+{
+  "@context": "urban-iot-context.jsonld",
+  "@id": "http://www.example.com/charging-station/ChargingStation7",
+  "@type": "uiote:ChargingStation",
+  "uiote:hasEVSE" : [{
+    "@id": "http://www.example.com/charging-station/EVSE7-1",
+    "uiot:latestRecord": {
+      "@type": "uiote:EVSERecord",
+      "uiot:recordTimestamp": {
+        "@value": "2020-08-01T11:00:32",
+        "@type": "xsd:dateTime"
+      }, 
+      "uiote:EVSEState": {
+        "@id": "el-kos:EVSE-state#InCharge"
+      }
+    }
+  }, {
+    "@id": "http://www.example.com/charging-station/EVSE7-2",
+    "uiot:latestRecord": {
+      "@type": "uiote:EVSERecord",
+      "uiot:recordTimestamp": {
+        "@value": "2020-08-01T11:00:32",
+        "@type": "xsd:dateTime"
+      }, 
+      "uiote:EVSEState": {
+        "@id": "el-kos:EVSE-state#Available"
+      }
+    }
+  }]
+}
+```
 </span>
-
 </html>
