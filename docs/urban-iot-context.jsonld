@@ -1,0 +1,23 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "uiot": "http://www.w3id.org/urban-iot/core#",
+    "uiots": "http://www.w3id.org/urban-iot/sharing#",
+    "uiote": "http://www.w3id.org/urban-iot/electric#",
+    "vh-kos": "http://www.w3id.org/urban-iot/kos/vehicle/",
+    "sh-kos": "http://www.w3id.org/urban-iot/kos/sharing/",
+    "el-kos": "http://www.w3id.org/urban-iot/kos/electric/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema": "http://schema.org/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "terms": "http://purl.org/dc/terms/",
+    "legal": "http://www.w3.org/ns/legal#",
+    "time": "http://www.w3.org/2006/time#",
+    "locn": "http://www.w3.org/ns/locn#",
+    "dct": "http://purl.org/dc/terms/",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "geosparql": "http://www.opengis.net/ont/geosparql#",
+    "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+  }
+}

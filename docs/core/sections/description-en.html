@@ -1,6 +1,213 @@
 <html>
 <h2 id="desc" class="list">Urban IoT Ontologies - Core Module: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
-This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.</span>
+Questa sezione descrive le classi e le properietà del modulo Core andando a dettagliare, tramite una serie di diagrammi e di esempi di utilizzo, le scelte compiute in fase di modellazione e le modalità di utilizzo attese.
+</span>
 
+<h3 id="examples" class="list">Diagrammi</h3>
+
+<span class="markdown">
+I diagrammi contenuti in questa sezione sono modellati usando la notazione riportata di seguito.
+</span>
+
+<p align="center"><img src="img/uiot-legend.png" alt="Legend" height="250"></p>
+
+<span class="markdown">
+I concetti principali del modulo Core sono stati modellati estendendo il vocabolario [schema.org](http://schema.org). Un fornitore di servizi può essere modellato come una [schema:Organization](http://schema.org/Organization) che eroga uno o più [schema:Service](http://schema.org/Service). Il servizio offerto può mettere a disposizione degli utenti delle [uiot:ServiceResource](http://www.w3id.org/urban-iot/core#ServiceResource) (es. apparati IoT urbani) che possono essere utilizzate tramite il servizio in sessioni di utilizzo [uiot:UsageSession](http://www.w3id.org/urban-iot/core#UsageSession). La tariffa di utilizzo del servizio può essere modellata come una [schema:Offer](http://schema.org/Offer); tutte le tariffe possono essere associate al servizio che le rende disponibili, inoltre, la specifica tariffa applicata ad una sessione di utilizzo può essere direttamente associata a quest'ultima.
+
+Gli utenti del servizio sono modellati come [uiot:ServiceUser](http://www.w3id.org/urban-iot/core#ServiceUser) e possono essere [uiot:ServicePrivateUser](http://www.w3id.org/urban-iot/core#ServicePrivateUser), ovvero persone fisiche (sottoclasse di [schema:Person](http://schema.org/Person)) iscritte al servizio, oppure [uiot:ServiceBusinessUser](http://www.w3id.org/urban-iot/core#ServiceBusinessUser) ovvero entità legali (sottoclasse di [legal:LegalEntity](http://www.w3.org/ns/legal#LegalEntity)) iscritte al servizio con un contratto di business. Solo un [uiot:ServicePrivateUser](http://www.w3id.org/urban-iot/core#ServicePrivateUser) può effettuare una [uiot:UsageSession](http://www.w3id.org/urban-iot/core#UsageSession). Un [uiot:ServiceBusinessUser](http://www.w3id.org/urban-iot/core#ServiceBusinessUser) può abilitare una lista di [uiot:ServicePrivateUser](http://www.w3id.org/urban-iot/core#ServicePrivateUser) all'utilizzo del servizio ed essere associato ad una sessione di utilizzo, ma è necessario specificare la persona fisica che ha utilizzato il servizio per mezzo dello specifico contratto di business.
+</span>
+
+<p align="center"><img src="img/uiot-core.png" alt="Core" height="600"></p>
+
+<span class="markdown">
+I seguenti due diagrammi forniscono una descrizione dettagliata del precedente andando a specificare ulteriori proprietà che sono state definite o riutilizzate per descrivere i concetti presentati.
+
+Una [uiot:UsageSession](http://www.w3id.org/urban-iot/core#UsageSession) è uno [schema:Event](http://schema.org/Event) da cui eredita la descrizione in termini di istante di inizio, istante di fine e durata. Una sessione di utilizzo può inoltre essere associata ad un valore booleano per la proprietà [uiot:reservationUsed](http://www.w3id.org/urban-iot/core#reservationUsed) che indica se la sessione è stata prenotata in anticipo dall'utente.
+
+Un [uiot:ServiceUser](http://www.w3id.org/urban-iot/core#ServiceUser) è modellato da un identificativo anonimo ([dct:identifier](http://purl.org/dc/terms/identifier)), dalla data di registrazione al servizio ([uiot:registrationDate](http://www.w3id.org/urban-iot/core#registrationDate)) ed eventualmente dalla data in cui ha cancellato la sua iscrizione al servizio ([uiot:deregistrationDate](http://www.w3id.org/urban-iot/core#deregistrationDate)).
+Un [uiot:ServiceUser](http://www.w3id.org/urban-iot/core#ServiceUser) è associato allo [schema:Service](http://schema.org/Service) a cui è registrato tramite la proprietà [uiot:registeredTo](http://www.w3id.org/urban-iot/core#registeredTo), ma può essere associato ad altri servizi per i quali la stessa registrazione ne abilita l'utilizzo (es. servizio di car sharing attivo in più città) nel momento in cui effettua almeno una [uiot:UsageSession](http://www.w3id.org/urban-iot/core#UsageSession) per quel servizio.
+La modellazione proposta per i [uiot:ServiceUser](http://www.w3id.org/urban-iot/core#ServiceUser) è ridotta in quanto spesso le norme di protezione dati non permettono la rappresentazione delle informazioni personali. Tuttavia le classi [schema:Person](http://schema.org/Person) e [legal:LegalEntity](http://www.w3.org/ns/legal#LegalEntity) estese da [uiot:ServicePrivateUser](http://www.w3id.org/urban-iot/core#ServicePrivateUser) e [uiot:ServiceBusinessUser](http://www.w3id.org/urban-iot/core#ServiceBusinessUser) permettono la modellazione di ulteriori informazioni rispetto a quelle qui indicate. Le proprietà presentate nel diagramma modellano informazioni socio-demografiche che sono state giudicate rilevanti per analisi sull'utilizzo del servizio da parte degli esperti di dominio.
+Un [uiot:ServicePrivateUser](http://www.w3id.org/urban-iot/core#ServicePrivateUser) è descritto tramite genere ([schema:gender](http://schema.org/gender)), anno di nascita ([uiot:birthYear](http://www.w3id.org/urban-iot/core#birthYear)) e indirizzo ([locn:Address](http://www.w3.org/ns/locn#Address)) in termini di città ([locn:postName](http://www.w3.org/ns/locn#postName)) e codice postale ([locn:postCode](http://www.w3.org/ns/locn#postCode)). Un [uiot:ServiceBusinessUser](http://www.w3id.org/urban-iot/core#ServiceBusinessUser) è descritto dall'indirizzo della sede operativa in termini di città e codice postale. L'utilizzo del vocabolario Core può essere declinato secondo i profili nazionali, per esempio un indirizzo in Italia può essere descritto secondo il [profilo italiano](<https://w3id.org/italia/onto/CLV/>) allineato all'ontologia `locn:`.
+</span>
+
+<p align="center"><img src="img/uiot-core-xl.png" alt="Core Extended" height="700"></p>
+
+<span class="markdown">
+Un servizio che opera nell'area urbana è modellato come uno [schema:Service](http://schema.org/Service) con le seguenti proprietà:
+- identificativo, nome, descrizione, url e fuso orario,
+- la [schema:Organization](http://schema.org/Organization) che eroga il servizio, 
+- lo [schema:Place](http://schema.org/Place) che rappresenta l'area di attività del servizio, 
+- la definizione degli orari di attività tramite [schema:OpeningHoursSpecification](http://schema.org/OpeningHoursSpecification), 
+- i canali disponibili per accedere al servizio [schema:ServiceChannel](http://schema.org/ServiceChannel) che possono includere applicazioni o siti web,
+- le tariffe ([schema:Offer](http://schema.org/Offer)) con cui è possibile usufruire del servizio.
+
+Un operatore che eroga un servizio è modellato come una [schema:Organization](http://schema.org/Organization) descritta tramite identificativo, nome, nome legale, url, furo orario e punti di contatto ([schema:ContactPoint](http://schema.org/ContactPoint)).
+
+Una tariffa del servizio è modellata tramite una ([schema:Offer](http://schema.org/Offer)) descritta tramite identificativo, nome, url, prezzo, valuta del prezzo e condizioni di applicazione (tipologia di utenti a cui è rivolta, come viene applicato il prezzo, ecc.). L'ontologia definisce la proprietà ([uiot:fixedAmount](http://www.w3id.org/urban-iot/core#fixedAmount)) per permettere di indicare un costo fisso dell'offerta.
+</span>
+
+<p align="center"><img src="img/uiot-service.png" alt="Service" height="450"></p>
+
+<span class="markdown">
+Per la modellazione di un apparato IoT urbano il modulo Core utilizza il pattern [SOSA](https://www.w3.org/TR/vocab-ssn/) definito nella relativa ontologia. Intuitivamente, un apparato IoT urbano può essere visto come un [sosa:Sensor](http://www.w3.org/ns/sosa/Sensor) (o un'aggregazione di sensori) che emette [sosa:Observation](http://www.w3.org/ns/sosa/Observation) che riportano il valore campionato di una serie di [sosa:Sensor](http://www.w3.org/ns/sosa/Sensor). Il seguente pattern garantisce estensibilità delle proprietà campionabili da un sensore, permettendo la definizione di diverse [sosa:Observation](http://www.w3.org/ns/sosa/Observation) associate al sensore. Una [sosa:Observation](http://www.w3.org/ns/sosa/Observation) può avere un valore semplice descritto da una data property ([sosa:hasSimpleResult](http://www.w3.org/ns/sosa/hasSimpleResult)) o un valore descritto tramite object property ([sosa:hasResult](http://www.w3.org/ns/sosa/hasResult)).
+
+Nel modulo Core viene definito [uiot:SensorRecord](http://www.w3id.org/urban-iot/core#SensorRecord) come aggregazione di dati ricevuti da un sensore nello stesso istante. In particolare, un [uiot:SensorRecord](http://www.w3id.org/urban-iot/core#SensorRecord) può contenere una serie di [sosa:Observation](http://www.w3.org/ns/sosa/Observation). Un [sosa:Sensor](http://www.w3.org/ns/sosa/Sensor) è associato ai [uiot:SensorRecord](http://www.w3id.org/urban-iot/core#SensorRecord) che ha emesso, ed in particolare la proprietà [uiot:latestRecord](http://www.w3id.org/urban-iot/core#latestRecord) identifica l'ultimo record registrato.
+</span>
+
+<p align="center"><img src="img/uiot-sosa.png" alt="Sosa" height="300"></p>
+
+<span class="markdown">
+Il modulo Core modella anche una [uiot:MobilityStation](http://www.w3id.org/urban-iot/core#MobilityStation) come luogo in cui sono aggregati vari servizi per la mobilità cittadina e apparati IoT urbani per l'erogazione/fruizione di alcuni servizi come per esempio stazioni per la sharing mobility (cfr. [uiots](http://www.w3id.org/urban-iot/sharing)) o stazioni di ricarica (cfr. [uiote](http://www.w3id.org/urban-iot/electric)).
+
+Una [uiot:MobilityStation](http://www.w3id.org/urban-iot/core#MobilityStation) è un luogo ([schema:Place](http://schema.org/Place)) descritto da una [dct:Location](http://purl.org/dc/terms/Location) che può essere definita da un'indirizzo ([locn:Address](http://www.w3.org/ns/locn#Address)) e/o una rappresentazione spaziale tramite geometria ([locn:Geometry](http://www.w3.org/ns/locn#Geometry)). [locn:Geometry](http://www.w3.org/ns/locn#Geometry) definisce il concetto che può essere serializzato in diversi formati come indicato nella [Core Location](http://www.w3.org/ns/locn) ontology, es. [GeoSPARQL](http://www.opengis.net/ont/geosparql). 
+
+Una [uiot:MobilityStation](http://www.w3id.org/urban-iot/core#MobilityStation) può essere modellata come un'aggregazione di [uiot:MobilityStation](http://www.w3id.org/urban-iot/core#MobilityStation) specifiche per un dato servizio tramite la proprietà [uiot:includedInMobilityStation](http://www.w3id.org/urban-iot/core#includedInMobilityStation).
+</span>
+
+<p align="center"><img src="img/uiot-mobility.png" alt="Mobility Station" height="300"></p>
+
+<h3 id="examples" class="list">Esempi di Utilizzo</h3>
+
+<span class="markdown">
+[JSON-LD](https://json-ld.org/) permette di annotare un documento JSON per rappresentare Linked Data. Gli esempi di utilizzo della suite di Ontologie per gli Apparati IoT Urbani sono forniti in questo formato per aiutare nella definizione di API annotate semanticamente, secondo il vocabolario definito, da parte dei fornitori di servizi. Gli esempi che verranno presentati assumono il seguente [urban-iot-context.jsonld](../urban-iot-context.jsonld). Tutti gli esempi possono essere modificati, visualizzati o convertiti in altri formati utilizzando il [JSON LD Playground](https://json-ld.org/playground) già inizializzato con il context urban-iot al seguente [link](https://tinyurl.com/yy3abvss). 
+```
+{
+  "@context": {
+    "@version": 1.1,
+    "uiot": "http://www.w3id.org/urban-iot/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema": "http://schema.org/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "terms": "http://purl.org/dc/terms/",
+    "legal": "http://www.w3.org/ns/legal#",
+    "time": "http://www.w3.org/2006/time#",
+    "locn": "http://www.w3.org/ns/locn#",
+    "dct": "http://purl.org/dc/terms/",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "geosparql": "http://www.opengis.net/ont/geosparql#",
+    "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+  }
+}
+```
+Il seguente esempio descrive una sessione di utilizzo di una risorsa ([uiot:UsageSession](http://www.w3id.org/urban-iot/core#UsageSession)) resa disponibile da un servizio ([schema:Service](http://schema.org/Service)).
+```
+{
+  "@context": "urban-iot-context.jsonld",
+  "@id": "http://www.example.com/sessions/session0034234269",
+  "@type": "uiot:UsageSession",
+  "schema:startDate": {
+    "@value" : "2020-08-01T10:20:15",
+    "@type": "xsd:dateTime"
+  },
+  "schema:endDate": {
+    "@value" : "2020-08-01T11:05:42",
+    "@type": "xsd:dateTime"
+  },
+  "schema:duration": {
+    "@value" : "PT45M27S",
+    "@type": "xsd:duration"
+  },
+  "uiot:reservationUsed": true,
+  "uiot:usesResource": {
+    "@id": "http://www.example.com/resources/r118"
+  },
+  "uiot:sessionEnabledBy": {
+    "@id": "http://www.example.com/service/BikeMilano"
+  },
+  "uiot:sessionPerformedBy": {
+    "@id": "http://www.example.com/users/U89343984"
+  },
+  "uiot:associatedBusiness": {
+    "@id": "http://www.example.com/users/B115"
+  }
+}
+```
+Il seguente esempio descrive un utente privato iscritto ad un servizio ([uiot:ServicePrivateUser](http://www.w3id.org/urban-iot/core#ServicePrivateUser)) e abilitato da un utente business ([uiot:ServiceBusinessUser](http://www.w3id.org/urban-iot/core#ServiceBusinessUser)).
+```
+{
+  "@context": "urban-iot-context.jsonld",
+  "@id": "http://www.example.com/users/U89343984",
+  "@type": "uiot:ServicePrivateUser",
+  "dct:identifier": "U89343984",
+  "uiot:birthYear": 1994,
+  "uiot:registrationDate": {
+    "@value" : "2010-05-29",
+    "@type": "xsd:date"
+  },
+  "uiot:userEnabledBy": {
+    "@id": "http://www.example.com/users/B115"
+  },
+  "uiot:registeredTo": {
+    "@id": "http://www.example.com/service/BikeMilano"
+  }
+}
+```
+Il seguente esempio descrive un apparato IoT ([sosa:Sensor](http://www.w3.org/ns/sosa/Sensor)) che è messo a disposizione degli utenti come risorsa in un servizio ([uiot:ServiceResource](http://www.w3id.org/urban-iot/core#ServiceResource)), e il suo ultimo record ([uiot:SensorRecord](http://www.w3id.org/urban-iot/core#SensorRecord)).
+```
+{
+  "@context": "urban-iot-context.jsonld",
+  "@id": "http://www.example.com/r118",
+  "@type": ["uiot:ServiceResource", "sosa:Sensor"],
+  "uiot:madeAvailableBy": {
+    "@id": "http://www.example.com/service/BikeMilano"
+  },
+  "uiot:latestRecord": {
+    "@type": "uiot:SensorRecord",
+    "uiot:recordTimestamp": {
+      "@value" : "2020-08-01T11:00:42",
+      "@type": "xsd:dateTime"
+    },
+    "uiot:containsObservation": [{
+      "@type": "sosa:Observation",
+      "sosa:observedProperty" : {
+        "@id": "http://www.example.com/properties/speedInKmPerH"
+      },
+      "sosa:hasSimpleResult" : 23
+    },{
+    "@type": "sosa:Observation",
+      "sosa:observedProperty" : {
+        "@id": "http://www.example.com/properties/location"
+      },
+      "sosa:hasResult" : {
+        "@type" : "geo:Point",
+        "geo:lat" : {
+          "@value" : "51.5",
+          "@type": "xsd:decimal"
+        },
+        "geo:long" : {
+          "@value" : "-0.12",
+          "@type": "xsd:decimal"
+        }
+      }
+    }]
+  }
+}
+```
+Il seguente esempio descrive una [uiot:MobilityStation](http://www.w3id.org/urban-iot/core#MobilityStation).
+```
+{
+  "@context": "urban-iot-context.jsonld",
+  "@id": "http://www.example.com/mobility-station/MobilityStation13",
+  "@type": "uiot:MobilityStation",
+  "dct:identifier": "MobilityStation13",
+  "schema:name": "Mobility Station Stazione Centrale",
+  "locn:location": {
+    "@type": "dct:Location",
+    "locn:geometry" : {
+      "@value": "POLYGON ((9.202862726524472 45.48577466479756, 
+        9.20265887863934 45.48560166220557, 9.203227506950498 45.48531959162287,
+         9.20343135483563 45.48549635601992, 9.202862726524472 45.48577466479756))",
+      "@type": "geosparql:wktLiteral"
+    },
+    "locn:address" : {
+      "@type": "locn:Address",
+      "locn:fullAddress": "Piazza Duca d'Aosta, 1, 20124 Milano MI" 
+    }
+  }
+}
+
+```
+</span>
 </html>

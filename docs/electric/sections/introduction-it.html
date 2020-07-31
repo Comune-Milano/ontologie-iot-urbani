@@ -1,24 +1,45 @@
-<html><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<html><h2 id="intro" class="list">Introduzione <span class="backlink"> torna a <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
-This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
+La suite di ontologie per gli Apparati IoT Urbani è stata sviluppata per supportare l'integrazione e la pubblicazione di dati provenienti da diversi fornitori di servizi che gesticono apparati IoT nell'area urbana. Le ontologie sono state sviluppate per il Comune di Milano (Italia), ma sono generiche e possono essere applicate a qualsiasi città.
+
+Il modulo Electric Mobility ([http://ww.w3id.org/urban-iot/electric]()) definisce classi e proprietà relative agli operatori di Electric Mobility, alle infrastrutture di ricarica e alle stazioni di ricarica come apparati IoT urbani, agli utenti che utilizzano il servizio e ai dati collezionati sul loro utilizzo. I concetti definiti all'interno del modulo Electric Mobility riutilizzano ed estendono il modulo Core ([http://ww.w3id.org/urban-iot/core]()) che è importato dall'ontologia.
+
+La modellazione del modulo di Electric Mobility è stata portata avanti con l'aiuto degli esperti di dominio del Comune di Milano, tenendo conto degli standard rilevanti nel settore, in particolare dell'Open Charge Point Interface protocol [OCPI](https://github.com/ocpi) e delle API in rete dei vari operatori. E' stato inoltre consultato il decreto pubblicato in materia [DECRETO LEGISLATIVO 16 dicembre 2016, n. 257](https://www.gazzettaufficiale.it/eli/id/2017/01/13/17G00005/sg). 
+
+Il modulo Electric Mobility è stato modellato riutilizzando in modo estensivo il vocabolario [schema.org](http://schema.org), estendendolo per supportate gli specifici requisiti dell'ambito di interesse. Il modulo riutilizza l'ontologia Sensor, Observation, Sample, and Actuator ([SOSA](https://www.w3.org/TR/vocab-ssn/)) per la modellazione degli apparati IoT e dei dati da loro raccolti. Inoltre, vengono riutilizzati i [Core Vocabularies](https://ec.europa.eu/isa2/solutions/core-vocabularies_en) definiti dal Semantic Interoperability Centre Europe (SEMIC.EU), [Dublin Core](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/), [Basic Geo (WGS84 lat/long)](https://www.w3.org/2003/01/geo/) Vocabulary, [GeoSPARQL](https://www.ogc.org/standards/geosparql) e per la modellazione delle tipologie di presa [Mobivoc](http://schema.mobivoc.org/#).
+
+Il modulo Electric Mobility è complementato dalla definizione di vocabolari SKOS utilizzati nell'ontologia:
+- Metodi di Accesso alla Ricarica [el-kos:charge-access-method](http://w3id.org/urban-iot/kos/electric/charge-access-method) 
+- Standard di Ricarica per Colonnine (EVSE) [el-kos:EVSE-charge-category](http://w3id.org/urban-iot/kos/electric/EVSE-charge-category) 
+- Stato delle Colonnine (EVSE) [el-kos:EVSE-state](http://w3id.org/urban-iot/kos/electric/EVSE-state) 
+- Restrizione di Parcheggio [el-kos:parking-restriction](http://w3id.org/urban-iot/kos/electric/parking-restriction) 
+- Tipo di Alimentazione [el-kos:power-supply](http://w3id.org/urban-iot/kos/electric/power-supply)  </span>
 <div id="namespacedeclarations">
-<h3 id="ns" class="list">Namespace declarations</h3>
+<h3 id="ns" class="list">Elenco Namespace</h3>
 <div id="ns" align="center">
 <table>
-<caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
+<caption> <a href="#ns"> Tabella 1</a>: Namespace utilizzati nel documento </caption>
 <tbody>
-<tr><td><b>uiote</b></td><td>&lt;http://www.w3id.org/urban-iot/electric&gt;</td></tr>
+<tr><td><b>uiote</b></td><td>&lt;http://www.w3id.org/urban-iot/uiote&gt;</td></tr>
+<tr><td><b>uiot</b></td><td>&lt;http://www.w3id.org/urban-iot/core&gt;</td></tr>
+<tr><td><b>kos</b></td><td>&lt;http://w3id.org/urban-iot/kos/;</td></tr>
+<tr><td><b>el-kos</b></td><td>&lt;http://w3id.org/urban-iot/kos/electric&gt;</td></tr>
+<tr><td><b>geo</b></td><td>&lt;http://www.w3.org/2003/01/geo/wgs84_pos&gt;</td></tr>
+<tr><td><b>geosparql</b></td><td>&lt;http://www.opengis.net/ont/geosparql&gt;</td></tr>
 <tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl&gt;</td></tr>
 <tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema&gt;</td></tr>
-<tr><td><b>schema-org</b></td><td>&lt;http://schema.org&gt;</td></tr>
+<tr><td><b>schema</b></td><td>&lt;http://schema.org&gt;</td></tr>
 <tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema&gt;</td></tr>
-<tr><td><b>urban-iot</b></td><td>&lt;http://www.w3id.org/urban-iot&gt;</td></tr>
-<tr><td><b>core</b></td><td>&lt;http://www.w3id.org/urban-iot/core&gt;</td></tr>
 <tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns&gt;</td></tr>
 <tr><td><b>terms</b></td><td>&lt;http://purl.org/dc/terms&gt;</td></tr>
+<tr><td><b>time</b></td><td>&lt;http://www.w3.org/2006/time&gt;</td></tr>
+<tr><td><b>locn</b></td><td>&lt;http://www.w3.org/ns/locn&gt;</td></tr>
 <tr><td><b>vann</b></td><td>&lt;http://purl.org/vocab/vann&gt;</td></tr>
 <tr><td><b>dc</b></td><td>&lt;http://purl.org/dc/elements/1.1&gt;</td></tr>
+<tr><td><b>dct</b></td><td>&lt;http://purl.org/dc/terms&gt;</td></tr>
 <tr><td><b>sosa</b></td><td>&lt;http://www.w3.org/ns/sosa&gt;</td></tr>
+<tr><td><b>mv</b></td><td>&lt;http://schema.mobivoc.org/#&gt;</td></tr>
+
 </tbody>
 </table>
 </div>

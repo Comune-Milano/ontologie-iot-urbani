@@ -1,6 +1,171 @@
 <html>
-<h2 id="desc" class="list">Ontologie per gli Apparati IoT Urbani - Modulo Sharing Mobility: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<h2 id="desc" class="list">Ontologie per gli Apparati IoT Urbani - Modulo Sharing Mobility: Descrizione <span class="backlink"> torna a <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
-This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.</span>
+Questa sezione descrive le classi e le properietà del modulo Sharing Mobility andando a dettagliare, tramite una serie di diagrammi e di esempi di utilizzo, le scelte compiute in fase di modellazione e le modalità di utilizzo attese.
+</span>
+
+<h3 id="examples" class="list">Diagrammi</h3>
+
+<span class="markdown">
+I diagrammi contenuti in questa sezione sono modellati usando la notazione riportata di seguito.
+</span>
+
+<p align="center"><img src="img/uiot-legend.png" alt="Legend" height="250"></p>
+
+<span class="markdown">
+I concetti principali del modulo Sharing Mobility sono stati modellati estendendo il modulo Core ([http://www.w3id.org/urban-iot/core](http://www.w3id.org/urban-iot/core)) importato nell'ontologia e specializzandone i concetti e le proprietà. Nel dominio considerato, un fornitore di servizi di Sharing Mobility può essere modellato come un [uiots:SharingMobilityProvider](http://www.w3id.org/urban-iot/sharing/SharingMobilityProvider) che eroga uno o più [uiots:SharingMobilityService](http://www.w3id.org/urban-iot/sharing/SharingMobilityService). Un servizio mette a disposizione degli utenti una serie di [uiots:SharingMobilityVehicle](http://www.w3id.org/urban-iot/sharing#SharingMobilityVehicle) che vanno a formare una rete di apparati IoT urbani sul suolo cittadino. I veicoli possono essere utilizzate tramite il servizio in sessioni di noleggio ([uiots:SharingMobilityTrip](http://www.w3id.org/urban-iot/sharing#SharingMobilityTrip)). La tariffa di utilizzo del servizio può essere modellata come una [uiots:SharingMobilityOffer](http://www.w3id.org/urban-iot/sharing#SharingMobilityOffer) che estende la modellazione di [schema:Offer](http://schema.org/Offer) permettendo di definire un costo fisso dell'offerta, e/o un costo per minuto di noleggio ([uiots:pricePerTripMinute](http://www.w3id.org/urban-iot/sharing#pricePerTripMinute)), e/o un costo per km percorso durante il noleggio ([uiots:pricePerTripKm](http://www.w3id.org/urban-iot/sharing#pricePerTripKm)).
+
+Gli utenti del servizio sono modellati come [uiot:ServiceUser](http://www.w3id.org/urban-iot/core#ServiceUser) definiti nel modulo Core. Un [uiot:ServicePrivateUser](http://www.w3id.org/urban-iot/core#ServicePrivateUser) è associato agli [uiots:SharingMobilityService](http://www.w3id.org/urban-iot/sharing/SharingMobilityService) che utilizza e agli [uiots:SharingMobilityTrip](http://www.w3id.org/urban-iot/sharing#SharingMobilityTrip) effettuati.
+
+Uno [uiots:SharingMobilityService](http://www.w3id.org/urban-iot/sharing/SharingMobilityService) può essere inoltre associato ad una o più [uiots:SharingStation](http://www.w3id.org/urban-iot/sharing/SharingStation) per il rilascio/prelievo dei veicoli. Una [uiots:SharingStation](http://www.w3id.org/urban-iot/sharing/SharingStation) può essere modellata a sua volta come un apparato IoT urbano che emette dati sullo stato della stazione.
+</span>
+
+<p align="center"><img src="img/uiots-service.png" alt="Service" height="550"></p>
+
+<span class="markdown">
+Un [uiots:SharingMobilityService](http://www.w3id.org/urban-iot/sharing/SharingMobilityService) e una [uiots:SharingStation](http://www.w3id.org/urban-iot/sharing/SharingStation) sono associate ad una [uiots:SharingMobilityCategory](http://www.w3id.org/urban-iot/sharing/SharingMobilityCategory) che identifica la tipologia di veicoli associati. Le istanze definite per [uiots:SharingMobilityCategory](http://www.w3id.org/urban-iot/sharing/SharingMobilityCategory) nell'ontologia sono: [uiots:CarSharing](http://www.w3id.org/urban-iot/sharing/CarSharing), [uiots:BicycleSharing](http://www.w3id.org/urban-iot/sharing/BicycleSharing), [uiots:MotorcycleSharing](http://www.w3id.org/urban-iot/sharing/MotorcycleSharing) e [uiots:MicroMobilitySharing](http://www.w3id.org/urban-iot/sharing/MicroMobilitySharing).
+
+Uno [uiots:SharingMobilityService](http://www.w3id.org/urban-iot/sharing/SharingMobilityService) può essere associato ad un valore booleano tramite la proprietà [uiots:allowsFreeFloating](http://www.w3id.org/urban-iot/sharing/allowsFreeFloating), se positivo indica che il servizio ammette il rilascio/prelievo dei veicoli in strada, se negativo indica che i veicoli possono essere presi/rilasciati solo all'interno di una [uiots:SharingStation](http://www.w3id.org/urban-iot/sharing/SharingStation) associata al servizio. 
+
+Un [uiots:SharingMobilityService](http://www.w3id.org/urban-iot/sharing/SharingMobilityService) è inoltre associato ad una serie di [geosparql:Feature](http://www.opengis.net/ont/geosparql#Feature), definibili tramite una serializzazione, che rappresentano una serie di informazioni spaziali associate al servizio. In particolare, sono modellate:
+- [uiots:ContractualOperationArea](http://www.w3id.org/urban-iot/sharing/ContractualOperationArea): confini di esercizio minimi definiti dall'autorità per i Servizi di Sharing Mobility (possono coincidere con i confini cittadini).
+- [uiots:OperationArea](http://www.w3id.org/urban-iot/sharing/OperationArea): l'area operativa del servizio definita dal fornitore del servizio in cui i veicoli possono circolare. L'area deve comprendere i confini di esercizio minimi definiti dall'autorità ma può essere maggiormente estesa.
+- [uiots:PickUpDropOffArea](http://www.w3id.org/urban-iot/sharing/PickUpDropOffArea): area che definisce una zona dove i veicoli possono essere presi/rilasciati. Queste zone devono essere definite se non coincidono con l'area operativa del servizio.
+- [uiots:ForbiddenDropOffArea](http://www.w3id.org/urban-iot/sharing/ForbiddenDropOffArea): area che definisce una zona dove i veicoli non posso essere rilasciati.
+- [uiots:PreferredPickUpArea](http://www.w3id.org/urban-iot/sharing/PreferredPickUpArea): area che definisce una zona dove è incoraggiato il prelievo dei veicoli da parte degli utenti del servizio.
+- [uiots:PreferredDropOffArea](http://www.w3id.org/urban-iot/sharing/PreferredDropOffArea): area che definisce una zona dove è incoraggiato il rilascio dei veicoli da parte degli utenti del servizio.
+</span>
+
+<p align="center"><img src="img/uiots-service-area.png" alt="Service Area" height="400"></p>
+
+<span class="markdown">
+Uno [uiots:SharingMobilityTrip](http://www.w3id.org/urban-iot/sharing#SharingMobilityTrip) rappresenta una [uiot:UsageSession](http://www.w3id.org/urban-iot/core#UsageSession) abilitata da uno [uiots:SharingMobilityService](http://www.w3id.org/urban-iot/sharing/SharingMobilityService) di uno [uiots:SharingMobilityVehicle](http://www.w3id.org/urban-iot/sharing#SharingMobilityVehicle) da parte di un [uiot:ServicePrivateUser](http://www.w3id.org/urban-iot/core#ServicePrivateUser).
+
+Nel caso di uno [uiots:SharingMobilityService](http://www.w3id.org/urban-iot/sharing/SharingMobilityService) che operi tramite [uiots:SharingStation](http://www.w3id.org/urban-iot/sharing/SharingStation), lo [uiots:SharingMobilityTrip](http://www.w3id.org/urban-iot/sharing#SharingMobilityTrip) può anche essere associato alla stazione di inizio e fine noleggio.
+
+Il tragitto associato ad un noleggio può essere rappresentato tramite due rappresentazioni: una serie ordinata di rilevazioni di posizione ([uiots:TripPoint](http://www.w3id.org/urban-iot/sharing/TripPoint)) o una rappresentazione spaziale dell'intera route ([uiots:TripRoute](http://www.w3id.org/urban-iot/sharing/TripRoute)). Nel caso in cui l'intero percorso non sia disponibile, è possibile associare il punto di inizio e fine noleggio utilizzando rispettivamente le proprietà [uiots:hasTripStartingPoint](http://www.w3id.org/urban-iot/sharing/hasTripStartingPoint) e [uiots:hasTripEndingPoint](http://www.w3id.org/urban-iot/sharing/hasTripEndingPoint).
+
+Lo [uiots:SharingMobilityService](http://www.w3id.org/urban-iot/sharing/SharingMobilityService) è inoltre descritto da una serie di dataproperties:
+- identificativo anoninimo ([dct:identifier](http://purl.org/dc/terms/identifier))
+- distanza coperta in kilometri ([uiots:coveredDistanceInKm](http://www.w3id.org/urban-iot/sharing#coveredDistanceInKm))
+- durata totale del noleggio ([uiots:tripDuration](http://www.w3id.org/urban-iot/sharing#tripDuration)), tempo in movimento in minuti ([uiots:movingTimeInMin](http://www.w3id.org/urban-iot/sharing#movingTimeInMin)), tempo in sosta in minuti ([uiots:parkingTimeInMin](http://www.w3id.org/urban-iot/sharing#parkingTimeInMin))
+- percentuale di carburante/carica ad inizio/fine noleggio ([uiots:fuelStartingPercentage](http://www.w3id.org/urban-iot/sharing#fuelStartingPercentage), [uiots:fuelEndingPercentage](http://www.w3id.org/urban-iot/sharing#fuelEndingPercentage), [uiots:chargeStartingPercentage](http://www.w3id.org/urban-iot/sharing#chargeStartingPercentage), [uiots:chargeEndingPercentage](http://www.w3id.org/urban-iot/sharing#chargeEndingPercentage))
+- valutazione delle condizioni del veicolo interiori/esteriori da parte dell'utente ([uiots:userFeedbackVehicleInterior](http://www.w3id.org/urban-iot/sharing#userFeedbackVehicleInterior), [uiots:userFeedbackVehicleExterior](http://www.w3id.org/urban-iot/sharing#userFeedbackVehicleExterior))
+</span>
+
+<p align="center"><img src="img/uiots-trip.png" alt="Trip" height="400"></p>
+
+<span class="markdown">
+Uno [uiots:SharingMobilityVehicle](http://www.w3id.org/urban-iot/sharing#SharingMobilityVehicle) è reso disponibile da uno [uiots:SharingMobilityService](http://www.w3id.org/urban-iot/sharing/SharingMobilityService) e può essere utilizzato per uno [uiots:SharingMobilityTrip](http://www.w3id.org/urban-iot/sharing#SharingMobilityTrip).
+
+Uno [uiots:SharingMobilityVehicle](http://www.w3id.org/urban-iot/sharing#SharingMobilityVehicle) è un [schema:Vehicle](http://schema.org/Vehicle) che è registrato all'interno della flotta di un servizio e dotato di dispositivi per comunicare e ricevere dati che lo rendono un apparato IoT urbano. Uno [uiots:SharingMobilityVehicle](http://www.w3id.org/urban-iot/sharing#SharingMobilityVehicle) è descritto da un identificativo anonimo, da un identificativo visibile sul dispositivo, dalla data di immisione in flotta e, eventualmente, dalla data di dismissione. Nel caso il veicolo sia associato ad uno [uiots:SharingMobilityService](http://www.w3id.org/urban-iot/sharing/SharingMobilityService) basato su [uiots:SharingStation](http://www.w3id.org/urban-iot/sharing/SharingStation) in cui vi sono differenti tipologie di stallo, il veicolo può essere associato alle instanze di [uiots:DockKind](http://www.w3id.org/urban-iot/sharing/DockKind) supportate dal veicolo.
+
+Uno [schema:Vehicle](http://schema.org/Vehicle) è modellato dalle proprietà di [schema:](http://schema.org/) che permettono di specificare la data di immatricolazione, il numero di telaio, la data di produzione, il numero di posti, la marca, il modello. La proprietà [uiots:longestRangeInKm](http://www.w3id.org/urban-iot/sharing#longestRangeInKm) permette di specificare la massima distanza teorica percorribile con un pieno di carburante/carica. La descrizione di uno [schema:Vehicle](http://schema.org/Vehicle) si completa tramite tre proprietà associate a vocabolari SKOS che modellano la tipologia di propulsione del veicolo ([vh-kos:propulsion-kind](http://w3id.org/urban-iot/kos/vehicle/propulsion-kind)), la categoria del veicolo secondo la classificazione internazionale ([vh-kos:vehicle-category](http://w3id.org/urban-iot/kos/vehicle/vehicle-category)) e lo standard europeo delle emissioni inquinanti del veicolo ([vh-kos:european-emission-standard](http://w3id.org/urban-iot/kos/vehicle/european-emission-standard)). Una [uiots:Car](http://www.w3id.org/urban-iot/sharing#Car), specializzazione di veicolo che rappresenta un'autovettura può essere descritta tramite un ulteriore SKOS che rappresenta la tipologia di alimentazione dell'autovettura [vh-kos:car-supply](http://w3id.org/urban-iot/kos/vehicle/car-supply).
+
+Uno [uiots:SharingMobilityVehicle](http://www.w3id.org/urban-iot/sharing#SharingMobilityVehicle) può essere una [uiots:SharingMobilityCar](http://www.w3id.org/urban-iot/sharing#SharingMobilityCar), una [uiots:SharingMobilityBicycle](http://www.w3id.org/urban-iot/sharing#SharingMobilityBicycle), un [uiots:SharingMobilityMotorcycle](http://www.w3id.org/urban-iot/sharing#SharingMobilityMotorcycle) o un [uiots:SharingMicroMobilityVehicle](http://www.w3id.org/urban-iot/sharing#SharingMicroMobilityVehicle). Attraverso relazioni di multiereditarietà è possibile andare a modellare la classe del veicolo più dettagliatamente.
+</span>
+
+<p align="center"><img src="img/uiots-vehicle.png" alt="Vehicle" height="600"></p>
+
+<span class="markdown">
+Uno [uiots:SharingMobilityVehicle](http://www.w3id.org/urban-iot/sharing#SharingMobilityVehicle) è un apparato IoT urbano che registra una serie di [uiots:SharingMobilityRecord](http://www.w3id.org/urban-iot/sharing#SharingMobilityRecord). 
+
+Uno [uiots:SharingMobilityRecord](http://www.w3id.org/urban-iot/sharing#SharingMobilityRecord) è un [uiot:SensorRecord](http://www.w3id.org/urban-iot/core#SensorRecord) e per questo associato al timestamp in cui è collezionato, al sensore che lo registra e a una serie di [sosa:Observation](http://www.w3.org/ns/sosa/Observation) contenute nel record. Le seguenti proprietà campionabili ([sosa:ObservableProperty](http://www.w3.org/ns/sosa/ObservableProperty)) da uno [uiots:SharingMobilityVehicle](http://www.w3id.org/urban-iot/sharing#SharingMobilityVehicle) sono definite nell'ontologia:
+- posizione del veicolo ([uiots:VehicleLocation](http://www.w3id.org/urban-iot/sharing#VehicleLocation)), per la quale la relativa [sosa:Observation](http://www.w3.org/ns/sosa/Observation) ha come risultato atteso un [geo:Point](http://www.w3.org/2003/01/geo/wgs84_pos#Point),
+- livello di carica ([uiots:ChargePercentage](http://www.w3id.org/urban-iot/sharing#ChargePercentage)), per la quale la relativa [sosa:Observation](http://www.w3.org/ns/sosa/Observation) ha risultato semplice atteso un [xsd:int](http://www.w3.org/2001/XMLSchema#int),
+- livello di carburante ([uiots:FuelPercentage](http://www.w3id.org/urban-iot/sharing#FuelPercentage)), per la quale la relativa [sosa:Observation](http://www.w3.org/ns/sosa/Observation) ha risultato semplice atteso un [xsd:int](http://www.w3.org/2001/XMLSchema#int).
+
+Uno [uiots:SharingMobilityRecord](http://www.w3id.org/urban-iot/sharing#SharingMobilityRecord) è inoltre caratterizzato da una rappresentazione dello stato dello [uiots:SharingMobilityVehicle](http://www.w3id.org/urban-iot/sharing#SharingMobilityVehicle), che può assumere un valore tra quelli definiti in [sh-kos:vehicle-state](http://w3id.org/urban-iot/kos/sharing/vehicle-state), ed una rappresentazione dell'ultimo evento registrato per il veicolo, dove i possibili eventi sono definiti in [sh-kos:vehicle-event](http://w3id.org/urban-iot/kos/sharing/vehicle-event). Uno [uiots:SharingMobilityRecord](http://www.w3id.org/urban-iot/sharing#SharingMobilityRecord) può anche essere associato alla [uiots:SharingStation](http://www.w3id.org/urban-iot/sharing#SharingStation) in cui si trova al momento della registrazione il veicolo.
+
+</span>
+
+<p align="center"><img src="img/uiots-vehicle-record.png" alt="Vehicle Record" height="300"></p>
+
+<span class="markdown">
+Una [uiots:SharingStation](http://www.w3id.org/urban-iot/sharing#SharingStation) può essere associata ad uno specifico [uiots:SharingService](http://www.w3id.org/urban-iot/sharing#SharingService) o essere messa a disposizione di differenti servizi appartenenti alla medesima [uiots:SharingServiceCategory](http://www.w3id.org/urban-iot/sharing#SharingServiceCategory).
+
+Una [uiots:SharingStation](http://www.w3id.org/urban-iot/sharing#SharingStation) è una [uiot:MobilityStation](http://www.w3id.org/urban-iot/core#MobilityStation) dedicata alla Sharing Mobility; da questa eredità le proprietà che la modellano e la possibilità di essere associata ad una [dct:Location](http://purl.org/dc/terms/Location) per rappresentarne l'indirizzo e la sua geometria.
+
+Una [uiots:SharingStation](http://www.w3id.org/urban-iot/sharing#SharingStation) può essere di due tipologie: una [uiots:PhysicalSharingStation](http://www.w3id.org/urban-iot/sharing/PhysicalSharingStation) se dotata di un'infrastruttura fisica (i.e. stalli) per il prelievo/rilascio di veicoli, oppure una [uiots:VirtualSharingStation](http://www.w3id.org/urban-iot/sharing/VirtualSharingStation).
+
+Una [uiots:PhysicalSharingStation](http://www.w3id.org/urban-iot/sharing/PhysicalSharingStation) è caratterizzata da i [uiots:Dock](http://www.w3id.org/urban-iot/sharing/Dock) che la compongono, il cui numero totale è rappresentabile tramite la proprietà [uiots:numberOfDocks](http://www.w3id.org/urban-iot/sharing/numberOfDocks). Un [uiots:Dock](http://www.w3id.org/urban-iot/sharing/Dock) può essere associato ad un tipologia di dock ([uiots:DockKind](http://www.w3id.org/urban-iot/sharing/DockKind)) se veicoli differenti utilizzano stalli differenti.
+
+Una [uiots:SharingStation](http://www.w3id.org/urban-iot/sharing#SharingStation) e gli eventuali [uiots:Dock](http://www.w3id.org/urban-iot/sharing/Dock) contenuti al suo interno posssono essere modellati come apparati IoT urbani che trasmettono dati.
+
+Una [uiots:SharingStation](http://www.w3id.org/urban-iot/sharing#SharingStation) registra uno [uiots:SharingStationRecord](http://www.w3id.org/urban-iot/sharing#SharingStationRecord) e può osservare le seguenti [sosa:ObservableProperty](http://www.w3.org/ns/sosa/ObservableProperty):
+- numero di veicoli disponibili ([uiots:AvailableVehicles](http://www.w3id.org/urban-iot/sharing#AvailableVehicles)), risultato semplice atteso [xsd:int](http://www.w3.org/2001/XMLSchema#int),
+- numero di veicoli danneggiati ([uiots:DamagedVehicles](http://www.w3id.org/urban-iot/sharing#DamagedVehicles)), risultato semplice atteso [xsd:int](http://www.w3.org/2001/XMLSchema#int),
+- numero di stalli disponibili ([uiots:AvailableDocks](http://www.w3id.org/urban-iot/sharing#AvailableDocks)), risultato semplice atteso [xsd:int](http://www.w3.org/2001/XMLSchema#int),
+- numero di stalli danneggiati ([uiots:DamagedDocks](http://www.w3id.org/urban-iot/sharing#DamagedDocks)), risultato semplice atteso [xsd:int](http://www.w3.org/2001/XMLSchema#int).
+
+Uno [uiots:SharingStationRecord](http://www.w3id.org/urban-iot/sharing#SharingStationRecord) può essere associato ai record degli stalli ([uiots:DockRecord](http://www.w3id.org/urban-iot/sharing#DockRecord)) nella stazione. Un [uiots:DockRecord](http://www.w3id.org/urban-iot/sharing#DockRecord) è caratterizzato da:
+- timestamp della rilevazione, 
+- stato dello stallo, i cui valori possibili sono definiti in [sh-kos:dock-state](http://w3id.org/urban-iot/kos/sharing/dock-state)
+Un [uiots:DockRecord](http://www.w3id.org/urban-iot/sharing#DockRecord) può anche essere associato allo Un [uiots:SharingMobilityVehicle](http://www.w3id.org/urban-iot/sharing#SharingMobilityVehicle) che si trova attualmente nello stallo.
+</span>
+
+<p align="center"><img src="img/uiots-station.png" alt="Station" height="500"></p>
+
+<h3 id="examples" class="list">Esempi di Utilizzo</h3>
+
+<span class="markdown">
+[JSON-LD](https://json-ld.org/) permette di annotare un documento JSON per rappresentare Linked Data. Gli esempi di utilizzo della suite di Ontologie per gli Apparati IoT Urbani sono forniti in questo formato per aiutare nella definizione di API annotate semanticamente, secondo il vocabolario definito, da parte dei fornitori di servizi. Gli esempi che verranno presentati assumono il seguente [urban-iot-context.jsonld](../urban-iot-context.jsonld). Tutti gli esempi possono essere modificati, visualizzati o convertiti in altri formati utilizzando il [JSON LD Playground](https://json-ld.org/playground) già inizializzato con il context utban-iot al seguente [link](https://tinyurl.com/yy3abvss). 
+```
+{
+  "@context": {
+    "@version": 1.1,
+    "uiot": "http://www.w3id.org/urban-iot/core#",
+    "uiots": "http://www.w3id.org/urban-iot/sharing#",
+    "vh-kos": "http://www.w3id.org/urban-iot/kos/vehicle/",
+    "sh-kos": "http://www.w3id.org/urban-iot/kos/sharing/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema": "http://schema.org/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "terms": "http://purl.org/dc/terms/",
+    "legal": "http://www.w3.org/ns/legal#",
+    "time": "http://www.w3.org/2006/time#",
+    "locn": "http://www.w3.org/ns/locn#",
+    "dct": "http://purl.org/dc/terms/",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "geosparql": "http://www.opengis.net/ont/geosparql#",
+    "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+  }
+}
+```
+Il seguente esempio descrive una sessione di utilizzo di una risorsa ([uiot:UsageSession](http://www.w3id.org/urban-iot/core#UsageSession)) resa disponibile da un servizio ([schema:Service](http://schema.org/Service)).
+```
+{
+  "@context": "urban-iot-context.jsonld",
+  "@id": "http://www.example.com/sessions/session0034234269",
+  "@type": "uiot:UsageSession",
+  "schema:startDate": {
+    "@value" : "2020-08-01T10:20:15",
+    "@type": "xsd:dateTime"
+  },
+  "schema:endDate": {
+    "@value" : "2020-08-01T11:05:42",
+    "@type": "xsd:dateTime"
+  },
+  "schema:duration": {
+    "@value" : "PT45M27S",
+    "@type": "xsd:duration"
+  },
+  "uiot:reservationUsed": true,
+  "uiot:usesResource": {
+    "@id": "http://www.example.com/resources/r118"
+  },
+  "uiot:sessionEnabledBy": {
+    "@id": "http://www.example.com/service/BikeMilano"
+  },
+  "uiot:sessionPerformedBy": {
+    "@id": "http://www.example.com/users/U89343984"
+  },
+  "uiot:associatedBusiness": {
+    "@id": "http://www.example.com/users/B115"
+  }
+}
+```
+</span>
 
 </html>

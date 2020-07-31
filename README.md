@@ -22,7 +22,7 @@ Le ontologie sono complementate da una serie di thesauri SKOS referenziati dai d
 Per gestire segnalazioni o proposte di miglioramento relative al vocabolario, consigliamo di seguire le guide fornite in [Gestione Issues](https://github.com/Comune-Milano/ontologie-iot-urbani/wiki/Gestione-Issue).
 
 ## Esempi
-Alcune [queries](https://github.com/Comune-Milano/ontologie-iot-urbani/blob/master/examples/queries.md) sono dettagliate nella repository per esemplificare l'utilizzo del vocabolario.
+Alcuni esempi di utilizzo sono dettagliati nella documentazione per esemplificare l'utilizzo del vocabolario.
 
 ## Changelog
 - _07-2020_: Rilascio v1.0.0 moduli Core, Sharing, Electric
