@@ -1,0 +1,416 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broader -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#hasTopConcept -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrower -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#narrower"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#topConceptOf -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#topConceptOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+
+    <Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+
+    <Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/vehicle/european-emission-standard -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <terms:contributor>Area Pianificazione e Monitoraggio (AMAT Milano)</terms:contributor>
+        <terms:contributor>Direzione Mobilità e Trasporti - Area Pianificazione e Programmazione Mobilità (Comune di Milano)</terms:contributor>
+        <terms:contributor>Direzione Sistemi Informativi ed Agenda Digitale - Area Gestione ed Integrazione Dati (Comune di Milano)</terms:contributor>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-31</terms:created>
+        <terms:creator>Ilaria Baroni (Cefriel)</terms:creator>
+        <terms:creator>Irene Celino (Cefriel)</terms:creator>
+        <terms:creator>Mario Scrocca (Cefriel)</terms:creator>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:publisher>Comune di Milano</terms:publisher>
+        <terms:rights>Copyright Comune di Milano, 2020</terms:rights>
+        <terms:title xml:lang="en">European Emission Standard</terms:title>
+        <terms:title xml:lang="it">Standard Europeo Emissioni</terms:title>
+        <skos:hasTopConcept rdf:resource="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro0"/>
+        <skos:hasTopConcept rdf:resource="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro1"/>
+        <skos:hasTopConcept rdf:resource="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro2"/>
+        <skos:hasTopConcept rdf:resource="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro3"/>
+        <skos:hasTopConcept rdf:resource="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro4"/>
+        <skos:hasTopConcept rdf:resource="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5"/>
+        <skos:hasTopConcept rdf:resource="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6"/>
+        <skos:prefLabel xml:lang="en">European Emission Standard</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Standard Europeo Emissione</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro0 -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro0">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="it">Standard attribuito a veicoli che non rientrano nei vincoli di Euro 1.</skos:definition>
+        <skos:definition xml:lang="en">Standard attributed to vehicles that are not subject to the Euro 1 restrictions.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard"/>
+        <skos:prefLabel xml:lang="en">Euro 0</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Euro 0</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro1 -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro1">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="en">European standard Euro 1 on pollution emissions from vehicles.</skos:definition>
+        <skos:definition xml:lang="it">Standard europeo Euro 1 sulle emissioni inquinanti dei veicoli.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard"/>
+        <skos:prefLabel xml:lang="en">Euro 1</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Euro 1</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro2 -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro2">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="en">European standard Euro 2 on pollution emissions from vehicles.</skos:definition>
+        <skos:definition xml:lang="it">Standard europeo Euro 2 sulle emissioni inquinanti dei veicoli.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard"/>
+        <skos:prefLabel xml:lang="en">Euro 2</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Euro 2</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro3 -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro3">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="en">European standard Euro 3 on pollution emissions from vehicles.</skos:definition>
+        <skos:definition xml:lang="it">Standard europeo Euro 3 sulle emissioni inquinanti dei veicoli.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard"/>
+        <skos:prefLabel xml:lang="en">Euro 3</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Euro 3</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro4 -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro4">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="en">European standard Euro 4 on pollution emissions from vehicles.</skos:definition>
+        <skos:definition xml:lang="it">Standard europeo Euro 4 sulle emissioni inquinanti dei veicoli.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard"/>
+        <skos:prefLabel xml:lang="en">Euro 4</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Euro 4</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5 -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="en">European standard Euro 5 on pollution emissions from vehicles.</skos:definition>
+        <skos:definition xml:lang="it">Standard europeo Euro 5 sulle emissioni inquinanti dei veicoli.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard"/>
+        <skos:narrower rdf:resource="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5a"/>
+        <skos:narrower rdf:resource="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5b"/>
+        <skos:prefLabel xml:lang="en">Euro 5</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Euro 5</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5a -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5a">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5"/>
+        <skos:definition xml:lang="en">European standard Euro 5a on pollution emissions from vehicles.</skos:definition>
+        <skos:definition xml:lang="it">Standard europeo Euro 5a sulle emissioni inquinanti dei veicoli.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard"/>
+        <skos:prefLabel xml:lang="en">Euro 5a</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Euro 5a</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5b -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5b">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro5"/>
+        <skos:definition xml:lang="en">European standard Euro 5b on pollution emissions from vehicles.</skos:definition>
+        <skos:definition xml:lang="it">Standard europeo Euro 5b sulle emissioni inquinanti dei veicoli.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard"/>
+        <skos:prefLabel xml:lang="en">Euro 5b</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Euro 5b</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6 -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="en">European standard Euro 6 on pollution emissions from vehicles.</skos:definition>
+        <skos:definition xml:lang="it">Standard europeo Euro 6 sulle emissioni inquinanti dei veicoli.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard"/>
+        <skos:narrower rdf:resource="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6b"/>
+        <skos:narrower rdf:resource="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6c"/>
+        <skos:narrower rdf:resource="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6d"/>
+        <skos:narrower rdf:resource="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6dTEMP"/>
+        <skos:prefLabel xml:lang="en">Euro 6</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Euro 6</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6b -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6b">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6"/>
+        <skos:definition xml:lang="en">European standard Euro 6b on pollution emissions from vehicles.</skos:definition>
+        <skos:definition xml:lang="it">Standard europeo Euro 6b sulle emissioni inquinanti dei veicoli.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard"/>
+        <skos:prefLabel xml:lang="en">Euro 6b</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Euro 6b</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6c -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6c">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6"/>
+        <skos:definition xml:lang="en">European standard Euro 6c on pollution emissions from vehicles.</skos:definition>
+        <skos:definition xml:lang="it">Standard europeo Euro 6c sulle emissioni inquinanti dei veicoli.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard"/>
+        <skos:prefLabel xml:lang="en">Euro 6c</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Euro 6c</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6d -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6d">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6"/>
+        <skos:definition xml:lang="en">European standard Euro 6d on pollution emissions from vehicles.</skos:definition>
+        <skos:definition xml:lang="it">Standard europeo Euro 6d sulle emissioni inquinanti dei veicoli.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard"/>
+        <skos:prefLabel xml:lang="en">Euro 6d</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Euro 6d</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6dTEMP -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6dTEMP">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard#Euro6"/>
+        <skos:definition xml:lang="en">European standard Euro 6d_TEMP on pollution emissions from vehicles.</skos:definition>
+        <skos:definition xml:lang="it">Standard europeo Euro 6d-TEMP sulle emissioni inquinanti dei veicoli.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/vehicle/european-emission-standard"/>
+        <skos:prefLabel xml:lang="en">Euro 6d-TEMP</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Euro 6d-TEMP</skos:prefLabel>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/ -->
+
+

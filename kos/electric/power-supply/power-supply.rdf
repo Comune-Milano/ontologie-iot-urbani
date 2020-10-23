@@ -1,0 +1,272 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broader -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#hasTopConcept -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrower -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#narrower"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#topConceptOf -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#topConceptOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+
+    <Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+
+    <Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/electric/power-supply -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/electric/power-supply">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <terms:contributor>Area Pianificazione e Monitoraggio (AMAT Milano)</terms:contributor>
+        <terms:contributor>Direzione Mobilità e Trasporti - Area Pianificazione e Programmazione Mobilità (Comune di Milano)</terms:contributor>
+        <terms:contributor>Direzione Sistemi Informativi ed Agenda Digitale - Area Gestione ed Integrazione Dati (Comune di Milano)</terms:contributor>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-31</terms:created>
+        <terms:creator>Ilaria Baroni (Cefriel)</terms:creator>
+        <terms:creator>Irene Celino (Cefriel)</terms:creator>
+        <terms:creator>Mario Scrocca (Cefriel)</terms:creator>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:publisher>Comune di Milano</terms:publisher>
+        <terms:rights>Copyright Comune di Milano, 2020</terms:rights>
+        <terms:title xml:lang="en">Electric Mobility Power Supply</terms:title>
+        <terms:title xml:lang="it">Tipo di alimentazione per la mobilità elettrica</terms:title>
+        <skos:hasTopConcept rdf:resource="http://w3id.org/urban-iot/kos/electric/power-supply#AC"/>
+        <skos:hasTopConcept rdf:resource="http://w3id.org/urban-iot/kos/electric/power-supply#DC"/>
+        <skos:prefLabel xml:lang="en">Power Supply</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Tipo di Alimentazione</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/electric/power-supply#AC -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/electric/power-supply#AC">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="en">AC power supply (alternate current).</skos:definition>
+        <skos:definition xml:lang="it">Alimentazione di tipo AC (corrente alternata).</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/electric/power-supply"/>
+        <skos:narrower rdf:resource="http://w3id.org/urban-iot/kos/electric/power-supply#SinglePhase"/>
+        <skos:narrower rdf:resource="http://w3id.org/urban-iot/kos/electric/power-supply#ThreePhase"/>
+        <skos:prefLabel xml:lang="en">AC</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">AC</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="http://w3id.org/urban-iot/kos/electric/power-supply"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/electric/power-supply#DC -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/electric/power-supply#DC">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="it">Alimentazione di tipo DC (corrente continua).</skos:definition>
+        <skos:definition xml:lang="en">DC power supply (direct current).</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/electric/power-supply"/>
+        <skos:prefLabel xml:lang="en">DC</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">DC</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="http://w3id.org/urban-iot/kos/electric/power-supply"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/electric/power-supply#SinglePhase -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/electric/power-supply#SinglePhase">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://w3id.org/urban-iot/kos/electric/power-supply#AC"/>
+        <skos:definition xml:lang="en">AC Single Phase power supply.</skos:definition>
+        <skos:definition xml:lang="it">Alimentazione di tipo AC monofase.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/electric/power-supply"/>
+        <skos:prefLabel xml:lang="it">AC monofase</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Single Phase</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/electric/power-supply#ThreePhase -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/electric/power-supply#ThreePhase">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://w3id.org/urban-iot/kos/electric/power-supply#AC"/>
+        <skos:definition xml:lang="en">AC Three Phase power supply.</skos:definition>
+        <skos:definition>Alimentazione di tipo AC trifase.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/electric/power-supply"/>
+        <skos:prefLabel xml:lang="it">AC trifase</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Three Phase</skos:prefLabel>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/ -->
+
+

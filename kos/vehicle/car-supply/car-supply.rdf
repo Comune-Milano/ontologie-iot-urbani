@@ -1,0 +1,352 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broader -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#hasTopConcept -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrower -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#narrower"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#topConceptOf -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#topConceptOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+
+    <Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+
+    <Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/vehicle/car-supply -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/vehicle/car-supply">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <terms:contributor>Area Pianificazione e Monitoraggio (AMAT Milano)</terms:contributor>
+        <terms:contributor>Direzione Mobilità e Trasporti - Area Pianificazione e Programmazione Mobilità (Comune di Milano)</terms:contributor>
+        <terms:contributor>Direzione Sistemi Informativi ed Agenda Digitale - Area Gestione ed Integrazione Dati (Comune di Milano)</terms:contributor>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-31</terms:created>
+        <terms:creator>Ilaria Baroni (Cefriel)</terms:creator>
+        <terms:creator>Irene Celino (Cefriel)</terms:creator>
+        <terms:creator>Mario Scrocca (Cefriel)</terms:creator>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:publisher>Comune di Milano</terms:publisher>
+        <terms:rights>Copyright Comune di Milano, 2020</terms:rights>
+        <terms:title xml:lang="it">Alimentazione Autovettura</terms:title>
+        <terms:title xml:lang="en">Car Supply</terms:title>
+        <skos:hasTopConcept rdf:resource="http://w3id.org/urban-iot/kos/vehicle/car-supply#Diesel"/>
+        <skos:hasTopConcept rdf:resource="http://w3id.org/urban-iot/kos/vehicle/car-supply#DualFuel"/>
+        <skos:hasTopConcept rdf:resource="http://w3id.org/urban-iot/kos/vehicle/car-supply#Electric"/>
+        <skos:hasTopConcept rdf:resource="http://w3id.org/urban-iot/kos/vehicle/car-supply#Gasoline"/>
+        <skos:hasTopConcept rdf:resource="http://w3id.org/urban-iot/kos/vehicle/car-supply#Hybrid"/>
+        <skos:prefLabel xml:lang="it">Alimentazione Autovettura</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Car Supply</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/vehicle/car-supply#Diesel -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/vehicle/car-supply#Diesel">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="it">Alimentazione a Diesel.</skos:definition>
+        <skos:definition xml:lang="en">Diesel supply.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/vehicle/car-supply"/>
+        <skos:prefLabel xml:lang="en">Diesel</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Diesel</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="http://w3id.org/urban-iot/kos/vehicle/car-supply"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/vehicle/car-supply#DualFuel -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/vehicle/car-supply#DualFuel">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="it">Alimentazione Bimodale.</skos:definition>
+        <skos:definition xml:lang="en">Dual Fuel supply.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/vehicle/car-supply"/>
+        <skos:narrower rdf:resource="http://w3id.org/urban-iot/kos/vehicle/car-supply#DualFuelLPG"/>
+        <skos:narrower rdf:resource="http://w3id.org/urban-iot/kos/vehicle/car-supply#DualFuelMethane"/>
+        <skos:prefLabel xml:lang="it">Bimodale</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Dual-fuel</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="http://w3id.org/urban-iot/kos/vehicle/car-supply"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/vehicle/car-supply#DualFuelLPG -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/vehicle/car-supply#DualFuelLPG">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://w3id.org/urban-iot/kos/vehicle/car-supply#DualFuel"/>
+        <skos:definition xml:lang="it">Alimentazione Bimodale GPL.</skos:definition>
+        <skos:definition xml:lang="en">Dual Fuel LPG supply.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/vehicle/car-supply"/>
+        <skos:prefLabel xml:lang="it">Bimodale GPL</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Dual-fuel LPG</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/vehicle/car-supply#DualFuelMethane -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/vehicle/car-supply#DualFuelMethane">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://w3id.org/urban-iot/kos/vehicle/car-supply#DualFuel"/>
+        <skos:definition xml:lang="it">Alimentazione Bimodale Metano.</skos:definition>
+        <skos:definition xml:lang="en">Dual Fuela Methane supply.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/vehicle/car-supply"/>
+        <skos:prefLabel xml:lang="it">Bimodale Metano</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Dual-fuel Methane</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/vehicle/car-supply#Electric -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/vehicle/car-supply#Electric">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="it">Alimentazione Elettrica.</skos:definition>
+        <skos:definition xml:lang="en">Electric supply.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/vehicle/car-supply"/>
+        <skos:narrower rdf:resource="http://w3id.org/urban-iot/kos/vehicle/car-supply#PlugInElectric"/>
+        <skos:narrower rdf:resource="http://w3id.org/urban-iot/kos/vehicle/car-supply#RangeExtendedElectric"/>
+        <skos:prefLabel xml:lang="en">Electric</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Elettrica</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="http://w3id.org/urban-iot/kos/vehicle/car-supply#"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/vehicle/car-supply#Gasoline -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/vehicle/car-supply#Gasoline">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="it">Alimentazione a Benzina.</skos:definition>
+        <skos:definition xml:lang="en">Gasoline supply.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/vehicle/car-supply"/>
+        <skos:prefLabel xml:lang="it">Benzina</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Gasoline</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="http://w3id.org/urban-iot/kos/vehicle/car-supply"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/vehicle/car-supply#Hybrid -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/vehicle/car-supply#Hybrid">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:definition xml:lang="it">Alimentazione Ibrida.</skos:definition>
+        <skos:definition xml:lang="en">Hybrid supply.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/vehicle/car-supply"/>
+        <skos:prefLabel xml:lang="en">Hybrid</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Ibrida</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="http://w3id.org/urban-iot/kos/vehicle/car-supply"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/vehicle/car-supply#PlugInElectric -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/vehicle/car-supply#PlugInElectric">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://w3id.org/urban-iot/kos/vehicle/car-supply#Electric"/>
+        <skos:definition xml:lang="it">Alimentazione Elettrica Plug-in.</skos:definition>
+        <skos:definition xml:lang="en">Plug In Electric supply.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/vehicle/car-supply"/>
+        <skos:prefLabel xml:lang="it">Elettrica Plug-in</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Plug-in Electric</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/urban-iot/kos/vehicle/car-supply#RangeExtendedElectric -->
+
+
+    <NamedIndividual rdf:about="http://w3id.org/urban-iot/kos/vehicle/car-supply#RangeExtendedElectric">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://w3id.org/urban-iot/kos/vehicle/car-supply#Electric"/>
+        <skos:definition xml:lang="it">Alimentazione Elettrica Range Extended.</skos:definition>
+        <skos:definition xml:lang="en">Range Extended Electric supply.</skos:definition>
+        <skos:inScheme rdf:resource="http://w3id.org/urban-iot/kos/vehicle/car-supply"/>
+        <skos:prefLabel xml:lang="it">Elettrica Range Extended</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Range Extended Electric</skos:prefLabel>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/ -->
+
+
