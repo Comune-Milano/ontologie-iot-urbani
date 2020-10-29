@@ -1,0 +1,162 @@
+# SHARING MOBILITY Static Data
+# What are the final locations of trips that started from a sharing station in a specific day?
+PREFIX uiots: <http://www.w3id.org/urban-iot/sharing#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX ex: <http://example.com/>
+PREFIX schema: <http://schema.org/>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+SELECT ?id ?finalLat ?finalLong
+WHERE {
+	?smt a uiots:SharingMobilityTrip ;
+		dct:identifier ?id ;
+		uiots:hasStartingStation ex:SharingStation9 ;
+		schema:startDate ?sDate ;
+		uiots:hasTripEndingPoint ?tep .
+	?tep geo:lat ?finalLat ;
+		geo:long ?finalLong .
+    FILTER ( DAY(?sDate) = 23 && MONTH(?sDate) = 12 )
+}
+# SHARING MOBILITY Dynamic Data
+# How many sharing service vehicles are currently unavailable due to breakdown, rebalancing, recharging, disposal?
+PREFIX uiot: <http://www.w3id.org/urban-iot/core#>
+PREFIX uiots: <http://www.w3id.org/urban-iot/sharing#>
+PREFIX sh-kos: <http://w3id.org/urban-iot/kos/electric/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT ?event (COUNT(?a) AS ?numVehicles)
+WHERE {
+	?smv a uiots:SharingMobilityVehicle ;
+		uiot:latestRecord ?record .
+	?record uiots:sharingVehicleState <sh-kos:vehicle-state#Unavailable> .
+	?record uiots:latestSharingVehicleEvent ?svEvent .
+	?svEvent skos:prefLabel ?event .
+} 
+GROUP BY ?event
+# SHARING MOBILITY Open Data
+# What is the charge/fuel level of the vehicles currently available in a specific area?
+PREFIX uiot: <http://www.w3id.org/urban-iot/core#>
+PREFIX uiots: <http://www.w3id.org/urban-iot/sharing#>
+PREFIX sh-kos: <http://w3id.org/urban-iot/kos/sharing/>
+PREFIX sosa: <http://example.com/>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
+PREFIX geof: <http://www.opengis.net/def/function/geosparql/>
+SELECT ?visibleIdentifier ?fuelLevel ?chargeLevel
+WHERE {
+	?smv a uiots:SharingMobilityVehicle ;
+		uiots:visibleIdentifier ?visibleIdentifier ;
+		uiot:latestRecord ?record .
+	?record uiots:containsObservation ?posObs .
+	?posObs sosa:observedProperty uiots:VehicleLocation ;
+		geo:lat ?lat ;
+		geo:long ?long .
+	BIND (STRDT(CONCAT("POINT(",?long," ",?lat,")"), geosparql:wktLiteral) AS ?wktLit) .
+	FILTER (geof:sfWithin(?wktLit, "POLYGON ((9.2049 45.5138, 9.2244 45.5138, 9.2244 45.5266, 9.2049 45.5266, 9.2049 45.5138))"^^geosparql:wktLiteral))
+	OPTIONAL {
+		?record uiots:containsObservation ?chargeObs .
+		?chargeObs sosa:observedProperty uiots:ChargePercentage .
+		?chargeObs sosa:hasSimpleResult ?chargeLevel .
+	}
+	OPTIONAL {
+		?record uiots:containsObservation ?fuelObs .
+		?fuelObs sosa:observedProperty uiots:FuelPercentage .
+		?fuelObs sosa:hasSimpleResult ?fuelLevel .
+	}
+}
+# ELECTRIC MOBILITY Static Data
+# How many charging sessions are carried out by occasional users on a specific day for each charging station location?
+PREFIX uiot: <http://www.w3id.org/urban-iot/core#>
+PREFIX uiote: <http://www.w3id.org/urban-iot/electric#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX schema: <http://schema.org/>
+PREFIX locn:	<http://www.w3.org/ns/locn#>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+SELECT ?id ?lat ?long (COUNT(?session) AS ?numSessionsOccasionalUsers)
+WHERE {
+	?session a uiote:ChargingSession ;
+		uiote:registeredUser "false"^^xsd:boolean ;
+		uiote:usesChargingStation ?station ;
+		schema:startDate ?sDate .
+    FILTER ( DAY(?sDate) = 23 && MONTH(?sDate) = 12 )
+	?station a uiote:ChargingStation ;
+		dct:identifier ?id ;
+		locn:location ?loc .
+	?loc locn:geometry ?pos .
+	?pos geo:lat ?lat ;
+		geo:long ?long .
+} 
+GROUP BY ?id ?lat ?long
+# ELECTRIC MOBILITY Dynamic Data
+# Which EVSEs, for each charge category, are currently reported as "in charge"?
+PREFIX uiot: <http://www.w3id.org/urban-iot/core#>
+PREFIX uiote: <http://www.w3id.org/urban-iot/electric#>
+PREFIX el-kos: <http://w3id.org/urban-iot/kos/electric/>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT ?id ?category
+WHERE {
+	?evse a uiote:EVSE ;
+		dct:identifier ?id ;
+		uiot:latestRecord ?record ;
+		uiote:hasEVSEChargeCategory ?categoryEVSE .
+	?categoryEVSE skos:prefLabel ?category .
+	?record uiote:EVSEState <el-kos:EVSE-state#InCharge> .
+} 
+# ELECTRIC MOBILITY Open Data
+# What are the charging stations with at least one EVSE having a certain connector type and being currently available?
+PREFIX uiot: <http://www.w3id.org/urban-iot/core#>
+PREFIX uiote: <http://www.w3id.org/urban-iot/electric#>
+PREFIX el-kos: <http://w3id.org/urban-iot/kos/electric/>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX schema: <http://schema.org/>
+PREFIX mv: <http://schema.mobivoc.org/#>
+SELECT ?id ?name
+WHERE {
+	?station a uiote:ChargingStation ;
+		dct:identifier ?id ;
+		schema:name ?name ;
+		uiote:hasEVSE ?evse .
+	FILTER EXISTS {
+		?evse a uiote:EVSE ;
+			dct:identifier ?id ;
+			uiote:hasConnector ?connector ;
+			uiot:latestRecord ?record .
+		?record uiote:EVSEState <el-kos:EVSE-state#Available> .
+		?connector uiote:hasStandard mv:Mennekes_Type_2 .
+	}
+}
+# MOBILITY AREA All Data
+# (1/2) How many charges have started within a specific mobility area in one day?
+PREFIX uiot: <http://www.w3id.org/urban-iot/core#>
+PREFIX uiots: <http://www.w3id.org/urban-iot/sharing#>
+PREFIX uiote: <http://www.w3id.org/urban-iot/electric#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX schema: <http://schema.org/>
+SELECT ?mobAreaId (COUNT(?session) AS ?numSessions)
+WHERE {
+	?mobArea a uiot:MobilityStation ;
+		dct:identifier ?mobAreaId .
+	?cStation a uiote:ChargingStation ;
+		uiot:includedInMobilityStation ?mobArea ;
+		uiote:chargingStationUsedIn ?session .
+	?session schema:startDate ?sDateSession .
+    FILTER ( DAY(?sDateSession) = 23 && MONTH(?sDateSession) = 12 )
+}
+GROUP BY ?mobAreaId
+# (2/2) How many trips have started within a specific mobility area in one day?
+PREFIX uiot: <http://www.w3id.org/urban-iot/core#>
+PREFIX uiots: <http://www.w3id.org/urban-iot/sharing#>
+PREFIX uiote: <http://www.w3id.org/urban-iot/electric#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX schema: <http://schema.org/>
+SELECT ?mobAreaId (COUNT(?trips) AS ?numTrips)
+WHERE {
+	?mobArea a uiot:MobilityStation ;
+		dct:identifier ?mobAreaId .
+    ?smt a uiots:SharingMobilityTrip ;
+		uiots:hasStartingStation ?sStation ;
+		schema:startDate ?sDateTrip .
+    ?sStation a uiote:SharingStation ;
+    	uiot:includedInMobilityStation ?mobArea .
+    FILTER ( DAY(?sDateTrip) = 23 && MONTH(?sDateTrip) = 12 )
+}
+GROUP BY ?mobAreaId

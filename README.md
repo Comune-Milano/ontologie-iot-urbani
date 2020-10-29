@@ -6,7 +6,7 @@ Ontologie per gli Apparati IoT Urbani definite dal Comune di Milano. I vocabolar
 Le prime due ontologie sono state sviluppate nell'ambito della Mobilità Condivisa (servizi di Car, Bike, Moto, Micro-Mobility Sharing) e delle Infrastrutture di Ricarica per la Mobilità Elettrica. 
 
 ## Sviluppo del vocabolario
-L’attività di Ontology Engineering ha seguito la metodologia [Linked Open Terms](https://lot.linkeddata.es/) (LOT) per lo sviluppo di ontologie e glossari. Il materiale generato nelle diverse attività svolte durante lo sviluppo del vocabolario: casi d'uso, user story,  ecc. è disponibile sul [Vocabulary Wiki](https://github.com/Comune-Milano/ontologie-iot-urbani/wiki).
+L’attività di Ontology Engineering ha seguito la metodologia [Linked Open Terms](https://lot.linkeddata.es/) (LOT) per lo sviluppo di ontologie e glossari. Il materiale generato nelle diverse attività svolte durante lo sviluppo del vocabolario: casi d'uso, user story,  ecc. è disponibile nel[Vocabulary Wiki](https://github.com/Comune-Milano/ontologie-iot-urbani/wiki).
 
 ## Ontologie
 Le ontologie contenute in questa repository sono associate al namespace https://w3id.org/urban-iot
@@ -22,7 +22,7 @@ Le ontologie sono complementate da una serie di thesauri SKOS referenziati dai d
 Per gestire segnalazioni o proposte di miglioramento relative al vocabolario, consigliamo di seguire le guide fornite in [Gestione Issues](https://github.com/Comune-Milano/ontologie-iot-urbani/wiki/Gestione-Issue).
 
 ## Esempi
-Alcuni esempi di utilizzo sono dettagliati nella documentazione per esemplificare l'utilizzo del vocabolario.
+Alcuni esempi di utilizzo sono dettagliati nella documentazione per esemplificare l'utilizzo del vocabolario. Nella cartella `examples` il file `queries.rq` contiente esempi di query SPARQL per ogni casi d'uso identificato.
 
 ## Changelog
 - _07-2020_: Rilascio v1.0.0 moduli Core, Sharing, Electric
