@@ -939,6 +939,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.w3id.org/urban-iot/core#fixedAmount">
         <rdfs:subPropertyOf rdf:resource="http://schema.org/price"/>
+        <rdfs:domain rdf:resource="http://schema.org/Offer"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <rdfs:comment xml:lang="en">Associates an Offer with a fixed amount required from it.</rdfs:comment>
         <rdfs:comment xml:lang="it">Indica un costo fisso dell&apos;Offerta.</rdfs:comment>

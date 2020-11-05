@@ -1073,6 +1073,9 @@
     "@language" : "it",
     "@value" : "Indica un costo fisso dell'Offerta."
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/Offer"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
     "@value" : "costo fisso"

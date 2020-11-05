@@ -609,6 +609,7 @@
 ###  http://www.w3id.org/urban-iot/core#fixedAmount
 :fixedAmount rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf <http://schema.org/price> ;
+             rdfs:domain <http://schema.org/Offer> ;
              rdfs:range xsd:double ;
              rdfs:comment "Associates an Offer with a fixed amount required from it."@en ,
                           "Indica un costo fisso dell'Offerta."@it ;

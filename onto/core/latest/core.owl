@@ -24,8 +24,8 @@
                                       <http://purl.org/dc/elements/1.1/creator> "Ilaria Baroni (Cefriel)" ,
                                                                                 "Irene Celino (Cefriel)" ,
                                                                                 "Mario Scrocca (Cefriel)" ;
-                                      <http://purl.org/dc/elements/1.1/rights> "Copyright Comune di Milano, 2020" ;
                                       <http://purl.org/dc/elements/1.1/publisher> "Comune di Milano" ;
+                                      <http://purl.org/dc/elements/1.1/rights> "Copyright Comune di Milano, 2020" ;
                                       <http://purl.org/dc/elements/1.1/title> "Ontologie per gli Apparati IoT Urbani - Modulo Core"@it ,
                                                                               "Urban IoT Ontologies - Core Module"@en ;
                                       dct:bibliographicCitation "Comune di Milano. Urban IoT Ontologies - Core Module (v1.0.0). http://www.w3id.org/urban-iot/core" ;
@@ -50,12 +50,20 @@
 <http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/elements/1.1/publisher
+<http://purl.org/dc/elements/1.1/publisher> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/elements/1.1/rights
 <http://purl.org/dc/elements/1.1/rights> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/elements/1.1/title
 <http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/bibliographicCitation
+dct:bibliographicCitation rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/license
@@ -611,6 +619,7 @@ uiot:deregistrationDate rdf:type owl:DatatypeProperty ;
 ###  http://www.w3id.org/urban-iot/core#fixedAmount
 uiot:fixedAmount rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf schema:price ;
+                 rdfs:domain schema:Offer ;
                  rdfs:range xsd:double ;
                  rdfs:comment "Associates an Offer with a fixed amount required from it."@en ,
                               "Indica un costo fisso dell'Offerta."@it ;
