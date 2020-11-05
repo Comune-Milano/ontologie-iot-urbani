@@ -30,87 +30,11 @@
                                           owl:versionInfo "v1.0.0" .
 
 #################################################################
-#    Annotation properties
-#################################################################
-
-###  http://purl.org/dc/elements/1.1/contributor
-<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/elements/1.1/creator
-<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/elements/1.1/publisher
-<http://purl.org/dc/elements/1.1/publisher> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/elements/1.1/rights
-<http://purl.org/dc/elements/1.1/rights> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/elements/1.1/title
-<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/bibliographicCitation
-<http://purl.org/dc/terms/bibliographicCitation> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/license
-<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/vocab/vann/preferredNamespacePrefix
-<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/vocab/vann/preferredNamespaceUri
-<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/vocab/vann/usageNote
-<http://purl.org/vocab/vann/usageNote> rdf:type owl:AnnotationProperty .
-
-
-#################################################################
 #    Object Properties
 #################################################################
 
 ###  http://www.w3.org/2004/02/skos/core#inScheme
 <http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:ObjectProperty .
-
-
-###  http://www.w3id.org/urban-iot/core#enablesSession
-<http://www.w3id.org/urban-iot/core#enablesSession> rdf:type owl:ObjectProperty .
-
-
-###  http://www.w3id.org/urban-iot/core#madeAvailableBy
-<http://www.w3id.org/urban-iot/core#madeAvailableBy> rdf:type owl:ObjectProperty .
-
-
-###  http://www.w3id.org/urban-iot/core#makesAvailable
-<http://www.w3id.org/urban-iot/core#makesAvailable> rdf:type owl:ObjectProperty .
-
-
-###  http://www.w3id.org/urban-iot/core#performsSession
-<http://www.w3id.org/urban-iot/core#performsSession> rdf:type owl:ObjectProperty .
-
-
-###  http://www.w3id.org/urban-iot/core#resourceUsedIn
-<http://www.w3id.org/urban-iot/core#resourceUsedIn> rdf:type owl:ObjectProperty .
-
-
-###  http://www.w3id.org/urban-iot/core#sessionEnabledBy
-<http://www.w3id.org/urban-iot/core#sessionEnabledBy> rdf:type owl:ObjectProperty .
-
-
-###  http://www.w3id.org/urban-iot/core#sessionPerformedBy
-<http://www.w3id.org/urban-iot/core#sessionPerformedBy> rdf:type owl:ObjectProperty .
-
-
-###  http://www.w3id.org/urban-iot/core#usesResource
-<http://www.w3id.org/urban-iot/core#usesResource> rdf:type owl:ObjectProperty .
 
 
 ###  http://www.w3id.org/urban-iot/electric#EVSEState
@@ -458,19 +382,11 @@
 #    Data properties
 #################################################################
 
-###  http://schema.org/duration
-<http://schema.org/duration> rdf:type owl:DatatypeProperty .
-
-
 ###  http://schema.org/image
 <http://schema.org/image> rdf:type owl:DatatypeProperty ;
                           <http://purl.org/vocab/vann/usageNote> "Literal datatype xsd:anyURI."@en ;
                           rdfs:label "image"@en ,
                                      "immagine"@it .
-
-
-###  http://schema.org/price
-<http://schema.org/price> rdf:type owl:DatatypeProperty .
 
 
 ###  http://www.w3id.org/urban-iot/electric#chargingDuringClosure
@@ -679,20 +595,8 @@
                                                  "Tipo di Presa"@it .
 
 
-###  http://schema.org/Offer
-<http://schema.org/Offer> rdf:type owl:Class .
-
-
 ###  http://schema.org/Organization
 <http://schema.org/Organization> rdf:type owl:Class .
-
-
-###  http://schema.org/Place
-<http://schema.org/Place> rdf:type owl:Class .
-
-
-###  http://schema.org/Service
-<http://schema.org/Service> rdf:type owl:Class .
 
 
 ###  http://www.w3.org/2004/02/skos/core#Concept
@@ -701,30 +605,6 @@
 
 ###  http://www.w3.org/2004/02/skos/core#ConceptScheme
 <http://www.w3.org/2004/02/skos/core#ConceptScheme> rdf:type owl:Class .
-
-
-###  http://www.w3.org/ns/sosa/Sensor
-<http://www.w3.org/ns/sosa/Sensor> rdf:type owl:Class .
-
-
-###  http://www.w3id.org/urban-iot/core#MobilityStation
-<http://www.w3id.org/urban-iot/core#MobilityStation> rdf:type owl:Class .
-
-
-###  http://www.w3id.org/urban-iot/core#SensorRecord
-<http://www.w3id.org/urban-iot/core#SensorRecord> rdf:type owl:Class .
-
-
-###  http://www.w3id.org/urban-iot/core#ServicePrivateUser
-<http://www.w3id.org/urban-iot/core#ServicePrivateUser> rdf:type owl:Class .
-
-
-###  http://www.w3id.org/urban-iot/core#ServiceResource
-<http://www.w3id.org/urban-iot/core#ServiceResource> rdf:type owl:Class .
-
-
-###  http://www.w3id.org/urban-iot/core#UsageSession
-<http://www.w3id.org/urban-iot/core#UsageSession> rdf:type owl:Class .
 
 
 ###  http://www.w3id.org/urban-iot/electric#ChargePointOperator

@@ -38,88 +38,6 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/contributor -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/creator -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/publisher -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/rights -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/title -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/bibliographicCitation -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/license -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
-    
-
-
-    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
-    
-
-
-    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
-    
-
-
-    <!-- http://purl.org/vocab/vann/usageNote -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/usageNote"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
     // Object Properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -133,62 +51,6 @@
 
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
-    
-
-
-    <!-- http://www.w3id.org/urban-iot/core#enablesSession -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/core#enablesSession"/>
-    
-
-
-    <!-- http://www.w3id.org/urban-iot/core#madeAvailableBy -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/core#madeAvailableBy"/>
-    
-
-
-    <!-- http://www.w3id.org/urban-iot/core#makesAvailable -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/core#makesAvailable"/>
-    
-
-
-    <!-- http://www.w3id.org/urban-iot/core#performsSession -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/core#performsSession"/>
-    
-
-
-    <!-- http://www.w3id.org/urban-iot/core#resourceUsedIn -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/core#resourceUsedIn"/>
-    
-
-
-    <!-- http://www.w3id.org/urban-iot/core#sessionEnabledBy -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/core#sessionEnabledBy"/>
-    
-
-
-    <!-- http://www.w3id.org/urban-iot/core#sessionPerformedBy -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/core#sessionPerformedBy"/>
-    
-
-
-    <!-- http://www.w3id.org/urban-iot/core#usesResource -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/core#usesResource"/>
     
 
 
@@ -676,13 +538,6 @@
     
 
 
-    <!-- http://schema.org/duration -->
-
-
-    <owl:DatatypeProperty rdf:about="http://schema.org/duration"/>
-    
-
-
     <!-- http://schema.org/image -->
 
 
@@ -691,13 +546,6 @@
         <rdfs:label xml:lang="en">image</rdfs:label>
         <rdfs:label xml:lang="it">immagine</rdfs:label>
     </owl:DatatypeProperty>
-    
-
-
-    <!-- http://schema.org/price -->
-
-
-    <owl:DatatypeProperty rdf:about="http://schema.org/price"/>
     
 
 
@@ -995,31 +843,10 @@
     
 
 
-    <!-- http://schema.org/Offer -->
-
-
-    <owl:Class rdf:about="http://schema.org/Offer"/>
-    
-
-
     <!-- http://schema.org/Organization -->
 
 
     <owl:Class rdf:about="http://schema.org/Organization"/>
-    
-
-
-    <!-- http://schema.org/Place -->
-
-
-    <owl:Class rdf:about="http://schema.org/Place"/>
-    
-
-
-    <!-- http://schema.org/Service -->
-
-
-    <owl:Class rdf:about="http://schema.org/Service"/>
     
 
 
@@ -1034,48 +861,6 @@
 
 
     <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-    
-
-
-    <!-- http://www.w3.org/ns/sosa/Sensor -->
-
-
-    <owl:Class rdf:about="http://www.w3.org/ns/sosa/Sensor"/>
-    
-
-
-    <!-- http://www.w3id.org/urban-iot/core#MobilityStation -->
-
-
-    <owl:Class rdf:about="http://www.w3id.org/urban-iot/core#MobilityStation"/>
-    
-
-
-    <!-- http://www.w3id.org/urban-iot/core#SensorRecord -->
-
-
-    <owl:Class rdf:about="http://www.w3id.org/urban-iot/core#SensorRecord"/>
-    
-
-
-    <!-- http://www.w3id.org/urban-iot/core#ServicePrivateUser -->
-
-
-    <owl:Class rdf:about="http://www.w3id.org/urban-iot/core#ServicePrivateUser"/>
-    
-
-
-    <!-- http://www.w3id.org/urban-iot/core#ServiceResource -->
-
-
-    <owl:Class rdf:about="http://www.w3id.org/urban-iot/core#ServiceResource"/>
-    
-
-
-    <!-- http://www.w3id.org/urban-iot/core#UsageSession -->
-
-
-    <owl:Class rdf:about="http://www.w3id.org/urban-iot/core#UsageSession"/>
     
 
 

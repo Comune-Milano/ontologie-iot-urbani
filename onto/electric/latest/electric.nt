@@ -24,45 +24,6 @@
 # 
 # #################################################################
 # #
-# #    Annotation properties
-# #
-# #################################################################
-# 
-# 
-# http://purl.org/dc/elements/1.1/contributor
-<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/dc/elements/1.1/creator
-<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/dc/elements/1.1/publisher
-<http://purl.org/dc/elements/1.1/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/dc/elements/1.1/rights
-<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/dc/elements/1.1/title
-<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/dc/terms/bibliographicCitation
-<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/dc/terms/license
-<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/vocab/vann/preferredNamespacePrefix
-<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/vocab/vann/preferredNamespaceUri
-<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/vocab/vann/usageNote
-<http://purl.org/vocab/vann/usageNote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# 
-# 
-# #################################################################
-# #
 # #    Object Properties
 # #
 # #################################################################
@@ -70,30 +31,6 @@
 # 
 # http://www.w3.org/2004/02/skos/core#inScheme
 <http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-# 
-# http://www.w3id.org/urban-iot/core#enablesSession
-<http://www.w3id.org/urban-iot/core#enablesSession> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-# 
-# http://www.w3id.org/urban-iot/core#madeAvailableBy
-<http://www.w3id.org/urban-iot/core#madeAvailableBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-# 
-# http://www.w3id.org/urban-iot/core#makesAvailable
-<http://www.w3id.org/urban-iot/core#makesAvailable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-# 
-# http://www.w3id.org/urban-iot/core#performsSession
-<http://www.w3id.org/urban-iot/core#performsSession> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-# 
-# http://www.w3id.org/urban-iot/core#resourceUsedIn
-<http://www.w3id.org/urban-iot/core#resourceUsedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-# 
-# http://www.w3id.org/urban-iot/core#sessionEnabledBy
-<http://www.w3id.org/urban-iot/core#sessionEnabledBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-# 
-# http://www.w3id.org/urban-iot/core#sessionPerformedBy
-<http://www.w3id.org/urban-iot/core#sessionPerformedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-# 
-# http://www.w3id.org/urban-iot/core#usesResource
-<http://www.w3id.org/urban-iot/core#usesResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
 # http://www.w3id.org/urban-iot/electric#EVSEState
 <http://www.w3id.org/urban-iot/electric#EVSEState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -132,7 +69,6 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://www.w3id.org/urban-iot/electric#chargingPerformedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3id.org/urban-iot/electric#performsCharging> .
 <http://www.w3id.org/urban-iot/electric#chargingPerformedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/urban-iot/electric#ChargingSession> .
 <http://www.w3id.org/urban-iot/electric#chargingPerformedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/urban-iot/core#ServicePrivateUser> .
-<http://www.w3id.org/urban-iot/core#ServicePrivateUser> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3id.org/urban-iot/electric#chargingPerformedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Associa una Sessione di Ricarica all'Utente Privato del Servizio che la esegue."@it .
 <http://www.w3id.org/urban-iot/electric#chargingPerformedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates a Charging Session with a Service Private User who performs the Session."@en .
 <http://www.w3id.org/urban-iot/electric#chargingPerformedBy> <http://www.w3.org/2000/01/rdf-schema#label> "charging performed by"@en .
@@ -241,7 +177,6 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://www.w3id.org/urban-iot/electric#hasFacilityNearBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3id.org/urban-iot/electric#hasFacilityNearBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/urban-iot/electric#ChargingStation> .
 <http://www.w3id.org/urban-iot/electric#hasFacilityNearBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/Place> .
-<http://schema.org/Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3id.org/urban-iot/electric#hasFacilityNearBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Associa una Stazione di Ricarica ai possibili punti di interesse in zona, rappresentati come Luogo."@it .
 <http://www.w3id.org/urban-iot/electric#hasFacilityNearBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates a Charging station with the possible point of interest near by, represented as Place."@en .
 <http://www.w3id.org/urban-iot/electric#hasFacilityNearBy> <http://www.w3.org/2000/01/rdf-schema#label> "ha punti di interesse vicini"@it .
@@ -438,17 +373,11 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # #################################################################
 # 
 # 
-# http://schema.org/duration
-<http://schema.org/duration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-# 
 # http://schema.org/image
 <http://schema.org/image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://schema.org/image> <http://purl.org/vocab/vann/usageNote> "Literal datatype xsd:anyURI."@en .
 <http://schema.org/image> <http://www.w3.org/2000/01/rdf-schema#label> "image"@en .
 <http://schema.org/image> <http://www.w3.org/2000/01/rdf-schema#label> "immagine"@it .
-# 
-# http://schema.org/price
-<http://schema.org/price> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 # 
 # http://www.w3id.org/urban-iot/electric#chargingDuringClosure
 <http://www.w3id.org/urban-iot/electric#chargingDuringClosure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -641,39 +570,14 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://schema.mobivoc.org/#PlugType> <http://www.w3.org/2000/01/rdf-schema#label> "Plug Type"@en .
 <http://schema.mobivoc.org/#PlugType> <http://www.w3.org/2000/01/rdf-schema#label> "Tipo di Presa"@it .
 # 
-# http://schema.org/Offer
-<http://schema.org/Offer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
 # http://schema.org/Organization
 <http://schema.org/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://schema.org/Place
-# 
-# http://schema.org/Service
-<http://schema.org/Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://www.w3.org/2004/02/skos/core#Concept
 <http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://www.w3.org/2004/02/skos/core#ConceptScheme
 <http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://www.w3.org/ns/sosa/Sensor
-<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://www.w3id.org/urban-iot/core#MobilityStation
-<http://www.w3id.org/urban-iot/core#MobilityStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://www.w3id.org/urban-iot/core#SensorRecord
-<http://www.w3id.org/urban-iot/core#SensorRecord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://www.w3id.org/urban-iot/core#ServicePrivateUser
-# 
-# http://www.w3id.org/urban-iot/core#ServiceResource
-<http://www.w3id.org/urban-iot/core#ServiceResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://www.w3id.org/urban-iot/core#UsageSession
-<http://www.w3id.org/urban-iot/core#UsageSession> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://www.w3id.org/urban-iot/electric#ChargePointOperator
 <http://www.w3id.org/urban-iot/electric#ChargePointOperator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
