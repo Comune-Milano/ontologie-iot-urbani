@@ -20,27 +20,27 @@
 @base <http://www.w3id.org/urban-iot/sharing> .
 
 <http://www.w3id.org/urban-iot/sharing> rdf:type owl:Ontology ;
-                                      owl:versionIRI <http://www.w3id.org/urban-iot/sharing/1.0.0> ;
-                                      owl:imports <http://www.w3id.org/urban-iot/core/1.0.0> ;
-                                      <http://purl.org/dc/elements/1.1/contributor> "Direzione Sistemi Informativi ed Agenda Digitale - Area Gestione ed Integrazione Dati (Comune di Milano)" ,
-                                                    "Direzione Mobilità e Trasporti - Area Pianificazione e Programmazione Mobilità (Comune di Milano)" ,
-                                                    "Area Pianificazione e Monitoraggio (AMAT Milano)" ;
-                                      <http://purl.org/dc/elements/1.1/creator> "Ilaria Baroni (Cefriel)" ,
-                                                                                "Irene Celino (Cefriel)" ,
-                                                                                "Mario Scrocca (Cefriel)" ;
-                                      <http://purl.org/dc/elements/1.1/rights> "Copyright Comune di Milano, 2020" ;
-                                      <http://purl.org/dc/elements/1.1/publisher> "Comune di Milano" ;
-                                      <http://purl.org/dc/elements/1.1/title> "Ontologie per gli Apparati IoT Urbani - Modulo Sharing Mobility"@it ,
-                                                                              "Urban IoT Ontologies - Sharing Mobility Module"@en ;
-                                      dct:license <https://creativecommons.org/licenses/by/4.0/> ;
-                                      dct:bibliographicCitation "Comune di Milano. Urban IoT Ontologies - Sharing Mobility Module (v1.0.0). http://www.w3id.org/urban-iot/sharing" ;
-                                      vann:preferredNamespacePrefix "uiots" ;
-                                      vann:preferredNamespaceUri "http://www.w3id.org/urban-iot/sharing#" ;
-                                      rdfs:comment "Sharing Mobility module of the suite of ontologies for urban IoT devices."@en ,
-                                                   "Modulo Sharing Mobility delle ontologie per gli apparati IoT urbani."@it ;
-                                      rdfs:label "Ontologie per gli Apparati IoT Urbani - Modulo Sharing Mobility"@it ,
-                                                 "Urban IoT Ontologies - Sharing Mobility Module"@en ;
-                                      owl:versionInfo "v1.0.0" .
+                                         owl:versionIRI <http://www.w3id.org/urban-iot/sharing/1.0.0> ;
+                                         owl:imports <http://www.w3id.org/urban-iot/core/1.0.0> ;
+                                         <http://purl.org/dc/elements/1.1/contributor> "Area Pianificazione e Monitoraggio (AMAT Milano)" ,
+                                                                                       "Direzione Mobilità e Trasporti - Area Pianificazione e Programmazione Mobilità (Comune di Milano)" ,
+                                                                                       "Direzione Sistemi Informativi ed Agenda Digitale - Area Gestione ed Integrazione Dati (Comune di Milano)" ;
+                                         <http://purl.org/dc/elements/1.1/creator> "Ilaria Baroni (Cefriel)" ,
+                                                                                   "Irene Celino (Cefriel)" ,
+                                                                                   "Mario Scrocca (Cefriel)" ;
+                                         <http://purl.org/dc/elements/1.1/publisher> "Comune di Milano" ;
+                                         <http://purl.org/dc/elements/1.1/rights> "Copyright Comune di Milano, 2020" ;
+                                         <http://purl.org/dc/elements/1.1/title> "Ontologie per gli Apparati IoT Urbani - Modulo Sharing Mobility"@it ,
+                                                                                 "Urban IoT Ontologies - Sharing Mobility Module"@en ;
+                                         dct:bibliographicCitation "Comune di Milano. Urban IoT Ontologies - Sharing Mobility Module (v1.0.0). http://www.w3id.org/urban-iot/sharing" ;
+                                         dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+                                         vann:preferredNamespacePrefix "uiots" ;
+                                         vann:preferredNamespaceUri "http://www.w3id.org/urban-iot/sharing#" ;
+                                         rdfs:comment "Modulo Sharing Mobility delle ontologie per gli apparati IoT urbani."@it ,
+                                                      "Sharing Mobility module of the suite of ontologies for urban IoT devices."@en ;
+                                         rdfs:label "Ontologie per gli Apparati IoT Urbani - Modulo Sharing Mobility"@it ,
+                                                    "Urban IoT Ontologies - Sharing Mobility Module"@en ;
+                                         owl:versionInfo "v1.0.0" .
 
 #################################################################
 #    Object Properties
@@ -610,6 +610,7 @@ uiots:fuelStartingPercentage rdf:type owl:DatatypeProperty ;
 ###  http://www.w3id.org/urban-iot/sharing#isStationActive
 uiots:isStationActive rdf:type owl:DatatypeProperty ;
                       rdfs:domain uiots:SharingStationRecord ;
+                      rdfs:range xsd:boolean ;
                       rdfs:comment "Associa un valore booleano ad una Stazione di Sharing, se Vero indica la possibilità di utilizzare la stazione, se Falso indica che la stazione non è attiva (orari chiusura, manutenzione, ecc.)."@it ,
                                    "Associates a boolean value with a Sharing Station, if True indicates the possibility of using the Station, if False indicates that the Station is not active (closing hours, maintenance, ecc.)"@en ;
                       rdfs:label "is station active"@en ,
@@ -618,6 +619,7 @@ uiots:isStationActive rdf:type owl:DatatypeProperty ;
 
 ###  http://www.w3id.org/urban-iot/sharing#longestRangeInKm
 uiots:longestRangeInKm rdf:type owl:DatatypeProperty ;
+                       rdfs:domain schema:Vehicle ;
                        rdfs:range xsd:int ;
                        rdfs:comment "Associa ad un veicola la massima distanza teorica percorribile con un pieno di carburante/carica."@it ,
                                     "Associates a vehicle with the maximum theoretical distance that can be covered with a full tank/charge."@en ;
@@ -710,6 +712,7 @@ uiots:pricePerTripMinute rdf:type owl:DatatypeProperty ;
 ###  http://www.w3id.org/urban-iot/sharing#tripDuration
 uiots:tripDuration rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf schema:duration ;
+                   vann:usageNote "Literal consigliato xsd:duration."@it ;
                    rdfs:comment "Associa un Noleggio alla sua durata totale."@it ,
                                 "Associates a Sharing Mobility Trip with its total duration."@en ;
                    rdfs:label "durata noleggio"@it ,
@@ -858,6 +861,8 @@ uiots:ForbiddenDropOffArea rdf:type owl:Class ;
 ###  http://www.w3id.org/urban-iot/sharing#Hoverboard
 uiots:Hoverboard rdf:type owl:Class ;
                  rdfs:subClassOf uiots:MicroMobilityVehicle ;
+                 rdfs:comment "A Micro Mobility Vehicle of type Hoverboard."@en ,
+                              "Un Veicolo di Micro Mobilità di tipo Hoverboard."@it ;
                  rdfs:label "Hoverboard"@en ,
                             "Hoverboard"@it .
 
@@ -874,6 +879,8 @@ uiots:MicroMobilityVehicle rdf:type owl:Class ;
 ###  http://www.w3id.org/urban-iot/sharing#Monowheel
 uiots:Monowheel rdf:type owl:Class ;
                 rdfs:subClassOf uiots:MicroMobilityVehicle ;
+                rdfs:comment "A Micro Mobility Vehicle of type Monowheel."@en ,
+                             "Un Veicolo di Micro Mobilità di tipo Monowheel."@it ;
                 rdfs:label "Monowheel"@en ,
                            "Monowheel"@it .
 
@@ -936,6 +943,8 @@ uiots:PreferredPickUpArea rdf:type owl:Class ;
 ###  http://www.w3id.org/urban-iot/sharing#Scooter
 uiots:Scooter rdf:type owl:Class ;
               rdfs:subClassOf uiots:MicroMobilityVehicle ;
+              rdfs:comment "A Micro Mobility Vehicle of type Scooter."@en ,
+                           "Un Veicolo di Micro Mobilità di tipo Monopattino."@it ;
               rdfs:label "Monopattino"@it ,
                          "Scooter"@en .
 
@@ -943,6 +952,8 @@ uiots:Scooter rdf:type owl:Class ;
 ###  http://www.w3id.org/urban-iot/sharing#Segway
 uiots:Segway rdf:type owl:Class ;
              rdfs:subClassOf uiots:MicroMobilityVehicle ;
+             rdfs:comment "A Micro Mobility Vehicle of type Segway."@en ,
+                          "Un Veicolo di Micro Mobilità di tipo Segway."@it ;
              rdfs:label "Segway"@en ,
                         "Segway"@it .
 

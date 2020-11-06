@@ -132,45 +132,6 @@
     } ]
   } ]
 }, {
-  "@id" : "http://purl.org/dc/elements/1.1/contributor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/elements/1.1/creator",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/elements/1.1/publisher",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/elements/1.1/rights",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/elements/1.1/title",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/bibliographicCitation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/license",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/vocab/vann/usageNote",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://schema.org/Offer",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://schema.org/Organization",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://schema.org/Service",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
   "@id" : "http://schema.org/Vehicle",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -201,9 +162,6 @@
     "@value" : "date vehicle first registered"
   } ]
 }, {
-  "@id" : "http://schema.org/duration",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
-}, {
   "@id" : "http://schema.org/model",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -213,9 +171,6 @@
     "@language" : "it",
     "@value" : "modello"
   } ]
-}, {
-  "@id" : "http://schema.org/price",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
   "@id" : "http://schema.org/productionDate",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
@@ -357,51 +312,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "http://www.w3.org/ns/sosa/ObservableProperty",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://www.w3.org/ns/sosa/Sensor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://www.w3id.org/urban-iot/core#MobilityStation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://www.w3id.org/urban-iot/core#SensorRecord",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://www.w3id.org/urban-iot/core#ServicePrivateUser",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://www.w3id.org/urban-iot/core#ServiceResource",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://www.w3id.org/urban-iot/core#UsageSession",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://www.w3id.org/urban-iot/core#enablesSession",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "http://www.w3id.org/urban-iot/core#madeAvailableBy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "http://www.w3id.org/urban-iot/core#makesAvailable",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "http://www.w3id.org/urban-iot/core#performsSession",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "http://www.w3id.org/urban-iot/core#resourceUsedIn",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "http://www.w3id.org/urban-iot/core#sessionEnabledBy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "http://www.w3id.org/urban-iot/core#sessionPerformedBy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "http://www.w3id.org/urban-iot/core#usesResource",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
   "@id" : "http://www.w3id.org/urban-iot/sharing",
@@ -774,6 +684,13 @@
 }, {
   "@id" : "http://www.w3id.org/urban-iot/sharing#Hoverboard",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Micro Mobility Vehicle of type Hoverboard."
+  }, {
+    "@language" : "it",
+    "@value" : "Un Veicolo di Micro Mobilità di tipo Hoverboard."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Hoverboard"
@@ -817,6 +734,13 @@
 }, {
   "@id" : "http://www.w3id.org/urban-iot/sharing#Monowheel",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Micro Mobility Vehicle of type Monowheel."
+  }, {
+    "@language" : "it",
+    "@value" : "Un Veicolo di Micro Mobilità di tipo Monowheel."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Monowheel"
@@ -963,6 +887,13 @@
 }, {
   "@id" : "http://www.w3id.org/urban-iot/sharing#Scooter",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Micro Mobility Vehicle of type Scooter."
+  }, {
+    "@language" : "it",
+    "@value" : "Un Veicolo di Micro Mobilità di tipo Monopattino."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
     "@value" : "Monopattino"
@@ -976,6 +907,13 @@
 }, {
   "@id" : "http://www.w3id.org/urban-iot/sharing#Segway",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Micro Mobility Vehicle of type Segway."
+  }, {
+    "@language" : "it",
+    "@value" : "Un Veicolo di Micro Mobilità di tipo Segway."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Segway"
@@ -2104,6 +2042,9 @@
   }, {
     "@language" : "it",
     "@value" : "è stazione attiva"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
   "@id" : "http://www.w3id.org/urban-iot/sharing#latestSharingVehicleEvent",
@@ -2137,6 +2078,9 @@
   }, {
     "@language" : "en",
     "@value" : "Associates a vehicle with the maximum theoretical distance that can be covered with a full tank/charge."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/Vehicle"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2517,6 +2461,10 @@
 }, {
   "@id" : "http://www.w3id.org/urban-iot/sharing#tripDuration",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "it",
+    "@value" : "Literal consigliato xsd:duration."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
     "@value" : "Associa un Noleggio alla sua durata totale."

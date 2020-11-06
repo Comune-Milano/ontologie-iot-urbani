@@ -30,87 +30,11 @@
                                          owl:versionInfo "v1.0.0" .
 
 #################################################################
-#    Annotation properties
-#################################################################
-
-###  http://purl.org/dc/elements/1.1/contributor
-<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/elements/1.1/creator
-<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/elements/1.1/publisher
-<http://purl.org/dc/elements/1.1/publisher> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/elements/1.1/rights
-<http://purl.org/dc/elements/1.1/rights> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/elements/1.1/title
-<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/bibliographicCitation
-<http://purl.org/dc/terms/bibliographicCitation> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/license
-<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/vocab/vann/preferredNamespacePrefix
-<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/vocab/vann/preferredNamespaceUri
-<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/vocab/vann/usageNote
-<http://purl.org/vocab/vann/usageNote> rdf:type owl:AnnotationProperty .
-
-
-#################################################################
 #    Object Properties
 #################################################################
 
 ###  http://www.w3.org/2004/02/skos/core#inScheme
 <http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:ObjectProperty .
-
-
-###  http://www.w3id.org/urban-iot/core#enablesSession
-<http://www.w3id.org/urban-iot/core#enablesSession> rdf:type owl:ObjectProperty .
-
-
-###  http://www.w3id.org/urban-iot/core#madeAvailableBy
-<http://www.w3id.org/urban-iot/core#madeAvailableBy> rdf:type owl:ObjectProperty .
-
-
-###  http://www.w3id.org/urban-iot/core#makesAvailable
-<http://www.w3id.org/urban-iot/core#makesAvailable> rdf:type owl:ObjectProperty .
-
-
-###  http://www.w3id.org/urban-iot/core#performsSession
-<http://www.w3id.org/urban-iot/core#performsSession> rdf:type owl:ObjectProperty .
-
-
-###  http://www.w3id.org/urban-iot/core#resourceUsedIn
-<http://www.w3id.org/urban-iot/core#resourceUsedIn> rdf:type owl:ObjectProperty .
-
-
-###  http://www.w3id.org/urban-iot/core#sessionEnabledBy
-<http://www.w3id.org/urban-iot/core#sessionEnabledBy> rdf:type owl:ObjectProperty .
-
-
-###  http://www.w3id.org/urban-iot/core#sessionPerformedBy
-<http://www.w3id.org/urban-iot/core#sessionPerformedBy> rdf:type owl:ObjectProperty .
-
-
-###  http://www.w3id.org/urban-iot/core#usesResource
-<http://www.w3id.org/urban-iot/core#usesResource> rdf:type owl:ObjectProperty .
 
 
 ###  http://www.w3id.org/urban-iot/sharing#currentSharingStation
@@ -574,18 +498,10 @@
                                                           "date vehicle first registered"@en .
 
 
-###  http://schema.org/duration
-<http://schema.org/duration> rdf:type owl:DatatypeProperty .
-
-
 ###  http://schema.org/model
 <http://schema.org/model> rdf:type owl:DatatypeProperty ;
                           rdfs:label "model"@en ,
                                      "modello"@it .
-
-
-###  http://schema.org/price
-<http://schema.org/price> rdf:type owl:DatatypeProperty .
 
 
 ###  http://schema.org/productionDate
@@ -681,6 +597,7 @@
 ###  http://www.w3id.org/urban-iot/sharing#isStationActive
 :isStationActive rdf:type owl:DatatypeProperty ;
                  rdfs:domain :SharingStationRecord ;
+                 rdfs:range xsd:boolean ;
                  rdfs:comment "Associa un valore booleano ad una Stazione di Sharing, se Vero indica la possibilità di utilizzare la stazione, se Falso indica che la stazione non è attiva (orari chiusura, manutenzione, ecc.)."@it ,
                               "Associates a boolean value with a Sharing Station, if True indicates the possibility of using the Station, if False indicates that the Station is not active (closing hours, maintenance, ecc.)"@en ;
                  rdfs:label "is station active"@en ,
@@ -689,6 +606,7 @@
 
 ###  http://www.w3id.org/urban-iot/sharing#longestRangeInKm
 :longestRangeInKm rdf:type owl:DatatypeProperty ;
+                  rdfs:domain <http://schema.org/Vehicle> ;
                   rdfs:range xsd:int ;
                   rdfs:comment "Associa ad un veicola la massima distanza teorica percorribile con un pieno di carburante/carica."@it ,
                                "Associates a vehicle with the maximum theoretical distance that can be covered with a full tank/charge."@en ;
@@ -781,6 +699,7 @@
 ###  http://www.w3id.org/urban-iot/sharing#tripDuration
 :tripDuration rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf <http://schema.org/duration> ;
+              <http://purl.org/vocab/vann/usageNote> "Literal consigliato xsd:duration."@it ;
               rdfs:comment "Associa un Noleggio alla sua durata totale."@it ,
                            "Associates a Sharing Mobility Trip with its total duration."@en ;
               rdfs:label "durata noleggio"@it ,
@@ -831,18 +750,6 @@
 #    Classes
 #################################################################
 
-###  http://schema.org/Offer
-<http://schema.org/Offer> rdf:type owl:Class .
-
-
-###  http://schema.org/Organization
-<http://schema.org/Organization> rdf:type owl:Class .
-
-
-###  http://schema.org/Service
-<http://schema.org/Service> rdf:type owl:Class .
-
-
 ###  http://schema.org/Vehicle
 <http://schema.org/Vehicle> rdf:type owl:Class ;
                             rdfs:label "Vehicle"@en ,
@@ -865,34 +772,6 @@
 
 ###  http://www.w3.org/2004/02/skos/core#ConceptScheme
 <http://www.w3.org/2004/02/skos/core#ConceptScheme> rdf:type owl:Class .
-
-
-###  http://www.w3.org/ns/sosa/ObservableProperty
-<http://www.w3.org/ns/sosa/ObservableProperty> rdf:type owl:Class .
-
-
-###  http://www.w3.org/ns/sosa/Sensor
-<http://www.w3.org/ns/sosa/Sensor> rdf:type owl:Class .
-
-
-###  http://www.w3id.org/urban-iot/core#MobilityStation
-<http://www.w3id.org/urban-iot/core#MobilityStation> rdf:type owl:Class .
-
-
-###  http://www.w3id.org/urban-iot/core#SensorRecord
-<http://www.w3id.org/urban-iot/core#SensorRecord> rdf:type owl:Class .
-
-
-###  http://www.w3id.org/urban-iot/core#ServicePrivateUser
-<http://www.w3id.org/urban-iot/core#ServicePrivateUser> rdf:type owl:Class .
-
-
-###  http://www.w3id.org/urban-iot/core#ServiceResource
-<http://www.w3id.org/urban-iot/core#ServiceResource> rdf:type owl:Class .
-
-
-###  http://www.w3id.org/urban-iot/core#UsageSession
-<http://www.w3id.org/urban-iot/core#UsageSession> rdf:type owl:Class .
 
 
 ###  http://www.w3id.org/urban-iot/sharing#Bicycle
@@ -969,6 +848,8 @@
 ###  http://www.w3id.org/urban-iot/sharing#Hoverboard
 :Hoverboard rdf:type owl:Class ;
             rdfs:subClassOf :MicroMobilityVehicle ;
+            rdfs:comment "A Micro Mobility Vehicle of type Hoverboard."@en ,
+                         "Un Veicolo di Micro Mobilità di tipo Hoverboard."@it ;
             rdfs:label "Hoverboard"@en ,
                        "Hoverboard"@it .
 
@@ -985,6 +866,8 @@
 ###  http://www.w3id.org/urban-iot/sharing#Monowheel
 :Monowheel rdf:type owl:Class ;
            rdfs:subClassOf :MicroMobilityVehicle ;
+           rdfs:comment "A Micro Mobility Vehicle of type Monowheel."@en ,
+                        "Un Veicolo di Micro Mobilità di tipo Monowheel."@it ;
            rdfs:label "Monowheel"@en ,
                       "Monowheel"@it .
 
@@ -1047,6 +930,8 @@
 ###  http://www.w3id.org/urban-iot/sharing#Scooter
 :Scooter rdf:type owl:Class ;
          rdfs:subClassOf :MicroMobilityVehicle ;
+         rdfs:comment "A Micro Mobility Vehicle of type Scooter."@en ,
+                      "Un Veicolo di Micro Mobilità di tipo Monopattino."@it ;
          rdfs:label "Monopattino"@it ,
                     "Scooter"@en .
 
@@ -1054,6 +939,8 @@
 ###  http://www.w3id.org/urban-iot/sharing#Segway
 :Segway rdf:type owl:Class ;
         rdfs:subClassOf :MicroMobilityVehicle ;
+        rdfs:comment "A Micro Mobility Vehicle of type Segway."@en ,
+                     "Un Veicolo di Micro Mobilità di tipo Segway."@it ;
         rdfs:label "Segway"@en ,
                    "Segway"@it .
 
