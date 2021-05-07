@@ -22,7 +22,7 @@ PREFIX uiot: <http://www.w3id.org/urban-iot/core#>
 PREFIX uiots: <http://www.w3id.org/urban-iot/sharing#>
 PREFIX sh-kos: <http://w3id.org/urban-iot/kos/electric/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-SELECT ?event (COUNT(?a) AS ?numVehicles)
+SELECT ?event (COUNT(?smv) AS ?numVehicles)
 WHERE {
 	?smv a uiots:SharingMobilityVehicle ;
 		uiot:latestRecord ?record .
