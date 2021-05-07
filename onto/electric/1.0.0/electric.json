@@ -59,7 +59,7 @@
   "@id" : "_:genid3",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://www.w3id.org/urban-iot/electric#EVSE-state"
+    "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-state"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
@@ -126,7 +126,7 @@
   } ]
 }, {
   "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-charge-category",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "it",
     "@value" : "Categoria di ricarica per colonnine di ricarica."
@@ -142,8 +142,25 @@
     "@value" : "EVSE Charge Category"
   } ]
 }, {
+  "@id" : "http://w3id.org/urban-iot/kos/electric/EVSE-state",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "State for Electric Vehicle Supply Equipment."
+  }, {
+    "@language" : "it",
+    "@value" : "Stato della Colonnina di Ricarica per Veicoli Elettrici."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "EVSE state"
+  }, {
+    "@language" : "it",
+    "@value" : "Stato Colonnina di Ricarica"
+  } ]
+}, {
   "@id" : "http://w3id.org/urban-iot/kos/electric/charge-access-method",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Electric Mobility Charge Vehicles Access Method."
@@ -160,7 +177,7 @@
   } ]
 }, {
   "@id" : "http://w3id.org/urban-iot/kos/electric/parking-restriction",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Electric Mobility Parking Restriction."
@@ -177,7 +194,7 @@
   } ]
 }, {
   "@id" : "http://w3id.org/urban-iot/kos/electric/power-supply",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Electric Mobility Power Supply."
@@ -404,23 +421,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/ns/sosa/Sensor"
-  } ]
-}, {
-  "@id" : "http://www.w3id.org/urban-iot/electric#EVSE-state",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "State for Electric Vehicle Supply Equipment."
-  }, {
-    "@language" : "it",
-    "@value" : "Stato della Colonnina di Ricarica per Veicoli Elettrici."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "EVSE state"
-  }, {
-    "@language" : "it",
-    "@value" : "Stato Colonnina di Ricarica"
   } ]
 }, {
   "@id" : "http://www.w3id.org/urban-iot/electric#EVSERecord",

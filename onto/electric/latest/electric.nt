@@ -44,7 +44,7 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
 _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-_:genid3 <http://www.w3.org/2002/07/owl#hasValue> <http://www.w3id.org/urban-iot/electric#EVSE-state> .
+_:genid3 <http://www.w3.org/2002/07/owl#hasValue> <http://w3id.org/urban-iot/kos/electric/EVSE-state> .
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3id.org/urban-iot/electric#EVSEState> <http://www.w3.org/2000/01/rdf-schema#comment> "Associazioni a possibili stati  in cui una Colonnina per la Ricarica Veicoli Elettrici (EVSE) può trovarsi."@it .
@@ -662,13 +662,23 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://w3id.org/urban-iot/kos/electric/EVSE-charge-category
 <http://w3id.org/urban-iot/kos/electric/EVSE-charge-category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/electric/EVSE-charge-category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 <http://w3id.org/urban-iot/kos/electric/EVSE-charge-category> <http://www.w3.org/2000/01/rdf-schema#comment> "Categoria di ricarica per colonnine di ricarica."@it .
 <http://w3id.org/urban-iot/kos/electric/EVSE-charge-category> <http://www.w3.org/2000/01/rdf-schema#comment> "Electric Mobility EVSE Charge Category."@en .
 <http://w3id.org/urban-iot/kos/electric/EVSE-charge-category> <http://www.w3.org/2000/01/rdf-schema#label> "Categoria di ricarica EVSE"@it .
 <http://w3id.org/urban-iot/kos/electric/EVSE-charge-category> <http://www.w3.org/2000/01/rdf-schema#label> "EVSE Charge Category"@en .
 # 
+# http://w3id.org/urban-iot/kos/electric/EVSE-state
+<http://w3id.org/urban-iot/kos/electric/EVSE-state> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state> <http://www.w3.org/2000/01/rdf-schema#comment> "State for Electric Vehicle Supply Equipment."@en .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state> <http://www.w3.org/2000/01/rdf-schema#comment> "Stato della Colonnina di Ricarica per Veicoli Elettrici."@it .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state> <http://www.w3.org/2000/01/rdf-schema#label> "EVSE state"@en .
+<http://w3id.org/urban-iot/kos/electric/EVSE-state> <http://www.w3.org/2000/01/rdf-schema#label> "Stato Colonnina di Ricarica"@it .
+# 
 # http://w3id.org/urban-iot/kos/electric/charge-access-method
 <http://w3id.org/urban-iot/kos/electric/charge-access-method> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/electric/charge-access-method> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 <http://w3id.org/urban-iot/kos/electric/charge-access-method> <http://www.w3.org/2000/01/rdf-schema#comment> "Electric Mobility Charge Vehicles Access Method."@en .
 <http://w3id.org/urban-iot/kos/electric/charge-access-method> <http://www.w3.org/2000/01/rdf-schema#comment> "Metodo di accesso per ricarica di veicoli nella mobilità elettrica."@it .
 <http://w3id.org/urban-iot/kos/electric/charge-access-method> <http://www.w3.org/2000/01/rdf-schema#label> "Charge Vehicles Access Method"@en .
@@ -676,6 +686,7 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://w3id.org/urban-iot/kos/electric/parking-restriction
 <http://w3id.org/urban-iot/kos/electric/parking-restriction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/electric/parking-restriction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 <http://w3id.org/urban-iot/kos/electric/parking-restriction> <http://www.w3.org/2000/01/rdf-schema#comment> "Electric Mobility Parking Restriction."@en .
 <http://w3id.org/urban-iot/kos/electric/parking-restriction> <http://www.w3.org/2000/01/rdf-schema#comment> "Restrizione per le aree di parcheggio nella mobilità elettrica."@it .
 <http://w3id.org/urban-iot/kos/electric/parking-restriction> <http://www.w3.org/2000/01/rdf-schema#label> "Parking Restriction"@en .
@@ -683,16 +694,10 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://w3id.org/urban-iot/kos/electric/power-supply
 <http://w3id.org/urban-iot/kos/electric/power-supply> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/urban-iot/kos/electric/power-supply> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 <http://w3id.org/urban-iot/kos/electric/power-supply> <http://www.w3.org/2000/01/rdf-schema#comment> "Electric Mobility Power Supply."@en .
 <http://w3id.org/urban-iot/kos/electric/power-supply> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo di alimentazione per la mobilità elettrica."@it .
 <http://w3id.org/urban-iot/kos/electric/power-supply> <http://www.w3.org/2000/01/rdf-schema#label> "Power Supply"@en .
 <http://w3id.org/urban-iot/kos/electric/power-supply> <http://www.w3.org/2000/01/rdf-schema#label> "Tipo di Alimentazione"@it .
 # 
-# http://www.w3id.org/urban-iot/electric#EVSE-state
-<http://www.w3id.org/urban-iot/electric#EVSE-state> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.w3id.org/urban-iot/electric#EVSE-state> <http://www.w3.org/2000/01/rdf-schema#comment> "State for Electric Vehicle Supply Equipment."@en .
-<http://www.w3id.org/urban-iot/electric#EVSE-state> <http://www.w3.org/2000/01/rdf-schema#comment> "Stato della Colonnina di Ricarica per Veicoli Elettrici."@it .
-<http://www.w3id.org/urban-iot/electric#EVSE-state> <http://www.w3.org/2000/01/rdf-schema#label> "EVSE state"@en .
-<http://www.w3id.org/urban-iot/electric#EVSE-state> <http://www.w3.org/2000/01/rdf-schema#label> "Stato Colonnina di Ricarica"@it .
-# 
-# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
