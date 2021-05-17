@@ -24,7 +24,7 @@ Le ontologie sono complementate da una serie di thesauri SKOS referenziati dai d
 Per gestire segnalazioni o proposte di miglioramento relative al vocabolario, consigliamo di seguire le guide fornite in [Gestione Issues](https://github.com/Comune-Milano/ontologie-iot-urbani/wiki/Gestione-Issue).
 
 ## Esempi
-Alcuni esempi di utilizzo sono dettagliati nella documentazione per esemplificare l'utilizzo del vocabolario. Nella cartella `examples` il file `queries.rq` contiente esempi di query SPARQL per ogni casi d'uso identificato.
+Nella cartella `examples`: (i) alcuni esempi di utilizzo sono dettagliati per ciascun modulo per esemplificare l'utilizzo dei vocabolari, (ii) il file `queries.rq` contiente esempi di query SPARQL per ogni casi d'uso identificato.
 
 ## Changelog
 - _07-2020_: Release v1.0.0 Core, Sharing, Electric modules
@@ -63,7 +63,7 @@ The ontologies are complemented by a set of SKOS thesauri referenced by the diff
 To manage reports or suggested improvements with respect to the ontologies, we recommend to follow the guides provided in [Issues Management](https://github.com/Comune-Milano/ontologie-iot-urbani/wiki/Gestione-Issue).
 
 ## Examples
-Usage examples of the different modules are detailed in the documentation of each module. In the `examples` folder the `queries.rq` file contains examples of SPARQL queries for every use case identified.
+In the `examples` folder: (i) examples are provided for each module to exemplify the intended usage, (ii) the `queries.rq` file contains examples of SPARQL queries for every use case identified.
 
 ## Changelog
 - _07-2020_: Release v1.0.0 Core, Sharing, Electric modules
