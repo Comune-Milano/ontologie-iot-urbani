@@ -10,6 +10,10 @@ Le prime due ontologie sono state sviluppate nell'ambito della Mobilità Condivi
 ## Sviluppo del vocabolario
 L’attività di Ontology Engineering ha seguito la metodologia [Linked Open Terms](https://lot.linkeddata.es/) (LOT) per lo sviluppo di ontologie e glossari. Il materiale generato nelle diverse attività svolte durante lo sviluppo del vocabolario (casi d'uso, user story,  ecc.) è disponibile nel [Vocabulary Wiki](https://github.com/Comune-Milano/ontologie-iot-urbani/wiki).
 
+Lo sviluppo della prima versione delle Ontologie per gli Apparati IoT Urbani è descritta nel seguente journal paper:
+
+> Mario Scrocca, Ilaria Baroni and Irene Celino. _Urban IoT ontologies for sharing and electric mobility_, Semantic Web Journal, [https://doi.org/10.3233/SW-210445](https://doi.org/10.3233/SW-210445), 2021.
+
 ## Ontologie
 Le ontologie contenute in questa repository sono associate al namespace https://w3id.org/urban-iot
 
@@ -58,6 +62,10 @@ The ontologies contained in this repository are associated to the namespace http
 - *Electric Mobility* Module: https://w3id.org/urban-iot/electric (preferred prefix _uiote:_)
 
 The ontologies are complemented by a set of SKOS thesauri referenced by the different modules.
+
+The development of the first version of the Urban IoT Ontologies is described in the following journal paper:
+
+> Mario Scrocca, Ilaria Baroni and Irene Celino. _Urban IoT ontologies for sharing and electric mobility_, Semantic Web Journal, [https://doi.org/10.3233/SW-210445](https://doi.org/10.3233/SW-210445), 2021.
 
 ## Maintenance
 To manage reports or suggested improvements with respect to the ontologies, we recommend to follow the guides provided in [Issues Management](https://github.com/Comune-Milano/ontologie-iot-urbani/wiki/Gestione-Issue).
