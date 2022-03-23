@@ -33,7 +33,8 @@ Per gestire segnalazioni o proposte di miglioramento relative al vocabolario, co
 Nella cartella `examples`: (i) alcuni esempi di utilizzo sono dettagliati per ciascun modulo per esemplificare l'utilizzo dei vocabolari, (ii) il file `queries.rq` contiente esempi di query SPARQL per ogni casi d'uso identificato.
 
 ## Changelog
-- _07-2020_: Release v1.0.0 Core, Sharing, Electric modules
+- _07-2020_: Release `v1.0.0` Core, Sharing, Electric modules
+- *03-2022:* Release `v1.0.1` Change namespace schema.org (https://)
 
 ## License
 
@@ -78,7 +79,8 @@ To manage reports or suggested improvements with respect to the ontologies, we r
 In the `examples` folder: (i) examples are provided for each module to exemplify the intended usage, (ii) the `queries.rq` file contains examples of SPARQL queries for every use case identified.
 
 ## Changelog
-- _07-2020_: Release v1.0.0 Core, Sharing, Electric modules
+- _07-2020_: Release `v1.0.0` Core, Sharing, Electric modules
+- *03-2022:* Release `v1.0.1` Change namespace schema.org (https://)
 
 ## License
 

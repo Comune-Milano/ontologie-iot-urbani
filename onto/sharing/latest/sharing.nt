@@ -1,6 +1,6 @@
 <http://www.w3id.org/urban-iot/sharing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://www.w3id.org/urban-iot/sharing> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.w3id.org/urban-iot/sharing/1.0.0> .
-<http://www.w3id.org/urban-iot/sharing> <http://www.w3.org/2002/07/owl#imports> <http://www.w3id.org/urban-iot/core/1.0.0> .
+<http://www.w3id.org/urban-iot/sharing> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.w3id.org/urban-iot/sharing/1.0.1> .
+<http://www.w3id.org/urban-iot/sharing> <http://www.w3.org/2002/07/owl#imports> <http://www.w3id.org/urban-iot/core/1.0.1> .
 <http://www.w3id.org/urban-iot/sharing> <http://purl.org/dc/elements/1.1/contributor> "Area Pianificazione e Monitoraggio (AMAT Milano)" .
 <http://www.w3id.org/urban-iot/sharing> <http://purl.org/dc/elements/1.1/contributor> "Direzione Mobilità e Trasporti - Area Pianificazione e Programmazione Mobilità (Comune di Milano)" .
 <http://www.w3id.org/urban-iot/sharing> <http://purl.org/dc/elements/1.1/contributor> "Direzione Sistemi Informativi ed Agenda Digitale - Area Gestione ed Integrazione Dati (Comune di Milano)" .
@@ -11,7 +11,7 @@
 <http://www.w3id.org/urban-iot/sharing> <http://purl.org/dc/elements/1.1/rights> "Copyright Comune di Milano, 2020" .
 <http://www.w3id.org/urban-iot/sharing> <http://purl.org/dc/elements/1.1/title> "Ontologie per gli Apparati IoT Urbani - Modulo Sharing Mobility"@it .
 <http://www.w3id.org/urban-iot/sharing> <http://purl.org/dc/elements/1.1/title> "Urban IoT Ontologies - Sharing Mobility Module"@en .
-<http://www.w3id.org/urban-iot/sharing> <http://purl.org/dc/terms/bibliographicCitation> "Comune di Milano. Urban IoT Ontologies - Sharing Mobility Module (v1.0.0). http://www.w3id.org/urban-iot/sharing" .
+<http://www.w3id.org/urban-iot/sharing> <http://purl.org/dc/terms/bibliographicCitation> "Comune di Milano. Urban IoT Ontologies - Sharing Mobility Module (v1.0.1). http://www.w3id.org/urban-iot/sharing" .
 <http://www.w3id.org/urban-iot/sharing> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
 <http://www.w3id.org/urban-iot/sharing> <http://purl.org/vocab/vann/preferredNamespacePrefix> "uiots" .
 <http://www.w3id.org/urban-iot/sharing> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.w3id.org/urban-iot/sharing#" .
@@ -19,7 +19,7 @@
 <http://www.w3id.org/urban-iot/sharing> <http://www.w3.org/2000/01/rdf-schema#comment> "Sharing Mobility module of the suite of ontologies for urban IoT devices."@en .
 <http://www.w3id.org/urban-iot/sharing> <http://www.w3.org/2000/01/rdf-schema#label> "Ontologie per gli Apparati IoT Urbani - Modulo Sharing Mobility"@it .
 <http://www.w3id.org/urban-iot/sharing> <http://www.w3.org/2000/01/rdf-schema#label> "Urban IoT Ontologies - Sharing Mobility Module"@en .
-<http://www.w3id.org/urban-iot/sharing> <http://www.w3.org/2002/07/owl#versionInfo> "v1.0.0" .
+<http://www.w3id.org/urban-iot/sharing> <http://www.w3.org/2002/07/owl#versionInfo> "v1.0.1" .
 # 
 # 
 # #################################################################

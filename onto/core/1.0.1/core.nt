@@ -1,5 +1,5 @@
 <http://www.w3id.org/urban-iot/core> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://www.w3id.org/urban-iot/core> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.w3id.org/urban-iot/core/1.0.0> .
+<http://www.w3id.org/urban-iot/core> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.w3id.org/urban-iot/core/1.0.1> .
 <http://www.w3id.org/urban-iot/core> <http://purl.org/dc/elements/1.1/contributor> "Area Pianificazione e Monitoraggio (AMAT Milano)" .
 <http://www.w3id.org/urban-iot/core> <http://purl.org/dc/elements/1.1/contributor> "Direzione Mobilità e Trasporti - Area Pianificazione e Programmazione Mobilità (Comune di Milano)" .
 <http://www.w3id.org/urban-iot/core> <http://purl.org/dc/elements/1.1/contributor> "Direzione Sistemi Informativi ed Agenda Digitale - Area Gestione ed Integrazione Dati (Comune di Milano)" .
@@ -10,7 +10,7 @@
 <http://www.w3id.org/urban-iot/core> <http://purl.org/dc/elements/1.1/rights> "Copyright Comune di Milano, 2020" .
 <http://www.w3id.org/urban-iot/core> <http://purl.org/dc/elements/1.1/title> "Ontologie per gli Apparati IoT Urbani - Modulo Core"@it .
 <http://www.w3id.org/urban-iot/core> <http://purl.org/dc/elements/1.1/title> "Urban IoT Ontologies - Core Module"@en .
-<http://www.w3id.org/urban-iot/core> <http://purl.org/dc/terms/bibliographicCitation> "Comune di Milano. Urban IoT Ontologies - Core Module (v1.0.0). http://www.w3id.org/urban-iot/core" .
+<http://www.w3id.org/urban-iot/core> <http://purl.org/dc/terms/bibliographicCitation> "Comune di Milano. Urban IoT Ontologies - Core Module (v1.0.1). http://www.w3id.org/urban-iot/core" .
 <http://www.w3id.org/urban-iot/core> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
 <http://www.w3id.org/urban-iot/core> <http://purl.org/vocab/vann/preferredNamespacePrefix> "uiot" .
 <http://www.w3id.org/urban-iot/core> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.w3id.org/urban-iot/core#" .
@@ -18,7 +18,7 @@
 <http://www.w3id.org/urban-iot/core> <http://www.w3.org/2000/01/rdf-schema#comment> "Modulo core delle ontologie per gli apparati IoT urbani."@it .
 <http://www.w3id.org/urban-iot/core> <http://www.w3.org/2000/01/rdf-schema#label> "Ontologie per gli Apparati IoT Urbani - Modulo Core"@it .
 <http://www.w3id.org/urban-iot/core> <http://www.w3.org/2000/01/rdf-schema#label> "Urban IoT Ontologies - Core Module"@en .
-<http://www.w3id.org/urban-iot/core> <http://www.w3.org/2002/07/owl#versionInfo> "v1.0.0" .
+<http://www.w3id.org/urban-iot/core> <http://www.w3.org/2002/07/owl#versionInfo> "v1.0.1" .
 # 
 # 
 # #################################################################

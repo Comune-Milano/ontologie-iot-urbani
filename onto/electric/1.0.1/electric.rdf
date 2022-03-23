@@ -10,8 +10,8 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://www.w3id.org/urban-iot/electric">
-        <owl:versionIRI rdf:resource="http://www.w3id.org/urban-iot/electric/1.0.0"/>
-        <owl:imports rdf:resource="http://www.w3id.org/urban-iot/core/1.0.0"/>
+        <owl:versionIRI rdf:resource="http://www.w3id.org/urban-iot/electric/1.0.1"/>
+        <owl:imports rdf:resource="http://www.w3id.org/urban-iot/core/1.0.1"/>
         <dc:contributor>Area Pianificazione e Monitoraggio (AMAT Milano)</dc:contributor>
         <dc:contributor>Direzione Mobilità e Trasporti - Area Pianificazione e Programmazione Mobilità (Comune di Milano)</dc:contributor>
         <dc:contributor>Direzione Sistemi Informativi ed Agenda Digitale - Area Gestione ed Integrazione Dati (Comune di Milano)</dc:contributor>
@@ -22,7 +22,7 @@
         <dc:rights>Copyright Comune di Milano, 2020</dc:rights>
         <dc:title xml:lang="it">Ontologie per gli Apparati IoT Urbani - Modulo Electric Mobility</dc:title>
         <dc:title xml:lang="en">Urban IoT Ontologies - Electric Mobility Module</dc:title>
-        <terms:bibliographicCitation>Comune di Milano. Urban IoT Ontologies - Electric Mobility Module (v1.0.0). http://www.w3id.org/urban-iot/electric</terms:bibliographicCitation>
+        <terms:bibliographicCitation>Comune di Milano. Urban IoT Ontologies - Electric Mobility Module (v1.0.1). http://www.w3id.org/urban-iot/electric</terms:bibliographicCitation>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <vann:preferredNamespacePrefix>uiote</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>http://www.w3id.org/urban-iot/electric#</vann:preferredNamespaceUri>
@@ -30,7 +30,7 @@
         <rdfs:comment xml:lang="it">Modulo Electric Mobility delle ontologie per gli apparati IoT urbani.</rdfs:comment>
         <rdfs:label xml:lang="it">Ontologie per gli Apparati IoT Urbani - Modulo Electric Mobility</rdfs:label>
         <rdfs:label xml:lang="en">Urban IoT Ontologies - Electric Mobility Module</rdfs:label>
-        <owl:versionInfo>v1.0.0</owl:versionInfo>
+        <owl:versionInfo>v1.0.1</owl:versionInfo>
     </owl:Ontology>
     
 

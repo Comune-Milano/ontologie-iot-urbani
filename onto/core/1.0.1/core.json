@@ -773,7 +773,7 @@
     "@value" : "Urban IoT Ontologies - Core Module"
   } ],
   "http://purl.org/dc/terms/bibliographicCitation" : [ {
-    "@value" : "Comune di Milano. Urban IoT Ontologies - Core Module (v1.0.0). http://www.w3id.org/urban-iot/core"
+    "@value" : "Comune di Milano. Urban IoT Ontologies - Core Module (v1.0.1). http://www.w3id.org/urban-iot/core"
   } ],
   "http://purl.org/dc/terms/license" : [ {
     "@id" : "https://creativecommons.org/licenses/by/4.0/"
@@ -799,10 +799,10 @@
     "@value" : "Urban IoT Ontologies - Core Module"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "http://www.w3id.org/urban-iot/core/1.0.0"
+    "@id" : "http://www.w3id.org/urban-iot/core/1.0.1"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "v1.0.0"
+    "@value" : "v1.0.1"
   } ]
 }, {
   "@id" : "http://www.w3id.org/urban-iot/core#MobilityStation",
