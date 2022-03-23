@@ -13,7 +13,7 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix legal: <http://www.w3.org/ns/legal#> .
 @prefix uiots: <http://www.w3id.org/urban-iot/sharing#> .
-@prefix schema: <http://schema.org/> .
+@prefix schema: <https://schema.org/> .
 @prefix sh-kos: <http://w3id.org/urban-iot/kos/sharing/> .
 @prefix vh-kos: <http://w3id.org/urban-iot/kos/vehicle/> .
 @prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
@@ -499,37 +499,37 @@ uiots:vehicleUsedIn rdf:type owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
-###  http://schema.org/brand
+###  https://schema.org/brand
 schema:brand rdf:type owl:DatatypeProperty ;
              rdfs:label "brand"@en ,
                         "marca"@it .
 
 
-###  http://schema.org/dateVehicleFirstRegistered
+###  https://schema.org/dateVehicleFirstRegistered
 schema:dateVehicleFirstRegistered rdf:type owl:DatatypeProperty ;
                                   rdfs:label "data immatricolazione"@it ,
                                              "date vehicle first registered"@en .
 
 
-###  http://schema.org/model
+###  https://schema.org/model
 schema:model rdf:type owl:DatatypeProperty ;
              rdfs:label "model"@en ,
                         "modello"@it .
 
 
-###  http://schema.org/productionDate
+###  https://schema.org/productionDate
 schema:productionDate rdf:type owl:DatatypeProperty ;
                       rdfs:label "data di produzione"@it ,
                                  "production date"@en .
 
 
-###  http://schema.org/seatingCapacity
+###  https://schema.org/seatingCapacity
 schema:seatingCapacity rdf:type owl:DatatypeProperty ;
                        rdfs:label "numero posti"@it ,
                                   "seating capacity"@en .
 
 
-###  http://schema.org/vehicleIdentificationNumber
+###  https://schema.org/vehicleIdentificationNumber
 schema:vehicleIdentificationNumber rdf:type owl:DatatypeProperty ;
                                    rdfs:label "numero di telaio"@it ,
                                               "vehicle identification number"@en .
@@ -763,7 +763,7 @@ uiots:vehicleRegistration rdf:type owl:DatatypeProperty ;
 #    Classes
 #################################################################
 
-###  http://schema.org/Vehicle
+###  https://schema.org/Vehicle
 schema:Vehicle rdf:type owl:Class ;
                rdfs:label "Vehicle"@en ,
                           "Veicolo"@it .

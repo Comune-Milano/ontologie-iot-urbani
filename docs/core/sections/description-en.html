@@ -12,9 +12,9 @@ The diagrams in this section are modeled using the notation presented below.
 <p align="center"><img src="img/uiot-legend.png" alt="Legend" height="250"></p>
 
 <span class="markdown">
-The main concepts of the Core module have been modeled by extending the [schema.org](http://schema.org) vocabulary.  A service provider can be modeled as a [schema:Organization](http://schema.org/Organization) that provides one or more [schema:Service](http://schema.org/Service). The service offered can make available for the users some [uiot:ServiceResource](http://www.w3id.org/urban-iot/core#ServiceResource) that can be used by the service in usage session [uiot:UsageSession](http://www.w3id.org/urban-iot/core#UsageSession). The offer for the usage can be modeled as a [schema:Offer](http://schema.org/Offer); all the offers can be associated to the service that made them available. Furthermore, the specific offer, if applied to a usage session, can be directly associated to the latter.
+The main concepts of the Core module have been modeled by extending the [schema.org](http://schema.org) vocabulary.  A service provider can be modeled as a [schema:Organization](https://schema.org/Organization) that provides one or more [schema:Service](https://schema.org/Service). The service offered can make available for the users some [uiot:ServiceResource](http://www.w3id.org/urban-iot/core#ServiceResource) that can be used by the service in usage session [uiot:UsageSession](http://www.w3id.org/urban-iot/core#UsageSession). The offer for the usage can be modeled as a [schema:Offer](https://schema.org/Offer); all the offers can be associated to the service that made them available. Furthermore, the specific offer, if applied to a usage session, can be directly associated to the latter.
 
-Service users are modeled as [uiot:ServiceUser](http://www.w3id.org/urban-iot/core#ServiceUser) and can be [uiot:ServicePrivateUser](http://www.w3id.org/urban-iot/core#ServicePrivateUser), namely physical persons (subclass of [schema:Person](http://schema.org/Person)) subscribed to a service, or [uiot:ServiceBusinessUser](http://www.w3id.org/urban-iot/core#ServiceBusinessUser) namely legal entity (subclass of [legal:LegalEntity](http://www.w3.org/ns/legal#LegalEntity)) subscribed to a business contract.
+Service users are modeled as [uiot:ServiceUser](http://www.w3id.org/urban-iot/core#ServiceUser) and can be [uiot:ServicePrivateUser](http://www.w3id.org/urban-iot/core#ServicePrivateUser), namely physical persons (subclass of [schema:Person](https://schema.org/Person)) subscribed to a service, or [uiot:ServiceBusinessUser](http://www.w3id.org/urban-iot/core#ServiceBusinessUser) namely legal entity (subclass of [legal:LegalEntity](http://www.w3.org/ns/legal#LegalEntity)) subscribed to a business contract.
 Only a [uiot:ServicePrivateUser](http://www.w3id.org/urban-iot/core#ServicePrivateUser) can performs a [uiot:UsageSession](http://www.w3id.org/urban-iot/core#UsageSession). A [uiot:ServiceBusinessUser](http://www.w3id.org/urban-iot/core#ServiceBusinessUser) can enable a list of  [uiot:ServicePrivateUser](http://www.w3id.org/urban-iot/core#ServicePrivateUser)  to the service usage and to be associated to a usage session. However, it is not necessary to specify the physical person that used the service by the specific business contract.
 
 </span>
@@ -24,31 +24,31 @@ Only a [uiot:ServicePrivateUser](http://www.w3id.org/urban-iot/core#ServicePriva
 <span class="markdown">
 The following two diagrams provide a detailed description of the previous one, specifying further properties that are defined or reused to describe the presented concepts.
 
-A [uiot:UsageSession](http://www.w3id.org/urban-iot/core#UsageSession) is a [schema:Event](http://schema.org/Event) from which it  inherits the description in terms of starting instant, ending instant and duration. A usage session can be also associated to a boolean value for the property [uiot:reservationUsed](http://www.w3id.org/urban-iot/core#reservationUsed) that specifies if the session has been booked in advance by the user.
+A [uiot:UsageSession](http://www.w3id.org/urban-iot/core#UsageSession) is a [schema:Event](https://schema.org/Event) from which it  inherits the description in terms of starting instant, ending instant and duration. A usage session can be also associated to a boolean value for the property [uiot:reservationUsed](http://www.w3id.org/urban-iot/core#reservationUsed) that specifies if the session has been booked in advance by the user.
 
 A [uiot:ServiceUser](http://www.w3id.org/urban-iot/core#ServiceUser) is modeled by an anonymous identifier ([dct:identifier](http://purl.org/dc/terms/identifier)), by the date of subscription to the service ([uiot:registrationDate](http://www.w3id.org/urban-iot/core#registrationDate)) and in case by the date of subscription cancellation from the service ([uiot:deregistrationDate](http://www.w3id.org/urban-iot/core#deregistrationDate)).
-A [uiot:ServiceUser](http://www.w3id.org/urban-iot/core#ServiceUser) is associated to a [schema:Service](http://schema.org/Service) to which it is registered through the property [uiot:registeredTo](http://www.w3id.org/urban-iot/core#registeredTo). It can be also associated to other services for which the same subscription enables the usage (e.g., working car sharing services in more cities) in the moment he makes at least one [uiot:UsageSession](http://www.w3id.org/urban-iot/core#UsageSession) for that service.
+A [uiot:ServiceUser](http://www.w3id.org/urban-iot/core#ServiceUser) is associated to a [schema:Service](https://schema.org/Service) to which it is registered through the property [uiot:registeredTo](http://www.w3id.org/urban-iot/core#registeredTo). It can be also associated to other services for which the same subscription enables the usage (e.g., working car sharing services in more cities) in the moment he makes at least one [uiot:UsageSession](http://www.w3id.org/urban-iot/core#UsageSession) for that service.
 
-The proposed modeling for the [uiot:ServiceUser](http://www.w3id.org/urban-iot/core#ServiceUser) is reduced, as the data protection rules often do not allow the representation of personal information. However, the classes [schema:Person](http://schema.org/Person) and [legal:LegalEntity](http://www.w3.org/ns/legal#LegalEntity), the extended from [uiot:ServicePrivateUser](http://www.w3id.org/urban-iot/core#ServicePrivateUser) and [uiot:ServiceBusinessUser](http://www.w3id.org/urban-iot/core#ServiceBusinessUser), allow the modeling of further information with respect to the ones indicated. The properties presented in the diagram do model the socio-demographic information that are judged relevant to analyze the service usage by the domain experts.
+The proposed modeling for the [uiot:ServiceUser](http://www.w3id.org/urban-iot/core#ServiceUser) is reduced, as the data protection rules often do not allow the representation of personal information. However, the classes [schema:Person](https://schema.org/Person) and [legal:LegalEntity](http://www.w3.org/ns/legal#LegalEntity), the extended from [uiot:ServicePrivateUser](http://www.w3id.org/urban-iot/core#ServicePrivateUser) and [uiot:ServiceBusinessUser](http://www.w3id.org/urban-iot/core#ServiceBusinessUser), allow the modeling of further information with respect to the ones indicated. The properties presented in the diagram do model the socio-demographic information that are judged relevant to analyze the service usage by the domain experts.
 
-A [uiot:ServicePrivateUser](http://www.w3id.org/urban-iot/core#ServicePrivateUser) is described by gender ([schema:gender](http://schema.org/gender)), year of birth ([uiot:birthYear](http://www.w3id.org/urban-iot/core#birthYear)), address ([locn:Address](http://www.w3.org/ns/locn#Address)), city ([locn:postName](http://www.w3.org/ns/locn#postName)), and zip code ([locn:postCode](http://www.w3.org/ns/locn#postCode)). A [uiot:ServiceBusinessUser](http://www.w3id.org/urban-iot/core#ServiceBusinessUser) is described by the address of the operative office in terms of city and zip code. The usage of the Core vocabulary can be declined accordingly to the national profiles, for example an Italian address can be described in the Italian profile ([profilo italiano](<https://w3id.org/italia/onto/CLV/>)), aligned with the ontology `locn:`.
+A [uiot:ServicePrivateUser](http://www.w3id.org/urban-iot/core#ServicePrivateUser) is described by gender ([schema:gender](https://schema.org/gender)), year of birth ([uiot:birthYear](http://www.w3id.org/urban-iot/core#birthYear)), address ([locn:Address](http://www.w3.org/ns/locn#Address)), city ([locn:postName](http://www.w3.org/ns/locn#postName)), and zip code ([locn:postCode](http://www.w3.org/ns/locn#postCode)). A [uiot:ServiceBusinessUser](http://www.w3id.org/urban-iot/core#ServiceBusinessUser) is described by the address of the operative office in terms of city and zip code. The usage of the Core vocabulary can be declined accordingly to the national profiles, for example an Italian address can be described in the Italian profile ([profilo italiano](<https://w3id.org/italia/onto/CLV/>)), aligned with the ontology `locn:`.
 
 </span>
 
 <p align="center"><img src="img/uiot-core-xl.png" alt="Core Extended" height="700"></p>
 
 <span class="markdown">
-A service that operates in the urban area is modeled as a [schema:Service](http://schema.org/Service) with the following properties:
+A service that operates in the urban area is modeled as a [schema:Service](https://schema.org/Service) with the following properties:
 - identifier, name, description, url and time zone,
-- the [schema:Organization](http://schema.org/Organization) which supplies the service, 
-- the [schema:Place](http://schema.org/Place) which represents the activity area of the service, 
-- the opening hours definition by [schema:OpeningHoursSpecification](http://schema.org/OpeningHoursSpecification), 
-- the channels to access the service [schema:ServiceChannel](http://schema.org/ServiceChannel) that can include applications or websites,
-- the offers ([schema:Offer](http://schema.org/Offer)) with which is possible to use the service.
+- the [schema:Organization](https://schema.org/Organization) which supplies the service, 
+- the [schema:Place](https://schema.org/Place) which represents the activity area of the service, 
+- the opening hours definition by [schema:OpeningHoursSpecification](https://schema.org/OpeningHoursSpecification), 
+- the channels to access the service [schema:ServiceChannel](https://schema.org/ServiceChannel) that can include applications or websites,
+- the offers ([schema:Offer](https://schema.org/Offer)) with which is possible to use the service.
 
-An operator that supplies a service is modeled as a [schema:Organization](http://schema.org/Organization) described by an identifier, name, legal name, url, time zone, and contact points ([schema:ContactPoint](http://schema.org/ContactPoint)).
+An operator that supplies a service is modeled as a [schema:Organization](https://schema.org/Organization) described by an identifier, name, legal name, url, time zone, and contact points ([schema:ContactPoint](https://schema.org/ContactPoint)).
 
-A service offer is modeled by a ([schema:Offer](http://schema.org/Offer)) described by an identifier, name, url, price, currency price, and item conditions (type of users to whom it is addressed, how the price is applied, etc.). The ontology defines the property ([uiot:fixedAmount](http://www.w3id.org/urban-iot/core#fixedAmount)) to allow to indicate a fixed price for the offer.
+A service offer is modeled by a ([schema:Offer](https://schema.org/Offer)) described by an identifier, name, url, price, currency price, and item conditions (type of users to whom it is addressed, how the price is applied, etc.). The ontology defines the property ([uiot:fixedAmount](http://www.w3id.org/urban-iot/core#fixedAmount)) to allow to indicate a fixed price for the offer.
 
 </span>
 
@@ -66,7 +66,7 @@ In the Core module [uiot:SensorRecord](http://www.w3id.org/urban-iot/core#Sensor
 <span class="markdown">
 The Core module models also a [uiot:MobilityStation](http://www.w3id.org/urban-iot/core#MobilityStation) as a place where different services are aggregated for the urban mobility and IoT urban devices, for the supply/fruition of some services, like for example sharing stations for the sharing mobility (cfr. [uiots](http://www.w3id.org/urban-iot/sharing)) or charging stations (cfr. [uiote](http://www.w3id.org/urban-iot/electric)).
 
-A [uiot:MobilityStation](http://www.w3id.org/urban-iot/core#MobilityStation) is a place ([schema:Place](http://schema.org/Place)) described by a [dct:Location](http://purl.org/dc/terms/Location) that can be defined by an address ([locn:Address](http://www.w3.org/ns/locn#Address)) and/or a spatial representation by geometry ([locn:Geometry](http://www.w3.org/ns/locn#Geometry)). [locn:Geometry](http://www.w3.org/ns/locn#Geometry) defines the concept that it can be serialized in different formats as indicated in the [Core Location](http://www.w3.org/ns/locn) ontology, e.g., [GeoSPARQL](http://www.opengis.net/ont/geosparql). 
+A [uiot:MobilityStation](http://www.w3id.org/urban-iot/core#MobilityStation) is a place ([schema:Place](https://schema.org/Place)) described by a [dct:Location](http://purl.org/dc/terms/Location) that can be defined by an address ([locn:Address](http://www.w3.org/ns/locn#Address)) and/or a spatial representation by geometry ([locn:Geometry](http://www.w3.org/ns/locn#Geometry)). [locn:Geometry](http://www.w3.org/ns/locn#Geometry) defines the concept that it can be serialized in different formats as indicated in the [Core Location](http://www.w3.org/ns/locn) ontology, e.g., [GeoSPARQL](http://www.opengis.net/ont/geosparql). 
 
 A [uiot:MobilityStation](http://www.w3id.org/urban-iot/core#MobilityStation) can be modeled as an aggregation of specific [uiot:MobilityStation](http://www.w3id.org/urban-iot/core#MobilityStation) for a specified services, by the property [uiot:includedInMobilityStation](http://www.w3id.org/urban-iot/core#includedInMobilityStation).
 
@@ -84,7 +84,7 @@ A [uiot:MobilityStation](http://www.w3id.org/urban-iot/core#MobilityStation) can
     "@version": 1.1,
     "uiot": "http://www.w3id.org/urban-iot/core#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "schema": "http://schema.org/",
+    "schema": "https://schema.org/",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "terms": "http://purl.org/dc/terms/",
@@ -98,7 +98,7 @@ A [uiot:MobilityStation](http://www.w3id.org/urban-iot/core#MobilityStation) can
   }
 }
 ```
-The following example describes a resource usage session ([uiot:UsageSession](http://www.w3id.org/urban-iot/core#UsageSession)) made available by a service ([schema:Service](http://schema.org/Service)).
+The following example describes a resource usage session ([uiot:UsageSession](http://www.w3id.org/urban-iot/core#UsageSession)) made available by a service ([schema:Service](https://schema.org/Service)).
 ```
 {
   "@context": "urban-iot-context.jsonld",

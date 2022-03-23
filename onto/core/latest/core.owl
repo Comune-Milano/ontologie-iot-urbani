@@ -12,7 +12,7 @@
 @prefix uiot: <http://www.w3id.org/urban-iot/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix legal: <http://www.w3.org/ns/legal#> .
-@prefix schema: <http://schema.org/> .
+@prefix schema: <https://schema.org/> .
 @prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
 @base <http://www.w3id.org/urban-iot/core> .
 
@@ -86,69 +86,69 @@ vann:usageNote rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  http://schema.org/areaServed
+###  https://schema.org/areaServed
 schema:areaServed rdf:type owl:ObjectProperty ;
                   vann:usageNote "Usata per associare uno schema:Service (Servizio) allo schema:Place (Luogo) che è servito dal servizio e in cui il servizio è accessibile."@it ;
                   rdfs:label "area served"@en ,
                              "area servita"@it .
 
 
-###  http://schema.org/availableChannel
+###  https://schema.org/availableChannel
 schema:availableChannel rdf:type owl:ObjectProperty ;
                         vann:usageNote "Usata per associare uno schema:Service (Servizio) ad uno schema:ServiceChannel (Canale del Servizio)."@it ;
                         rdfs:label "available channel"@en ,
                                    "canale disponibile"@it .
 
 
-###  http://schema.org/contactPoint
+###  https://schema.org/contactPoint
 schema:contactPoint rdf:type owl:ObjectProperty ;
                     vann:usageNote "Usata per associare una schema:Organization (Organizzazione) ad un suo schema:ContactPoint (Punto di Contatto) disponibile."@it ;
                     rdfs:label "contact point"@en ,
                                "punto di contatto"@it .
 
 
-###  http://schema.org/dayOfWeek
+###  https://schema.org/dayOfWeek
 schema:dayOfWeek rdf:type owl:ObjectProperty ;
                  rdfs:label "day of week"@en ,
                             "giorno della settimana"@it .
 
 
-###  http://schema.org/hoursAvailable
+###  https://schema.org/hoursAvailable
 schema:hoursAvailable rdf:type owl:ObjectProperty ;
                       vann:usageNote "Associa un Servizio alla Specifica Orari Apertura che descrive gli orari in cui è reso disponibile."@it ;
                       rdfs:label "hours available"@en ,
                                  "orari disponibili"@it .
 
 
-###  http://schema.org/itemOffered
+###  https://schema.org/itemOffered
 schema:itemOffered rdf:type owl:ObjectProperty ;
                    vann:usageNote "Usata per associare una schema:Offer (Offerta) al schema:Service (Servizio) a cui è riferita."@it ;
                    rdfs:label "item offered"@en ,
                               "oggetto offerto"@it .
 
 
-###  http://schema.org/offers
+###  https://schema.org/offers
 schema:offers rdf:type owl:ObjectProperty ;
               vann:usageNote "Usata per associare uno schema:Service (Servizio) alle schema:Offer (Offerta) disponibili."@it ;
               rdfs:label "offers"@en ,
                          "offre"@it .
 
 
-###  http://schema.org/openingHoursSpecification
+###  https://schema.org/openingHoursSpecification
 schema:openingHoursSpecification rdf:type owl:ObjectProperty ;
                                  vann:usageNote "Usata per associare uno schema:Place (Luogo) alla sua schema:OpeningHoursSpecification (Specifica Orari di Apertura)."@it ;
                                  rdfs:label "opening hours specification"@en ,
                                             "specifica orari di apertura"@it .
 
 
-###  http://schema.org/provider
+###  https://schema.org/provider
 schema:provider rdf:type owl:ObjectProperty ;
                 vann:usageNote "Usata per associare uno schema:Service (Servizio) alla schema:Organization (Organizzazione) che lo eroga."@it ;
                 rdfs:label "erogatore"@it ,
                            "provider"@en .
 
 
-###  http://schema.org/servicePhone
+###  https://schema.org/servicePhone
 schema:servicePhone rdf:type owl:ObjectProperty ;
                     vann:usageNote "Usata per associare uno schema:ServiceChannel (Canale del Servizio) ad uno schema:ContactPoint (Punto di Contatto)."@it ;
                     rdfs:label "contatto del servizio"@it ,
@@ -449,122 +449,122 @@ dct:identifier rdf:type owl:DatatypeProperty ;
                           "identifier"@en .
 
 
-###  http://schema.org/alternateName
+###  https://schema.org/alternateName
 schema:alternateName rdf:type owl:DatatypeProperty ;
                      rdfs:label "alternate name"@en ,
                                 "nome alternativo"@it .
 
 
-###  http://schema.org/availableLanguage
+###  https://schema.org/availableLanguage
 schema:availableLanguage rdf:type owl:DatatypeProperty ;
                          rdfs:label "available language"@en ,
                                     "lingua disponibile"@it .
 
 
-###  http://schema.org/birthDate
+###  https://schema.org/birthDate
 schema:birthDate rdf:type owl:DatatypeProperty ;
                  rdfs:label "birth date"@en ,
                             "data di nascita"@it .
 
 
-###  http://schema.org/closes
+###  https://schema.org/closes
 schema:closes rdf:type owl:DatatypeProperty ;
               rdfs:label "chiude"@it ,
                          "closes"@en .
 
 
-###  http://schema.org/description
+###  https://schema.org/description
 schema:description rdf:type owl:DatatypeProperty ;
                    rdfs:label "description"@en ,
                               "descrizione"@it .
 
 
-###  http://schema.org/duration
+###  https://schema.org/duration
 schema:duration rdf:type owl:DatatypeProperty ;
                 vann:usageNote "Literal consigliato xsd:duration."@it ;
                 rdfs:label "durata"@it ,
                            "duration"@en .
 
 
-###  http://schema.org/email
+###  https://schema.org/email
 schema:email rdf:type owl:DatatypeProperty ;
              rdfs:label "email"@en ,
                         "email"@it .
 
 
-###  http://schema.org/endDate
+###  https://schema.org/endDate
 schema:endDate rdf:type owl:DatatypeProperty ;
                rdfs:label "data di fine"@it ,
                           "end date"@en .
 
 
-###  http://schema.org/gender
+###  https://schema.org/gender
 schema:gender rdf:type owl:DatatypeProperty ;
               vann:usageNote "Literal datatype xsd:string."@it ;
               rdfs:label "gender"@en ,
                          "genere"@it .
 
 
-###  http://schema.org/itemCondition
+###  https://schema.org/itemCondition
 schema:itemCondition rdf:type owl:DatatypeProperty ;
                      vann:usageNote "Usata per associare una schema:Offer (Offerta) ad una descrizione testuale (xsd:string) dei criteri di applicazione, calcolo del costo, periodo di validità e informazioni addizionali."@it ;
                      rdfs:label "condizioni dell'oggetto"@it ,
                                 "item condition"@en .
 
 
-###  http://schema.org/legalName
+###  https://schema.org/legalName
 schema:legalName rdf:type owl:DatatypeProperty ;
                  rdfs:label "legal name"@en ,
                             "nome legale"@it .
 
 
-###  http://schema.org/name
+###  https://schema.org/name
 schema:name rdf:type owl:DatatypeProperty ;
             rdfs:label "name"@en ,
                        "nome"@it .
 
 
-###  http://schema.org/opens
+###  https://schema.org/opens
 schema:opens rdf:type owl:DatatypeProperty ;
              rdfs:label "apre"@it ,
                         "opens"@en .
 
 
-###  http://schema.org/price
+###  https://schema.org/price
 schema:price rdf:type owl:DatatypeProperty ;
              rdfs:label "prezzo"@it ,
                         "price"@en .
 
 
-###  http://schema.org/priceCurrency
+###  https://schema.org/priceCurrency
 schema:priceCurrency rdf:type owl:DatatypeProperty ;
                      vann:usageNote "Valori secondo lo standard ISO 4217 (es. \"EUR\" per l'Euro)."@it ;
                      rdfs:label "price currency"@en ,
                                 "valuta del prezzo"@it .
 
 
-###  http://schema.org/serviceUrl
+###  https://schema.org/serviceUrl
 schema:serviceUrl rdf:type owl:DatatypeProperty ;
                   vann:usageNote "Usato per associare uno schema:ServiceChannel (Canale del Servizio) ad un url (xsd:anyURI)."@it ;
                   rdfs:label "service url"@en ,
                              "url del servizio"@it .
 
 
-###  http://schema.org/startDate
+###  https://schema.org/startDate
 schema:startDate rdf:type owl:DatatypeProperty ;
                  vann:usageNote "Literal datatype xsd:dateTime."@it ;
                  rdfs:label "data di inizio"@it ,
                             "start date"@en .
 
 
-###  http://schema.org/telephone
+###  https://schema.org/telephone
 schema:telephone rdf:type owl:DatatypeProperty ;
                  rdfs:comment "Literal datatype xsd:string."@en ;
                  rdfs:label "telefono"@it ,
                             "telephone"@en .
 
 
-###  http://schema.org/url
+###  https://schema.org/url
 schema:url rdf:type owl:DatatypeProperty ;
            rdfs:comment "Literal datatype xsd:anyURI."@en ;
            rdfs:label "url"@en ,
@@ -678,62 +678,62 @@ dct:Location rdf:type owl:Class ;
                         "Location"@en .
 
 
-###  http://schema.org/ContactPoint
+###  https://schema.org/ContactPoint
 schema:ContactPoint rdf:type owl:Class ;
                     rdfs:label "Contact Point"@en ,
                                "Punto di Contatto"@it .
 
 
-###  http://schema.org/DayOfWeek
+###  https://schema.org/DayOfWeek
 schema:DayOfWeek rdf:type owl:Class ;
                  vann:usageNote "Istanze della classe usate per definire una schema:OpeningHoursSpecification (Specifica Orari di Apertura)."@it ;
                  rdfs:label "Day of Week"@en ,
                             "Giorno della Settimana"@it .
 
 
-###  http://schema.org/Event
+###  https://schema.org/Event
 schema:Event rdf:type owl:Class ;
              rdfs:label "Event"@en ,
                         "Evento"@it .
 
 
-###  http://schema.org/Offer
+###  https://schema.org/Offer
 schema:Offer rdf:type owl:Class ;
              rdfs:label "Offer"@en ,
                         "Offerta"@it .
 
 
-###  http://schema.org/OpeningHoursSpecification
+###  https://schema.org/OpeningHoursSpecification
 schema:OpeningHoursSpecification rdf:type owl:Class ;
                                  rdfs:label "Opening Hours Specification"@en ,
                                             "Specifica Orari di Apertura"@it .
 
 
-###  http://schema.org/Organization
+###  https://schema.org/Organization
 schema:Organization rdf:type owl:Class ;
                     rdfs:label "Organization"@en ,
                                "Organizzazione"@it .
 
 
-###  http://schema.org/Person
+###  https://schema.org/Person
 schema:Person rdf:type owl:Class ;
               rdfs:label "Person"@en ,
                          "Persona"@it .
 
 
-###  http://schema.org/Place
+###  https://schema.org/Place
 schema:Place rdf:type owl:Class ;
              rdfs:label "Luogo"@it ,
                         "Place"@en .
 
 
-###  http://schema.org/Service
+###  https://schema.org/Service
 schema:Service rdf:type owl:Class ;
                rdfs:label "Service"@en ,
                           "Servizio"@it .
 
 
-###  http://schema.org/ServiceChannel
+###  https://schema.org/ServiceChannel
 schema:ServiceChannel rdf:type owl:Class ;
                       rdfs:label "Canale del Servizio"@it ,
                                  "Service Channel"@en .

@@ -128,10 +128,10 @@
     
 
 
-    <!-- http://schema.org/areaServed -->
+    <!-- https://schema.org/areaServed -->
 
 
-    <owl:ObjectProperty rdf:about="http://schema.org/areaServed">
+    <owl:ObjectProperty rdf:about="https://schema.org/areaServed">
         <vann:usageNote xml:lang="it">Usata per associare uno schema:Service (Servizio) allo schema:Place (Luogo) che è servito dal servizio e in cui il servizio è accessibile.</vann:usageNote>
         <rdfs:label xml:lang="en">area served</rdfs:label>
         <rdfs:label xml:lang="it">area servita</rdfs:label>
@@ -139,10 +139,10 @@
     
 
 
-    <!-- http://schema.org/availableChannel -->
+    <!-- https://schema.org/availableChannel -->
 
 
-    <owl:ObjectProperty rdf:about="http://schema.org/availableChannel">
+    <owl:ObjectProperty rdf:about="https://schema.org/availableChannel">
         <vann:usageNote xml:lang="it">Usata per associare uno schema:Service (Servizio) ad uno schema:ServiceChannel (Canale del Servizio).</vann:usageNote>
         <rdfs:label xml:lang="en">available channel</rdfs:label>
         <rdfs:label xml:lang="it">canale disponibile</rdfs:label>
@@ -150,10 +150,10 @@
     
 
 
-    <!-- http://schema.org/contactPoint -->
+    <!-- https://schema.org/contactPoint -->
 
 
-    <owl:ObjectProperty rdf:about="http://schema.org/contactPoint">
+    <owl:ObjectProperty rdf:about="https://schema.org/contactPoint">
         <vann:usageNote xml:lang="it">Usata per associare una schema:Organization (Organizzazione) ad un suo schema:ContactPoint (Punto di Contatto) disponibile.</vann:usageNote>
         <rdfs:label xml:lang="en">contact point</rdfs:label>
         <rdfs:label xml:lang="it">punto di contatto</rdfs:label>
@@ -161,20 +161,20 @@
     
 
 
-    <!-- http://schema.org/dayOfWeek -->
+    <!-- https://schema.org/dayOfWeek -->
 
 
-    <owl:ObjectProperty rdf:about="http://schema.org/dayOfWeek">
+    <owl:ObjectProperty rdf:about="https://schema.org/dayOfWeek">
         <rdfs:label xml:lang="en">day of week</rdfs:label>
         <rdfs:label xml:lang="it">giorno della settimana</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://schema.org/hoursAvailable -->
+    <!-- https://schema.org/hoursAvailable -->
 
 
-    <owl:ObjectProperty rdf:about="http://schema.org/hoursAvailable">
+    <owl:ObjectProperty rdf:about="https://schema.org/hoursAvailable">
         <vann:usageNote xml:lang="it">Associa un Servizio alla Specifica Orari Apertura che descrive gli orari in cui è reso disponibile.</vann:usageNote>
         <rdfs:label xml:lang="en">hours available</rdfs:label>
         <rdfs:label xml:lang="it">orari disponibili</rdfs:label>
@@ -182,10 +182,10 @@
     
 
 
-    <!-- http://schema.org/itemOffered -->
+    <!-- https://schema.org/itemOffered -->
 
 
-    <owl:ObjectProperty rdf:about="http://schema.org/itemOffered">
+    <owl:ObjectProperty rdf:about="https://schema.org/itemOffered">
         <vann:usageNote xml:lang="it">Usata per associare una schema:Offer (Offerta) al schema:Service (Servizio) a cui è riferita.</vann:usageNote>
         <rdfs:label xml:lang="en">item offered</rdfs:label>
         <rdfs:label xml:lang="it">oggetto offerto</rdfs:label>
@@ -193,10 +193,10 @@
     
 
 
-    <!-- http://schema.org/offers -->
+    <!-- https://schema.org/offers -->
 
 
-    <owl:ObjectProperty rdf:about="http://schema.org/offers">
+    <owl:ObjectProperty rdf:about="https://schema.org/offers">
         <vann:usageNote xml:lang="it">Usata per associare uno schema:Service (Servizio) alle schema:Offer (Offerta) disponibili.</vann:usageNote>
         <rdfs:label xml:lang="en">offers</rdfs:label>
         <rdfs:label xml:lang="it">offre</rdfs:label>
@@ -204,10 +204,10 @@
     
 
 
-    <!-- http://schema.org/openingHoursSpecification -->
+    <!-- https://schema.org/openingHoursSpecification -->
 
 
-    <owl:ObjectProperty rdf:about="http://schema.org/openingHoursSpecification">
+    <owl:ObjectProperty rdf:about="https://schema.org/openingHoursSpecification">
         <vann:usageNote xml:lang="it">Usata per associare uno schema:Place (Luogo) alla sua schema:OpeningHoursSpecification (Specifica Orari di Apertura).</vann:usageNote>
         <rdfs:label xml:lang="en">opening hours specification</rdfs:label>
         <rdfs:label xml:lang="it">specifica orari di apertura</rdfs:label>
@@ -215,10 +215,10 @@
     
 
 
-    <!-- http://schema.org/provider -->
+    <!-- https://schema.org/provider -->
 
 
-    <owl:ObjectProperty rdf:about="http://schema.org/provider">
+    <owl:ObjectProperty rdf:about="https://schema.org/provider">
         <vann:usageNote xml:lang="it">Usata per associare uno schema:Service (Servizio) alla schema:Organization (Organizzazione) che lo eroga.</vann:usageNote>
         <rdfs:label xml:lang="it">erogatore</rdfs:label>
         <rdfs:label xml:lang="en">provider</rdfs:label>
@@ -226,10 +226,10 @@
     
 
 
-    <!-- http://schema.org/servicePhone -->
+    <!-- https://schema.org/servicePhone -->
 
 
-    <owl:ObjectProperty rdf:about="http://schema.org/servicePhone">
+    <owl:ObjectProperty rdf:about="https://schema.org/servicePhone">
         <vann:usageNote xml:lang="it">Usata per associare uno schema:ServiceChannel (Canale del Servizio) ad uno schema:ContactPoint (Punto di Contatto).</vann:usageNote>
         <rdfs:label xml:lang="it">contatto del servizio</rdfs:label>
         <rdfs:label xml:lang="en">service phone</rdfs:label>
@@ -375,7 +375,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/core#enablesSession">
         <owl:inverseOf rdf:resource="http://www.w3id.org/urban-iot/core#sessionEnabledBy"/>
-        <rdfs:domain rdf:resource="http://schema.org/Service"/>
+        <rdfs:domain rdf:resource="https://schema.org/Service"/>
         <rdfs:range rdf:resource="http://www.w3id.org/urban-iot/core#UsageSession"/>
         <rdfs:comment xml:lang="it">Associa un Servizio ad una Sessione di Utilizzo abilitata dal Servizio.</rdfs:comment>
         <rdfs:comment xml:lang="en">Associates a Service with a Usage Session enabled by the service.</rdfs:comment>
@@ -405,7 +405,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/core#hasUser">
         <owl:inverseOf rdf:resource="http://www.w3id.org/urban-iot/core#userOfService"/>
-        <rdfs:domain rdf:resource="http://schema.org/Service"/>
+        <rdfs:domain rdf:resource="https://schema.org/Service"/>
         <rdfs:range rdf:resource="http://www.w3id.org/urban-iot/core#ServiceUser"/>
         <rdfs:comment xml:lang="it">Associa un Servizio ad un Utente del Servizio.</rdfs:comment>
         <rdfs:comment xml:lang="en">Associates a Service to a Service User.</rdfs:comment>
@@ -450,7 +450,7 @@
     <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/core#madeAvailableBy">
         <owl:inverseOf rdf:resource="http://www.w3id.org/urban-iot/core#makesAvailable"/>
         <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/core#ServiceResource"/>
-        <rdfs:range rdf:resource="http://schema.org/Service"/>
+        <rdfs:range rdf:resource="https://schema.org/Service"/>
         <rdfs:comment xml:lang="it">Associa una Risorsa del Servizio al Servizio che la rende disponibile.</rdfs:comment>
         <rdfs:comment xml:lang="en">Associates a Service Resource with the Service making it available.</rdfs:comment>
         <rdfs:label xml:lang="en">made available by</rdfs:label>
@@ -463,7 +463,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/core#makesAvailable">
-        <rdfs:domain rdf:resource="http://schema.org/Service"/>
+        <rdfs:domain rdf:resource="https://schema.org/Service"/>
         <rdfs:range rdf:resource="http://www.w3id.org/urban-iot/core#ServiceResource"/>
         <rdfs:comment xml:lang="it">Associa un Servizio ad una risorsa che rende disponibile.</rdfs:comment>
         <rdfs:comment xml:lang="en">Associates a Service with the Service Resource that makes available.</rdfs:comment>
@@ -492,7 +492,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/core#offerAssociated">
         <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/core#UsageSession"/>
-        <rdfs:range rdf:resource="http://schema.org/Offer"/>
+        <rdfs:range rdf:resource="https://schema.org/Offer"/>
         <rdfs:comment xml:lang="it">Associa una Sessione di Utilizzo alla tariffa (Offerta) applicata alla specifica sessione.</rdfs:comment>
         <rdfs:comment xml:lang="en">Associates a Usage Session with the tariff (Offer) applied to the specific session.</rdfs:comment>
         <rdfs:label xml:lang="en">offer associated</rdfs:label>
@@ -536,7 +536,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/core#registeredTo">
         <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/core#ServiceUser"/>
-        <rdfs:range rdf:resource="http://schema.org/Service"/>
+        <rdfs:range rdf:resource="https://schema.org/Service"/>
         <rdfs:comment xml:lang="it">Associa un Utente al Servizio a cui è registrato.</rdfs:comment>
         <rdfs:comment xml:lang="en">Associates a Service User to the Service to which the user is registered to.</rdfs:comment>
         <rdfs:label xml:lang="en">registered to</rdfs:label>
@@ -579,7 +579,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/core#sessionEnabledBy">
         <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/core#UsageSession"/>
-        <rdfs:range rdf:resource="http://schema.org/Service"/>
+        <rdfs:range rdf:resource="https://schema.org/Service"/>
         <rdfs:comment xml:lang="it">Associa una Sessione di Utilizzo al Servizio che la abilita.</rdfs:comment>
         <rdfs:comment xml:lang="en">Associates a Usage Session with the Service enabling it.</rdfs:comment>
         <rdfs:label xml:lang="en">session enabled by</rdfs:label>
@@ -621,7 +621,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/core#userOfService">
         <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/core#ServiceUser"/>
-        <rdfs:range rdf:resource="http://schema.org/Service"/>
+        <rdfs:range rdf:resource="https://schema.org/Service"/>
         <rdfs:comment xml:lang="it">Associa un Utente del Servizio al Servizio che utilizza.</rdfs:comment>
         <rdfs:comment xml:lang="en">Associates a Service User to the Service used.</rdfs:comment>
         <rdfs:label xml:lang="en">user of service</rdfs:label>
@@ -667,60 +667,60 @@
     
 
 
-    <!-- http://schema.org/alternateName -->
+    <!-- https://schema.org/alternateName -->
 
 
-    <owl:DatatypeProperty rdf:about="http://schema.org/alternateName">
+    <owl:DatatypeProperty rdf:about="https://schema.org/alternateName">
         <rdfs:label xml:lang="en">alternate name</rdfs:label>
         <rdfs:label xml:lang="it">nome alternativo</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://schema.org/availableLanguage -->
+    <!-- https://schema.org/availableLanguage -->
 
 
-    <owl:DatatypeProperty rdf:about="http://schema.org/availableLanguage">
+    <owl:DatatypeProperty rdf:about="https://schema.org/availableLanguage">
         <rdfs:label xml:lang="en">available language</rdfs:label>
         <rdfs:label xml:lang="it">lingua disponibile</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://schema.org/birthDate -->
+    <!-- https://schema.org/birthDate -->
 
 
-    <owl:DatatypeProperty rdf:about="http://schema.org/birthDate">
+    <owl:DatatypeProperty rdf:about="https://schema.org/birthDate">
         <rdfs:label xml:lang="en">birth date</rdfs:label>
         <rdfs:label xml:lang="it">data di nascita</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://schema.org/closes -->
+    <!-- https://schema.org/closes -->
 
 
-    <owl:DatatypeProperty rdf:about="http://schema.org/closes">
+    <owl:DatatypeProperty rdf:about="https://schema.org/closes">
         <rdfs:label xml:lang="it">chiude</rdfs:label>
         <rdfs:label xml:lang="en">closes</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://schema.org/description -->
+    <!-- https://schema.org/description -->
 
 
-    <owl:DatatypeProperty rdf:about="http://schema.org/description">
+    <owl:DatatypeProperty rdf:about="https://schema.org/description">
         <rdfs:label xml:lang="en">description</rdfs:label>
         <rdfs:label xml:lang="it">descrizione</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://schema.org/duration -->
+    <!-- https://schema.org/duration -->
 
 
-    <owl:DatatypeProperty rdf:about="http://schema.org/duration">
+    <owl:DatatypeProperty rdf:about="https://schema.org/duration">
         <vann:usageNote xml:lang="it">Literal consigliato xsd:duration.</vann:usageNote>
         <rdfs:label xml:lang="it">durata</rdfs:label>
         <rdfs:label xml:lang="en">duration</rdfs:label>
@@ -728,30 +728,30 @@
     
 
 
-    <!-- http://schema.org/email -->
+    <!-- https://schema.org/email -->
 
 
-    <owl:DatatypeProperty rdf:about="http://schema.org/email">
+    <owl:DatatypeProperty rdf:about="https://schema.org/email">
         <rdfs:label xml:lang="en">email</rdfs:label>
         <rdfs:label xml:lang="it">email</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://schema.org/endDate -->
+    <!-- https://schema.org/endDate -->
 
 
-    <owl:DatatypeProperty rdf:about="http://schema.org/endDate">
+    <owl:DatatypeProperty rdf:about="https://schema.org/endDate">
         <rdfs:label xml:lang="it">data di fine</rdfs:label>
         <rdfs:label xml:lang="en">end date</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://schema.org/gender -->
+    <!-- https://schema.org/gender -->
 
 
-    <owl:DatatypeProperty rdf:about="http://schema.org/gender">
+    <owl:DatatypeProperty rdf:about="https://schema.org/gender">
         <vann:usageNote xml:lang="it">Literal datatype xsd:string.</vann:usageNote>
         <rdfs:label xml:lang="en">gender</rdfs:label>
         <rdfs:label xml:lang="it">genere</rdfs:label>
@@ -759,10 +759,10 @@
     
 
 
-    <!-- http://schema.org/itemCondition -->
+    <!-- https://schema.org/itemCondition -->
 
 
-    <owl:DatatypeProperty rdf:about="http://schema.org/itemCondition">
+    <owl:DatatypeProperty rdf:about="https://schema.org/itemCondition">
         <vann:usageNote xml:lang="it">Usata per associare una schema:Offer (Offerta) ad una descrizione testuale (xsd:string) dei criteri di applicazione, calcolo del costo, periodo di validità e informazioni addizionali.</vann:usageNote>
         <rdfs:label xml:lang="it">condizioni dell&apos;oggetto</rdfs:label>
         <rdfs:label xml:lang="en">item condition</rdfs:label>
@@ -770,50 +770,50 @@
     
 
 
-    <!-- http://schema.org/legalName -->
+    <!-- https://schema.org/legalName -->
 
 
-    <owl:DatatypeProperty rdf:about="http://schema.org/legalName">
+    <owl:DatatypeProperty rdf:about="https://schema.org/legalName">
         <rdfs:label xml:lang="en">legal name</rdfs:label>
         <rdfs:label xml:lang="it">nome legale</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://schema.org/name -->
+    <!-- https://schema.org/name -->
 
 
-    <owl:DatatypeProperty rdf:about="http://schema.org/name">
+    <owl:DatatypeProperty rdf:about="https://schema.org/name">
         <rdfs:label xml:lang="en">name</rdfs:label>
         <rdfs:label xml:lang="it">nome</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://schema.org/opens -->
+    <!-- https://schema.org/opens -->
 
 
-    <owl:DatatypeProperty rdf:about="http://schema.org/opens">
+    <owl:DatatypeProperty rdf:about="https://schema.org/opens">
         <rdfs:label xml:lang="it">apre</rdfs:label>
         <rdfs:label xml:lang="en">opens</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://schema.org/price -->
+    <!-- https://schema.org/price -->
 
 
-    <owl:DatatypeProperty rdf:about="http://schema.org/price">
+    <owl:DatatypeProperty rdf:about="https://schema.org/price">
         <rdfs:label xml:lang="it">prezzo</rdfs:label>
         <rdfs:label xml:lang="en">price</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://schema.org/priceCurrency -->
+    <!-- https://schema.org/priceCurrency -->
 
 
-    <owl:DatatypeProperty rdf:about="http://schema.org/priceCurrency">
+    <owl:DatatypeProperty rdf:about="https://schema.org/priceCurrency">
         <vann:usageNote xml:lang="it">Valori secondo lo standard ISO 4217 (es. &quot;EUR&quot; per l&apos;Euro).</vann:usageNote>
         <rdfs:label xml:lang="en">price currency</rdfs:label>
         <rdfs:label xml:lang="it">valuta del prezzo</rdfs:label>
@@ -821,10 +821,10 @@
     
 
 
-    <!-- http://schema.org/serviceUrl -->
+    <!-- https://schema.org/serviceUrl -->
 
 
-    <owl:DatatypeProperty rdf:about="http://schema.org/serviceUrl">
+    <owl:DatatypeProperty rdf:about="https://schema.org/serviceUrl">
         <vann:usageNote xml:lang="it">Usato per associare uno schema:ServiceChannel (Canale del Servizio) ad un url (xsd:anyURI).</vann:usageNote>
         <rdfs:label xml:lang="en">service url</rdfs:label>
         <rdfs:label xml:lang="it">url del servizio</rdfs:label>
@@ -832,10 +832,10 @@
     
 
 
-    <!-- http://schema.org/startDate -->
+    <!-- https://schema.org/startDate -->
 
 
-    <owl:DatatypeProperty rdf:about="http://schema.org/startDate">
+    <owl:DatatypeProperty rdf:about="https://schema.org/startDate">
         <vann:usageNote xml:lang="it">Literal datatype xsd:dateTime.</vann:usageNote>
         <rdfs:label xml:lang="it">data di inizio</rdfs:label>
         <rdfs:label xml:lang="en">start date</rdfs:label>
@@ -843,10 +843,10 @@
     
 
 
-    <!-- http://schema.org/telephone -->
+    <!-- https://schema.org/telephone -->
 
 
-    <owl:DatatypeProperty rdf:about="http://schema.org/telephone">
+    <owl:DatatypeProperty rdf:about="https://schema.org/telephone">
         <rdfs:comment xml:lang="en">Literal datatype xsd:string.</rdfs:comment>
         <rdfs:label xml:lang="it">telefono</rdfs:label>
         <rdfs:label xml:lang="en">telephone</rdfs:label>
@@ -854,10 +854,10 @@
     
 
 
-    <!-- http://schema.org/url -->
+    <!-- https://schema.org/url -->
 
 
-    <owl:DatatypeProperty rdf:about="http://schema.org/url">
+    <owl:DatatypeProperty rdf:about="https://schema.org/url">
         <rdfs:comment xml:lang="en">Literal datatype xsd:anyURI.</rdfs:comment>
         <rdfs:label xml:lang="en">url</rdfs:label>
         <rdfs:label xml:lang="it">url</rdfs:label>
@@ -909,8 +909,8 @@
 
 
     <owl:DatatypeProperty rdf:about="http://www.w3id.org/urban-iot/core#birthYear">
-        <rdfs:subPropertyOf rdf:resource="http://schema.org/birthDate"/>
-        <rdfs:domain rdf:resource="http://schema.org/Person"/>
+        <rdfs:subPropertyOf rdf:resource="https://schema.org/birthDate"/>
+        <rdfs:domain rdf:resource="https://schema.org/Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:comment xml:lang="it">Associa una persona al suo anno di nascita.</rdfs:comment>
         <rdfs:comment xml:lang="it">Associates a person with her/his birth year.</rdfs:comment>
@@ -938,8 +938,8 @@
 
 
     <owl:DatatypeProperty rdf:about="http://www.w3id.org/urban-iot/core#fixedAmount">
-        <rdfs:subPropertyOf rdf:resource="http://schema.org/price"/>
-        <rdfs:domain rdf:resource="http://schema.org/Offer"/>
+        <rdfs:subPropertyOf rdf:resource="https://schema.org/price"/>
+        <rdfs:domain rdf:resource="https://schema.org/Offer"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <rdfs:comment xml:lang="en">Associates an Offer with a fixed amount required from it.</rdfs:comment>
         <rdfs:comment xml:lang="it">Indica un costo fisso dell&apos;Offerta.</rdfs:comment>
@@ -1028,20 +1028,20 @@
     
 
 
-    <!-- http://schema.org/ContactPoint -->
+    <!-- https://schema.org/ContactPoint -->
 
 
-    <owl:Class rdf:about="http://schema.org/ContactPoint">
+    <owl:Class rdf:about="https://schema.org/ContactPoint">
         <rdfs:label xml:lang="en">Contact Point</rdfs:label>
         <rdfs:label xml:lang="it">Punto di Contatto</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://schema.org/DayOfWeek -->
+    <!-- https://schema.org/DayOfWeek -->
 
 
-    <owl:Class rdf:about="http://schema.org/DayOfWeek">
+    <owl:Class rdf:about="https://schema.org/DayOfWeek">
         <vann:usageNote xml:lang="it">Istanze della classe usate per definire una schema:OpeningHoursSpecification (Specifica Orari di Apertura).</vann:usageNote>
         <rdfs:label xml:lang="en">Day of Week</rdfs:label>
         <rdfs:label xml:lang="it">Giorno della Settimana</rdfs:label>
@@ -1049,80 +1049,80 @@
     
 
 
-    <!-- http://schema.org/Event -->
+    <!-- https://schema.org/Event -->
 
 
-    <owl:Class rdf:about="http://schema.org/Event">
+    <owl:Class rdf:about="https://schema.org/Event">
         <rdfs:label xml:lang="en">Event</rdfs:label>
         <rdfs:label xml:lang="it">Evento</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://schema.org/Offer -->
+    <!-- https://schema.org/Offer -->
 
 
-    <owl:Class rdf:about="http://schema.org/Offer">
+    <owl:Class rdf:about="https://schema.org/Offer">
         <rdfs:label xml:lang="en">Offer</rdfs:label>
         <rdfs:label xml:lang="it">Offerta</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://schema.org/OpeningHoursSpecification -->
+    <!-- https://schema.org/OpeningHoursSpecification -->
 
 
-    <owl:Class rdf:about="http://schema.org/OpeningHoursSpecification">
+    <owl:Class rdf:about="https://schema.org/OpeningHoursSpecification">
         <rdfs:label xml:lang="en">Opening Hours Specification</rdfs:label>
         <rdfs:label xml:lang="it">Specifica Orari di Apertura</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://schema.org/Organization -->
+    <!-- https://schema.org/Organization -->
 
 
-    <owl:Class rdf:about="http://schema.org/Organization">
+    <owl:Class rdf:about="https://schema.org/Organization">
         <rdfs:label xml:lang="en">Organization</rdfs:label>
         <rdfs:label xml:lang="it">Organizzazione</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://schema.org/Person -->
+    <!-- https://schema.org/Person -->
 
 
-    <owl:Class rdf:about="http://schema.org/Person">
+    <owl:Class rdf:about="https://schema.org/Person">
         <rdfs:label xml:lang="en">Person</rdfs:label>
         <rdfs:label xml:lang="it">Persona</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://schema.org/Place -->
+    <!-- https://schema.org/Place -->
 
 
-    <owl:Class rdf:about="http://schema.org/Place">
+    <owl:Class rdf:about="https://schema.org/Place">
         <rdfs:label xml:lang="it">Luogo</rdfs:label>
         <rdfs:label xml:lang="en">Place</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://schema.org/Service -->
+    <!-- https://schema.org/Service -->
 
 
-    <owl:Class rdf:about="http://schema.org/Service">
+    <owl:Class rdf:about="https://schema.org/Service">
         <rdfs:label xml:lang="en">Service</rdfs:label>
         <rdfs:label xml:lang="it">Servizio</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://schema.org/ServiceChannel -->
+    <!-- https://schema.org/ServiceChannel -->
 
 
-    <owl:Class rdf:about="http://schema.org/ServiceChannel">
+    <owl:Class rdf:about="https://schema.org/ServiceChannel">
         <rdfs:label xml:lang="it">Canale del Servizio</rdfs:label>
         <rdfs:label xml:lang="en">Service Channel</rdfs:label>
     </owl:Class>
@@ -1195,7 +1195,7 @@
 
 
     <owl:Class rdf:about="http://www.w3id.org/urban-iot/core#MobilityStation">
-        <rdfs:subClassOf rdf:resource="http://schema.org/Place"/>
+        <rdfs:subClassOf rdf:resource="https://schema.org/Place"/>
         <rdfs:comment xml:lang="en">A Place characterized by mobility services. A Mobility Station can include more specific Mobility Station (Sharing Station, Charging Station, ecc.).</rdfs:comment>
         <rdfs:comment xml:lang="it">Un Luogo caratterizzato dalla presenza di servizi di mobilità. Può includere altre Stazioni di Mobilità dedicate a specifici servizi per la mobilità (Stazioni di Sharing, Stazioni di Ricarica, etc.).</rdfs:comment>
         <rdfs:label xml:lang="en">Mobility Station</rdfs:label>
@@ -1234,7 +1234,7 @@
 
 
     <owl:Class rdf:about="http://www.w3id.org/urban-iot/core#ServicePrivateUser">
-        <rdfs:subClassOf rdf:resource="http://schema.org/Person"/>
+        <rdfs:subClassOf rdf:resource="https://schema.org/Person"/>
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/urban-iot/core#ServiceUser"/>
         <rdfs:comment xml:lang="en">A natural person using a service.</rdfs:comment>
         <rdfs:comment xml:lang="it">Una persona fisica utilizzatore di un servizio.</rdfs:comment>
@@ -1272,7 +1272,7 @@
 
 
     <owl:Class rdf:about="http://www.w3id.org/urban-iot/core#UsageSession">
-        <rdfs:subClassOf rdf:resource="http://schema.org/Event"/>
+        <rdfs:subClassOf rdf:resource="https://schema.org/Event"/>
         <rdfs:comment xml:lang="en">A Usage Session is an Event associated to a Service and a Service Resource representing a usage of the resource made available by the Service.</rdfs:comment>
         <rdfs:comment xml:lang="it">Una Sessione di Utilizzo è un Evento associato ad un Servizio e ad una Risorsa del Servizio che rappresenta un utilizzo della risorsa resa disponibile dal Servizio.</rdfs:comment>
         <rdfs:label xml:lang="it">Sessione di Utilizzo</rdfs:label>

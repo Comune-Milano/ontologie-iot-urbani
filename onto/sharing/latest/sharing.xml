@@ -136,7 +136,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/sharing#hasContractualOperationArea">
-        <rdfs:domain rdf:resource="http://schema.org/Service"/>
+        <rdfs:domain rdf:resource="https://schema.org/Service"/>
         <rdfs:range rdf:resource="http://www.w3id.org/urban-iot/sharing#ContractualOperationArea"/>
         <rdfs:comment xml:lang="en">Property referring to the contractual operation area of the Service.</rdfs:comment>
         <rdfs:comment xml:lang="it">Proprietà che identifica i confini minimi di esercizio di un Servizio.</rdfs:comment>
@@ -193,7 +193,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/sharing#hasEmissionStandard">
-        <rdfs:domain rdf:resource="http://schema.org/Vehicle"/>
+        <rdfs:domain rdf:resource="https://schema.org/Vehicle"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -245,7 +245,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/sharing#hasOperationArea">
-        <rdfs:domain rdf:resource="http://schema.org/Service"/>
+        <rdfs:domain rdf:resource="https://schema.org/Service"/>
         <rdfs:range rdf:resource="http://www.w3id.org/urban-iot/sharing#OperationArea"/>
         <rdfs:comment xml:lang="en">Property referring to the operation area of the Service.</rdfs:comment>
         <rdfs:comment xml:lang="it">Proprietà che identifica l&apos;area operativa di un Servizio.</rdfs:comment>
@@ -301,7 +301,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/sharing#hasPropulsionKind">
-        <rdfs:domain rdf:resource="http://schema.org/Vehicle"/>
+        <rdfs:domain rdf:resource="https://schema.org/Vehicle"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -411,7 +411,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://www.w3id.org/urban-iot/sharing#hasVehicleCategory">
-        <rdfs:domain rdf:resource="http://schema.org/Vehicle"/>
+        <rdfs:domain rdf:resource="https://schema.org/Vehicle"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -684,60 +684,60 @@
     
 
 
-    <!-- http://schema.org/brand -->
+    <!-- https://schema.org/brand -->
 
 
-    <owl:DatatypeProperty rdf:about="http://schema.org/brand">
+    <owl:DatatypeProperty rdf:about="https://schema.org/brand">
         <rdfs:label xml:lang="en">brand</rdfs:label>
         <rdfs:label xml:lang="it">marca</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://schema.org/dateVehicleFirstRegistered -->
+    <!-- https://schema.org/dateVehicleFirstRegistered -->
 
 
-    <owl:DatatypeProperty rdf:about="http://schema.org/dateVehicleFirstRegistered">
+    <owl:DatatypeProperty rdf:about="https://schema.org/dateVehicleFirstRegistered">
         <rdfs:label xml:lang="it">data immatricolazione</rdfs:label>
         <rdfs:label xml:lang="en">date vehicle first registered</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://schema.org/model -->
+    <!-- https://schema.org/model -->
 
 
-    <owl:DatatypeProperty rdf:about="http://schema.org/model">
+    <owl:DatatypeProperty rdf:about="https://schema.org/model">
         <rdfs:label xml:lang="en">model</rdfs:label>
         <rdfs:label xml:lang="it">modello</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://schema.org/productionDate -->
+    <!-- https://schema.org/productionDate -->
 
 
-    <owl:DatatypeProperty rdf:about="http://schema.org/productionDate">
+    <owl:DatatypeProperty rdf:about="https://schema.org/productionDate">
         <rdfs:label xml:lang="it">data di produzione</rdfs:label>
         <rdfs:label xml:lang="en">production date</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://schema.org/seatingCapacity -->
+    <!-- https://schema.org/seatingCapacity -->
 
 
-    <owl:DatatypeProperty rdf:about="http://schema.org/seatingCapacity">
+    <owl:DatatypeProperty rdf:about="https://schema.org/seatingCapacity">
         <rdfs:label xml:lang="it">numero posti</rdfs:label>
         <rdfs:label xml:lang="en">seating capacity</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://schema.org/vehicleIdentificationNumber -->
+    <!-- https://schema.org/vehicleIdentificationNumber -->
 
 
-    <owl:DatatypeProperty rdf:about="http://schema.org/vehicleIdentificationNumber">
+    <owl:DatatypeProperty rdf:about="https://schema.org/vehicleIdentificationNumber">
         <rdfs:label xml:lang="it">numero di telaio</rdfs:label>
         <rdfs:label xml:lang="en">vehicle identification number</rdfs:label>
     </owl:DatatypeProperty>
@@ -866,7 +866,7 @@
 
 
     <owl:DatatypeProperty rdf:about="http://www.w3id.org/urban-iot/sharing#longestRangeInKm">
-        <rdfs:domain rdf:resource="http://schema.org/Vehicle"/>
+        <rdfs:domain rdf:resource="https://schema.org/Vehicle"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:comment xml:lang="it">Associa ad un veicola la massima distanza teorica percorribile con un pieno di carburante/carica.</rdfs:comment>
         <rdfs:comment xml:lang="en">Associates a vehicle with the maximum theoretical distance that can be covered with a full tank/charge.</rdfs:comment>
@@ -908,7 +908,7 @@
 
 
     <owl:DatatypeProperty rdf:about="http://www.w3id.org/urban-iot/sharing#numberPlate">
-        <rdfs:domain rdf:resource="http://schema.org/Vehicle"/>
+        <rdfs:domain rdf:resource="https://schema.org/Vehicle"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="it">Associa un Veicolo al numero di targa.</rdfs:comment>
         <rdfs:comment xml:lang="en">Associates a Vehicle with its number plate.</rdfs:comment>
@@ -964,7 +964,7 @@
 
 
     <owl:DatatypeProperty rdf:about="http://www.w3id.org/urban-iot/sharing#pricePerTripKm">
-        <rdfs:subPropertyOf rdf:resource="http://schema.org/price"/>
+        <rdfs:subPropertyOf rdf:resource="https://schema.org/price"/>
         <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/sharing#SharingMobilityOffer"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <rdfs:comment xml:lang="it">Associa un&apos;Offerta di Sharing Mobility ad un costo per km di Noleggio.</rdfs:comment>
@@ -979,7 +979,7 @@
 
 
     <owl:DatatypeProperty rdf:about="http://www.w3id.org/urban-iot/sharing#pricePerTripMinute">
-        <rdfs:subPropertyOf rdf:resource="http://schema.org/price"/>
+        <rdfs:subPropertyOf rdf:resource="https://schema.org/price"/>
         <rdfs:domain rdf:resource="http://www.w3id.org/urban-iot/sharing#SharingMobilityOffer"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <rdfs:comment xml:lang="it">Associa un&apos;Offerta di Sharing Mobility ad un costo per minuto di Noleggio.</rdfs:comment>
@@ -994,7 +994,7 @@
 
 
     <owl:DatatypeProperty rdf:about="http://www.w3id.org/urban-iot/sharing#tripDuration">
-        <rdfs:subPropertyOf rdf:resource="http://schema.org/duration"/>
+        <rdfs:subPropertyOf rdf:resource="https://schema.org/duration"/>
         <vann:usageNote xml:lang="it">Literal consigliato xsd:duration.</vann:usageNote>
         <rdfs:comment xml:lang="it">Associa un Noleggio alla sua durata totale.</rdfs:comment>
         <rdfs:comment xml:lang="en">Associates a Sharing Mobility Trip with its total duration.</rdfs:comment>
@@ -1072,10 +1072,10 @@
     
 
 
-    <!-- http://schema.org/Vehicle -->
+    <!-- https://schema.org/Vehicle -->
 
 
-    <owl:Class rdf:about="http://schema.org/Vehicle">
+    <owl:Class rdf:about="https://schema.org/Vehicle">
         <rdfs:label xml:lang="en">Vehicle</rdfs:label>
         <rdfs:label xml:lang="it">Veicolo</rdfs:label>
     </owl:Class>
@@ -1117,7 +1117,7 @@
 
 
     <owl:Class rdf:about="http://www.w3id.org/urban-iot/sharing#Bicycle">
-        <rdfs:subClassOf rdf:resource="http://schema.org/Vehicle"/>
+        <rdfs:subClassOf rdf:resource="https://schema.org/Vehicle"/>
         <rdfs:comment xml:lang="en">A vehicle of type bicycle.</rdfs:comment>
         <rdfs:comment xml:lang="it">Un veicolo categorizzato come bicicletta.</rdfs:comment>
         <rdfs:label xml:lang="it">Bicicletta</rdfs:label>
@@ -1130,7 +1130,7 @@
 
 
     <owl:Class rdf:about="http://www.w3id.org/urban-iot/sharing#Car">
-        <rdfs:subClassOf rdf:resource="http://schema.org/Vehicle"/>
+        <rdfs:subClassOf rdf:resource="https://schema.org/Vehicle"/>
         <rdfs:comment xml:lang="en">A vehicle of type car.</rdfs:comment>
         <rdfs:comment xml:lang="it">Un veicolo categorizzato come autovettura.</rdfs:comment>
         <rdfs:label xml:lang="it">Autovettura</rdfs:label>
@@ -1233,7 +1233,7 @@
 
 
     <owl:Class rdf:about="http://www.w3id.org/urban-iot/sharing#MicroMobilityVehicle">
-        <rdfs:subClassOf rdf:resource="http://schema.org/Vehicle"/>
+        <rdfs:subClassOf rdf:resource="https://schema.org/Vehicle"/>
         <rdfs:comment xml:lang="en">A small and lightweight vehicle, usually electric, operating at low speeds.</rdfs:comment>
         <rdfs:comment xml:lang="it">Un veicolo piccolo e leggero, solitamente elettrico, che viaggia a velocità ridotte.</rdfs:comment>
         <rdfs:label xml:lang="en">Micro Mobility Vehicle</rdfs:label>
@@ -1259,7 +1259,7 @@
 
 
     <owl:Class rdf:about="http://www.w3id.org/urban-iot/sharing#Motorcycle">
-        <rdfs:subClassOf rdf:resource="http://schema.org/Vehicle"/>
+        <rdfs:subClassOf rdf:resource="https://schema.org/Vehicle"/>
         <rdfs:comment xml:lang="en">A vehicle of type motorcycle.</rdfs:comment>
         <rdfs:comment xml:lang="it">Un veicolo categorizzato come ciclomotore.</rdfs:comment>
         <rdfs:label xml:lang="it">Ciclomotore</rdfs:label>
@@ -1432,7 +1432,7 @@
 
 
     <owl:Class rdf:about="http://www.w3id.org/urban-iot/sharing#SharingMobilityOffer">
-        <rdfs:subClassOf rdf:resource="http://schema.org/Offer"/>
+        <rdfs:subClassOf rdf:resource="https://schema.org/Offer"/>
         <rdfs:comment xml:lang="en">Offer (tariff) associated to a Sharing Mobility Service.</rdfs:comment>
         <rdfs:comment xml:lang="it">Offerta (tariffa) associata ad un Servizio di Sharing Mobility.</rdfs:comment>
         <rdfs:label xml:lang="it">Offerta di Sharing Mobility</rdfs:label>
@@ -1445,7 +1445,7 @@
 
 
     <owl:Class rdf:about="http://www.w3id.org/urban-iot/sharing#SharingMobilityProvider">
-        <rdfs:subClassOf rdf:resource="http://schema.org/Organization"/>
+        <rdfs:subClassOf rdf:resource="https://schema.org/Organization"/>
         <rdfs:comment xml:lang="en">Organization providing a Sharing Mobility Service.</rdfs:comment>
         <rdfs:comment xml:lang="it">Organizzazione che eroga un Servizio di Sharing Mobility.</rdfs:comment>
         <rdfs:label xml:lang="it">Fornitore Sharing Mobility</rdfs:label>
@@ -1458,7 +1458,7 @@
 
 
     <owl:Class rdf:about="http://www.w3id.org/urban-iot/sharing#SharingMobilityService">
-        <rdfs:subClassOf rdf:resource="http://schema.org/Service"/>
+        <rdfs:subClassOf rdf:resource="https://schema.org/Service"/>
         <rdfs:comment xml:lang="en">A Service that allows users to perform a trip using a fleet a vehicles made available on street from the service provider.</rdfs:comment>
         <rdfs:comment xml:lang="it">Un Servizio che permette ai suoi utenti l&apos;utilizzo tramite noleggio di una flotta di veicoli che sono messi a disposizione in strada dal fornitore del servizio.</rdfs:comment>
         <rdfs:label xml:lang="it">Servizio di Sharing Mobility</rdfs:label>
@@ -1484,7 +1484,7 @@
 
 
     <owl:Class rdf:about="http://www.w3id.org/urban-iot/sharing#SharingMobilityVehicle">
-        <rdfs:subClassOf rdf:resource="http://schema.org/Vehicle"/>
+        <rdfs:subClassOf rdf:resource="https://schema.org/Vehicle"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
         <rdfs:subClassOf rdf:resource="http://www.w3id.org/urban-iot/core#ServiceResource"/>
         <rdfs:comment xml:lang="en">A vehicle enabled to be used in a Sharing Mobility Service.</rdfs:comment>

@@ -15,8 +15,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://oops.linkeddata.es/data/1ee3d979-ab84-4512-aa96-5a3a83659448">
     <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3id.org/urban-iot/core#MobilityStation</oops:hasAffectedElement>
-    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://schema.org/Offer</oops:hasAffectedElement>
-    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://schema.org/Service</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://schema.org/Offer</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://schema.org/Service</oops:hasAffectedElement>
     <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3id.org/urban-iot/core#ServiceResource</oops:hasAffectedElement>
     <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/ns/sosa/Sensor</oops:hasAffectedElement>
     <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3id.org/urban-iot/core#SensorRecord</oops:hasAffectedElement>
@@ -41,15 +41,15 @@
     <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3id.org/urban-iot/core#ServiceResource</oops:hasAffectedElement>
     <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/2004/02/skos/core#inScheme</oops:hasAffectedElement>
     <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/2004/02/skos/core#ConceptScheme</oops:hasAffectedElement>
-    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://schema.org/Service</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://schema.org/Service</oops:hasAffectedElement>
     <oops:hasCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P08</oops:hasCode>
     <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3id.org/urban-iot/core#SensorRecord</oops:hasAffectedElement>
     <oops:hasNumberAffectedElements rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</oops:hasNumberAffectedElements>
     <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3id.org/urban-iot/core#MobilityStation</oops:hasAffectedElement>
-    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://schema.org/Offer</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://schema.org/Offer</oops:hasAffectedElement>
     <oops:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This pitfall consists in creating an ontology element and failing to provide human readable annotations attached to it. Consequently, ontology elements lack annotation properties that label them (e.g. rdfs:label, lemon:LexicalEntry, skos:prefLabel or skos:altLabel) or that define them (e.g. rdfs:comment or dc:description). This pitfall is related to the guidelines provided in [5].	</oops:hasDescription>
     <rdf:type rdf:resource="http://oops.linkeddata.es/def#pitfall"/>
-    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://schema.org/Organization</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://schema.org/Organization</oops:hasAffectedElement>
     <oops:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Missing annotations</oops:hasName>
   </rdf:Description>
   <rdf:Description rdf:about="http://oops.linkeddata.es/def#suggestion">
@@ -74,7 +74,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://oops.linkeddata.es/data/ec56b4ae-87fa-45ad-9c58-240397aa791d">
     <oops:hasImportanceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Important</oops:hasImportanceLevel>
-    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://schema.org/image</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://schema.org/image</oops:hasAffectedElement>
     <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/2004/02/skos/core#inScheme</oops:hasAffectedElement>
     <oops:hasNumberAffectedElements rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</oops:hasNumberAffectedElements>
     <oops:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Object and/or datatype properties without domain or range (or none of them) are included in the ontology. 	</oops:hasDescription>
@@ -98,10 +98,10 @@
     <oops:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ontology element is used as a class without having been explicitly declared as such using the primitives owl:Class or rdfs:Class. This pitfall is related with the common problems listed in [8].	</oops:hasDescription>
     <oops:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Untyped class</oops:hasName>
     <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3id.org/urban-iot/core#MobilityStation</oops:hasAffectedElement>
-    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://schema.org/Service</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://schema.org/Service</oops:hasAffectedElement>
     <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3id.org/urban-iot/core#ServicePrivateUser</oops:hasAffectedElement>
-    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://schema.org/Place</oops:hasAffectedElement>
-    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://schema.org/Offer</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://schema.org/Place</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://schema.org/Offer</oops:hasAffectedElement>
     <oops:hasImportanceLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Important</oops:hasImportanceLevel>
     <rdf:type rdf:resource="http://oops.linkeddata.es/def#pitfall"/>
   </rdf:Description>
@@ -111,11 +111,11 @@
     <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3id.org/urban-iot/core#sessionPerformedBy</oops:hasAffectedElement>
     <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3id.org/urban-iot/core#resourceUsedIn</oops:hasAffectedElement>
     <oops:hasNumberAffectedElements rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</oops:hasNumberAffectedElements>
-    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://schema.org/price</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://schema.org/price</oops:hasAffectedElement>
     <oops:hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ontology element is used as a property without having been explicitly declared as such using the primitives rdf:Property, owl:ObjectProperty or owl:DatatypeProperty. This pitfall is related with the common problems listed in [8].	</oops:hasDescription>
     <oops:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Untyped property</oops:hasName>
     <oops:hasCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P35</oops:hasCode>
-    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://schema.org/duration</oops:hasAffectedElement>
+    <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://schema.org/duration</oops:hasAffectedElement>
     <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3id.org/urban-iot/core#madeAvailableBy</oops:hasAffectedElement>
     <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3id.org/urban-iot/core#sessionEnabledBy</oops:hasAffectedElement>
     <oops:hasAffectedElement rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3id.org/urban-iot/core#usesResource</oops:hasAffectedElement>

@@ -3,7 +3,7 @@
 PREFIX uiots: <http://www.w3id.org/urban-iot/sharing#>
 PREFIX dct: <http://purl.org/dc/terms/>
 PREFIX ex: <http://example.com/>
-PREFIX schema: <http://schema.org/>
+PREFIX schema: <https://schema.org/>
 PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
 SELECT ?id ?finalLat ?finalLong
 WHERE {
@@ -67,7 +67,7 @@ WHERE {
 PREFIX uiot: <http://www.w3id.org/urban-iot/core#>
 PREFIX uiote: <http://www.w3id.org/urban-iot/electric#>
 PREFIX dct: <http://purl.org/dc/terms/>
-PREFIX schema: <http://schema.org/>
+PREFIX schema: <https://schema.org/>
 PREFIX locn:	<http://www.w3.org/ns/locn#>
 PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
 SELECT ?id ?lat ?long (COUNT(?session) AS ?numSessionsOccasionalUsers)
@@ -107,7 +107,7 @@ PREFIX uiot: <http://www.w3id.org/urban-iot/core#>
 PREFIX uiote: <http://www.w3id.org/urban-iot/electric#>
 PREFIX el-kos: <http://w3id.org/urban-iot/kos/electric/>
 PREFIX dct: <http://purl.org/dc/terms/>
-PREFIX schema: <http://schema.org/>
+PREFIX schema: <https://schema.org/>
 PREFIX mv: <http://schema.mobivoc.org/#>
 SELECT ?id ?name
 WHERE {
@@ -130,7 +130,7 @@ PREFIX uiot: <http://www.w3id.org/urban-iot/core#>
 PREFIX uiots: <http://www.w3id.org/urban-iot/sharing#>
 PREFIX uiote: <http://www.w3id.org/urban-iot/electric#>
 PREFIX dct: <http://purl.org/dc/terms/>
-PREFIX schema: <http://schema.org/>
+PREFIX schema: <https://schema.org/>
 SELECT ?mobAreaId (COUNT(?session) AS ?numSessions)
 WHERE {
 	?mobArea a uiot:MobilityStation ;
@@ -147,7 +147,7 @@ PREFIX uiot: <http://www.w3id.org/urban-iot/core#>
 PREFIX uiots: <http://www.w3id.org/urban-iot/sharing#>
 PREFIX uiote: <http://www.w3id.org/urban-iot/electric#>
 PREFIX dct: <http://purl.org/dc/terms/>
-PREFIX schema: <http://schema.org/>
+PREFIX schema: <https://schema.org/>
 SELECT ?mobAreaId (COUNT(?trips) AS ?numTrips)
 WHERE {
 	?mobArea a uiot:MobilityStation ;

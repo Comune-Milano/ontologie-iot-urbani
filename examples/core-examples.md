@@ -1,6 +1,6 @@
 ### Core module - Usage Examples
 
-The following example describes a resource usage session ([uiot:UsageSession](http://www.w3id.org/urban-iot/core#UsageSession)) made available by a service ([schema:Service](http://schema.org/Service)).
+The following example describes a resource usage session ([uiot:UsageSession](http://www.w3id.org/urban-iot/core#UsageSession)) made available by a service ([schema:Service](https://schema.org/Service)).
 
 ```json
 {

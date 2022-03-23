@@ -15,7 +15,7 @@
 @prefix legal: <http://www.w3.org/ns/legal#> .
 @prefix uiote: <http://www.w3id.org/urban-iot/electric#> .
 @prefix el-kos: <http://w3id.org/urban-iot/kos/electric/> .
-@prefix schema: <http://schema.org/> .
+@prefix schema: <https://schema.org/> .
 @prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
 @base <http://www.w3id.org/urban-iot/electric> .
 
@@ -395,7 +395,7 @@ uiote:usesChargingStation rdf:type owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
-###  http://schema.org/image
+###  https://schema.org/image
 schema:image rdf:type owl:DatatypeProperty ;
              vann:usageNote "Literal datatype xsd:anyURI."@en ;
              rdfs:label "image"@en ,
@@ -608,7 +608,7 @@ mv:PlugType rdf:type owl:Class ;
                        "Tipo di Presa"@it .
 
 
-###  http://schema.org/Organization
+###  https://schema.org/Organization
 schema:Organization rdf:type owl:Class .
 
 
